@@ -3,7 +3,11 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
+const rawBasePath = process.env.VITE_BASE_PATH?.trim() || '/';
+const basePath = rawBasePath.endsWith('/') ? rawBasePath : `${rawBasePath}/`;
+
 export default defineConfig({
+  base: basePath,
   plugins: [
     react(),
     tailwindcss(),
