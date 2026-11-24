@@ -96,7 +96,7 @@ export function createDefaultNotificationSettings(): NotificationSettings {
 export function createDefaultSettings(): AppSettings {
   return {
     id: 'settings',
-    theme: 'system',
+    theme: 'light',
     largeTextMode: false,
     enableDailyPillCheckin: false,
     notifications: createDefaultNotificationSettings(),
