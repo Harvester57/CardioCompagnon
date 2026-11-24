@@ -12,7 +12,7 @@ For full architectural contracts, data models, and content mapping, read:
 
 ## 2. Tech Stack & Commands
 
-- **Runtime & Tooling:** Node.js 24, TypeScript 6 (`strict: true`), Vite 8, ESLint 9 (`typescript-eslint`, `react-hooks`, `jsx-a11y`)
+- **Runtime & Tooling:** Node.js 24, TypeScript 6 (`strict: true`), Vite 8, ESLint 10 (`typescript-eslint`, `react-hooks`, `jsx-a11y-x`)
 - **UI & Styling:** React 19, React Router 7 (`HashRouter`), Tailwind CSS v4, Recharts, `lucide-react`
 - **Local Storage & PWA:** Dexie.js 4 (IndexedDB), `dexie-react-hooks`, `vite-plugin-pwa` (Workbox)
 - **Security & AI:** Native Web Crypto API (`PBKDF2` + `AES-GCM`), optional client-side BYOK AI adapters (Gemini, OpenAI-compatible/Mistral, Ollama)
@@ -71,7 +71,7 @@ Keep changes scoped to the appropriate architectural layer:
 ### 4.4 Code, Accessibility & Static-Check Rules
 - **Zero emojis** anywhere in code, UI, tests, articles, or documentation (enforced by [static-checks.ts](./scripts/static-checks.ts)). Use `lucide-react` icons exclusively.
 - **Test hygiene:** Never commit `.only()`, `.skip()`, or ESLint disable comments in test files (enforced by [static-checks.ts](./scripts/static-checks.ts)).
-- **Accessibility:** Respect `eslint-plugin-jsx-a11y` in [eslint.config.js](./eslint.config.js), keyboard navigation, ARIA live regions for status/alerts, touch target sizes, large-text mode, and light/dark contrast.
+- **Accessibility:** Respect `eslint-plugin-jsx-a11y-x` in [eslint.config.js](./eslint.config.js), keyboard navigation, ARIA live regions for status/alerts, touch target sizes, large-text mode, and light/dark contrast.
 - **Static hosting compatibility:** Preserve `VITE_BASE_PATH` handling in [vite.config.ts](./vite.config.ts), relative asset paths in [index.html](./index.html), and `HashRouter` in [routes.tsx](./src/app/routes.tsx) so GitHub Pages subpath deployments work cleanly.
 
 ## 5. Installed Agent Skills

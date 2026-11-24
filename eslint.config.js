@@ -1,11 +1,12 @@
 import js from '@eslint/js';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
+import { defineConfig } from 'eslint/config';
+import jsxA11y from 'eslint-plugin-jsx-a11y-x';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig(
   {
     ignores: [
       'dist/**',
@@ -34,7 +35,7 @@ export default tseslint.config(
   },
   {
     files: ['src/**/*.tsx'],
-    ...jsxA11y.flatConfigs.recommended,
+    ...jsxA11y.configs.recommended,
   },
   {
     files: ['public/sw-*.js'],
