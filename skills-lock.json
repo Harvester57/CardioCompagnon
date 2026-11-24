@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "skills": {
+    "progressive-web-app": {
+      "source": "secondsky/claude-skills",
+      "commit": "14966c3024f48eea0386eb970b230ea0f4bebd33",
+      "sourceType": "github",
+      "skillPath": "plugins/progressive-web-app/skills/progressive-web-app/SKILL.md",
+      "computedHash": "60841fe71b9bddd75aac3dc479d8248a9f5d57c23875f7eb7ab4e1abff5b9cc7",
+      "installMode": "copy"
+    },
+    "react-patterns": {
+      "source": "affaan-m/ECC",
+      "commit": "4adeee6732a12d1540f49a4d50a38ce8c97f9a53",
+      "sourceType": "github",
+      "skillPath": "skills/react-patterns/SKILL.md",
+      "computedHash": "94cbe8da465b425441563f529cee88f21c5b05ad824fd3b4272d3e9edc326f35",
+      "installMode": "copy"
+    },
+    "vitest": {
+      "source": "a5c-ai/babysitter",
+      "commit": "feb68abe397acc14f32b34984975c48fedba2b33",
+      "sourceType": "github",
+      "skillPath": "library/specializations/web-development/skills/vitest/SKILL.md",
+      "computedHash": "6906bcbb8f4f00da89e0621658c8b71edd1068b3173d5d673d094c709d920d5f"
+    },
+    "web-component-design": {
+      "source": "wshobson/agents",
+      "commit": "c96b5f6552dba32e4492307493ee613581430715",
+      "sourceType": "github",
+      "skillPath": "plugins/ui-design/skills/web-component-design/SKILL.md",
+      "computedHash": "94391577833fb07e17f03dc4438645a0e3bc056c883083467e8f723cd04cb260",
+      "installMode": "copy"
+    }
+  }
+}
