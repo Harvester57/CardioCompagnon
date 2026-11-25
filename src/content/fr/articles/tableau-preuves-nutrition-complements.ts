@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/references/nutrition-and-supplement-evidence-table.md',
   titleFr: 'Tableau des niveaux de preuve : nutrition et compléments',
   category: 'nutrition',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -19,6 +19,7 @@ export const article: WikiArticle = {
     'fer-iv',
     'oméga-3',
     'coenzyme-q10',
+    'vitamine-d',
   ],
   aliases: [
     'Tableau des compléments',
@@ -45,15 +46,18 @@ export const article: WikiArticle = {
 | **Fer intraveineux (si carence)** | 6 essais randomisés, 7 175 patients ; FAIR-HF2 | Hospitalisations IC + décès CV : RR 0,81 ; pas d'effet sur la survie globale | Élevée | Surtout directe (78 % ischémique dans FAIR-HF2 ; pas de différence selon la cause) | **À aborder avec l'équipe** |
 | **Fer oral** | IRONOUT-HF, 225 patients | Aucun changement du pic de VO₂ ni des symptômes | Modérée | Partiellement directe (ICFER, causes mixtes) | Non étayé |
 | **Oméga-3, 1 g/j** | GISSI-HF, 6 975 patients | Décès 27 % contre 29 %, HR ajusté 0,91 | Modérée (avant traitements modernes) | Partiellement directe (90 % FEVG ≤ 40 %, causes mixtes) | Possible, priorité faible |
-| **Oméga-3, forte dose** | Gencer 2021, 81 210 patients | Risque de FA : HR 1,49 au-dessus de 1 g/j | Modérée | Indirecte | **À éviter ≥ 4 g/j (AHA)** |
-| **Coenzyme Q10** | Q-SYMBIO, 420 patients ; méta-analyses | MACE HR 0,50 ; mortalité groupée RR environ 0,69 | Faible | Indirecte (FEVG non rapportée ; avant traitements modernes) | Possible, priorité faible |
-| **Vitamine E (automédication)** | Cartographie Khan 2021 | Hospitalisation pour IC : RR 1,21 | Modérée | Partiellement directe (populations IC) | **À éviter** |
-| **Bêta-carotène** | An 2022 ; USPSTF | Décès CV : RR 1,12 ; grade D | Modérée | Indirecte | **À éviter** |
+| **Oméga-3 et FA à 1 g/j** | Ligne GISSI-HF dans Abuknesha 2026 | FA 11,2 % contre 9,8 %, OR 1,16 (0,97–1,39), ns | Un seul essai, non significatif | Partiellement directe (90 % FEVG ≤ 40 %, causes mixtes) | À mentionner à l'équipe, surtout en cas de FA existante |
+| **Oméga-3, forte dose** | Gencer 2021 (81 210 pts) ; Abuknesha 2026 (35 essais, 114 592 pts) | FA HR 1,49 au-dessus de 1 g/j (Gencer) ; OR 1,43 au-dessus de 1,5 g/j chez les patients à haut risque, OR 1,14 sur tous les essais (Abuknesha) | Modérée (Abuknesha financée en partie par l'industrie) | Indirecte | **À éviter ≥ 4 g/j (AHA)** |
+| **Coenzyme Q10** | Q-SYMBIO (420 pts) ; analyses groupées (Khan 2021 et An 2022 semblent regrouper les mêmes 7 essais, 1 827 pts) | MACE HR 0,50 ; décès 10 % contre 18 % ; mortalité groupée RR ~0,69, non significative sans Q-SYMBIO | Faible | Surtout directe mais fragile (FEVG moyenne 31 %, ~70 % ischémique, NYHA III–IV ; pas de sous-groupe ischémique ; avant traitements modernes) | Possible, priorité faible |
+| **Vitamine E (automédication)** | Cartographie Khan 2021 (2 essais, 17 956 pts) ; repris par Chua 2025 | Hospitalisation pour IC : RR 1,21 (1,04–1,40) | Modérée | Indirecte (essais non nommés ; leur taille évoque de grands essais de prévention) | **À éviter** |
+| **Bêta-carotène** | An 2022 ; USPSTF | Décès toutes causes RR 1,10 ; décès CV RR 1,12 ; AVC RR 1,09 ; USPSTF grade D | Faible (GRADE An 2022) | Indirecte | **À éviter** |
 | **Calcium + vitamine D** | Khan 2019 | AVC : RR 1,17 | Modérée | Indirecte | **À éviter sauf prescription** |
-| **Vitamine D seule** | An 2022 ; AHA 2022 ; EVITA (rapporté) | Aucun effet CV ; EVITA décès HR 1,09 | Modérée | Partiellement directe | Non étayé (corriger une carence uniquement) |
-| **Thiamine (vitamine B1)** | Khan 2021 ; méta-analyse 2024 (rapportée) | Gain de FEVG non confirmé (+1,65 %, non significatif) | Faible | Directe | Uniquement si carence avérée |
-| **L-carnitine** | Khan 2021 | Critère intermédiaire (FEVG) uniquement | Faible | Directe | Non étayé |
-| **Multivitamines, antioxydants, vitamine C, sélénium** | An 2022 ; Khan 2019 ; USPSTF | Aucun bénéfice CV ; grade I | Modérée | Indirecte | Non étayé |
+| **Vitamine D seule** | An 2022 (63 essais) ; Khan 2021 ; Chua 2025 (reprend Khan) ; Kampka 2025 ; AHA 2022 ; EVITA (rapporté) | Aucun effet CV (décès RR 0,99) ; dans les essais IC, marche de 6 min raccourcie de 39 m (certitude élevée) malgré FEVG +4,33 points (essais très hétérogènes ; autres analyses sans effet FEVG) ; VITAL-HF neutre ; EVITA décès HR 1,09 | Modérée | Indirecte (essais IC toutes FEVG ; essais d'événements en population générale) | Non étayé (traiter uniquement une carence) |
+| **Thiamine (vitamine B1)** | Khan 2021 (4 essais, 150 pts) ; méta-analyse 2024 (rapportée) | FEVG +3,59 points dans Khan 2021 (intermédiaire) ; non confirmé ensuite (+1,65 %, ns) | Faible | Indirecte (essais IC, FEVG non séparées) | Uniquement si carence avérée |
+| **L-carnitine** | Khan 2021 | FEVG +0,49 point (intermédiaire) ; décès RR 0,58 (0,16–2,12), ns | Faible | Indirecte (essais IC, FEVG non séparées) | Non étayé |
+| **Vitamine C, sélénium** | An 2022 | Aucun effet sur décès, décès CV, infarctus ou AVC | Modérée | Indirecte | Non étayé |
+| **Multivitamines** | Khan 2019 ; USPSTF (An 2022 ne les a pas analysées) | Aucun bénéfice CV ; USPSTF grade I | Modérée | Indirecte | Non étayé |
+| **Magnésium** | An 2022 | Pression artérielle environ 5 mmHg plus basse (certitude faible) ; aucune donnée d'événements cliniques | Faible | Indirecte (essais de facteurs de risque excluant cardiopathies sévères) | Aucune donnée d'événements ; en parler à l'équipe |
 | **Aubépine** | AHA 2022 | Résultats contradictoires ; peut aggraver l'IC | Faible | Directe | Non étayé |
 | **Muguet, actée bleue** | AHA 2022 | Toxiques | Faible (experts) | Directe | **À éviter** |
 | **Réglisse (glycyrrhizine)** | Monographie EMA 2026 ; revue Deutch 2019 | Rétention hydrosodée, hypokaliémie, HTA ; cas d'IC aiguë ; ne pas associer aux diurétiques ni à la digoxine | Modérée (mécanisme, régulateur, cas) | Directe | **À éviter** |
@@ -64,9 +68,17 @@ export const article: WikiArticle = {
 | **Huile de poisson (saignement)** | Javaid 2024 ; notice icosapent éthyl | Pas de hausse globale ; +0,6 pour 100 à 4 g/j d'EPA ; notice : surveiller avec aspirine, clopidogrel ou warfarine | Modérée (méta-analyse financée par l'industrie) | Partiellement directe (79 % sous antiagrégant dans REDUCE-IT) | À signaler à l'équipe, surtout à forte dose |
 | **Jus de pamplemousse** | Notices simvastatine et atorvastatine ; FDA | Augmente les taux de simvastatine et d'atorvastatine ; pas d'avertissement sur la notice de la rosuvastatine | Élevée (notices) | Dépend de la statine | Vérifier selon la statine prescrite |
 | **Ginseng (asiatique, américain, sibérien)** | Essai Yuan 2004 ; Lee 2010 ; études Dasgupta ; NCCIH ; EMA | Ginseng américain réduit l'effet de la warfarine (pic INR -0,19) ; ginseng coréen neutre ; fausse d'anciens dosages de digoxine ; teneur variable d'un facteur 36 | Faible (petites études discordantes) | Indirecte (volontaires sains, warfarine) | Non étayé ; informer l'équipe, surtout sous warfarine ou digoxine |
-| **Danshen (sauge rouge)** | Revue Chan 2001 ; Izzat 1998 ; Qiu 2010-2014 | Surdosage majeur et saignements sous warfarine (3 cas) ; fausse d'anciens dosages de digoxine ; induit CYP3A4 et P-gp | Faible (cas et petites études PK) | Indirecte | **À éviter avec les anticoagulants** ; non étayé |
+| **Danshen (sauge rouge)** | Revue Chan 2001 ; Izzat 1998 ; Qiu 2010–2014 | Surdosage majeur et saignements sous warfarine (3 cas) ; fausse d'anciens dosages de digoxine ; induit CYP3A4 et P-gp | Faible (cas et petites études PK) | Indirecte | **À éviter avec les anticoagulants** ; non étayé |
 | **Extrait concentré de thé vert (EGCG)** | Misaka 2014/2021 ; Kim 2017 ; EFSA 2018 ; UE 2022/2340 ; USP 2020 | Exposition au lisinopril -67 %, au nadolol -85 % (thé infusé), aux statines environ -20 % ; hépatites graves rares ; plafond UE < 800 mg EGCG/j | Modérée pour le foie ; faible pour les interactions | Indirecte (volontaires sains) | **À éviter en complément** ; le thé ordinaire est différent |
-| **Qiliqiangxin (formule chinoise à 11 plantes incluant ginseng et danshen)** | QUEST, 3 110 patients (Nature Medicine 2024) | Décès CV ou hospitalisation IC : 25,0 % contre 30,0 %, HR 0,78 ; mortalité totale non significative | Modérée (un seul essai financé par le fabricant) | Partiellement directe (ICFER, environ 74 % ischémique ; Chine ; < 10 % sous iSGLT2) | Formule sur prescription, pas un complément ; absente des recommandations ESC, US et NICE |`,
+| **Qiliqiangxin (formule chinoise à 11 plantes incluant ginseng et danshen)** | QUEST, 3 110 patients (*Nature Medicine* 2024) | Décès CV ou hospitalisation IC : 25,0 % contre 30,0 %, HR 0,78 ; mortalité totale non significative | Modérée (un seul essai financé par le fabricant) | Partiellement directe (ICFER, environ 74 % ischémique ; Chine ; < 10 % sous iSGLT2) | Formule sur prescription, pas un complément ; absente des recommandations ESC, US et NICE |
+| **Pilules Qishen Yiqi (astragale, danshen, notoginseng)** | Revue parapluie Chua 2025 (une revue de 59 essais surtout chinois) | Décès OR 0,43 (0,27–0,68), 9 essais, 1 679 patients ; hypotension parmi les effets indésirables rapportés | Modérée (un seul fabricant ; domaine dominé par des revues de qualité critiquement faible) | Partiellement directe (IC avec maladie coronaire ; FEVG non résumée) | Produit sur prescription en Chine ; absent des recommandations ESC, US et NICE |
+| **Autres produits et injections de phytothérapie chinoise (Pueraria, Shexiangbaoxin, Yiqifumai, Shenfu et autres)** | Revue parapluie Chua 2025 | Surtout gains sur le BNP ou la marche ; effets indésirables jusqu'à 21 % avec certaines injections ; injections indisponibles hors de Chine | Faible ou très faible | Indirecte (essais surtout chinois, critères intermédiaires) | Non étayé ; informer l'équipe (risques d'interactions) |
+
+**Comment lire les lignes « antioxydants » :** le terme « antioxydant » recouvre des molécules très différentes. Dans **An 2022**, les piégeurs classiques de radicaux libres (vitamines C et E, bêta-carotène) ont été neutres ou délétères ; l'éditorial associé (**Gormaz-Carrasco 2022**) avance que les seuls signaux favorables (oméga-3, acide folique, CoQ10) proviennent de substances agissant par d'autres mécanismes — avis d'éditorialistes sur une analyse majoritairement hors insuffisance cardiaque, et non preuve testée.
+
+**Deux publications récentes ne changent aucun verdict :** une enquête transversale américaine de 2025 (**Qiu 2025**, NHANES) a associé un score alimentaire et de mode de vie plus « antioxydant » à moins d'IC autodéclarée chez des hypertendus (**OR 0,56**), mais sans ajustement sur les médicaments, avec un effet surtout tiré par l'alcool et le poids, et portant sur l'alimentation plutôt que les compléments. Une étude de 2025 chez la souris (**Boitard 2025**) testant un cocktail de vitamines B et de nicotinamide riboside en surcharge de pression (non ischémique) constitue une donnée strictement animale, sans aucune donnée clinique humaine.
+
+**Degré d'indépendance de la revue parapluie 2025 (Chua 2025) :** elle regroupe 22 revues portant sur l'acupuncture, le Tai Chi, les plantes et les compléments dans l'IC chronique ; 11 des 21 revues évaluées étaient de qualité méthodologique critiquement faible. Ses chiffres sur la vitamine D, la vitamine E et les oméga-3 proviennent de Khan 2021, et son résultat de mortalité sur la CoQ10 (RR 0,58) repose sur Q-SYMBIO seul : elle récapitule donc ces lignes sans les confirmer de façon indépendante. Le Tai Chi est détaillé dans la fiche réadaptation cardiaque et activité physique.`,
     },
     {
       headingFr: 'Alimentation et mode de vie',
@@ -121,28 +133,30 @@ export const article: WikiArticle = {
     'interactions-complements-aliments-medicaments',
     'omega-3-huile-de-poisson',
     'coenzyme-q10',
+    'vitamine-d-insuffisance-cardiaque',
     'sel-et-liquides-insuffisance-cardiaque',
     'alimentation-cardioprotectrice',
     'poids-obesite-et-denutrition',
+    'readaptation-cardiaque-et-activite-physique',
     'essais-cliniques-cles',
     'recommandations-comparees-esc-us-nice',
   ],
   sources: [
     {
       label: 'Essais cliniques et méta-analyses sur les compléments',
-      detail: 'Méta-analyse fer IV 2025, FAIR-HF2, IRONOUT-HF, GISSI-HF, Gencer 2021, Q-SYMBIO, Khan 2021, An 2022, Khan 2019, USPSTF 2022, QUEST (Nature Medicine 2024).',
+      detail: 'Méta-analyse fer IV 2025, FAIR-HF2, IRONOUT-HF, GISSI-HF, Gencer 2021, Abuknesha 2026, Q-SYMBIO (texte intégral), Khan 2021 (texte intégral), An 2022 (texte intégral), Gormaz-Carrasco 2022, Khan 2019, USPSTF 2022, QUEST (Nature Medicine 2024).',
+    },
+    {
+      label: 'Revues et études 2023–2025 sur la vitamine D et la médecine intégrative',
+      detail: 'Chua 2025 (22 revues de médecine intégrative dans l’IC chronique), Kampka 2025 (vitamine D dans l’IC), Hung 2023 (NHANES), Qiu 2025 (NHANES), Boitard 2025 (vitamines B chez la souris).',
     },
     {
       label: 'Essais et cohortes nutritionnels',
       detail: 'SODIUM-HF, FRESH-UP, Cochrane 2022 (substituts de sel), CORDIOPREV, EFFORT IC, GOURMET-HF, FOOD-HF, DECAF, CRAVE, Lane 2024, MESA 2026, PREDIMED.',
     },
     {
-      label: 'Recommandations internationales',
-      detail: 'ESC 2026, consensus HFA-ESC 2024, AHA/ACC/HFSA 2022, déclaration AHA 2022 (CAM), NICE NG106 (mise à jour 2025) et guide BHF.',
-    },
-    {
-      label: 'Autorités réglementaires et sécurité des plantes',
-      detail: 'EMA (réglisse, ginkgo, ail, ginseng), EFSA et règlements UE (2022/860 levure de riz rouge, 2022/2340 thé vert EGCG), FDA et notices médicaments.',
+      label: 'Recommandations internationales et autorités réglementaires',
+      detail: 'ESC 2026, consensus HFA-ESC 2024, AHA/ACC/HFSA 2022, déclaration AHA 2022 (CAM), NICE NG106 (2025), guide BHF, EMA, EFSA et règlements UE (2022/860, 2022/2340).',
     },
   ],
   disclaimerType: 'medical',

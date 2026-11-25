@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/ejection-fraction.md',
   titleFr: "La fraction d'éjection (FEVG)",
   category: 'diagnostic',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'warm',
   tags: [
@@ -28,7 +28,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "La fraction d'éjection du ventricule gauche (FEVG) est le pourcentage de sang contenu dans le ventricule gauche qui est expulsé à chaque battement. Elle n'est jamais de 100 %, même dans un cœur sain. Une FEVG à 35 % signifie qu'environ un tiers du sang est éjecté à chaque contraction : elle est clairement « réduite » selon toutes les classifications actuelles. C'est un repère utile mais imparfait : la valeur varie selon l'examen utilisé (ETT ou IRM) et les seuils des catégories ont évolué en 2026.",
+    "La fraction d'éjection du ventricule gauche (FEVG) est le pourcentage de sang contenu dans le ventricule gauche qui est expulsé à chaque battement. Elle n'est jamais de 100 %, même dans un cœur sain. Une FEVG à 35 % signifie qu'environ un tiers du sang est éjecté à chaque contraction : elle est clairement « réduite » selon toutes les recommandations actuelles. C'est un repère utile mais imparfait : les seuils ont évolué dans les recommandations ESC 2026, la Deuxième définition universelle de 2026 ne fixe aucune frontière chiffrée, et les mesures peuvent varier de plusieurs points entre une ETT et une IRM cardiaque.",
   sections: [
     {
       headingFr: 'Ce que mesure la FEVG',
@@ -62,10 +62,19 @@ Sources : recommandations ESC 2026 ; guide patient ESC ; BHF ; page FEVG de l'AH
 - **Nuance de formulation.** Le livret patient ESC formule le seuil comme « inférieure ou égale à 50 % », tandis que le texte complet des recommandations indique « < 50 % ». Cette différence ne joue qu'à exactement 50 %.
 - **Une FEVG de 35 % relève de l'ICFER dans tous ces systèmes.** L'étiquette diagnostique reste identique ; seule change la façon dont les documents plus anciens découpent les tranches autour d'elle.
 
+**Une définition internationale distincte, et non une recommandation thérapeutique.** En juin 2026, l'AHA, l'ACC, l'ESC et la Fédération mondiale du cœur (WHF) ont publié la *Deuxième définition universelle de l'insuffisance cardiaque*, un consensus sur la terminologie. Il s'agit d'un document différent des recommandations ESC 2026 du tableau ci-dessus, qui ne modifie ni les seuils de l'ESC ni aucun seuil thérapeutique (Définition universelle 2026) :
+
+- **Trois groupes, sans frontière chiffrée.** Elle distingue l'insuffisance cardiaque à FEVG réduite, préservée ou améliorée. Elle s'abstient délibérément de fixer **tout chiffre** séparant FEVG réduite et FEVG préservée, qualifiant les anciens seuils fixes d'arbitraires en raison de la variabilité des mesures, des écarts entre examens d'imagerie et des questions non résolues liées au sexe, à l'âge et à l'origine ethnique.
+- **Pas de groupe « modérément réduite ».** Elle ne conserve pas cette catégorie. Elle suggère avec prudence que les FEVG légèrement réduites pourraient être regroupées avec les FEVG réduites, et les valeurs plus élevées avec les FEVG préservées.
+- **Les seuls chiffres de plage normale.** La limite inférieure de la FEVG normale est d'environ **53 % chez la femme et 52 % chez l'homme** (légèrement plus élevée chez les personnes d'origine asiatique), de sorte qu'une FEVG **inférieure à 50 %** a peu de chances d'être normale quels que soient le sexe, l'âge ou l'origine ethnique.
+- **Aucun seuil de peptides natriurétiques** n'est fixé non plus. Des taux élevés confortent le diagnostic, mais le document n'établit pas de valeurs seuils.
+- Une FEVG de 35 % se situe largement en dessous du niveau de 50 % qu'elle juge peu susceptible d'être normal. Comme le texte ne fixe pas de frontière chiffrée, qualifier 35 % de « réduite » selon ce document relève de l'interprétation plutôt que d'une règle explicite.
+
 **FEVG améliorée (HFimpEF).** Une catégorie spécifique existe lorsque la FEVG remonte sous traitement :
 
 - **ESC 2026 :** hausse absolue d'au moins 10 points, aboutissant à une valeur supérieure à 40 % (recommandations ESC 2026).
 - **Définition universelle de 2021 :** valeur initiale inférieure ou égale à 40 %, puis gain d'au moins 10 points permettant de dépasser 40 % (revue HFimpEF).
+- **Deuxième définition universelle de 2026 :** reprend cette description (hausse d'au moins 10 points permettant de dépasser 40 % après une FEVG réduite), mais précise qu'une définition fondée uniquement sur la FEVG ne suffit pas, car les mesures varient et une cicatrice, des marqueurs sanguins élevés ou des symptômes persistent souvent. Elle distingue également amélioration, rémission et récupération (Définition universelle 2026).
 
 Pour en savoir plus, consultez *Insuffisance cardiaque à FEVG améliorée (HFimpEF)*.`,
     },
@@ -115,6 +124,7 @@ Ces résultats alimentent le débat présenté dans *Dispositifs cardiaques impl
     { label: 'REVIVED-BCIS2 — analyse ETT vs IRM', detail: 'Discordance de mesure entre échocardiographie et IRM autour du seuil de 35 %' },
     { label: 'Analyse poolée PROFID', detail: 'Pouvoir prédictif de la FEVG sur la mort subite après infarctus (140 204 patients)' },
     { label: 'Revue HFimpEF', detail: 'Définition universelle 2021 de la FEVG améliorée' },
+    { label: "Deuxième définition universelle de l'insuffisance cardiaque (2026)", detail: "Consensus AHA/ACC/ESC/WHF (texte intégral) : groupes de FEVG sans frontière chiffrée, limites inférieures de la normale et nuances sur la FEVG améliorée" },
     { label: 'AHA — Ejection Fraction (2025)', detail: 'Fourchettes grand public américaines (site web et fiche)' },
     { label: 'Cleveland Clinic — Ejection Fraction (2026)', detail: 'Formule de la FEVG et plages de référence par sexe' },
     { label: 'Heart Failure Matters (ESC)', detail: "Site patient de l'ESC : examens, classes NYHA et anciennes tranches de FEVG" },

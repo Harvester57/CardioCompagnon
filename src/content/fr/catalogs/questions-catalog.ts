@@ -70,10 +70,10 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     interlocutor: 'cardiologist',
     topicFr: 'Médicaments de fond',
     questionFr:
-      'Mes doses sont-elles aux doses cibles, ou prévoit-on de les augmenter progressivement (titration) ? Selon quel calendrier ?',
+      'Mes doses sont-elles aux doses cibles, ou prévoit-on de les augmenter progressivement (titration) ? Selon quel calendrier, avec quels bilans et consultations à chaque palier, et quels résultats (tension, potassium, fonction rénale, pouls) conduiraient à différer une hausse ?',
     whyItMattersFr:
-      'Les recommandations ESC 2026 préconisent une titration par paliers toutes les 1 à 2 semaines lorsque la tolérance clinique et biologique le permet.',
-    sources: ['Recommandations ESC 2026 (insuffisance cardiaque)'],
+      "L'ESC 2026 préconise une titration toutes les 1 à 2 semaines. Dans STRONG-HF, atteindre les doses cibles en 2 semaines après hospitalisation (visites S1, S2, S3 et S6) a réduit les réhospitalisations, avec des critères de pause propres à l'essai ; dans SwedeHF, seule une minorité atteignait les doses cibles, encore moins chez les plus âgés.",
+    sources: ['Recommandations ESC 2026', 'STRONG-HF (2022)', 'SwedeHF (2022)'],
     articleSlug: 'medicaments-insuffisance-cardiaque',
     relevantModules: ['core'],
     triggeredByRules: ['GDMT_MISSING_PILLAR'],
@@ -199,14 +199,39 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     triggeredByRules: ['HR_IVABRADINE_DISCUSSION'],
   },
   {
+    id: 'q_addon_ivabradine_hr_threshold',
+    interlocutor: 'cardiologist',
+    topicFr: 'Traitements additionnels',
+    questionFr:
+      "Quelle est ma fréquence cardiaque de repos sous ma dose actuelle de bêtabloquant ? Si elle reste à 77 bpm ou plus en rythme sinusal, l'ivabradine (Procoralan) mérite-t-elle d'être envisagée, ou faut-il d'abord augmenter le bêtabloquant ?",
+    whyItMattersFr:
+      "Dans l'essai SHIFT, le bénéfice de l'ivabradine était concentré chez les patients ayant une fréquence cardiaque ≥ 77 bpm, et n'était pas statistiquement significatif chez ceux prenant déjà au moins la moitié de la dose cible de bêtabloquant.",
+    sources: ['SHIFT (2010)', 'ESC 2026'],
+    articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
+    relevantModules: ['core'],
+    triggeredByRules: ['HR_IVABRADINE_DISCUSSION'],
+  },
+  {
+    id: 'q_addon_vericiguat_ntprobnp',
+    interlocutor: 'cardiologist',
+    topicFr: 'Traitements additionnels',
+    questionFr:
+      "Mon NT-proBNP est-il inférieur à 6 000 pg/mL, et le vériciguat (Verquvo) ne serait-il pertinent qu'après un épisode d'aggravation (son indication d'AMM) ?",
+    whyItMattersFr:
+      "L'analyse groupée de VICTORIA et VICTOR suggère un bénéfice modeste, surtout net pour un NT-proBNP jusqu'à 6 000 pg/mL ; l'essai VICTOR seul chez des patients ambulatoires stables était neutre.",
+    sources: ['Analyse groupée VICTORIA + VICTOR (2025)', 'RCP Verquvo'],
+    articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
+    relevantModules: ['core'],
+  },
+  {
     id: 'q_addon_digoxin_monitoring',
     interlocutor: 'cardiologist',
     topicFr: 'Traitements additionnels',
     questionFr:
-      'Si je prends de la digoxine : ma digoxinémie et ma fonction rénale seront-elles surveillées, et quels signes de surdosage dois-je reconnaître ?',
+      'Si la digoxine était envisagée : ma digoxinémie et ma fonction rénale seraient-elles surveillées, quels signes de surdosage dois-je reconnaître, et la digitoxine (testée dans DIGIT-HF) est-elle disponible en France ?',
     whyItMattersFr:
-      'Maintenir une digoxinémie basse (0,5–0,9 ng/mL) limite la toxicité ; nausées, confusion ou troubles visuels imposent un contrôle rapide.',
-    sources: ['Ahmed (2006)', 'ESC 2026'],
+      'Maintenir une digoxinémie basse (0,5–0,9 ng/mL) limite la toxicité (nausées, confusion, troubles visuels) ; la digitoxine étudiée dans DIGIT-HF pose la question de sa disponibilité pratique en France.',
+    sources: ['Ahmed (2006)', 'DIGIT-HF (2025)', 'ESC 2026'],
     articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
     relevantModules: ['core', 'atrialFibrillation'],
   },
@@ -215,21 +240,21 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     interlocutor: 'cardiologist',
     topicFr: 'Traitements additionnels',
     questionFr:
-      "La finérénone est-elle pertinente dans mon cas, ou la spironolactone / l'éplérénone restent-elles l'ARM adapté à ma FEVG ?",
+      "La finérénone est-elle pertinente dans mon cas, ou la spironolactone / l'éplérénone restent-elles l'ARM adapté à ma FEVG ? Si ma FEVG remonte à ≥ 40 %, deviendrait-elle une option (en remplacement ou en ajout), et un diabète ou une maladie rénale changerait-il la discussion ?",
     whyItMattersFr:
-      "La finérénone est démontrée pour une FEVG ≥ 40 % (FINEARTS-HF) ou dans le diabète de type 2 avec maladie rénale chronique ; les essais sous 40 % sont encore en cours (FINALITY-HF).",
-    sources: ['FINEARTS-HF (2024)', 'ESC 2026'],
+      "La finérénone est démontrée à partir d'une FEVG ≥ 40 % (FINEARTS-HF, qui incluait des FEVG améliorées à ≥ 40 %) ou dans le diabète de type 2 avec maladie rénale chronique dans des essais ayant exclu l'ICFER symptomatique ; dans l'ICFER, seules des études courtes de phase 2 (ARTS-HF) sont disponibles.",
+    sources: ['FINEARTS-HF (2024)', 'FINE-HEART (2024)', 'ARTS-HF (2016)', 'ESC 2026'],
     articleSlug: 'finerenone-et-nouveaux-arm',
-    relevantModules: ['ckd', 'diabetes'],
+    relevantModules: ['ckd', 'diabetes', 'hfImpEf'],
   },
   {
     id: 'q_addon_potassium_binder',
     interlocutor: 'cardiologist',
     topicFr: 'Traitements additionnels',
     questionFr:
-      "Si mon potassium augmente sous ARM, un chélateur de potassium (patiromer ou cyclosilicate de zirconium sodique) permettrait-il de poursuivre l'ARM ?",
+      "Si mon potassium augmente sous spironolactone ou éplérénone, réduiriez-vous la dose d'ARM ou ajouteriez-vous un chélateur de potassium (patiromer ou cyclosilicate de zirconium sodique) pour maintenir la pleine dose ?",
     whyItMattersFr:
-      "Dans DIAMOND, le patiromer a réduit les épisodes d'hyperkaliémie et permis de maintenir plus souvent les ARM à dose cible.",
+      "Dans DIAMOND (majoritairement des ICFER ischémiques), le patiromer a permis de maintenir plus de patients à pleine dose d'ARM, mais l'essai a déplacé son critère principal vers la kaliémie et n'a pas démontré de baisse de la mortalité.",
     sources: ['DIAMOND (2022)', 'ESC 2026'],
     articleSlug: 'finerenone-et-nouveaux-arm',
     relevantModules: ['core', 'ckd'],
@@ -240,10 +265,10 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     interlocutor: 'cardiologist',
     topicFr: 'Gilet défibrillateur portable (LifeVest)',
     questionFr:
-      'Pendant la titration des médicaments et avant la décision de DAI, un gilet défibrillateur portable (LifeVest) mérite-t-il d’être envisagé ? Combien de temps le porter et que faire en cas d’alarme ?',
+      'Pendant la titration des médicaments et avant la décision de DAI, un gilet défibrillateur portable (LifeVest) mérite-t-il d’être envisagé ? Quels marqueurs de risque s’appliquent à moi, suis-je dans la fenêtre précoce (40 jours post-infarctus / stent ou 90 jours post-pontage), combien de temps le porter et que faire en cas d’alarme ?',
     whyItMattersFr:
-      "Le risque rythmique précoce est le plus élevé au cours des premiers mois, mais le gilet n'est efficace que s'il est porté presque en permanence et les preuves restent nuancées (VEST, HF-OPT, avis HAS).",
-    sources: ['VEST (2018)', 'HF-OPT (2024)', 'Avis HAS CNEDiMTS (2024)'],
+      "La DGK le classe dans les 40–90 premiers jours comme « plutôt non indiqué, à discuter au cas par cas », tandis qu'en France il est remboursé en cardiomyopathie ischémique avec FEVG ≤ 35 % ; il doit être porté plus de 20 h/jour et les preuves restent nuancées (VEST, HF-OPT, avis HAS).",
+    sources: ['VEST (2018)', 'HF-OPT (2024)', 'Avis HAS CNEDiMTS (2024)', 'Position DGK (2019)', 'Revue Goetz (2023)'],
     articleSlug: 'gilet-defibrillateur-portable',
     relevantModules: ['lifeVest'],
     triggeredByRules: ['ICD_REASSESSMENT_3M'],
@@ -266,10 +291,10 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     interlocutor: 'cardiologist',
     topicFr: 'Télésurveillance',
     questionFr:
-      "Suis-je éligible à la télésurveillance de l'insuffisance cardiaque à domicile en France, et qu'apporterait-elle par rapport à ma pesée quotidienne ?",
+      "Serais-je éligible à la télésurveillance de l'insuffisance cardiaque à domicile sans hospitalisation récente (sur NYHA et NT-proBNP) ? Qui examine les alertes, peut-il adapter mes traitements, et qu'apporterait-elle en plus de ma pesée quotidienne ?",
     whyItMattersFr:
-      "En France, la télésurveillance IC est remboursée depuis 2023 après une hospitalisation récente pour IC ou en cas de classe NYHA ≥ II avec NT-proBNP élevé (référentiel HAS).",
-    sources: ['Référentiel HAS télésurveillance IC', 'ESC 2026'],
+      "En France, elle est remboursée après hospitalisation récente pour IC ou en NYHA ≥ II avec NT-proBNP élevé (référentiel HAS). L'essai positif TIM-HF2 utilisait un centre médicalisé 24 h/24 et n'incluait que des patients hospitalisés dans l'année.",
+    sources: ['Référentiel HAS télésurveillance IC', 'TIM-HF2 (2018)', 'ESC 2026'],
     articleSlug: 'telesurveillance-insuffisance-cardiaque',
     relevantModules: ['core'],
     triggeredByRules: ['FR_TELESURVEILLANCE'],
@@ -279,12 +304,24 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     interlocutor: 'cardiologist',
     topicFr: 'Télésurveillance des prothèses',
     questionFr:
-      'Si je reçois un DAI ou une CRT, le télésuivi de la prothèse sera-t-il mis en place ? Qui analyse les alertes et dans quel délai ?',
+      "Si je reçois un DAI ou une CRT, le télésuivi de la prothèse sera-t-il activé ? Qui lit les alertes et dans quel délai ? La marque compte-t-elle (par exemple l'alerte HeartLogic propre à Boston Scientific), et le télésuivi peut-il remplacer certaines visites ?",
     whyItMattersFr:
-      "Le télésuivi des prothèses ne fonctionne généralement pas comme un centre d'urgence 24 h/24 ; connaître le circuit des alertes clarifie quand appeler le 15.",
-    sources: ['Consensus HRS 2023'],
+      "Dans MORE-CARE, le télésuivi des prothèses a surtout réduit les visites en présentiel sans améliorer la survie ; connaître le circuit des alertes clarifie quand appeler le 15.",
+    sources: ['Consensus HRS 2023', 'MORE-CARE', 'MANAGE-HF phase 1 (2022)'],
     articleSlug: 'telesurveillance-insuffisance-cardiaque',
     relevantModules: ['device'],
+  },
+  {
+    id: 'q_addon_pa_pressure_sensor',
+    interlocutor: 'cardiologist',
+    topicFr: 'Télésurveillance',
+    questionFr:
+      "Un capteur implanté de pression de l'artère pulmonaire (CardioMEMS) pourrait-il être pertinent pour moi à un stade donné, sachant qu'il n'est pas remboursé en France et que les indications les plus fortes concernent l'après-hospitalisation pour IC ?",
+    whyItMattersFr:
+      "Le consensus HFA 2025 réserve les recommandations les plus fermes aux patients symptomatiques ayant été hospitalisés pour IC, et la CNEDiMTS de la HAS (2021) a estimé le service attendu insuffisant pour le remboursement en France.",
+    sources: ['Consensus HFA pression artérielle pulmonaire (2025)', 'Avis HAS CardioMEMS (2021)'],
+    articleSlug: 'telesurveillance-insuffisance-cardiaque',
+    relevantModules: ['core'],
   },
 
   // --- Artères coronaires et CTO ---
@@ -319,8 +356,20 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Le muscle cardiaque en aval de mon artère bouchée (CTO) est-il viable et ischémique à l'effort ? En l'absence d'angor, qu'attendrait-on de sa réouverture ?",
     whyItMattersFr:
-      "Le consensus EAPCI/EACVI 2024 recommande d'évaluer viabilité et ischémie lorsque la FEVG est basse ; le bénéfice prouvé de l'angioplastie de CTO concerne le soulagement de l'angor (van Veelen 2021 ; ORBITA-CTO).",
-    sources: ['Consensus EAPCI/EACVI (2024)', 'van Veelen (2021)', 'ORBITA-CTO (2026)'],
+      "Le consensus EAPCI/EACVI 2024 recommande d'évaluer viabilité et ischémie lorsque la FEVG est basse (la contractilité s'améliorait surtout dans les segments viables, Leite 2026) ; le bénéfice prouvé de l'angioplastie de CTO concerne le soulagement de l'angor (van Veelen 2021 ; ORBITA-CTO).",
+    sources: ['Consensus EAPCI/EACVI (2024)', 'Leite (2026)', 'van Veelen (2021)', 'ORBITA-CTO (2026)'],
+    articleSlug: 'occlusion-coronaire-chronique-cto',
+    relevantModules: ['cto'],
+  },
+  {
+    id: 'q_cto_breathlessness_vs_angina',
+    interlocutor: 'cardiologist',
+    topicFr: 'Occlusion coronaire chronique (CTO)',
+    questionFr:
+      "Si mon symptôme principal est l'essoufflement plutôt qu'une douleur thoracique (angor), l'ouverture de l'artère occluse (CTO) est-elle susceptible de le soulager ?",
+    whyItMattersFr:
+      "Dans l'essai ORBITA-CTO contrôlé contre procédure factice (sham), l'angor s'est amélioré mais l'essoufflement et l'état de santé général ne se sont pas clairement améliorés, et la quasi-totalité des participants avaient une FEVG normale.",
+    sources: ['ORBITA-CTO (2026)'],
     articleSlug: 'occlusion-coronaire-chronique-cto',
     relevantModules: ['cto'],
   },
@@ -331,7 +380,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Quels sont les taux de succès et de complications de ce centre pour une angioplastie de CTO à FEVG basse, et un pontage ciblé (y compris mini-invasif MIDCAB) serait-il une option ?',
     whyItMattersFr:
-      "Dans le registre PROGRESS-CTO, la mortalité hospitalière atteignait 1,1 % pour une FEVG ≤ 35 % contre 0,3 % pour une FEVG ≥ 50 %.",
+      "Dans le registre PROGRESS-CTO, la mortalité hospitalière atteignait 1,1 % pour une FEVG ≤ 35 % contre 0,3 % pour une FEVG ≥ 50 %, et environ 1 patient sur 6 à FEVG basse a nécessité une pompe d'assistance cardiaque temporaire.",
     sources: ['PROGRESS-CTO (2022)', 'Gallingani (2025)', 'ESC 2024 SCC'],
     articleSlug: 'occlusion-coronaire-chronique-cto',
     relevantModules: ['cto'],
@@ -370,8 +419,33 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Dois-je poursuivre ma statine et mon antiagrégant (aspirine ou clopidogrel) au long cours pour mes coronaires, et la colchicine à faible dose (0,5 mg/j) est-elle adaptée compte tenu de mes reins ?",
     whyItMattersFr:
-      "Les essais négatifs de statines dans l'IC ne remettent pas en cause une statine indiquée pour une coronaropathie ; la colchicine (Classe IIa ESC 2024) comporte des limites rénales et d'interactions.",
-    sources: ['ESC 2024 SCC', 'CORONA (2007)', 'Méta-analyse colchicine (2025)'],
+      "Les essais négatifs de statines dans l'IC ne remettent pas en cause une statine indiquée pour une coronaropathie : CORONA n'a inclus que des patients jugés ne pas en avoir besoin, et GISSI-HF a exclu ceux déjà sous statine ; la colchicine (Classe IIa ESC 2024) comporte des limites rénales et d'interactions.",
+    sources: ['ESC 2024 SCC', 'CORONA (2007)', 'GISSI-HF (2008)', 'Méta-analyse colchicine (2025)'],
+    articleSlug: 'cholesterol-et-prevention-secondaire',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_lipid_statin_intensity',
+    interlocutor: 'cardiologist',
+    topicFr: 'Cholestérol et prévention secondaire',
+    questionFr:
+      "Quelle intensité de statine est adaptée à mon cas : la dose de haute intensité recommandée pour la maladie coronaire, ou la dose d'intensité modérée admise par les recommandations américaines dans l'ICFER ischémique ?",
+    whyItMattersFr:
+      "Les recommandations américaines ACC/AHA 2026 recommandent une statine de haute intensité dans la maladie artérielle (COR 1) tout en indiquant séparément qu'une intensité modérée « peut être raisonnable » dans l'ICFER d'origine coronaire (COR 2b), sans expliquer comment concilier les deux.",
+    sources: ['Recommandations ACC/AHA dyslipidémies (2026)', 'ESC/EAS 2019 & 2025'],
+    articleSlug: 'cholesterol-et-prevention-secondaire',
+    relevantModules: ['core'],
+    triggeredByRules: ['LDL_TARGET_GAP'],
+  },
+  {
+    id: 'q_lipid_statin_interactions',
+    interlocutor: 'pharmacist',
+    topicFr: 'Cholestérol et prévention secondaire',
+    questionFr:
+      'Certains de mes médicaments cardiaques limitent-ils la dose maximale de ma statine ou imposent-ils une surveillance musculaire particulière ?',
+    whyItMattersFr:
+      "L'amiodarone, le diltiazem, le vérapamil, la dronédarone, la ranolazine et le ticagrélor plafonnent la dose de simvastatine (et de lovastatine) ; la colchicine appelle une surveillance musculaire plus attentive avec toute statine.",
+    sources: ['Recommandations ACC/AHA dyslipidémies (2026)'],
     articleSlug: 'cholesterol-et-prevention-secondaire',
     relevantModules: ['core'],
   },
@@ -436,10 +510,10 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     interlocutor: 'cardiologist',
     topicFr: 'Récupération (HFimpEF)',
     questionFr:
-      "Quelle amélioration de ma FEVG est réaliste, dans quel délai, et quels traitements doivent impérativement être poursuivis même si la FEVG remonte ?",
+      "Quelle amélioration de ma FEVG est réaliste, dans quel délai, parleriez-vous d'amélioration, de rémission ou de récupération, et quels traitements et examens de suivi doivent être poursuivis même si la FEVG remonte ?",
     whyItMattersFr:
-      "L'ESC 2026 recommande de poursuivre le traitement de fond après amélioration de la FEVG (Classe I) en raison du risque élevé de rechute observé à l'arrêt (TRED-HF).",
-    sources: ['ESC 2026', 'TRED-HF (2019)'],
+      "L'ESC 2026 recommande de poursuivre le traitement de fond après amélioration (Classe I ; risque de rechute dans TRED-HF) et appelle « rémission » toute FEVG améliorée, alors que la Définition universelle 2026 réserve ce mot à une FEVG revenue à la normale.",
+    sources: ['ESC 2026', 'Définition universelle de l’IC (2026)', 'TRED-HF (2019)'],
     articleSlug: 'insuffisance-cardiaque-fevg-amelioree',
     relevantModules: ['core', 'hfImpEf'],
     triggeredByRules: ['HFIMPEF_CONTINUE'],
@@ -498,7 +572,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     triggeredByRules: ['VACCINES_ANNUAL'],
   },
 
-  // --- Alimentation, compléments et pharmacien ---
+  // --- Alimentation, poids, vitamine D, compléments et pharmacien ---
   {
     id: 'q_diet_salt_and_fluid',
     interlocutor: 'cardiologist',
@@ -567,13 +641,62 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     interlocutor: 'gp',
     topicFr: 'Poids et régimes',
     questionFr:
-      'Est-il sûr pour moi de perdre du poids (ou dois-je surveiller une perte de poids involontaire), et quels régimes dois-je éviter avec mes médicaments ?',
+      'Est-il sûr pour moi de perdre du poids (ou dois-je surveiller une perte de poids involontaire), comment préserver ma masse musculaire, et quels régimes dois-je éviter avec mes médicaments ?',
     whyItMattersFr:
-      "Les régimes cétogènes ou très hypocaloriques favorisent l'acidocétose sous iSGLT2 ; à l'inverse, une perte de poids involontaire doit faire rechercher une dénutrition ou une cachexie cardiaque.",
-    sources: ['RCP dapagliflozine', 'ESC 2026'],
+      "Les régimes cétogènes ou très hypocaloriques sont des facteurs d'acidocétose sous iSGLT2 (dans Moseley 2025, seuls 2 patients sur 125 prenaient un iSGLT2 sans mesure des cétones, ne prouvant aucune sécurité). La HFA 2025 conseille de perdre du poids en préservant le muscle (protéines suffisantes et exercice), et une perte involontaire doit faire rechercher une dénutrition.",
+    sources: ['RCP dapagliflozine', 'Moseley (2025)', 'Déclaration HFA obésité (2025)'],
     articleSlug: 'poids-obesite-et-denutrition',
     relevantModules: ['core', 'diabetes'],
     triggeredByRules: ['UNPLANNED_WEIGHT_LOSS', 'SGLT2_KETO_REMINDER'],
+  },
+  {
+    id: 'q_diet_bmi_waist_glp1',
+    interlocutor: 'cardiologist',
+    topicFr: 'Poids, obésité et traitements',
+    questionFr:
+      "Mon poids doit-il être jugé sur l'IMC seul ou aussi sur le tour de taille ? En cas d'obésité, un traitement de perte de poids comme le sémaglutide ou le tirzépatide aiderait-il ou nuirait-il à mon cœur ?",
+    whyItMattersFr:
+      "La HFA 2025 propose d'ajouter le rapport tour de taille / taille à l'IMC. Les bénéfices cardiaques de ces molécules ne sont prouvés que dans l'IC à FEVG préservée (SUMMIT : HR 0,62) ; dans l'ICFER, les données sont limitées et mitigées (LIVE : 12 événements cardiaques graves contre 3 sous liraglutide) et leur sécurité reste débattue.",
+    sources: ['Déclaration HFA obésité (2025)'],
+    articleSlug: 'poids-obesite-et-denutrition',
+    relevantModules: ['core', 'diabetes'],
+  },
+  {
+    id: 'q_diet_malnutrition_screening',
+    interlocutor: 'gp',
+    topicFr: 'Dénutrition et perte musculaire',
+    questionFr:
+      'Ai-je été dépisté(e) pour une dénutrition ou une perte musculaire ? Si un score a été calculé, tenait-il compte de mon taux de cholestérol ?',
+    whyItMattersFr:
+      "Le score CONUT attribue des points à un cholestérol bas : une statine peut ainsi classer à tort une personne bien alimentée comme dénutrie, tout en manquant des patients mangeant moins. Le court questionnaire MNA-SF (appétit et évolution du poids) s'est révélé le plus performant dans l'étude Kinugasa (150 patients ambulatoires).",
+    sources: ['Kinugasa (2022)'],
+    articleSlug: 'poids-obesite-et-denutrition',
+    relevantModules: ['core'],
+    triggeredByRules: ['UNPLANNED_WEIGHT_LOSS'],
+  },
+  {
+    id: 'q_diet_vitamin_d',
+    interlocutor: 'gp',
+    topicFr: 'Vitamine D et compléments',
+    questionFr:
+      'Mon taux de vitamine D doit-il être dosé avant toute supplémentation, plutôt que de prendre un complément « par précaution » ?',
+    whyItMattersFr:
+      "Une vitamine D basse est fréquente dans l'ICFER (56–83 %), mais la supplémentation systématique n'a pas réduit les hospitalisations ni les décès dans les essais (et une synthèse a relevé une distance de marche inférieure d'environ 39 m). Une revue de 2025 conseille de corriger uniquement une carence avérée.",
+    sources: ['Kampka (2025)', 'Chua (2025)'],
+    articleSlug: 'vitamine-d-insuffisance-cardiaque',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_diet_herbs_taichi',
+    interlocutor: 'pharmacist',
+    topicFr: 'Plantes médicinales et Tai-Chi',
+    questionFr:
+      "On m'a proposé un produit à base de plantes médicinales ou du Tai-Chi : l'un ou l'autre est-il utile, et les plantes risquent-elles d'interagir avec mon ordonnance ?",
+    whyItMattersFr:
+      "Une revue parapluie (Chua 2025) retrouve un niveau de certitude modéré en faveur du Tai-Chi sur les hospitalisations (RR 0,47 sur 3 petits essais). Les produits à base de plantes reposent surtout sur de petits essais chinois et comportent des risques d'interactions ou de toxicité (ginseng, danshen avec anticoagulants, racine d'aconit cardiotoxique, Pueraria augmentant le potassium).",
+    sources: ['Revue parapluie Chua (2025)', 'Déclaration scientifique AHA (2022)'],
+    articleSlug: 'interactions-complements-aliments-medicaments',
+    relevantModules: ['core'],
   },
   {
     id: 'q_diet_dietitian',
@@ -750,6 +873,18 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     articleSlug: 'maladies-associees',
     relevantModules: ['core'],
   },
+  {
+    id: 'q_comorb_diabetes_meds_hba1c',
+    interlocutor: 'cardiologist',
+    topicFr: 'Maladies associées (diabète)',
+    questionFr:
+      "Si j'ai un diabète, mes antidiabétiques sont-ils bien adaptés à mon cœur, et quel objectif d'HbA1c dois-je viser ?",
+    whyItMattersFr:
+      "Le consensus ADA 2022 attend un iSGLT2 chez tout patient diabétique avec IC symptomatique, déconseille les inhibiteurs de la DPP-4 (saxagliptine associée à plus d'hospitalisations) et les glitazones, et appelle à la prudence avec sulfamides et insuline ; dans les données observationnelles, la mortalité dans l'IC était la plus basse autour de 7–8 % d'HbA1c.",
+    sources: ['Consensus ADA insuffisance cardiaque et diabète (2022)'],
+    articleSlug: 'maladies-associees',
+    relevantModules: ['diabetes'],
+  },
 
   // --- Tension artérielle ---
   {
@@ -759,8 +894,8 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Visez-vous une cible précise de tension artérielle, ou la priorité est-elle d'atteindre les doses cibles des médicaments de l'insuffisance cardiaque tant que je les tolère ?",
     whyItMattersFr:
-      "Aucune cible tensionnelle stricte n'a été testée par essai randomisé dans l'ICFER établie (SPRINT a exclu les FEVG < 35 %), et une tension basse bien tolérée est souvent acceptée.",
-    sources: ['ESC 2026', 'SPRINT (2015)', 'Cautela (2020)'],
+      "Aucune cible tensionnelle stricte n'a été testée par essai randomisé dans l'ICFER établie (SPRINT a exclu les FEVG < 35 %). Dans de grandes cohortes d'essais, une systolique restant ≤ 120 mmHg est associée à un pronostic moins bon, mais cela reflète probablement un cœur plus faible plutôt qu'un effet nocif de la pression elle-même.",
+    sources: ['ESC 2026', 'SPRINT (2015)', 'Li (2025)', 'Seidu (2024)'],
     articleSlug: 'tension-arterielle-insuffisance-cardiaque',
     relevantModules: ['core'],
     triggeredByRules: ['LOW_BP_ASYMPTOMATIC'],
@@ -785,7 +920,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Que faire si ma tension est basse avec des vertiges ou étourdissements, et quel médicament ajusteriez-vous en premier ?",
     whyItMattersFr:
-      "Les consensus européens (Cautela 2020 ; Skouri 2025) décrivent un ordre précis d'ajustement pour soulager les symptômes sans sacrifier inutilement les piliers protecteurs.",
+      "Une tension basse sans symptôme est souvent acceptée ; le consensus HFA 2025 (Skouri 2025) suggère de ne réduire les médicaments de l'IC qu'en dessous d'une systolique d'environ 80 mmHg ou de symptômes marqués, en arrêtant d'abord les autres traitements hypotenseurs.",
     sources: ['Cautela (2020)', 'Consensus HFA Skouri (2025)'],
     articleSlug: 'tension-arterielle-insuffisance-cardiaque',
     relevantModules: ['core'],
@@ -820,6 +955,31 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     triggeredByRules: ['STAGE_B_CONTEXT'],
   },
   {
+    id: 'q_stage_universal_definition_ef',
+    interlocutor: 'cardiologist',
+    topicFr: 'Stade et définition de la maladie',
+    questionFr:
+      'Mes comptes rendus indiquent « FEVG réduite » : avec la nouvelle Définition universelle 2026 qui ne fixe plus de seuil chiffré de FEVG, cela change-t-il mon diagnostic ou mon traitement ?',
+    whyItMattersFr:
+      "La Définition universelle 2026 est un texte de terminologie ; les seuils qui orientent les traitements proviennent toujours des recommandations cliniques (l'ESC 2026 utilise une FEVG < 50 %).",
+    sources: ['Définition universelle de l’IC (2026)', 'ESC 2026'],
+    articleSlug: 'fraction-dejection',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_cause_breathlessness_ischaemia_vs_hf',
+    interlocutor: 'cardiologist',
+    topicFr: 'Symptômes : ischémie ou insuffisance cardiaque',
+    questionFr:
+      "Lorsque mon essoufflement s'accentue, comment savoir s'il s'agit de ma maladie coronaire (ischémie) ou d'une aggravation de mon insuffisance cardiaque, et quels examens utiliseriez-vous ?",
+    whyItMattersFr:
+      "La Définition universelle 2026 souligne que l'ischémie coronaire peut mimer une insuffisance cardiaque : 10 % à 15 % des personnes atteintes d'un syndrome coronarien chronique ne présentent qu'un essoufflement.",
+    sources: ['Définition universelle de l’IC (2026)'],
+    articleSlug: 'cardiomyopathie-ischemique',
+    relevantModules: ['core'],
+    triggeredByRules: ['EPOF_WORSENING'],
+  },
+  {
     id: 'q_cause_dual_pathology_and_mri',
     interlocutor: 'cardiologist',
     topicFr: 'Confirmation de la cause',
@@ -852,8 +1012,8 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Pourrais-je avoir une apnée du sommeil, et un enregistrement nocturne (polygraphie ou polysomnographie) est-il indiqué même sans somnolence marquée ?",
     whyItMattersFr:
-      "Plus d'un tiers des personnes vivant avec une insuffisance cardiaque ont des troubles respiratoires du sommeil, souvent sans somnolence diurne typique.",
-    sources: ['Recommandations ESC 2026 (sommeil)'],
+      "Plus d'un tiers des personnes vivant avec une insuffisance cardiaque ont des troubles respiratoires du sommeil, souvent sans somnolence diurne ; un score de somnolence bas ou un questionnaire normal n'élimine pas l'apnée du sommeil (AHA 2021).",
+    sources: ['Recommandations ESC 2026 (sommeil)', 'Déclaration AHA apnée du sommeil (2021)'],
     articleSlug: 'apnee-du-sommeil-insuffisance-cardiaque',
     relevantModules: ['core', 'sleepApnoea'],
     triggeredByRules: ['CSA_ASV_CONTRAINDICATION'],
@@ -865,8 +1025,8 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Mon apnée du sommeil est-elle surtout obstructive (SAOS) ou centrale (SACS), et quel appareil (PPC/CPAP vs évitement de l'ASV) est sûr avec ma FEVG ?",
     whyItMattersFr:
-      "Dans SERVE-HF, la servo-ventilation adaptative (ASV) a augmenté la mortalité dans l'ICFER avec apnée surtout centrale et est contre-indiquée (ESC Classe III). La PPC soulage les symptômes du SAOS.",
-    sources: ['SERVE-HF (2015)', 'SAVE CPAP (2016)', 'ESC 2026'],
+      "Dans SERVE-HF, la servo-ventilation adaptative (ASV) a augmenté la mortalité dans l'ICFER avec apnée surtout centrale et est contre-indiquée (ESC Classe III). La PPC améliore somnolence et qualité de vie sans preuve de réduction des événements cardiaques (SAVE a exclu les symptômes d'IC modérés à sévères), et seul un enregistrement du sommeil distingue SACS et SAOS.",
+    sources: ['SERVE-HF (2015)', 'SAVE CPAP (2016)', 'Déclaration AHA (2021)', 'ESC 2026'],
     articleSlug: 'apnee-du-sommeil-insuffisance-cardiaque',
     relevantModules: ['sleepApnoea'],
     triggeredByRules: ['CSA_ASV_CONTRAINDICATION'],

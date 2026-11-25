@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/supplement-and-food-drug-interactions.md',
   titleFr: 'Interactions entre compléments, aliments et médicaments cardiaques',
   category: 'nutrition',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -30,6 +30,7 @@ export const article: WikiArticle = {
     'danshen',
     'extrait-thé-vert',
     'digoxine',
+    'phytothérapie-chinoise',
   ],
   aliases: [
     'Produits à éviter',
@@ -51,14 +52,17 @@ export const article: WikiArticle = {
     'Extrait de thé vert',
     'EGCG',
     'Qiliqiangxin',
+    'Phytothérapie chinoise',
+    'Qishen Yiqi',
+    'Pueraria',
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "« Naturel » ou « en vente libre » ne signifie pas sans danger avec des médicaments de l'insuffisance cardiaque. Les risques les mieux documentés concernent les substituts de sel au potassium et comprimés de potassium (hyperkaliémie sous ARNI/IEC/ARA2 et ARM), les anti-inflammatoires AINS (atteinte rénale et rétention d'eau), les régimes cétogènes ou jeûnes prolongés sous iSGLT2 (acidocétose), certaines vitamines à risque (vitamine E, bêta-carotène, calcium + vitamine D en automédication), les fortes doses d'huile de poisson (fibrillation atriale) et plusieurs plantes ou aliments courants (réglisse véritable, millepertuis, levure de riz rouge, pamplemousse avec certaines statines, ginseng, danshen, extrait concentré de thé vert, ginkgo et compléments d'ail). Cette page concerne les produits pris de votre propre initiative : n'arrêtez jamais un médicament prescrit (comme l'aspirine à faible dose) sans l'avis de votre médecin ou de votre pharmacien.",
+    "« Naturel » ou « en vente libre » ne signifie pas sans danger avec des médicaments de l'insuffisance cardiaque. Les risques les mieux documentés concernent les substituts de sel au potassium et comprimés de potassium (hyperkaliémie sous ARNI/IEC/ARA2 et ARM), les anti-inflammatoires AINS (atteinte rénale et rétention d'eau), les régimes cétogènes ou jeûnes prolongés sous iSGLT2 (acidocétose), certaines vitamines à risque (vitamine E, bêta-carotène, calcium + vitamine D en automédication), les fortes doses d'huile de poisson (fibrillation atriale) et plusieurs plantes ou aliments courants (réglisse véritable, millepertuis, levure de riz rouge, pamplemousse avec certaines statines, ginseng, danshen, extrait concentré de thé vert, formules de phytothérapie chinoise, ginkgo et compléments d'ail). Cette page concerne les produits pris de votre propre initiative : n'arrêtez jamais un médicament prescrit (comme l'aspirine à faible dose) sans l'avis de votre médecin ou de votre pharmacien.",
   sections: [
     {
       headingFr: '1. Potassium : substituts de sel, comprimés et apports concentrés',
-      bodyMarkdownFr: `**Qui est exposé :** toute personne prenant un **ARNI** (sacubitril/valsartan — Entresto), un **IEC**, un **ARA2**, et/ou un **ARM** (spironolactone — Aldactone, éplérénone — Inspra). Ces classes médicamenteuses réduisent l'élimination rénale du potassium.
+      bodyMarkdownFr: `**Qui est exposé :** toute personne prenant un **ARNI** (sacubitril/valsartan — *Entresto*), un **IEC**, un **ARA2**, et/ou un **ARM** (spironolactone — *Aldactone*, éplérénone — *Inspra*). Ces classes médicamenteuses réduisent l'élimination rénale du potassium.
 
 **Ce que montrent les données :**
 - **Notice des médicaments :** la notice du sacubitril/valsartan cite les compléments de potassium et les substituts de sel contenant du potassium au même titre que les diurétiques épargneurs de potassium parmi les causes d'hyperkaliémie ; elle mentionne aussi un régime très riche en potassium comme facteur de risque et demande un suivi régulier de la kaliémie.
@@ -72,12 +76,13 @@ export const article: WikiArticle = {
 
 **Pourquoi ils posent problème :**
 - **Recommandations ESC 2026 :** les AINS et inhibiteurs de la COX-2 sont **non recommandés** dans l'insuffisance cardiaque (**Classe III, niveau B2**), car ils augmentent le risque d'aggravation et d'hospitalisation pour insuffisance cardiaque, peuvent déclencher une décompensation et altérer la fonction rénale.
-- **Avec le sacubitril/valsartan (Entresto) et les IEC/ARA2 :** ils peuvent dégrader la fonction rénale jusqu'à l'insuffisance rénale aiguë, en particulier chez les personnes âgées, sous diurétiques ou ayant déjà une atteinte rénale.
-- **Mécanisme supplémentaire :** les AINS favorisent la rétention de sel et d'eau et réduisent l'efficacité des diurétiques de l'anse (furosémide — Lasilix, bumétanide — Burinex). Demandez toujours à votre médecin traitant ou votre pharmacien quels antalgiques vous sont autorisés.`,
+- **Avec le sacubitril/valsartan (*Entresto*) et les IEC/ARA2 :** ils peuvent dégrader la fonction rénale jusqu'à l'insuffisance rénale aiguë, en particulier chez les personnes âgées, sous diurétiques ou ayant déjà une atteinte rénale.
+- **Mécanisme supplémentaire :** les AINS favorisent la rétention de sel et d'eau et réduisent l'efficacité des diurétiques de l'anse (furosémide — *Lasilix*, bumétanide — *Burinex*).
+- **Consensus européen Abdin (2025, *EJHF*) :** le risque augmente avec la dose, semblant le plus élevé avec le diclofénac, l'indométacine et le piroxicam dans une étude, et le célécoxib augmentait également le risque à forte dose (données observationnelles). Les alternatives évoquées sont le **paracétamol** ou les **AINS en gel ou crème** appliqués sur la peau (ce consensus ne couvre pas les plantes ; d'autres médicaments sur ordonnance pouvant aggraver l'IC sont détaillés dans la fiche sur les effets secondaires et le suivi). Demandez toujours à votre médecin traitant ou votre pharmacien quels antalgiques vous sont autorisés.`,
     },
     {
       headingFr: '3. Régimes cétogènes, jeûnes prolongés et iSGLT2',
-      bodyMarkdownFr: `**L'alerte officielle :** la notice de la dapagliflozine (Forxiga) cite parmi les facteurs déclenchants d'**acidocétose** :
+      bodyMarkdownFr: `**L'alerte officielle :** la notice de la dapagliflozine (*Forxiga*) cite parmi les facteurs déclenchants d'**acidocétose** :
 - un régime cétogène ;
 - une réduction importante des apports caloriques ;
 - une infection ou maladie aiguë ;
@@ -95,13 +100,13 @@ L'acidocétose sous iSGLT2 peut survenir avec une glycémie presque normale (« 
       headingFr: '4. Compléments présentant des signaux d’effets délétères',
       bodyMarkdownFr: `| Produit | Constat principal | Source |
 |---|---|---|
-| **Vitamine E (forte dose)** | Davantage d'hospitalisations pour IC (RR 1,21, certitude modérée) ; déconseillée par l'USPSTF en prévention CV | Khan 2021 ; USPSTF 2022 |
+| **Vitamine E (forte dose)** | Davantage d'hospitalisations pour IC (RR 1,21, certitude modérée, 2 grands essais totalisant 17 956 personnes dont les populations ne sont pas précisées, donc pas nécessairement des patients IC) ; déconseillée par l'USPSTF en prévention CV | Khan 2021 (texte intégral) ; USPSTF 2022 |
 | **Bêta-carotène** | Mortalité totale (RR 1,10) et cardiovasculaire (RR 1,12) plus élevées ; déconseillé par l'USPSTF | An 2022 ; USPSTF 2022 |
 | **Calcium + vitamine D (automédication)** | Risque accru d'AVC (RR 1,17, certitude modérée) | Khan 2019 |
 | **Oméga-3 à forte dose** | Risque de fibrillation atriale augmenté d'environ 49 % au-dessus de 1 g/j | Gencer 2021 |
 | **Aubépine** | Preuves contradictoires ; risque possible d'aggravation de l'IC | AHA 2022 |
 | **Muguet, actée bleue (blue cohosh)** | Produits toxiques ; interactions du muguet avec la digoxine, hypokaliémie et troubles du rythme | AHA 2022 |
-| **Vitamine D seule** | Aucun bénéfice démontré ; interactions possibles avec digoxine, inhibiteurs calciques et diurétiques | AHA 2022 |`,
+| **Vitamine D seule** | Aucun bénéfice démontré ; interactions possibles avec digoxine, inhibiteurs calciques et diurétiques (voir la fiche *Vitamine D et insuffisance cardiaque*) | AHA 2022 |`,
     },
     {
       headingFr: '5. Plantes médicinales et aliments à surveiller',
@@ -116,9 +121,9 @@ L'acidocétose sous iSGLT2 peut survenir avec une glycémie presque normale (« 
 
 | Médicament | Position des sources officielles |
 |---|---|
-| **Ivabradine (Procoralan)** | Notice : à éviter (comme le jus de pamplemousse) |
-| **Apixaban (Eliquis)** | Notice : à éviter (diminue les concentrations d'apixaban) |
-| **Digoxine, warfarine (Coumadine), simvastatine** | NIH : médicaments cardiaques dont l'effet peut être diminué |
+| **Ivabradine (*Procoralan*)** | Notice : à éviter (comme le jus de pamplemousse) |
+| **Apixaban (*Eliquis*)** | Notice : à éviter (diminue les concentrations d'apixaban) |
+| **Digoxine, warfarine (*Coumadine*), simvastatine** | NIH : médicaments cardiaques dont l'effet peut être diminué |
 
 - **Avec les antidépresseurs :** l'association expose à un syndrome sérotoninergique grave. Comme la baisse de moral est fréquente dans l'IC, le millepertuis est souvent acheté sans ordonnance : parlez toujours de votre moral à votre médecin plutôt que de débuter du millepertuis. D'autres médicaments cardiaques (autres AOD, ticagrélor, éplérénone, autres statines) n'étaient pas confirmés dans les sources lues, mais leur absence de cette liste ne garantit pas leur innocuité.
 
@@ -129,9 +134,9 @@ L'acidocétose sous iSGLT2 peut survenir avec une glycémie presque normale (« 
 ### Jus de pamplemousse et statines / ivabradine
 - Le pamplemousse bloque l'enzyme intestinale CYP3A4 et augmente les taux sanguins de certains médicaments :
   - **Simvastatine :** la notice conseille d'éviter le jus de pamplemousse (risque musculaire accru) ;
-  - **Atorvastatine (Tahor) :** éviter les grandes quantités (> 1,2 L/j selon la notice) ;
-  - **Rosuvastatine (Crestor) :** aucun avertissement pamplemousse sur la notice (voie CYP3A4 mineure) ;
-  - **Ivabradine (Procoralan) :** jus de pamplemousse également déconseillé sur la notice.
+  - **Atorvastatine (*Tahor*) :** éviter les grandes quantités (> 1,2 L/j selon la notice) ;
+  - **Rosuvastatine (*Crestor*) :** aucun avertissement pamplemousse sur la notice (voie CYP3A4 mineure) ;
+  - **Ivabradine (*Procoralan*) :** jus de pamplemousse également déconseillé sur la notice.
 
 ### Ginseng
 - Plusieurs plantes distinctes sont vendues sous ce nom : ginseng asiatique ou rouge de Corée (*Panax ginseng*), ginseng américain (*Panax quinquefolius*) et « ginseng sibérien » (éleuthérocoque).
@@ -156,12 +161,24 @@ L'acidocétose sous iSGLT2 peut survenir avec une glycémie presque normale (« 
 Les bêtabloquants utilisés dans l'IC (bisoprolol, carvédilol, nébivolol) et les ARNI n'ont pas été étudiés.
 - **Toxicité hépatique et tension :** l'EFSA a identifié un risque d'atteinte hépatique dès **800 mg/j d'EGCG** sans pouvoir définir de dose totalement sûre ; le règlement UE 2022/2340 plafonne les compléments sous 800 mg/j et interdit la prise à jeun ou cumulée. Dans une revue américaine de 75 cas, des hépatites sont survenues entre 140 et 1 000 mg/j (et 3 patients sur 40 dans le registre américain ont nécessité une greffe hépatique). Le NIH signale aussi que ces extraits peuvent augmenter la pression artérielle, d'autant qu'ils contiennent souvent de la caféine ou d'autres stimulants.
 
-### Note sur l’essai QUEST (Qiliqiangxin)
-L'essai **QUEST** (3 110 patients chinois avec ICFER, ~74 % ischémiques, *Nature Medicine* 2024) a montré qu'une formule chinoise sur prescription associant 11 plantes (dont ginseng, danshen et aconit préparé) réduisait le critère composite décès CV ou hospitalisation IC (25,0 % contre 30,0 %, HR 0,78), sans baisse significative de la mortalité toutes causes. Peu de patients prenaient un iSGLT2 (< 10 %) et l'essai était financé par le fabricant : cela ne valide en aucun cas les gélules de ginseng ou de danshen achetées dans le commerce, et cette formule ne figure dans aucune recommandation européenne ou américaine.`,
+### Note sur l’essai QUEST (Qiliqiangxin) et autres formules de phytothérapie chinoise
+- **QUEST (*Nature Medicine* 2024) :** chez 3 110 patients chinois atteints d'ICFER (~74 % ischémiques), une formule chinoise sur prescription associant 11 plantes (dont ginseng, danshen et racine d'aconit préparée) a réduit le critère composite décès CV ou hospitalisation IC (25,0 % contre 30,0 %, HR 0,78), sans baisse significative de la mortalité toutes causes. Peu de patients prenaient un iSGLT2 (< 10 %) et l'essai était financé par le fabricant : cela ne valide jamais les gélules de ginseng ou de danshen du commerce, et cette formule est absente des recommandations européennes et américaines.
+- **Revue parapluie Chua (2025) :** elle regroupe des revues portant sur de nombreuses préparations de phytothérapie chinoise dans l'IC chronique, issues majoritairement de petits essais chinois de faible qualité. Ses auteurs mettent en garde contre un contrôle qualité variable, une réglementation limitée, une sous-déclaration des effets indésirables et des interactions plantes-médicaments mal caractérisées :
+
+| Produit | Signaux rapportés | Pourquoi cela compte avec vos traitements |
+|---|---|---|
+| **Préparations à base de *Pueraria* (Gegen)** (essais ICFER) | Hyperkaliémie citée parmi les réactions (taux global d'effets indésirables inférieur aux soins usuels : 6,5 % contre 12,6 %) | La kaliémie tend déjà à monter sous ARNI, IEC, ARA2 et ARM |
+| **Pilules Qishen Yiqi** (astragale, danshen, notoginseng) | Hypotension, vertiges, céphalées, nausées | S'ajoute à l'effet hypotenseur des médicaments de l'IC |
+| **Gélules Qili Qiangxin** (ginseng, danshen, racine d'aconit préparée, écorce de *Periploca*) | Moins d'effets indésirables que le témoin dans les revues | Contient ginseng et danshen (même formule que QUEST) |
+| **Pilule Shexiangbaoxin** (ginseng, venin de crapaud) | Effets indésirables non rapportés dans le résumé | Contient du ginseng |
+| **Injections de plantes** (Shenfu, Shen Mai et autres) | Jusqu'à 21 % d'effets indésirables avec Shenfu contre 7,3 % sous traitement usuel seul (perturbations hépatiques/rénales, hypotension, palpitations) | Perfusions hospitalières en Chine, indisponibles ailleurs |
+
+- **Ingrédients cardioactifs :** la racine d'aconit préparée, l'écorce de *Periploca* et le venin de crapaud agissent directement sur le cœur (remarque pharmacologique ajoutée en complément de la revue, qui ne les discute pas) : cela justifie de faire vérifier toute formule de ce type par votre cardiologue et votre pharmacien, surtout en cas de traitement par digoxine ou antiarythmiques.
+- **Revendications de bénéfice :** seul Qishen Yiqi présentait un signal de certitude modérée de baisse de mortalité (**OR 0,43** ; 9 essais, 1 679 patients IC coronariens, produit d'un seul fabricant en Chine). Aucun de ces produits ne figure dans les recommandations ESC, américaines ou britanniques.`,
     },
     {
       headingFr: '6. Risque de saignement avec l’aspirine, les antiagrégants ou les anticoagulants',
-      bodyMarkdownFr: `De nombreux patients ayant une cardiopathie ischémique prennent de l'aspirine, parfois un second antiagrégant (clopidogrel — Plavix, ticagrélor — Brilique) ou un anticoagulant. Le niveau de preuve sur le surrisque hémorragique varie beaucoup d'un complément à l'autre :
+      bodyMarkdownFr: `De nombreux patients ayant une cardiopathie ischémique prennent de l'aspirine, parfois un second antiagrégant (clopidogrel — *Plavix*, ticagrélor — *Brilique*) ou un anticoagulant. Le niveau de preuve sur le surrisque hémorragique varie beaucoup d'un complément à l'autre :
 
 | Produit | Ce que montrent les données | Position officielle | Solidité |
 |---|---|---|---|
@@ -189,6 +206,7 @@ Des zones d'ombre persistent dans la littérature (boissons énergisantes et sti
     'medicaments-effets-secondaires-suivi',
     'omega-3-huile-de-poisson',
     'coenzyme-q10',
+    'vitamine-d-insuffisance-cardiaque',
     'poids-obesite-et-denutrition',
     'nutrition-et-complements-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
@@ -203,16 +221,16 @@ Des zones d'ombre persistent dans la littérature (boissons énergisantes et sti
       detail: 'Hyperkaliémie et AINS (PARADIGM-HF), acidocétose sous iSGLT2, contre-indications avec millepertuis et pamplemousse.',
     },
     {
-      label: 'Recommandations ESC 2026 et déclaration AHA 2022',
-      detail: 'AINS et COX-2 non recommandés (Classe III, niveau B2) ; plantes à risque et obligation d’information de l’équipe.',
+      label: 'Recommandations ESC 2026, consensus européen Abdin (2025, EJHF) et déclaration AHA 2022',
+      detail: 'AINS et COX-2 non recommandés (Classe III, niveau B2), risque dose-dépendant et alternatives antalgiques (paracétamol, AINS topiques), plantes à risque et obligation d’information.',
     },
     {
       label: 'Monographies EMA, avis EFSA et règlements UE (2022/860, 2022/2340)',
       detail: 'Réglisse (EMA 2026), ginkgo et ail (délais préopératoires), levure de riz rouge (< 3 mg/j), extrait de thé vert (< 800 mg EGCG/j).',
     },
     {
-      label: 'Revues et essais (Cochrane 2022, Khan 2021, An 2022, Gencer 2021, Javaid 2024, Deutch 2019, Nicolussi 2020, QUEST 2024)',
-      detail: 'Données pharmacocinétiques et cliniques sur les substituts de sel, vitamines, ginseng, danshen, thé vert et risque hémorragique.',
+      label: 'Revues, essais et méta-analyses (Cochrane 2022, Khan 2021 texte intégral, An 2022, Gencer 2021, Javaid 2024, Chua 2025, QUEST 2024)',
+      detail: 'Données pharmacocinétiques et cliniques sur les substituts de sel, vitamines, ginseng, danshen, thé vert, formules de phytothérapie chinoise et risque hémorragique.',
     },
   ],
   disclaimerType: 'medical',

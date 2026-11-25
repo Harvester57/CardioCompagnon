@@ -1,6 +1,6 @@
 ---
 name: wiki-article-sync
-description: Author, update, or synchronize the 43 French scientific articles and 5 structured catalogs in src/content/fr/ from allowed wiki/ and output/ sources while preserving clinical fidelity, French localization, and manifest integrity.
+description: Author, update, or synchronize the 44 French scientific articles and 5 structured catalogs in src/content/fr/ from allowed wiki/ and output/ sources while preserving clinical fidelity, French localization, and manifest integrity.
 ---
 
 # Wiki Article Sync & French Content Authoring

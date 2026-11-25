@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/tests-and-numbers.md',
   titleFr: 'Examens et chiffres : NT-proBNP, taille du VG et cicatrice IRM',
   category: 'diagnostic',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -84,6 +84,9 @@ Source : recommandations ESC 2026, tableau 9.
 - **Fonction rénale :** une baisse de la fonction rénale élève le NT-proBNP, mais l'ESC indique que les résultats ne doivent pas être écartés pour autant (ESC 2026).
 - **Ajustements diagnostiques proposés :** le consensus HFA 2023 suggère de relever les seuils ambulatoires de 15 à 35 % en cas d'insuffisance rénale et de 50 % ou 100 % en cas de fibrillation atriale (selon la fréquence cardiaque), et de les abaisser de 25 à 40 % en cas d'obésité, tout en précisant que ces ajustements reposent davantage sur l'avis d'experts que sur des preuves solides.
 - **Valeurs plus basses qu'attendu :** le NICE (NG106) rappelle que l'obésité, une origine africaine ou afro-caribéenne et les traitements de l'insuffisance cardiaque (diurétiques, IEC, ARNI, ARA2, bêtabloquants, ARM) peuvent abaisser les peptides natriurétiques.
+- **Obésité en détail :** la prise de position **HFA 2025 sur l'obésité** explique que le tissu adipeux accélère l'élimination des peptides natriurétiques et que l'insulinorésistance diminue leur production ; un résultat apparemment normal est donc moins rassurant chez une personne en situation d'obésité, et la recherche clinique de rétention d'eau prend davantage d'importance. Ce texte rapporte un seuil d'exclusion **proposé** de NT-proBNP à **50 pg/mL** en ambulatoire pour un **IMC supérieur ou égal à 35 kg/m²**. Ce chiffre est issu de cohortes de recherche sur la FEVG préservée (*HFpEF*), constitue une proposition plutôt qu'un seuil de recommandation, et la numérotation des citations de ce paragraphe dans le document original paraît décalée. L'obésité et la fibrillation atriale agissent en sens opposé et peuvent donc en partie s'annuler (prise de position HFA 2025 sur l'obésité). Le consensus **ADA 2022** sur le diabète note lui aussi que l'obésité abaisse les peptides natriurétiques même lorsque le risque est élevé.
+  - *Point de repère :* ces seuils d'exclusion servent au **diagnostic** de l'insuffisance cardiaque. Ils ne s'appliquent pas chez une personne déjà diagnostiquée, pour laquelle la tendance de ses propres résultats au fil du temps importe davantage.
+- **Dépistage dans le diabète (sans objet une fois l'IC diagnostiquée) :** le consensus **ADA 2022** conseille un dosage au moins annuel de BNP, de NT-proBNP ou de troponine ultrasensible chez les adultes diabétiques, en considérant un NT-proBNP ≥ 125 pg/mL (ou un BNP ≥ 50 pg/mL) comme anormal. Il s'agit d'un avis d'experts s'appuyant sur des essais de dépistage de petite taille (voir *Maladies associées : rein, FA, valves, diabète*).
 - **Valeur pronostique et pilotage du traitement :** des taux plus élevés sont associés à un risque plus grand dans l'insuffisance cardiaque chronique (Brunner-La Rocca 2019). En revanche, les recommandations ESC 2026 indiquent que les essais de traitement guidé par le BNP/NT-proBNP dans l'ICFER ont donné des résultats discordants, et que le dosage systématique pour ajuster les doses de diurétiques n'est pas étayé par les preuves actuelles. Le NICE n'envisage le suivi du NT-proBNP pour optimiser le traitement qu'en milieu spécialisé, chez les personnes de moins de 75 ans avec un DFGe supérieur à 60 mL/min/1,73 m².`,
     },
     {
@@ -207,6 +210,7 @@ L'étude historique de **Kim et al. (NEJM 2000)** a inclus 50 patients (FEVG moy
     'occlusion-coronaire-chronique-cto',
     'thrombus-vg-et-anticoagulants',
     'telesurveillance-insuffisance-cardiaque',
+    'poids-obesite-et-denutrition',
   ],
   sources: [
     { label: 'Recommandations ESC 2026 (peptides natriurétiques, imagerie et section 11.6.1)', detail: "Seuils d'exclusion et seuils liés à l'âge, tableau 9, effet des ARNI, viabilité, IRM comme référence et dosage guidé" },
@@ -220,6 +224,8 @@ L'étude historique de **Kim et al. (NEJM 2000)** a inclus 50 patients (FEVG moy
     { label: 'Kim et al. (NEJM 2000) et Romero et al. (2012)', detail: "Probabilité de récupération segmentaire selon l'épaisseur de cicatrice LGE et méta-analyse IRM" },
     { label: 'McCrohon et al. (2003)', detail: 'Répartition anatomique des cicatrices LGE selon la cause' },
     { label: 'NICE NG106 (2025), AHA, Cleveland Clinic et Heart Failure Matters', detail: "Seuils d'orientation britanniques et ressources patients sur les examens courants" },
+    { label: "Prise de position HFA 2025 sur l'obésité et l'insuffisance cardiaque", detail: "Texte intégral : mécanismes des peptides natriurétiques abaissés dans l'obésité et seuil d'exclusion proposé à 50 pg/mL pour un IMC ≥ 35 kg/m²" },
+    { label: 'Consensus ADA 2022 (diabète et insuffisance cardiaque)', detail: "Texte intégral : dépistage annuel par peptides natriurétiques dans le diabète et baisse des taux en cas d'obésité" },
   ],
   disclaimerType: 'medical',
 };

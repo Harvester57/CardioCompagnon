@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/iron-deficiency-and-iv-iron.md',
   titleFr: 'Carence en fer et fer intraveineux',
   category: 'traitements',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'warm',
   tags: [
@@ -32,7 +32,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "De nombreuses personnes atteintes d'insuffisance cardiaque manquent de fer, même lorsque leur numération sanguine (hémoglobine) est normale. Cette carence aggrave la fatigue et l'essoufflement. Elle se dépiste par une prise de sang (ferritine et coefficient de saturation de la transferrine, ou CST). Lorsqu'elle est confirmée, une perfusion de fer intraveineux en hôpital de jour améliore les symptômes et réduit les hospitalisations pour insuffisance cardiaque d'environ un cinquième à un quart, sans effet démontré sur la mortalité. En revanche, les comprimés de fer par voie orale ne sont pas efficaces dans l'ICFER. Le fer intraveineux est un traitement médical prescrit sur bilan biologique, et non un complément à acheter librement.",
+    "De nombreuses personnes atteintes d'insuffisance cardiaque manquent de fer, même lorsque leur numération sanguine (hémoglobine) est normale. Cette carence aggrave la fatigue et l'essoufflement. Elle se dépiste par une prise de sang (ferritine et coefficient de saturation de la transferrine, ou CST). Lorsqu'elle est confirmée, une perfusion de fer intraveineux en hôpital de jour améliore les symptômes et réduit les hospitalisations pour insuffisance cardiaque d'environ un cinquième à un quart, sans effet démontré sur la mortalité. En revanche, les comprimés de fer par voie orale ne reconstituent quasiment pas les réserves et ne sont pas efficaces dans l'ICFER. Le fer intraveineux est un traitement médical prescrit sur bilan biologique, et non un complément à acheter librement.",
   sections: [
     {
       headingFr: 'Comment définit-on la carence en fer ?',
@@ -57,11 +57,20 @@ export const article: WikiArticle = {
 - L'effet ne variait pas entre insuffisance cardiaque **ischémique et non ischémique**, ni selon la fonction rénale, le taux d'hémoglobine ou les valeurs martiales de départ.
 - **Sexe :** les femmes semblaient bénéficier moins que les hommes (**RR 0,98 contre 0,76**) ; les auteurs indiquent que cela pourrait relever du hasard, même si FAIR-HF2 a retrouvé une tendance similaire.
 
-### FAIR-HF2 (2025) : l'essai le plus proche de la cardiomyopathie ischémique
+### FAIR-HF2 (JAMA, 2025) : l'essai le plus proche de la cardiomyopathie ischémique
 
-- **1 105 patients** carencés en fer avec FEVG ≤ 45 %, dont **78 % d'ICFER ischémique**.
-- Les perfusions répétées de carboxymaltose ferrique ont réduit le décès CV ou la première hospitalisation pour IC d'environ **21 %** (**HR 0,79** ; IC 0,63–0,99 ; p = 0,04). L'essai testant simultanément trois critères principaux, ce résultat a manqué de peu le seuil formel de significativité corrigé pour la multiplicité.
-- Seuls **24 %** des participants recevaient un iSGLT2 (classe qui modifie elle-même les paramètres du fer) : l'ampleur exacte du bénéfice additionnel au-dessus des quatre piliers complets reste donc moins certaine.
+- **Population :** **1 105 patients** carencés en fer avec **FEVG ≤ 45 %** (dont quelques-uns entre 41 et 45 %) dans 70 centres européens ; âge moyen **70 ans**, majoritairement NYHA II-III ; **78 %** avaient une cardiomyopathie ischémique et **47 %** un antécédent d'infarctus du myocarde. Suivi médian de **16,6 mois**.
+- **Schéma d'administration :** jusqu'à **2 000 mg** de carboxymaltose ferrique à l'initiation (en deux visites), puis **500 mg tous les 4 mois** sauf si les réserves en fer étaient déjà élevées ; le placebo était du sérum physiologique.
+- **Trois critères principaux :**
+  - Décès cardiovasculaire ou 1re hospitalisation pour IC : **141 contre 166 patients**, **HR 0,79** (IC 0,63–0,99), p = 0,04 ;
+  - Total des hospitalisations pour IC : **264 contre 320**, **RR 0,80** (IC 0,60–1,06), non significatif ;
+  - Décès CV ou 1re hospitalisation pour IC chez les patients avec CST < 20 % : **HR 0,79** (IC 0,61–1,02), non significatif.
+- **Pourquoi HR 0,79 ne compte pas comme un succès formel :** avec trois critères principaux simultanés, la règle statistique préspécifiée (**Hochberg**) exigeait soit les trois à p ≤ 0,05, soit deux à p ≤ 0,025, soit un à p ≤ 0,0167. Aucune de ces conditions n'étant atteinte, l'essai est **formellement neutre**, même si l'ampleur de l'effet correspond aux essais antérieurs.
+- **Modification du critère principal en cours d'essai :** le critère unique d'origine (total des hospitalisations IC + décès CV) a été remplacé par ces trois critères en **mars 2024**, alors que les données restaient en aveugle, en raison des perturbations liées au COVID-19 et d'incertitudes sur les doses réellement reçues. L'ancien critère, devenu exploratoire, affichait un **RR de 0,76** (IC 0,59–0,98). Environ un tiers des participants (**34 % contre 38 %**) ont arrêté le traitement précocement, réduisant la puissance statistique.
+- **Mortalité :** mortalité toutes causes **HR 0,94** (IC 0,72–1,24) ; mortalité cardiovasculaire environ **HR 0,80** (IC 0,55–1,14) ; aucune n'est significative.
+- **Tolérance :** événements indésirables graves **48,2 % contre 49,9 %**. L'article principal ne rapporte pas les effets spécifiques du fer tels que l'hypophosphatémie.
+- **Sous-groupe ischémique :** estimation à **0,86** (IC 0,62–1,20) chez les patients ischémiques contre **0,57** (IC 0,35–0,94) chez les non ischémiques ; aucun test d'interaction n'est publié et les auteurs ne relèvent pas de différence significative entre sous-groupes (tout comme la méta-analyse poolée). Cela ne montre pas que le fer IV agirait moins bien en cas d'ischémie, mais n'apporte pas de certitude supplémentaire isolément.
+- **Traitement de fond associé :** seuls **24 %** environ recevaient un iSGLT2 (**36 à 40 %** un ARNI, environ **70 %** un ARM), les iSGLT2 modifiant eux-mêmes les paramètres martiaux : l'ampleur exacte du bénéfice additionnel au-dessus des quatre piliers complets reste donc moins certaine.
 
 ### Pourquoi les essais individuels semblaient « presque positifs »
 
@@ -69,11 +78,15 @@ export const article: WikiArticle = {
     },
     {
       headingFr: 'Fer par voie orale : pourquoi les comprimés ne suffisent pas',
-      bodyMarkdownFr: `Dans l'essai **IRONOUT-HF**, **225 patients** atteints d'ICFER avec carence en fer ont reçu soit un complexe polysaccharidique de fer oral à forte dose (**150 mg deux fois par jour**), soit un placebo pendant **16 semaines**.
+      bodyMarkdownFr: `Dans l'essai **IRONOUT-HF** (*JAMA*, 2017), **225 patients** atteints d'ICFER avec carence en fer ont reçu soit un complexe polysaccharidique de fer oral à forte dose (**150 mg deux fois par jour**), soit un placebo pendant **16 semaines**. La population était très proche de la cardiomyopathie ischémique : **FEVG médiane 25 %** et **78 % d'origine ischémique**.
 
-- Aucune amélioration n'a été observée sur la capacité à l'effort, la distance de marche, le NT-proBNP ou la qualité de vie.
-- L'explication probable est que l'inflammation chronique liée à l'insuffisance cardiaque bloque l'absorption intestinale du fer.
-- Prendre des comprimés de fer sans carence documentée expose par ailleurs à des troubles digestifs et à un risque de surcharge en fer.`,
+- **Aucun bénéfice :** le pic de consommation d'oxygène à l'effort (VO₂) n'a pas différé (différence de **+21 mL/min**, IC -34 à +76), pas plus que la distance de marche, le NT-proBNP ou la qualité de vie (score KCCQ).
+- **Des réserves à peine rechargées :** malgré environ **33,6 g** de fer oral pris sur 16 semaines (contre environ **2 g** administrés en perfusion dans l'essai FAIR-HF), le CST n'a augmenté que d'environ **3 points de pourcentage** et la ferritine d'environ **11 µg/L (ng/mL)** par rapport au placebo.
+- **Explication biologique :** l'insuffisance cardiaque élève l'**hepcidine**, une hormone qui bloque l'absorption intestinale du fer ; les patients présentant l'hepcidine la plus élevée au départ absorbaient le moins de fer.
+- **Tolérance :** effets indésirables et arrêts comparables au placebo (**14 % contre 15 %** d'arrêts), sans saignement digestif observé.
+- **Limites :** essai court (16 semaines), petit effectif, centré sur la capacité d'effort plutôt que sur les hospitalisations ou la survie, et sans comparaison directe avec le fer intraveineux.
+
+Prendre des comprimés de fer sans carence documentée expose par ailleurs à des effets secondaires et à un risque de surcharge en fer.`,
     },
     {
       headingFr: 'Ce que disent les recommandations internationales',
@@ -101,12 +114,12 @@ export const article: WikiArticle = {
       detail: 'Regroupement de 6 essais (FAIR-HF, CONFIRM-HF, AFFIRM-AHF, IRONMAN, HEART-FID, FAIR-HF2 ; 7 175 patients), sous-groupes et tolérance',
     },
     {
-      label: 'FAIR-HF2 (JAMA, 2025)',
-      detail: 'Essai à majorité ischémique (78 %), multiplicité des critères principaux, taux d’iSGLT2 et analyse par sexe',
+      label: 'FAIR-HF2 (JAMA, 2025, texte intégral)',
+      detail: 'Schéma posologique, règle de multiplicité de Hochberg, modification du critère principal en aveugle, tolérance, sous-groupe ischémique (78 %) et taux d’iSGLT2',
     },
     {
-      label: 'IRONOUT-HF (2017)',
-      detail: 'Essai randomisé démontrant l’inefficacité du fer oral dans l’ICFER',
+      label: 'IRONOUT-HF (JAMA, 2017, texte intégral)',
+      detail: 'Population à 78 % ischémique (FEVG médiane 25 %), recharge martiale minimale, rôle de l’hepcidine et tolérance du fer oral',
     },
     {
       label: 'Recommandations ESC 2026 sur l’insuffisance cardiaque',

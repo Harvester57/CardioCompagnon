@@ -266,7 +266,7 @@ describe('Module W2-UI-Meds (Traitements & Securite)', () => {
     ).toBeInTheDocument();
   });
 
-  it('filtre le verificateur d interactions sur les 33 fiches, par verdict, par recherche et sur les piliers actifs', async () => {
+  it('filtre le verificateur d interactions sur toutes les fiches, par verdict, par recherche et sur les piliers actifs', async () => {
     const db = await createTestDb('interactions');
     await db.medications.bulkAdd([
       {
@@ -317,7 +317,9 @@ describe('Module W2-UI-Meds (Traitements & Securite)', () => {
       target: { value: 'levure' },
     });
 
-    expect(screen.getByText(/1 fiche affichée sur 33/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(new RegExp(`1 fiche affichée sur ${INTERACTIONS_CATALOG.length}`, 'i')),
+    ).toBeInTheDocument();
     const articleLink = screen.getByRole('link', { name: /Lire la fiche scientifique/i });
     expect(articleLink).toHaveAttribute(
       'href',

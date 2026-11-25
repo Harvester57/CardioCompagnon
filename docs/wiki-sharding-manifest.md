@@ -2,8 +2,8 @@
 
 > **Document associe :** [Specification de Conception et d'Architecture](./design-spec.md)
 > **Source locale :** `C:\Users\Florian\Documents\wiki\topics\ischaemic-cardiomyopathy`
-> **Date de reference du wiki (`asOf`) :** `2026-11-24`
-> **Couverture totale :** 43 fichiers sources (42 articles compiles dans `wiki/` + 1 playbook dans `output/`) repartis en 6 lots disjoints (`W1-Content-1` a `W1-Content-6`)
+> **Date de reference du wiki (`asOf`) :** `2026-11-24` / `2026-11-25` (synchronise par article avec le frontmatter YAML source)
+> **Couverture totale :** 44 fichiers sources (43 articles compiles dans `wiki/` + 1 playbook dans `output/`) repartis en 6 lots disjoints (`W1-Content-1` a `W1-Content-6`)
 
 ---
 
@@ -32,14 +32,14 @@
 | `W1-Content-1` | Diagnostic, chiffres, stade B, recuperation et comorbidites | 11 | 1 847 | Aucun |
 | `W1-Content-2` | Traitements de fond, effets secondaires, add-ons, lipides et fer IV | 7 | 1 861 | `src/content/fr/catalogs/medications-reference.ts` |
 | `W1-Content-3` | Dispositifs (DAI/CRT/LifeVest), telesurveillance, revascularisation, CTO, thrombus | 6 | 1 617 | Aucun |
-| `W1-Content-4` | Nutrition, sel/liquides, poids, complements, interactions et playbook | 9 | 1 924 | `src/content/fr/catalogs/interactions-catalog.ts` |
+| `W1-Content-4` | Nutrition, sel/liquides, poids, complements, vitamine D, interactions et playbook | 10 | 2 063 | `src/content/fr/catalogs/interactions-catalog.ts` |
 | `W1-Content-5` | Vie quotidienne, droits en France, readaptation, psychologie, anticipation, conduite | 6 | 1 026 | `src/content/fr/catalogs/french-admin-catalog.ts` |
 | `W1-Content-6` | Questions pour l'equipe, glossaire, recommandations comparees et essais cles | 4 | 1 375 | `src/content/fr/catalogs/questions-catalog.ts`, `src/content/fr/catalogs/glossary.ts` |
-| **Total** | **Couverture complete du wiki** | **43** | **9 650** | **5 catalogues structures** |
+| **Total** | **Couverture complete du wiki** | **44** | **9 789+** | **5 catalogues structures** |
 
 ---
 
-## 3. Cartographie Exacte des 43 Fichiers (Source -> Cible)
+## 3. Cartographie Exacte des 44 Fichiers (Source -> Cible)
 
 ### Lot `W1-Content-1` -- Diagnostic, Chiffres & Comorbidites (11 fichiers, 1 847 lignes)
 
@@ -83,7 +83,7 @@
 | 23 | `wiki/concepts/chronic-total-occlusion.md` | `occlusion-coronaire-chronique-cto` | `src/content/fr/articles/occlusion-coronaire-chronique-cto.ts` | Occlusion coronaire chronique (CTO) et collaterales | `dispositifs` | `cto` |
 | 24 | `wiki/concepts/lv-thrombus-and-blood-thinners.md` | `thrombus-vg-et-anticoagulants` | `src/content/fr/articles/thrombus-vg-et-anticoagulants.ts` | Thrombus du ventricule gauche et anticoagulants | `comorbidites` | `lvThrombusOrAneurysm` |
 
-### Lot `W1-Content-4` -- Nutrition, Complements, Interactions & Playbook (9 fichiers, 1 924 lignes)
+### Lot `W1-Content-4` -- Nutrition, Complements, Vitamine D, Interactions & Playbook (10 fichiers)
 
 | # | Fichier source (relatif au wiki) | `articleId` (slug) | Fichier cible | Titre francais cible | Categorie | Modules lies |
 |---:|---|---|---|---|---|---|
@@ -95,7 +95,8 @@
 | 30 | `wiki/concepts/weight-obesity-and-malnutrition.md` | `poids-obesite-et-denutrition` | `src/content/fr/articles/poids-obesite-et-denutrition.ts` | Poids, obesite et denutrition (cachexie cardiaque) | `nutrition` | `core` |
 | 31 | `wiki/concepts/omega-3-fish-oil.md` | `omega-3-huile-de-poisson` | `src/content/fr/articles/omega-3-huile-de-poisson.ts` | Acides gras omega-3 (huiles de poisson) | `nutrition` | `core`, `atrialFibrillation` |
 | 32 | `wiki/concepts/coenzyme-q10.md` | `coenzyme-q10` | `src/content/fr/articles/coenzyme-q10.ts` | Coenzyme Q10 (CoQ10) | `nutrition` | `core` |
-| 33 | `wiki/concepts/supplement-and-food-drug-interactions.md` | `interactions-complements-aliments-medicaments` | `src/content/fr/articles/interactions-complements-aliments-medicaments.ts` | Interactions entre complements, aliments et medicaments cardiaques | `nutrition` | `core` |
+| 33 | `wiki/concepts/vitamin-d-in-heart-failure.md` | `vitamine-d-insuffisance-cardiaque` | `src/content/fr/articles/vitamine-d-insuffisance-cardiaque.ts` | Vitamine D et insuffisance cardiaque | `nutrition` | `core` |
+| 34 | `wiki/concepts/supplement-and-food-drug-interactions.md` | `interactions-complements-aliments-medicaments` | `src/content/fr/articles/interactions-complements-aliments-medicaments.ts` | Interactions entre complements, aliments et medicaments cardiaques | `nutrition` | `core` |
 
 **Catalogue supplementaire exclusif a `W1-Content-4` :**
 - `src/content/fr/catalogs/interactions-catalog.ts` : referentiel structure `INTERACTIONS_CATALOG: InteractionItem[]` alimentant le verificateur interactif du module *Traitements & Securite* (verdicts `worth_raising` / `possible` / `not_supported` / `avoid`, classes medicamenteuses concernees, mecanisme, sources).
@@ -175,8 +176,8 @@ Tous les agents (Contenu, Moteur, UI) doivent respecter strictement cette termin
 ## 5. Verification Automatique de Completude (Gate 1)
 
 Le test unitaire `src/content/fr/__tests__/manifest.test.ts` (ecrit en Wave 0) doit verifier automatiquement a la fin de Wave 1 :
-1. Le nombre d'articles charges par `import.meta.glob` est **exactement egal a 43**.
-2. Chaque `articleId` de `EXPECTED_ARTICLE_SLUGS` est present exactement une fois, avec `summaryFr`, `sections.length > 0`, `sources.length > 0` et `asOf === '2026-11-24'`.
+1. Le nombre d'articles charges par `import.meta.glob` est **exactement egal a 44**.
+2. Chaque `articleId` de `EXPECTED_ARTICLE_SLUGS` est present exactement une fois, avec `summaryFr`, `sections.length > 0`, `sources.length > 0` et un `asOf` ISO aligne sur le frontmatter source.
 3. Aucun lien interne `relatedArticleIds` ne pointe vers un slug inexistant.
 4. Les 5 catalogues (`MEDICATION_REFERENCES`, `INTERACTIONS_CATALOG`, `FRENCH_ADMIN_CATALOG`, `QUESTIONS_CATALOG`, `GLOSSARY_TERMS`) sont non vides et leurs `articleId` / `adminItemId` sont tous valides au sens TypeScript.
 5. Aucun emoji n'est present dans les fichiers generes.

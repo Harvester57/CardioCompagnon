@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/asymptomatic-lv-dysfunction-stage-b.md',
   titleFr: 'Dysfonction ventriculaire asymptomatique (stade B)',
   category: 'diagnostic',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -51,6 +51,11 @@ export const article: WikiArticle = {
 | **NYHA I–IV** | Limitation fonctionnelle **à l'instant présent** | NYHA I = aucune limitation dans les activités ordinaires |
 
 - **Les stades n'évoluent que dans un sens.** Un patient en stade C devenu totalement asymptomatique reste en stade C, et les recommandations ESC 2026 préconisent de **poursuivre** le traitement de fond complet chez les personnes devenues asymptomatiques ou dont la FEVG s'est améliorée (**Classe I, C**).
+- **La Deuxième définition universelle de 2026** (consensus AHA/ACC/ESC/WHF sur la terminologie, juin 2026) réaffirme ces quatre mêmes stades (Définition universelle 2026) :
+  - **Critères du stade B :** aucun symptôme ni signe actuel ou passé d'insuffisance cardiaque, associé à au moins l'un des éléments suivants : une anomalie structurelle (par exemple une cavité dilatée, un trouble de la cinétique pariétale, une cicatrice à l'IRM cardiaque, un épaississement de paroi ou une valvulopathie), une anomalie fonctionnelle (baisse de la contraction ventriculaire gauche ou droite, pressions de remplissage élevées ou anomalie de relaxation), ou une élévation des peptides natriurétiques ou de la troponine. Elle ne fixe **aucun seuil chiffré** pour aucun de ces critères.
+  - **Le stade C** recouvre des symptômes ou signes actuels **ou passés** dus à une anomalie cardiaque, en cohérence avec la formulation ESC ci-dessus.
+  - **Aucun retour vers le stade B.** Son schéma comporte des flèches à sens unique de B vers C. Au sein de l'insuffisance cardiaque symptomatique, elle ajoute les trajectoires d'« amélioration », de « rémission » et de « récupération », et indique qu'un diagnostic d'insuffisance cardiaque symptomatique est généralement considéré comme permanent (voir *Insuffisance cardiaque à FEVG améliorée (HFimpEF)*).
+  - **Le « stade 0 »** est mentionné dans son texte pour les personnes sans facteur de risque, bien qu'il ne figure pas dans le tableau des stades.
 - **Seuils ESC 2026 :** la « dysfonction systolique VG asymptomatique » correspond à une FEVG **inférieure à 50 %** sans symptôme ni signe ; l'ICFER correspond à une FEVG inférieure à 50 % **avec** symptômes ou signes (voir *La fraction d'éjection (FEVG)*).
 - **« Sans symptôme » n'est pas toujours fiable.** Certaines personnes réduisent inconsciemment leurs efforts pour éviter d'être gênées. Dans la cohorte américaine **ARIC** (2 972 adultes âgés classés en pré-IC, publiée en 2026), la fatigue à l'effort était associée à un risque accru d'insuffisance cardiaque ultérieure (HR 1,86), et les auteurs reconnaissaient que certains participants avaient peut-être déjà une IC clinique. L'intérêt d'une évaluation objective de la capacité d'effort (comme une épreuve d'effort cardiorespiratoire) n'était pas abordé par les sources consultées.`,
     },
@@ -93,6 +98,7 @@ export const article: WikiArticle = {
 - **Critiques (Herman et Kuo 2025) :** deux diabétologues jugent les preuves fragiles. Citant des données britanniques de soins primaires où seuls environ 16 tests NT-proBNP positifs sur 100 correspondaient à une IC (contre environ 99 sur 100 corrects parmi les négatifs), ils soulignent que le dépistage générerait surtout des faux positifs, que STOP-HF et PONTIAC n'ont pas démontré de baisse des événements d'IC proprement dits et que le coût par hospitalisation évitée serait élevé.
 - **Recommandation américaine 2022 :** selon les notes de STOP-HF, le dépistage par peptides natriurétiques chez les sujets à risque y est classé **Classe 2a** (raisonnable) — point non revérifié dans le texte intégral américain.
 - La Heart Failure Association de l'ESC (2023) fournit des algorithmes NT-proBNP avec seuils d'exclusion et seuils d'inclusion liés à l'âge.
+- **La Deuxième définition universelle de 2026** cite STOP-HF et PONTIAC pour souligner qu'un dépistage par peptides natriurétiques combiné à d'autres facteurs de risque peut repérer des personnes sans symptôme susceptibles de tirer bénéfice d'un traitement. Elle ne fixe **aucune** valeur seuil de peptides natriurétiques pour le diagnostic, le stade B ou le dépistage (Définition universelle 2026).
 
 ### Échocardiographie (ETT)
 
@@ -149,6 +155,7 @@ export const article: WikiArticle = {
     { label: 'STOP-HF (2013), PONTIAC (2013), ADA (2022) et Herman & Kuo (2025)', detail: 'Dépistage par peptides natriurétiques et débat critique sur les faux positifs' },
     { label: 'Yang & Marwick (2017) et algorithmes HFA 2023', detail: 'Marqueurs échocardiographiques (GLS, masse VG) et algorithmes NT-proBNP' },
     { label: 'Diaporama AHA 2022 et résumé AAFP 2023', detail: 'Définitions et classes américaines pour le stade B' },
+    { label: "Deuxième définition universelle de l'insuffisance cardiaque (2026)", detail: "Consensus AHA/ACC/ESC/WHF (texte intégral) : critères des stades A à D, stade 0, trajectoires sans retour au stade B et absence de seuils chiffrés" },
   ],
   disclaimerType: 'medical',
 };

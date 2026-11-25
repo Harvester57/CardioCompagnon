@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/medicines-side-effects-and-monitoring.md',
   titleFr: "Médicaments : mode d'action, effets secondaires et bilans sanguins",
   category: 'traitements',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -17,6 +17,8 @@ export const article: WikiArticle = {
     'potassium',
     'titration',
     'jours-de-maladie',
+    'médicaments-à-éviter',
+    'polymédication',
   ],
   aliases: [
     'Effets secondaires médicaments',
@@ -27,10 +29,12 @@ export const article: WikiArticle = {
     'Titration',
     'DFGe',
     'Hyperkaliémie',
+    'Médicaments aggravant l’insuffisance cardiaque',
+    'Polymédication',
   ],
   linkedModules: ['core', 'ckd'],
   plainSummaryFr:
-    "Chaque famille de médicaments de l'insuffisance cardiaque agit sur un levier différent : hormones qui resserrent les vaisseaux et retiennent le sel, adrénaline, ou élimination rénale. La plupart des effets secondaires sont modérés et s'atténuent avec le temps, mais quelques signaux imposent de contacter rapidement votre équipe ou les secours. Les bilans sanguins (reins et potassium) font partie intégrante du traitement, notamment 1 à 2 semaines après chaque initiation ou augmentation de dose : une petite hausse initiale de la créatinine est souvent attendue et ne signifie généralement pas que les reins s'abîment. Ne modifiez ni n'arrêtez jamais un médicament sans avis médical ; les seuils biologiques présentés ici décrivent les repères utilisés par les médecins et non des consignes d'auto-ajustement.",
+    "Chaque famille de médicaments de l'insuffisance cardiaque agit sur un levier différent : hormones qui resserrent les vaisseaux et retiennent le sel, adrénaline, ou élimination rénale. La plupart des effets secondaires sont modérés et s'atténuent avec le temps, mais quelques signaux imposent de contacter rapidement votre équipe ou les secours. Les bilans sanguins (reins et potassium) font partie intégrante du traitement, notamment 1 à 2 semaines après chaque initiation ou augmentation de dose : une petite hausse initiale de la créatinine est souvent attendue et ne signifie généralement pas que les reins s'abîment. Par ailleurs, certains autres médicaments (anti-inflammatoires courants, certains antidiabétiques, antiarythmiques ou anti-angineux) peuvent aggraver l'insuffisance cardiaque, d'où l'intérêt de passer régulièrement en revue l'ensemble de votre ordonnance. Ne modifiez ni n'arrêtez jamais un médicament sans avis médical ; les seuils biologiques présentés ici décrivent les repères utilisés par les médecins et non des consignes d'auto-ajustement.",
   sections: [
     {
       headingFr: 'Comment agit chaque classe de médicaments',
@@ -173,6 +177,40 @@ Deux précisions complémentaires du consensus britannique de 2019 à destinatio
 
 Les recommandations NICE NG106 (2025) suggèrent des doses initiales plus faibles et des paliers plus petits lorsque le DFGe est **≤ 45 mL/min/1,73 m²**, ainsi que l'avis d'un néphrologue en dessous de **30 mL/min/1,73 m²**. Voir *Maladies associées (reins, FA, valves, diabète)*.`,
     },
+    {
+      headingFr: 'Autres médicaments pouvant aggraver l’insuffisance cardiaque',
+      bodyMarkdownFr: `Certains médicaments prescrits pour d'autres maladies, ou achetés sans ordonnance en pharmacie, peuvent aggraver l'insuffisance cardiaque : en favorisant la rétention d'eau et de sel, en affaiblissant la contraction cardiaque, en déclenchant des troubles du rythme ou, pour certains anticancéreux, en lésant le muscle cardiaque. Un consensus d'experts de l'*European Journal of Heart Failure* (**Abdin et al., 2025**) recense les principaux médicaments concernés — avec des mises en garde qui visent surtout l'ICFER — ainsi que des alternatives plus sûres.
+
+| Motif de prescription | Médicaments signalés par le consensus | Mécanisme principal | Alternatives évoquées par le consensus |
+|---|---|---|---|
+| **Douleur, inflammation** | AINS (ex. ibuprofène, diclofénac) et inhibiteurs de la COX-2 (célécoxib), souvent vendus sans ordonnance | Rétention d'eau et de sel ; atténuent l'effet des diurétiques ; risque croissant avec la dose | Paracétamol ; gels ou crèmes d'AINS en application locale |
+| **Angor, tension, fréquence cardiaque** | Vérapamil (*Isoptine*), diltiazem (*Tildiem*) | Affaiblissent la pompe et ralentissent le cœur | Amlodipine ou félodipine (peuvent provoquer des œdèmes des chevilles) |
+| **Rythme cardiaque** | Antiarythmiques de classe I (flécaïnide, propafénone, disopyramide), dronédarone (*Multaq*), sotalol | Affaiblissent la contraction ou provoquent des arythmies ; la dronédarone a augmenté la mortalité dans un essai en ICFER symptomatique ; les classes I sont écartés en cas de cardiopathie structurelle **ou d'ischémie** | Amiodarone (*Cordarone*), sous surveillance |
+| **Diabète** | Pioglitazone, rosiglitazone ; saxagliptine (*Onglyza*, hospitalisations pour IC augmentées d'environ **27 %** dans un grand essai) | Rétention hydrosodée | iSGLT2 ou metformine ; sitagliptine et linagliptine apparaissent neutres |
+| **Tension artérielle, prostate** | Alpha-bloquants (doxazosine, également tamsulosine), moxonidine (*Physiotens*), minoxidil | Rétention hydrosodée ; la moxonidine a augmenté la mortalité dans un essai | Si un alpha-bloquant est indispensable pour la prostate, uniquement associé à un bêtabloquant (voir *Tension artérielle et insuffisance cardiaque*) |
+| **Infections** | Itraconazole (qualifié de **contre-indiqué avec l'éplérénone** par le consensus) ; clarithromycine, érythromycine (prudence) ; cotrimoxazole (élève le potassium avec IEC, ARA2 ou ARM) | Diminution de la contractilité ; interactions | Fluconazole ; azithromycine |
+| **Poumons (asthme / BPCO)** | Bêta-2-mimétiques par voie orale en comprimés ; recours fréquent aux inhalateurs de secours | Troubles du rythme | Dose inhalée minimale ; discuter d'autres classes d'inhalateurs si les traitements de secours sont fréquents |
+| **Corticoïdes** | Corticoïdes de type prednisolone à forte dose ou au long cours (risque d'insuffisance cardiaque multiplié par **2 à 3,7**, croissant avec la dose) | Rétention hydrosodée | Dose minimale efficace ; les cures courtes semblaient sûres |
+| **Nerfs, humeur, maladie de Parkinson** | Prégabaline (prudence) ; lithium (contre-indiqué dans l'ICFER) ; pramipexole, cabergoline (« prudence » dans le texte, « à éviter » dans l'ICFER dans le tableau récapitulatif) | Rétention hydrosodée ; effets sur le myocarde et le rythme | Duloxétine pour les douleurs neuropathiques ; valproate ou lamotrigine à la place du lithium ; ropinirole |
+| **Traitements anticancéreux** | Anthracyclines, trastuzumab, inhibiteurs du VEGF et autres | Risque de cardiotoxicité (atteinte du muscle cardiaque) | Souvent sans équivalent : utilisés si indispensables avec suivi cardiologique dédié (cardio-oncologie) |
+
+- **Chirurgie et anesthésie :** l'insuffisance cardiaque majore le risque opératoire ; le consensus détaille les agents anesthésiques adaptés à un cœur affaibli. Informer l'anesthésiste de votre FEVG et de vos traitements est un réflexe utile.
+- **Antidépresseurs et plantes :** les antidépresseurs ne sont pas couverts par ce consensus (voir *Santé émotionnelle, anxiété et dépression* pour les essais cliniques) ; les plantes et produits en vente libre figurent dans *Interactions entre compléments, aliments et médicaments cardiaques*.
+- **Solidité de cette liste :** il s'agit d'un **consensus d'experts** et non d'une recommandation issue d'une revue systématique ; une grande partie des données est ancienne, observationnelle ou extérieure à l'ICFER. Les mises en garde appuyées par des essais randomisés (**pioglitazone/rosiglitazone, saxagliptine, dronédarone, moxonidine, flécaïnide**) sont les plus robustes, et la mise en garde sur les AINS concorde avec l'ESC 2026.
+- **Incohérences internes relevées dans l'article :** l'alogliptine est décrite comme neutre dans le texte mais « à éviter » dans les tableaux ; les macrolides sont « à éviter » dans le texte mais « prudence » dans les tableaux ; le disopyramide est classé en classe Ic alors qu'il relève habituellement de la classe Ia. Les tableaux citent également le **pergolide** comme option parkinsonienne plus sûre alors qu'il a été retiré dans plusieurs pays pour atteintes valvulaires cardiaques : cette ligne ne doit pas être retenue.
+- **Aucune de ces informations ne justifie d'interrompre vous-même un traitement prescrit :** il s'agit de points à vérifier avec votre cardiologue, votre médecin traitant ou votre pharmacien.
+
+### Prendre de nombreux médicaments à la fois (polymédication — REPORT-HF)
+
+Le registre international **REPORT-HF** a suivi **18 030 patients** sortant d'une hospitalisation pour insuffisance cardiaque dans 44 pays entre 2014 et 2017 (environ la moitié avec FEVG < 40 %).
+
+- **48 %** prenaient **5 médicaments ou plus autres que** leurs traitements de l'insuffisance cardiaque (**39 %** entre 5 et 9, et **9 %** au moins 10).
+- Plus les patients prenaient d'autres médicaments, **moins souvent** ils recevaient les piliers de l'insuffisance cardiaque, et plus souvent ils recevaient des médicaments pouvant aggraver l'insuffisance cardiaque (**57 %** chez ceux prenant 10 autres médicaments ou plus contre **6 %** chez ceux en prenant moins de 5).
+- La mortalité à 1 an s'élevait respectivement à **17,9 %**, **20,5 %** et **24,8 %** dans les trois groupes. Après ajustement sur l'âge et les maladies associées, prendre 10 médicaments ou plus restait associé à un surrisque de 16 % (**HR 1,16**), mais une fois le recours aux piliers de l'insuffisance cardiaque également pris en compte, l'association n'était **plus significative** (**HR 1,09**). Les auteurs suggèrent que le risque principal provient de l'éviction des traitements de fond de l'insuffisance cardiaque.
+- Pris en groupe, les médicaments neurologiques et psychiatriques étaient associés à un risque plus élevé (**HR 1,23**). En revanche, recevoir un médicament de la liste « pouvant aggraver l'insuffisance cardiaque » n'était **pas** associé à une surmortalité globale (**HR 0,97**), et les antihypertenseurs listés étaient même associés à moins de décès (**HR 0,75**). Ce registre ne confirme donc pas à lui seul un effet délétère de la liste.
+- **Limites :** étude observationnelle (ne distingue pas le médicament de la pathologie qu'il traite), antérieure aux ARNI et aux iSGLT2, sans enregistrement de l'automédication ni des compléments ; l'étiologie ischémique n'était pas analysée séparément (maladie coronaire présente chez **39 à 62 %** selon les groupes).
+- **Message pratique :** réaliser régulièrement un bilan complet de votre ordonnance (y compris médicaments sans ordonnance et compléments alimentaires) avec votre médecin traitant, votre cardiologue ou votre pharmacien, non pas pour supprimer des comprimés par principe, mais pour vérifier que chacun reste utile et compatible avec votre traitement de fond.`,
+    },
   ],
   relatedArticleSlugs: [
     'medicaments-insuffisance-cardiaque',
@@ -184,6 +222,7 @@ Les recommandations NICE NG106 (2025) suggèrent des doses initiales plus faible
     'finerenone-et-nouveaux-arm',
     'cholesterol-et-prevention-secondaire',
     'tension-arterielle-insuffisance-cardiaque',
+    'depression-et-sante-emotionnelle',
   ],
   sources: [
     {
@@ -213,6 +252,14 @@ Les recommandations NICE NG106 (2025) suggèrent des doses initiales plus faible
     {
       label: 'RCP EMA Procoralan et Verquvo, fiche NHS digoxine, revue ACC 2026',
       detail: 'Effets secondaires des traitements additionnels et de la finérénone',
+    },
+    {
+      label: 'Abdin et al. (consensus d’experts EJHF, 2025, texte intégral)',
+      detail: 'Médicaments susceptibles de provoquer ou d’aggraver une insuffisance cardiaque, alternatives plus sûres et limites méthodologiques',
+    },
+    {
+      label: 'REPORT-HF (EJHF, 2025, texte intégral)',
+      detail: 'Polymédication hors insuffisance cardiaque après hospitalisation (18 030 patients), éviction des piliers et mortalité à 1 an',
     },
   ],
   disclaimerType: 'medical',

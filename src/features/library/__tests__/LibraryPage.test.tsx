@@ -53,12 +53,12 @@ afterEach(() => {
 });
 
 describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
-  it('affiche les 43 articles et permet le filtrage par categorie et par profil clinique', async () => {
+  it('affiche les 44 articles et permet le filtrage par categorie et par profil clinique', async () => {
     renderLibrary();
 
     const articlesList = screen.getByRole('list', { name: 'Liste des fiches scientifiques' });
-    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(43);
-    expect(screen.getByText('43 fiches affichées sur 43')).toBeInTheDocument();
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(44);
+    expect(screen.getByText('44 fiches affichées sur 44')).toBeInTheDocument();
 
     // Filtre categorie "france" (2 articles)
     fireEvent.click(screen.getByRole('button', { name: /France & Droits \(2\)/i }));
@@ -68,8 +68,8 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     ).toBeInTheDocument();
 
     // Reinitialiser sur Toutes
-    fireEvent.click(screen.getByRole('button', { name: /Toutes \(43\)/i }));
-    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(43);
+    fireEvent.click(screen.getByRole('button', { name: /Toutes \(44\)/i }));
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(44);
 
     // Filtre "Pertinent pour mon profil" : sans modules optionnels, masque les fiches strictement specifiques (ex. CTO)
     const profileFilterButton = screen.getByRole('button', {
@@ -78,7 +78,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     fireEvent.click(profileFilterButton);
 
     const defaultRelevantCount = within(articlesList).getAllByRole('listitem').length;
-    expect(defaultRelevantCount).toBeLessThan(43);
+    expect(defaultRelevantCount).toBeLessThan(44);
     expect(screen.queryByText(/Occlusion coronaire chronique/i)).not.toBeInTheDocument();
 
     // Activer le module CTO dans PatientProfile : la fiche CTO devient pertinente
@@ -94,7 +94,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     });
   });
 
-  it('effectue une recherche instantanee sans accents couvrant les 43 articles et le glossaire', () => {
+  it('effectue une recherche instantanee sans accents couvrant les 44 articles et le glossaire', () => {
     renderLibrary();
 
     const searchInput = screen.getByLabelText(/Recherche plein texte hors ligne/i);
@@ -103,7 +103,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     const articlesList = screen.getByRole('list', { name: 'Liste des fiches scientifiques' });
     const matchedItems = within(articlesList).getAllByRole('listitem');
     expect(matchedItems.length).toBeGreaterThan(0);
-    expect(matchedItems.length).toBeLessThan(43);
+    expect(matchedItems.length).toBeLessThan(44);
     expect(
       within(articlesList).getByRole('heading', { name: /Fraction d'éjection/i }),
     ).toBeInTheDocument();
@@ -128,7 +128,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     // Badges confiance, volatilite, date asOf et bandeau medical
     expect(screen.getByText(/Confiance moyenne à élevée/i)).toBeInTheDocument();
     expect(screen.getByText(/Mise à jour régulière/i)).toBeInTheDocument();
-    expect(screen.getByText(/À jour : 2026-11-24/i)).toBeInTheDocument();
+    expect(screen.getByText(/À jour : 2026-11-25/i)).toBeInTheDocument();
     expect(screen.getByRole('note', { name: 'Avertissement médical' })).toBeInTheDocument();
 
     // Encadre En clair
@@ -163,7 +163,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     ).toBeInTheDocument();
   });
 
-  it('affiche les 88 termes du glossaire, filtre par lettre/recherche et ouvre la fiche associee', () => {
+  it('affiche tous les termes du glossaire, filtre par lettre/recherche et ouvre la fiche associee', () => {
     renderLibrary();
 
     fireEvent.click(screen.getByRole('tab', { name: new RegExp(`Glossaire \\(${GLOSSARY_TERMS.length}\\)`) }));

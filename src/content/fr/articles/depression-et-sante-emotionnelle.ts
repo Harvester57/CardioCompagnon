@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/depression-and-emotional-health.md',
   titleFr: 'Santé émotionnelle, anxiété et dépression',
   category: 'quotidien',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
   tags: [
@@ -27,7 +27,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Ressentir de l'anxiété, de la tristesse ou de la peur après un diagnostic d'insuffisance cardiaque est très fréquent. Chez environ une personne sur quatre ou cinq, cela évolue vers une dépression, qui mérite d'être repérée et accompagnée : elle est associée à plus d'hospitalisations et à un pronostic moins favorable. La thérapie cognitivo-comportementale (TCC) et l'activité physique sont les approches les mieux étayées par les essais cliniques ; deux grands essais d'antidépresseurs (sertraline et escitalopram) n'ont pas montré de supériorité sur le placebo, sans remettre en cause leur sécurité. Si une baisse de moral ou une anxiété persiste, parlez-en à votre médecin traitant ou à votre équipe de cardiologie.",
+    "Ressentir de l'anxiété, de la tristesse ou de la peur après un diagnostic d'insuffisance cardiaque est très fréquent. Chez environ une personne sur quatre ou cinq, cela évolue vers une dépression, qui mérite d'être repérée et accompagnée : elle est associée à plus d'hospitalisations et à un pronostic moins favorable. La thérapie cognitivo-comportementale (TCC) et l'activité physique sont les approches les mieux étayées par les essais cliniques. Deux grands essais d'antidépresseurs (sertraline et escitalopram) n'ont pas montré de supériorité sur le placebo accompagné d'un soutien infirmier ; dans MOOD-HF (FEVG moyenne d'environ 35 %, deux tiers d'origine ischémique), le sous-groupe ischémique s'est comporté comme l'ensemble des patients, et les personnes ayant un QT long ou prenant des médicaments prolongeant le QT étaient exclues. Si une baisse de moral ou une anxiété persiste, parlez-en à votre médecin traitant ou à votre équipe de cardiologie.",
   sections: [
     {
       headingFr: 'Quelle fréquence et pourquoi cela compte',
@@ -48,7 +48,7 @@ export const article: WikiArticle = {
 | **Entraînement physique** | HF-ACTION (2 331 patients) | Diminution des symptômes dépressifs à 3 et 12 mois (rapporté dans la revue 2023) | Voir l'article sur la réadaptation cardiaque |
 | **Équipe de soins palliatifs / de support** | PAL-HF 2017 (150 patients en IC avancée) | Amélioration plus marquée des scores de dépression et d'anxiété qu'avec les soins usuels | Aucun effet sur les réhospitalisations ni la mortalité |
 | **Sertraline** (antidépresseur ISRS) | SADHART-CHF 2010 (469 patients avec dépression majeure) | Amélioration dans les deux groupes ; **pas de différence avec le placebo** (soutien infirmier dans les deux bras) | Pas de différence sur l'état cardiovasculaire |
-| **Escitalopram** (antidépresseur ISRS) | MOOD-HF 2016 (372 patients) | Amélioration dans les deux groupes ; **pas de différence avec le placebo** | Pas de différence sur la mortalité ou les hospitalisations (HR 0,99) |
+| **Escitalopram** (*Seroplex*, antidépresseur ISRS) | MOOD-HF 2016 (372 patients en ICFER, FEVG < 45 % à l'inclusion, moyenne **~35 %**, environ **deux tiers d'origine ischémique**, avec dépression majeure) | Amélioration d'environ **9 points** sur l'échelle MADRS dans les deux groupes ; **pas de différence avec le placebo** (écart de **0,9 point**, non significatif) | Pas de différence sur les décès ou hospitalisations : **63 % contre 64 %** sur environ **18 mois** (**HR 0,99**) ; essai **arrêté prématurément** faute de bénéfice émergent |
 
 ### Comment interpréter les essais d'antidépresseurs
 
@@ -57,6 +57,14 @@ export const article: WikiArticle = {
   - Le document de position HFA 2020 décrit les **ISRS** (inhibiteurs sélectifs de la recapture de la sérotonine) comme globalement sûrs et assez bien tolérés dans l'insuffisance cardiaque, bien que les preuves d'efficacité restent limitées.
   - La revue de 2023 cite une méta-analyse observant une mortalité plus élevée chez les patients insuffisants cardiaques sous antidépresseurs ; ces données étant observationnelles (les patients les plus fragiles sont plus souvent traités), elles ne démontrent pas un effet nocif des médicaments.
 - Les participants de MOOD-HF présentaient en moyenne une dépression légère à modérée : les résultats peuvent différer dans les dépressions sévères.
+- **Ce qu'apportent le texte intégral et le supplément de MOOD-HF :**
+  - **Sous-groupe ischémique :** environ deux tiers des patients avaient une origine ischémique ; leurs résultats sous escitalopram n'étaient ni meilleurs ni moins bons que ceux des autres patients (**73 événements sur 116** contre **80 sur 123** sous placebo ; aucune différence entre origines ischémique et non ischémique, **p d'interaction = 0,97**).
+  - **Suivi renforcé dans les deux groupes :** tous les participants bénéficiaient d'un suivi infirmier structuré de l'insuffisance cardiaque (appels téléphoniques, éducation thérapeutique, ajustement des traitements), ce qui peut expliquer l'amélioration du moral observée dans les deux bras.
+  - **Signaux cardiaques secondaires :** sous escitalopram, le NT-proBNP a moins diminué et le ventricule gauche ne s'est pas remodelé favorablement, contrairement à une légère diminution sous placebo ; il s'agissait de critères secondaires non concluants.
+  - **Tolérance et intervalle QT :** la fréquence globale des effets indésirables graves était comparable. Une **aggravation de la dépression** nécessitant une prise en charge était *moins* fréquente sous escitalopram (**5 % contre 11 %**). L'intervalle **QTc** à l'ECG tendait à augmenter davantage sous escitalopram (hausse maximale moyenne de **25 ms contre 15 ms**, non statistiquement significative ; hausse supérieure à **100 ms** chez **8 % contre 2 %**).
+  - **Patients exclus (QT long et antiarythmiques) :** les personnes ayant un **QTc ≥ 500 ms** ou prenant des médicaments prolongeant l'intervalle QT, tels que les antiarythmiques de classe IA ou III (notamment l'amiodarone — *Cordarone* — ou le sotalol — *Sotalex*), étaient exclues de l'essai. MOOD-HF ne permet donc pas de conclure sur la sécurité de cette association ; demander un **contrôle ECG** si un ISRS est envisagé constitue une question pertinente à aborder avec votre médecin.
+  - **Dépression plus sévère :** une analyse exploratoire a posteriori suggérait un pronostic moins favorable sous escitalopram en cas de dépression plus sévère (**MADRS > 25** : **HR 1,67**). Bien qu'il ne s'agisse pas d'un effet confirmé, ce signal plaide pour un avis spécialisé en cas de dépression sévère.
+  - **Arrêts précoces :** l'article rapporte davantage d'arrêts précoces sous escitalopram (**11 % contre 5 %** à 6 semaines), mais le supplément indique que ces chiffres correspondent aux sorties d'étude plutôt qu'à l'arrêt des comprimés lui-même, similaire dans les deux bras.
 - **Règle de sécurité essentielle :** ces résultats ne doivent jamais conduire à arrêter soi-même un antidépresseur prescrit. Toute adaptation se décide avec le médecin prescripteur.
 - **Autres leviers recommandés par la HFA :** communication ouverte avec l'équipe, réadaptation cardiaque, activité physique et psychothérapie structurée telle que la TCC.`,
     },
@@ -82,6 +90,7 @@ export const article: WikiArticle = {
     'soins-de-support-et-anticipation',
     'dispositifs-cardiaques-dai-crt',
     'essais-cliniques-cles',
+    'medicaments-effets-secondaires-suivi',
     'vivre-avec-insuffisance-cardiaque-en-france',
   ],
   sources: [
@@ -94,8 +103,9 @@ export const article: WikiArticle = {
       detail: '158 patients : taux de rémission à 6 mois (46 % vs 19 % et 51 % vs 20 %).',
     },
     {
-      label: 'Essais SADHART-CHF (2010) et MOOD-HF (2016)',
-      detail: 'Évaluation de la sertraline (469 patients) et de l’escitalopram (372 patients) contre placebo dans l’insuffisance cardiaque.',
+      label: 'Essais SADHART-CHF (2010) et MOOD-HF (JAMA 2016, texte intégral et supplément)',
+      detail:
+        'Évaluation de la sertraline (469 patients) et de l’escitalopram (372 patients, FEVG moyenne ~35 %, deux tiers ischémiques) : sous-groupe ischémique, exclusions QT/antiarythmiques, tolérance QTc, analyse exploratoire MADRS > 25 et arrêt précoce.',
     },
     {
       label: 'Essai PAL-HF (2017) & HF-ACTION (2009)',

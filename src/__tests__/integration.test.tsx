@@ -105,8 +105,10 @@ describe("Tests d'intégration multi-modules CardioCompagnon (W3)", () => {
 
     render(<App />);
 
-    // 1. Écran Aujourd'hui chargé
-    expect(await screen.findByText('Saisie matinale rapide')).toBeInTheDocument();
+    // 1. Écran Aujourd'hui chargé (route lazy-loaded)
+    expect(
+      await screen.findByText('Saisie matinale rapide', undefined, { timeout: 5000 }),
+    ).toBeInTheDocument();
 
     // Saisie d'une prise de poids rapide (+2,5 kg vs poids sec et J-2) + œdèmes en aggravation
     fireEvent.change(screen.getByLabelText('Poids matinal (kg)'), {
@@ -145,7 +147,11 @@ describe("Tests d'intégration multi-modules CardioCompagnon (W3)", () => {
     fireEvent.click(within(sidebar).getByRole('link', { name: 'Mon Plan & Visites' }));
 
     expect(
-      await screen.findByRole('heading', { level: 1, name: /Mon Plan & Consultations/i }),
+      await screen.findByRole(
+        'heading',
+        { level: 1, name: /Mon Plan & Consultations/i },
+        { timeout: 5000 },
+      ),
     ).toBeInTheDocument();
 
     const planList = await screen.findByRole('list', { name: 'Points prioritaires de votre plan' });
@@ -157,7 +163,9 @@ describe("Tests d'intégration multi-modules CardioCompagnon (W3)", () => {
     })[0];
     fireEvent.click(firstArticleLink);
 
-    expect(await screen.findByRole('heading', { level: 2, name: 'En clair' })).toBeInTheDocument();
+    expect(
+      await screen.findByRole('heading', { level: 2, name: 'En clair' }, { timeout: 5000 }),
+    ).toBeInTheDocument();
     expect(
       screen.getByRole('button', { name: /Retour à la bibliothèque/i }),
     ).toBeInTheDocument();

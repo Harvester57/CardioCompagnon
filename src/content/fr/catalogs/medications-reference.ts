@@ -172,7 +172,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '50 mg × 1/j',
     titrationIntervalFr: 'Réévaluation après 4 semaines selon kaliémie et DFGe',
     monitoringFr:
-      'Potassium et créatinine/DFGe avant début, à 1–2 semaines, après chaque palier puis tous les 3 à 6 mois. Alternative établie à la spironolactone sans effets hormonaux/mammaires.',
+      'Potassium et créatinine/DFGe avant début, à 1–2 semaines, après chaque palier puis tous les 3 à 6 mois. Alternative établie à la spironolactone sans effets hormonaux/mammaires ; éviter les inhibiteurs puissants du CYP3A4 (ex. itraconazole).',
     articleSlug: 'finerenone-et-nouveaux-arm',
   },
   {
@@ -185,7 +185,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '20 mg × 1/j (si DFGe ≤ 60) ou 40 mg × 1/j (si DFGe > 60)',
     titrationIntervalFr: 'Adaptation à 4 semaines selon kaliémie et DFGe',
     monitoringFr:
-      'Prouvée pour FEVG ≥ 40 % (FINEARTS-HF) ou diabète de type 2 + MRC ; non prouvée et hors AMM en ICFER < 40 % (essai FINALITY-HF attendu vers 2028). Suivi kaliémie et DFGe.',
+      'Prouvée pour FEVG ≥ 40 % (FINEARTS-HF) ou diabète de type 2 + MRC (essais ayant exclu l’ICFER symptomatique) ; non prouvée et hors AMM en ICFER < 40 % (FINALITY-HF attendu vers 2028). Hyperkaliémie environ 2 fois plus fréquente que sous placebo ; suivre kaliémie, DFGe et tension artérielle.',
     articleSlug: 'finerenone-et-nouveaux-arm',
   },
 
@@ -256,7 +256,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '40 à 80 mg × 1/j selon objectif LDL (< 0,55 g/L et baisse ≥ 50 %)',
     titrationIntervalFr: 'Contrôle LDL 4 à 12 semaines après initiation ou changement',
     monitoringFr:
-      'Bilan lipidique (cible LDL < 0,55 g/L soit 1,4 mmol/L en maladie coronaire) ; enzymes hépatiques/musculaires si symptômes ; éviter le jus de pamplemousse et la levure de riz rouge.',
+      'Bilan lipidique (cible LDL < 0,55 g/L soit 1,4 mmol/L en maladie coronaire) ; CK ou bilan hépatique uniquement si symptômes (ACC/AHA 2026) ; éviter le jus de pamplemousse et la levure de riz rouge ; surveillance musculaire renforcée avec la colchicine.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -269,7 +269,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '20 à 40 mg × 1/j selon objectif LDL (< 0,55 g/L et baisse ≥ 50 %)',
     titrationIntervalFr: 'Contrôle LDL 4 à 12 semaines après initiation ou changement',
     monitoringFr:
-      'Bilan lipidique (cible LDL < 0,55 g/L en maladie coronaire) ; pas d’avertissement pamplemousse dans le RCP ; éviter la levure de riz rouge ; surveiller les symptômes musculaires.',
+      'Bilan lipidique (cible LDL < 0,55 g/L soit 1,4 mmol/L en maladie coronaire) ; pas d’avertissement pamplemousse dans le RCP ; éviter la levure de riz rouge ; CK ou bilan hépatique uniquement si symptômes ; surveillance musculaire renforcée avec la colchicine.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -282,7 +282,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Dose fixe ; contrôle LDL 4 à 12 semaines après ajout',
     monitoringFr:
-      'Ajouté en palier 2 (ESC Classe I B) si le LDL reste ≥ 0,55 g/L sous statine maximale tolérée, ou en cas d’intolérance aux statines.',
+      'Ajouté en palier 2 (ESC Classe I B ; ACC/AHA 2026 COR 1 A en très haut risque) si le LDL reste ≥ 0,55 g/L (1,4 mmol/L) sous statine maximale tolérée, ou en cas d’intolérance aux statines.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -295,7 +295,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '140 mg toutes les 2 semaines (ou 420 mg/mois)',
     titrationIntervalFr: 'Dose fixe ; contrôle LDL 4 à 12 semaines après initiation',
     monitoringFr:
-      'Ajouté en palier 3 (ESC Classe I A) si le LDL reste hors cible sous statine + ézétimibe. Surveiller les réactions locales au point d’injection.',
+      'Ajouté en palier 3 (ESC Classe I A) si le LDL reste hors cible sous statine + ézétimibe. Tolérance rassurante jusqu’aux LDL très bas (< 0,20 g/L soit 0,5 mmol/L dans FOURIER, sur ~2 ans ; FEVG < 30 % et NYHA III–IV exclues de FOURIER). Surveiller les réactions locales au point d’injection.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -308,7 +308,20 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '75 à 150 mg toutes les 2 semaines selon objectif LDL',
     titrationIntervalFr: 'Contrôle LDL 4 à 8 semaines après initiation',
     monitoringFr:
-      'Ajouté en palier 3 (ESC Classe I A) si le LDL reste hors cible sous statine + ézétimibe. Réduit aussi la Lp(a) d’environ 15 à 30 %. Surveiller le site d’injection.',
+      'Ajouté en palier 3 (ESC Classe I A) si le LDL reste hors cible sous statine + ézétimibe ; réduit aussi la Lp(a) d’environ 15 à 30 %. Note : analyse post hoc d’ODYSSEY sans réduction d’événements chez les patients avec antécédent d’IC (FEVG non recueillie). Surveiller le site d’injection.',
+    articleSlug: 'cholesterol-et-prevention-secondaire',
+  },
+  {
+    id: 'acide_bempedoique',
+    pillar: 'lipid_lowering',
+    subClass: 'other',
+    innNameFr: 'Acide bempédoïque',
+    frenchBrands: ['Nilemdo', 'Nustendi (avec ézétimibe)'],
+    startDoseFr: '180 mg × 1/j',
+    targetDoseFr: '180 mg × 1/j',
+    titrationIntervalFr: 'Dose fixe ; contrôle LDL 4 à 12 semaines après initiation',
+    monitoringFr:
+      'ESC/EAS 2025 Classe I B en cas d’intolérance aux statines et Classe IIa C en ajout à une statine (± ézétimibe) ; ACC/AHA 2026 COR 2a B-R. Abaisse le LDL d’environ 18 à 23 % (~38 % avec ézétimibe). Aucune donnée spécifique d’insuffisance cardiaque disponible.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -347,7 +360,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '0,5 mg × 1/j',
     titrationIntervalFr: 'Dose fixe',
     monitoringFr:
-      'ESC 2024 SCC Classe IIa A en maladie coronaire (non testée en ICFER sévère). Éviter si DFGe < 30 mL/min (contre-indiquée < 15), avec inhibiteurs CYP3A4/P-gp et jus de pamplemousse ; surveiller troubles digestifs et musculaires.',
+      'ESC 2024 SCC Classe IIa A en maladie coronaire (non testée en ICFER sévère). Éviter si DFGe < 30 mL/min (contre-indiquée < 15), avec inhibiteurs CYP3A4/P-gp et jus de pamplemousse ; surveillance musculaire renforcée avec toute statine (ACC/AHA 2026) et suivi des troubles digestifs.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
 
@@ -362,7 +375,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '7,5 mg × 2/j (ou 2,5 à 5 mg × 2/j selon fréquence cardiaque)',
     titrationIntervalFr: 'Ajustement après 2 semaines selon la fréquence cardiaque',
     monitoringFr:
-      'Uniquement en rythme sinusal avec FC > 70 bpm (AMM ≥ 75 bpm) et FEVG ≤ 35 % malgré bêtabloquant maximal (ESC Classe IIa). Réduire si FC < 50 bpm ; surveiller phosphènes et FA ; éviter jus de pamplemousse, millepertuis, vérapamil et diltiazem.',
+      'Uniquement en rythme sinusal avec FC > 70 bpm (AMM ≥ 75 bpm ; bénéfice concentré à ≥ 77 bpm dans SHIFT) et FEVG ≤ 35 % malgré bêtabloquant maximal (ESC Classe IIa). Réduire si FC < 50 bpm ; surveiller phosphènes et FA ; éviter jus de pamplemousse, millepertuis, vérapamil et diltiazem.',
     articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
   },
   {
@@ -375,7 +388,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: 'Dose maintenant une digoxinémie basse cible (0,5 à 0,9 ng/mL)',
     titrationIntervalFr: 'Contrôle clinique et rénal ; dosage 8–12 h après prise si doute toxique ou MRC (après 8–10 j)',
     monitoringFr:
-      'ESC 2026 Classe IIa (FEVG ≤ 40 % symptomatique) et contrôle de fréquence en FA. Élimination rénale : surveiller créatinine, potassium, magnésium et signes de surdosage (nausées, vision jaune/floue, confusion, troubles du rythme). Interactions : amiodarone, macrolides, réglisse.',
+      'ESC 2026 Classe IIa (FEVG ≤ 40 % symptomatique) et contrôle de fréquence en FA. Élimination majoritairement rénale (50–70 % inchangée, demi-vie 1,5–2 j) : surveiller créatinine, potassium, magnésium et signes de surdosage (nausées, vision jaune/floue, confusion, troubles du rythme). Interactions : amiodarone, macrolides, réglisse.',
     articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
   },
   {
@@ -384,11 +397,11 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     subClass: 'digoxin_digitoxin',
     innNameFr: 'Digitoxine',
     frenchBrands: ['Non commercialisée en France (Digitaline Nativelle arrêtée en 1993)'],
-    startDoseFr: '0,05 à 0,07 mg/j (protocole DIGIT-HF)',
-    targetDoseFr: '0,05 à 0,1 mg/j selon dosage sanguin à 6 semaines',
+    startDoseFr: '0,07 mg/j (protocole DIGIT-HF ; 0,05 mg/j évoqué si âge ≥ 75 ans, DFGe < 50 ou IMC < 27)',
+    targetDoseFr: '0,05 à 0,1 mg/j selon dosage sanguin à 6 semaines (cible 8–18 ng/mL)',
     titrationIntervalFr: 'Dosage sanguin unique à 6 semaines dans DIGIT-HF',
     monitoringFr:
-      'Élimination principalement hépatique ; a réduit les décès ou hospitalisations pour IC dans DIGIT-HF (HR 0,82) et figure en ESC 2026 Classe IIa, mais aucun produit commercialisé n’est disponible en France.',
+      'Métabolisée par le foie (CYP3A) puis éliminée ~60 % par les reins (métabolites) et ~40 % par la bile (demi-vie longue de 3–10 j). A réduit les décès ou hospitalisations pour IC dans DIGIT-HF (HR 0,82) et figure en ESC 2026 Classe IIa, mais aucun produit commercialisé n’est disponible en France.',
     articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
   },
   {
@@ -401,7 +414,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j avec un repas',
     titrationIntervalFr: 'Doublement après environ 2 semaines selon tolérance tensionnelle',
     monitoringFr:
-      'ESC 2026 Classe IIb ; AMM après décompensation récente (FEVG < 45 %). Ne pas initier si PAS < 100 mmHg ; surveiller hypotension et hémoglobine ; contre-indiqué avec riociguat et grossesse, déconseillé avec inhibiteurs PDE-5. Utilisable jusqu’à un DFGe de 15 mL/min/1,73 m².',
+      'ESC 2026 Classe IIb ; AMM après décompensation récente (FEVG < 45 %). Neutre seul chez les patients stables (VICTOR ; bénéfice modeste en poolé VICTORIA+VICTOR). Ne pas initier si PAS < 100 mmHg ; surveiller hypotension et hémoglobine ; contre-indiqué avec riociguat et grossesse, déconseillé avec inhibiteurs PDE-5. Utilisable jusqu’à un DFGe de 15 mL/min/1,73 m².',
     articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
   },
   {
@@ -414,7 +427,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '8,4 à 25,2 g × 1/j selon kaliémie',
     titrationIntervalFr: 'Ajustement par paliers d’au moins 1 semaine selon kaliémie',
     monitoringFr:
-      'Permet de contrôler l’hyperkaliémie pour maintenir les ARM (essai DIAMOND) ; bénéfice pronostique incertain (ESC 2026). Espacer la prise d’au moins 3 heures des autres médicaments oraux ; surveiller kaliémie et magnésémie.',
+      'Aide à contrôler l’hyperkaliémie pour maintenir les ARM (DIAMOND : critère principal modifié pour le potassium, bénéfice pronostique non démontré). Espacer d’au moins 3 heures des autres médicaments oraux ; surveiller kaliémie (y compris l’hypokaliémie : 15,0 % vs 10,7 % dans DIAMOND) et magnésémie.',
     articleSlug: 'finerenone-et-nouveaux-arm',
   },
   {
@@ -440,7 +453,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: 'Réplétion martiale et réévaluation périodique selon bilan martial',
     titrationIntervalFr: 'Réévaluation ferritine et CST en suivi cardiaque',
     monitoringFr:
-      'ESC 2026 Classe I (symptômes) et IIa (hospitalisations) en ICFER symptomatique avec carence martiale (ferritine < 100 µg/L ou 100–299 avec CST < 20 %). Surveiller le phosphore sanguin (risque d’hypophosphatémie) et la tolérance de perfusion.',
+      'ESC 2026 Classe I (symptômes) et IIa (hospitalisations) en ICFER symptomatique avec carence martiale (ferritine < 100 µg/L ou 100–299 avec CST < 20 % ; NICE NG106 si Hb < 15 g/dL). Surveiller le phosphore sanguin (risque d’hypophosphatémie) et la tolérance de perfusion.',
     articleSlug: 'carence-martiale-et-fer-iv',
   },
   {
@@ -462,10 +475,10 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     id: 'ains_classe',
     pillar: 'other',
     subClass: 'other',
-    innNameFr: 'AINS (ibuprofène, kétoprofène, diclofénac, naproxène)',
-    frenchBrands: ['Advil', 'Nurofen', 'Profenid', 'Voltarène', 'Apranax'],
+    innNameFr: 'AINS (ibuprofène, kétoprofène, diclofénac, naproxène, célécoxib)',
+    frenchBrands: ['Advil', 'Nurofen', 'Profenid', 'Voltarène', 'Apranax', 'Celebrex'],
     monitoringFr:
-      'À éviter dans l’ICFER : favorisent la rétention d’eau et de sel, l’aggravation de l’insuffisance cardiaque, l’insuffisance rénale aiguë et l’hyperkaliémie (notamment avec IEC/ARNI/ARA2 et ARM). Attention à l’automédication sans ordonnance.',
+      'À éviter dans l’ICFER (ESC 2026 et consensus EJHF Abdin 2025) : favorisent la rétention d’eau et de sel, atténuent les diurétiques, aggravent l’IC et exposent à l’insuffisance rénale aiguë et à l’hyperkaliémie. Attention à l’automédication sans ordonnance.',
     avoidInHfref: true,
     articleSlug: 'medicaments-effets-secondaires-suivi',
   },
@@ -498,8 +511,52 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     innNameFr: 'Moxonidine (antihypertenseur d’action centrale)',
     frenchBrands: ['Physiotens', 'Génériques'],
     monitoringFr:
-      'À éviter dans l’ICFER : associée à une surmortalité dans l’insuffisance cardiaque à fraction d’éjection réduite.',
+      'À éviter dans l’ICFER : associée à une surmortalité dans un essai randomisé sur l’insuffisance cardiaque à fraction d’éjection réduite.',
     avoidInHfref: true,
     articleSlug: 'tension-arterielle-insuffisance-cardiaque',
+  },
+  {
+    id: 'antiarythmiques_classe_1',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Antiarythmiques de classe I (flécaïnide, propafénone, disopyramide)',
+    frenchBrands: ['Flécaïne', 'Rythmol', 'Rythmodan', 'Isorythm'],
+    monitoringFr:
+      'À éviter dans l’ICFER, toute cardiopathie structurelle ou maladie coronaire ischémique (consensus EJHF Abdin 2025) : affaiblissent la contraction et exposent à des troubles du rythme graves.',
+    avoidInHfref: true,
+    articleSlug: 'medicaments-effets-secondaires-suivi',
+  },
+  {
+    id: 'dronedarone',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Dronédarone (antiarythmique)',
+    frenchBrands: ['Multaq'],
+    monitoringFr:
+      'À éviter dans l’ICFER symptomatique (consensus EJHF Abdin 2025) : associée à une augmentation de la mortalité dans un essai randomisé.',
+    avoidInHfref: true,
+    articleSlug: 'medicaments-effets-secondaires-suivi',
+  },
+  {
+    id: 'pioglitazone',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Glitazones (pioglitazone, rosiglitazone)',
+    frenchBrands: ['Retirées ou non commercialisées en France'],
+    monitoringFr:
+      'À éviter dans l’ICFER (consensus EJHF Abdin 2025, preuves d’essais randomisés) : favorisent la rétention hydrosodée et la décompensation cardiaque. Préférer iSGLT2 ou metformine selon avis médical.',
+    avoidInHfref: true,
+    articleSlug: 'medicaments-effets-secondaires-suivi',
+  },
+  {
+    id: 'saxagliptine',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Saxagliptine (inhibiteur de la DPP-4)',
+    frenchBrands: ['Onglyza'],
+    monitoringFr:
+      'À éviter dans l’ICFER (consensus EJHF Abdin 2025) : augmentation d’environ 27 % des hospitalisations pour insuffisance cardiaque dans un grand essai randomisé.',
+    avoidInHfref: true,
+    articleSlug: 'medicaments-effets-secondaires-suivi',
   },
 ];

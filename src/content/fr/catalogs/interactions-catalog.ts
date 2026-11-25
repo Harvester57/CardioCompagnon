@@ -24,26 +24,26 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Régime méditerranéen', 'Huile d’olive vierge extra', 'Légumineuses', 'Poisson gras', 'Noix non salées'],
     verdict: 'worth_raising',
     summaryFr:
-      'Modèle alimentaire de référence pour protéger les artères coronaires : réduit d’environ 25 % les événements cardiovasculaires majeurs sur 7 ans dans la maladie coronaire (CORDIOPREV).',
+      'Modèle alimentaire de référence pour protéger les artères coronaires : réduit d’environ 25 % les événements cardiovasculaires majeurs sur 7 ans dans la maladie coronaire (CORDIOPREV), avec une recommandation faible en faveur de la HAS (octobre 2026).',
     mechanismOrCaveatFr:
-      'CORDIOPREV ayant exclu les FEVG ≤ 35 %, ce modèle protège le versant coronaire mais n’est pas prouvé comme traitement direct de l’ICFER. Adaptez les portions et les aliments très riches en potassium avec votre équipe ou un(e) diététicien(ne) en cas de traitement par IEC/ARA2/ARNI ou ARM.',
+      'CORDIOPREV (87 contre 111 événements) ayant exclu les FEVG ≤ 35 %, ce modèle protège le versant coronaire mais n’est pas prouvé comme traitement direct de l’ICFER. Les synthèses (BMJ 2023 NMA ; revue parapluie Hareer 2024 ; HAS 2026) montrent moins d’AVC et d’événements coronaires sans preuve randomisée dans l’ICFER établie. Adaptez les apports très riches en potassium avec votre équipe ou un(e) diététicien(ne) sous IEC/ARA2/ARNI ou ARM ; la fixation d’objectifs et le suivi régulier aident à tenir dans la durée (Rutters 2024).',
     affectedPillars: ['raas_arni', 'mra', 'lipid_lowering'],
-    evidenceGrade: 'ESC 2026 Classe I, niveau C (conseils hygiène de vie) ; CORDIOPREV',
-    sources: ['CORDIOPREV (The Lancet 2022)', 'PREDIMED', 'ESC 2026'],
+    evidenceGrade: 'ESC 2026 Classe I, niveau C (hygiène de vie) ; HAS octobre 2026 (faible, coronaire) ; CORDIOPREV',
+    sources: ['CORDIOPREV (The Lancet 2022)', 'BMJ 2023 NMA', 'Hareer 2024', 'HAS octobre 2026', 'Rutters 2024', 'ESC 2026'],
     articleSlug: 'alimentation-cardioprotectrice',
   },
   {
     id: 'soutien-nutritionnel-denutrition',
     nameFr: 'Soutien nutritionnel en cas de perte de poids involontaire',
-    aliases: ['Dénutrition', 'Cachexie cardiaque', 'Compléments nutritionnels oraux', 'CNO', 'Protéines', 'EFFORT'],
+    aliases: ['Dénutrition', 'Cachexie cardiaque', 'Compléments nutritionnels oraux', 'CNO', 'Protéines', 'EFFORT', 'MNA-SF'],
     verdict: 'worth_raising',
     summaryFr:
-      'En cas de perte de poids involontaire, de baisse d’appétit ou d’hospitalisation, un dépistage et un soutien nutritionnel adapté priment sur toute restriction et réduisent nettement la mortalité à court terme.',
+      'En cas de perte de poids involontaire, de baisse d’appétit ou d’hospitalisation, un dépistage (questionnaire MNA-SF) et un soutien nutritionnel adapté priment sur toute restriction et réduisent la mortalité à court terme chez les patients hospitalisés à risque.',
     mechanismOrCaveatFr:
-      'Dans le sous-groupe IC de l’essai EFFORT (645 patients hospitalisés à risque), un soutien diététique ciblant énergie et protéines a réduit la mortalité à 30 jours de 14,8 % à 8,4 % (OR 0,44). À discuter avec votre cardiologue ou diététicien(ne), y compris en cas d’IMC élevé (obésité sarcopénique).',
+      'Dans le sous-groupe IC de l’essai EFFORT (645 patients hospitalisés à risque, âge médian 79 ans, seulement 66 avec FEVG < 40 %), un soutien diététique ciblant énergie et 1,2 à 1,5 g/kg/j de protéines a réduit la mortalité à 30 jours de 14,8 % à 8,4 % (OR ajusté 0,44), sans baisse des réadmissions. En ambulatoire, le questionnaire MNA-SF est plus fiable que le score CONUT, qui est faussé par les statines (Kinugasa 2022). À discuter avec votre équipe, y compris en cas d’IMC élevé (obésité sarcopénique ; HFA 2025).',
     affectedPillars: ['other'],
-    evidenceGrade: 'EFFORT IC (JACC 2021) ; ESC 2026 (narratif) ; NICE NG106 (1.8.1)',
-    sources: ['EFFORT HF (JACC 2021)', 'ESC 2026', 'NICE NG106'],
+    evidenceGrade: 'EFFORT IC (JACC 2021) ; HFA 2025 ; ESC 2026 (narratif) ; NICE NG106 (1.8.1)',
+    sources: ['EFFORT HF (JACC 2021, texte intégral)', 'Kinugasa 2022', 'HFA 2025', 'ESC 2026', 'NICE NG106'],
     articleSlug: 'poids-obesite-et-denutrition',
   },
 
@@ -58,10 +58,10 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Petit bénéfice de survie dans un ancien essai (GISSI-HF : 27 % contre 29 %, NNT 56 sur 4 ans) antérieur aux traitements modernes, mais compromis possible avec le risque de fibrillation atriale.',
     mechanismOrCaveatFr:
-      'Les méta-analyses divergent sur le risque de FA à ≤ 1 g/j (HR 1,12 dans Gencer 2021 ; neutre dans l’analyse 2026 financée par l’industrie). Peu d’excès de saignements globalement (2,6 % contre 2,4 %), mais les notices demandent une surveillance avec aspirine, clopidogrel ou warfarine. Les gélules en vente libre (sans ordonnance) ne sont pas équivalentes aux spécialités sur prescription.',
+      'Dans GISSI-HF (870 mg d’EPA+DHA/j), la FA incidente était de 11,2 % contre 9,8 % (OR 1,16, non significatif). Les deux méta-analyses sur la FA pointent légèrement vers le haut aux faibles doses (Gencer 2021 : HR 1,12 ≤ 1 g/j ; Abuknesha 2026, 35 essais, financée en partie par l’industrie : OR 1,06–1,07 ≤ 1,5 g/j, non significatif, mais OR 1,14 significatif toutes doses confondues). Peu d’excès de saignements globalement (2,6 % contre 2,4 %), mais surveillance demandée avec aspirine, clopidogrel ou warfarine. Les gélules en vente libre ne sont pas équivalentes aux spécialités sur prescription.',
     affectedPillars: ['antiplatelet', 'anticoagulant'],
     evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 2b (B-R) ; absent d’ESC 2026',
-    sources: ['GISSI-HF (2008)', 'Gencer 2021', 'Javaid 2024', 'AHA/ACC/HFSA 2022'],
+    sources: ['GISSI-HF (2008)', 'Gencer 2021', 'Abuknesha 2026', 'Javaid 2024', 'AHA/ACC/HFSA 2022'],
     articleSlug: 'omega-3-huile-de-poisson',
   },
   {
@@ -70,12 +70,12 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['CoQ10', 'Ubiquinone', 'Ubiquinol', 'Q-SYMBIO'],
     verdict: 'possible',
     summaryFr:
-      'Signal clinique intrigant mais fragile : un petit essai (Q-SYMBIO, 420 patients) a divisé par deux les événements majeurs à 2 ans, mais n’a jamais été répliqué et précède les médicaments modernes.',
+      'Signal clinique intrigant mais fragile : un petit essai (Q-SYMBIO, 420 patients, FEVG moyenne 31 %, ~70 % ischémiques) a divisé par deux les événements majeurs à 2 ans, mais a été arrêté précocement, financé en partie par l’industrie, jamais répliqué et précède les médicaments modernes.',
     mechanismOrCaveatFr:
-      'Généralement bien tolérée, mais aucune recommandation internationale ne la conseille. L’AHA 2022 signale des interactions possibles avec les antihypertenseurs et les anticoagulants (en particulier les AVK comme la warfarine, par analogie structurale avec la vitamine K). Qualité et dosage variables entre compléments.',
+      'Aucun résultat séparé pour les patients ischémiques ni effet sur la FEVG ou le NT-proBNP ; Khan 2021 et An 2022 semblent regrouper les mêmes 7 essais (1 827 patients) et le signal de mortalité disparaît sans Q-SYMBIO. Généralement bien tolérée (13 % contre 19 % d’effets indésirables dans Q-SYMBIO), aucune recommandation internationale ne la conseille. Interactions signalées avec la warfarine (Khan 2021) et les antihypertenseurs/anticoagulants (AHA 2022). Qualité et dosage variables entre compléments.',
     affectedPillars: ['anticoagulant', 'raas_arni', 'beta_blocker'],
-    evidenceGrade: 'Certitude faible (Q-SYMBIO, Khan 2021) ; aucune recommandation',
-    sources: ['Q-SYMBIO (2014)', 'Khan 2021', 'An 2022', 'AHA 2022 CAM statement'],
+    evidenceGrade: 'Certitude faible (Q-SYMBIO, Khan 2021, Ezekowitz 2014) ; aucune recommandation',
+    sources: ['Q-SYMBIO (2014, texte intégral)', 'Ezekowitz 2014', 'Khan 2021', 'An 2022', 'AHA 2022 CAM statement'],
     articleSlug: 'coenzyme-q10',
   },
   {
@@ -127,16 +127,16 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
   {
     id: 'vitamine-d-seule',
     nameFr: 'Vitamine D seule (en dehors d’une carence documentée)',
-    aliases: ['Cholécalciférol', 'Vitamine D3', 'ZymaD', 'Uvedose', 'Complément vitamine D'],
+    aliases: ['Cholécalciférol', 'Vitamine D3', '25(OH)D', 'ZymaD', 'Uvedose', 'Complément vitamine D'],
     verdict: 'not_supported',
     summaryFr:
-      'Aucun bénéfice cardiovasculaire ni sur la survie dans l’insuffisance cardiaque en l’absence de carence biologique avérée.',
+      'Carence très fréquente dans l’ICFER (56 à 83 %), mais aucun essai randomisé ne montre que la vitamine D réduit les décès ou hospitalisations ; dans les essais IC regroupés, la marche de 6 minutes était même raccourcie de 39 m.',
     mechanismOrCaveatFr:
-      'Les grandes méta-analyses (An 2022) et l’essai EVITA (HR mortalité 1,09) ne montrent aucun gain cardiovasculaire. La déclaration AHA 2022 signale en outre des interactions potentielles (notamment sur la calcémie) avec la digoxine, les inhibiteurs calciques et certains diurétiques. Ne prenez de vitamine D que si votre médecin la prescrit pour corriger une carence ou protéger vos os.',
+      'Les grands essais en population générale (VITAL-HF, méta-analyse de 21 essais sur 83 291 personnes, DO-HEALTH, An 2022 sur 63 essais : décès RR 0,99) et EVITA (HR 1,09 rapporté) ne montrent aucun bénéfice cardiaque. Dans les essais IC (Khan 2021, repris par Chua 2025), marche de 6 min -39,4 m (certitude élevée) malgré une hausse très hétérogène de la FEVG (+4,33 points, I² = 90 %). L’enquête NHANES (Hung 2023) ne montre qu’une association transversale non causale. Corriger une carence avérée reste raisonnable pour les os et les muscles (Kampka 2025), mais pas « pour le cœur ». Précautions signalées par l’AHA 2022 avec digoxine, inhibiteurs calciques et diurétiques.',
     affectedPillars: ['addon_hf', 'loop_diuretic', 'other'],
-    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (Absence de bénéfice hors carence) ; An 2022',
-    sources: ['An 2022', 'EVITA', 'AHA 2022 CAM statement', 'AHA/ACC/HFSA 2022'],
-    articleSlug: 'tableau-preuves-nutrition-complements',
+    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (Absence de bénéfice hors carence) ; Kampka 2025 ; Khan 2021',
+    sources: ['Kampka 2025', 'Khan 2021 (texte intégral)', 'Chua 2025', 'Hung 2023', 'An 2022', 'AHA/ACC/HFSA 2022'],
+    articleSlug: 'vitamine-d-insuffisance-cardiaque',
   },
   {
     id: 'magnesium',
@@ -144,26 +144,26 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Magnésium marin', 'Chlorure de magnésium', 'Bisglycinate de magnésium', 'Mag 2'],
     verdict: 'not_supported',
     summaryFr:
-      'Non recommandé de manière systématique dans l’ICFER sans déficit documenté à la prise de sang ; prudence particulière en cas d’insuffisance rénale.',
+      'Aucune donnée sur les événements cliniques dans l’ICFER ; non recommandé sans déficit documenté à la prise de sang, avec prudence particulière en cas d’insuffisance rénale.',
     mechanismOrCaveatFr:
-      'Les diurétiques de l’anse peuvent abaisser le magnésium sanguin (un déficit avéré peut alors être corrigé sur prescription médicale), mais une supplémentation en automédication n’a pas de bénéfice cardiovasculaire démontré dans l’ICFER (AHA/ACC/HFSA 2022 Classe 3 hors carence). En cas de baisse du DFGe (insuffisance rénale), le magnésium peut s’accumuler ; vérifiez toujours avec votre médecin ou pharmacien.',
+      'Dans An 2022, le magnésium abaissait la pression artérielle d’environ 5 mmHg (certitude faible, essais excluant les cardiopathies sévères) sans aucune donnée sur les hospitalisations ou la mortalité. Les diurétiques de l’anse peuvent abaisser la magnésémie (un déficit prouvé peut alors être corrigé sur prescription), mais en cas de baisse du DFGe le magnésium peut s’accumuler : vérifiez toujours avec votre médecin ou pharmacien.',
     affectedPillars: ['loop_diuretic', 'other'],
-    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (Absence de bénéfice hors carence)',
-    sources: ['AHA/ACC/HFSA 2022', 'Khan 2021', 'An 2022'],
+    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (hors carence) ; An 2022 (certitude faible, pas d’événements)',
+    sources: ['An 2022 (texte intégral)', 'AHA/ACC/HFSA 2022', 'Khan 2021'],
     articleSlug: 'tableau-preuves-nutrition-complements',
   },
   {
     id: 'multivitamines-antioxydants',
-    nameFr: 'Multivitamines, vitamine C, sélénium et antioxydants',
-    aliases: ['Multivitamines', 'Vitamine C', 'Sélénium', 'Antioxydants', 'Complexe vitaminé'],
+    nameFr: 'Multivitamines, vitamine C, sélénium, vitamines B et antioxydants',
+    aliases: ['Multivitamines', 'Vitamine C', 'Sélénium', 'Antioxydants', 'Nicotinamide riboside', 'Complexe vitaminé'],
     verdict: 'not_supported',
     summaryFr:
       'Aucun bénéfice cardiovasculaire démontré dans les grandes méta-analyses ; ces produits ne remplacent jamais une alimentation variée ni le traitement de fond.',
     mechanismOrCaveatFr:
-      'Les synthèses An 2022, Khan 2019 et USPSTF 2022 concluent à l’absence de bénéfice cardiovasculaire (grade I USPSTF). Les recommandations américaines AHA/ACC/HFSA 2022 déconseillent les vitamines et compléments en routine dans l’ICFER en l’absence de carence avérée (Classe 3 : Absence de bénéfice).',
+      'Les synthèses An 2022 (texte intégral), Khan 2019 et USPSTF 2022 concluent à l’absence de bénéfice cardiovasculaire (grade I USPSTF). Les recommandations AHA/ACC/HFSA 2022 déconseillent les vitamines et compléments en routine hors carence avérée (Classe 3 : Absence de bénéfice). L’enquête transversale Qiu 2025 (alimentation/alcool) ne valide pas les compléments antioxydants, et l’étude Boitard 2025 (vitamines B + nicotinamide riboside) est strictement animale (souris).',
     affectedPillars: ['other'],
     evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (Absence de bénéfice, B-R) ; USPSTF Grade I',
-    sources: ['An 2022', 'Khan 2019', 'USPSTF 2022', 'AHA/ACC/HFSA 2022'],
+    sources: ['An 2022 (texte intégral)', 'Khan 2019', 'USPSTF 2022', 'Qiu 2025', 'Boitard 2025', 'AHA/ACC/HFSA 2022'],
     articleSlug: 'tableau-preuves-nutrition-complements',
   },
   {
@@ -174,10 +174,10 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Signaux limités à de petits essais sur la FEVG (critère intermédiaire), non confirmés par les analyses ultérieures ; réservés aux rares situations de carence prouvée.',
     mechanismOrCaveatFr:
-      'La cartographie Khan 2021 et une méta-analyse 2024 ne confirment pas d’amélioration significative de la FEVG sous thiamine (+1,65 %, non significatif) ni d’effet clinique sur les hospitalisations ou la mortalité pour la L-carnitine. Une supplémentation en thiamine ne se justifie qu’en cas de carence identifiée (dénutrition sévère, alcoolisme, très fortes doses de diurétiques).',
+      'Dans Khan 2021 (texte intégral), la thiamine (4 essais, 150 patients) montrait une hausse de FEVG de +3,59 points non confirmée par une méta-analyse de 2024 (+1,65 %, non significatif), et la L-carnitine +0,49 point de FEVG sans effet significatif sur la mortalité (RR 0,58 ; IC 95 % 0,16–2,12). Une supplémentation en thiamine ne se justifie qu’en cas de carence identifiée.',
     affectedPillars: ['loop_diuretic', 'other'],
     evidenceGrade: 'Certitude faible (Khan 2021) ; AHA/ACC/HFSA 2022 Classe 3 hors carence',
-    sources: ['Khan 2021', 'AHA/ACC/HFSA 2022'],
+    sources: ['Khan 2021 (texte intégral)', 'AHA/ACC/HFSA 2022'],
     articleSlug: 'tableau-preuves-nutrition-complements',
   },
   {
@@ -206,6 +206,20 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     affectedPillars: ['anticoagulant', 'addon_hf'],
     evidenceGrade: 'Certitude faible ; EMA (usage traditionnel fatigue uniquement)',
     sources: ['Yuan 2004', 'Lee 2010', 'Dasgupta', 'NCCIH', 'EMA'],
+    articleSlug: 'interactions-complements-aliments-medicaments',
+  },
+  {
+    id: 'phytotherapie-chinoise-ic',
+    nameFr: 'Formules de phytothérapie chinoise (Qiliqiangxin, Qishen Yiqi, Pueraria, Shexiangbaoxin)',
+    aliases: ['Qiliqiangxin', 'Qishen Yiqi', 'Pueraria', 'Gegen', 'Shexiangbaoxin', 'Shenfu', 'Médecine chinoise'],
+    verdict: 'not_supported',
+    summaryFr:
+      'Absentes des recommandations européennes, américaines et britanniques ; contrôle qualité variable et risques d’interactions (potassium, hypotension, ginseng, danshen, substances cardioactives).',
+    mechanismOrCaveatFr:
+      'Malgré des signaux dans des essais conduits en Chine (QUEST pour Qiliqiangxin, HR 0,78 ; revue sur Qishen Yiqi dans Chua 2025, mortalité OR 0,43, produit sur prescription d’un seul fabricant), la revue parapluie Chua 2025 souligne la qualité souvent critiquement faible des études et la sous-déclaration des effets indésirables : hyperkaliémie rapportée avec Pueraria (risque cumulé sous ARNI/IEC/ARA2/ARM), hypotension avec Qishen Yiqi, présence de ginseng/danshen et d’ingrédients cardioactifs (aconit préparé, Periploca, venin de crapaud) dans certaines formules. Vérifiez systématiquement tout produit avec votre cardiologue et votre pharmacien.',
+    affectedPillars: ['raas_arni', 'mra', 'anticoagulant', 'addon_hf'],
+    evidenceGrade: 'Chua 2025 (revues surtout de faible qualité) ; QUEST 2024 ; absent d’ESC/AHA/NICE',
+    sources: ['Chua 2025 (revue parapluie)', 'QUEST (Nature Medicine 2024)'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -248,10 +262,10 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Formellement déconseillés dans l’insuffisance cardiaque : provoquent rétention d’eau et de sel, perte d’efficacité des diurétiques, décompensation et insuffisance rénale aiguë.',
     mechanismOrCaveatFr:
-      'L’inhibition des prostaglandines rénales réduit la perfusion des reins (risque majeur d’insuffisance rénale aiguë avec l’association ARNI/IEC/ARA2 + diurétique) et favorise la rétention hydrosodée. Attention aux médicaments combinés contre le rhume ou la grippe contenant de l’ibuprofène. L’aspirine à faible dose prescrite en prévention coronaire n’est pas concernée par cette interdiction.',
+      'L’inhibition des prostaglandines rénales réduit la perfusion des reins (risque majeur d’insuffisance rénale aiguë avec l’association ARNI/IEC/ARA2 + diurétique) et favorise la rétention hydrosodée. Le consensus européen Abdin 2025 (EJHF) confirme un risque dépendant de la dose (notamment diclofénac, indométacine, piroxicam, et célécoxib à forte dose) et cite le paracétamol ou les AINS topiques en gel/crème comme alternatives à discuter avec le médecin ou le pharmacien. Attention aux médicaments combinés contre le rhume contenant de l’ibuprofène. L’aspirine à faible dose prescrite en prévention coronaire n’est pas concernée.',
     affectedPillars: ['raas_arni', 'mra', 'loop_diuretic', 'sglt2i', 'antiplatelet', 'anticoagulant'],
-    evidenceGrade: 'ESC 2026 Classe III, niveau B2 ; AHA/ACC/HFSA 2022 Classe 3 (Danger)',
-    sources: ['ESC 2026', 'AHA/ACC/HFSA 2022', 'Notice Entresto', 'AHA 2016/2022'],
+    evidenceGrade: 'ESC 2026 Classe III, niveau B2 ; AHA/ACC/HFSA 2022 Classe 3 (Danger) ; Abdin 2025',
+    sources: ['ESC 2026', 'Abdin 2025 (EJHF)', 'AHA/ACC/HFSA 2022', 'Notice Entresto'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -332,10 +346,10 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Facteurs déclenchants officiels d’acidocétose (parfois à glycémie normale) chez les patients traités par inhibiteur du SGLT2 (dapagliflozine — Forxiga, empagliflozine — Jardiance).',
     mechanismOrCaveatFr:
-      'Bien que les cas des grands essais (DAPA-HF, DELIVER, DAPA-CKD) soient survenus chez des patients diabétiques, la notice de la dapagliflozine cite explicitement régime cétogène, restriction calorique sévère, déshydratation, chirurgie et abus d’alcool comme déclencheurs d’acidocétose euglycémique (nausées, vomissements, douleurs abdominales, essoufflement). Envisagez toute perte de poids de façon progressive et encadrée.',
+      'La notice de la dapagliflozine cite explicitement régime cétogène, restriction calorique sévère, déshydratation, chirurgie et abus d’alcool comme déclencheurs d’acidocétose euglycémique (nausées, vomissements, douleurs abdominales, essoufflement). La déclaration HFA 2025 rappelle aussi les risques d’hypoglycémie sous insuline, de troubles électrolytiques et de hausse du LDL ; la revue rétrospective non contrôlée Moseley 2025 (125 patients IC obèses, dont seulement 2 sous iSGLT2 et sans mesure de cétones) n’apporte aucune réassurance. Envisagez toute perte de poids de façon progressive et encadrée.',
     affectedPillars: ['sglt2i'],
-    evidenceGrade: 'Directe (notice réglementaire dapagliflozine — Forxiga)',
-    sources: ['Notice dapagliflozine (Forxiga)', 'DAPA-HF', 'DELIVER'],
+    evidenceGrade: 'Directe (notice dapagliflozine — Forxiga) ; HFA 2025',
+    sources: ['Notice dapagliflozine (Forxiga)', 'HFA 2025', 'Moseley 2025', 'DAPA-HF', 'DELIVER'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -344,12 +358,12 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Huile de poisson forte dose', 'Oméga-3 4 g', 'EPA haute dose', 'Icosapent éthyl non prescrit'],
     verdict: 'avoid',
     summaryFr:
-      'Les fortes doses d’oméga-3 augmentent nettement le risque de fibrillation atriale (+49 % au-dessus de 1 g/j) et majorent légèrement les saignements à 4 g/j.',
+      'Les fortes doses d’oméga-3 augmentent nettement le risque de fibrillation atriale (+49 % au-dessus de 1 g/j ; +43 % au-dessus de 1,5 g/j chez les patients à haut risque) et majorent légèrement les saignements à 4 g/j.',
     mechanismOrCaveatFr:
-      'L’ensemble des méta-analyses (Gencer 2021 : HR 1,49 au-dessus de 1 g/j ; Abuknesha 2026 : +43 % au-dessus de 1,5 g/j) confirme la hausse du risque de FA aux doses élevées. L’AHA 2022 recommande d’éviter ≥ 4 g/j dans l’insuffisance cardiaque. À 4 g/j d’EPA purifié, le risque hémorragique augmente aussi légèrement (+0,6 pour 100), notamment avec aspirine, clopidogrel ou warfarine.',
+      'L’ensemble des méta-analyses (Gencer 2021 : HR 1,49 au-dessus de 1 g/j ; Abuknesha 2026 sur 35 essais et 114 592 patients : OR 1,43 [1,14–1,79] au-dessus de 1,5 g/j chez les patients à haut risque, OR 1,14 globalement) confirme la hausse du risque de FA aux doses élevées. L’AHA 2022 recommande d’éviter ≥ 4 g/j dans l’insuffisance cardiaque. À 4 g/j d’EPA purifié, le risque hémorragique augmente aussi légèrement (+0,6 pour 100), notamment avec aspirine, clopidogrel ou warfarine.',
     affectedPillars: ['antiplatelet', 'anticoagulant', 'beta_blocker'],
-    evidenceGrade: 'Gencer 2021 ; AHA 2022 (éviter ≥ 4 g/j) ; REDUCE-IT',
-    sources: ['Gencer 2021', 'Abuknesha 2026', 'AHA 2022 CAM statement', 'Javaid 2024'],
+    evidenceGrade: 'Gencer 2021 ; Abuknesha 2026 ; AHA 2022 (éviter ≥ 4 g/j) ; REDUCE-IT',
+    sources: ['Gencer 2021', 'Abuknesha 2026 (texte intégral)', 'AHA 2022 CAM statement', 'Javaid 2024'],
     articleSlug: 'omega-3-huile-de-poisson',
   },
   {
@@ -428,12 +442,12 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Vitamine E', 'Tocophérol', 'Bêta-carotène', 'Provitamine A'],
     verdict: 'avoid',
     summaryFr:
-      'Signaux démontrés d’effets délétères cardiovasculaires : davantage d’hospitalisations pour insuffisance cardiaque sous vitamine E (RR 1,21) et hausse de la mortalité sous bêta-carotène (RR 1,12).',
+      'Signaux démontrés d’effets délétères cardiovasculaires : davantage d’hospitalisations pour insuffisance cardiaque sous vitamine E (RR 1,21) et hausse de la mortalité sous bêta-carotène (RR 1,10 à 1,12).',
     mechanismOrCaveatFr:
-      'La vitamine E à forte dose (> 400 UI/j) est également associée à un risque accru d’AVC hémorragique, notamment chez les patients sous aspirine ou anticoagulants. L’USPSTF 2022 recommande activement contre ces deux compléments en prévention cardiovasculaire (Grade D).',
+      'Dans Khan 2021 (texte intégral, repris par Chua 2025), la vitamine E s’associe à un surrisque d’hospitalisation pour IC (RR 1,21 ; IC 95 % 1,04–1,40 sur 2 grands essais, 17 956 patients) et, au-dessus de 400 UI/j, à un risque accru d’AVC hémorragique sous aspirine ou anticoagulants. Dans An 2022, le bêta-carotène augmente mortalité totale (RR 1,10), décès CV (RR 1,12) et AVC (RR 1,09 ; GRADE faible). L’USPSTF 2022 recommande contre ces deux compléments (Grade D).',
     affectedPillars: ['antiplatelet', 'anticoagulant', 'other'],
-    evidenceGrade: 'Certitude modérée (Khan 2021, An 2022, USPSTF 2022 Grade D)',
-    sources: ['Khan 2021', 'An 2022', 'USPSTF 2022', 'NIH ODS'],
+    evidenceGrade: 'Certitude modérée pour la vitamine E (Khan 2021) ; USPSTF 2022 Grade D',
+    sources: ['Khan 2021 (texte intégral)', 'Chua 2025', 'An 2022 (texte intégral)', 'USPSTF 2022', 'NIH ODS'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -448,7 +462,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     affectedPillars: ['other'],
     evidenceGrade: 'Certitude modérée (Khan 2019)',
     sources: ['Khan 2019', 'An 2022'],
-    articleSlug: 'interactions-complements-aliments-medicaments',
+    articleSlug: 'vitamine-d-insuffisance-cardiaque',
   },
   {
     id: 'muguet-actee-bleue',
@@ -472,10 +486,10 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Une consommation importante d’alcool est directement toxique pour le muscle cardiaque, favorise la fibrillation atriale, aggrave la tension et accroît les risques d’acidocétose sous iSGLT2 et d’hémorragie sous anticoagulants.',
     mechanismOrCaveatFr:
-      'Les recommandations ESC 2026 déconseillent formellement les consommations excessives (Classe I, niveau C dans les conseils d’hygiène de vie) et qualifient les données sur les consommations faibles à modérées de mitigées. La notice de la dapagliflozine cite l’abus d’alcool parmi les déclencheurs d’acidocétose. Parlez ouvertement de votre consommation avec votre cardiologue.',
+      'Les recommandations ESC 2026 déconseillent formellement les consommations excessives (Classe I, niveau C dans les conseils d’hygiène de vie) et qualifient les données sur les consommations faibles à modérées de mitigées. Schwingshackl 2026 rappelle que les bénéfices prêtés au vin sont observationnels et que l’OMS considère l’abstinence comme le niveau le plus sûr ; Qiu 2025 confirme le poids défavorable de l’alcool. La notice de la dapagliflozine cite l’abus d’alcool parmi les déclencheurs d’acidocétose. Parlez ouvertement de votre consommation avec votre cardiologue.',
     affectedPillars: ['sglt2i', 'anticoagulant', 'antiplatelet', 'beta_blocker'],
     evidenceGrade: 'ESC 2026 (Classe I, niveau C) ; notice dapagliflozine',
-    sources: ['ESC 2026', 'Notice dapagliflozine (Forxiga)'],
+    sources: ['ESC 2026', 'Schwingshackl 2026', 'Qiu 2025', 'Notice dapagliflozine (Forxiga)'],
     articleSlug: 'alimentation-cardioprotectrice',
   },
 ];

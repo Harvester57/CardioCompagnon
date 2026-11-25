@@ -14,7 +14,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'ICFER (insuffisance cardiaque à FEVG réduite)',
     aliases: ['ICFER', 'HFrEF', 'FEVG réduite'],
     shortDefinitionFr:
-      'Insuffisance cardiaque avec baisse de la contraction : FEVG < 50 % selon ESC 2026 (≤ 40 % dans les recommandations américaines, NICE et anciennes ESC).',
+      "Insuffisance cardiaque avec baisse de la contraction : FEVG < 50 % selon ESC 2026 (≤ 40 % aux États-Unis, NICE et anciennes ESC). La Définition universelle 2026 ne fixe délibérément aucun seuil chiffré, notant qu'une FEVG < 50 % a peu de chances d'être normale.",
     articleSlug: 'fraction-dejection',
   },
   {
@@ -22,7 +22,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'HFimpEF (insuffisance cardiaque à FEVG améliorée)',
     aliases: ['HFimpEF', 'FEVG améliorée', 'FEVG récupérée'],
     shortDefinitionFr:
-      'Hausse de la FEVG d’au moins 10 points aboutissant au-dessus de 40 % (ESC 2026). Correspond à une rémission : le traitement de fond doit être poursuivi.',
+      "Hausse de la FEVG d'au moins 10 points aboutissant au-dessus de 40 % (ESC 2026). La Définition universelle 2026 retient la même description mais précise que la FEVG seule ne suffit pas à la définir ; le traitement de fond doit être poursuivi.",
     articleSlug: 'insuffisance-cardiaque-fevg-amelioree',
   },
   {
@@ -30,7 +30,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'HFmrEF (FEVG modérément réduite)',
     aliases: ['HFmrEF', 'FEVG modérément réduite'],
     shortDefinitionFr:
-      'Ancienne catégorie 41–49 %, supprimée par les recommandations ESC 2026 (intégrée dans ICFER < 50 %), mais encore utilisée aux États-Unis et par NICE.',
+      'Ancienne catégorie 41–49 %, supprimée par les recommandations ESC 2026 (intégrée dans ICFER < 50 %) et non utilisée dans la Définition universelle 2026, mais encore employée aux États-Unis et par NICE.',
     articleSlug: 'fraction-dejection',
   },
   {
@@ -42,6 +42,14 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     articleSlug: 'fraction-dejection',
   },
   {
+    id: 'definition_universelle_ic',
+    termFr: "Définition universelle de l'insuffisance cardiaque (2026)",
+    aliases: ['Définition universelle', 'Universal Definition', 'AHA/ACC/ESC/WHF'],
+    shortDefinitionFr:
+      "Consensus conjoint AHA/ACC/ESC/WHF sur la terminologie de l'insuffisance cardiaque (2021 ; 2e édition juin 2026). Ce n'est pas une recommandation thérapeutique : elle ne fixe pas de seuils de FEVG ou de peptides natriurétiques et liste 18 groupes étiologiques, avec la cardiomyopathie ischémique en premier.",
+    articleSlug: 'fraction-dejection',
+  },
+  {
     id: 'cardiomyopathie_ischemique',
     termFr: 'Cardiomyopathie ischémique',
     aliases: ['ischémique', 'ischaemic cardiomyopathy', 'CMI'],
@@ -50,11 +58,19 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     articleSlug: 'cardiomyopathie-ischemique',
   },
   {
+    id: 'infarctus_myocarde',
+    termFr: 'Infarctus du myocarde (IDM / MI)',
+    aliases: ['IDM', 'MI', 'infarctus', 'crise cardiaque'],
+    shortDefinitionFr:
+      "Nécrose d'une zone du muscle cardiaque provoquée par l'occlusion brutale d'une artère coronaire.",
+    articleSlug: 'cardiomyopathie-ischemique',
+  },
+  {
     id: 'stades_ic',
     termFr: "Stades A / B / C / D de l'insuffisance cardiaque",
-    aliases: ['Stade B', 'Stade C', 'Stade A', 'Stade D', 'pré-insuffisance cardiaque'],
+    aliases: ['Stade 0', 'Stade A', 'Stade B', 'Stade C', 'Stade D', 'pré-insuffisance cardiaque'],
     shortDefinitionFr:
-      'A : à risque ; B : anomalie structurelle (ex. FEVG basse) sans jamais avoir eu de symptômes ; C : symptômes actuels ou passés ; D : avancée. Les stades ne reculent jamais.',
+      "A : à risque ; B : anomalie structurelle (ex. FEVG basse) sans jamais avoir eu de symptômes ; C : symptômes actuels ou passés ; D : avancée. Les stades ne reculent jamais (pas de retour de C vers B), mais la Définition universelle 2026 décrit amélioration, rémission et récupération au sein de l'IC symptomatique et mentionne un « stade 0 » sans facteur de risque.",
     articleSlug: 'dysfonction-vg-asymptomatique-stade-b',
   },
   {
@@ -72,6 +88,46 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinitionFr:
       'Acronyme français des 4 signes de décompensation cardiaque : Essoufflement, Prise de poids rapide, Œdèmes des jambes, Fatigue inhabituelle.',
     articleSlug: 'vivre-avec-insuffisance-cardiaque',
+  },
+  {
+    id: 'decompensation_cardiaque',
+    termFr: 'Décompensation cardiaque',
+    aliases: ['décompensation cardiaque', 'insuffisance cardiaque aiguë', 'decompensated HF'],
+    shortDefinitionFr:
+      "Aggravation nécessitant une intensification ou un traitement de secours (par exemple augmentation ou ajout de diurétique), souvent à l'hôpital ; elle peut s'installer sur des jours à des semaines ou brutalement (Définition universelle 2026). À distinguer de l'aggravation progressive.",
+    articleSlug: 'vivre-avec-insuffisance-cardiaque',
+  },
+  {
+    id: 'aggravation_ic',
+    termFr: "Aggravation de l'insuffisance cardiaque (worsening heart failure)",
+    aliases: ['worsening heart failure', 'aggravation IC', 'aggravation progressive'],
+    shortDefinitionFr:
+      "Définition universelle 2026 : détérioration progressive des symptômes, signes cliniques ou qualité de vie chez une personne déjà diagnostiquée (essoufflement, œdèmes, hausse du NT-proBNP ou baisse de pompe), sans nécessiter de visite hospitalière et hors déclencheur externe majeur (infarctus, infection, oubli de traitement).",
+    articleSlug: 'vivre-avec-insuffisance-cardiaque',
+  },
+  {
+    id: 'remission_ic',
+    termFr: 'Rémission (insuffisance cardiaque)',
+    aliases: ['rémission', 'remission'],
+    shortDefinitionFr:
+      "ESC 2026 : terme employé pour une FEVG améliorée (traitement à poursuivre). La Définition universelle 2026 l'emploie plus strictement : FEVG revenue à la normale, symptômes minimes (NYHA I) et biomarqueurs stables, avec risque résiduel de rechute ; une hausse moindre est appelée « amélioration ».",
+    articleSlug: 'insuffisance-cardiaque-fevg-amelioree',
+  },
+  {
+    id: 'recuperation_ic',
+    termFr: 'Récupération (insuffisance cardiaque)',
+    aliases: ['récupération', 'recovery', 'guérison IC'],
+    shortDefinitionFr:
+      'Définition universelle 2026 : maintien durable dans le temps de la structure cardiaque, de la fonction, des biomarqueurs sanguins et des symptômes à la normale sur un suivi prolongé. Critère plus strict que la rémission, atteint par une minorité de patients.',
+    articleSlug: 'insuffisance-cardiaque-fevg-amelioree',
+  },
+  {
+    id: 'ic_stable',
+    termFr: 'Insuffisance cardiaque « stable »',
+    aliases: ['IC stable', 'insuffisance cardiaque stable', 'stable heart failure'],
+    shortDefinitionFr:
+      "Expression courante que la Définition universelle 2026 qualifie d'impropre, car un risque résiduel d'aggravation, d'hospitalisation ou de mort subite persiste toujours.",
+    articleSlug: 'comprendre-le-diagnostic',
   },
   {
     id: 'ett',
@@ -242,6 +298,14 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     articleSlug: 'dispositifs-cardiaques-dai-crt',
   },
   {
+    id: 'mort_subite_cardiaque',
+    termFr: 'Mort subite cardiaque (MSC / SCD)',
+    aliases: ['MSC', 'SCD', 'mort subite', 'sudden cardiac death'],
+    shortDefinitionFr:
+      "Décès inattendu d'origine cardiaque, le plus souvent provoqué par un trouble du rythme ventriculaire grave.",
+    articleSlug: 'dispositifs-cardiaques-dai-crt',
+  },
+  {
     id: 's_dai',
     termFr: 'DAI sous-cutané (S-DAI / S-ICD)',
     aliases: ['S-DAI', 'S-ICD', 'DAI sous-cutané'],
@@ -375,6 +439,14 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     aliases: ['antiagrégant', 'aspirine', 'Kardégic', 'clopidogrel', 'Plavix', 'ticagrélor'],
     shortDefinitionFr:
       'Médicament empêchant les plaquettes de s’agréger (aspirine faible dose, clopidogrel, ticagrélor), prescrit au long cours dans la maladie coronaire.',
+    articleSlug: 'cholesterol-et-prevention-secondaire',
+  },
+  {
+    id: 'prevention_secondaire_coronaire',
+    termFr: 'Prévention secondaire coronaire',
+    aliases: ['prévention secondaire', 'secondary prevention'],
+    shortDefinitionFr:
+      "Ensemble des traitements destinés à prévenir un nouvel infarctus ou AVC lorsque la maladie coronaire est connue : baisse du LDL, antiagrégant plaquettaire, contrôle tensionnel, parfois colchicine.",
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -692,7 +764,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     id: 'soins_support_anticipation',
     termFr: 'Soins de support / soins palliatifs et directives anticipées',
-    aliases: ['soins palliatifs', 'soins de support', 'directives anticipées', 'TCC'],
+    aliases: ['soins palliatifs', 'soins de support', 'directives anticipées', 'TCC', 'CBT'],
     shortDefinitionFr:
       'Accompagnement global des symptômes, du moral (incluant la TCC) et des choix futurs de soins, proposé en parallèle des traitements à tout stade de la maladie (HFA 2020).',
     articleSlug: 'soins-de-support-et-anticipation',

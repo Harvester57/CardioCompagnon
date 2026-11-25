@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/heart-devices-icd-and-crt.md',
   titleFr: 'Dispositifs cardiaques implantés : DAI et CRT',
   category: 'dispositifs',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'hot',
   tags: [
@@ -136,7 +136,7 @@ C’est la raison pour laquelle les ECG de suivi recherchent systématiquement u
       headingFr: 'Le gilet défibrillateur portable (LifeVest) en bref',
       bodyMarkdownFr: `Un **gilet défibrillateur portable (LifeVest)** peut détecter et choquer un trouble du rythme grave pendant les premières semaines suivant un infarctus ou le diagnostic, période où l’implantation d’un DAI n’est pas recommandée. Les recommandations ESC 2026 indiquent qu’il **peut être envisagé** comme relais temporaire (**Classe IIb**). Les recommandations rythmologiques ESC 2022 précisent qu’il doit être envisagé lorsqu’un patient ayant besoin d’un DAI en prévention secondaire ne peut temporairement pas être implanté (**Classe IIa C**), et peut être envisagé chez certains patients sélectionnés tôt après un infarctus (**Classe IIb B**), mais pas de façon systématique.
 
-- **Essai VEST (2018) :** 2 302 patients dans les jours suivant un infarctus avec FEVG ≤ 35 %, suivis 90 jours.
+- **Essai VEST (2018) :** 2 348 personnes randomisées (2 302 analysées) dans les jours suivant un infarctus avec FEVG ≤ 35 %, suivies 90 jours.
   - **Mort subite rythmique (critère principal) :** **1,6 %** avec le gilet contre **2,4 %** sans gilet (**non statistiquement significatif**).
   - Mortalité toutes causes : **3,1 % contre 4,9 %** (résultat considéré par les auteurs comme probablement dû au hasard après prise en compte des comparaisons multiples).
   - La durée de port a chuté rapidement (médiane **18 heures par jour**). Des chocs inappropriés sont survenus chez **0,6 %** des patients ; démangeaisons et irritations cutanées étaient plus fréquentes. Le fabricant a assuré seul le financement après 2011.
@@ -228,8 +228,8 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
       detail: 'Comparaison DAI sous-cutané versus DAI transveineux à 4 ans et profil de complications',
     },
     {
-      label: 'Essai VEST (2018), analyse per-protocole (2020), registres WEARIT-II Europe et HF-OPT, avis HAS CNEDiMTS (2024)',
-      detail: 'Données cliniques et indications remboursées en France pour le gilet défibrillateur portable',
+      label: 'Essai VEST (2018), analyse per-protocole (2020), registres WEARIT-II Europe et HF-OPT, avis HAS CNEDiMTS (2024) et revue systématique Goetz (2023, texte intégral)',
+      detail: 'Données cliniques (effectifs randomisés et analysés dans VEST), évaluation indépendante et indications remboursées en France pour le gilet défibrillateur portable',
     },
     {
       label: 'Revue Tomzik (2015), prise de position HFA (2020), NICE NG106 (2025) et consensus HRS (2023)',

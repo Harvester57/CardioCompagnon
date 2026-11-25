@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/ischaemic-cardiomyopathy.md',
   titleFr: 'La cardiomyopathie ischémique',
   category: 'diagnostic',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'stable',
   tags: [
@@ -31,7 +31,15 @@ export const article: WikiArticle = {
       headingFr: 'Ce qui se passe dans le cœur',
       bodyMarkdownFr: `- **La cause.** La maladie coronarienne en est la cause principale, et l'infarctus du myocarde est l'événement majeur qui lèse le muscle cardiaque. La British Heart Foundation (BHF) cite l'infarctus parmi les causes les plus fréquentes d'insuffisance cardiaque, et le guide patient ESC place en tête « un infarctus qui a endommagé une partie du muscle cardiaque » (Cleveland Clinic ; BHF ; guide patient ESC).
 - **Un muscle plus faible et une cavité plus grande.** La baisse de perfusion affaiblit le myocarde et le ventricule gauche se dilate, ce qui diminue son efficacité de pompage. Le guide patient ESC décrit de même l'ICFER (*HFrEF*) comme une contraction affaiblie, avec un cœur qui « peut parfois être agrandi » (Cleveland Clinic ; guide patient ESC).
-- **Fréquence.** La Cleveland Clinic présente la cardiomyopathie ischémique comme la forme la plus courante de cardiomyopathie dilatée et indique qu'elle représenterait environ 60 % des insuffisances cardiaques systoliques. Comme cette page ne cite pas de référence primaire pour ce pourcentage, il convient de le considérer comme un ordre de grandeur approximatif (Cleveland Clinic).`,
+- **Fréquence.** La Cleveland Clinic présente la cardiomyopathie ischémique comme la forme la plus courante de cardiomyopathie dilatée et indique qu'elle représenterait environ 60 % des insuffisances cardiaques systoliques. Comme cette page ne cite pas de référence primaire pour ce pourcentage, il convient de le considérer comme un ordre de grandeur approximatif (Cleveland Clinic). La Deuxième définition universelle de l'insuffisance cardiaque (2026) le formule différemment : environ la moitié de toutes les personnes atteintes d'insuffisance cardiaque, tous niveaux de FEVG confondus, présentent une insuffisance cardiaque causée par une maladie coronarienne. La cardiopathie ischémique constitue le principal facteur de risque dans plus de 50 % des cas d'insuffisance cardiaque dans les pays occidentaux à revenu élevé ainsi qu'en Europe centrale et orientale (Définition universelle 2026).`,
+    },
+    {
+      headingFr: 'Comment cette étiquette est classée (2026)',
+      bodyMarkdownFr: `La *Deuxième définition universelle de l'insuffisance cardiaque* (2026) est un consensus international de terminologie (AHA, ACC, ESC et Fédération mondiale du cœur — WHF), et non une recommandation thérapeutique (Définition universelle 2026).
+
+- **Elle conserve l'étiquette « ischémique ».** Elle juge l'opposition habituelle en deux catégories (« ischémique » versus « non ischémique ») trop simplificatrice, car « non ischémique » recouvre de nombreuses causes différentes, dont certaines bénéficient de traitements spécifiques. Elle répartit donc les causes en **18 groupes** pour harmoniser les comptes rendus, et la **cardiomyopathie ischémique occupe la première place** (cardiopathie ischémique, infarctus du myocarde, maladie coronarienne). Elle ne supprime ni ne remplace la catégorie ischémique.
+- **Aucun seuil coronaire imposé.** Elle ne fixe pas de règle quant au degré d'atteinte coronaire nécessaire pour qualifier une insuffisance cardiaque d'ischémique ; les critères retenus par votre équipe proviennent donc d'autres référentiels (voir *Confirmer la cause de la dysfonction du ventricule gauche*).
+- **La cause est indépendante de la FEVG.** Les groupes étiologiques s'appliquent quelle que soit la FEVG. Cette liste est présentée comme non exhaustive et susceptible d'évoluer.`,
     },
     {
       headingFr: 'Lésions réversibles et lésions définitives',
@@ -55,6 +63,8 @@ Cette distinction explique pourquoi les cardiologues parlent parfois de myocarde
 - des palpitations ;
 - des étourdissements ou des malaises (syncopes) ;
 - plus rarement, une douleur thoracique (angor).
+
+**L'essoufflement n'est pas toujours lié à l'insuffisance cardiaque.** Chez une personne ayant une maladie coronarienne, un nouvel essoufflement à l'effort peut provenir d'une réduction de l'apport sanguin au myocarde (ischémie) plutôt que de l'insuffisance cardiaque elle-même : 10 à 15 % des personnes atteintes de maladie coronarienne chronique décrivent un essoufflement comme unique symptôme, sans douleur thoracique. Les deux phénomènes peuvent coexister, et une ischémie peut également déclencher une aggravation de l'insuffisance cardiaque. La Deuxième définition universelle de 2026 conseille d'évaluer les deux, en combinant un ECG, une échocardiographie (ETT) et des examens coronaires au bilan habituel de l'insuffisance cardiaque (Définition universelle 2026).
 
 Les médecins évaluent le retentissement de ces symptômes sur la vie courante à l'aide des classes **NYHA I à IV** (voir *Glossaire médical de la cardiomyopathie ischémique*).`,
     },
@@ -115,6 +125,7 @@ Pour l'ampleur du bénéfice des traitements modernes, voir *Les médicaments de
     { label: "PARADIGM-HF selon l'étiologie", detail: 'Comparaison des événements bruts et ajustés entre causes ischémiques et non ischémiques' },
     { label: 'McCrohon et al. (2003)', detail: 'Répartition des cicatrices IRM (LGE) entre atteinte coronaire et non coronaire' },
     { label: 'Jones et al. (2024)', detail: 'Caractéristiques de cardiomyopathie dilatée chez des patients atteints de maladie coronaire' },
+    { label: "Deuxième définition universelle de l'insuffisance cardiaque (2026)", detail: "Consensus AHA/ACC/ESC/WHF (texte intégral) : 18 groupes étiologiques avec la cardiomyopathie ischémique en tête, part coronaire de l'IC et ischémie mimant une IC" },
   ],
   disclaimerType: 'medical',
 };

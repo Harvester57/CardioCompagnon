@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/references/glossary.md',
   titleFr: 'Glossaire médical de la cardiomyopathie ischémique',
   category: 'references',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'stable',
   tags: [
@@ -23,7 +23,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Définitions en langage clair des termes médicaux, acronymes et abréviations rencontrés dans les comptes rendus de cardiologie, d'échocardiographie, d'IRM cardiaque et dans cette application. Lorsque deux sociétés savantes retiennent des seuils différents, les deux définitions sont précisées.",
+    "Définitions en langage clair des termes médicaux, acronymes et abréviations rencontrés dans les comptes rendus de cardiologie, d'échocardiographie, d'IRM cardiaque et dans cette application. Lorsque deux sociétés savantes (par exemple ESC 2026, recommandations américaines ou Définition universelle 2026) retiennent des seuils ou des termes différents, les deux définitions sont précisées.",
   sections: [
     {
       headingFr: 'A – C',
@@ -31,9 +31,10 @@ export const article: WikiArticle = {
 |---|---|
 | **Acide bempédoïque** | Comprimé quotidien réduisant le cholestérol LDL ; recommandé en Classe I (ESC) en cas d'intolérance aux statines, et possible en ajout à statine + ézétimibe. |
 | **AERAS (convention)** | Convention française « s'Assurer et Emprunter avec un Risque Aggravé de Santé ». Aucun questionnaire de santé si la part assurée est ≤ 200 000 € par personne et si le prêt se termine avant 60 ans (loi Lemoine) ; au-delà, examen jusqu'à trois niveaux. Le droit à l'oubli ne couvre pas les pathologies cardiaques. |
+| **Aggravation de l'insuffisance cardiaque (worsening heart failure)** | Définition universelle 2026 : détérioration progressive des symptômes, des signes cliniques ou de la qualité de vie chez une personne déjà diagnostiquée avec une insuffisance cardiaque (par exemple essoufflement ou œdèmes accrus, hausse du NT-proBNP, ou affaiblissement de la pompe à l'imagerie). Ne nécessite pas obligatoirement une consultation ou une hospitalisation, et exclut les aggravations principalement dues à un autre déclencheur (infarctus, infection, oubli de traitement). À distinguer de la *décompensation cardiaque*. |
 | **AINS (anti-inflammatoires non stéroïdiens)** | Médicaments contre la douleur ou l'inflammation (ibuprofène, kétoprofène, diclofénac...) à éviter dans l'insuffisance cardiaque car ils favorisent la rétention hydrosodée, les poussées et l'insuffisance rénale. |
 | **ALD (affection de longue durée)** | Statut français d'exonération du ticket modérateur (ALD 5 pour insuffisance cardiaque grave, ALD 13 pour maladie coronaire) : prise en charge à 100 % du tarif de l'Assurance Maladie pour les soins inscrits au *protocole de soins* (hors dépassements d'honoraires et franchises). |
-| **Angiœdème** | Gonflement brutal et rare des lèvres, de la bouche, de la langue ou de la gorge sous IEC ou sacubitril/valsartan (Entresto) ; urgence médicale immédiate (appeler le 15 / SAMU ou le 112). |
+| **Angiœdème** | Gonflement brutal et rare des lèvres, de la bouche, de la langue ou de la gorge sous IEC ou sacubitril/valsartan (*Entresto*) ; urgence médicale immédiate (appeler le 15 / SAMU ou le 112). |
 | **Angioplastie coronaire (PCI)** | Intervention par voie endovasculaire (cathéter) pour rouvrir une artère coronaire rétrécie ou bouchée, le plus souvent avec pose d'un stent. |
 | **Antiagrégant plaquettaire** | Médicament empêchant les plaquettes de s'agréger (aspirine à faible dose, clopidogrel, ticagrélor) ; utilisé au long cours dans la maladie coronaire et après pose de stent. |
 | **Anticoagulant** | Médicament ralentissant la coagulation sanguine (AVK comme la warfarine ou la fluindione, ou AOD). Distinct de l'aspirine, qui est un antiagrégant plaquettaire. |
@@ -44,6 +45,7 @@ export const article: WikiArticle = {
 | **ASV (servo-ventilation adaptative)** | Appareil ventilatoire nocturne adaptant sa pression cycle par cycle, utilisé dans l'apnée centrale. Dans SERVE-HF, il a augmenté la mortalité dans l'ICFER avec apnée principalement centrale ; déconseillé dans ce cas (ESC 2026, Classe III). |
 | **Bêtabloquant** | Pilier du traitement de fond (bisoprolol / *Cardensiel*, carvédilol, nébivolol, métoprolol succinate) ; également traitement de première ligne de l'angor dans l'ICFER. |
 | **CardioMEMS (capteur de pression artérielle pulmonaire)** | Petit capteur implanté dans une branche de l'artère pulmonaire permettant de détecter une élévation des pressions avant les symptômes de congestion. ESC 2026 : à envisager (Classe IIa) en NYHA III avec hospitalisation dans l'année ; réduit les hospitalisations sans effet démontré sur la survie. Non remboursé en France (avis HAS 2021). |
+| **Cardiomyopathie dilatée (CMD / DCM)** | Ventricule gauche dilaté et affaibli **non expliqué uniquement** par une maladie coronaire ou une surcharge anormale telle qu'une hypertension artérielle ou une valvulopathie (ESC 2023). Les causes incluent des variants génétiques, une myocardite passée ou l'alcool. |
 | **CHA₂DS₂-VA** | Score européen d'évaluation du risque d'AVC en cas de fibrillation atriale. L'insuffisance cardiaque compte 1 point ; une anticoagulation est recommandée à partir de 2 points. |
 | **Chélateur de potassium** | Poudre orale (patiromer, cyclosilicate de zirconium sodique) éliminant le potassium par voie digestive afin de maintenir les ARM malgré une tendance à l'hyperkaliémie ; bénéfice clinique direct non démontré. |
 | **Classe de recommandation (I, IIa, IIb, III)** | Force d'une recommandation : **I** = recommandé ; **IIa** = doit être envisagé ; **IIb** = peut être envisagé ; **III** = non recommandé (inutile ou délétère). |
@@ -59,9 +61,10 @@ export const article: WikiArticle = {
       bodyMarkdownFr: `| Terme | Définition en clair |
 |---|---|
 | **DAI (défibrillateur automatique implantable / ICD)** | Dispositif implanté protégeant contre la mort subite liée aux troubles du rythme ventriculaires graves ; il n'améliore pas les symptômes quotidiens. |
-| **DAI sous-cutané (S-DAI / S-ICD)** | Défibrillateur placé sous la peau, sans sonde dans les veines ni dans le cœur. Dans PRAETORIAN, moins de complications de sonde, mais pas de fonction de stimulation (pacemaker) ni de CRT. |
-| **Décompensation cardiaque** | Aggravation rapide (sur quelques heures à quelques jours) des symptômes d'insuffisance cardiaque nécessitant une prise en charge urgente (terme privilégié par l'ESC à la place d'« insuffisance cardiaque aiguë »). |
-| **Digoxine / digitoxine (digitaliques)** | Médicaments anciens renforçant la contraction et ralentissant le cœur. Option additionnelle si symptômes persistants à FEVG ≤ 40 % (ESC 2026, Classe IIa) ou contrôle de fréquence dans la FA. Un taux sanguin bas est essentiel ; signes de surdosage : nausées, confusion, vision jaunâtre. |
+| **DAI sous-cutané (S-DAI / S-ICD)** | Défibrillateur placé sous la peau, sans sonde dans les veines ni dans le cœur. Dans PRAETORIAN, moins de complications de sonde, mais pas de fonction de stimulation (pacemaker) ni de CRT ; les patients nécessitant ultérieurement une stimulation ont le plus souvent été convertis vers un dispositif transveineux. |
+| **Décompensation cardiaque** | Aggravation nécessitant une intensification du traitement ou un traitement de secours (par exemple augmentation ou ajout d'un diurétique), souvent à l'hôpital ; elle peut s'installer sur quelques jours à quelques semaines ou survenir brutalement (Définition universelle 2026). Le guide patient ESC utilise ce terme à la place d'« insuffisance cardiaque aiguë ». À comparer à *l'aggravation de l'insuffisance cardiaque*. |
+| **Définition universelle de l'insuffisance cardiaque (2026)** | Consensus conjoint AHA/ACC/ESC/World Heart Federation sur la terminologie de l'insuffisance cardiaque (2021 ; seconde édition juin 2026). Ce n'est pas une recommandation de traitement : elle ne fixe pas de seuils chiffrés de FEVG ni de peptides natriurétiques et recense 18 groupes étiologiques, avec la cardiomyopathie ischémique en premier. |
+| **Digoxine / digitoxine (digitaliques)** | Médicaments anciens renforçant la contraction et ralentissant le cœur. Option additionnelle si symptômes persistants à FEVG ≤ 40 % (ESC 2026, Classe IIa, relevée) ou contrôle de fréquence dans la FA. Un taux sanguin bas est essentiel ; signes de surdosage : nausées, confusion, vision jaunâtre. |
 | **Diurétique de l'anse** | Médicament favorisant l'élimination du sel et de l'eau (furosémide / *Lasilix*, bumétanide / *Burinex*) pour soulager l'essoufflement et les œdèmes. |
 | **Double pathologie (dual pathology)** | Présence simultanée d'une maladie coronaire et d'une seconde cause d'affaiblissement du muscle cardiaque (par exemple cicatrice d'infarctus associée à une fibrose médio-pariétale à l'IRM). |
 | **Échocardiographie de contraste** | Échocardiographie transthoracique avec injection d'un produit de contraste mettant en évidence le contour interne du ventricule gauche ; détecte mieux les thrombus VG qu'une ETT standard. |
@@ -76,8 +79,8 @@ export const article: WikiArticle = {
 | **Gilet défibrillateur portable (LifeVest)** | Gilet porté sous les vêtements jour et nuit, capable de détecter et choquer un trouble du rythme grave pendant les premiers mois avant la décision de DAI ; peut être envisagé comme passerelle temporaire (ESC 2026, Classe IIb). Conduite automobile interdite en France pendant son indication. |
 | **Groupe 1 / Groupe 2 (permis de conduire)** | Catégories européennes : groupe 1 (groupe léger) = voitures et motos ; groupe 2 (groupe lourd) = poids lourds et transport en commun. |
 | **Heart Team (équipe médico-chirurgicale)** | Équipe multidisciplinaire discutant les choix de revascularisation ou d'intervention valvulaire ; l'ESC 2026 demande qu'elle comprenne un spécialiste de l'insuffisance cardiaque. |
-| **HFimpEF (insuffisance cardiaque à FEVG améliorée)** | Hausse de la FEVG d'au moins 10 points aboutissant au-dessus de 40 % (définition ESC 2026). |
-| **HFmrEF** | Ancienne catégorie « FEVG modérément réduite » (41–49 %), **supprimée par l'ESC 2026**, mais encore présente dans les recommandations américaines, britanniques et les documents antérieurs. |
+| **HFimpEF (insuffisance cardiaque à FEVG améliorée)** | Hausse de la FEVG d'au moins 10 points aboutissant au-dessus de 40 % (définition ESC 2026). La Définition universelle 2026 retient la même description mais précise que la FEVG seule ne suffit pas à la définir. |
+| **HFmrEF** | Ancienne catégorie « FEVG modérément réduite » (41–49 %), **supprimée par l'ESC 2026** et non utilisée dans la Définition universelle 2026 ; encore présente dans les recommandations américaines, britanniques et les documents antérieurs. |
 | **HFpEF (insuffisance cardiaque à FEVG préservée)** | Insuffisance cardiaque avec FEVG ≥ 50 % associée à des anomalies structurelles ou fonctionnelles du cœur. |
 | **Hyperkaliémie** | Taux élevé de potassium dans le sang. Les IEC, ARA2, ARNI et ARM peuvent l'augmenter, justifiant des bilans sanguins réguliers. |`,
     },
@@ -86,11 +89,12 @@ export const article: WikiArticle = {
       bodyMarkdownFr: `| Terme | Définition en clair |
 |---|---|
 | **IAH (index d'apnées-hypopnées / AHI)** | Nombre de pauses respiratoires ou de respirations très superficielles par heure de sommeil mesuré lors d'un enregistrement nocturne. Un IAH ≥ 15/h est habituellement qualifié de modéré, > 30/h de sévère. |
-| **ICFER (insuffisance cardiaque à FEVG réduite / HFrEF)** | Définition ESC 2026 : FEVG **< 50 %** avec symptômes ou signes. Recommandations américaines (2022), NICE et anciennes recommandations ESC : FEVG **≤ 40 %**. |
-| **IEC / ARA2 / ARNI** | Pilier bloqueur du système rénine-angiotensine : IEC (ramipril, périndopril, énalapril, lisinopril) ou ARNI (sacubitril/valsartan — Entresto) ; ARA2 (candésartan, valsartan, losartan) en alternative si intolérance (ESC 2026). |
+| **ICFER (insuffisance cardiaque à FEVG réduite / HFrEF)** | Définition ESC 2026 : FEVG **< 50 %** avec symptômes ou signes. Recommandations américaines (2022), NICE et anciennes recommandations ESC : FEVG **≤ 40 %** (ou < 40 %). La Définition universelle 2026 ne fixe délibérément aucun seuil chiffré, notant simplement qu'une FEVG < 50 % a peu de chances d'être normale. |
+| **IEC / ARA2 / ARNI** | Pilier bloqueur du système rénine-angiotensine : IEC (ramipril, périndopril, énalapril, lisinopril) ou ARNI (sacubitril/valsartan — *Entresto*) ; ARA2 (candésartan, valsartan, losartan) en alternative si intolérance (ESC 2026). |
 | **Infarctus du myocarde (IDM / MI)** | Nécrose d'une zone du muscle cardiaque causée par l'occlusion brutale d'une artère coronaire. |
 | **Inclisiran** | Injection abaissant le cholestérol LDL administrée deux fois par an après les doses d'initiation ; réduit le LDL d'environ moitié, mais les essais d'événements cliniques n'étaient pas encore publiés fin 2026. |
 | **Inhibiteur de PCSK9 (anti-PCSK9)** | Traitement injectable (évolocumab, alirocumab) réduisant fortement le LDL ; recommandé (ESC Classe I) lorsque statine + ézétimibe ne suffisent pas à atteindre l'objectif. |
+| **Insuffisance cardiaque « stable »** | Expression courante que la Définition universelle 2026 qualifie d'impropre, car un risque résiduel d'aggravation, d'hospitalisation ou de mort subite persiste toujours. |
 | **Insuffisance mitrale secondaire** | Fuite de la valve mitrale provoquée par la dilatation du ventricule gauche qui écarte les feuillets valvulaires (forme ventriculaire). |
 | **IPA / Infirmière insuffisance cardiaque** | Infirmière en pratique avancée ou infirmière spécialisée assurant le suivi rapproché, l'éducation thérapeutique, la titration encadrée et la télésurveillance. |
 | **IRM cardiaque (CMR)** | Examen d'imagerie de haute précision mesurant les volumes, la FEVG et les zones de cicatrice (rehaussement tardif). En moyenne, mesure une FEVG inférieure d'environ 5,5 points à l'ETT dans la dysfonction ischémique. |
@@ -117,7 +121,8 @@ export const article: WikiArticle = {
 | **Prévention primaire vs secondaire (DAI)** | Primaire : DAI implanté avant la survenue d'un trouble du rythme grave. Secondaire : DAI implanté après un arrêt cardiaque ou une arythmie ventriculaire grave. |
 | **Prévention secondaire coronaire** | Ensemble des mesures visant à éviter un nouvel infarctus ou AVC en cas de maladie coronaire connue : baisse du LDL, antiagrégant plaquettaire, contrôle tensionnel, parfois colchicine. |
 | **QRS / BBG (bloc de branche gauche)** | Paramètres de l'ECG utilisés pour décider d'une CRT : un BBG avec durée du QRS ≥ 150 ms est la principale indication de Classe I dans l'ESC 2026. |
-| **Rémission** | Terme employé par l'ESC 2026 pour décrire une FEVG améliorée (HFimpEF) : le cœur va mieux mais reste vulnérable, ce qui impose de poursuivre le traitement de fond. |
+| **Récupération (insuffisance cardiaque)** | Définition universelle 2026 : maintien durable dans le temps d'une structure cardiaque, d'une fonction, de biomarqueurs sanguins et de symptômes revenus à la normale sur un suivi prolongé. Critère plus strict que la rémission ; seule une minorité de patients l'atteint. |
+| **Rémission** | ESC 2026 : terme employé pour une FEVG améliorée (le cœur va mieux mais reste vulnérable, donc le traitement se poursuit). La Définition universelle 2026 l'emploie plus strictement : FEVG revenue à la normale, symptômes minimes (NYHA I) et biomarqueurs stables, avec un risque persistant de rechute ; une hausse plus modeste est qualifiée d'« amélioration ». |
 | **Rétrécissement aortique (sténose aortique) : léger / modéré / sévère** | Rétrécissement de la valve aortique. Selon le tableau ASE/EACVI : léger = surface > 1,5 cm² et gradient moyen < 20 mmHg ; modéré = 1,0–1,5 cm² et 20–40 mmHg ; sévère = < 1,0 cm² et ≥ 40 mmHg. |
 | **Rétrécissement aortique bas débit, bas gradient** | Valve sévèrement rétrécie présentant un faible gradient de pression parce que le ventricule affaibli éjecte peu de sang. La forme « classique » associe surface ≤ 1,0 cm², gradient moyen < 40 mmHg, FEVG < 50 % et volume d'éjection indexé (SVi) ≤ 35 mL/m². |
 | **Rétrécissement aortique pseudo-sévère** | Valve modérément rétrécie paraissant sévère à l'ETT parce que le ventricule gauche manque de force pour l'ouvrir complètement ; relève d'abord du traitement médical de l'insuffisance cardiaque plutôt que d'un remplacement valvulaire. |
@@ -125,9 +130,10 @@ export const article: WikiArticle = {
 | **SAOS / SACS (apnée obstructive / centrale du sommeil)** | SAOS (obstructive) : fermeture des voies aériennes malgré l'effort respiratoire. SACS (centrale) : pause temporaire de la commande respiratoire cérébrale, souvent en respiration de Cheyne-Stokes. Les deux sont fréquents dans l'insuffisance cardiaque. |
 | **SMR cardiovasculaire (réadaptation cardiaque)** | Service de soins médicaux et de réadaptation spécialisé en cardiologie (en hospitalisation complète ou en hôpital de jour), dédié au réentraînement à l'effort, à l'éducation thérapeutique et à l'optimisation du traitement. |
 | **Soins palliatifs / soins de support** | Accompagnement global des symptômes, du vécu émotionnel et des choix de soins, en parallèle des traitements habituels et à tout stade de l'insuffisance cardiaque (HFA 2020). |
-| **Stades A / B / C / D de l'insuffisance cardiaque** | **A** : à risque ; **B** : « pré-insuffisance cardiaque » (anomalie structurelle telle qu'une FEVG basse sans **jamais** avoir eu de symptômes) ; **C** : symptômes actuels ou passés ; **D** : avancée. Contrairement à la classe NYHA, les stades ne reculent jamais. |
+| **Stades A / B / C / D de l'insuffisance cardiaque** | **A** : à risque ; **B** : « pré-insuffisance cardiaque » (anomalie structurelle telle qu'une FEVG basse sans **jamais** avoir eu de symptômes) ; **C** : symptômes actuels ou passés ; **D** : avancée. Contrairement à la classe NYHA, les stades ne reculent jamais (pas de retour de C vers B), même si la Définition universelle 2026 décrit amélioration, rémission et récupération au sein de l'IC symptomatique. Son texte mentionne également un « stade 0 » pour les personnes sans facteur de risque. |
 | **Statine** | Comprimé hypolipémiant (rosuvastatine, atorvastatine...), première étape de la prévention secondaire coronaire. Débuter une statine *uniquement* pour l'insuffisance cardiaque n'a pas apporté de bénéfice dans CORONA et GISSI-HF. |
 | **TAVI** | Remplacement de la valve aortique par cathéter (le plus souvent via l'artère fémorale) sans ouverture chirurgicale du thorax ; généralement privilégié à partir d'environ 70 ans lorsque l'anatomie s'y prête. |
+| **TCC (thérapie cognitivo-comportementale / CBT)** | Psychothérapie structurée ayant démontré une amélioration des symptômes dépressifs dans un essai clinique dédié à l'insuffisance cardiaque. |
 | **TEER (M-TEER / MitraClip)** | Réparation percutanée bord à bord de la valve mitrale par pose d'un clip via cathéter. |
 | **Télésurveillance de l'insuffisance cardiaque** | Transmission depuis le domicile du poids, des symptômes et parfois de la tension à une équipe infirmière/médicale entre les consultations (non surveillée 24 h/24 en temps réel). ESC 2026 : Classe IIb ; remboursée en France depuis 2023 pour les patients éligibles. |
 | **Temps partiel thérapeutique (mi-temps thérapeutique)** | Reprise progressive du travail prescrite par le médecin, avec indemnités journalières complétant le salaire réduit. Depuis 2019, ne nécessite plus d'arrêt de travail à temps plein préalable. |
@@ -156,8 +162,8 @@ export const article: WikiArticle = {
   ],
   sources: [
     {
-      label: 'Recommandations ESC 2026 (insuffisance cardiaque) et Guide patient ESC 2026',
-      detail: 'Définitions ICFER/HFimpEF, 4 piliers, classes de recommandation, NYHA, stades A–D, DAI/CRT, télésurveillance et apnée du sommeil',
+      label: 'Recommandations ESC 2026 (insuffisance cardiaque), Guide patient ESC 2026 et Définition universelle 2026 (AHA/ACC/ESC/WHF)',
+      detail: 'Définitions ICFER/HFimpEF, catégories sans seuil fixe, rémission vs récupération, aggravation vs décompensation, stade 0, « IC stable », 4 piliers, classes de recommandation, NYHA, DAI/CRT, télésurveillance et apnée du sommeil',
     },
     {
       label: 'ASE/EACVI 2015, EACVI/ASE 2017, ESC/EACTS 2025, ESC 2023 (cardiomyopathies) et ESC 2024 (FA et SCC)',

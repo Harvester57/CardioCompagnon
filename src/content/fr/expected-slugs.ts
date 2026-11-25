@@ -29,7 +29,7 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'occlusion-coronaire-chronique-cto',
   'thrombus-vg-et-anticoagulants',
 
-  // Lot 4 -- Nutrition, Complements, Interactions & Playbook (9)
+  // Lot 4 -- Nutrition, Complements, Interactions & Playbook (10)
   'nutrition-et-complements-insuffisance-cardiaque',
   'guide-pratique-nutrition-complements',
   'tableau-preuves-nutrition-complements',
@@ -38,6 +38,7 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'poids-obesite-et-denutrition',
   'omega-3-huile-de-poisson',
   'coenzyme-q10',
+  'vitamine-d-insuffisance-cardiaque',
   'interactions-complements-aliments-medicaments',
 
   // Lot 5 -- Vie Quotidienne, France, Readaptation & Conduite (6)

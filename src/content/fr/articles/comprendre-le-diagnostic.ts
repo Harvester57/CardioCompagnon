@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/understanding-the-diagnosis.md',
   titleFr: 'Comprendre le diagnostic',
   category: 'diagnostic',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -36,7 +36,7 @@ export const article: WikiArticle = {
 |---|---|---|
 | **Ischémique** | La cause est un manque d'apport sanguin : une maladie coronarienne et, le plus souvent, un ou plusieurs infarctus du myocarde | [La cardiomyopathie ischémique](/library?article=cardiomyopathie-ischemique) |
 | **Cardiomyopathie** | Maladie du muscle cardiaque lui-même ; ici, un muscle affaibli et en partie cicatriciel | [La cardiomyopathie ischémique](/library?article=cardiomyopathie-ischemique) |
-| **FEVG réduite (35 %)** | Le ventricule gauche éjecte environ 35 % de son sang à chaque battement. Cela correspond à une insuffisance cardiaque à FEVG réduite (ICFER, *HFrEF*) selon toutes les définitions actuelles | [La fraction d'éjection (FEVG)](/library?article=fraction-dejection) |
+| **FEVG réduite (35 %)** | Le ventricule gauche éjecte environ 35 % de son sang à chaque battement. Cela correspond à une insuffisance cardiaque à FEVG réduite (ICFER, *HFrEF*) selon toutes les recommandations actuelles. La Deuxième définition universelle internationale de 2026 ne fixe pas de seuil chiffré de FEVG, mais 35 % est largement en dessous des 50 % qu'elle juge peu susceptibles d'être normaux | [La fraction d'éjection (FEVG)](/library?article=fraction-dejection) |
 | **Ventricule gauche dilaté** | La principale cavité de pompage s'est étirée et élargie avec le temps | [La cardiomyopathie ischémique](/library?article=cardiomyopathie-ischemique) |
 
 **Deux points qui surprennent souvent :**
@@ -73,11 +73,17 @@ L'ESC formule trois grands objectifs du traitement : **vivre plus longtemps, év
   - La British Heart Foundation (BHF) rappelle que personne ne peut prédire l'espérance de vie d'un individu donné, et que de nombreuses personnes mènent une vie riche et active avec un traitement adapté.
 - **Le risque de mort subite est réel mais difficile à prédire à l'échelle individuelle.**
   - Après un infarctus, les personnes ayant une FEVG inférieure ou égale à 35 % présentaient un taux de mort subite à 3 ans d'environ 3,4 % sans DAI, contre 0,9 % au-dessus de 35 % (analyse poolée PROFID).
-  - En revanche, la FEVG seule identifie très mal *quelle* personne précise est exposée. Ce constat nourrit un débat actif sur les indications du DAI.`,
+  - En revanche, la FEVG seule identifie très mal *quelle* personne précise est exposée. Ce constat nourrit un débat actif sur les indications du DAI.
+- **« Stable » ne signifie pas sans risque.** La Deuxième définition universelle de 2026 qualifie l'expression « insuffisance cardiaque stable » d'abus de langage, car un certain risque d'aggravation, d'hospitalisation ou de mort subite persiste toujours, même lorsque vous vous sentez bien. C'est une raison de maintenir un suivi régulier, pas une prédiction pour une personne en particulier (Définition universelle 2026).`,
     },
     {
-      headingFr: 'Où la science évolue encore (au 24 novembre 2026)',
+      headingFr: 'Où la science évolue encore (au 25 novembre 2026)',
       bodyMarkdownFr: `- **Nouvelles recommandations ESC (août 2026).** Elles redéfinissent l'ICFER comme une FEVG inférieure à 50 % et suppriment la catégorie « modérément réduite ». Des brochures plus anciennes affichent donc des seuils différents.
+- **Nouvelle définition internationale (juin 2026).** La *Deuxième définition universelle de l'insuffisance cardiaque* (AHA/ACC/ESC/Fédération mondiale du cœur — WHF) est un consensus sur la terminologie, distinct des recommandations ESC, et non un guide de traitement (Définition universelle 2026).
+  - Elle regroupe l'insuffisance cardiaque en FEVG réduite, préservée ou améliorée, mais ne fixe **aucun seuil chiffré de FEVG ni de peptides natriurétiques** ; elle ne modifie donc ni les chiffres de l'ESC, ni les seuils de décision pour les médicaments ou les dispositifs.
+  - Elle conserve les stades A à D et distingue l'amélioration, la rémission et (rarement) la récupération complète. Un diagnostic d'insuffisance cardiaque symptomatique est généralement considéré comme permanent, même lorsque l'état s'améliore.
+  - Elle recense 18 groupes étiologiques, avec la **cardiomyopathie ischémique en premier**. Elle élargit l'ancienne opposition « ischémique / non ischémique » plutôt que de remplacer l'étiquette ischémique.
+  - Les courriers de cardiologie en France peuvent commencer à utiliser ces termes : l'ESC l'a co-rédigée et la Société Française de Cardiologie (SFC) a participé à sa relecture.
 - **Apport du DAI en complément des médicaments modernes.** Le bénéfice additionnel du DAI au-dessus de la quadrithérapie moderne est en cours de réévaluation. L'essai PROFID-EHRA teste cette question directement et n'a pas encore de résultats ; sa fin est estimée à novembre 2027 (PROFID ; protocole PROFID-EHRA).
 - **Traitements additionnels.** La digitoxine a réduit les décès ou hospitalisations pour insuffisance cardiaque dans l'essai DIGIT-HF (2025), et les recommandations ESC 2026 ont renforcé la place de la digoxine et de la digitoxine. Le vériciguat n'a pas atteint son critère principal chez les patients stables (essai VICTOR, *Lancet* 2025). La finérénone n'a pas encore été évaluée pour une FEVG inférieure à 40 % ; l'essai FINALITY-HF est attendu vers 2028.
 - **La notion de « viabilité » myocardique.** L'idée que rouvrir des artères irriguant un muscle « hibernant » restaure la fonction de pompe a été remise en question par REVIVED-BCIS2 : dans son analyse de viabilité, l'étendue du muscle viable n'a pas permis d'identifier les patients tirant bénéfice d'une angioplastie par stents.
@@ -130,6 +136,7 @@ En cas d'aggravation brutale (essoufflement intense au repos, douleur thoracique
     { label: 'Analyse poolée PROFID et protocole PROFID-EHRA (2026)', detail: "Taux de mort subite selon la FEVG et statut de l'essai en cours" },
     { label: 'Analyse de normalisation de la FEVG dans STICH', detail: 'Rareté de la normalisation complète dans la cardiomyopathie ischémique' },
     { label: 'DIGIT-HF (NEJM 2025), VICTOR (Lancet 2025) et registre FINALITY-HF', detail: 'Données récentes sur la digitoxine, le vériciguat et la finérénone' },
+    { label: "Deuxième définition universelle de l'insuffisance cardiaque (2026)", detail: "Consensus AHA/ACC/ESC/WHF (texte intégral) : groupes de FEVG sans seuils chiffrés, stades, trajectoires, 18 groupes étiologiques et critique du terme « insuffisance cardiaque stable »" },
   ],
   disclaimerType: 'medical',
 };

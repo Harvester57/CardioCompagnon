@@ -31,6 +31,7 @@ const SUGGESTED_QUESTIONS_FR = [
 
 export function WikiQaPanel({ onOpenArticle }: WikiQaPanelProps) {
   const { settings } = useAppSettings();
+  const articleCount = getAllArticles().length;
   const [questionFr, setQuestionFr] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorFr, setErrorFr] = useState<string | null>(null);
@@ -52,9 +53,9 @@ export function WikiQaPanel({ onOpenArticle }: WikiQaPanelProps) {
             . Aucune question et aucune donnée ne quittent votre appareil.
           </p>
           <p className="m-0">
-            Vous pouvez consulter intégralement les 43 fiches scientifiques, le glossaire médical et
+            Vous pouvez consulter intégralement les {articleCount} fiches scientifiques, le glossaire médical et
             la recherche plein texte hors ligne sans jamais activer cette option. Si vous souhaitez
-            obtenir une synthèse ancrée uniquement sur ces 43 fiches avec des citations cliquables,
+            obtenir une synthèse ancrée uniquement sur ces {articleCount} fiches avec des citations cliquables,
             vous pouvez configurer un fournisseur (Gemini, Mistral, serveur compatible OpenAI ou
             Ollama local) dans les Paramètres.
           </p>
@@ -121,7 +122,7 @@ export function WikiQaPanel({ onOpenArticle }: WikiQaPanelProps) {
             {settings.aiHelper.modelName ? ` (${settings.aiHelper.modelName})` : ''}.{' '}
             {isLocalProvider
               ? 'Les requêtes sont adressées à votre instance locale.'
-              : 'Seuls votre question et les extraits pertinents des 43 fiches locales sont transmis.'}{' '}
+              : `Seuls votre question et les extraits pertinents des ${articleCount} fiches locales sont transmis.`}{' '}
             <Link to="/settings" className="font-semibold text-[var(--color-primary)] underline">
               Modifier dans les Paramètres
             </Link>
@@ -131,7 +132,7 @@ export function WikiQaPanel({ onOpenArticle }: WikiQaPanelProps) {
 
       <Card
         title="Poser une question sur la bibliothèque scientifique"
-        subtitle="Synthèse strictement limitée aux 43 fiches locales avec citations vérifiables."
+        subtitle={`Synthèse strictement limitée aux ${articleCount} fiches locales avec citations vérifiables.`}
         icon={<MessageSquareText className="h-5 w-5" />}
       >
         <form onSubmit={(event) => void handleSubmit(event)} className="space-y-4">

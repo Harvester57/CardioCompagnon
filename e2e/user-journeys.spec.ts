@@ -152,7 +152,7 @@ test.describe('Parcours E2E complets, PWA et Accessibilité', () => {
     await expect(
       page.getByRole('heading', { level: 1, name: /Bibliothèque scientifique/i }),
     ).toBeVisible();
-    await expect(page.getByRole('tab', { name: /Fiches \(43\)/i })).toBeVisible();
+    await expect(page.getByRole('tab', { name: /Fiches \(44\)/i })).toBeVisible();
 
     const searchInput = page.locator('#library-articles-search');
     await searchInput.fill('readaptation');
