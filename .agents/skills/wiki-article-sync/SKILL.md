@@ -37,7 +37,29 @@ Follow the glossary and conventions in [wiki-sharding-manifest.md](../../../docs
 - **French healthcare references:** Use `15 (SAMU)`, `112`, `114` (SMS), `medecin traitant`, `cardiologue`, `infirmiere IC / IPA`, `medecin agree`, `ameli.fr`, `service-public.fr`, and `HAS`. Keep UK/US references only in explicit comparative sections.
 - **Zero emojis:** Never include Unicode emojis in articles, catalogs, or comments.
 
-## 4. Structured Catalog Synchronization
+## 4. Multi-Article Update Workflow (Dedicated Parallel Subagents)
+
+Whenever a wiki update touches more than 2-3 articles or multiple clinical domains, use **dedicated parallel subagents** instead of editing everything sequentially in the main conversation:
+
+1. **Audit first (coordinator):**
+   - Run `npm run check:wiki-sync` and inspect `wiki/_index.md` plus `wiki/` and `output/` timestamps to detect stale articles, newly added clinical articles, and affected catalogs.
+   - Exclude wiki maintenance pages (for example `uncompiled-source-coverage.md`, which lists private source paths).
+   - If new clinical articles are being added, add their slugs to [expected-slugs.ts](../../../src/content/fr/expected-slugs.ts) upfront so all subagents can cross-link them safely.
+2. **Partition into disjoint lots (1 dedicated subagent per lot):**
+   - Split work by clinical domain and file size so no subagent is overloaded:
+     - **Lot 1:** Diagnostic, numbers, Stage B, HFimpEF, comorbidities (`src/content/fr/articles/*`)
+     - **Lot 2:** Foundational/add-on medications, lipids, IV iron + [medications-reference.ts](../../../src/content/fr/catalogs/medications-reference.ts)
+     - **Lots 3 & 5:** Devices, telemonitoring, revascularisation, daily life, rehab, mood, France/driving + [french-admin-catalog.ts](../../../src/content/fr/catalogs/french-admin-catalog.ts)
+     - **Lot 4:** Nutrition, supplements, interactions, new nutrition articles + [interactions-catalog.ts](../../../src/content/fr/catalogs/interactions-catalog.ts)
+     - **Lot 6A:** Large evidence references (`essais-cliniques-cles.ts`, `recommandations-comparees-esc-us-nice.ts`)
+     - **Lot 6B:** Large patient references (`questions-equipe-cardiologie.ts`, `glossaire-cardiologie.ts`) + [questions-catalog.ts](../../../src/content/fr/catalogs/questions-catalog.ts) and [glossary.ts](../../../src/content/fr/catalogs/glossary.ts)
+   - Enforce **strict disjoint file ownership**: subagents edit only their assigned article/catalog files and never touch `expected-slugs.ts`, `index.ts`, tests, UI components, or docs.
+   - Require every subagent to read both the full source `.md` and existing `.ts` file before editing, preserve canonical `titleFr` and existing catalog IDs, preserve test-asserted strings/links (for example in [LibraryPage.test.tsx](../../../src/features/library/__tests__/LibraryPage.test.tsx)), and match each article's `asOf` to the source YAML frontmatter date.
+3. **Consolidate and verify (coordinator):**
+   - After all subagents report back, update shared manifest assertions, docs, and E2E/unit article counts if the total article count changed.
+   - Run the verification steps below in one pass.
+
+## 5. Structured Catalog Synchronization
 
 When updating content, check whether any of the 5 structured catalogs in [src/content/fr/catalogs/](../../../src/content/fr/catalogs/) also need updates:
 - [medications-reference.ts](../../../src/content/fr/catalogs/medications-reference.ts) -- 4 pillars, starting/target doses, titration intervals, contraindicated classes.
@@ -46,9 +68,9 @@ When updating content, check whether any of the 5 structured catalogs in [src/co
 - [questions-catalog.ts](../../../src/content/fr/catalogs/questions-catalog.ts) -- Consultation questions linked to `articleSlug`, `relevantModules`, and `triggeredByRules`.
 - [glossary.ts](../../../src/content/fr/catalogs/glossary.ts) -- Cardiology terms used by `GlossaryTooltip`.
 
-## 5. Verification Steps
+## 6. Verification Steps
 
 After editing articles or catalogs:
-1. Run `npm run test -- src/content/fr/__tests__/manifest.test.ts` to verify completeness, valid slugs, related links, catalogs, and zero emojis.
+1. Run `npm run check:wiki-sync` (set `WIKI_ROOT` if the wiki is outside the default path) to confirm 100% frontmatter alignment.
 2. Run `npm run check` (`typecheck`, `lint`, `static-check`, `test`, `audit:prod`).
-3. When a local wiki checkout is available, run `npm run check:wiki-sync` (set `WIKI_ROOT` if the wiki is outside the default path).
+3. If article counts, UI copy, or routing changed, also run `npm run build` followed by `npm run test:e2e`.

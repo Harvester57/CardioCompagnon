@@ -72,6 +72,7 @@ Keep changes scoped to the appropriate architectural layer:
 - **Zero emojis** anywhere in code, UI, tests, articles, or documentation (enforced by [static-checks.ts](./scripts/static-checks.ts)). Use `lucide-react` icons exclusively.
 - **Test hygiene:** Never commit `.only()`, `.skip()`, or ESLint disable comments in test files (enforced by [static-checks.ts](./scripts/static-checks.ts)).
 - **Accessibility:** Respect `eslint-plugin-jsx-a11y-x` in [eslint.config.js](./eslint.config.js), keyboard navigation, ARIA live regions for status/alerts, touch target sizes, large-text mode, and light/dark contrast.
+- **Parallel subagents for multi-file updates:** For multi-article wiki syncs or broad cross-module updates, delegate disjoint file sets to dedicated parallel subagents (keeping shared manifests, tests, UI counts, and final verification owned by the coordinator). Follow the lot-sharding workflow in [wiki-article-sync](./.agents/skills/wiki-article-sync/SKILL.md).
 - **Static hosting compatibility:** Preserve `VITE_BASE_PATH` handling in [vite.config.ts](./vite.config.ts), relative asset paths in [index.html](./index.html), and `HashRouter` in [routes.tsx](./src/app/routes.tsx) so GitHub Pages subpath deployments work cleanly.
 
 ## 5. Installed Agent Skills
