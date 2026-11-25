@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { Info, TrendingUp, X } from 'lucide-react';
 import type { Medication } from '../../types';
-import { Card } from '../../ui';
+import { Card, DateInput } from '../../ui';
 import {
   MEDICATION_STATUS_META,
   clampPercent,
@@ -141,13 +141,12 @@ export function DoseChangeModal({
             >
               Date du palier *
             </label>
-            <input
+            <DateInput
               id="dose-change-date"
-              type="date"
               required
               value={date}
-              onChange={(e) => setDate(e.target.value)}
-              className="w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-app)] px-3 py-2.5 text-sm text-[var(--text-primary)] tabular-nums"
+              onChange={setDate}
+              className="touch-target w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-app)] px-3 py-2.5 text-sm text-[var(--text-primary)] tabular-nums"
             />
           </div>
 

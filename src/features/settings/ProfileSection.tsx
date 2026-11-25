@@ -13,7 +13,7 @@ import type {
   PatientProfile,
   SleepApnoeaStatus,
 } from '../../types';
-import { Card } from '../../ui';
+import { Card, DateInput } from '../../ui';
 import {
   BOOLEAN_CLINICAL_MODULES,
   CARDIAC_DEVICE_OPTIONS,
@@ -324,11 +324,10 @@ function ProfileForm({
             <label htmlFor="profile-diagnosis-date" className={LABEL_CLASS}>
               Date du diagnostic
             </label>
-            <input
+            <DateInput
               id="profile-diagnosis-date"
-              type="date"
               value={form.diagnosisDate}
-              onChange={(e) => setForm((prev) => ({ ...prev, diagnosisDate: e.target.value }))}
+              onChange={(iso) => setForm((prev) => ({ ...prev, diagnosisDate: iso }))}
               className={`${INPUT_CLASS} tabular-nums`}
             />
           </div>

@@ -13,7 +13,7 @@ import {
 import type { DailyLog } from '../../types';
 import { upsertDailyLog, useActiveDb } from '../../db';
 import { formatWeightKgFr } from '../../engine';
-import { Card } from '../../ui';
+import { Card, DateInput } from '../../ui';
 import {
   DYSPNOEA_OPTIONS,
   EXTRA_SYMPTOM_OPTIONS,
@@ -172,14 +172,14 @@ export function DailyCheckinForm({
               <Calendar className="h-4 w-4 text-[var(--color-primary)]" aria-hidden="true" />
               <label htmlFor="today-date-input">Date du relevé</label>
             </div>
-            <input
+            <DateInput
               id="today-date-input"
-              type="date"
               value={targetDate}
               max={referenceDate}
-              onChange={(e) => {
-                if (e.target.value) {
-                  onTargetDateChange(e.target.value);
+              allowClear={false}
+              onChange={(iso) => {
+                if (iso) {
+                  onTargetDateChange(iso);
                 }
               }}
               className="touch-target w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-app)] px-3.5 py-2.5 text-base text-[var(--text-primary)] tabular-nums"

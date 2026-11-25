@@ -25,7 +25,7 @@ import {
 import { getTodayIsoDate, useActiveDb } from '../../db';
 import { formatFrenchNumber } from '../../engine';
 import type { ImagingExam, PatientProfile } from '../../types';
-import { Card, EvidenceBadge, GlossaryTooltip } from '../../ui';
+import { Card, DateInput, EvidenceBadge, GlossaryTooltip } from '../../ui';
 import {
   LGE_PATTERN_LABELS,
   LV_NORMS,
@@ -664,12 +664,11 @@ export function ImagingTab({ imaging, profile }: ImagingTabProps) {
                 >
                   Date de l&apos;examen *
                 </label>
-                <input
+                <DateInput
                   id="img-date"
-                  type="date"
                   required
                   value={form.date}
-                  onChange={(e) => setForm((prev) => ({ ...prev, date: e.target.value }))}
+                  onChange={(iso) => setForm((prev) => ({ ...prev, date: iso }))}
                   className="touch-target w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--text-primary)] tabular-nums"
                 />
               </div>

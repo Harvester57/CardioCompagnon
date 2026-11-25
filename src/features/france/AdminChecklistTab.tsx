@@ -15,7 +15,7 @@ import {
 import { Link } from 'react-router-dom';
 import { FRENCH_ADMIN_CATALOG } from '../../content/fr';
 import type { FrenchAdminCatalogItem, FrenchAdminProgress } from '../../types';
-import { Card, EvidenceBadge } from '../../ui';
+import { Card, DateInput, EvidenceBadge } from '../../ui';
 import {
   ADMIN_CATEGORY_LABELS,
   ADMIN_CATEGORY_OPTIONS,
@@ -165,13 +165,12 @@ function AdminChecklistItemCard({ item, progress, onPatch }: AdminChecklistItemC
             </label>
           </div>
           <div className="flex items-center gap-2">
-            <input
+            <DateInput
               id={renewalInputId}
-              type="date"
               aria-label={`Date de renouvellement — ${item.titleFr}`}
               value={currentRenewalDate}
-              onChange={(event) => {
-                void handleRenewalChange(event.target.value);
+              onChange={(iso) => {
+                void handleRenewalChange(iso);
               }}
               className="touch-target w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--text-primary)] tabular-nums"
             />

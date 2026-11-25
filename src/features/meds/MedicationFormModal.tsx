@@ -9,7 +9,7 @@ import type {
   MedicationSubClass,
   ScheduleSlot,
 } from '../../types';
-import { Card } from '../../ui';
+import { Card, DateInput } from '../../ui';
 import {
   MEDICATION_STATUS_META,
   PILLAR_META,
@@ -505,12 +505,11 @@ export function MedicationFormModal({
             >
               Date de début
             </label>
-            <input
+            <DateInput
               id="med-started-at"
-              type="date"
               value={startedAt}
-              onChange={(e) => setStartedAt(e.target.value)}
-              className="w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-app)] px-3 py-2.5 text-sm text-[var(--text-primary)] tabular-nums"
+              onChange={setStartedAt}
+              className="touch-target w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-app)] px-3 py-2.5 text-sm text-[var(--text-primary)] tabular-nums"
             />
           </div>
 
@@ -521,12 +520,11 @@ export function MedicationFormModal({
             >
               Date du dernier palier de dose
             </label>
-            <input
+            <DateInput
               id="med-last-change"
-              type="date"
               value={lastDoseChangeAt}
-              onChange={(e) => setLastDoseChangeAt(e.target.value)}
-              className="w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-app)] px-3 py-2.5 text-sm text-[var(--text-primary)] tabular-nums"
+              onChange={setLastDoseChangeAt}
+              className="touch-target w-full rounded-xl border border-[var(--border-strong)] bg-[var(--bg-app)] px-3 py-2.5 text-sm text-[var(--text-primary)] tabular-nums"
             />
           </div>
         </div>
@@ -549,13 +547,14 @@ export function MedicationFormModal({
               >
                 Date du passage depuis un IEC (optionnel)
               </label>
-              <input
-                id="med-arni-switch"
-                type="date"
-                value={switchedFromAceIAt}
-                onChange={(e) => setSwitchedFromAceIAt(e.target.value)}
-                className="w-full rounded-lg border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--text-primary)] tabular-nums sm:w-60"
-              />
+              <div className="sm:w-60">
+                <DateInput
+                  id="med-arni-switch"
+                  value={switchedFromAceIAt}
+                  onChange={setSwitchedFromAceIAt}
+                  className="touch-target w-full rounded-lg border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--text-primary)] tabular-nums"
+                />
+              </div>
             </div>
           </div>
         )}

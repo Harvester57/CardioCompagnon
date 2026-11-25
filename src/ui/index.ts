@@ -1,5 +1,6 @@
 export { AppShell, type AppShellProps } from './AppShell';
 export { Card, type CardProps, type CardTone } from './Card';
+export { DateInput, type DateInputProps } from './DateInput';
 export { DisclaimerBanner, type DisclaimerBannerProps } from './DisclaimerBanner';
 export { EvidenceBadge, type EvidenceBadgeProps } from './EvidenceBadge';
 export { GlossaryTooltip, type GlossaryTooltipProps } from './GlossaryTooltip';
