@@ -48,7 +48,7 @@ export const article: WikiArticle = {
 
 - La classe **IIa** provient directement des recommandations ESC 2026 ; le consensus HFA 2025, rédigé antérieurement, ne citait que l’ancienne classe ESC 2021 (**IIb, B**).
 - La formulation du guide patient ESC (« la télésurveillance peut être utilisée ») traduit en langage courant la recommandation de **Classe IIb**.
-- Les recommandations ESC 2026 ne prennent pas position sur les **montres connectées grand public** ou capteurs personnels non médicaux.`,
+- Les recommandations ESC 2026 ne prennent pas position sur les **montres connectées grand public** ou capteurs personnels non médicaux. Ce que ces montres peuvent et ne peuvent pas détecter (dépistage de FA oui mais avec de nombreux tracés non concluants ; infarctus, tachycardie ventriculaire, surcharge hydrique et tension artérielle non), ainsi que les précautions vis-à-vis des aimants avec un DAI, sont détaillés dans *Montres connectées et capteurs dans l'insuffisance cardiaque*. La méthode pour recueillir des mesures fiables de tension artérielle à domicile, utiles en télésurveillance, figure dans *Automesure tensionnelle à domicile (règle des 3 et tensiomètre validé)*.`,
     },
     {
       headingFr: '1. Télésurveillance non invasive à domicile : les preuves cliniques',
@@ -167,21 +167,29 @@ Un capteur miniature est implanté dans une branche de l’artère pulmonaire lo
       headingFr: 'Ce que cela signifie pour vous si votre FEVG tourne autour de 35 %',
       bodyMarkdownFr: `- **La télésurveillance à domicile** aide surtout après une hospitalisation récente ou lorsque l’équilibre est fragile. L’essai le plus solide (**TIM-HF2**) n’a inclus que des patients hospitalisés pour IC dans l’année (en excluant la dépression majeure) : il ne prouve donc pas un bénéfice chez une personne stable jamais hospitalisée récemment. Son effet provenait d’une équipe médicale très réactive, pas des seuls appareils à domicile. En France, le remboursement dépend d’une hospitalisation pour IC dans les 12 derniers mois ou d’un stade NYHA II ou plus avec NT-proBNP > 1 000 pg/mL (ou BNP > 100 pg/mL), et les résultats de TIM-HF2 ne garantissent pas automatiquement la même ampleur d’effet dans tout programme français, qui dépend de son intensité.
 - **Un capteur de pression pulmonaire** s’adresse à des patients symptomatiques en NYHA III avec hospitalisations récentes, non à une situation stable avec peu de symptômes. Le conseil le plus fort du consensus HFA 2025 vise les patients hospitalisés pour IC dans l’année ; à FEVG autour de 35 %, la voie biologique retient un NT-proBNP ≥ 1 000 pg/mL (abaissé si IMC > 25 kg/m²), avec des preuves plus limitées en NYHA II. Un DAI ou une CRT existant n’exclut pas un capteur (attendre 3 mois après une CRT), mais le dispositif n’est pas remboursé en France.
-- **Si un DAI ou une CRT est implanté**, la télésurveillance de la prothèse est la norme de soins et réduit nettement les chocs inappropriés. Dans **MORE-CARE**, elle a remplacé en sécurité environ la moitié des visites programmées en centre (limitant les déplacements), sans réduire les décès ni les hospitalisations pour IC ; le signal de survie d’**IN-TIME** n’a pas été reproduit. Les alertes dédiées comme **HeartLogic** conduisent surtout à ajuster les diurétiques (**MANAGE-HF phase 1** était sans groupe témoin ; le NICE considère que HeartLogic et TriageHF réduisent les hospitalisations par rapport au suivi standard de prothèse).
+- **Si un DAI ou une CRT est implanté**, la télésurveillance de la prothèse est la norme de soins et réduit nettement les chocs inappropriés. Dans **MORE-CARE**, elle a remplacé en sécurité environ la moitié des visites programmées en centre (limitant les déplacements), sans réduire les décès ni les hospitalisations pour IC ; le signal de survie d’**IN-TIME** n’a pas été reproduit. Les alertes dédiées comme **HeartLogic** conduisent surtout à ajuster les diurétiques (voir *Escalade et résistance aux diurétiques* pour comprendre ces adaptations ; **MANAGE-HF phase 1** était sans groupe témoin ; le NICE considère que HeartLogic et TriageHF réduisent les hospitalisations par rapport au suivi standard de prothèse).
 - Avec ou sans programme connecté, la **pesée quotidienne à domicile** reste le repère fondamental d’autosurveillance (voir l’article « Vivre au quotidien avec une insuffisance cardiaque »). Pour suivre l’avancement des essais en cours sur les capteurs de pression pulmonaire (comme **PROACTIVE-HF-2**) et les outils numériques de titration, consultez l’article « Essais cliniques en cours et à suivre ».`,
     },
   ],
   relatedArticleSlugs: [
+    'automesure-tensionnelle-domicile',
+    'montres-connectees-et-capteurs-ic',
+    'guide-pratique-automesure-et-montres-connectees',
+    'escalade-et-resistance-aux-diuretiques',
     'essais-cliniques-en-cours-et-a-suivre',
     'vivre-avec-insuffisance-cardiaque',
     'dispositifs-cardiaques-dai-crt',
     'gilet-defibrillateur-portable',
+    'arythmies-ventriculaires-et-antiarythmiques',
+    'ventricule-droit-et-hypertension-pulmonaire',
+    'efx-strain-troponine-et-imagerie-cardiaque',
     'traitements-additionnels-nouveaux',
     'examens-et-chiffres',
     'recommandations-comparees-esc-us-nice',
     'essais-cliniques-cles',
     'questions-equipe-cardiologie',
     'vivre-avec-insuffisance-cardiaque-en-france',
+    'reseau-de-soins-et-aides-sociales-france',
   ],
   sources: [
     {

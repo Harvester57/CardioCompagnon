@@ -96,7 +96,7 @@ L'ivabradine ralentit le stimulateur naturel du cœur (le nœud sinusal) sans ab
 
 ### Maladie coronaire sans insuffisance cardiaque
 
-Deux grands essais dans la maladie coronaire (**BEAUTIFUL**, 10 917 patients avec FEVG < 40 %, et **SIGNIFY**, maladie coronaire stable avec FEVG > 40 %) n'ont **pas** démontré de bénéfice pronostique ; dans SIGNIFY, les patients souffrant d'angor symptomatique présentaient légèrement plus d'événements (**RR 1,18**). Dans l'angor, l'AMM précise que l'ivabradine est réservée au **soulagement symptomatique**.
+Deux grands essais dans la maladie coronaire (**BEAUTIFUL**, 10 917 patients avec FEVG < 40 %, et **SIGNIFY**, maladie coronaire stable avec FEVG > 40 %) n'ont **pas** démontré de bénéfice pronostique ; dans SIGNIFY, les patients souffrant d'angor symptomatique présentaient légèrement plus d'événements (**RR 1,18**). Dans l'angor, l'AMM précise que l'ivabradine est réservée au **soulagement symptomatique** (voir aussi *Angor et médicaments anti-angineux dans l’ICFER ischémique*).
 
 ### Effets secondaires, précautions et posologie
 
@@ -150,7 +150,7 @@ Une réanalyse de DIG selon la digoxinémie a montré :
 
 ### Digoxine, digitoxine et fibrillation atriale
 
-La digoxine est également utilisée pour **ralentir la fréquence cardiaque en cas de fibrillation atriale (FA)**. Pour une FEVG ≤ 40 %, les recommandations ESC 2024 sur la FA recommandent un bêtabloquant et/ou la digoxine en contrôle de fréquence (**Classe I**). Voir *Maladies associées (reins, FA, valves, diabète)*.
+La digoxine est également utilisée pour **ralentir la fréquence cardiaque en cas de fibrillation atriale (FA)**. Pour une FEVG ≤ 40 %, les recommandations ESC 2024 sur la FA recommandent un bêtabloquant et/ou la digoxine en contrôle de fréquence (**Classe I**). Voir *Fibrillation atriale et insuffisance cardiaque* et *Maladies associées (reins, FA, valves, diabète)*.
 
 **Digitoxine avec ou sans FA (DIGIT-HF, analyse post hoc, EHJ 2026) :** une analyse non planifiée à l'avance a comparé les **330 patients (27 %)** en FA au départ aux **882 patients** sans FA :
 - **Critère principal (décès ou 1re hospitalisation pour IC) :** **HR 0,72** (IC 0,50–1,03) avec FA et **HR 0,86** (IC 0,69–1,06) sans FA (**p d'interaction = 0,40**, non significatif) ; l'estimation globale (**HR 0,82**) reste donc la meilleure référence pour les deux groupes.
@@ -215,7 +215,7 @@ Le vériciguat stimule une enzyme (la guanylate cyclase soluble, sGC) qui déten
 - **Posologie :** débuté à **5 mg une fois par jour au cours d'un repas**, doublé après environ 2 semaines à **10 mg** (début à **2,5 mg** en cas d'hypotension récente).
 - **Seuil tensionnel :** ne pas initier si la pression artérielle systolique est **inférieure à 100 mmHg**.
 - **Effets indésirables principaux :** **hypotension artérielle** (symptomatique **9,1 % contre 7,9 %** dans VICTORIA ; **11,3 % contre 9,2 %** dans VICTOR) et **anémie** plus fréquente.
-- **Associations interdites ou déconseillées :** contre-indiqué avec le **riociguat** ; **non recommandé avec les inhibiteurs de la PDE-5** (sildénafil, tadalafil, etc., utilisés notamment pour les troubles de l'érection).
+- **Associations interdites ou déconseillées :** contre-indiqué avec le **riociguat** ; **non recommandé avec les inhibiteurs de la PDE-5** (sildénafil, tadalafil, etc., utilisés notamment pour les troubles de l'érection ; voir *Vie sexuelle et dysfonction érectile dans l'insuffisance cardiaque*).
 - **Dérivés nitrés :** chez les patients coronariens, le vériciguat n'a pas accentué significativement l'effet tensionnel des nitrés, mais l'expérience avec les nitrés d'action prolongée dans l'insuffisance cardiaque reste limitée et ils figurent parmi les facteurs augmentant le risque d'hypotension.
 - **Grossesse :** à éviter impérativement (contre-indication avec encadré d'alerte aux États-Unis).
 - **Reins :** aucun ajustement posologique jusqu'à un DFGe de **15 mL/min/1,73 m²** ; non recommandé sous 15 ou sous dialyse.`,
@@ -224,7 +224,7 @@ Le vériciguat stimule une enzyme (la guanylate cyclase soluble, sGC) qui déten
       headingFr: 'À l’horizon et repères pour une cardiomyopathie ischémique autour de 35 % de FEVG',
       bodyMarkdownFr: `### Molécules en cours d'évaluation
 
-- **Omécamtiv mécarbil :** activateur direct de la myosine cardiaque renforçant la contraction, actuellement évalué dans l'essai **COMET-HF** (environ 1 800 patients à FEVG sévèrement réduite ; fin du critère principal attendue en **2027**). Ce médicament n'est pas autorisé à ce jour.
+- **Omécamtiv mécarbil :** activateur direct de la myosine cardiaque renforçant la contraction, actuellement évalué dans l'essai **COMET-HF** (environ 1 800 patients à FEVG sévèrement réduite ; fin du critère principal attendue en **2027**). Ce médicament n'est pas autorisé à ce jour (voir *Inotropes dans l'insuffisance cardiaque avancée*).
 - **Finérénone (*Kerendia*) :** voir *Finérénone, nouveaux ARM et chélateurs de potassium*.
 
 ### Ce que cela signifie pour une cardiomyopathie ischémique avec FEVG autour de 35 %
@@ -239,6 +239,11 @@ Le vériciguat stimule une enzyme (la guanylate cyclase soluble, sGC) qui déten
     },
   ],
   relatedArticleSlugs: [
+    'angor-et-medicaments-anti-angineux',
+    'fibrillation-atriale-insuffisance-cardiaque',
+    'inotropes-insuffisance-cardiaque-avancee',
+    'maladie-renale-insuffisance-cardiaque',
+    'vie-sexuelle-et-dysfonction-erectile-ic',
     'magnesium-insuffisance-cardiaque',
     'medicaments-insuffisance-cardiaque',
     'traitements-additionnels-nouveaux',

@@ -50,14 +50,14 @@ function collectTypeScriptFiles(dir: string): string[] {
 describe('Manifeste de completude du contenu francais (Porte 1)', () => {
   const expectedSlugSet = new Set<string>(EXPECTED_ARTICLE_SLUGS);
 
-  it('definit exactement 51 slugs canoniques uniques dans EXPECTED_ARTICLE_SLUGS', () => {
-    expect(EXPECTED_ARTICLE_SLUGS).toHaveLength(51);
-    expect(expectedSlugSet.size).toBe(51);
+  it('definit exactement 85 slugs canoniques uniques dans EXPECTED_ARTICLE_SLUGS', () => {
+    expect(EXPECTED_ARTICLE_SLUGS).toHaveLength(85);
+    expect(expectedSlugSet.size).toBe(85);
   });
 
-  it('charge exactement 51 articles conformes au contrat WikiArticle', () => {
+  it('charge exactement 85 articles conformes au contrat WikiArticle', () => {
     const articles = getAllArticles();
-    expect(articles).toHaveLength(51);
+    expect(articles).toHaveLength(85);
 
     const seenSlugs = new Set<string>();
     for (const article of articles) {

@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/blood-pressure-in-heart-failure.md',
   titleFr: 'Tension artérielle et insuffisance cardiaque',
   category: 'comorbidites',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
   tags: [
@@ -92,6 +92,7 @@ Dans la section hypertension des recommandations ESC 2026, les mentions « contr
   - **Pas de définition unique de l'« hypotension » :** les repères courants sont une systolique < 90 mmHg au repos, une chute > 20 mmHg en systolique ou > 10 mmHg en diastolique au lever, ou environ 90–100 mmHg avec symptômes. Le document demande de toujours préciser les symptômes, car ce sont eux — et non le chiffre isolé — qui guident la décision.
   - **Quand agir sur les médicaments de l'IC :** uniquement si la systolique est **inférieure à 80 mmHg** ou si l'hypotension provoque des symptômes **majeurs**. Un bref étourdissement au lever ne justifie pas de diminuer le traitement de fond.
   - **Vérifier d'abord :** mesure allongée ou assise puis **après 3 minutes debout** ; si cela n'explique pas les symptômes, envisager une mesure ambulatoire de la pression artérielle sur 24 heures (MAPA).
+  - **Automesure à domicile :** comment obtenir des séries fiables (tensiomètre automatique à brassard au bras validé sur STRIDE BP, 2 à 3 mesures matin avant les comprimés et soir, moyennées), pourquoi les brassards peuvent surestimer une tension très basse (constat issu de patients en état de choc) et ce qui change en cas de fibrillation atriale sont détaillés dans *Automesure tensionnelle à domicile (règle des 3 et tensiomètre validé)* et dans *Guide pratique : automesure tensionnelle et montres connectées*. Les montres connectées et capteurs sans brassard ne remplacent pas un tensiomètre validé (voir *Montres connectées et capteurs dans l'insuffisance cardiaque*).
   - **Écarter d'abord les autres causes :** antihypertenseurs sans bénéfice démontré dans l'IC (inhibiteurs calciques, alphabloquants, antihypertenseurs centraux), déshydratation lors d'une maladie aiguë, excès de diurétique, nouvel alphabloquant pour la prostate, et traitements prescrits par d'autres spécialistes (certains antidépresseurs, comprimés contre la dysfonction érectile, collyres bêtabloquants contre le glaucome). Chez un patient auparavant stable, une chute tensionnelle nouvelle doit aussi faire rechercher une valvulopathie ou une ischémie.
   - **Puis le diurétique :** en l'absence de surcharge hydrique, le réduire avec prudence.
   - **Quels médicaments abaissent le moins la tension :** les **iSGLT2** et les **ARM** abaissent à peine la pression artérielle et, chez les personnes ayant une pression basse au départ, elle tendait même à remonter légèrement. Dans DAPA-HF, le groupe le plus bas (95–110 mmHg) n'a baissé que de **1,5 mmHg** de plus que le placebo ; dans EMPHASIS-HF (éplérénone — *Inspra*), le groupe le plus bas a monté de **2,8 mmHg**. Ces deux classes sont instaurées en premier et arrêtées en dernier. Le sacubitril/valsartan (*Entresto*) abaisse le plus la pression et peut être débuté à 24/26 mg deux fois par jour, avec un IEC ou un ARA2 en solution de repli.
@@ -150,6 +151,10 @@ Dans l'insuffisance cardiaque, les personnes ayant une pression basse évoluent 
     },
   ],
   relatedArticleSlugs: [
+    'automesure-tensionnelle-domicile',
+    'guide-pratique-automesure-et-montres-connectees',
+    'montres-connectees-et-capteurs-ic',
+    'angor-et-medicaments-anti-angineux',
     'magnesium-insuffisance-cardiaque',
     'maladies-associees',
     'medicaments-insuffisance-cardiaque',
@@ -159,6 +164,8 @@ Dans l'insuffisance cardiaque, les personnes ayant une pression basse évoluent 
     'confirmer-la-cause-dysfonction-vg',
     'apnee-du-sommeil-insuffisance-cardiaque',
     'sel-et-liquides-insuffisance-cardiaque',
+    'vie-sexuelle-et-dysfonction-erectile-ic',
+    'voyages-canicule-et-climat-ic',
     'questions-equipe-cardiologie',
     'recommandations-comparees-esc-us-nice',
     'essais-cliniques-cles',

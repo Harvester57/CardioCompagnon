@@ -15,6 +15,8 @@ export const article: WikiArticle = {
     'checklist',
     'cardiologue',
     'médecin-traitant',
+    'ipa',
+    'france',
   ],
   aliases: [
     'Questions à poser',
@@ -24,294 +26,186 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Une liste de questions pratiques à emporter en consultation, regroupées par thème : comprendre vos chiffres, vos médicaments, les dispositifs implantables, les gestes coronaires, la récupération, l'alimentation, la vie quotidienne et les démarches en France. Ce sont des questions pour éclairer votre situation et participer aux décisions, pas des recommandations à appliquer seul.",
+    "Une liste structurée et dédoublonnée de questions ouvertes à emporter en consultation : chiffres clés, médicaments de fond et additionnels, diurétiques, IC avancée, angor, antiplaquettaires et IPP, dispositifs et arythmies ventriculaires, chirurgie/soins dentaires/jours de maladie, diabète et comorbidités, examens spécialisés, alimentation et interactions, automesure et montres connectées, vaccinations, vie quotidienne (sexualité, voyages, canicule, tabac, alcool), anticipation et réseau de soins en France.",
   sections: [
     {
       headingFr: 'Comment utiliser cette liste',
       bodyMarkdownFr:
-        "Ces questions sont conçues pour préparer vos rendez-vous avec votre cardiologue, votre médecin traitant, votre infirmière insuffisance cardiaque ou IPA, votre pharmacien ou votre médecin du travail. Ce sont **des questions, et non des prescriptions** : leur objectif est de clarifier votre situation personnelle et de favoriser une décision partagée. Les recommandations européennes (ESC) encouragent chaque patient à discuter de ses priorités personnelles avec ses proches et son équipe soignante. Sélectionnez les quelques questions qui comptent le plus pour votre prochaine visite.",
+        "Ces questions sont conçues pour préparer vos rendez-vous avec votre cardiologue, votre médecin traitant, votre infirmière en pratique avancée (IPA) ou infirmière insuffisance cardiaque, votre pharmacien ou votre médecin du travail. Ce sont **des questions, et non des prescriptions** : leur objectif est de clarifier votre situation personnelle et de favoriser une décision partagée. Les recommandations européennes (ESC) encouragent chaque patient à discuter de ses priorités personnelles avec ses proches et son équipe soignante. Sélectionnez les quelques questions qui comptent le plus pour votre prochaine visite.",
     },
     {
-      headingFr: 'Comprendre vos chiffres',
-      bodyMarkdownFr: `- **Quel examen a mesuré ma FEVG : une échocardiographie transthoracique (ETT) ou une IRM cardiaque ? A-t-elle été mesurée avec la même méthode à chaque fois ?**
+      headingFr: 'Comprendre vos chiffres et vos médicaments de fond',
+      bodyMarkdownFr: `### Comprendre vos chiffres
+
+- **Quel examen a mesuré ma FEVG : une échocardiographie transthoracique (ETT) ou une IRM cardiaque ? A-t-elle été mesurée avec la même méthode à chaque fois ?**
   - *Pourquoi c'est important :* chez les patients présentant une dysfonction ischémique du ventricule gauche, l'IRM cardiaque mesure en moyenne une FEVG inférieure d'environ 5,5 points à celle de l'ETT, et les deux examens peuvent se situer de part et d'autre du seuil de 35 % (sous-étude ETT vs IRM de REVIVED-BCIS2).
 - **Quelle est la taille de mon ventricule gauche (volumes indexés VTDi / VTSi ou diamètre DTDVG) et évolue-t-elle ?**
-  - *Pourquoi c'est important :* le volume du ventricule gauche prédisait l'évolution clinique dans la sous-étude de REVIVED-BCIS2.
-- **Dans quelle classe NYHA suis-je situé(e) ?**
-- **Mon IRM cardiaque montre-t-elle une cicatrice (rehaussement tardif, LGE), et sur quelle étendue ?**`,
+  - *Pourquoi c'est important :* le volume télésystolique du VG prédisait l'évolution clinique dans REVIVED-BCIS2 là où la FEVG seule ne le faisait pas.
+- **Dans quelle classe NYHA suis-je situé(e), et quelle proportion de mon muscle cardiaque est cicatricielle (LGE) à l'IRM ?**
+- **Quel est mon taux de NT-proBNP (ou de BNP), comment a-t-il évolué, et lequel des deux mon laboratoire dose-t-il ?**
+  - *Pourquoi c'est important :* le sacubitril/valsartan (*Entresto*) peut augmenter artificiellement le BNP, mais pas le NT-proBNP (ESC 2026).
+
+### Médicaments de fond (les 4 piliers) et bilans sanguins
+
+- **Est-ce que je prends bien les quatre classes de médicaments de fond (IEC ou ARNI, bêtabloquant, ARM, iSGLT2) ? Si l'une manque, pour quelle raison ?**
+- **Mes doses sont-elles aux doses cibles, ou prévoit-on de les augmenter progressivement (titration) ? Selon quel calendrier, avec quels bilans et consultations à chaque palier, et quels résultats (tension, potassium, fonction rénale, pouls) conduiraient à différer une augmentation ?**
+  - *Pourquoi c'est important :* l'ESC 2026 préconise d'augmenter les doses toutes les 1 à 2 semaines si toléré ; dans STRONG-HF, une titration rapide après sortie d'hospitalisation a réduit les réhospitalisations, tandis que dans SwedeHF seule une minorité atteignait les doses cibles.
+- **Quand sont prévus mes prochains bilans de créatinine (DFGe) et de potassium, quelle hausse modérée de créatinine est attendue, et qui contacter avant toute modification ?**
+  - *Pourquoi c'est important :* un contrôle est généralement proposé 1 à 2 semaines après chaque palier puis environ tous les 4 mois (Volterrani 2024) ; une légère hausse initiale de créatinine est souvent attendue (Clark 2019), et il ne faut jamais arrêter un traitement cardiaque seul.`,
     },
     {
-      headingFr: 'Médicaments de fond (les 4 piliers)',
-      bodyMarkdownFr: `- **Est-ce que je prends bien les quatre classes de médicaments de fond (IEC ou ARNI, bêtabloquant, ARM, iSGLT2) ? Si l'une manque, pour quelle raison ?**
-- **Mes doses sont-elles aux doses cibles, ou prévoit-on de les augmenter progressivement (titration) ? Selon quel calendrier, avec quels bilans sanguins et quelles consultations à chaque palier, et quels résultats (tension artérielle, potassium, fonction rénale, pouls) conduiraient à différer une augmentation ?**
-  - *Pourquoi c'est important :* les recommandations ESC 2026 préconisent d'augmenter les doses par paliers toutes les 1 à 2 semaines lorsque c'est toléré. Dans STRONG-HF, atteindre les doses cibles dans les 2 semaines suivant une sortie d'hospitalisation, avec des visites aux semaines 1, 2, 3 et 6, a réduit les réhospitalisations pour insuffisance cardiaque ; cet essai appliquait toutefois ses propres règles de pause, qui ne constituent pas des cibles personnelles. Dans le registre suédois SwedeHF, seule une minorité de patients recevaient les doses cibles, et moins encore chez les personnes plus âgées.
-- **Quels effets secondaires dois-je signaler, et qui dois-je contacter avant de modifier quoi que ce soit ?**
-  - *Pourquoi c'est important :* il est conseillé de ne jamais arrêter un traitement cardiaque sans en parler d'abord à son équipe soignante.
-- **Dois-je faire un bilan de carence en fer (ferritine et coefficient de saturation de la transferrine, CST) ?** (ESC 2026)`,
+      headingFr: 'Dispositifs implantables (DAI / CRT), traitements additionnels et télésurveillance',
+      bodyMarkdownFr: `- **Quand ma FEVG sera-t-elle réévaluée après optimisation de mes médicaments (à 3 mois ou plus tard), et mon QRS / bloc de branche gauche (BBG) ouvre-t-il la discussion d'une CRT ?**
+  - *Pourquoi c'est important :* le seuil de DAI repose sur une FEVG ≤ 35 % après ≥ 3 mois de traitement optimal et ≥ 40 jours après infarctus (ESC 2026), mais le registre HF-OPT montre que la FEVG peut continuer à s'améliorer jusqu'à 6 mois.
+- **Si un DAI est proposé : quel est mon risque estimé sous médicaments modernes, un modèle sous-cutané (S-DAI) ou transveineux est-il préférable, l'essai en cours PROFID-EHRA change-t-il votre regard, et comment gérer la fonction de choc en fin de vie ?** (PROFID ; PRAETORIAN ; PROFID-EHRA ; guide patient ESC 2026)
+- **Une fois mes quatre piliers optimisés, un traitement additionnel s'applique-t-il : ivabradine (*Procoralan*, si rythme sinusal et FC ≥ 77 bpm dans SHIFT), digoxine ou digitoxine (DIGIT-HF), vériciguat (*Verquvo*, après aggravation et NT-proBNP ≤ 6 000 pg/mL), finérénone (*Kerendia*, si FEVG ≥ 40 % ou DT2+MRC) ou chélateur de potassium (patiromer / *Veltassa*) ?**
+- **Pendant la titration, le gilet défibrillateur portable (LifeVest) mérite-t-il d'être discuté (marqueurs de risque, port > 20 h/j, interdiction de conduite automobile en France pendant son indication) ?** (VEST ; HF-OPT ; HAS CNEDiMTS ; arrêté du 28 mars 2022)
+- **Serais-je éligible à la télésurveillance IC à domicile (remboursée en France) ou au télésuivi d'un DAI/CRT ? Qui lit les alertes et dans quel délai ? Un capteur de pression pulmonaire (CardioMEMS, non remboursé en France selon HAS 2021) pourrait-il un jour me concerner ?**`,
     },
     {
-      headingFr: 'Dispositifs implantables (DAI et CRT)',
-      bodyMarkdownFr: `- **Quand ma FEVG sera-t-elle réévaluée après optimisation de mes médicaments ?**
-  - *Pourquoi c'est important :* la décision d'implanter un défibrillateur automatique implantable (DAI) repose sur une FEVG ≤ 35 % après au moins 3 mois de traitement de fond optimal, et au moins 40 jours après un infarctus du myocarde (ESC 2026).
-- **Mon QRS est-il élargi sur l'ECG, ou ai-je un bloc de branche gauche (BBG) ? Une resynchronisation cardiaque (CRT) me concerne-t-elle ?** (ESC 2026)
-- **Si un DAI est proposé :**
-  - Quel est mon risque estimé avec et sans DAI, compte tenu des médicaments modernes ?
-  - Quels sont les inconvénients et risques de complications ?
-  - Comment la fonction de choc serait-elle gérée en fin de vie ?
-  - *Pourquoi c'est important :* la FEVG seule prédit imparfaitement le risque individuel de mort subite (PROFID), et le guide patient ESC demande que vous soyez accompagné(e) pour comprendre l'objectif, les risques et la gestion en fin de vie du dispositif.
-- **Quelles sont les règles de conduite automobile après une implantation ou après un choc en France ?**`,
+      headingFr: 'Artères coronaires, angor, CTO, cholestérol, antiplaquettaires et IPP',
+      bodyMarkdownFr: `### Revascularisation coronaire (pontage / stents) et CTO
+
+- **Une Heart Team incluant un spécialiste de l'insuffisance cardiaque a-t-elle examiné mon anatomie coronaire ? L'objectif d'une intervention serait-il de soulager un angor ou d'améliorer la survie ?** (ESC 2026 ; STICHES ; REVIVED-BCIS2)
+- **En cas d'artère bouchée de longue date (CTO) : le territoire est-il viable et ischémique, la réouverture aiderait-elle un essoufflement sans angor (ORBITA-CTO), quels sont les taux de complications de ce centre à FEVG basse (PROGRESS-CTO), et un pontage mini-invasif (MIDCAB) serait-il envisageable ?**
+
+### Angor (douleur thoracique) et médicaments anti-angineux
+
+- **Ma gêne thoracique ou mon essoufflement à l'effort est-il un angor, et comment reconnaître une aggravation ?** (CORONA ; PARADIGM-HF)
+- **Que dois-je faire exactement pendant une crise avec ma trinitrine en spray (*Natispray*), et à partir de quel délai / nombre de bouffées dois-je appeler le 15 ou le 112 ?**
+  - *Pourquoi c'est important :* le RCP autorise jusqu'à 3 pulvérisations espacées de 2–3 minutes en position assise, mais les règles d'appel d'urgence varient selon les fiches (ANSM, sante.fr, FFC) : un plan écrit personnel lève toute ambiguïté.
+- **Mon bêtabloquant est-il à la dose visée (et ma FC assez basse) avant d'ajouter un autre anti-angineux ? Si un autre traitement est nécessaire, lequel convient à ma tension, mes reins et la disponibilité/remboursement en France ?**
+  - *Pourquoi c'est important :* les dérivés nitrés oraux longue durée ne sont plus commercialisés en France (patchs uniquement, nécessitant une fenêtre libre de 8 à 12 heures/jour pour éviter l'échappement), la trimétazidine (*Vastarel*) n'est pas remboursée, la HAS a jugé le SMR du nicorandil insuffisant en 2026 et la ranolazine (*Ranexa*, commercialisée en 2025) n'est pas remboursée ; aucun n'a démontré de gain de survie.
+- **Y a-t-il des interactions entre mes traitements et les dérivés nitrés ou la ranolazine (IPDE-5 comme sildénafil/tadalafil, riociguat, vériciguat, digoxine, sotalol, simvastatine, metformine) ? Si l'angor persiste malgré les médicaments, une revascularisation doit-elle être rediscutée (ESC 2026 Classe I) ?**
+
+### Cholestérol, antiplaquettaires, bithérapie (DAPT) et protection gastrique (IPP)
+
+- **Ai-je atteint les deux volets de mon objectif LDL (< 0,55 g/L [1,4 mmol/L] et baisse ≥ 50 %), ma Lp(a) doit-elle être dosée une fois, quelle intensité de statine retenir (haute intensité ESC vs modérée ACC/AHA 2026), certains de mes médicaments limitent-ils la dose de statine (amiodarone, ticagrélor, colchicine), et la colchicine 0,5 mg/jour est-elle adaptée à mes reins ?**
+- **L'aspirine ou le clopidogrel (*Plavix*) est-il le meilleur choix au long cours dans mon cas, et mon insuffisance cardiaque change-t-elle ce choix ?**
+  - *Pourquoi c'est important :* l'ESC 2024 classe les deux en Classe I A ; les essais coréens (HOST-EXAM à 10 ans, SMART-CHOICE 3) et méta-analyses (PANTHER, Giacoppo 2025) montrent moins d'infarctus sous clopidogrel sans différence de survie, mais aucun n'a isolé les patients avec FEVG basse.
+- **Si je reçois un stent, combien de temps durerait la bithérapie antiplaquettaire (DAPT), et comment mon insuffisance cardiaque (qui accroît à la fois le risque ischémique et hémorragique) influence-t-elle cette durée ?** (ESC 2024 ; score DAPT ; Otsuka 2023)
+- **Ai-je besoin d'un protecteur gastrique (IPP), lequel choisir (éviter oméprazole et ésoméprazole avec le clopidogrel ; le pantoprazole interagit moins), et faut-il contrôler mon magnésium ou ma vitamine B12 en cas de prise prolongée d'IPP avec des diurétiques ?** (EMA 2010 ; FDA/MHRA ; Lam 2013)`,
     },
     {
-      headingFr: 'Traitements additionnels, gilet défibrillateur (LifeVest) et télésurveillance',
-      bodyMarkdownFr: `- **Une fois mes médicaments de fond à leurs doses finales, un traitement additionnel pourrait-il me concerner (ivabradine, digoxine ou digitoxine, vériciguat) ?**
-  - *Pourquoi c'est important :* chacun a des critères précis : l'ivabradine (*Procoralan*) requiert un rythme sinusal et une fréquence cardiaque de repos > 70 bpm (≥ 75 bpm dans l'AMM européenne) malgré la dose maximale tolérée de bêtabloquant ; le vériciguat (*Verquvo*) est indiqué après une aggravation récente (ESC 2026 ; rapport EMA ; RCP Verquvo).
-- **Quelle est ma fréquence cardiaque de repos sous ma dose actuelle de bêtabloquant ? Si elle reste à 77 bpm ou plus en rythme sinusal, l'ivabradine mérite-t-elle d'être envisagée, ou faut-il d'abord augmenter le bêtabloquant ?**
-  - *Pourquoi c'est important :* dans l'essai SHIFT, le bénéfice de l'ivabradine était concentré chez les patients ayant une fréquence cardiaque ≥ 77 bpm, et n'était pas significatif chez ceux prenant déjà au moins la moitié de la dose cible de bêtabloquant.
-- **Mon NT-proBNP est-il inférieur à 6 000 pg/mL, et le vériciguat ne serait-il pertinent qu'après un épisode d'aggravation (son indication d'AMM) ?**
-  - *Pourquoi c'est important :* l'analyse groupée des essais VICTORIA et VICTOR suggère un bénéfice modeste, surtout visible pour un NT-proBNP jusqu'à 6 000 pg/mL ; l'essai VICTOR seul, chez des patients ambulatoires stables, était neutre.
-- **Si la digoxine était un jour envisagée : comment ma fonction rénale et mon taux sanguin seraient-ils surveillés, quels signes d'alerte dois-je reconnaître, et la digitoxine (le médicament testé dans DIGIT-HF) est-elle disponible en France ?** (Ahmed 2006 ; DIGIT-HF ; fiche patient NHS)
-- **La finérénone est-elle pertinente dans mon cas, ou la spironolactone (*Aldactone*) / l'éplérénone (*Inspra*) restent-elles l'ARM adapté à ma FEVG ? Si ma FEVG remonte à 40 % ou plus, la finérénone deviendrait-elle une option, en remplacement ou en ajout de mon ARM actuel ? Ai-je un diabète ou une maladie rénale qui la rendrait pertinente pour la protection rénale ?**
-  - *Pourquoi c'est important :* la finérénone n'a démontré son efficacité qu'à partir d'une FEVG ≥ 40 % (FINEARTS-HF, qui incluait des patients dont la FEVG s'était améliorée à ≥ 40 %), ou dans le diabète de type 2 avec maladie rénale chronique dans des essais qui excluaient l'ICFER symptomatique. Dans l'ICFER, les seules données disponibles sont des études courtes de phase 2 (FINEARTS-HF ; FINE-HEART ; ARTS-HF ; ESC 2026).
-- **Si mon potassium augmente sous spironolactone ou éplérénone, réduiriez-vous la dose ou ajouteriez-vous un chélateur de potassium tel que le patiromer (*Veltassa*) pour maintenir la pleine dose ?**
-  - *Pourquoi c'est important :* dans l'essai DIAMOND (majoritairement des ICFER ischémiques), le patiromer a permis de maintenir davantage de patients à pleine dose d'ARM, mais l'essai a modifié son critère principal au profit de la kaliémie et n'a pas démontré de baisse de la mortalité (DIAMOND ; ESC 2026).
-- **Pendant la titration des médicaments et avant la décision de DAI, le gilet défibrillateur portable (LifeVest) mérite-t-il d'être envisagé ?**
-  - Si oui : combien de temps devrai-je le porter, que faire en cas d'alarme et que doivent savoir mes proches ?
-  - Quels marqueurs de risque s'appliquent à mon cas (troubles du rythme rapides précoces, extrasystoles fréquentes, cicatrice à l'IRM, syncope), et suis-je encore dans la fenêtre précoce après mon infarctus ou mon intervention ? *Pourquoi c'est important :* la Société allemande de cardiologie (DGK) classe le gilet dans les 40 premiers jours après infarctus ou stent (90 jours après pontage) comme « plutôt non indiqué, peut être envisagé au cas par cas », tandis qu'en France il est remboursé dans la cardiomyopathie ischémique avec FEVG ≤ 35 % ; il doit être porté plus de 20 heures par jour (DGK ; avis CNEDiMTS HAS ; revue Goetz).
-  - Puis-je conduire en le portant, et que se passe-t-il pour la conduite en cas de choc ? *Pourquoi c'est important :* en France, l'arrêté du 28 mars 2022 interdit la conduite automobile tant que le gilet défibrillateur est indiqué (contrairement au Royaume-Uni où le DVLA n'a pas de règle spécifique au gilet et juge selon la pathologie sous-jacente).
-  - *Pourquoi c'est important :* le risque rythmique précoce est faible en valeur absolue mais maximal au cours des premiers mois ; le gilet n'est efficace que porté presque en permanence, et les preuves restent nuancées (VEST ; HF-OPT ; avis CNEDiMTS HAS).
-- **Ma FEVG sera-t-elle recontrôlée à 3 mois ou plus tard ?**
-  - *Pourquoi c'est important :* un registre (HF-OPT) suggère que la FEVG peut continuer à s'améliorer jusqu'à 6 mois, alors que les recommandations réévaluent généralement vers 3 mois (ESC 2026).
-- **Serais-je éligible à la télésurveillance de l'insuffisance cardiaque à domicile sans hospitalisation récente, sur la base de ma classe NYHA et de mon NT-proBNP ? Qui analyse les alertes et peut-il adapter mes médicaments ? Qu'apporterait-elle en plus de ma pesée quotidienne ?**
-  - *Pourquoi c'est important :* en France, elle est prise en charge par l'Assurance Maladie après une hospitalisation récente pour insuffisance cardiaque, ou en cas de classe NYHA ≥ II associée à un NT-proBNP élevé (référentiel HAS). L'essai positif TIM-HF2 reposait sur un centre médicalisé fonctionnant jour et nuit et n'incluait que des patients hospitalisés pour insuffisance cardiaque dans l'année écoulée.
-- **Si un DAI ou une CRT est implanté(e), la télésurveillance de la prothèse sera-t-elle activée ? Qui lit les alertes et dans quel délai ? La marque du dispositif a-t-elle une importance (par exemple l'alerte HeartLogic n'existe que sur les appareils Boston Scientific) ? Les contrôles à distance peuvent-ils remplacer certaines visites à l'hôpital ?**
-  - *Pourquoi c'est important :* le télésuivi des prothèses a surtout permis d'espacer les consultations dans l'essai MORE-CARE plutôt que d'améliorer la survie (consensus HRS 2023 ; MORE-CARE ; MANAGE-HF phase 1).
-- **Un capteur implanté de pression de l'artère pulmonaire (CardioMEMS) pourrait-il être pertinent pour moi à un stade donné, sachant qu'il n'est pas remboursé en France et que les recommandations les plus fortes concernent les patients après une hospitalisation pour insuffisance cardiaque ?** (consensus HFA 2025 ; avis HAS CardioMEMS 2021)`,
+      headingFr: 'Valves, thrombus VG, anévrisme, diurétiques et insuffisance cardiaque avancée',
+      bodyMarkdownFr: `### Rétrécissement aortique, thrombus VG et anévrisme VG
+
+- **Quel est le degré de mon rétrécissement aortique (surface, indice de perméabilité, gradient moyen, volume d'éjection indexé SVi), à quelle fréquence le contrôler, et comment une Heart Team pèserait-elle chirurgie combinée (SAVR + pontage) contre TAVI + stent en préservant l'accès coronaire futur ?** (ESC/EACTS 2025)
+- **Si mon rétrécissement aortique est modéré avec FEVG basse, les essais récents (TAVR UNLOAD, PROGRESS NEJM 2026, EXPAND TAVR II) justifient-ils une intervention précoce ou la surveillance échographique reste-t-elle la référence ?**
+- **L'apex et la paroi antérieure ont-ils été vérifiés par ETT de contraste ou IRM à la recherche d'un thrombus VG ou d'un anévrisme VG ? En présence d'un anévrisme ou d'une akinésie apicale sans caillot, comment évaluez-vous la balance bénéfice/risque d'un anticoagulant (clause NICE 2003 vs absence de recommandation ESC/AHA) ?**
+- **Si un caillot est trouvé, son aspect (mobile, saillant, plat/mural ou calcifié) change-t-il le traitement ou sa durée, comment l'associer à l'aspirine, et quel critère décide de l'arrêt ou de la poursuite après disparition (risque de récidive ~25 % dans Zhou 2023) ?**
+
+### Diurétiques, rétention hydrosodée et insuffisance cardiaque avancée (stade D / cœur droit)
+
+- **Quelle est ma fourchette de « poids sec », et pouvons-nous écrire un plan clair indiquant quoi faire si mon poids monte vite (> 2 kg en 3 jours) ou baisse trop vite avec vertiges ?**
+  - *Pourquoi c'est important :* l'ESC 2026 privilégie une escalade ambulatoire encadrée par le clinicien plutôt qu'un auto-ajustement libre.
+- **Si mon diurétique habituel agit moins bien, faut-il changer de diurétique de l'anse (furosémide vs bumétanide/torsémide — identiques dans TRANSFORM-HF), ajouter brièvement un second diurétique (thiazide, avec fort risque d'hypokaliémie et d'aggravation rénale dans CLOROTIC) ou organiser des perfusions IV en hôpital de jour, et sous quel délai contrôler potassium, sodium et créatinine ?**
+- **Dans quel stade (A à D) situez-vous mon insuffisance cardiaque, quels signes d'alerte « I NEED HELP » (y compris une escalade diurétique ou la nécessité de baisser mes médicaments de fond) devraient conduire à impliquer un centre expert d'insuffisance cardiaque avancée (et lequel), et que montrent le TAPSE et la pression pulmonaire estimée (PAPS/sPAP) sur mon ETT ?**
+- **Si la pression pulmonaire est élevée, est-elle entièrement expliquée par le cœur gauche ou un cathétérisme droit est-il utile ? Si une assistance (LVAD) ou une greffe était un jour évoquée, des soins de support pourraient-ils être associés en parallèle ?**`,
     },
     {
-      headingFr: 'Artères coronaires (pontage aorto-coronarien ou stents)',
-      bodyMarkdownFr: `- **Une équipe multidisciplinaire (Heart Team), incluant un spécialiste de l'insuffisance cardiaque, a-t-elle examiné mon anatomie coronaire ?** (ESC 2026)
-- **L'objectif d'une intervention serait-il de soulager un angor (douleur thoracique) ou d'améliorer la survie ?**
-  - *Pourquoi c'est important :* le niveau de preuve est différent selon l'objectif visé (ESC 2026).
-- **Si un pontage aorto-coronarien est discuté :**
-  - Quel est mon risque opératoire personnel ?
-  - Comment les résultats de l'étude STICH s'appliquent-ils à un patient traité avec les médicaments actuels ?
-  - *Pourquoi c'est important :* STICHES a montré un bénéfice de survie à 10 ans, mais à une époque antérieure aux traitements de fond actuels.
-- **Si une angioplastie avec stents est discutée : qu'en attend-on précisément dans mon cas ?**
-  - *Pourquoi c'est important :* l'essai REVIVED-BCIS2 n'a pas montré de réduction des décès ni des hospitalisations pour insuffisance cardiaque avec les stents dans cette population.`,
+      headingFr: 'Arythmies ventriculaires, chocs de DAI, ablation et amiodarone',
+      bodyMarkdownFr: `- **Quelle est ma charge quotidienne en extrasystoles ventriculaires (ESV, en % des battements), a-t-elle été mesurée sur plus de 24 heures, et des ESV fréquentes (≥ 10 %) pourraient-elles aggraver ma FEVG ou gêner ma CRT ?**
+  - *Pourquoi c'est important :* un Holter de 24 h manque ~47 % des charges ≥ 10 % ; l'ablation est en Classe I C pour la cardiomyopathie induite par ESV (ESC 2022), alors que les antiarythmiques de classe IC (flécaïnide) sont contre-indiqués après infarctus (CAST).
+- **Disposé-je d'un plan d'action écrit en cas de choc de DAI — précisant quand appeler le centre de rythmologie (un choc isolé en se sentant bien, sans conduire) versus appeler immédiatement le 15 / 112 (≥ 2 chocs = orage rythmique, ou choc mal toléré) — et combien de thérapies indolores par ATP mon boîtier a-t-il enregistrées ?**
+  - *Pourquoi c'est important :* l'ESC 2022 impose un plan écrit remis par le centre (la télésurveillance n'est pas un service d'urgence) ; dans PARTITA, ≥ 5 ATP sur 6 mois prédisaient fortement des chocs et hospitalisations ultérieurs.
+- **En cas de tachycardie ventriculaire (TV) soutenue ou de chocs, comment pesez-vous l'ablation par cathéter face à l'amiodarone ou au sotalol (risque procédural initial d'environ 1 % à 30 j vs toxicité d'organe au long cours de l'amiodarone dans VANISH2) ?**
+- **Si je prends de l'amiodarone (*Cordarone*), qui assure le suivi semestriel de ma thyroïde (TSH) et de mon foie (ASAT/ALAT), mon ECG annuel, la vigilance pulmonaire, la protection solaire et la vérification des interactions médicamenteuses ?**
+  - *Pourquoi c'est important :* sa demi-vie de 20 à 100 jours expose à des toxicités cumulatives ; le RCP français ANSM contre-indique citalopram/escitalopram, moxifloxacine et dompéridone, recommande de préférer rosuvastatine ou pravastatine à simvastatine/atorvastatine, et impose d'adapter warfarine et digoxine.`,
     },
     {
-      headingFr: 'Artère bouchée de longue date avec collatérales (CTO)',
-      bodyMarkdownFr: `- **Le muscle cardiaque situé en aval de l'artère bouchée est-il encore vivant (viable), et manque-t-il de sang à l'effort (ischémie) sur un examen de stress ou une IRM ?**
-  - *Pourquoi c'est important :* le consensus EAPCI/EACVI 2024 recommande d'évaluer l'ischémie et la viabilité dans le territoire occlus lorsque la FEVG est réduite ; la contractilité s'améliorait principalement dans les segments viables (Leite 2026).
-- **Une Heart Team a-t-elle étudié ce dossier, et quelle recommandation s'applique à ma FEVG ?**
-  - *Pourquoi c'est important :* les recommandations ESC 2024 sur les syndromes coronariens chroniques ne comportent pas de ligne spécifique pour la CTO, et leur recommandation de survie pour l'IVA proximale s'applique uniquement au-dessus de 35 % de FEVG.
-- **Sans angor, qu'attendrait-on de la réouverture de cette artère ?**
-  - *Pourquoi c'est important :* le bénéfice prouvé de la désobstruction d'une CTO concerne le soulagement des symptômes ; les essais randomisés n'ont pas montré de réduction des décès ni des infarctus (van Veelen 2021 ; ORBITA-CTO).
-- **Si mon symptôme principal est l'essoufflement plutôt qu'une douleur thoracique, l'ouverture de l'artère est-elle susceptible de le soulager ?**
-  - *Pourquoi c'est important :* dans l'essai ORBITA-CTO contrôlé contre procédure factice (sham), l'angor s'est amélioré mais l'essoufflement et l'état de santé général ne se sont pas clairement améliorés, et presque tous les participants avaient une FEVG normale.
-- **Quels sont les taux de succès et de complications de ce centre pour une angioplastie de CTO, et quel est mon risque personnel avec une FEVG basse ?**
-  - *Pourquoi c'est important :* dans un grand registre (PROGRESS-CTO), la mortalité hospitalière était de 1,1 % pour une FEVG ≤ 35 % contre 0,3 % pour une FEVG ≥ 50 %, et environ 1 patient sur 6 ayant une FEVG basse a nécessité une pompe d'assistance cardiaque temporaire durant la procédure.
-- **Un pontage sur l'IVA (y compris par mini-thoracotomie, MIDCAB) serait-il une alternative pertinente ?**
-  - *Pourquoi c'est important :* cette approche entraîne moins de réinterventions que le stent sur l'IVA isolée, mais les données ne sont pas spécifiques aux CTO ni aux FEVG basses (Gallingani 2025).`,
+      headingFr: 'Chirurgie non cardiaque, soins dentaires et règles « jours de maladie »',
+      bodyMarkdownFr: `- **Avant toute chirurgie non cardiaque ou coloscopie programmée : quels médicaments poursuivre (bêtabloquant, statine, aspirine, IEC/ARA2/ARNI), lesquels suspendre et combien de jours (iSGLT2 3–4 jours même sans diabète, GLP-1, metformine, inhibiteur P2Y12, AOD sans relais héparine), quand les reprendre exactement, et faut-il doser troponine ou NT-proBNP pour dépister une lésion myocardique silencieuse (MINS) ?** (STOP-or-NOT ; SPACE ; AHA/ACC 2024 NCS ; Kindel 2024 ; BSG/ESGE 2021)
+- **Si je porte un DAI ou une CRT et dois être opéré(e) (surtout au-dessus de l'ombilic), l'équipe de rythmologie reprogrammera-t-elle formellement la prothèse avant usage d'un bistouri électrique monopolaire plutôt que de compter sur un simple aimant ?**
+  - *Pourquoi c'est important :* un aimant suspend les chocs d'un DAI mais ne bascule généralement pas la stimulation antibradycardique/CRT en mode asynchrone chez les patients stimulodépendants (ASA 2020 / HRS).
+- **Avant un détartrage ou une extraction dentaire : ai-je besoin d'une antibioprophylaxie (uniquement si prothèse valvulaire, TAVI, MitraClip/TEER, LVAD ou antécédent d'endocardite — et NON pour une ICFER, des stents ou un DAI/CRT seuls), et en cas d'allergie à la pénicilline sous médicament allongeant le QT (amiodarone), quelle alternative est sûre ?**
+  - *Pourquoi c'est important :* la HAS (octobre 2024), l'ESC 2023 et l'AHA 2021 confirment l'absence de prophylaxie pour l'ICFER/stents/DAI seuls, recommandent un bain de bouche chlorhexidine 1 minute en France, ont retiré la clindamycine et mettent en garde contre l'azithromycine avec amiodarone ou sotalol.
+- **Avant un soin ou une extraction dentaire, mon aspirine, mon clopidogrel ou mon anticoagulant doit-il être poursuivi avec des mesures d'hémostase locale (recommandations SFCO 2015), et quel antalgique utiliser à la place des AINS ?**
+- **Quels compléments ou plantes (ginkgo, ail concentré, ginseng, danshen, millepertuis, vitamine E forte dose, huiles de poisson) dois-je arrêter 1 à 2 semaines avant une opération ?** (SPAQI 2021 ; monographies EMA)
+- **Pouvons-nous établir par écrit un plan personnalisé « jours de maladie » tant que je vais bien — précisant quels traitements ne jamais arrêter (bêtabloquant, antiplaquettaires, anticoagulants), dans quel cas (vomissements, diarrhée sévère, fièvre, incapacité à manger/boire) vous appeler ou suspendre sous contrôle médical iSGLT2, metformine, diurétique ou bloqueur du SRAA/ARM, quels signes doivent faire suspecter une acidocétose euglycémique même à glycémie normale, et comment reprendre ensuite en sécurité ?**
+  - *Pourquoi c'est important :* dans le seul essai randomisé (Fink 2022, MRC), les cartes génériques n'ont apporté aucun bénéfice rénal et ont entraîné des erreurs de médicaments dans 21 % des épisodes, et près de la moitié des SRAA/ARM arrêtés ne sont jamais repris ; à l'inverse, une gastro-entérite sévère multiplie par 23 le risque d'IRA dans l'IC et les RCP EMA demandent d'interrompre l'iSGLT2 en cas de maladie aiguë grave ou de pertes digestives (SMART-C ; NICE NG148).`,
     },
     {
-      headingFr: 'Cholestérol LDL, aspirine et prévention secondaire',
-      bodyMarkdownFr: `- **Quel est mon objectif de cholestérol LDL, et ai-je atteint ses deux volets ?**
-  - *Pourquoi c'est important :* après maladie coronaire, l'objectif ESC est un LDL inférieur à **0,55 g/L (1,4 mmol/L)** **et** une baisse d'au moins 50 % par rapport au taux initial (Classe I ; ESC/EAS 2019 ; ESC 2024).
-- **Si l'objectif n'est pas atteint, quelle est l'étape suivante (augmentation de dose de statine, ajout d'ézétimibe, injection d'anti-PCSK9) ?**
-  - *Pourquoi c'est important :* l'ESC définit une escalade par étapes, chacune associée à une classe de recommandation (ESC 2024 ; mise à jour ESC/EAS 2025).
-- **Ma lipoprotéine(a) — Lp(a) — doit-elle être dosée une fois dans ma vie ?**
-  - *Pourquoi c'est important :* l'ESC suggère un dosage unique car un taux élevé augmente le risque cardiovasculaire, même si aucun médicament abaissant la Lp(a) n'a encore démontré de réduction d'événements cliniques : dans Lp(a)HORIZON, le pélacarsen a réduit la Lp(a) de 78 % sans réduire les infarctus, AVC ou décès.
-- **Ma statine est-elle prescrite pour mes artères coronaires, et dois-je la poursuivre ?**
-  - *Pourquoi c'est important :* les essais dans l'insuffisance cardiaque évaluaient l'intérêt de *débuter* une statine pour l'insuffisance cardiaque seule, et non d'arrêter une statine déjà justifiée par une maladie coronaire : CORONA n'a inclus que des patients jugés ne pas en avoir besoin, et GISSI-HF a exclu les patients qui en prenaient déjà (CORONA ; GISSI-HF ; ESC/EAS 2019).
-- **Quelle intensité de statine est adaptée à mon cas : la dose de haute intensité recommandée pour la maladie coronaire, ou la dose d'intensité modérée admise par les recommandations américaines dans l'insuffisance cardiaque ischémique ?**
-  - *Pourquoi c'est important :* les recommandations américaines ACC/AHA 2026 préconisent une statine de haute intensité pour la maladie artérielle (COR 1) et indiquent séparément qu'une statine d'intensité modérée « peut être raisonnable » dans l'ICFER d'origine coronaire (COR 2b), sans préciser comment articuler les deux.
-- **Certains de mes médicaments cardiaques limitent-ils la dose de ma statine ?**
-  - *Pourquoi c'est important :* l'amiodarone, le diltiazem, le vérapamil, la dronédarone, la ranolazine et le ticagrélor plafonnent la dose de simvastatine (et de lovastatine) ; la colchicine impose une surveillance musculaire plus attentive quelle que soit la statine (ACC/AHA 2026).
-- **Dois-je prendre de l'aspirine ou du clopidogrel au long cours, et que changerait la nécessité éventuelle d'un anticoagulant ?**
-  - *Pourquoi c'est important :* l'ESC 2024 recommande de l'aspirine à faible dose (ou du clopidogrel) à vie dans la maladie coronaire, et un anticoagulant seul lorsqu'une anticoagulation au long cours est indiquée.
-- **La colchicine à faible dose (0,5 mg/jour) est-elle appropriée dans mon cas, compte tenu de mes reins et de mes autres médicaments ?**
-  - *Pourquoi c'est important :* l'ESC indique qu'elle doit être envisagée (Classe IIa), mais les essais ont exclu l'insuffisance cardiaque sévère et son résumé des caractéristiques mentionne des limites rénales et des interactions médicamenteuses.`,
+      headingFr: 'Alimentation, poids, incrétines (GLP-1), fer et compléments',
+      bodyMarkdownFr: `- **Ma ferritine et surtout mon coefficient de saturation de la transferrine (CST < 20 % plutôt qu'une ferritine basse isolée) ont-ils été vérifiés ? Si du fer IV est envisagé (notamment en perfusions répétées), quelle molécule (dérisomaltose ferrique vs carboxymaltose ferrique) et quel suivi du phosphate prévoyez-vous ?**
+  - *Pourquoi c'est important :* les iSGLT2 et l'ARNI abaissent la ferritine par eux-mêmes ; le bénéfice sur les hospitalisations se concentre si **CST < 20 %** (IRONMAN ; Anker 2025 ; Mandal 2026) et le carboxymaltose ferrique a entraîné 51,9 % d'hypophosphatémie modérée à sévère à J21 dans HEART-FID (vs ~4–8 % sous dérisomaltose). Par ailleurs, aucun essai n'a validé le fer oral « haute biodisponibilité » (bisglycinate, sucrosomial) dans l'ICFER (IRONOUT-HF).
+- **Quel apport en sel viser, et une restriction hydrique fixe est-elle nécessaire quand je suis stable ?** (SODIUM-HF ; FRESH-UP)
+- **Sous ARNI/IEC, ARM et iSGLT2 (selon mon DFGe et ma kaliémie), puis-je consommer librement les légumes, légumineuses et fruits d'une alimentation méditerranéenne — tout en évitant les sels de régime au chlorure de potassium (KCl), les comprimés de potassium et les additifs potassiques cachés dans les aliments « réduits en sel » ?**
+  - *Pourquoi c'est important :* les recommandations néphrologiques modernes rejettent la restriction systématique des végétaux frais si la kaliémie est normale et les iSGLT2/ARNI réduisent l'hyperkaliémie sévère, mais aucun ECR n'a testé un régime riche en potassium sans plafond dans l'ICFER jusqu'à DFGe 30 (hausse de kaliémie dans Turban 2021 en MRC stade 3) et les sels KCl / additifs apportent un potassium concentré à risque.
+- **La coenzyme Q10 vaut-elle son coût en plus de ma quadrithérapie, ou vaut-il mieux attendre les essais en cours (CORAL, DANUTRIO-HF) — et pourrait-elle interférer avec la warfarine ou abaisser ma tension ?** (Q-SYMBIO ; NIHR HTA 2022 ; CORONA CoQ10)
+- **Manger du poisson gras deux fois par semaine est-il préférable aux gélules d'oméga-3, compte tenu de l'avertissement sur la fibrillation atriale (EMA/ANSM/MHRA) et de mes antithrombotiques ?** (GISSI-HF FA ; VITAL Rhythm ; OMEMI ; REDUCE-IT)
+- **Avant tout produit à base de plantes, extrait de thé ou complément (millepertuis, ginkgo, danshen, extrait concentré de thé vert, ginseng, réglisse, levure de riz rouge), peut-il diminuer ou amplifier l'effet de mon AOD, clopidogrel/ticagrélor, éplérénone, statine ou digoxine ?**
+  - *Pourquoi c'est important :* le millepertuis est déconseillé/contre-indiqué sur les RCP avec les 4 AOD, l'éplérénone et l'atorvastatine ; le danshen et le ginkgo sont associés à des signaux hémorragiques ; l'extrait de thé vert a réduit l'exposition à la digoxine de 31–33 % chez l'homme.
+- **Que puis-je prendre sans danger pour un rhume ou une douleur à la place des décongestionnants oraux (pseudoéphédrine passée sur ordonnance Liste I en France le 11 déc. 2024 ; certains combinés contiennent de l'ibuprofène) et des AINS ? Si je prends ou envisage un stimulant prescrit pour un TDAH (méthylphénidate, lisdexamfétamine), comment mon cardiologue et le spécialiste doivent-ils se coordonner ?**
+- **Perte de poids, dénutrition et incrétines (GLP-1) :** puis-je perdre du poids sans perdre de muscle ni suivre de régime cétogène (risque d'acidocétose sous iSGLT2, Moseley 2025) ? Le sémaglutide (*Wegovy*, *Rybelsus*), le tirzépatide (*Mounjaro*) ou le rétatrutide (TRIUMPH) ont-ils une place dans mon ICFER (SOUL HR 0,98 ; hausse de FC +3 à +7 bpm ; surveillance des prothèses dans Marques 2025) ? Ai-je été dépisté(e) pour une dénutrition par MNA-SF plutôt que par le score CONUT faussé par les statines (Kinugasa 2022) ?
+- **Vitamine D, vitamines B et magnésium :** doser avant de supplémenter (Kampka 2025 ; plafond sans suivi 4 000 UI/j, signal EVITA, surveillance calcium/digoxine, GRIO 2025 ; thiamine/B12 sous diurétique/metformine/IPP, ESPEN 2022, NORVIT ; magnésium contre-indiqué si ClCr < 30 mL/min et plafond UE de 12 mg/j de vitamine B6 dans les complexes comme *Magné B6*, GALACTIC-HF, Yin 2026) ; intérêt du Tai-Chi et avis diététique.`,
     },
     {
-      headingFr: 'Rétrécissement de la valve aortique (sténose aortique)',
-      bodyMarkdownFr: `- **Quel est le degré de rétrécissement de ma valve aortique sur chaque paramètre (surface valvulaire, indice de perméabilité, gradient moyen), et mon débit est-il bas (volume d'éjection indexé, SVi) ?**
-  - *Pourquoi c'est important :* avec un ventricule gauche affaibli, le gradient de pression sous-estime la sévérité de la sténose et les classifications diffèrent entre l'ESC et l'ACC/AHA ; les mesures doivent être interprétées ensemble (EACVI/ASE 2017 ; ACC/AHA 2020).
-- **À quelle fréquence la valve doit-elle être contrôlée par ETT, compte tenu de ma FEVG ?**
-  - *Pourquoi c'est important :* l'ESC suggère au moins un contrôle annuel pour un rétrécissement modéré ; les intervalles ACC/AHA ont été conçus pour un débit normal (ESC/EACTS 2025 ; ACC/AHA 2020).
-- **Une variation de la surface valvulaire entre deux échocardiographies est-elle réelle ou dans la marge de variabilité de mesure ?**
-  - *Pourquoi c'est important :* le diamètre de la chambre de chasse est élevé au carré dans le calcul et varie de 5 à 8 % d'une mesure à l'autre (EACVI/ASE 2017).
-- **Si une chirurgie cardiaque était envisagée pour une autre raison (par exemple un pontage), la valve serait-elle traitée dans le même temps ?**
-  - *Pourquoi c'est important :* les recommandations envisagent l'intervention sur une sténose modérée principalement à l'occasion d'une autre chirurgie cardiaque (ESC/EACTS 2025 ; ACC/AHA 2020).`,
+      headingFr: 'Stade B, confirmation de la cause et examens spécialisés',
+      bodyMarkdownFr: `- **Suis-je en stade B (jamais de symptôme) ou en stade C (symptômes actuels ou passés), et cela modifie-t-il l'indication d'un ARNI ou d'un iSGLT2 sans diabète/MRC (ESC 2026 grille B1/B2 ; DAPA-MI ; US CKM 2026) ? Si je me sens en NYHA I ou stade B, une EFX (CPET) ou un questionnaire KCCQ aiderait-il à vérifier si je n'ai pas ralenti sans m'en rendre compte ?**
+- **La faiblesse de mon cœur est-elle entièrement expliquée par mes coronaires, ou ma sténose coronaire pourrait-elle coexister avec une seconde cardiomyopathie (double pathologie, coronaropathie fortuite ou NDLVC — 1 patient sur 6 dans Bawaskar 2024) ?**
+- **Où se situe la cicatrice sur l'IRM avec contraste (sous-endocardique, médio-pariétale, en anneau), une arythmie (FA ou ESV ≥ 10 %) pourrait-elle ajouter une faiblesse réversible, et des signes d'appel orientent-ils vers une amylose cardiaque (scintigraphie osseuse + 3 tests monoclonaux obligatoires) ou une sarcoïdose cardiaque (TEP-18F-FDG) ?**
+- **Un test génétique et un dépistage en cascade de mes proches (ESC 2023 Classe I B/C) méritent-ils d'être discutés ?**
+- **Avec la Définition universelle 2026 (sans seuil numérique fixe de FEVG), comment distinguer un essoufflement lié à l'ischémie coronaire d'une aggravation d'insuffisance cardiaque ?**
+- **Examens spécialisés :**
+  - Une **épreuve d'effort cardiorespiratoire (EFX / CPET)** (` + '`VO2 pic`' + `, pente ` + '`VE/VCO2`' + `, ` + '`RER`' + `) serait-elle utile pour calibrer ma réadaptation ou quantifier objectivement mon souffle ?
+  - Mon ETT comporte-t-elle un **strain longitudinal global (GLS)**, et sera-t-il suivi sur la **même marque d'échographe** (variations inter-constructeurs jusqu'à 3,7 points) ?
+  - Ma **troponine ultrasensible (` + '`hs-cTn`' + `)** de base en phase stable est-elle légèrement élevée de façon chronique et notée dans mon courrier pour éviter les malentendus aux urgences ?
+  - Quelle durée d'enregistrement rythmique convient à la fréquence de mes symptômes (Holter 24–48 h, patch 7–14 jours, moniteur implantable ILR ou données de mon DAI/CRT) ?
+  - Quelle décision clinique concrète changerait un examen coronaire ou de stress supplémentaire (coroscanner, IRM de stress, TEP, scintigraphie, écho de stress) compte tenu de mes reins et de mes dispositifs ?`,
     },
     {
-      headingFr: 'Risque de caillot (thrombus VG) et anticoagulants',
-      bodyMarkdownFr: `- **L'apex et la paroi antérieure du ventricule gauche ont-ils été vérifiés à la recherche d'un caillot (thrombus VG), et par quel examen (ETT simple, ETT de contraste ou IRM cardiaque) ?**
-  - *Pourquoi c'est important :* une ETT sans contraste manque de nombreux caillots détectés par l'IRM cardiaque (Bulluck 2018 ; Sacoransky 2024).
-- **Ai-je un anévrisme du ventricule gauche ou un autre élément qui modifierait la question d'un anticoagulant ?**
-  - *Pourquoi c'est important :* en rythme sinusal, les recommandations (comme NICE NG106) n'envisagent une anticoagulation qu'après embolie, en présence d'un anévrisme VG ou d'un thrombus intracardiaque.
-- **Si un caillot était découvert, comment l'anticoagulant s'articulerait-il avec mon aspirine, et quand un examen de contrôle serait-il programmé ?**
-  - *Pourquoi c'est important :* l'ESC 2023 suggère 3 à 6 mois d'anticoagulation guidée par l'imagerie de contrôle, et l'association avec un antiagrégant augmente le risque hémorragique.
-- **Un trouble du rythme comme une fibrillation atriale (FA) changerait-il mon besoin d'anticoagulant ?**
-  - *Pourquoi c'est important :* la FA est une indication distincte d'anticoagulation ; sans FA ni thrombus, l'anticoagulation n'est pas systématique dans l'ICFER (ESC 2026 ; NICE NG106).`,
+      headingFr: 'Diabète, tension artérielle, sommeil et autres comorbidités',
+      bodyMarkdownFr: `### Diabète, reins, FA et valve mitrale
+
+- **En cas de diabète de type 2 : ai-je un iSGLT2, dois-je éviter certains traitements (pioglitazone, saxagliptine, alogliptine), comment concilier avis ESC 2023 et ADA sur les gliptines/GLP-1, quel objectif d'HbA1c (souvent 7–8 % en évitant les hypoglycémies) viser ?**
+- **Sous metformine : mon DFGe est-il confortablement au-dessus de 30–45 mL/min, quand la suspendre avant un scanner injecté ou une chirurgie, et faut-il contrôler ma vitamine B12 ? Sous insuline ou sulfamide, comment limiter les hypoglycémies (dont les signes d'alerte peuvent être masqués par mon bêtabloquant) et la rétention hydrosodée ?**
+- **Ma fonction rénale limite-t-elle mes doses, quel est mon score CHA₂DS₂-VA en cas de FA, et une fuite mitrale secondaire sera-t-elle réévaluée après 1 à 3 mois de traitement optimisé ?**
+
+### Tension artérielle et apnée du sommeil
+
+- **Visez-vous une cible précise de tension ou priorisez-vous les doses cibles des traitements de l'IC tant que je les tolère ? Que faire en cas de vertiges (baisse des autres hypotenseurs d'abord ; consensus HFA Skouri 2025) ou d'HTA (amlodipine/félodipine ; éviter vérapamil/diltiazem/moxonidine), et ma tension fausse-t-elle la mesure de ma valve aortique ?**
+- **Pourrais-je avoir une apnée du sommeil même sans somnolence diurne, et un enregistrement nocturne permet-il de distinguer SAOS (PPC/CPAP) et SACS (où l'ASV est contre-indiquée en ESC Classe III, SERVE-HF) ?**
+
+### Goutte, BPCO, thyroïde, anémie hors fer, AOMI et fragilité
+
+- **En cas de goutte ou d'acide urique élevé :** quel est mon plan sûr en crise à la place des AINS (colchicine vérifiée selon DFGe ≥ 30 en France et sans macrolide/clarithromycine ; éviter *Colchimax* qui masque la diarrhée), et utiliser l'allopurinol en 1re intention (plutôt que le fébuxostat, CARES) sans traiter une hyperuricémie sans crise de goutte (EXACT-HF, ALL-HEART) ?
+- **En cas de BPCO (ou d'asthme) :** puis-je conserver un bêtabloquant cardiosélectif (bisoprolol, métoprolol succinate, nébivolol ; BLOCK COPD ne concernait pas l'ICFER) et mes bronchodilatateurs inhalés (LAMA/LABA) sont-ils compatibles avec mon rythme ?
+- **Thyroïde et anémie :** quand ma TSH a-t-elle été contrôlée (notamment sous amiodarone), et en cas d'hypothyroïdie, la lévothyroxine sera-t-elle débutée à faible dose très progressivement ? Si mon hémoglobine reste basse malgré un bilan martial normal, recherchons-nous saignement digestif, carence en B12/folates, cause rénale ou thyroïdienne plutôt que des injections d'ASE (contre-indiquées dans RED-HF) ?
+- **Artères périphériques (AOMI) et fragilité :** mon EF ou ma classe NYHA rend-elle le schéma rivaroxaban 2,5 mg × 2/j + aspirine (COMPASS) approprié ou inadapté ? Un bilan de fragilité, d'équilibre et de mémoire permettrait-il d'adapter ma réadaptation (type REHAB-HF) et mon pilulier ?`,
     },
     {
-      headingFr: 'Récupération et perspectives',
-      bodyMarkdownFr: `- **Quelle amélioration de ma FEVG est réaliste dans mon cas, et dans quel délai ?**
-- **Si ma FEVG s'améliore (HFimpEF), qu'est-ce qui change et qu'est-ce qui reste identique ? Parleriez-vous d'amélioration, de rémission ou de récupération, et quel suivi ainsi que quels médicaments devraient être poursuivis dans chaque cas ?**
-  - *Pourquoi c'est important :* les recommandations ESC 2026 préconisent de poursuivre les médicaments de fond même après amélioration de la FEVG (Classe I). L'ESC 2026 emploie le terme de « rémission » pour toute FEVG améliorée, alors que la Définition universelle 2026 le réserve aux cas où la FEVG est revenue à la normale (ESC 2026 ; Définition universelle 2026).
-- **Quels sont les objectifs prioritaires de mon traitement : vivre plus longtemps, éviter les hospitalisations ou me sentir mieux au quotidien ? Comment trouver le bon équilibre ?** (guide patient ESC)`,
+      headingFr: 'Automesure, montres connectées, vaccinations et vie quotidienne',
+      bodyMarkdownFr: `### Automesure tensionnelle et montres connectées
+
+- **Souhaitez-vous que je mesure ma tension à domicile ? À quelle fréquence, par rapport aux comprimés (règle des 3 SFHTA / protocole ESH), quelle zone doit m'alerter, mon brassard est-il validé (registre STRIDE BP) et de bonne taille, et comment procéder en cas de FA ou d'extrasystoles ?**
+- **Dois-je utiliser l'ECG ou les alertes de ma montre connectée (15–26 % de tracés inconclusifs en cardiologie ; risque d'anxiété) ? Si je porte un DAI, comment respecter les distances de sécurité face aux aimants (15 cm en usage courant, 30 cm en charge) et les restrictions européennes des applications ECG ?**
+
+### Vaccinations, réadaptation, récupération, moral et soins de support
+
+- **Quelles vaccinations sont à jour ou dues cette année (grippe annuelle gratuite en France quel que soit l'âge au titre des maladies coronaires/IC, pneumocoque, COVID-19, et dès 65 ans VRS et zona), faut-il un vaccin antigrippal haute dose, et lesquelles peuvent être administrées le même jour ?** (IAMI ; IVVE ; Calendrier vaccinal 2026)
+- **Récupération (HFimpEF) et objectifs :** quelle amélioration de FEVG est réaliste, parlez-vous d'amélioration, rémission ou récupération, quels médicaments poursuivre à vie (ESC 2026 Classe I ; TRED-HF), et comment équilibrer mes objectifs de vie ?
+- **Réadaptation et moral :** un programme en SMR (hôpital de jour ou domicile) est-il prescrit, quelle part donner au renforcement musculaire par rapport à l'endurance (GERS-P 2023 ; HAS 2022), et quel accompagnement (psychologue, TCC, activité physique) si mon moral fléchit ?
+- **Soins de support et anticipation (France) :** une équipe mobile de soins palliatifs (*EMSP*) ou un plan personnalisé d'accompagnement (*PPA*, loi 2026-404) peut-il m'aider dès maintenant ? Comment rédiger mes **directives anticipées** (incluant une formulation explicite sur la désactivation des chocs d'un DAI tout en conservant la stimulation/CRT, à revoir avant tout changement de boîtier), désigner ma **personne de confiance** dans *Mon espace santé*, et connaître les ressources locales (*HAD* prise en charge à 100 % sous ALD sans forfait journalier, *LISP*, *USP*, *MASP*, *SPCMD*) ?
+
+### Santé sexuelle, voyages, climat, tabac, alcool et conduite
+
+- **Santé sexuelle :** mon état stable autorise-t-il les rapports (effort ~3–5 METs, sûr en NYHA I–II stable), que savoir avec un DAI (un choc pendant un rapport est rare et ne met pas le partenaire en danger), passer de la spironolactone à l'éplérénone aiderait-il une dysfonction érectile ou une gynécomastie sans arrêter mon bêtabloquant (NICE NG106), et si un IPDE-5 était discuté, le sildénafil (*Viagra*) correspond-il mieux aux RCP européens que le tadalafil (*Cialis*, contre-indiqué dès NYHA II dans l'UE), sachant l'interdiction absolue avec les dérivés nitrés, le nicorandil et le riociguat ?
+- **Voyages, altitude, canicule et saunas :** puis-je prendre l'avion (cabine ≤ 2 438 m ; ordonnance en DCI et carte de prothèse en bagage cabine ; portiques d'aéroport sans interférence mesurée), quel plafond d'altitude et délai post-infarctus/pontage retenir (Parati 2018 jusqu'à 3 500 m ou 2 500 m si angor vs BHF > 2 000 m ; éviter l'acétazolamide avec mes diurétiques), quel plan écrit prévoir avant une canicule (recommandations ANSM 2025–2026 : ne jamais arrêter seul ses traitements, appeler le 15 en cas de coup de chaleur), et pourquoi éviter les saunas brûlants (80–100 °C) et surtout les bains d'eau glacée (conflit autonome et risque d'arythmie sur cicatrice) ?
+- **Tabac et alcool :** pouvez-vous me prescrire des substituts nicotiniques ou de la varénicline (*Champix*, revenue en juin 2025 et remboursée à 65 % en 2e intention, sans interaction CYP450, contrairement au bupropion/*Zyban*), m'orienter vers *Tabac info service* (` + '`39 89`' + `) et vérifier l'impact du sevrage sur warfarine/insuline ? Quelle limite d'alcool personnelle (ou zéro) viser, sachant que l'ESC 2026 indique que réduire est toujours bénéfique et que l'ESC 2024 FA fixe un plafond ≤ 3 verres/semaine ?
+- **Conduite automobile et essais cliniques :** quels délais légaux (arrêté du 28 mars 2022, avis médecin agréé, groupe 1 vs groupe 2) s'appliquent à mon permis ? Qu'en est-il des cliniques payantes de cellules souches (aucun MTI cardiaque autorisé en UE) et d'une éventuelle inclusion dans un essai académique enregistré (PROFID-EHRA, STICH3, COLT-HF) ?`,
     },
     {
-      headingFr: 'Vie quotidienne et suivi',
-      bodyMarkdownFr: `- **Quelle prise de poids rapide doit m'amener à appeler, et quel numéro contacter (y compris le week-end ou en dehors des heures ouvrables) ?**
-- **Ai-je besoin d'une limitation de mes apports en liquides, ou simplement d'une modération du sel ?**
-- **Puis-je être orienté(e) vers une réadaptation cardiaque (SMR cardiovasculaire) ?**
-  - *Pourquoi c'est important :* l'ESC 2026 place la réadaptation cardiaque en Classe I pour les patients stables.
-- **Mes vaccinations (grippe, pneumocoque, COVID-19, VRS selon l'âge) sont-elles à jour ?**
-- **À quelle fréquence serai-je suivi(e), et avec quels examens ?**
-  - *Pourquoi c'est important :* le guide patient ESC évoque au moins tous les 6 mois en situation stable ; la figure 22 des recommandations ESC 2026 indique un suivi tous les 6 à 12 mois en cas d'insuffisance cardiaque symptomatique, ou plus rapproché si nécessaire.
-- **Vers qui me tourner si je ressens une baisse de moral ou de l'anxiété ?**`,
-    },
-    {
-      headingFr: 'Alimentation, poids, incrétines (GLP-1), vitamines et compléments',
-      bodyMarkdownFr: `- **Ma ferritine et mon coefficient de saturation de la transferrine (CST) ont-ils été vérifiés ? En cas de carence, le fer intraveineux est-il une option ?**
-  - *Pourquoi c'est important :* le fer intraveineux a réduit d'environ un cinquième les hospitalisations pour insuffisance cardiaque dans les essais regroupés, alors que le fer par voie orale n'a pas été efficace (méta-analyse fer IV 2025 ; IRONOUT-HF).
-- **On me propose un comprimé de fer « mieux absorbé » (bisglycinate ferreux / Ferrochel, fer sucrosomial, maltol ferrique, fer héminique ou lactoferrine) à la place du fer intraveineux. Est-ce une alternative démontrée dans mon insuffisance cardiaque ?**
-  - *Pourquoi c'est important :* aucun essai randomisé publié dans l'insuffisance cardiaque n'a testé le bisglycinate ferreux (Ferrochel) ; les rares études de formes récentes (ORION-HF pour le maltol ferrique, Karavidas 2021 pour le fer sucrosomial) étaient petites et sans placebo, et PREFER-HF (IC à FEVG préservée, non publié) aurait manqué son critère de marche. En présence d'hepcidine élevée, ces formes restent soumises au blocage de la ferroportine et reconstituent beaucoup moins les réserves que le fer intraveineux (preuves insuffisantes, plutôt en défaveur ; le fer intraveineux reste la seule voie étayée dans l'ICFER ; IRONOUT-HF ; ESC 2026).
-- **Quel apport en sel viser ? Une restriction hydrique stricte est-elle encore nécessaire quand je suis stable ?**
-  - *Pourquoi c'est important :* la restriction sodée très stricte et la limitation systématique des liquides n'ont pas amélioré le pronostic dans les essais récents (SODIUM-HF ; FRESH-UP).
-- **Puis-je utiliser un sel de régime « pauvre en sodium », ou contient-il du potassium incompatible avec mes médicaments ?**
-  - *Pourquoi c'est important :* les sels de substitution riches en potassium figurent parmi les interactions signalées avec le sacubitril/valsartan (*Entresto*) et les autres bloqueurs du système rénine-angiotensine / ARM.
-- **Je prends (ou j'envisage de prendre) [oméga-3 / coenzyme Q10 / vitamines / plantes]. Est-ce sûr avec mes médicaments ? Est-ce utile ?**
-  - *Pourquoi c'est important :* l'AHA demande d'informer toute l'équipe soignante, y compris le pharmacien, de chaque complément alimentaire ou produit à base de plantes.
-- **Quels antalgiques (médicaments contre la douleur) sont sûrs dans mon cas ?**
-  - *Pourquoi c'est important :* les anti-inflammatoires non stéroïdiens (AINS) disponibles sans ordonnance peuvent nuire aux reins et provoquer une décompensation en association avec les traitements de l'insuffisance cardiaque.
-- **Puis-je perdre du poids sans risque, et comment ? Y a-t-il des régimes à éviter avec mes médicaments ?**
-  - *Pourquoi c'est important :* les régimes cétogènes et très hypocaloriques sont mentionnés comme facteurs déclenchants d'acidocétose sous inhibiteurs du SGLT2 (dapagliflozine / *Forxiga*, empagliflozine / *Jardiance*). La seule étude sur un régime cétogène dans l'insuffisance cardiaque avec obésité était une revue rétrospective de dossiers non contrôlée dans laquelle seuls 2 patients sur 125 prenaient un iSGLT2 et où les corps cétoniques n'ont jamais été mesurés, ce qui ne permet pas de démontrer la sécurité de l'association. La HFA 2025 recommande de perdre du poids en préservant la masse musculaire : suffisamment de protéines et d'exercice physique, et pas uniquement une restriction calorique (Moseley 2025 ; déclaration HFA 2025 sur l'obésité).
-- **Mon poids doit-il être évalué uniquement par l'IMC, ou aussi par mon tour de taille ? En cas d'obésité, un médicament pour la perte de poids comme le sémaglutide (*Wegovy*, *Ozempic*, *Rybelsus*) ou le tirzépatide (*Mounjaro*) aiderait-il ou nuirait-il à mon cœur ?**
-  - *Pourquoi c'est important :* la HFA suggère d'associer le rapport tour de taille / taille à l'IMC. Les bénéfices cardiaques de ces médicaments n'ont été démontrés que dans l'insuffisance cardiaque à FEVG préservée (SUMMIT : HR 0,62 pour décès cardiovasculaire ou aggravation d'IC). Dans l'ICFER, les données sont peu nombreuses et mitigées (dans l'essai LIVE, 12 événements cardiaques graves contre 3 sous liraglutide), et la HFA qualifie leur sécurité de « débattue » (déclaration HFA 2025). Dans l'essai SOUL (592 personnes présentant un diabète et une ICFER), le sémaglutide oral n'a fait aucune différence sur les événements d'insuffisance cardiaque (HR 0,98 ; applicabilité partielle).
-- **Si l'un de ces médicaments (agoniste du GLP-1 ou incrétine) était instauré, comment ma fréquence cardiaque et mon rythme seraient-ils suivis, et les données de mon dispositif implanté seraient-elles contrôlées ?**
-  - *Pourquoi c'est important :* le RCP européen de *Wegovy* (sémaglutide) rapporte une hausse moyenne de 3 battements par minute (et une hausse d'au moins 10 bpm à un moment donné chez deux tiers des patients), et une petite étude observationnelle chez des patients avec ICFER porteurs d'un dispositif implanté (Marques 2025) a retrouvé +7 bpm et davantage d'événements ventriculaires non soutenus et de thérapies de la prothèse cumulés (33 contre 3). Ces données restent observationnelles et de faible effectif (applicabilité partielle).
-- **Que dois-je faire de mon diurétique et de mes autres médicaments cardiaques les jours de vomissements ou de diarrhée (notamment sous traitement par GLP-1) ?**
-  - *Pourquoi c'est important :* le RCP européen de *Wegovy* avertit que les effets digestifs peuvent entraîner une déshydratation et, plus rarement, une altération de la fonction rénale ; les diurétiques et les inhibiteurs du SGLT2 éliminent également des liquides (applicabilité indirecte, fondée sur le RCP et non sur un essai dédié dans l'insuffisance cardiaque).
-- **Existe-t-il une raison d'attendre des données dans l'insuffisance cardiaque avant d'envisager des molécules plus récentes comme le rétatrutide (retatrutide), et serais-je éligible à un essai clinique ?**
-  - *Pourquoi c'est important :* le rétatrutide a entraîné environ 25 % de perte de poids dans TRIUMPH-1, mais aucun résultat n'a été publié dans l'insuffisance cardiaque à FEVG réduite, les événements cardiaques dans TRIUMPH-3 étaient non concluants, et aucun essai d'événements cliniques dédié à l'ICFER n'a été trouvé sur ClinicalTrials.gov (applicabilité extrapolée ; TRIUMPH ; instantané des registres novembre 2026).
-- **Ai-je bénéficié d'un dépistage de la dénutrition ou de la perte musculaire ? Si un score a été utilisé, prenait-il en compte mon cholestérol ?**
-  - *Pourquoi c'est important :* le score CONUT attribue des points à un cholestérol bas, si bien qu'une statine peut faire paraître dénutrie une personne bien alimentée, et chez les utilisateurs de statines il a manqué des patients mangeant moins. Un court questionnaire sur l'appétit et l'évolution du poids (MNA-SF) s'est révélé le plus performant dans une étude japonaise portant sur 150 patients ambulatoires ; aucun des scores ne prédisait le pronostic à 1 an (Kinugasa 2022).
-- **Mon taux de vitamine D doit-il être dosé, plutôt que de prendre un complément « par précaution » ?**
-  - *Pourquoi c'est important :* un taux bas de vitamine D est fréquent dans l'ICFER (cité entre 56 % et 83 %), mais les essais n'ont pas montré moins d'hospitalisations ni de décès avec une supplémentation systématique, et une cartographie des preuves a retrouvé une distance de marche inférieure d'environ 39 m sous supplémentation. Une revue de 2025 conseille de traiter une carence avérée et non de supplémenter tout le monde (Kampka 2025 ; Chua 2025).
-- **Je prends un diurétique de l'anse (furosémide / *Lasilix* ou bumétanide / *Burinex*) depuis longtemps, et/ou de la metformine ou un traitement contre l'acidité gastrique (IPP). Mon taux de thiamine (vitamine B1) ou de vitamine B12 doit-il être vérifié ? Mon complexe de vitamines B ou ma vitamine « cœur » mérite-t-il d'être poursuivi ?**
-  - *Pourquoi c'est important :* les diurétiques de l'anse au long cours peuvent réduire les réserves de thiamine, et les recommandations nutritionnelles ESPEN 2022 indiquent que la thiamine sanguine *peut* être dosée en cas de cardiomyopathie sous diurétique prolongé ; la metformine et les inhibiteurs de la pompe à protons sont des facteurs de risque de déficit en vitamine B12. En revanche, la thiamine en comprimés n'a pas amélioré la contraction cardiaque dans 7 essais (He 2024), et l'association acide folique + B12 + B6 n'a pas prévenu les infarctus ni les décès, avec un possible signal défavorable après infarctus (Cochrane 2017 ; NORVIT 2006).
-- **Puisque je prends un diurétique ou un IPP au long cours, mon taux sanguin de magnésium doit-il être dosé avant d'envisager un complément, et une forme précise ou un produit magnésium + vitamine B6 (comme *Magné B6*) est-il sûr avec mes reins et mes médicaments ?**
-  - *Pourquoi c'est important :* aucun essai randomisé solide n'a prouvé qu'un complément de magnésium améliore la survie ou les hospitalisations dans l'ICFER. Dans GALACTIC-HF (FEVG ≤ 35 %), un magnésium bas (17,6 %) ne prédisait pas plus d'événements contrairement à un magnésium élevé ; dans une vaste cohorte observationnelle (Yin 2026), la supplémentation n'était associée à un moindre risque qu'en cas de taux bas (HR 0,91), et à davantage d'événements en cas de taux normal (HR 1,11). Le magnésium peut s'accumuler en cas d'insuffisance rénale (contre-indiqué si clairance < 30 mL/min sur les RCP français), diminuer l'absorption de certains médicaments (notamment la rosuvastatine avec les antiacides au magnésium), et certains produits combinés dépassent la limite supérieure européenne de vitamine B6 (12 mg/jour ; GALACTIC-HF ; Yin 2026 ; EFSA / NIH ODS).
-- **On m'a proposé un produit à base de plantes médicinales ou du Tai-Chi. L'un ou l'autre en vaut-il la peine, et les plantes risquent-elles d'interagir avec mes médicaments ?**
-  - *Pourquoi c'est important :* une revue parapluie (Chua 2025) a retrouvé un niveau de certitude modéré indiquant que le Tai-Chi réduisait les hospitalisations (RR 0,47 sur 3 petits essais), en cohérence avec les conseils de réadaptation. Les produits à base de plantes reposent surtout sur de petits essais chinois évaluant des bilans biologiques ou la marche ; certaines formules contiennent du ginseng ou du danshen (susceptibles d'interagir avec les anticoagulants) ou des substances cardiotoxiques telles que la racine d'aconit, et des préparations à base de *Pueraria* ont fait monter le potassium.
-- **Serait-il utile de consulter un(e) diététicien(ne) et de bénéficier d'une réadaptation cardiaque ?**`,
-    },
-    {
-      headingFr: "Résultats d'examens (biomarqueurs et imagerie)",
-      bodyMarkdownFr: `- **Quel est mon taux de NT-proBNP (ou de BNP), et comment a-t-il évolué ? Lequel des deux mon laboratoire dose-t-il ?**
-  - *Pourquoi c'est important :* les deux dosages ont des valeurs de référence différentes, de nombreux facteurs autres que l'insuffisance cardiaque les font varier, et le sacubitril/valsartan (*Entresto*) peut faire monter le BNP mais pas le NT-proBNP ; aucune source analysée ne fixe de seuil universel d'amplitude de variation significative (ESC 2026).
-- **Quels sont les volumes de mon ventricule gauche indexés à ma surface corporelle (VTDi, VTSi), et ont-ils été mesurés par ETT ou par IRM cardiaque ?**
-  - *Pourquoi c'est important :* l'ETT et l'IRM cardiaque n'ont pas les mêmes normes (ASE/EACVI 2015).
-- **Quelle proportion de mon muscle cardiaque est cicatricielle à l'IRM ?**
-  - *Pourquoi c'est important :* une cicatrice plus étendue prédisait un pronostic moins favorable et une moindre récupération de la FEVG dans REVIVED-BCIS2.`,
-    },
-    {
-      headingFr: 'Bilans sanguins, effets secondaires et plan « jours de maladie »',
-      bodyMarkdownFr: `- **Quand sont prévus mes prochains bilans de la fonction rénale (créatinine, DFGe) et du potassium, et qui analyse et ajuste le traitement en fonction des résultats ?**
-  - *Pourquoi c'est important :* une revue européenne suggère un contrôle 1 à 2 semaines après chaque initiation ou augmentation de dose, puis environ tous les 4 mois (Volterrani 2024).
-- **Si ma créatinine augmente légèrement, quelle hausse est attendue et quel seuil conduirait à modifier le traitement ?**
-  - *Pourquoi c'est important :* une hausse initiale modérée est souvent attendue lors de la mise en route ou de la titration des médicaments de fond (Clark 2019).
-- **Que dois-je faire de mes médicaments en cas de vomissements, de diarrhée importante ou de fièvre élevée (plan « jours de maladie ») ?**
-  - *Pourquoi c'est important :* certains documents conseillent de suspendre temporairement l'iSGLT2 en cas de déshydratation aiguë, tandis que des consensus soulignent que les règles génériques manquent de preuves ; un plan personnalisé écrit par votre médecin lève toute ambiguïté.`,
-    },
-    {
-      headingFr: 'Questions complémentaires sur les dispositifs',
-      bodyMarkdownFr: `- **Si un DAI est recommandé, un modèle sous-cutané (S-DAI) ou transveineux est-il mieux adapté à mon cas ? Suis-je susceptible d'avoir besoin d'une stimulation (pacemaker) ou d'une CRT plus tard ?**
-  - *Pourquoi c'est important :* dans PRAETORIAN, les deux types ont eu des résultats globaux comparables ; le S-DAI entraînait moins de complications liées aux sondes, mais il exclut les patients nécessitant une stimulation ou une CRT, et les chocs appropriés étaient plus fréquents.
-- **L'essai PROFID-EHRA, actuellement en cours, modifie-t-il votre regard sur l'indication de DAI dans mon cas ?**
-  - *Pourquoi c'est important :* il évalue l'apport du DAI en plus des traitements modernes ; ses résultats ne sont pas attendus avant fin 2027.`,
-    },
-    {
-      headingFr: 'Activité physique, moral et anticipation',
-      bodyMarkdownFr: `- **Un programme de réadaptation cardiaque à domicile ou en hôpital de jour est-il possible si un centre est difficile d'accès ?**
-  - *Pourquoi c'est important :* les programmes à domicile et en centre obtiennent des résultats comparables dans la revue Cochrane 2024.
-- **En réadaptation cardiaque, quelle place accorder au renforcement musculaire (poids, élastiques, appareils) par rapport à l'endurance (marche, vélo), et quelles charges sont sûres pour mon cœur ?**
-  - *Pourquoi c'est important :* le renforcement musculaire seul est sûr dans l'insuffisance cardiaque stable et améliore la force et la capacité d'effort (VO2 pic environ +2,6 mL/kg/min), mais il ne surpasse pas l'endurance : seule l'endurance montre un gain constant sur la FEVG et dispose d'un grand essai d'événements cliniques (HF-ACTION). Les recommandations (ESC 2026, ESC 2020, AHA 2023, GERS-P/SFC 2023, HAS 2022) associent l'endurance en socle (3 à 6 séances par semaine) et le renforcement musculaire en complément (2 à 3 séances par semaine), ou en point de départ en cas de déconditionnement marqué. En France, la HAS recommande le « renforcement musculaire » tout en listant « la musculation » et les efforts intenses comme contre-indiqués sans définir les charges : faites valider les exercices et les charges par l'équipe de réadaptation (Terada 2026 ; SMARTEX-HF pour l'absence de supériorité démontrée du HIIT sur l'endurance modérée).
-- **Mon moral peut-il être évalué ? Vers quel professionnel puis-je être orienté(e) ?**
-  - *Pourquoi c'est important :* la dépression touche environ un quart des personnes vivant avec une insuffisance cardiaque ; la thérapie cognitivo-comportementale (TCC) et l'exercice physique disposent des meilleures preuves (Basile 2023).
-- **Des soins de support ou soins palliatifs précoces peuvent-ils m'aider dès maintenant, en parallèle de mes traitements habituels ?**
-  - *Pourquoi c'est important :* l'Association européenne d'insuffisance cardiaque (HFA 2020) indique qu'une approche de soins de support doit être envisagée à tout stade.
-- **Si je porte un DAI, comment et quand aborderons-nous la possibilité de désactiver la fonction de choc plus tard ?**
-  - *Pourquoi c'est important :* la HFA 2020 recommande d'aborder cette question avant l'implantation et de la réexaminer régulièrement.`,
-    },
-    {
-      headingFr: 'Conduite automobile',
-      bodyMarkdownFr: `- **Combien de temps ne dois-je pas conduire après une implantation de DAI ou après un choc en France ?**
-  - *Pourquoi c'est important :* les délais varient selon les pays (d'une semaine à un mois après un DAI en prévention primaire selon les législations) ; en France, l'arrêté du 28 mars 2022 et l'avis d'un médecin agréé (distinct du médecin traitant) encadrent la reprise.
-- **Je détiens un permis poids lourd ou transport en commun (groupe 2 / groupe lourd). Qu'implique ma FEVG ou un DAI ?**
-  - *Pourquoi c'est important :* les règles minimales européennes (Directive UE 2016/1106) exigent une FEVG ≥ 35 % en NYHA I–II pour le groupe 2, et un DAI contre-indique définitivement le permis du groupe 2.`,
-    },
-    {
-      headingFr: 'Maladies associées',
-      bodyMarkdownFr: `- **Ma fonction rénale influence-t-elle le choix ou les doses de mes médicaments ?** (Beldhuis 2022)
-- **Si j'ai une fibrillation atriale (FA), quel est mon score de risque d'AVC (CHA₂DS₂-VA), et dois-je prendre un anticoagulant ?**
-  - *Pourquoi c'est important :* l'insuffisance cardiaque compte déjà pour 1 point dans le score européen CHA₂DS₂-VA (ESC 2024).
-- **Ai-je une fuite de la valve mitrale (insuffisance mitrale secondaire) ? Quelle est sa sévérité, et sera-t-elle réévaluée après optimisation des médicaments ?**
-  - *Pourquoi c'est important :* environ 40 % des insuffisances mitrales secondaires s'améliorent après 1 à 3 mois de traitement médical optimisé (ESC/EACTS 2025).
-- **Si j'ai un diabète, mes médicaments antidiabétiques sont-ils bien adaptés à mon cœur, et quel objectif d'HbA1c dois-je viser ?**
-  - *Pourquoi c'est important :* un consensus 2022 de l'American Diabetes Association (ADA) préconise un inhibiteur du SGLT2 chez toute personne atteinte de diabète et d'insuffisance cardiaque symptomatique, déconseille les inhibiteurs de la DPP-4 (la saxagliptine a augmenté les hospitalisations pour IC) et les glitazones, recommande la prudence avec les sulfamides hypoglycémiants et l'insuline, et précise que les agonistes du GLP-1 peuvent être utilisés mais pas dans le but d'améliorer l'insuffisance cardiaque. Un contrôle glycémique plus strict n'a pas réduit l'insuffisance cardiaque ; dans les données observationnelles, la mortalité dans l'insuffisance cardiaque était la plus basse pour une HbA1c autour de 7 à 8 % (consensus ADA 2022).`,
-    },
-    {
-      headingFr: 'Tension artérielle',
-      bodyMarkdownFr: `- **Visez-vous une fourchette précise de tension artérielle dans mon cas, ou l'objectif est-il avant tout d'atteindre les doses cibles des médicaments de l'insuffisance cardiaque ?**
-  - *Pourquoi c'est important :* aucune cible tensionnelle stricte n'a été testée par essai randomisé dans l'ICFER établie ; le protocole de SPRINT avait exclu les FEVG < 35 %. Dans de vastes bases d'essais, une pression systolique restant à 120 mmHg ou moins s'associe à un pronostic moins favorable, mais cela reflète probablement un cœur plus affaibli plutôt qu'un effet nocif de la pression elle-même (ESC 2026 ; SPRINT ; Li 2025 ; Seidu 2024).
-- **Si ma tension est trop élevée, quel médicament ajouter, et certains de mes autres traitements sont-ils déconseillés dans l'insuffisance cardiaque ?**
-  - *Pourquoi c'est important :* l'ESC 2026 cite l'amlodipine ou la félodipine comme ajouts possibles, et contre-indique le vérapamil, le diltiazem et la moxonidine dans l'ICFER.
-- **Si ma tension est basse, que faire en cas de vertiges ou d'étourdissements, et quel médicament ajusteriez-vous en premier ?**
-  - *Pourquoi c'est important :* une tension basse sans symptôme est souvent acceptée afin de maintenir les doses des traitements protecteurs ; le consensus HFA 2025 (Skouri 2025) suggère de ne réduire les médicaments de l'insuffisance cardiaque qu'en dessous d'une systolique d'environ 80 mmHg ou en cas de symptômes marqués, et d'arrêter d'abord les autres médicaments abaissant la tension (Cautela 2020 ; Skouri 2025).
-- **En présence d'un rétrécissement aortique, ma tension artérielle influence-t-elle l'évaluation échographique de la valve, et faudra-t-il la recontrôler une fois la tension équilibrée ?**
-  - *Pourquoi c'est important :* la pression artérielle au moment de l'ETT peut fausser la cotation d'un rétrécissement aortique, en le faisant le plus souvent paraître moins sévère (Basile 2021).`,
-    },
-    {
-      headingFr: 'Stade, cause de la dysfonction et examens complémentaires',
-      bodyMarkdownFr: `- **Suis-je classé(e) en stade B (aucun symptôme jusqu'ici) ou en stade C (symptômes actuels ou passés), et cela modifie-t-il les médicaments recommandés ?**
-  - *Pourquoi c'est important :* les preuves au stade B sont plus restreintes (IEC et bêtabloquant ; éplérénone après infarctus), alors que le stade C repose sur les quatre piliers. Les stades ne reculent jamais (ESC 2026).
-- **L'affaiblissement de mon cœur est-il entièrement expliqué par la maladie coronaire et d'anciens infarctus, ou pourrait-il y avoir une seconde cause associée ?**
-  - *Pourquoi c'est important :* lorsque la dysfonction semble disproportionnée par rapport aux lésions coronaires, l'équipe recherche une hypertension ancienne, une consommation d'alcool, une myocardite passée ou une cardiomyopathie génétique (Felker 2002 ; Jones 2024).
-- **Une IRM cardiaque avec injection de gadolinium a-t-elle été réalisée ? Où se situe la cicatrice (sous-endocardique, médio-pariétale, épicardique), et cet aspect correspond-il à un infarctus ?**
-  - *Pourquoi c'est important :* l'ESC 2026 recommande l'IRM cardiaque lorsque la cause est incertaine (Classe I) ; une fibrose médio-pariétale oriente vers une cause non ischémique et comporte un risque propre (McCrohon 2003 ; Gulati 2013).
-- **Mes comptes rendus indiquent « FEVG réduite ». Avec la nouvelle définition internationale (2026), qui ne fixe pas de seuil chiffré de FEVG, cela change-t-il la manière dont mon insuffisance cardiaque est qualifiée ou traitée ?**
-  - *Pourquoi c'est important :* la Définition universelle 2026 est un document de terminologie ; les seuils de traitement proviennent toujours des recommandations cliniques (l'ESC 2026 utilise une FEVG < 50 %).
-- **Lorsque mon essoufflement augmente, comment distinguer une poussée de ma maladie coronaire (ischémie) d'une aggravation de mon insuffisance cardiaque, et quels examens utiliseriez-vous ?**
-  - *Pourquoi c'est important :* la Définition universelle 2026 rappelle que l'ischémie myocardique peut mimer une insuffisance cardiaque : 10 % à 15 % des personnes atteintes d'un syndrome coronarien chronique ne présentent qu'un essoufflement.
-- **Un test génétique ou un dépistage des proches au premier degré mériterait-il d'être discuté ?**
-  - *Pourquoi c'est important :* la mise en évidence d'un variant de cardiomyopathie dilatée modifie l'évaluation du risque et justifie un dépistage familial lorsque la dysfonction est disproportionnée par rapport aux lésions coronaires (Jones 2024 ; ESC 2023).`,
-    },
-    {
-      headingFr: 'Sommeil et apnée du sommeil',
-      bodyMarkdownFr: `- **Pourrais-je souffrir d'apnée du sommeil ? Dois-je réaliser un enregistrement nocturne du sommeil (polygraphie ventilatoire ou polysomnographie) ?**
-  - *Pourquoi c'est important :* plus d'un tiers des personnes vivant avec une insuffisance cardiaque présentent des troubles respiratoires du sommeil, souvent sans somnolence diurne marquée (ESC 2026).
-- **Si j'ai une apnée du sommeil, est-elle surtout obstructive (SAOS) ou centrale (SACS), et quel appareil (le cas échéant) est adapté ?**
-  - *Pourquoi c'est important :* la servo-ventilation adaptative (ASV) a augmenté la mortalité dans l'ICFER avec apnée principalement centrale (SERVE-HF) et est déconseillée dans cette indication (Classe III). La PPC (CPAP) améliore la somnolence et la qualité de vie sans preuve de réduction des événements cardiaques, et le plus grand essai sur la PPC (SAVE) a exclu les personnes ayant des symptômes d'insuffisance cardiaque modérés à sévères. Un faible score de somnolence ou un questionnaire normal n'élimine pas une apnée du sommeil, et seul un enregistrement du sommeil permet de distinguer une forme centrale d'une forme obstructive (SERVE-HF ; SAVE CPAP ; déclaration AHA 2021).`,
-    },
-    {
-      headingFr: 'Thérapies cellulaires (cellules souches) et essais cliniques en cours',
-      bodyMarkdownFr: `- **Des thérapies par cellules souches ou patchs de muscle cardiaque sont-elles autorisées en France ou en Europe pour une cardiomyopathie ischémique, et que penser des cliniques proposant des injections payantes ?**
-  - *Pourquoi c'est important :* aucun traitement par cellules souches ou médicament de thérapie innovante (MTI / ATMP) n'est autorisé pour le cœur en France ou dans l'Union européenne (liste EMA juin 2026) ni aux États-Unis (FDA), et les recommandations ESC 2026 n'en font aucune mention. Les essais contrôlés contre procédure factice (DREAM-HF, CONCERT-HF, CardiAMP-HF) ont été neutres ; les patchs issus de cellules iPS (BioVAT-HF ; autorisation conditionnelle de 7 ans au Japon pour RiHEART sur 8 patients) restent très précoces et imposent des immunosuppresseurs. Les cliniques payantes hors essai clinique enregistré n'offrent pas de traitement prouvé et ont été associées à des complications graves (infections, tumeurs, cécité ; EMA 2026 ; FDA ; DREAM-HF ; BioVAT-HF).
-- **Un essai clinique enregistré (par exemple PROFID-EHRA, STICH3, COLT-HF ou un protocole hospitalier dédié) correspond-il à ma situation, et comment vérifier son sérieux ?**
-  - *Pourquoi c'est important :* plusieurs grands essais évaluent encore des questions clés dans la cardiomyopathie ischémique (utilité du DAI sous traitements modernes dans PROFID-EHRA, pontage vs stents dans STICH3, thiamine et colchicine dans COLT-HF, cellules médullaires dans CardiAMP HF II). Un essai en cours ne constitue pas une preuve d'efficacité, mais un essai légitime est toujours gratuit pour le participant, inscrit sur un registre public (euclinicaltrials.eu ou ClinicalTrials.gov) et discuté avec votre équipe de cardiologie (instantané des registres novembre 2026 ; EMA 2026).`,
-    },
-    {
-      headingFr: 'Démarches pratiques en France',
-      bodyMarkdownFr: `- **Une demande d'ALD exonérante (ALD 5 insuffisance cardiaque grave ou ALD 13 maladie coronaire) a-t-elle été établie ?** (En France, le protocole de soins est généralement rédigé par votre médecin traitant.)
-  - *Pourquoi c'est important :* l'ALD prend en charge à 100 % du tarif de l'Assurance Maladie les soins liés à l'affection inscrits au protocole de soins ; les dépassements d'honoraires et participations forfaitaires restent toutefois à charge ou couverts par la complémentaire santé (service-public.fr ; ameli.fr).
-- **Pouvez-vous me prescrire une réadaptation cardiaque en SMR cardiovasculaire, et existe-t-il un programme en hôpital de jour près de chez moi ?**
-  - *Pourquoi c'est important :* la réadaptation en SMR cardiovasculaire peut être prescrite par le cardiologue ou le médecin traitant, sans entente préalable, avec une prise en charge intégrale, mais reste sous-utilisée (fiche HAS 2024).
-- **En vue de ma reprise professionnelle, un temps partiel thérapeutique et une visite de pré-reprise avec le médecin du travail sont-ils pertinents ?**
-  - *Pourquoi c'est important :* ces dispositifs facilitent un retour progressif et adapté au travail (ameli.fr).`,
+      headingFr: 'Réseau de soins et démarches pratiques en France',
+      bodyMarkdownFr: `- **Une demande d'ALD exonérante (ALD 5 insuffisance cardiaque grave ou ALD 13 maladie coronaire) a-t-elle été établie par mon médecin traitant dans mon protocole de soins ?**
+- **Mon service de cardiologie, ma maison de santé ou ma CPTS travaille-t-il avec un(e) infirmier(ère) en pratique avancée (IPA) pour suivre mes bilans, symptômes et titrations entre les consultations spécialisées ?**
+  - *Pourquoi c'est important :* l'IPA couvre les cardiopathies et coronaropathies stabilisées, peut prescrire des bilans, renouveler/adapter les ordonnances et prescrire une première APA, avec accès direct en structures coordonnées depuis janvier 2025 et prise en charge à 100 % du tarif sous ALD.
+- **Mes derniers comptes rendus (ETT, IRM cardiaque, coronarographie/stents, carte de DAI/CRT et volet de synthèse médicale VSM) sont-ils bien déposés dans *Mon espace santé* (DMP) pour que le SAMU 15 ou un autre hôpital puisse les lire en urgence ?**
+- **Pouvez-vous me prescrire une réadaptation cardiaque en SMR cardiovasculaire, puis une activité physique adaptée (APA) via une *Maison Sport-Santé* ou un *Club Cœur et Santé* de la FFC — et comment celle-ci est-elle financée ?**
+  - *Pourquoi c'est important :* le SMR est pris en charge sans entente préalable, alors que l'APA en ville n'est **pas** remboursée par l'Assurance Maladie pour l'insuffisance cardiaque même en ALD (financement par forfaits prévention de mutuelles, aides ARS/communes ou cotisations associatives).
+- **Mon cardiologue ou la clinique pratique-t-il en Secteur 1 ou en Secteur 2 OPTAM, puis-je obtenir un devis écrit avant un geste, et ma mutuelle ou la Complémentaire santé solidaire (C2S) couvre-t-elle les restes à charge non payés par l'ALD 100 % ?**
+  - *Pourquoi c'est important :* même en ALD 100 %, restent à charge (hors C2S) les dépassements d'honoraires (hors OPTAM, la base Sécurité sociale baisse aussi), le forfait journalier hospitalier (23 €/jour), le forfait patient urgences ALD (9,96 € depuis mars 2026) et jusqu'à 70 € + 70 €/an de participations forfaitaires et franchises médicales non remboursées par les mutuelles (depuis octobre 2026).
+- **Pour le travail et le quotidien : un temps partiel thérapeutique et une visite de pré-reprise avec le médecin du travail sont-ils pertinents ? Si essoufflement ou fatigue limitent la marche ou les gestes quotidiens, un dossier MDPH (*CMI*, *AAH* déconjugalisée, *PCH* avant 60 ans, *RQTH* — désormais automatique avec pension d'invalidité ou CMI Invalidité) ou un congé de proche aidant / *AJPA* (66,64 €/jour en 2026 si incapacité ≥ 80 %, APA ou invalidité catégorie 3, et non sur l'ALD seule) mérite-t-il d'être préparé ?** (Note : les anciennes cartes papier d'invalidité et de stationnement expirent le 31 décembre 2026.)`,
     },
   ],
   relatedArticleSlugs: [
@@ -320,40 +214,66 @@ export const article: WikiArticle = {
     'cardiomyopathie-ischemique',
     'fraction-dejection',
     'examens-et-chiffres',
+    'efx-strain-troponine-et-imagerie-cardiaque',
     'medicaments-insuffisance-cardiaque',
     'medicaments-effets-secondaires-suivi',
     'traitements-additionnels-nouveaux',
     'medicaments-additionnels-ivabradine-digoxine-vericiguat',
     'finerenone-et-nouveaux-arm',
+    'angor-et-medicaments-anti-angineux',
+    'antiplaquettaires-bitherapie-et-protection-gastrique',
+    'escalade-et-resistance-aux-diuretiques',
     'cholesterol-et-prevention-secondaire',
     'carence-martiale-et-fer-iv',
     'fer-oral-haute-biodisponibilite',
+    'these-fer-iv-et-isglt2-quadritherapie',
     'medicaments-glp1-et-incretines',
     'cellules-souches-et-therapies-regeneratives',
     'dispositifs-cardiaques-dai-crt',
+    'arythmies-ventriculaires-et-antiarythmiques',
     'gilet-defibrillateur-portable',
     'telesurveillance-insuffisance-cardiaque',
     'revascularisation-pontage-stents',
     'occlusion-coronaire-chronique-cto',
     'stenose-aortique-fevg-reduite',
     'thrombus-vg-et-anticoagulants',
+    'anevrisme-ventricule-gauche',
     'insuffisance-cardiaque-fevg-amelioree',
+    'insuffisance-cardiaque-avancee-stade-d',
+    'ventricule-droit-et-hypertension-pulmonaire',
     'dysfonction-vg-asymptomatique-stade-b',
     'confirmer-la-cause-dysfonction-vg',
     'maladies-associees',
+    'diabete-insuffisance-cardiaque',
+    'goutte-bpco-thyroide-et-autres-comorbidites',
     'tension-arterielle-insuffisance-cardiaque',
     'apnee-du-sommeil-insuffisance-cardiaque',
+    'chirurgie-soins-dentaires-et-jours-de-maladie',
+    'these-jours-de-maladie-sraa-vs-isglt2',
     'nutrition-et-complements-insuffisance-cardiaque',
     'sel-et-liquides-insuffisance-cardiaque',
+    'these-regime-mediterraneen-potassium-icfer',
     'poids-obesite-et-denutrition',
+    'omega-3-huile-de-poisson',
+    'these-omega3-faible-dose-risque-fa',
+    'coenzyme-q10',
+    'these-coq10-mortalite-icfer-moderne',
     'vitamine-d-insuffisance-cardiaque',
     'vitamines-b-insuffisance-cardiaque',
     'magnesium-insuffisance-cardiaque',
+    'cafeine-boissons-energisantes-et-stimulants',
     'interactions-complements-aliments-medicaments',
+    'automesure-tensionnelle-domicile',
+    'montres-connectees-et-capteurs-ic',
+    'vaccinations-insuffisance-cardiaque',
     'vivre-avec-insuffisance-cardiaque',
     'vivre-avec-insuffisance-cardiaque-en-france',
+    'reseau-de-soins-et-aides-sociales-france',
     'readaptation-cardiaque-et-activite-physique',
     'musculation-vs-endurance-readaptation-cardiaque',
+    'vie-sexuelle-et-dysfonction-erectile-ic',
+    'voyages-canicule-et-climat-ic',
+    'tabac-et-alcool-insuffisance-cardiaque',
     'depression-et-sante-emotionnelle',
     'soins-de-support-et-anticipation',
     'regles-conduite-automobile',
@@ -361,32 +281,16 @@ export const article: WikiArticle = {
   ],
   sources: [
     {
-      label: 'Recommandations ESC 2026 (insuffisance cardiaque), Guide patient ESC 2026 et Définition universelle 2026',
-      detail: 'Titration des 4 piliers, critères DAI/CRT, Heart Team, réadaptation cardiaque, carence martiale, stade B, tension artérielle, apnée du sommeil, rémission vs récupération, ischémie mimant une IC et décision partagée',
+      label: 'Recommandations européennes ESC (IC 2026, ESC/EACTS 2025, FA et SCC 2024, Cardiomyopathies 2023, Diabète 2023, Endocardite 2023, AV/MSC 2022, NCS 2022) et Guide patient ESC 2026',
+      detail: 'Titration, dispositifs, angor, antiplaquettaires, diurétiques, IC avancée, ablation de TV, péri-opératoire, diabète, stade B, étiologie et décision partagée',
     },
     {
-      label: 'Titration, traitements additionnels, LifeVest et télésurveillance (STRONG-HF, SwedeHF, SHIFT, VICTORIA/VICTOR, DIGIT-HF, FINEARTS-HF, FINE-HEART, ARTS-HF, DIAMOND, VEST, HF-OPT, DGK, TIM-HF2, MORE-CARE, MANAGE-HF, HFA 2025)',
-      detail: 'Calendrier de titration, seuils de fréquence cardiaque et NT-proBNP, finérénone, chélateurs de potassium, port du gilet > 20 h/j, télésurveillance et capteurs de pression pulmonaire',
+      label: 'Essais cliniques et thèses 2025–2026 (VANISH2, TRANSFORM-HF, ADVOR, CLOROTIC, HOST-EXAM 10 ans, STOP-or-NOT, SPACE, Fink 2022, SMART-C, FAIR-HF2, HEART-FID phosphate, CORAL/DANUTRIO-HF, GISSI-HF FA, Turban 2021, PROGRESS NEJM 2026, DAPA-MI, IAMI, IVVE, CARES/FAST, RED-HF, REHAB-HF)',
+      detail: 'Justification chiffrée des questions sur les arythmies, les diurétiques, les jours de maladie, le fer IV, le potassium alimentaire, la CoQ10, les oméga-3, les vaccins et les comorbidités',
     },
     {
-      label: 'REVIVED-BCIS2, STICHES, ORBITA-CTO, PROGRESS-CTO, PROFID et PRAETORIAN',
-      detail: 'Discordance ETT vs IRM cardiaque, volumes VG, viabilité, revascularisation coronaire, CTO (essoufflement vs angor et assistance circulatoire temporaire) et choix du DAI',
-    },
-    {
-      label: 'ESC/EAS 2019 & 2025, ESC 2024 (SCC et FA), ACC/AHA 2026 (dyslipidémies), CORONA, GISSI-HF, Lp(a)HORIZON et ESC/EACTS 2025',
-      detail: 'Cibles LDL < 0,55 g/L, intensité et interactions des statines, Lp(a), antiagrégants, colchicine, rétrécissement aortique, thrombus VG, fibrillation atriale et insuffisance mitrale secondaire',
-    },
-    {
-      label: 'Incrétines (GLP-1), nutrition, fer oral, vitamines B, magnésium et diabète (SOUL 2026, RCP Wegovy, Marques 2025, TRIUMPH, IRONOUT-HF, ORION-HF, ESPEN 2022, He 2024, Cochrane 2017, NORVIT, GALACTIC-HF, Yin 2026, SODIUM-HF, FRESH-UP, HFA 2025, Kampka 2025, Chua 2025, ADA 2022)',
-      detail: 'Sémaglutide/tirzépatide/rétatrutide dans l’ICFER, rythme cardiaque et déshydratation digestive, fer oral haute biodisponibilité vs fer IV, thiamine/B12/B6/B9, magnésium et sécurité rénale, sel, liquides, dénutrition, vitamine D et plantes médicinales',
-    },
-    {
-      label: 'Réadaptation cardiaque, thérapies cellulaires et essais cliniques (HF-ACTION, SMARTEX-HF, Terada 2026, GERS-P/SFC 2023, HAS 2022, EMA liste MTI juin 2026, FDA, DREAM-HF, BioVAT-HF, registres ClinicalTrials.gov / EU CTIS)',
-      detail: 'Renforcement musculaire vs endurance, absence de MTI cardiaque autorisé en UE, risques des cliniques de cellules souches et grands essais en cours (PROFID-EHRA, STICH3, COLT-HF, CardiAMP HF II)',
-    },
-    {
-      label: 'Référentiels français (HAS CNEDiMTS, ameli.fr, service-public.fr, Arrêté du 28 mars 2022)',
-      detail: 'ALD 5/13, SMR cardiovasculaire, télésurveillance IC, avis HAS LifeVest et CardioMEMS, temps partiel thérapeutique et conduite automobile',
+      label: 'Sources réglementaires et institutionnelles françaises (HAS oct. 2024 dentaire, SFCO 2015, ANSM 2024–2026, Calendrier vaccinal 2026, service-public.fr, ameli.fr, CNSPFV 2026, Loi 2026-404, Arrêté du 28 mars 2022)',
+      detail: 'IPA, Mon espace santé, SMR/APA, OPTAM/mutuelle/C2S, franchises 2026, MDPH/CMI/AAH/PCH/RQTH/AJPA, directives anticipées, HAD, SPCMD, canicule, pseudoéphédrine, tabac/Champix et conduite',
     },
   ],
   disclaimerType: 'medical',

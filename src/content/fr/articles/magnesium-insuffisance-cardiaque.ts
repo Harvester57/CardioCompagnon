@@ -18,6 +18,12 @@ export const article: WikiArticle = {
     'hypermagnésémie',
     'interactions',
     'insuffisance-cardiaque',
+    'ipp',
+    'france',
+    'efsa',
+    'bfr',
+    'dgccrf',
+    'anses',
   ],
   aliases: [
     'Magnésium',
@@ -37,7 +43,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core', 'ckd'],
   plainSummaryFr:
-    "Le magnésium est un minéral essentiel au cœur et aux muscles, que les diurétiques (comme le furosémide — Lasilix) ou les médicaments anti-acide au long cours peuvent faire baisser. Toutefois, aucun complément de magnésium n'a démontré dans un essai randomisé solide qu'il améliore la survie, les hospitalisations ou la fonction cardiaque dans l'ICFER. Dans la vaste cohorte GALACTIC-HF (FEVG ≤ 35 %), un magnésium bas (17,6 % des patients) n'était pas associé à un moins bon pronostic, contrairement à un magnésium élevé. Dans une cohorte américaine de vétérans insuffisants cardiaques (observationnelle), débuter du magnésium oral était associé à légèrement moins d'événements lorsque le taux sanguin était bas (HR 0,91), mais à légèrement plus lorsque le taux était normal (HR 1,11) : cela plaide pour un dosage préalable plutôt qu'une prise « au cas où ». Les différentes formes (oxyde, citrate, bisglycinate, thréonate, etc.) diffèrent surtout par leur teneur par comprimé et leur tolérance digestive, sans preuve de supériorité cardiaque. Le principal risque est l'accumulation en cas d'insuffisance rénale, ainsi que certaines interactions médicamenteuses (antibiotiques, bisphosphonates, rosuvastatine avec les antiacides). Parlez toujours à votre équipe avant de prendre du magnésium.",
+    "Le magnésium est un minéral essentiel au cœur et aux muscles, que les diurétiques (comme le furosémide — Lasilix) ou les inhibiteurs de la pompe à protons (IPP) pris au long cours peuvent faire baisser. Toutefois, aucun complément de magnésium n'a démontré dans un essai randomisé solide qu'il améliore la survie, les hospitalisations ou la fonction cardiaque dans l'ICFER. Dans la vaste cohorte GALACTIC-HF (FEVG ≤ 35 %), un magnésium bas (17,6 % des patients) n'était pas associé à un moins bon pronostic, contrairement à un magnésium élevé. Dans une cohorte américaine de vétérans insuffisants cardiaques (observationnelle), débuter du magnésium oral était associé à légèrement moins d'événements lorsque le taux sanguin était bas (HR 0,91), mais à légèrement plus lorsque le taux était normal (HR 1,11) : cela plaide pour un dosage préalable plutôt qu'une prise « au cas où ». Les différentes formes (oxyde, citrate, bisglycinate, thréonate, etc.) diffèrent surtout par leur teneur par comprimé et leur tolérance digestive, sans preuve de supériorité cardiaque. Le principal risque est l'accumulation en cas d'insuffisance rénale (y compris lorsque l'oxyde de magnésium est utilisé comme laxatif), sachant que le plafond légal français des compléments (300 mg/j) dépasse la limite scientifique européenne (250 mg/j) et ne protège pas les reins fragiles. Parlez toujours à votre équipe ou à votre pharmacien avant de prendre du magnésium.",
   sections: [
     {
       headingFr: 'Verdict en un coup d’œil',
@@ -59,6 +65,7 @@ Le magnésium rejoint ainsi la thiamine et la vitamine D : on traite une carence
       bodyMarkdownFr: `### Pourquoi le magnésium est surveillé
 
 - **Médicaments en cause :** les diurétiques de l'anse (furosémide — *Lasilix*, bumétanide — *Burinex*) et thiazidiques augmentent la perte urinaire de magnésium, et les **inhibiteurs de la pompe à protons (IPP)** pris plus d'un an peuvent aussi l'abaisser. À l'inverse, les diurétiques épargneurs de potassium tels que la spironolactone (*Aldactone*) réduisent cette perte (**NIH ODS**).
+- **IPP et hypomagnésémie en détail :** l'agence britannique **MHRA (2012, texte intégral)** signale des hypomagnésémies survenant surtout après plus d'un an d'IPP, parfois sévères (tétanie, convulsions, arythmies ventriculaires), et recommande d'envisager un dosage avant puis pendant un traitement prolongé, **en particulier en cas d'association à la digoxine ou aux diurétiques**. L'alerte américaine **FDA (2011, rapportée de seconde main)** formulait le même constat et indiquait que dans environ un quart des cas, les compléments seuls ne suffisaient pas et l'IPP devait être interrompu. Dans une méta-analyse observationnelle de 16 études (**Srinutta 2019**), une hypomagnésémie était présente chez **19,4 %** des utilisateurs d'IPP contre **13,5 %** des non-utilisateurs (**OR ajusté 1,71** ; sans analyse séparée sous diurétiques). Voir la fiche *Antiplaquettaires, bithérapie et protection gastrique* sur les indications des IPP.
 - **Conséquences d'une carence sévère :** troubles du rythme cardiaque, spasme coronaire, crampes, hypokaliémie ou hypocalcémie. Une hypomagnésémie (comme une hypokaliémie) accroît le risque de **toxicité à la digoxine**.
 - **Fréquence d'un magnésium bas dans l'IC :** la prévalence varie selon les études ; une revue de 2025 (**Sato 2025**) rapporte 19 à 37 % dans son texte principal (et 7 à 52 % dans son résumé).
 - **Limite du dosage sanguin :** moins de 1 % du magnésium corporel se trouve dans le sang, de sorte qu'une magnésémie normale n'exclut pas des réserves basses ; il n'existe toutefois pas de meilleur examen de routine (**NIH ODS**).
@@ -75,11 +82,11 @@ Dans **GALACTIC-HF** (**Chimura 2026**, 6 147 patients ambulatoires avec **FEVG 
 
 - La mort subite et les arythmies ventriculaires **ne différaient pas** entre les groupes.
 - Les auteurs concluent que ces résultats **ne justifient pas la correction systématique d'un magnésium bas** (limites : analyse observationnelle en résumé seul, sans taux ajustés ni sous-groupe ischémique ; l'hypermagnésémie reflète probablement une fonction rénale diminuée et une maladie plus sévère).
-- **Khraisat (2026)** (méta-analyse de 12 études observationnelles, **648 602 patients IC**) retrouve le même profil : un magnésium élevé s'associait à la mortalité toutes causes (**RR 1,38** ; IC 95 % 1,32–1,44), au décès cardiovasculaire (RR 1,41) et aux hospitalisations IC (RR 1,30), alors qu'un magnésium bas n'avait qu'un lien faible avec la mortalité (RR 1,15 ; 1,01–1,31) et aucun lien avec les décès CV ni les hospitalisations IC.
+- **Khraisat (2026)** (méta-analyse de 12 études observationnelles, **648 602 patients IC**, résumé seul) retrouve le même profil : un magnésium élevé s'associait à la mortalité toutes causes (**RR 1,38** ; IC 95 % 1,32–1,44), au décès cardiovasculaire (RR 1,41) et aux hospitalisations IC (RR 1,30), alors qu'un magnésium bas n'avait qu'un lien faible avec la mortalité (RR 1,15 ; 1,01–1,31) et aucun lien avec les décès CV ni les hospitalisations IC.
 
 ### Supplémentation orale : cohortes américaines de vétérans (2025–2026)
 
-- **Yin (2026, *European Heart Journal*) :** cohorte appariée par score de propension chez des vétérans américains atteints d'IC (financement public NHLBI, NIH ODS, VA). Chez les patients ayant une magnésémie **basse** (< 1,7 mg/dL, soit ~0,70 mmol/L), débuter du magnésium oral (médiane 420 mg/j) était associé à moins d'hospitalisations IC ou décès à 1 an : 20,1 % contre 21,7 % (**HR 0,91** ; IC 95 % 0,86–0,97 ; signal le plus net en dessous de 1,3 mg/dL avec **HR 0,81** ; nul à 1,6 mg/dL avec HR 0,99). En revanche, lorsque le taux initial était **normal**, la supplémentation était associée à **davantage d'événements** : 19,5 % contre 17,8 % (**HR 1,11** ; IC 95 % 1,02–1,21).
+- **Yin (2026, *European Heart Journal*, résumé seul) :** cohorte appariée par score de propension chez des vétérans américains atteints d'IC (financement public NHLBI, NIH ODS, VA). Chez les patients ayant une magnésémie **basse** (< 1,7 mg/dL, soit ~0,70 mmol/L), débuter du magnésium oral (médiane 420 mg/j) était associé à moins d'hospitalisations IC ou décès à 1 an : 20,1 % contre 21,7 % (**HR 0,91** ; IC 95 % 0,86–0,97 ; signal le plus net en dessous de 1,3 mg/dL avec **HR 0,81** ; nul à 1,6 mg/dL avec HR 0,99). En revanche, lorsque le taux initial était **normal**, la supplémentation était associée à **davantage d'événements** : 19,5 % contre 17,8 % (**HR 1,11** ; IC 95 % 1,02–1,21).
 - **Cheng (2025, *Nutrients*) :** chez des vétérans nouvellement diagnostiqués IC, la prise de magnésium sans ordonnance était liée à un HR de 0,81 (0,77–0,86), ramené à HR 0,91 en excluant les décès précoces (signe probable de biais d'utilisateur en meilleure santé ; seuls 26 % avaient une FEVG connue ≤ 40 %, sans dose ni sel précisés).
 - **Lecture conjointe avec GALACTIC-HF :** toutes ces données sont observationnelles (pas d'essai randomisé), mais le message pratique converge : **vérifier le taux sanguin avant toute supplémentation**, et ne pas prendre de magnésium sans carence.
 
@@ -143,13 +150,17 @@ Une fois dissous, le magnésium est absorbé sous forme d'ion minéral libre : a
 - ***Mag 2* ampoules (pidolate de magnésium) :** 122 mg de magnésium élémentaire par ampoule (sans vitamine B6).`,
     },
     {
-      headingFr: 'Limites de sécurité, fonction rénale et interactions médicamenteuses',
+      headingFr: 'Limites de sécurité (UE vs France), fonction rénale et interactions',
       bodyMarkdownFr: `### Limites supérieures pour les compléments et médicaments (hors alimentation)
 
-| Autorité | Limite supérieure quotidienne |
-|---|---|
-| **Union européenne (EFSA / SCF 2001, maintenue en 2025)** | **250 mg/j** chez l'adulte |
-| **États-Unis (NIH ODS)** | **350 mg/j** dès 9 ans |
+| Autorité | Limite / repère | Portée et fondement |
+|---|---|---|
+| **Limite scientifique UE (SCF 2001 ; aperçu EFSA 2025 ; BfR 2021)** | **250 mg/j** (répartis en 2 prises ou plus) | Sels de magnésium dissociables et oxyde dans les compléments, aliments enrichis ou eaux (hors alimentation courante). Fondée sur la diarrhée légère autour de 360–365 mg/j ; l'institut allemand **BfR (2021, texte intégral)** note des essais montrant une diarrhée légère dès **300 mg/j** chez certains adultes et recommande 250 mg/j maximum par complément |
+| **Plafond légal français des compléments alimentaires (*Arrêté du 9 mai 2006*, Annexe III, DGCCRF)** | **300 mg/j** (*dose journalière maximale*, DJM) | Plafond national des compléments alimentaires vendus en France *(vérifié via sources secondaires, les pages officielles primaires n'étant pas accessibles directement)*. Il se situe **au-dessus** de la limite scientifique EFSA de 250 mg/j, ce qui explique les boîtes affichant 300 mg/j en France. Les médicaments français (*Magné B6*, *Mag 2*) relèvent d'un autre cadre réglementaire |
+| **États-Unis (NIH ODS)** | **350 mg/j** dès 9 ans | Compléments et médicaments uniquement (hors alimentation) |
+| **Apport alimentaire total de référence (contexte)** | **EFSA 2015 :** 350 mg/j hommes, 300 mg/j femmes ; **ANSES 2021 :** ~380 mg/j hommes, 300 mg/j femmes *(vérification secondaire)* | Apports satisfaisants incluant toute l'alimentation ; l'ANSES conserve la limite supérieure de sécurité (LSS) de **250 mg/j** pour les compléments |
+
+**Point essentiel :** tous ces plafonds ont été fixés pour des adultes en bonne santé sur un critère de diarrhée bénigne, **et non pour des personnes atteintes d'insuffisance cardiaque ou rénale**. Dans l'ICFER, la fonction rénale (DFGe) et le dosage sanguin guident la sécurité, pas le plafond légal imprimé sur une boîte.
 
 ### Hypermagnésémie et reins : le point de vigilance principal
 
@@ -163,7 +174,7 @@ Une fois dissous, le magnésium est absorbé sous forme d'ion minéral libre : a
 | Médicament ou classe | Interaction décrite |
 |---|---|
 | **Diurétiques de l'anse et thiazidiques** | Augmentent la perte urinaire de magnésium |
-| **IPP au long cours (> 1 an)** | Peuvent abaisser la magnésémie (parfois difficile à corriger par de simples compléments) |
+| **IPP au long cours (> 1 an)** | Peuvent abaisser la magnésémie (parfois difficile à corriger par de simples compléments ; alerte MHRA 2012 / FDA 2011) |
 | **Spironolactone (*Aldactone*) / épargneurs de potassium** | Réduisent la perte urinaire de magnésium |
 | **IEC et AINS** | Réduisent l'excrétion rénale de magnésium |
 | **Digoxine** | Une hypomagnésémie majore le risque de toxicité digitalique |
@@ -181,22 +192,26 @@ Aucune interaction avec les antiacides ou le magnésium ne figure dans les notic
 - **AHA/ACC/HFSA 2022 (IC) :** pas de compléments dans l'ICFER hors correction d'une carence spécifique (**Classe 3 : Absence de bénéfice**). Le bilan électrolytique de routine inclut le magnésium (Classe 1, C-EO), et le texte mentionne que le chélateur du potassium **patiromer** peut abaisser la magnésémie.
 - **ESC 2022 (arythmies ventriculaires) :** l'hypomagnésémie et l'hypokaliémie favorisent les **torsades de pointes** ; le **magnésium intraveineux associé au potassium** est recommandé dans les torsades de pointes (**Classe I, niveau C**), même si la magnésémie est normale. Une hypomagnésémie et l'IC figurent parmi les facteurs de risque à vérifier avant d'introduire un médicament allongeant l'intervalle QT. Aucun objectif chiffré de magnésémie n'est fixé.
 - **ESC IC 2021 / 2023 :** aucune mention du magnésium dans le texte (le texte ESC 2026 n'a pas pu être vérifié spécifiquement sur ce point). Les recommandations **ESC 2024 (fibrillation atriale)** précisent qu'il n'existe pas de preuve que le magnésium prévienne la FA après chirurgie.
-- **Magnésium intraveineux après un infarctus du myocarde (question hospitalière distincte) :** les grands essais randomisés (**ISIS-4**, environ 58 000 patients ; **MAGIC**) n'ont pas étayé son usage systématique ; seul l'essai plus petit **LIMIT-2** avait été positif (tel que résumé par **Jiang 2026**). Une analyse rétrospective de 2026 sur **5 650 patients en soins intensifs** après un infarctus (base hospitalière américaine MIMIC-IV) a associé le sulfate de magnésium IV à une moindre mortalité en réanimation (HR apparié **0,55** ; IC 95 % 0,42–0,71) et avancé une dose totale de 2 à 8 g. Toutefois, ce travail est très exposé aux biais de temps immortel et d'indication (le groupe comparateur « < 2 g » correspond essentiellement aux patients non traités, le pontage n'est pas ajusté), plusieurs valeurs *p* ne concordent pas avec les intervalles de confiance et la FEVG n'était pas renseignée : il ne remet pas en cause les résultats des grands essais randomisés (**Jiang 2026**).
+- **Magnésium intraveineux après un infarctus du myocarde (question hospitalière distincte) :** les grands essais randomisés (**ISIS-4**, environ 58 000 patients ; **MAGIC**) n'ont pas étayé son usage systématique ; seul l'essai plus petit **LIMIT-2** avait été positif (tel que résumé par **Jiang 2026**). Une analyse rétrospective de 2026 sur **5 650 patients en soins intensifs** après un infarctus (base hospitalière américaine MIMIC-IV) a associé le sulfate de magnésium IV à une moindre mortalité en réanimation (HR apparié **0,55** ; IC 95 % 0,42–0,71), mais ce travail est très exposé aux biais de temps immortel et d'indication (le groupe comparateur « < 2 g » correspond essentiellement aux patients non traités, le pontage n'est pas ajusté, la FEVG est absente) : il ne remet pas en cause les résultats des grands essais randomisés (**Jiang 2026**).
 
 ### À retenir en pratique
 
 - Le magnésium n'est **pas un traitement de l'insuffisance cardiaque**.
 - Si vous prenez un diurétique de l'anse, un IPP depuis plus d'un an, de la digoxine, un médicament allongeant le QT, ou si vous avez des crampes ou des palpitations, demandez à votre médecin si un **dosage sanguin** est utile.
-- **Ne débutez pas de magnésium « au cas où »** sans connaître votre taux sanguin ni votre fonction rénale (créatinine / DFGe).
+- **Ne débutez pas de magnésium « au cas où »** sans connaître votre taux sanguin ni votre fonction rénale (créatinine / DFGe), et signalez aussi tout laxatif à l'oxyde de magnésium.
 - Si votre équipe décide de corriger une carence documentée, le choix de la forme dépend surtout de la tolérance digestive et de la dose par comprimé (évitez les surdosages en vitamine B6 cachés dans certains produits magnésium-B6 et respectez les espacements avec vos autres médicaments).`,
     },
   ],
   relatedArticleSlugs: [
+    'antiplaquettaires-bitherapie-et-protection-gastrique',
     'nutrition-et-complements-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
     'interactions-complements-aliments-medicaments',
     'vitamines-b-insuffisance-cardiaque',
     'vitamine-d-insuffisance-cardiaque',
+    'fibres-alimentaires-et-axe-intestin-coeur',
+    'cafeine-boissons-energisantes-et-stimulants',
+    'arythmies-ventriculaires-et-antiarythmiques',
     'medicaments-additionnels-ivabradine-digoxine-vericiguat',
     'medicaments-effets-secondaires-suivi',
     'tension-arterielle-insuffisance-cardiaque',
@@ -204,28 +219,24 @@ Aucune interaction avec les antiacides ou le magnésium ne figure dans les notic
   ],
   sources: [
     {
-      label: 'Chimura et al. (2026, GALACTIC-HF) et Khraisat et al. (2026)',
-      detail: 'Magnésémie initiale et pronostic chez 6 147 patients ICFER (FEVG ≤ 35 %, 17,6 % de Mg bas, surrisque en cas de Mg élevé) ; méta-analyse de 12 études observationnelles (648 602 patients IC).',
+      label: 'Chimura et al. (2026, GALACTIC-HF), Khraisat et al. (2026), Yin et al. (2026, EHJ) et Cheng et al. (2025)',
+      detail: 'Magnésémie initiale et pronostic chez 6 147 patients ICFER (FEVG ≤ 35 %, 17,6 % de Mg bas, surrisque en cas de Mg élevé), méta-analyse de 648 602 patients IC et cohortes américaines (HR 0,91 si Mg bas vs HR 1,11 si Mg normal).',
     },
     {
-      label: 'Yin et al. (2026, European Heart Journal) et Cheng et al. (2025, Nutrients)',
-      detail: 'Cohortes observationnelles de vétérans américains atteints d’IC : supplémentation orale liée à HR 0,91 si magnésémie basse mais HR 1,11 si magnésémie normale.',
+      label: 'MHRA (2012, texte intégral), FDA (2011) et Srinutta et al. (2019)',
+      detail: 'Alertes réglementaires sur l’hypomagnésémie sous IPP au long cours (> 1 an, vigilance accrue avec digoxine et diurétiques) et méta-analyse de 16 études observationnelles (OR ajusté 1,71).',
     },
     {
-      label: 'Essai MACH (orotate de magnésium), Bashir (1993) et Almoznino-Sarafian (2009)',
-      detail: 'Seul essai oral de survie dans l’IC (79 patients NYHA IV, non répliqué) et petites études mécanistiques sur les extrasystoles et la variabilité de fréquence cardiaque.',
+      label: 'BfR (2021, texte intégral), EFSA (2015, 2025), Arrêté français du 9 mai 2006 (DGCCRF) et ANSES (2021)',
+      detail: 'Limite scientifique UE 250 mg/j (signal de diarrhée dès 300 mg/j), plafond légal français 300 mg/j DJM pour les compléments alimentaires (vérification secondaire) et distinction avec les médicaments OTC.',
     },
     {
       label: 'Argeros et al. (2025), Merschmann et al. (2025), Vormann (2026), Pajuelo (2024) et avis EFSA 2024 (L-thréonate)',
-      detail: 'Méta-analyse tension artérielle (38 essais), revue de biodisponibilité humaine des sels de magnésium, limites des formes « premium » et évaluation réglementaire du L-thréonate.',
+      detail: 'Méta-analyse tension artérielle (38 essais), biodisponibilité humaine des sels de magnésium, limites des formes « premium » et évaluation du L-thréonate.',
     },
     {
-      label: 'NIH ODS, EFSA (limites supérieures), Aal-Hamad (2023), AHA/ACC/HFSA 2022 et ESC 2022 (arythmies ventriculaires)',
-      detail: 'Limites 250 mg/j (UE) et 350 mg/j (É.-U.), seuils d’hypermagnésémie et insuffisance rénale, notices françaises (Magné B6, Mag 2), interactions (rosuvastatine, antibiotiques, bisphosphonates, digoxine) et recommandations.',
-    },
-    {
-      label: 'Terashima et al. (2025), Jiang et al. (2026) et Sato et al. (2025)',
-      detail: 'Cohorte japonaise sur l’oxyde de magnésium laxatif dans l’IC (41 paires appariées, FEVG moyenne 54 %, hypermagnésémie 3/15), analyse MIMIC-IV du sulfate de magnésium IV en réanimation post-infarctus (limites méthodologiques) et revue des troubles électrolytiques dans l’IC.',
+      label: 'NIH ODS, Aal-Hamad (2023), AHA/ACC/HFSA 2022, ESC 2022 (arythmies ventriculaires), Terashima (2025), Jiang (2026) et Sato (2025)',
+      detail: 'Seuils d’hypermagnésémie, notices françaises (Magné B6, Mag 2), interactions (rosuvastatine, antibiotiques, bisphosphonates, digoxine), cohorte japonaise MgO laxatif (3/15 hypermagnésémie) et revue électrolytique.',
     },
   ],
   disclaimerType: 'medical',

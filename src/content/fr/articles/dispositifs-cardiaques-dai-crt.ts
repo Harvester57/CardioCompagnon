@@ -167,7 +167,10 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
       bodyMarkdownFr: `- **Décision partagée :** le guide patient ESC rappelle que vous devez être accompagné pour comprendre l’objectif, les bénéfices, les limites et les risques du dispositif, ainsi que sa gestion en fin de vie.
 - **Qualité de vie :** une revue de 15 études (**Tomzik 2015**) montre une qualité de vie globalement comparable avec ou sans DAI. Dans **SCD-HeFT**, aucun retentissement détectable n’a été observé sur 30 mois, sauf chez les personnes ayant reçu un choc au cours du mois précédent. Une baisse du bien-être psychologique s’observait surtout après **5 chocs ou plus** (voir l’article « Santé émotionnelle, anxiété et dépression »).
 - **Anxiété et soutien psychologique :** les recommandations ESC 2022 préconisent de dépister et de prendre en charge la détresse psychologique chez les porteurs de DAI (**Classe I C**). Environ **1 personne sur 5** présente une anxiété ou une dépression, liée davantage à la peur des chocs qu’aux chocs eux-mêmes. Dans un registre suédois, **26 %** rapportaient de fortes inquiétudes liées au DAI ; une thérapie cognitivo-comportementale menée par une infirmière a réduit l’anxiété dans un petit essai.
+  - Une méta-analyse de 2023 portant sur **109 études (39 954 porteurs de DAI ; Ghezzi 2023)** a estimé la prévalence de l’anxiété à environ **23 %**, de la dépression à **15 %** et du syndrome de stress post-traumatique (TSPT) à environ **12 %** ; la survenue de chocs multipliait par près de quatre la probabilité d’anxiété (**OR 3,92** ; certitude des preuves faible).
+  - Les programmes en ligne ont donné des résultats mitigés : **ICD-FORUM** (118 patients) n’a pas atteint son critère principal mais a amélioré les scores secondaires d’anxiété et de dépression, tandis que **WEBCARE** (289 patients) n’a pas montré de bénéfice (voir l’article « Santé émotionnelle, anxiété et dépression »).
 - **Conduite à tenir après un choc :** chaque porteur de DAI doit disposer d’un **plan d’action écrit** remis par son centre de rythmologie précisant quand contacter le centre et quand appeler les urgences (**15 / SAMU**, **112**, ou **114** par SMS).
+- **Gestion des TV récidivantes, de l’orage rythmique et des antiarythmiques :** pour les détails sur les chocs appropriés ou inappropriés, la définition de l’orage rythmique, l’usage de l’amiodarone ou du sotalol en complément d’un DAI et la comparaison entre ablation par cathéter et escalade médicamenteuse (essais **VANISH** et **VANISH2**), voir l’article « Arythmies ventriculaires, chocs de DAI et médicaments antiarythmiques ». Pour les précautions lors d’une chirurgie (bistouri électrique, règle de l’ombilic et aimants) et l’absence d’antibioprophylaxie dentaire de routine, voir « Chirurgie, soins dentaires et règles des « jours de maladie » ».
 - **Désactivation des chocs en fin de vie :** les recommandations ESC 2022 (**Classe I C**), la prise de position HFA 2020 et les recommandations britanniques NICE NG106 insistent pour que la possibilité de désactiver la fonction choc soit abordée **avant l’implantation** puis réévaluée régulièrement (tous les 6 mois ou lors d’une évolution des objectifs de soins). Sur un **CRT-D**, seule la fonction défibrillation (choc) est désactivée, laissant la stimulation et la resynchronisation actives afin de préserver le confort ; la réactivation reste possible. Dans une étude portant sur 380 patients porteurs de DAI décédés entre 2007 et 2016, la désactivation était beaucoup plus fréquente lorsqu’elle avait été discutée au préalable, mais la majorité des boîtiers restaient actifs au moment du décès (voir l’article « Soins de support, soins palliatifs et anticipation »).
 - **Télésurveillance de la prothèse :** les DAI et CRT peuvent transmettre leurs données automatiquement au centre de suivi. Les recommandations ESC 2022 la recommandent pour réduire les chocs inappropriés (**Classe I B**). Son impact direct sur les événements d’insuffisance cardiaque est moins établi, et elle **ne constitue jamais un service d’urgence** (voir l’article « Télésurveillance à domicile et suivi à distance des prothèses »).
 - **Conduite automobile :** en France, l’implantation d’un DAI et la survenue d’un choc imposent des délais d’interdiction temporaire de conduite ainsi qu’une évaluation par un **médecin agréé** pour le permis de conduire (distinct de votre médecin traitant), selon l’arrêté du 28 mars 2022. Les durées varient selon le type de permis (véhicule léger ou poids lourd) et selon les pays (voir l’article « Permis de conduire, insuffisance cardiaque et défibrillateur (France et UE) »).
@@ -182,6 +185,17 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
     },
   ],
   relatedArticleSlugs: [
+    'insuffisance-cardiaque-avancee-stade-d',
+    'assistance-circulatoire-lvad',
+    'fibrillation-atriale-insuffisance-cardiaque',
+    'fuite-mitrale-secondaire',
+    'arythmies-ventriculaires-et-antiarythmiques',
+    'chirurgie-soins-dentaires-et-jours-de-maladie',
+    'montres-connectees-et-capteurs-ic',
+    'vie-sexuelle-et-dysfonction-erectile-ic',
+    'voyages-canicule-et-climat-ic',
+    'reseau-de-soins-et-aides-sociales-france',
+    'cafeine-boissons-energisantes-et-stimulants',
     'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'vivre-avec-insuffisance-cardiaque',
@@ -243,8 +257,8 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
       detail: 'Données cliniques (effectifs randomisés et analysés dans VEST), évaluation indépendante et indications remboursées en France pour le gilet défibrillateur portable',
     },
     {
-      label: 'Revue Tomzik (2015), prise de position HFA (2020), NICE NG106 (2025) et consensus HRS (2023)',
-      detail: 'Qualité de vie, désactivation en fin de vie et télésurveillance des prothèses',
+      label: 'Revue Tomzik (2015), méta-analyse Ghezzi (2023), ICD-FORUM (2019), prise de position HFA (2020), NICE NG106 (2025) et consensus HRS (2023)',
+      detail: 'Qualité de vie, prévalence anxiété/dépression/TSPT après chocs, programmes en ligne, désactivation en fin de vie et télésurveillance des prothèses',
     },
     {
       label: 'REVIVED-BCIS2 (analyse rythmique 2023 et discordance ETT/IRM), AHA/ACC/HFSA (2022) et NICE TA314',

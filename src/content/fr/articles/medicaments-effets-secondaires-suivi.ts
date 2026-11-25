@@ -181,7 +181,9 @@ Le consensus britannique de 2019 est antérieur à la généralisation des iSGLT
 
 Deux précisions complémentaires du consensus britannique de 2019 à destination des soignants :
 - Arrêter par réflexe les bloqueurs du SRAA à l'hôpital à la suite d'une alerte informatique d'insuffisance rénale aiguë est qualifié de « dangereux » dans l'ICFER.
-- Chez un patient toujours en surcharge hydrique (congestion), une baisse de la fonction rénale ne justifie pas à elle seule de réduire le diurétique.`,
+- Chez un patient toujours en surcharge hydrique (congestion), une baisse de la fonction rénale ne justifie pas à elle seule de réduire le diurétique.
+
+**Résolution de ce débat dans l'audit dédié :** l'analyse complète *Thèse : règles des « jours de maladie » — bloqueurs du SRAA/ARM contre iSGLT2 dans l’ICFER* aboutit au verdict **Partiellement étayée (confiance moyenne)** : l'auto-pause systématique par le patient des bloqueurs du SRAA ou des ARM lors d'une infection virale mineure n'est **pas** étayée compte tenu des taux élevés d'erreurs et de non-reprises, alors qu'une pause brève décidée et encadrée par le médecin reste appropriée lors de vomissements ou diarrhées sévères déshydratants, d'un sepsis ou d'une IRA/hyperkaliémie avérée avec un plan de reprise explicite. À l'inverse, les iSGLT2 protègent les reins contre l'IRA, mais leur interruption temporaire encadrée lors d'une maladie aiguë grave, de pertes digestives persistantes, d'un jeûne prolongé ou d'une chirurgie majeure est recommandée par les RCP européens et américains pour prévenir l'acidocétose euglycémique — surtout chez les personnes diabétiques (en particulier sous insuline). Pour la préparation pratique et les règles périopératoires, voir *Chirurgie, soins dentaires et règles des « jours de maladie »*.`,
     },
     {
       headingFr: 'Maladie rénale chronique et traitement de fond',
@@ -206,8 +208,11 @@ Les recommandations NICE NG106 (2025) suggèrent des doses initiales plus faible
 | **Nerfs, humeur, maladie de Parkinson** | Prégabaline (prudence) ; lithium (contre-indiqué dans l'ICFER) ; pramipexole, cabergoline (« prudence » dans le texte, « à éviter » dans l'ICFER dans le tableau récapitulatif) | Rétention hydrosodée ; effets sur le myocarde et le rythme | Duloxétine pour les douleurs neuropathiques ; valproate ou lamotrigine à la place du lithium ; ropinirole |
 | **Traitements anticancéreux** | Anthracyclines, trastuzumab, inhibiteurs du VEGF et autres | Risque de cardiotoxicité (atteinte du muscle cardiaque) | Souvent sans équivalent : utilisés si indispensables avec suivi cardiologique dédié (cardio-oncologie) |
 
-- **Chirurgie et anesthésie :** l'insuffisance cardiaque majore le risque opératoire ; le consensus détaille les agents anesthésiques adaptés à un cœur affaibli. Informer l'anesthésiste de votre FEVG et de vos traitements est un réflexe utile.
-- **Antidépresseurs et plantes :** les antidépresseurs ne sont pas couverts par ce consensus (voir *Santé émotionnelle, anxiété et dépression* pour les essais cliniques) ; les plantes et produits en vente libre figurent dans *Interactions entre compléments, aliments et médicaments cardiaques*.
+- **Chirurgie et anesthésie :** l'insuffisance cardiaque majore le risque opératoire ; le consensus détaille les agents anesthésiques adaptés à un cœur affaibli. Informer l'anesthésiste de votre FEVG et de vos traitements est un réflexe utile (voir *Chirurgie, soins dentaires et règles des « jours de maladie »*).
+- **Antidépresseurs (hors champ du consensus Abdin 2025) :**
+  - Le consensus européen **ESC 2025 sur la santé mentale** conseille d'**éviter les antidépresseurs tricycliques et les IMAO** dans l'insuffisance cardiaque (hypotension, aggravation de l'IC, troubles du rythme) et recommande la **prudence avec la venlafaxine et la duloxétine**.
+  - Les agences britannique (**MHRA 2011**) et française (**RCP *Seroplex* 2026**, **RCP *Seropram* 2025**, **lettre ANSM 2022**) rappellent que le **citalopram** et l'**escitalopram** sont **contre-indiqués avec les médicaments allongeant l'intervalle QT**, en particulier les antiarythmiques de classe IA et III comme l'**amiodarone (*Cordarone*)** et le **sotalol**, et suggèrent un ECG préalable en cas de cardiopathie.
+  - Les antidépresseurs triplent environ le risque d'**hyponatrémie** (baisse du sodium sanguin, méta-analyse **Gheysens 2024**), surtout avec les IRSN et le moins avec la mirtazapine ; les diurétiques abaissent aussi le sodium (association non testée directement). Voir *Santé émotionnelle, anxiété et dépression* ; pour les plantes et produits en vente libre, voir *Interactions entre compléments, aliments et médicaments cardiaques*.
 - **Solidité de cette liste :** il s'agit d'un **consensus d'experts** et non d'une recommandation issue d'une revue systématique ; une grande partie des données est ancienne, observationnelle ou extérieure à l'ICFER. Les mises en garde appuyées par des essais randomisés (**pioglitazone/rosiglitazone, saxagliptine, dronédarone, moxonidine, flécaïnide**) sont les plus robustes, et la mise en garde sur les AINS concorde avec l'ESC 2026.
 - **Incohérences internes relevées dans l'article :** l'alogliptine est décrite comme neutre dans le texte mais « à éviter » dans les tableaux ; les macrolides sont « à éviter » dans le texte mais « prudence » dans les tableaux ; le disopyramide est classé en classe Ic alors qu'il relève habituellement de la classe Ia. Les tableaux citent également le **pergolide** comme option parkinsonienne plus sûre alors qu'il a été retiré dans plusieurs pays pour atteintes valvulaires cardiaques : cette ligne ne doit pas être retenue.
 - **Aucune de ces informations ne justifie d'interrompre vous-même un traitement prescrit :** il s'agit de points à vérifier avec votre cardiologue, votre médecin traitant ou votre pharmacien.
@@ -225,6 +230,11 @@ Le registre international **REPORT-HF** a suivi **18 030 patients** sortant d'un
     },
   ],
   relatedArticleSlugs: [
+    'angor-et-medicaments-anti-angineux',
+    'maladie-renale-insuffisance-cardiaque',
+    'diabete-insuffisance-cardiaque',
+    'antiplaquettaires-bitherapie-et-protection-gastrique',
+    'escalade-et-resistance-aux-diuretiques',
     'magnesium-insuffisance-cardiaque',
     'sel-et-liquides-insuffisance-cardiaque',
     'medicaments-insuffisance-cardiaque',
@@ -237,6 +247,13 @@ Le registre international **REPORT-HF** a suivi **18 030 patients** sortant d'un
     'cholesterol-et-prevention-secondaire',
     'tension-arterielle-insuffisance-cardiaque',
     'depression-et-sante-emotionnelle',
+    'complements-energetiques-cardiaques',
+    'automesure-tensionnelle-domicile',
+    'chirurgie-soins-dentaires-et-jours-de-maladie',
+    'these-jours-de-maladie-sraa-vs-isglt2',
+    'arythmies-ventriculaires-et-antiarythmiques',
+    'vie-sexuelle-et-dysfonction-erectile-ic',
+    'voyages-canicule-et-climat-ic',
   ],
   sources: [
     {
@@ -282,6 +299,10 @@ Le registre international **REPORT-HF** a suivi **18 030 patients** sortant d'un
     {
       label: 'DIAMOND (European Heart Journal, 2022, texte intégral)',
       detail: 'Essai randomisé de sevrage du patiromer dans l’ICFER (878 patients, 71 % ischémiques), réduction des baisses d’ARM, changement de critère principal et mortalité',
+    },
+    {
+      label: 'Consensus ESC 2025 (santé mentale et MCV), MHRA (2011), Gheysens (2024), RCP ANSM Seroplex (2026) / Seropram (2025) et lettre ANSM (2022)',
+      detail: 'Choix des antidépresseurs en ICFER, contre-indication QT avec l’amiodarone et le sotalol, et risque d’hyponatrémie selon la classe',
     },
   ],
   disclaimerType: 'medical',

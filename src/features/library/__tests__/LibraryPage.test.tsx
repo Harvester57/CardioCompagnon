@@ -53,23 +53,23 @@ afterEach(() => {
 });
 
 describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
-  it('affiche les 51 articles et permet le filtrage par categorie et par profil clinique', async () => {
+  it('affiche les 85 articles et permet le filtrage par categorie et par profil clinique', async () => {
     renderLibrary();
 
     const articlesList = screen.getByRole('list', { name: 'Liste des fiches scientifiques' });
-    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(51);
-    expect(screen.getByText('51 fiches affichées sur 51')).toBeInTheDocument();
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(85);
+    expect(screen.getByText('85 fiches affichées sur 85')).toBeInTheDocument();
 
-    // Filtre categorie "france" (2 articles)
-    fireEvent.click(screen.getByRole('button', { name: /France & Droits \(2\)/i }));
-    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(2);
+    // Filtre categorie "france" (3 articles)
+    fireEvent.click(screen.getByRole('button', { name: /France & Droits \(3\)/i }));
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(3);
     expect(
       screen.getByText(/Vivre avec une insuffisance cardiaque en France/i),
     ).toBeInTheDocument();
 
     // Reinitialiser sur Toutes
-    fireEvent.click(screen.getByRole('button', { name: /Toutes \(51\)/i }));
-    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(51);
+    fireEvent.click(screen.getByRole('button', { name: /Toutes \(85\)/i }));
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(85);
 
     // Filtre "Pertinent pour mon profil" : sans modules optionnels, masque les fiches strictement specifiques (ex. CTO)
     const profileFilterButton = screen.getByRole('button', {
@@ -78,7 +78,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     fireEvent.click(profileFilterButton);
 
     const defaultRelevantCount = within(articlesList).getAllByRole('listitem').length;
-    expect(defaultRelevantCount).toBeLessThan(51);
+    expect(defaultRelevantCount).toBeLessThan(85);
     expect(screen.queryByText(/Occlusion coronaire chronique/i)).not.toBeInTheDocument();
 
     // Activer le module CTO dans PatientProfile : la fiche CTO devient pertinente
@@ -94,7 +94,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     });
   });
 
-  it('effectue une recherche instantanee sans accents couvrant les 51 articles et le glossaire', () => {
+  it('effectue une recherche instantanee sans accents couvrant les 85 articles et le glossaire', () => {
     renderLibrary();
 
     const searchInput = screen.getByLabelText(/Recherche plein texte hors ligne/i);
@@ -103,7 +103,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     const articlesList = screen.getByRole('list', { name: 'Liste des fiches scientifiques' });
     const matchedItems = within(articlesList).getAllByRole('listitem');
     expect(matchedItems.length).toBeGreaterThan(0);
-    expect(matchedItems.length).toBeLessThan(51);
+    expect(matchedItems.length).toBeLessThan(85);
     expect(
       within(articlesList).getByRole('heading', { name: /Fraction d'éjection/i }),
     ).toBeInTheDocument();

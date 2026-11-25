@@ -200,7 +200,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Aucune titration nécessaire (dose de départ = dose cible)',
     monitoringFr:
-      'Ne pas initier si DFGe < 25 mL/min/1,73 m² ; baisse initiale transitoire du DFGe (~4 mL/min/1,73 m²) attendue ; pas d’hyperkaliémie ; hygiène génitale ; discuter du plan « jours de maladie » (risque rare d’acidocétose chez le diabétique).',
+      'Ne pas initier si DFGe < 25 mL/min/1,73 m² ; baisse initiale transitoire du DFGe (~4 mL/min/1,73 m²) attendue ; pas d’hyperkaliémie ; hygiène génitale ; suspension médicale habituellement 3 jours avant une chirurgie majeure programmée et plan écrit « jours de maladie » (risque rare d’acidocétose euglycémique, surtout en cas de diabète ou de jeûne prolongé).',
     articleSlug: 'medicaments-effets-secondaires-suivi',
   },
   {
@@ -213,7 +213,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Aucune titration nécessaire (dose de départ = dose cible)',
     monitoringFr:
-      'Ne pas initier si DFGe < 20 mL/min/1,73 m² ; baisse initiale transitoire du DFGe attendue ; pas d’hyperkaliémie ; hygiène génitale ; discuter du plan « jours de maladie » avec l’équipe.',
+      'Ne pas initier si DFGe < 20 mL/min/1,73 m² ; baisse initiale transitoire du DFGe attendue ; pas d’hyperkaliémie ; hygiène génitale ; suspension médicale habituellement 3 jours avant une chirurgie majeure programmée et plan écrit « jours de maladie » (risque rare d’acidocétose euglycémique, y compris exceptionnellement sans diabète lors de jeûne ou pertes digestives sévères).',
     articleSlug: 'medicaments-effets-secondaires-suivi',
   },
 
@@ -228,8 +228,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: 'Dose minimale efficace maintenant l’euvolémie (souvent 40 à 240 mg/j)',
     titrationIntervalFr: 'Ajustement médical selon le poids, les œdèmes et la dyspnée',
     monitoringFr:
-      'Prise préférentielle le matin ; pesée quotidienne ; ionogramme sanguin (sodium, potassium) et créatinine réguliers ; surveiller les signes de déshydratation.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Prise préférentielle le matin ; pesée quotidienne ; ionogramme sanguin (sodium, potassium) et créatinine réguliers, renforcés en cas d’escalade diurétique ou d’ajout temporaire de thiazidique. Survie identique au torasémide dans TRANSFORM-HF.',
+    articleSlug: 'escalade-et-resistance-aux-diuretiques',
   },
   {
     id: 'bumetanide',
@@ -238,11 +238,11 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     innNameFr: 'Bumétanide',
     frenchBrands: ['Burinex'],
     startDoseFr: '0,5 à 1 mg/j (ajusté à la congestion)',
-    targetDoseFr: 'Dose minimale efficace maintenant l’euvolémie (souvent 1 à 5 mg/j)',
+    targetDoseFr: 'Dose minimale efficace maintenant l’euvolémie (souvent 1 à 5 mg/j ; 1 mg ≈ 40 mg de furosémide oral)',
     titrationIntervalFr: 'Ajustement médical selon le poids, les œdèmes et la dyspnée',
     monitoringFr:
-      'Prise préférentielle le matin ; pesée quotidienne ; contrôle régulier du sodium, du potassium et de la fonction rénale.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Absorption orale plus régulière (> 90 %) ; prise préférentielle le matin ; pesée quotidienne ; contrôle régulier du sodium, du potassium et de la fonction rénale.',
+    articleSlug: 'escalade-et-resistance-aux-diuretiques',
   },
 
   // === Prévention secondaire coronaire ===
@@ -334,8 +334,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '75 à 100 mg × 1/j au long cours',
     titrationIntervalFr: 'Dose fixe',
     monitoringFr:
-      'ESC 2024 SCC Classe I A à vie après infarctus, stent ou pontage (sauf relais par anticoagulant seul au long cours en cas de FA). Ne pas confondre avec les AINS. Surveiller les signes de saignement.',
-    articleSlug: 'cholesterol-et-prevention-secondaire',
+      'ESC 2024 SCC Classe I A à vie après infarctus, stent ou pontage (sauf relais par anticoagulant seul au long cours en cas de FA). Ne pas confondre avec les AINS ; poursuivie pour les soins dentaires courants et la plupart des endoscopies. Surveiller les signes de saignement.',
+    articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
   },
   {
     id: 'clopidogrel',
@@ -347,8 +347,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '75 mg × 1/j',
     titrationIntervalFr: 'Dose fixe (bithérapie 1 à 6 mois après stent, ou monothérapie alternative I A)',
     monitoringFr:
-      'Alternative sûre et efficace à l’aspirine au long cours (ESC 2024 SCC Classe I A). Surveiller les signes de saignement et vérifier les interactions (ex. certains IPP).',
-    articleSlug: 'cholesterol-et-prevention-secondaire',
+      'Alternative sûre et efficace à l’aspirine au long cours (ESC 2024 SCC Classe I A). Éviter l’oméprazole (Mopral) et l’ésoméprazole (Inexium), qui réduisent son activation par le CYP2C19 (privilégier le pantoprazole Inipomp) ; ne jamais arrêter seul après un stent.',
+    articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
   },
   {
     id: 'colchicine_faible_dose',
@@ -498,6 +498,73 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     articleSlug: 'medicaments-glp1-et-incretines',
   },
 
+  // === Anti-angineux, protection gastrique et antiarythmiques utilisables en ICFER ===
+  {
+    id: 'trinitrine_sublinguale',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Trinitrine sublinguale (dérivé nitré d’action rapide)',
+    frenchBrands: ['Natispray 0,15 mg / 0,30 mg'],
+    startDoseFr: '1 pulvérisation sous la langue en cas de crise d’angor (ou 2–3 min avant effort déclenchant)',
+    targetDoseFr: 'Jusqu’à 3 pulvérisations espacées de 2 à 3 min selon plan écrit ; appel 15/112 si douleur persistante',
+    titrationIntervalFr: 'Traitement de crise à la demande (sans titration)',
+    monitoringFr:
+      'S’asseoir lors de la prise (risque d’hypotension, vertiges, céphalées). Contre-indiquée formellement avec les inhibiteurs de la PDE-5 (sildénafil Viagra : attendre ≥ 24 h ; tadalafil Cialis : ≥ 48 h) et le riociguat ; prudence avec le vériciguat.',
+    articleSlug: 'angor-et-medicaments-anti-angineux',
+  },
+  {
+    id: 'trinitrine_patch',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Trinitrine en patch transdermique (dérivé nitré longue durée)',
+    frenchBrands: ['Nitriderm TTS', 'Discotrine', 'Epinitril', 'Trinipatch'],
+    startDoseFr: '5 mg/24 h en application cutanée (selon prescription)',
+    targetDoseFr: '5 à 15 mg/24 h selon contrôle de l’angor et tension artérielle',
+    titrationIntervalFr: 'Réévaluation clinique ; respecter une fenêtre sans patch de 8 à 12 h/jour',
+    monitoringFr:
+      'Principal dérivé nitré longue durée disponible en France (ESC 2024 IIa B). Fenêtre quotidienne sans patch indispensable (souvent la nuit) pour éviter l’échappement (tolérance). Contre-indiqué avec IPDE-5, riociguat, PAS < 90 mmHg ou rétrécissement aortique serré.',
+    articleSlug: 'angor-et-medicaments-anti-angineux',
+  },
+  {
+    id: 'ranolazine',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Ranolazine (anti-angineux)',
+    frenchBrands: ['Ranexa (commercialisé en France en 2025, non remboursé)'],
+    startDoseFr: '375 mg × 2/j',
+    targetDoseFr: '500 à 750 mg × 2/j selon symptômes et tolérance',
+    titrationIntervalFr: 'Réévaluation après 2 à 4 semaines',
+    monitoringFr:
+      'Anti-angineux symptomatique sans baisse notable de la tension ni de la FC (ESC 2024 IIa B ; aucun effet démontré sur la survie). Contre-indiquée si clairance < 30 mL/min, inhibiteurs puissants du CYP3A4 ou antiarythmiques classe Ia/III hors amiodarone ; élève la digoxine (×1,5) et plafonne la simvastatine à 20 mg ; prudence en NYHA III–IV.',
+    articleSlug: 'angor-et-medicaments-anti-angineux',
+  },
+  {
+    id: 'pantoprazole',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Pantoprazole (inhibiteur de la pompe à protons — IPP)',
+    frenchBrands: ['Inipomp', 'Eupantol', 'Génériques'],
+    startDoseFr: '20 mg × 1/j (protection gastrique)',
+    targetDoseFr: '20 à 40 mg × 1/j selon indication',
+    titrationIntervalFr: 'Réévaluation périodique de la pertinence de l’indication',
+    monitoringFr:
+      'IPP privilégié en association avec le clopidogrel (Plavix), car il inhibe beaucoup moins le CYP2C19 que l’oméprazole ou l’ésoméprazole. Recommandé en cas de risque hémorragique digestif élevé sous DAPT ou bithérapie antithrombotique (ESC I A). Au long cours (> 1 an), envisager un contrôle du magnésium (surtout avec diurétiques ou digoxine) et de la vitamine B12.',
+    articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
+  },
+  {
+    id: 'amiodarone',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Amiodarone (antiarythmique de classe III)',
+    frenchBrands: ['Cordarone', 'Génériques'],
+    startDoseFr: 'Charge hospitalière ou ambulatoire encadrée (ex. 600 mg/j pendant 8–10 j selon RCP)',
+    targetDoseFr: 'Dose d’entretien minimale efficace (100 à 200 mg/j)',
+    titrationIntervalFr: 'Réduction progressive vers la dose minimale efficace sous contrôle ECG',
+    monitoringFr:
+      'Principal antiarythmique oral utilisable dans l’ICFER ischémique (demi-vie 20 à 100 jours). Suivi structuré indispensable : TSH et transaminases tous les 6 mois (et plusieurs mois après arrêt), ECG ≥ 1 fois/an, radiographie/EFR de base et alerte immédiate en cas de toux sèche ou dyspnée, protection solaire stricte, fond d’œil si baisse visuelle, contrôle des seuils du DAI. Contre-indiquée avec escitalopram/citalopram, sotalol, dronédarone, moxifloxacine, sofosbuvir ; réduire AVK (-25 à -33 %) et digoxine (-50 %), préférer rosuvastatine/pravastatine et éviter le pamplemousse.',
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+  },
+
   // === Classes à éviter en ICFER (avoidInHfref: true) ===
   {
     id: 'ains_classe',
@@ -506,7 +573,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     innNameFr: 'AINS (ibuprofène, kétoprofène, diclofénac, naproxène, célécoxib)',
     frenchBrands: ['Advil', 'Nurofen', 'Profenid', 'Voltarène', 'Apranax', 'Celebrex'],
     monitoringFr:
-      'À éviter dans l’ICFER (ESC 2026 et consensus EJHF Abdin 2025) : favorisent la rétention d’eau et de sel, atténuent les diurétiques, aggravent l’IC et exposent à l’insuffisance rénale aiguë et à l’hyperkaliémie. Attention à l’automédication sans ordonnance.',
+      'À éviter dans l’ICFER (ESC 2026 et consensus EJHF Abdin 2025) : favorisent la rétention d’eau et de sel, atténuent les diurétiques, aggravent l’IC et exposent à l’insuffisance rénale aiguë (« triple whammy » +82 % à 30 j avec SRAA + diurétique) et à l’hyperkaliémie. Attention à l’automédication sans ordonnance.',
     avoidInHfref: true,
     articleSlug: 'medicaments-effets-secondaires-suivi',
   },
@@ -517,9 +584,9 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     innNameFr: 'Vérapamil (inhibiteur calcique bradycardisant)',
     frenchBrands: ['Isoptine', 'Génériques'],
     monitoringFr:
-      'À éviter dans l’ICFER (effet inotrope négatif pouvant aggraver la dysfonction ventriculaire) ; contre-indiqué avec l’ivabradine et augmente la digoxinémie.',
+      'À éviter dans l’ICFER (ESC 2024/2026 Classe III : effet inotrope négatif aggravant la dysfonction ventriculaire) ; contre-indiqué avec l’ivabradine et augmente la digoxinémie.',
     avoidInHfref: true,
-    articleSlug: 'medicaments-insuffisance-cardiaque',
+    articleSlug: 'angor-et-medicaments-anti-angineux',
   },
   {
     id: 'diltiazem',
@@ -528,9 +595,9 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     innNameFr: 'Diltiazem (inhibiteur calcique bradycardisant)',
     frenchBrands: ['Tildiem', 'Mono-Tildiem', 'Bi-Tildiem', 'Génériques'],
     monitoringFr:
-      'À éviter dans l’ICFER (effet inotrope négatif pouvant aggraver la faiblesse du muscle cardiaque) ; contre-indiqué avec l’ivabradine et inhibiteur modéré du CYP3A4.',
+      'À éviter dans l’ICFER (ESC 2024/2026 Classe III : effet inotrope négatif aggravant la faiblesse du muscle cardiaque) ; contre-indiqué avec l’ivabradine et inhibiteur modéré du CYP3A4.',
     avoidInHfref: true,
-    articleSlug: 'medicaments-insuffisance-cardiaque',
+    articleSlug: 'angor-et-medicaments-anti-angineux',
   },
   {
     id: 'moxonidine',
@@ -550,9 +617,20 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     innNameFr: 'Antiarythmiques de classe I (flécaïnide, propafénone, disopyramide)',
     frenchBrands: ['Flécaïne', 'Rythmol', 'Rythmodan', 'Isorythm'],
     monitoringFr:
-      'À éviter dans l’ICFER, toute cardiopathie structurelle ou maladie coronaire ischémique (consensus EJHF Abdin 2025) : affaiblissent la contraction et exposent à des troubles du rythme graves.',
+      'Contre-indiqués dans l’ICFER, toute cardiopathie structurelle ou maladie coronaire ischémique (ESC 2022 Classe III, CAST, consensus EJHF Abdin 2025) : ralentissent la conduction en zone cicatricielle, affaiblissent la contraction et provoquent des troubles du rythme graves.',
     avoidInHfref: true,
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+  },
+  {
+    id: 'flecainide',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Flécaïnide (antiarythmique de classe IC)',
+    frenchBrands: ['Flécaïne', 'Génériques'],
+    monitoringFr:
+      'Strictement contre-indiquée après infarctus du myocarde, en maladie coronaire ou en ICFER (ESC 2022 Classe III : Danger) : dans l’essai CAST, les antiarythmiques de classe IC ont environ triplé les décès rythmiques malgré la suppression des extrasystoles.',
+    avoidInHfref: true,
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
   },
   {
     id: 'dronedarone',
@@ -561,9 +639,20 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     innNameFr: 'Dronédarone (antiarythmique)',
     frenchBrands: ['Multaq'],
     monitoringFr:
-      'À éviter dans l’ICFER symptomatique (consensus EJHF Abdin 2025) : associée à une augmentation de la mortalité dans un essai randomisé.',
+      'Contre-indiquée dans l’ICFER symptomatique ou sévère (essai ANDROMEDA stoppé précocement : mortalité plus que doublée en 2 mois, HR 2,13 ; consensus EJHF Abdin 2025).',
     avoidInHfref: true,
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+  },
+  {
+    id: 'pseudoephedrine',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Pseudoéphédrine (décongestionnant vasoconstricteur oral)',
+    frenchBrands: ['Spécialités anti-rhume par voie orale (soumises à ordonnance en France)'],
+    monitoringFr:
+      'À éviter dans l’ICFER et la maladie coronaire : vasoconstricteur sympathomimétique susceptible d’élever la tension artérielle, d’accélérer le rythme cardiaque et de favoriser troubles du rythme ou poussée d’insuffisance cardiaque. Demandez toujours conseil à votre pharmacien ou médecin en cas de rhume.',
+    avoidInHfref: true,
+    articleSlug: 'cafeine-boissons-energisantes-et-stimulants',
   },
   {
     id: 'pioglitazone',

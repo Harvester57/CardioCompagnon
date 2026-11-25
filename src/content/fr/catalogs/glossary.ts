@@ -708,10 +708,10 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
   {
     id: 'ipa_infirmiere_ic',
     termFr: 'IPA / Infirmière insuffisance cardiaque',
-    aliases: ['IPA', 'infirmière IC', 'infirmière insuffisance cardiaque'],
+    aliases: ['IPA', 'infirmière IC', 'infirmière insuffisance cardiaque', 'infirmier en pratique avancée'],
     shortDefinitionFr:
-      'Infirmière en pratique avancée ou spécialisée assurant le suivi rapproché, l’éducation thérapeutique, la titration encadrée et la coordination entre les visites.',
-    articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
+      'Infirmier(ère) en pratique avancée (master d’État) ou spécialisé(e) assurant le suivi des cardiopathies stabilisées, les bilans, le renouvellement/adaptation d’ordonnances et la prescription d’APA, avec accès direct en structure coordonnée depuis janvier 2025 (100 % tarif sous ALD).',
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
   },
   {
     id: 'medecin_agree',
@@ -832,5 +832,333 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     shortDefinitionFr:
       "Alternance d'intervalles d'effort soutenu et de récupération. Dans le plus grand essai dédié à l'ICFER (SMARTEX-HF), le HIIT n'a pas fait mieux que l'endurance continue modérée sur le remodelage du ventricule gauche ou la capacité d'effort.",
     articleSlug: 'musculation-vs-endurance-readaptation-cardiaque',
+  },
+  {
+    id: 'anevrisme_vg',
+    termFr: 'Anévrisme et pseudo-anévrisme du ventricule gauche',
+    aliases: ['anévrisme VG', 'LV aneurysm', 'pseudo-anévrisme', 'faux anévrisme'],
+    shortDefinitionFr:
+      "L'anévrisme VG est une zone cicatricielle amincie qui se bombe vers l'extérieur après un infarctus (souvent à l'apex), augmentant le risque de thrombus VG ; le pseudo-anévrisme est une rupture contenue par le péricarde relevant habituellement d'une chirurgie rapide.",
+    articleSlug: 'anevrisme-ventricule-gauche',
+  },
+  {
+    id: 'akinesie_dyskinesie',
+    termFr: 'Akinésie / dyskinésie',
+    aliases: ['akinésie', 'dyskinésie', 'paroi akinétique'],
+    shortDefinitionFr:
+      "Sur une ETT ou une IRM cardiaque, segment myocardique qui ne se contracte plus (akinétique) ou qui se bombe vers l'extérieur lors de la systole (dyskinétique), généralement cicatriciel après un infarctus.",
+    articleSlug: 'anevrisme-ventricule-gauche',
+  },
+  {
+    id: 'tapse',
+    termFr: 'TAPSE et PAPS / sPAP (ventricule droit et pression pulmonaire)',
+    aliases: ['TAPSE', 'PAPS', 'sPAP', 'hypertension pulmonaire', 'ventricule droit'],
+    shortDefinitionFr:
+      "Mesures échocardiographiques évaluant la contraction du ventricule droit (TAPSE, en mm) et la pression artérielle pulmonaire systolique estimée (PAPS). Dans l'HTP liée au cœur gauche (groupe 2), on optimise d'abord le cœur gauche ; les médicaments de l'HTAP sont contre-indiqués (ESC/ERS 2022 Classe III).",
+    articleSlug: 'ventricule-droit-et-hypertension-pulmonaire',
+  },
+  {
+    id: 'lvad',
+    termFr: 'LVAD (assistance circulatoire mécanique / HeartMate 3)',
+    aliases: ['LVAD', 'assistance circulatoire', 'HeartMate 3', 'pompe cardiaque'],
+    shortDefinitionFr:
+      "Pompe mécanique implantée dans le ventricule gauche en cas d'insuffisance cardiaque avancée (stade D), en pont vers la greffe ou en thérapie définitive (survie à 5 ans de 58,4 % avec HeartMate 3 dans MOMENTUM 3). Requiert un anticoagulant AVK et une antibioprophylaxie dentaire.",
+    articleSlug: 'assistance-circulatoire-lvad',
+  },
+  {
+    id: 'intermacs',
+    termFr: 'Profils INTERMACS (1 à 7) et repère « I NEED HELP »',
+    aliases: ['INTERMACS', 'I NEED HELP', 'stade D', 'IC avancée'],
+    shortDefinitionFr:
+      "Échelle classant la gravité de l'insuffisance cardiaque avancée de 1 (choc critique) à 7 (NYHA III stable) pour guider le moment d'un bilan de LVAD ou de greffe ; « I NEED HELP » regroupe les signes cliniques déclenchant l'orientation précoce vers un centre expert.",
+    articleSlug: 'insuffisance-cardiaque-avancee-stade-d',
+  },
+  {
+    id: 'efx_cpet',
+    termFr: 'EFX / CPET (pic de VO2, pente VE/VCO2, RER, classe de Weber)',
+    aliases: ['EFX', 'CPET', 'VO2 max', 'pic de VO2', 'VE/VCO2', 'classe de Weber'],
+    shortDefinitionFr:
+      "Épreuve d'effort avec mesure des échanges gazeux : évalue objectivement l'aptitude cardiaque (pic de VO2 ≤ 12 mL/kg/min sous bêtabloquant ou ≤ 14 hors bêtabloquant dans le bilan d'IC avancée ; pente VE/VCO2 > 35 = haut risque ; RER ≥ 1,05–1,10 confirme un effort maximal) et calibre la réadaptation.",
+    articleSlug: 'efx-strain-troponine-et-imagerie-cardiaque',
+  },
+  {
+    id: 'gls',
+    termFr: 'GLS (strain longitudinal global)',
+    aliases: ['GLS', 'strain', 'strain longitudinal global'],
+    shortDefinitionFr:
+      "Mesure échocardiographique du raccourcissement longitudinal du myocarde (normal autour de -18 % à -22 % ; proche de 0 = plus faible). Détecte une atteinte subtile plus tôt que la FEVG, mais varie jusqu'à 3,7 points entre constructeurs : suivre sur le même appareil.",
+    articleSlug: 'efx-strain-troponine-et-imagerie-cardiaque',
+  },
+  {
+    id: 'troponine_chronique',
+    termFr: 'Lésion myocardique chronique (troponine ultrasensible)',
+    aliases: ['hs-cTn', 'hs-cTnT', 'hs-cTnI', 'troponine chronique', 'lésion myocardique chronique'],
+    shortDefinitionFr:
+      "Élévation modérée et stable de la troponine cardiaque ultrasensible (> 99e percentile sans cinétique aiguë ni ischémie), présente chez plus de la moitié des patients ICFER stables et distincte d'un infarctus aigu.",
+    articleSlug: 'efx-strain-troponine-et-imagerie-cardiaque',
+  },
+  {
+    id: 'holter_patch_ilr',
+    termFr: 'Holter / patch ECG / moniteur cardiaque implantable (ILR)',
+    aliases: ['Holter', 'patch ECG', 'ILR', 'moniteur implantable'],
+    shortDefinitionFr:
+      "Enregistreurs du rythme cardiaque choisis selon la fréquence des symptômes : Holter 24–48 h, patch sans fil 7–14 jours (intermittent) ou moniteur sous-cutané ILR (~3 ans pour syncope inexpliquée ; inutile si un DAI/CRT est déjà implanté).",
+    articleSlug: 'efx-strain-troponine-et-imagerie-cardiaque',
+  },
+  {
+    id: 'coroscanner_ccta',
+    termFr: 'Coroscanner (CCTA)',
+    aliases: ['coroscanner', 'CCTA', 'scanner coronaire'],
+    shortDefinitionFr:
+      "Scanner 3D injecté des artères coronaires utile surtout pour exclure une coronaropathie obstructive en cas de probabilité faible à modérée (ESC 2026 IIa C), limité par de fortes calcifications ou une FA rapide.",
+    articleSlug: 'efx-strain-troponine-et-imagerie-cardiaque',
+  },
+  {
+    id: 'tv_nsvt',
+    termFr: 'TV / TVNS (tachycardie ventriculaire soutenue et non soutenue)',
+    aliases: ['TV', 'VT', 'TVNS', 'NSVT', 'tachycardie ventriculaire'],
+    shortDefinitionFr:
+      "Rythme rapide naissant dans les ventricules (souvent autour d'une cicatrice d'infarctus). Non soutenue (TVNS) : ≥ 3 battements s'arrêtant en < 30 secondes ; soutenue (TV) : > 30 secondes ou nécessitant ATP, choc, médicament ou ablation.",
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+  },
+  {
+    id: 'esv_pvc_cm',
+    termFr: 'ESV (extrasystoles ventriculaires) et cardiomyopathie induite (PVC-CM)',
+    aliases: ['ESV', 'PVC', 'PVC-CM', 'extrasystoles ventriculaires', 'charge en ESV'],
+    shortDefinitionFr:
+      "Battements prématurés ventriculaires ; habituellement bénins en petit nombre, mais une charge quotidienne ≥ 10 % (souvent manquée sur un Holter de 24 h) peut affaiblir le VG ou perturber une CRT (ablation ESC 2022 Classe I C).",
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+  },
+  {
+    id: 'atp_orage_rythmique',
+    termFr: 'ATP (stimulation antitachycardique) et orage rythmique',
+    aliases: ['ATP', 'stimulation antitachycardique', 'orage rythmique', 'VT storm'],
+    shortDefinitionFr:
+      "L'ATP est une salve indolore du DAI interrompant une TV avant le choc (≥ 5 ATP en 6 mois = instabilité à évaluer). L'orage rythmique (≥ 3 épisodes de TV/FV en 24 h ou ≥ 2 chocs) est une urgence vitale : appeler immédiatement le 15 ou le 112.",
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+  },
+  {
+    id: 'amiodarone',
+    termFr: 'Amiodarone (Cordarone)',
+    aliases: ['amiodarone', 'Cordarone'],
+    shortDefinitionFr:
+      "Principal antiarythmique oral utilisable dans l'ICFER ischémique (contrairement aux classes IC et à la dronédarone, contre-indiqués). Sa longue demi-vie (20–100 jours) impose un suivi tous les 6 mois (TSH, foie), ECG, vigilance pulmonaire, protection solaire et contrôle des interactions.",
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+  },
+  {
+    id: 'resistance_diuretiques',
+    termFr: 'Résistance aux diurétiques et blocage séquentiel du néphron',
+    aliases: ['résistance aux diurétiques', 'blocage séquentiel', 'natriurèse', 'acétazolamide', 'métolazone'],
+    shortDefinitionFr:
+      "Persistance d'une congestion malgré de fortes doses de diurétique de l'anse (signe d'alerte d'IC avancée ESC 2026). Le blocage séquentiel associe temporairement un thiazidique ou de l'acétazolamide IV à l'hôpital, sous contrôle strict du potassium et des reins.",
+    articleSlug: 'escalade-et-resistance-aux-diuretiques',
+  },
+  {
+    id: 'angor_trinitrine',
+    termFr: 'Angor, trinitrine (Natispray) et tolérance aux dérivés nitrés',
+    aliases: ['angor', 'trinitrine', 'GTN', 'Natispray', 'tolérance nitrés', 'patch nitré'],
+    shortDefinitionFr:
+      "Douleur ou gêne thoracique d'ischémie soulagée par la trinitrine rapide (Natispray, strictement contre-indiquée avec les IPDE-5). Les patchs nitrés longue durée imposent une fenêtre libre de 8 à 12 heures/jour pour éviter la perte d'efficacité.",
+    articleSlug: 'angor-et-medicaments-anti-angineux',
+  },
+  {
+    id: 'ranolazine_nicorandil_trimetazidine',
+    termFr: 'Ranolazine (Ranexa), nicorandil et trimétazidine (Vastarel)',
+    aliases: ['ranolazine', 'Ranexa', 'nicorandil', 'trimétazidine', 'Vastarel'],
+    shortDefinitionFr:
+      "Anti-angineux additionnels à visée symptomatique sans bénéfice prouvé sur la survie : ranolazine sans effet tensionnel (non remboursée en France, augmente la digoxine), nicorandil à risque d'ulcérations (SMR insuffisant HAS 2026) et trimétazidine non remboursée.",
+    articleSlug: 'angor-et-medicaments-anti-angineux',
+  },
+  {
+    id: 'bitherapie_dapt_ipp',
+    termFr: 'Bithérapie antiplaquettaire (DAPT) et protecteur gastrique (IPP)',
+    aliases: ['DAPT', 'bithérapie antiplaquettaire', 'IPP', 'pantoprazole', 'oméprazole'],
+    shortDefinitionFr:
+      "Association d'aspirine et d'un inhibiteur de P2Y12 après stent ou infarctus (souvent 6 à 12 mois, ou 1–3 mois si haut risque hémorragique). Un IPP protège l'estomac (Classe I A ESC si haut risque) ; éviter oméprazole/ésoméprazole avec le clopidogrel (préférer le pantoprazole).",
+    articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
+  },
+  {
+    id: 'acidocetose_euglycemique',
+    termFr: 'Acidocétose euglycémique (eKA / euDKA)',
+    aliases: ['acidocétose euglycémique', 'eKA', 'euDKA', 'acidocétose', 'corps cétoniques'],
+    shortDefinitionFr:
+      "Complication rare mais grave des iSGLT2 caractérisée par une accumulation d'acide et de cétones sanguines malgré une glycémie normale ou modérée (< 2,50 g/L), favorisée par une chirurgie, un jeûne, une gastro-entérite, un régime cétogène ou un excès d'alcool.",
+    articleSlug: 'these-jours-de-maladie-sraa-vs-isglt2',
+  },
+  {
+    id: 'mins_periop',
+    termFr: 'MINS (lésion myocardique après chirurgie non cardiaque)',
+    aliases: ['MINS', 'lésion myocardique post-opératoire', 'chirurgie non cardiaque'],
+    shortDefinitionFr:
+      "Élévation post-opératoire de la troponine révélant une souffrance myocardique souvent silencieuse autour d'une chirurgie non cardiaque, dépistée par biomarqueurs péri-opératoires chez les patients à risque (ESC 2022, AHA/ACC 2024).",
+    articleSlug: 'chirurgie-soins-dentaires-et-jours-de-maladie',
+  },
+  {
+    id: 'antibioprophylaxie_endocardite',
+    termFr: "Antibioprophylaxie de l'endocardite infectieuse (soins dentaires)",
+    aliases: ['antibioprophylaxie', 'endocardite', 'soins dentaires', 'amoxicilline dentaire'],
+    shortDefinitionFr:
+      "Prise unique d'antibiotique avant un soin dentaire invasif réservée aux hauts risques (prothèse/TAVI, MitraClip/TEER, LVAD, antécédent d'endocardite ; clindamycine retirée ; HAS oct. 2024). Non indiquée pour l'ICFER, les stents ou les DAI/CRT seuls.",
+    articleSlug: 'chirurgie-soins-dentaires-et-jours-de-maladie',
+  },
+  {
+    id: 'hypophosphatemie',
+    termFr: 'Hypophosphatémie (fer intraveineux FCM vs FDI)',
+    aliases: ['hypophosphatémie', 'phosphate', 'carboxymaltose ferrique', 'dérisomaltose ferrique', 'Ferinject', 'Monofer'],
+    shortDefinitionFr:
+      "Baisse du phosphate sanguin fréquente et transitoire sous carboxymaltose ferrique (FCM : 51,9 % modérée à sévère à J21 dans HEART-FID, vs ~4–8 % sous dérisomaltose ferrique / FDI), exposant rarement à une ostéomalacie en cas de cures répétées de FCM.",
+    articleSlug: 'these-fer-iv-et-isglt2-quadritherapie',
+  },
+  {
+    id: 'berberine',
+    termFr: 'Berbérine',
+    aliases: ['berbérine', 'berberine'],
+    shortDefinitionFr:
+      "Alcaloïde végétal vendu en complément pour le cholestérol ou la glycémie, sans essai clinique sur événements cardiovasculaires dans l'ICFER et susceptible d'interagir avec les enzymes CYP/P-gp et plusieurs traitements cardiaques.",
+    articleSlug: 'berberine-cholesterol-et-interactions',
+  },
+  {
+    id: 'decongestionnants_oraux',
+    termFr: 'Décongestionnants oraux (pseudoéphédrine, phényléphrine)',
+    aliases: ['décongestionnants', 'pseudoéphédrine', 'phényléphrine', 'rhume'],
+    shortDefinitionFr:
+      "Vasoconstricteurs contre le nez bouché à éviter dans l'ICFER ischémique. Depuis le 11 décembre 2024, toute la pseudoéphédrine orale est sur ordonnance (Liste I) en France pour risques d'infarctus et d'AVC ; plusieurs spécialités contiennent aussi de l'ibuprofène.",
+    articleSlug: 'cafeine-boissons-energisantes-et-stimulants',
+  },
+  {
+    id: 'ndlvc_coronaropathie_fortuite',
+    termFr: 'NDLVC et coronaropathie fortuite (bystander CAD)',
+    aliases: ['NDLVC', 'bystander CAD', 'coronaropathie fortuite', 'cardiomyopathie non dilatée'],
+    shortDefinitionFr:
+      "La NDLVC (ESC 2023) désigne une cicatrice non ischémique ou hypokinésie du VG sans dilatation ; une coronaropathie fortuite coexiste avec une cardiomyopathie primitive sans en être la cause unique (~1 patient coronarien sur 6 adressé en IRM dans Bawaskar 2024).",
+    articleSlug: 'confirmer-la-cause-dysfonction-vg',
+  },
+  {
+    id: 'amylose_sarcoidose_cardiaque',
+    termFr: 'Amylose cardiaque (scintigraphie osseuse) et sarcoïdose (TEP-FDG)',
+    aliases: ['amylose cardiaque', 'ATTR', 'AL', 'scintigraphie osseuse', 'Perugini', 'sarcoïdose cardiaque', 'TEP-FDG'],
+    shortDefinitionFr:
+      "Causes infiltratives ou inflammatoires pouvant mimer ou accompagner une coronaropathie : l'amylose ATTR se confirme par scintigraphie osseuse (grade 2–3) uniquement après négativité des 3 tests monoclonaux (SPIE, UPIE, chaînes légères libres) ; la sarcoïdose utilise la TEP-18F-FDG après préparation diététique stricte.",
+    articleSlug: 'confirmer-la-cause-dysfonction-vg',
+  },
+  {
+    id: 'niveau_preuve_esc_2026',
+    termFr: 'Niveau de preuve ESC 2026 (A, B1, B2, C) et score KCCQ',
+    aliases: ['B1', 'B2', 'niveau de preuve', 'KCCQ', 'Kansas City'],
+    shortDefinitionFr:
+      "L'ESC 2026 divise le niveau B thérapeutique en B1 (essai randomisé puissant) et B2 (non randomisé ou petits essais). Le KCCQ (0 à 100) est le questionnaire de référence mesurant symptômes et qualité de vie dans l'IC, plus sensible que la classe NYHA.",
+    articleSlug: 'dysfonction-vg-asymptomatique-stade-b',
+  },
+  {
+    id: 'allopurinol_febuxostat_ase',
+    termFr: 'Allopurinol / fébuxostat (goutte) et ASE (anémie hors fer)',
+    aliases: ['allopurinol', 'fébuxostat', 'Adenuric', 'ASE', 'ESA', 'darbépoétine'],
+    shortDefinitionFr:
+      "Dans la goutte avec ICFER, l'allopurinol est la 1re ligne (le fébuxostat reste en 2e ligne après CARES) et l'hyperuricémie asymptomatique ne se traite pas. Pour l'anémie sans carence en fer, les injections d'ASE sont contre-indiquées (surrisque de thromboses et d'AVC dans RED-HF).",
+    articleSlug: 'goutte-bpco-thyroide-et-autres-comorbidites',
+  },
+  {
+    id: 'regle_des_3',
+    termFr: 'Règle des 3 (automesure tensionnelle) et STRIDE BP',
+    aliases: ['règle des 3', 'automesure', 'STRIDE BP', 'brassard oscillométrique'],
+    shortDefinitionFr:
+      "Protocole français SFHTA d'automesure : 3 mesures assises le matin avant les comprimés, 3 le soir, 3 jours de suite, avec un brassard huméral validé vérifiable sur stridebp.org (à adapter avec le cardiologue en cas de FA ou d'ICFER).",
+    articleSlug: 'automesure-tensionnelle-domicile',
+  },
+  {
+    id: 'ecg_monocanal_spo2',
+    termFr: 'ECG monocanal et SpO2 (montres connectées)',
+    aliases: ['ECG monocanal', 'single-lead ECG', 'SpO2', 'montre connectée'],
+    shortDefinitionFr:
+      "Tracé de 30 secondes d'une montre connectée utile pour dépister une FA mais non validé pour l'infarctus ou la TV (15–26 % inconclusifs en cardiologie), et mesure approximative de l'oxygène (SpO2). Tenir montres et téléphones à 15 cm d'un DAI (30 cm en charge).",
+    articleSlug: 'montres-connectees-et-capteurs-ic',
+  },
+  {
+    id: 'ipde5_met_nocebo',
+    termFr: 'Inhibiteurs de la PDE-5 (Viagra, Cialis), MET et effet nocebo',
+    aliases: ['IPDE-5', 'PDE-5', 'sildénafil', 'Viagra', 'tadalafil', 'Cialis', 'MET', 'nocebo'],
+    shortDefinitionFr:
+      "Un rapport sexuel équivaut à 3–5 METs (deux étages). L'effet nocebo explique une large part des troubles érectiles attribués aux bêtabloquants. Les IPDE-5 sont formellement interdits avec les dérivés nitrés ; dans l'UE, Cialis est contre-indiqué dès NYHA II alors que Viagra ne contre-indique que l'IC sévère.",
+    articleSlug: 'vie-sexuelle-et-dysfonction-erectile-ic',
+  },
+  {
+    id: 'conflit_autonome_waon',
+    termFr: 'Conflit autonome (eau froide) et thérapie Waon',
+    aliases: ['conflit autonome', 'eau froide', 'bain glacé', 'thérapie Waon', 'sauna'],
+    shortDefinitionFr:
+      "Le conflit autonome survient lors d'une immersion brutale en eau glacée (décharge d'adrénaline + réflexe vagal), exposant un cœur cicatriciel à des arythmies. La thérapie Waon japonaise (infrarouges doux à 60 °C) diffère des saunas à 80–100 °C et n'a pas atteint son critère principal dans WAON-CHF.",
+    articleSlug: 'voyages-canicule-et-climat-ic',
+  },
+  {
+    id: 'sevrage_tabac_france',
+    termFr: 'Substituts nicotiniques, varénicline (Champix) et Tabac info service (39 89)',
+    aliases: ['substituts nicotiniques', 'NRT', 'varénicline', 'Champix', 'Tabac info service', '39 89'],
+    shortDefinitionFr:
+      "En France, les substituts nicotiniques prescrits et la varénicline (Champix, revenue en juin 2025 en 2e intention, sans interaction CYP450) sont remboursés à 65 % sans plafond, avec accompagnement gratuit par tabacologue au 39 89 ; l'e-cigarette n'est pas recommandée par le HCSP.",
+    articleSlug: 'tabac-et-alcool-insuffisance-cardiaque',
+  },
+  {
+    id: 'directives_anticipees',
+    termFr: 'Directives anticipées (Loi Claeys-Leonetti)',
+    aliases: ['directives anticipées', 'Loi Claeys-Leonetti', 'désactivation DAI'],
+    shortDefinitionFr:
+      "Document écrit français de validité illimitée, opposable aux médecins et déposable dans Mon espace santé, précisant vos souhaits sur la poursuite, limitation ou arrêt des traitements — y compris la désactivation explicite des chocs d'un DAI tout en maintenant la stimulation.",
+    articleSlug: 'soins-de-support-et-anticipation',
+  },
+  {
+    id: 'personne_de_confiance',
+    termFr: 'Personne de confiance',
+    aliases: ['personne de confiance', 'CSP L.1111-6'],
+    shortDefinitionFr:
+      "Adulte unique désigné par écrit et cosignataire (déposable dans Mon espace santé) pouvant vous accompagner en consultation et dont le témoignage sur vos volontés prévaut sur tout autre témoignage familial si vous ne pouvez plus vous exprimer ; distincte de la personne à prévenir.",
+    articleSlug: 'soins-de-support-et-anticipation',
+  },
+  {
+    id: 'had_emsp_ppa_spcmd',
+    termFr: 'HAD, EMSP / LISP / USP / MASP, PPA et SPCMD',
+    aliases: ['HAD', 'EMSP', 'LISP', 'USP', 'MASP', 'PPA', 'SPCMD', 'hospitalisation à domicile'],
+    shortDefinitionFr:
+      "Dispositifs français d'accompagnement et de soins palliatifs : HAD (soins hospitaliers à domicile 100 % ALD sans forfait journalier), équipes mobiles (EMSP), lits/unités/maisons dédiés (LISP, USP, MASP), plan personnalisé d'accompagnement (PPA, loi 2026-404) et sédation profonde jusqu'au décès (SPCMD).",
+    articleSlug: 'soins-de-support-et-anticipation',
+  },
+  {
+    id: 'mon_espace_sante',
+    termFr: 'Mon espace santé (DMP)',
+    aliases: ['Mon espace santé', 'DMP', 'Dossier Médical Partagé', 'VSM'],
+    shortDefinitionFr:
+      "Carnet de santé numérique public regroupant comptes rendus (ETT, IRM, carte DAI), volet de synthèse médicale (VSM) et directives anticipées, consultable en urgence par le SAMU 15 et les hôpitaux sauf opposition.",
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
+  },
+  {
+    id: 'apa_sport_ordonnance',
+    termFr: 'APA (activité physique adaptée) et Maisons Sport-Santé',
+    aliases: ['APA', 'sport sur ordonnance', 'Maisons Sport-Santé', 'Club Cœur et Santé'],
+    shortDefinitionFr:
+      "Activité physique encadrée prescrite par tout médecin ou IPA (renouvelable une fois par kinésithérapeute) via les Maisons Sport-Santé ou Clubs Cœur et Santé. Non remboursée par l'Assurance Maladie pour l'IC même en ALD (financement possible par mutuelle ou collectivités).",
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
+  },
+  {
+    id: 'cmi',
+    termFr: 'CMI (carte mobilité inclusion)',
+    aliases: ['CMI', 'carte mobilité inclusion', 'carte stationnement', 'carte priorité'],
+    shortDefinitionFr:
+      "Carte délivrée par la MDPH avec trois mentions (Priorité, Stationnement, Invalidité ≥ 80 % ouvrant automatiquement les droits RQTH). Les anciennes cartes papier d'invalidité et de stationnement expirent le 31 décembre 2026.",
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
+  },
+  {
+    id: 'aah_pch_ajpa',
+    termFr: 'AAH, PCH et congé de proche aidant (AJPA)',
+    aliases: ['AAH', 'PCH', 'AJPA', 'congé de proche aidant'],
+    shortDefinitionFr:
+      "Aides MDPH/CAF en France : AAH (allocation adultes handicapés, plafond 1 041,59 €/mois en 2026, déconjugalisée), PCH (aides humaines/techniques demandées avant 60 ans) et congé de proche aidant avec AJPA (66,64 €/jour en 2026, exigeant incapacité ≥ 80 %, APA ou invalidité cat. 3, et non l'ALD seule).",
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
+  },
+  {
+    id: 'optam_c2s_franchises',
+    termFr: 'OPTAM, Complémentaire santé solidaire (C2S) et franchises 2026',
+    aliases: ['OPTAM', 'Secteur 1', 'Secteur 2', 'C2S', 'forfait journalier', 'FPU', 'franchises médicales'],
+    shortDefinitionFr:
+      "Même en ALD 100 %, restent à charge (hors C2S) les dépassements d'honoraires (plafonnés en Secteur 2 OPTAM), le forfait journalier (23 €/j), le FPU ALD (9,96 €) et jusqu'à 140 €/an de franchises/participations non remboursées par les mutuelles depuis octobre 2026 ; la C2S supprime tous ces frais sous condition de revenus.",
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
   },
 ];

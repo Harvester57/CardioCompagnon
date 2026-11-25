@@ -125,14 +125,20 @@ Dans HF-ACTION, l'entraînement physique a également diminué les symptômes d�
     },
     {
       headingFr: 'Repères pratiques en France et précautions',
-      bodyMarkdownFr: `- **Accès en France (SMR cardiovasculaire) :** la réadaptation cardiaque s'effectue en service de **SMR (soins médicaux et de réadaptation, ex-SSR)** mention cardiovasculaire, en hospitalisation complète ou en **hôpital de jour**. Elle peut être prescrite directement par votre **médecin traitant** ou votre **cardiologue de ville**, comme à la sortie d'une hospitalisation. **Aucune demande d'accord préalable n'est requise et la prise en charge est assurée à 100 % par l'Assurance Maladie.** Malgré son intérêt reconnu, la HAS constate que le recours reste insuffisant en France.
-- **Demander un avis avant de démarrer :** échangez avec votre cardiologue, votre médecin traitant ou votre infirmière insuffisance cardiaque / IPA pour définir le niveau d'effort adapté à votre situation et vérifier l'existence d'un centre SMR proche de chez vous.
+      bodyMarkdownFr: `- **Accès en France (SMR cardiovasculaire et relais APA) :** la réadaptation cardiaque s'effectue en service de **SMR (soins médicaux et de réadaptation, ex-SSR)** mention cardiovasculaire, en hospitalisation complète ou en **hôpital de jour**. Elle peut être prescrite directement par votre **médecin traitant** ou votre **cardiologue de ville**, comme à la sortie d'une hospitalisation. **Aucune demande d'accord préalable n'est requise et la prise en charge est assurée à 100 % par l'Assurance Maladie.** Malgré son intérêt reconnu, la HAS constate que le recours reste insuffisant en France. À l'issue du programme SMR, la poursuite de l'activité au long cours peut s'appuyer sur une prescription d'**Activité Physique Adaptée (APA)** et sur les **Maisons Sport-Santé** (voir *Réseau de soins et aides sociales en France*), et les centres SMR proposent aussi un accompagnement au sevrage tabagique (voir *Tabac et alcool dans l'insuffisance cardiaque*).
+- **Évaluation initiale et avis médical avant de démarrer :** comme dans l'essai HF-ACTION, un bilan d'effort préalable — idéalement une **épreuve d'effort cardiorespiratoire (EFX / CPET)** lorsque disponible (voir *EFX, strain, troponine et imagerie cardiaque*) — aide à fixer des zones de fréquence cardiaque et d'intensité sûres. Échangez avec votre cardiologue, votre médecin traitant ou votre infirmière insuffisance cardiaque / IPA pour définir le niveau d'effort adapté à votre situation et vérifier l'existence d'un centre SMR proche de chez vous.
 - **Gérer la fatigue au quotidien :** fractionnez vos efforts, planifiez des moments de repos autour des journées exigeantes et demandez à votre équipe de rechercher d'autres causes possibles de fatigue.
 - **Surveiller une perte de poids involontaire :** la HFA souligne qu'une perte de poids non intentionnelle (hors fonte d'œdèmes) supérieure à **5 % en 3 à 12 mois** constitue un signal précoce de fonte musculaire (cachexie). La fragilité touche environ **45 %** des personnes atteintes d'insuffisance cardiaque.`,
     },
   ],
   relatedArticleSlugs: [
     'musculation-vs-endurance-readaptation-cardiaque',
+    'efx-strain-troponine-et-imagerie-cardiaque',
+    'reseau-de-soins-et-aides-sociales-france',
+    'tabac-et-alcool-insuffisance-cardiaque',
+    'goutte-bpco-thyroide-et-autres-comorbidites',
+    'anevrisme-ventricule-gauche',
+    'cafeine-boissons-energisantes-et-stimulants',
     'essais-cliniques-en-cours-et-a-suivre',
     'vivre-avec-insuffisance-cardiaque',
     'depression-et-sante-emotionnelle',

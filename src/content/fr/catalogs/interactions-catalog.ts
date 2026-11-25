@@ -12,8 +12,8 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Seule supplémentation disposant de preuves solides dans l’ICFER : réduit les hospitalisations pour insuffisance cardiaque d’environ 20 à 30 % et améliore les symptômes lorsque la ferritine ou le CST sont bas.',
     mechanismOrCaveatFr:
-      'Indiqué uniquement après bilan sanguin (ferritine et CST) et prescription cardiologique. Dans 6 essais randomisés (7 175 patients, dont FAIR-HF2 avec 78 % de causes ischémiques), baisse du critère hospitalisations IC + décès CV (RR 0,81) sans effet démontré sur la mortalité globale. À ne pas confondre avec le fer en comprimés.',
-    affectedPillars: ['other'],
+      'Indiqué uniquement après bilan sanguin (ferritine et CST) et prescription cardiologique. Dans 6 essais randomisés (7 175 patients, dont FAIR-HF2 avec 78 % de causes ischémiques), baisse du critère hospitalisations IC + décès CV (RR 0,81) sans effet démontré sur la mortalité globale. Reste pertinent avec les iSGLT2 modernes (qui mobilisent le fer et peuvent démasquer une carence) et ne doit pas être confondu avec le fer en comprimés.',
+    affectedPillars: ['sglt2i', 'other'],
     evidenceGrade: 'ESC 2026 Classe I (symptômes, B1) ; Classe IIa (hospitalisations, B1)',
     sources: ['Méta-analyse fer IV 2025', 'FAIR-HF2 (JAMA 2025)', 'ESC 2026', 'AHA/ACC/HFSA 2022 (2a)'],
     articleSlug: 'carence-martiale-et-fer-iv',
@@ -26,11 +26,25 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Modèle alimentaire de référence pour protéger les artères coronaires : réduit d’environ 25 % les événements cardiovasculaires majeurs sur 7 ans dans la maladie coronaire (CORDIOPREV), avec une recommandation faible en faveur de la HAS (octobre 2026).',
     mechanismOrCaveatFr:
-      'CORDIOPREV (87 contre 111 événements) ayant exclu les FEVG ≤ 35 %, ce modèle protège le versant coronaire mais n’est pas prouvé comme traitement direct de l’ICFER. Les synthèses (BMJ 2023 NMA ; revue parapluie Hareer 2024 ; HAS 2026) montrent moins d’AVC et d’événements coronaires sans preuve randomisée dans l’ICFER établie. Adaptez les apports très riches en potassium avec votre équipe ou un(e) diététicien(ne) sous IEC/ARA2/ARNI ou ARM ; la fixation d’objectifs et le suivi régulier aident à tenir dans la durée (Rutters 2024).',
+      'CORDIOPREV (87 contre 111 événements) ayant exclu les FEVG ≤ 35 %, ce modèle protège le versant coronaire sans être prouvé comme traitement direct de l’ICFER. Côté potassium sous ARNI/IEC/ARA2 et ARM : l’absorption globale du potassium alimentaire est d’environ 88 à 94 % (Picard 2026), mais les aliments entiers évitent les bolus rapides des substituts de sel au KCl et des additifs potassiques cachés (présents dans 23,3 % des produits industriels « réduits en sodium ») tout en apportant fibres et alcalinisants. Gardez des portions mesurées sur les charges concentrées (jus de fruits, smoothies, fruits secs, concentré de tomate) si le DFGe est entre 30 et 44 ou si la kaliémie approche 4,8–5,0 mmol/L.',
     affectedPillars: ['raas_arni', 'mra', 'lipid_lowering'],
     evidenceGrade: 'ESC 2026 Classe I, niveau C (hygiène de vie) ; HAS octobre 2026 (faible, coronaire) ; CORDIOPREV',
-    sources: ['CORDIOPREV (The Lancet 2022)', 'BMJ 2023 NMA', 'Hareer 2024', 'HAS octobre 2026', 'Rutters 2024', 'ESC 2026'],
+    sources: ['CORDIOPREV (The Lancet 2022)', 'BMJ 2023 NMA', 'Hareer 2024', 'HAS octobre 2026', 'Picard 2024–2026', 'ESC 2026'],
     articleSlug: 'alimentation-cardioprotectrice',
+  },
+  {
+    id: 'fibres-alimentaires-psyllium',
+    nameFr: 'Alimentation riche en fibres (et précautions pour les compléments de psyllium / ispaghul)',
+    aliases: ['Fibres alimentaires', 'Fibres', 'Psyllium', 'Ispaghul', 'Spagulax', 'Transilane', 'Fybogel', 'Constipation'],
+    verdict: 'worth_raising',
+    summaryFr:
+      'Une alimentation riche en fibres (25 à 29 g/j via végétaux et céréales complètes) s’associe à moins de décès coronaires en population générale ; les sachets de psyllium sont un laxatif à espacer de la digoxine et de la warfarine.',
+    mechanismOrCaveatFr:
+      'Dans la méta-analyse OMS/The Lancet (Reynolds 2019, population générale), des apports élevés s’associent à moins de mortalité globale (RR 0,85) et coronaire (RR 0,69) ; dans l’IC, seules des données observationnelles existent (Wang 2025, NHANES, HR 0,68). Les sachets d’ispaghul/psyllium peuvent retarder l’absorption de la digoxine et de la warfarine (espacer d’au moins 30 à 60 minutes) et imposent au moins 150 mL d’eau par sachet, à intégrer dans une éventuelle limite hydrique : vérifiez horaires et choix du laxatif avec votre pharmacien.',
+    affectedPillars: ['addon_hf', 'anticoagulant', 'other'],
+    evidenceGrade: 'Reynolds 2019 (population générale) ; notice ispaghul (Fybogel SmPC)',
+    sources: ['Reynolds 2019 (The Lancet)', 'Wang 2025 (NHANES)', 'Notice ispaghul (Fybogel SmPC)'],
+    articleSlug: 'fibres-alimentaires-et-axe-intestin-coeur',
   },
   {
     id: 'soutien-nutritionnel-denutrition',
@@ -56,9 +70,9 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Huile de poisson 1 g', 'EPA + DHA', 'AGPI n-3', 'Omacor', 'GISSI-HF'],
     verdict: 'possible',
     summaryFr:
-      'Petit bénéfice de survie dans un ancien essai (GISSI-HF : 27 % contre 29 %, NNT 56 sur 4 ans) antérieur aux traitements modernes, mais compromis possible avec le risque de fibrillation atriale.',
+      'Petit bénéfice de survie dans un ancien essai (GISSI-HF : 27 % contre 29 %, NNT 56 sur 4 ans) antérieur aux traitements modernes, mais incertitude persistante sur un léger surrisque de fibrillation atriale.',
     mechanismOrCaveatFr:
-      'Dans GISSI-HF (870 mg d’EPA+DHA/j), la FA incidente était de 11,2 % contre 9,8 % (OR 1,16, non significatif). Les deux méta-analyses sur la FA pointent légèrement vers le haut aux faibles doses (Gencer 2021 : HR 1,12 ≤ 1 g/j ; Abuknesha 2026, 35 essais, financée en partie par l’industrie : OR 1,06–1,07 ≤ 1,5 g/j, non significatif, mais OR 1,14 significatif toutes doses confondues). Peu d’excès de saignements globalement (2,6 % contre 2,4 %), mais surveillance demandée avec aspirine, clopidogrel ou warfarine. Les gélules en vente libre ne sont pas équivalentes aux spécialités sur prescription.',
+      'Dans GISSI-HF (870 mg d’EPA+DHA/j), la FA incidente était de 11,2 % contre 9,8 % (OR 1,16, non significatif). Les méta-analyses montrent une tendance discrète à la hausse même aux faibles doses (Gencer 2021 : HR 1,12 ≤ 1 g/j ; Abuknesha 2026, 35 essais : OR 1,06–1,07 ≤ 1,5 g/j non significatif, mais OR 1,14 significatif toutes doses confondues). Peu d’excès de saignements globalement (2,6 % contre 2,4 %), mais surveillance demandée avec aspirine, clopidogrel ou warfarine (absence de données dédiées AOD). Les gélules en vente libre ne sont pas équivalentes aux spécialités sur prescription.',
     affectedPillars: ['antiplatelet', 'anticoagulant'],
     evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 2b (B-R) ; absent d’ESC 2026',
     sources: ['GISSI-HF (2008)', 'Gencer 2021', 'Abuknesha 2026', 'Javaid 2024', 'AHA/ACC/HFSA 2022'],
@@ -70,9 +84,9 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['CoQ10', 'Ubiquinone', 'Ubiquinol', 'Q-SYMBIO'],
     verdict: 'possible',
     summaryFr:
-      'Signal clinique intrigant mais fragile : un petit essai (Q-SYMBIO, 420 patients, FEVG moyenne 31 %, ~70 % ischémiques) a divisé par deux les événements majeurs à 2 ans, mais a été arrêté précocement, financé en partie par l’industrie, jamais répliqué et précède les médicaments modernes.',
+      'Signal clinique intrigant mais fragile : un petit essai (Q-SYMBIO, 420 patients, FEVG moyenne 31 %, ~70 % ischémiques) a réduit les événements majeurs à 2 ans, mais a été arrêté précocement, financé en partie par l’industrie, jamais répliqué et précède les ARNI et iSGLT2.',
     mechanismOrCaveatFr:
-      'Aucun résultat séparé pour les patients ischémiques ni effet sur la FEVG ou le NT-proBNP ; Khan 2021 et An 2022 semblent regrouper les mêmes 7 essais (1 827 patients) et le signal de mortalité disparaît sans Q-SYMBIO. Généralement bien tolérée (13 % contre 19 % d’effets indésirables dans Q-SYMBIO), aucune recommandation internationale ne la conseille. Interactions signalées avec la warfarine (Khan 2021) et les antihypertenseurs/anticoagulants (AHA 2022). Qualité et dosage variables entre compléments.',
+      'Aucun résultat séparé pour les patients ischémiques ni effet sur la FEVG ou le NT-proBNP ; le signal de mortalité disparaît dans les méta-analyses (Khan 2021, An 2022) dès qu’on retire Q-SYMBIO, et aucune preuve n’existe en ajout de la quadrithérapie moderne. Généralement bien tolérée, mais aucune recommandation internationale ne la conseille. Interactions signalées avec la warfarine (peut en diminuer l’effet) et les antihypertenseurs/anticoagulants (AHA 2022) ; qualité variable entre compléments.',
     affectedPillars: ['anticoagulant', 'raas_arni', 'beta_blocker'],
     evidenceGrade: 'Certitude faible (Q-SYMBIO, Khan 2021, Ezekowitz 2014) ; aucune recommandation',
     sources: ['Q-SYMBIO (2014, texte intégral)', 'Ezekowitz 2014', 'Khan 2021', 'An 2022', 'AHA 2022 CAM statement'],
@@ -94,17 +108,17 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
   },
   {
     id: 'cafe-cafeine',
-    nameFr: 'Café et caféine (consommation modérée)',
+    nameFr: 'Café et thé infusé classique (consommation habituelle modérée)',
     aliases: ['Café', 'Caféine', 'Expresso', 'Thé infusé classique'],
     verdict: 'possible',
     summaryFr:
-      'Une consommation modérée de café (environ 1 à 2 tasses/j) apparaît neutre à favorable sur la fibrillation atriale hors ICFER, mais n’a pas été spécifiquement étudiée dans l’ICFER.',
+      'Apparaît globalement neutre : dans le seul essai randomisé conduit dans l’ICFER (Zuchinali 2016, 51 patients dont 61 % avec un DAI), 500 mg de caféine sur une matinée n’ont pas augmenté les extrasystoles ventriculaires.',
     mechanismOrCaveatFr:
-      'Dans DECAF (200 patients après cardioversion pour FA, FEVG moyenne 54 %), environ 1 tasse/j a été associée à moins de récidives de FA (47 % contre 64 %). Dans CRAVE (adultes sains), le café a augmenté les extrasystoles ventriculaires (154 contre 102/j) et raccourci le sommeil de 36 min. Signalez toute palpitation à votre cardiologue et évitez les boissons énergisantes fortement caféinées.',
+      'Dans Zuchinali 2016 (FEVG moyenne 29 %), extrasystoles ventriculaires 185 sous caféine contre 239 sous placebo (ns), sans hausse à l’effort ; Graboys 1989 (arythmies ventriculaires) et la cohorte post-infarctus Alpha Omega (van Dongen 2017, HR 0,69) ne montrent pas de danger, et DECAF retrouve moins de récidives de FA avec ~1 tasse/j (alors que CRAVE notait plus d’ESV chez des adultes sains). Le repère EFSA de 400 mg/j ne vise que les adultes en bonne santé : convenez de votre limite personnelle avec votre cardiologue et ne confondez pas café ordinaire et boissons énergisantes.',
     affectedPillars: ['beta_blocker', 'other'],
-    evidenceGrade: 'Preuve indirecte (DECAF, CRAVE ; aucune donnée ICFER)',
-    sources: ['DECAF', 'CRAVE', 'Stevens 2021'],
-    articleSlug: 'alimentation-cardioprotectrice',
+    evidenceGrade: 'Un petit essai randomisé ICFER (Zuchinali 2016) ; cohortes et essais FA (DECAF)',
+    sources: ['Zuchinali 2016', 'Graboys 1989', 'van Dongen 2017', 'DECAF', 'CRAVE', 'EFSA 2015'],
+    articleSlug: 'cafeine-boissons-energisantes-et-stimulants',
   },
 
   // =========================================================================
@@ -147,17 +161,55 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     articleSlug: 'fer-oral-haute-biodisponibilite',
   },
   {
+    id: 'creatine-taurine-d-ribose-cetones',
+    nameFr: 'Compléments « énergie cardiaque » : créatine, taurine, D-ribose et boissons cétoniques',
+    aliases: [
+      'Créatine',
+      'Taurine',
+      'D-ribose',
+      'Ribose',
+      'Esters de cétones',
+      'Sels de cétones',
+      'BHB',
+      '3-hydroxybutyrate',
+      'DFGe créatine',
+    ],
+    verdict: 'not_supported',
+    summaryFr:
+      'Aucun bénéfice démontré sur la mortalité ou les hospitalisations dans l’ICFER ; chaque famille comporte des pièges pratiques (faux DFGe bas sous créatine, hypoglycémie sous D-ribose, charge en sodium des sels de cétones à éviter).',
+    mechanismOrCaveatFr:
+      'Créatine : neutre sur le pic de VO₂ et la marche à 6 mois (Carvalho 2012), élève artificiellement la créatinine (fausse baisse du DFGe pouvant induire des baisses inutiles d’ARNI/ARM/iSGLT2) et ajoute du poids hydrique. Taurine : revue systématique McGurk 2022 neutre et méta-analyse Tzang 2024 incluant un essai rétracté en avril 2026. D-ribose : aucun essai ICFER, abaisse la glycémie (plafond EFSA ~2,5 g/j vs 15 g/j dans les essais ; vigilance sous insuline/sulfamides). Esters de cétones : piste de recherche (+0,3 L/min de débit sur 14 jours, Berg-Hansen 2024, diabétiques exclus, baisse transitoire du pH sous iSGLT2) ; sels de cétones (BHB) riches en sodium à éviter.',
+    affectedPillars: ['raas_arni', 'mra', 'sglt2i', 'other'],
+    evidenceGrade: 'Carvalho 2012 ; McGurk 2022 ; EFSA 2018 ; Berg-Hansen 2024 (recherche uniquement)',
+    sources: ['Cochrane 2011', 'Carvalho 2012', 'López-Clemente 2025', 'McGurk 2022', 'EFSA 2018', 'Berg-Hansen 2024'],
+    articleSlug: 'complements-energetiques-cardiaques',
+  },
+  {
+    id: 'probiotiques-microbiote',
+    nameFr: 'Probiotiques et traitements ciblant le microbiote / TMAO pour le cœur',
+    aliases: ['Probiotiques', 'Saccharomyces boulardii', 'Rifaximine', 'TMAO', 'Microbiote intestinal', 'GutHeart'],
+    verdict: 'not_supported',
+    summaryFr:
+      'Aucun bénéfice démontré sur la fonction cardiaque dans l’ICFER : dans l’essai GutHeart (151 patients), ni la levure probiotique ni l’antibiotique intestinal n’ont amélioré la FEVG ou le NT-proBNP.',
+    mechanismOrCaveatFr:
+      'Bien qu’un TMAO élevé s’associe à un moins bon pronostic dans l’IC (Li 2022, RR 1,35), il dépend largement de l’élimination rénale et reste un marqueur de risque plutôt qu’une cible prouvée. Dans GutHeart (Awoyemi 2021, FEVG moyenne ~30 %, 53–59 % ischémiques), 3 mois de rifaximine ou de Saccharomyces boulardii n’ont modifié ni la FEVG (29,6 % et 30,3 % vs 31,5 %), ni le NT-proBNP, ni le TMAO.',
+    affectedPillars: ['other'],
+    evidenceGrade: 'Essai GutHeart (Awoyemi 2021, neutre) ; certitude modérée d’absence d’effet sur la FEVG',
+    sources: ['GutHeart (Awoyemi 2021)', 'Li 2022 (TMAO)', 'Lai 2025'],
+    articleSlug: 'fibres-alimentaires-et-axe-intestin-coeur',
+  },
+  {
     id: 'vitamine-d-seule',
     nameFr: 'Vitamine D seule (en dehors d’une carence documentée)',
     aliases: ['Cholécalciférol', 'Vitamine D3', '25(OH)D', 'ZymaD', 'Uvedose', 'Complément vitamine D'],
     verdict: 'not_supported',
     summaryFr:
-      'Carence très fréquente dans l’ICFER (56 à 83 %), mais aucun essai randomisé ne montre que la vitamine D réduit les décès ou hospitalisations ; dans les essais IC regroupés, la marche de 6 minutes était même raccourcie de 39 m.',
+      'Aucun bénéfice démontré sur la mortalité ou les hospitalisations IC (EVITA à 4 000 UI/j : davantage d’assistances circulatoires, HR 1,96 ; marche de 6 min -39 m dans les essais IC) ; corriger une carence avérée se discute pour les os et muscles, sous plafond de 4 000 UI/j et vigilance digoxine/thiazidiques.',
     mechanismOrCaveatFr:
-      'Les grands essais en population générale (VITAL-HF, méta-analyse de 21 essais sur 83 291 personnes, DO-HEALTH, An 2022 sur 63 essais : décès RR 0,99) et EVITA (HR 1,09 rapporté) ne montrent aucun bénéfice cardiaque. Dans les essais IC (Khan 2021, repris par Chua 2025), marche de 6 min -39,4 m (certitude élevée) malgré une hausse très hétérogène de la FEVG (+4,33 points, I² = 90 %). L’enquête NHANES (Hung 2023) ne montre qu’une association transversale non causale. Corriger une carence avérée reste raisonnable pour les os et les muscles (Kampka 2025), mais pas « pour le cœur ». Précautions signalées par l’AHA 2022 avec digoxine, inhibiteurs calciques et diurétiques.',
+      'Plafond adulte sans supervision : 4 000 UI (100 µg)/j toutes sources confondues (EFSA/IOM/NHS, fixé pour adultes sains, pas de preuve de sécurité dans l’IC). Un excès provoque une hypercalcémie (arrêt > 2,65 mmol/L sur RCP ZymaD) qui renforce la toxicité de la digoxine (ECG et calcémie recommandés sur RCP ZymaD/Fultium-D3) et s’additionne aux diurétiques thiazidiques ; la précaution AHA sur les inhibiteurs calciques se limite au vérapamil/diltiazem à fortes doses (un seul cas de 1981, non étayé pour l’amlodipine). En France, le dosage n’est pas remboursé pour l’IC (HAS) et le GRIO 2025 préfère les prises quotidiennes aux méga-doses espacées.',
     affectedPillars: ['addon_hf', 'loop_diuretic', 'other'],
-    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (Absence de bénéfice hors carence) ; Kampka 2025 ; Khan 2021',
-    sources: ['Kampka 2025', 'Khan 2021 (texte intégral)', 'Chua 2025', 'Hung 2023', 'An 2022', 'AHA/ACC/HFSA 2022'],
+    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (hors carence) ; EVITA ; EFSA 4 000 UI/j ; RCP ZymaD ; GRIO 2025',
+    sources: ['Kampka 2025', 'Khan 2021', 'EVITA / VINDICATE / Malihi 2016', 'EFSA 2023', 'RCP ZymaD / Fultium-D3', 'GRIO 2025', 'HAS 2013'],
     articleSlug: 'vitamine-d-insuffisance-cardiaque',
   },
   {
@@ -179,18 +231,18 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     ],
     verdict: 'not_supported',
     summaryFr:
-      'Aucun essai randomisé solide ne démontre de bénéfice cardiaque dans l’ICFER ; à ne pas débuter « au cas où » sans dosage sanguin ni vérification de la fonction rénale, avec espacement nécessaire vis-à-vis de certains médicaments.',
+      'Aucun essai randomisé solide ne démontre de bénéfice cardiaque dans l’ICFER ; doser avant de supplémenter (taux normal lié à HR 1,11 dans Yin 2026) et surveiller la fonction rénale ainsi que les IPP au long cours.',
     mechanismOrCaveatFr:
-      'Dans GALACTIC-HF (FEVG ≤ 35 %), un magnésium bas (17,6 %) ne prédisait pas de surrisque contrairement à un magnésium élevé (> 0,95 mmol/L). Chez les vétérans américains IC (Yin 2026, observationnel), le magnésium oral s’associait à moins d’événements si le taux était bas (HR 0,91) mais à davantage si le taux était normal (HR 1,11). Le seul essai oral de survie (MACH, 79 NYHA IV, orotate) est trop fragile et non répliqué. Limites supérieures : 250 mg/j (UE) et 350 mg/j (É.-U.). Risque d’hypermagnésémie si le DFGe diminue (contre-indiqué < 30 mL/min sur les notices françaises) — y compris lorsque l’oxyde de magnésium est pris comme laxatif contre la constipation (dans une petite cohorte de patients IC âgés au DFGe moyen d’environ 40 mL/min/1,73 m², 3 utilisateurs testés sur 15 avaient une hypermagnésémie asymptomatique ; Terashima 2025). Les IEC et AINS freinent son élimination et les iSGLT2 l’élèvent légèrement. Espacer des tétracyclines, fluoroquinolones et bisphosphonates (≥ 2 h), prendre la rosuvastatine (Crestor) ≥ 2 h avant tout antiacide aluminium/magnésium, surveiller le lien magnésium-digoxine, et attention aux produits magnésium-B6 (Magné B6 apporte 30 à 40 mg/j de B6 à la dose maximale, au-dessus de la limite UE de 12 mg/j).',
+      'Dans GALACTIC-HF (FEVG ≤ 35 %), un magnésium élevé (> 0,95 mmol/L), non un taux bas (17,6 %), prédisait un surrisque. Les IPP pris > 1 an abaissent la magnésémie (OR 1,71 Srinutta 2019 ; alertes MHRA 2012/FDA 2011, vigilance avec digoxine et diurétiques). Plafond scientifique UE (EFSA/BfR 2021) : 250 mg/j (diarrhée dès 300 mg/j), alors que le plafond légal français des compléments (Arrêté du 9 mai 2006) est à 300 mg/j DJM (US 350 mg/j) — aucun ne protège des reins fragiles (contre-indiqué < 30 mL/min sur Magné B6/Mag 2 ; 3/15 hypermagnésémies sous MgO laxatif dans Terashima 2025). Espacer antibiotiques/bisphosphonates (≥ 2 h), prendre la rosuvastatine ≥ 2 h avant un antiacide Al/Mg, et éviter l’excès de B6 (30–40 mg/j dans Magné B6 vs limite UE 12 mg/j).',
     affectedPillars: ['loop_diuretic', 'raas_arni', 'mra', 'sglt2i', 'lipid_lowering', 'addon_hf', 'other'],
-    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (hors carence) ; GALACTIC-HF 2026 ; Yin 2026 ; EFSA 250 mg/j',
+    evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (hors carence) ; GALACTIC-HF ; Yin 2026 ; EFSA/BfR 250 mg/j vs FR 300 mg/j',
     sources: [
       'Chimura 2026 (GALACTIC-HF)',
       'Yin 2026 (EHJ)',
       'Terashima 2025',
-      'Argeros 2025',
+      'MHRA 2012 / Srinutta 2019',
+      'BfR 2021 / EFSA / Arrêté 9 mai 2006',
       'Aal-Hamad 2023',
-      'NIH ODS / EFSA',
       'AHA/ACC/HFSA 2022',
     ],
     articleSlug: 'magnesium-insuffisance-cardiaque',
@@ -257,12 +309,12 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Panax ginseng', 'Ginseng rouge', 'Ginseng coréen', 'Ginseng américain', 'Éleuthérocoque', 'Ginseng sibérien'],
     verdict: 'not_supported',
     summaryFr:
-      'Aucun bénéfice démontré seul dans l’insuffisance cardiaque ; effet imprévisible sur la warfarine et risque d’interférence avec certains dosages sanguins de digoxine.',
+      'Aucun bénéfice démontré seul dans l’insuffisance cardiaque ; signaux discordants sur les saignements (warfarine et antiagrégants) et risque d’interférence avec certains dosages sanguins de digoxine.',
     mechanismOrCaveatFr:
-      'Le ginseng américain a réduit l’efficacité de la warfarine dans un essai (pic INR -0,19), alors que le ginseng asiatique s’est montré neutre dans de petites études ; un cas d’hémorragie grave peropératoire a été décrit. Peut fausser d’anciens dosages de digoxine (et élever la digoxinémie avec l’éleuthérocoque). La teneur en principes actifs varie jusqu’à 36 fois selon les marques.',
-    affectedPillars: ['anticoagulant', 'addon_hf'],
-    evidenceGrade: 'Certitude faible ; EMA (usage traditionnel fatigue uniquement)',
-    sources: ['Yuan 2004', 'Lee 2010', 'Dasgupta', 'NCCIH', 'EMA'],
+      'Le ginseng américain a réduit l’effet de la warfarine (pic INR -0,19) tandis que le ginseng asiatique était neutre sur l’INR ; en vie réelle à Taïwan, signal hémorragique instable avec aspirine/clopidogrel (Tsai 2017, aOR 3,27 vs 1,49 ns) mais taux inférieur dans une cohorte 99 % warfarine (Hsu 2022, aHR 0,762). Aucun essai PK humain avec les AOD ; cité par AHA 2016 parmi les produits potentiellement nocifs dans l’IC. Peut fausser d’anciens dosages de digoxine (et élever la digoxinémie avec l’éleuthérocoque). Teneur variant jusqu’à 36 fois selon les marques.',
+    affectedPillars: ['anticoagulant', 'antiplatelet', 'addon_hf'],
+    evidenceGrade: 'Certitude faible ; AHA 2016 ; EMA (usage traditionnel fatigue uniquement)',
+    sources: ['Yuan 2004', 'Lee 2010', 'Tsai 2017', 'Hsu 2022', 'AHA 2016', 'NCCIH'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -285,12 +337,12 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Curcuma gélules', 'Curcumine', 'Pipérine + curcuma', 'Curcuma liposomal'],
     verdict: 'not_supported',
     summaryFr:
-      'Aucun bénéfice prouvé dans l’insuffisance cardiaque ; prudence avec les anticoagulants (cas rares sous warfarine) et signal de toxicité hépatique pour les formes à forte absorption.',
+      'Aucun bénéfice prouvé dans l’insuffisance cardiaque ; prudence avec les anticoagulants (aucun essai valide avec les AOD) et signal de toxicité hépatique pour les formes à forte absorption.',
     mechanismOrCaveatFr:
-      'L’épice culinaire habituelle ne pose pas de problème particulier, mais les compléments concentrés (souvent associés à la pipérine pour augmenter l’absorption) font l’objet de deux cas rapportés d’interaction avec la warfarine et d’un avertissement du NIH concernant des atteintes hépatiques rares.',
-    affectedPillars: ['anticoagulant', 'other'],
-    evidenceGrade: 'Données faibles (cas cliniques et alerte NIH)',
-    sources: ['NCCIH / NIH', 'Hatfield 2022'],
+      'L’épice culinaire habituelle ne pose pas de problème particulier, mais les compléments concentrés (souvent associés à la pipérine) font l’objet de deux cas rapportés sous warfarine, d’un signal mécanistique CYP/P-gp/antiplaquettaire (Grzesk 2021) et d’un avertissement du NIH sur des atteintes hépatiques rares. La petite étude Hu 2018 (Meriva) qui évaluait l’INR sous dabigatran n’est pas probante car l’INR n’est pas un test valide pour le dabigatran.',
+    affectedPillars: ['anticoagulant', 'antiplatelet', 'other'],
+    evidenceGrade: 'Données faibles (très faibles pour les AOD ; alerte hépatique NIH)',
+    sources: ['NCCIH / NIH', 'Hatfield 2022', 'Grzesk 2021', 'Hu 2018'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
 
@@ -299,16 +351,16 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
   // =========================================================================
   {
     id: 'substituts-sel-potassium',
-    nameFr: 'Substituts de sel au potassium et comprimés de potassium',
+    nameFr: 'Substituts de sel au potassium, comprimés de potassium et additifs potassiques cachés',
     aliases: ['Sel de régime', 'Sel pauvre en sodium', 'Chlorure de potassium', 'Sel au potassium', 'LoSalt', 'Complément potassium'],
     verdict: 'avoid',
     summaryFr:
       'Peuvent provoquer une hyperkaliémie dangereuse (troubles du rythme cardiaque graves) chez toute personne prenant un ARNI, IEC, ARA2 ou ARM.',
     mechanismOrCaveatFr:
-      'Les sels de régime contiennent 10 à 50 % de chlorure de potassium. Les essais Cochrane 2022 en population générale ont exclu les patients à risque et n’incluaient aucun patient insuffisant cardiaque. La notice du sacubitril/valsartan (Entresto) cite explicitement ces substituts comme cause d’hyperkaliémie (dans PARADIGM-HF, 16 % dépassaient déjà 5,5 mmol/L sans supplément). Ne jamais confondre avec un sel potassique prescrit par votre médecin en cas d’hypokaliémie.',
+      'Les sels de régime contiennent 10 à 50 % de chlorure de potassium, et des additifs potassiques se cachent aussi dans 23,3 % des produits industriels « réduits en sodium » (+44 % de potassium dans certaines viandes préparées, Parpia 2018 / Picard 2024–2025). Les essais Cochrane 2022 ont exclu les patients à risque et n’incluaient aucun patient IC. Les notices Entresto et ARM (Inspra, Spironolactone) mettent formellement en garde contre ces substituts (16 % de K+ > 5,5 mmol/L dans PARADIGM-HF sans supplément). Ne jamais confondre avec un sel potassique prescrit par votre médecin en cas d’hypokaliémie.',
     affectedPillars: ['raas_arni', 'mra'],
-    evidenceGrade: 'Notice Entresto ; NICE NG106 (1.9.11) ; Cochrane 2022 (exclusions)',
-    sources: ['Notice sacubitril/valsartan (Entresto)', 'Cochrane 2022', 'NICE NG106', 'BHF'],
+    evidenceGrade: 'Notices Entresto / Inspra / Spironolactone ; NICE NG106 (1.9.11) ; Cochrane 2022',
+    sources: ['Notice sacubitril/valsartan (Entresto)', 'Notices FDA Inspra / Spironolactone', 'Cochrane 2022', 'Parpia 2018 / Picard 2024–2025', 'NICE NG106'],
     articleSlug: 'sel-et-liquides-insuffisance-cardiaque',
   },
   {
@@ -319,7 +371,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Formellement déconseillés dans l’insuffisance cardiaque : provoquent rétention d’eau et de sel, perte d’efficacité des diurétiques, décompensation et insuffisance rénale aiguë.',
     mechanismOrCaveatFr:
-      'L’inhibition des prostaglandines rénales réduit la perfusion des reins (risque majeur d’insuffisance rénale aiguë avec l’association ARNI/IEC/ARA2 + diurétique) et favorise la rétention hydrosodée. Le consensus européen Abdin 2025 (EJHF) confirme un risque dépendant de la dose (notamment diclofénac, indométacine, piroxicam, et célécoxib à forte dose) et cite le paracétamol ou les AINS topiques en gel/crème comme alternatives à discuter avec le médecin ou le pharmacien. Attention aux médicaments combinés contre le rhume contenant de l’ibuprofène. L’aspirine à faible dose prescrite en prévention coronaire n’est pas concernée.',
+      'L’inhibition des prostaglandines rénales réduit la perfusion des reins (risque majeur d’insuffisance rénale aiguë avec l’association ARNI/IEC/ARA2 + diurétique) et favorise la rétention hydrosodée. Le consensus européen Abdin 2025 (EJHF) confirme un risque dépendant de la dose (notamment diclofénac, indométacine, piroxicam, et célécoxib à forte dose) et cite le paracétamol ou les AINS topiques en gel/crème comme alternatives à discuter avec le médecin ou le pharmacien. Attention aux spécialités anti-rhume associant ibuprofène et pseudoéphédrine (Nurofen Rhume, Rhinadvil). L’aspirine à faible dose prescrite en prévention coronaire n’est pas concernée.',
     affectedPillars: ['raas_arni', 'mra', 'loop_diuretic', 'sglt2i', 'antiplatelet', 'anticoagulant'],
     evidenceGrade: 'ESC 2026 Classe III, niveau B2 ; AHA/ACC/HFSA 2022 Classe 3 (Danger) ; Abdin 2025',
     sources: ['ESC 2026', 'Abdin 2025 (EJHF)', 'AHA/ACC/HFSA 2022', 'Notice Entresto'],
@@ -327,17 +379,72 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
   },
   {
     id: 'decongestionnants-pseudoephedrine',
-    nameFr: 'Décongestionnants vasoconstricteurs (pseudoéphédrine, médicaments anti-rhume)',
-    aliases: ['Pseudoéphédrine', 'Dolirhume', 'Actifed', 'Nurofen Rhume', 'Humex Rhume', 'Vasoconstricteurs nasaux'],
+    nameFr: 'Décongestionnants oraux contre le rhume (pseudoéphédrine, phényléphrine)',
+    aliases: ['Pseudoéphédrine', 'Phényléphrine', 'Dolirhume', 'Actifed', 'Nurofen Rhume', 'Humex Rhume', 'Rhinadvil', 'Vasoconstricteurs nasaux'],
     verdict: 'avoid',
     summaryFr:
-      'Les médicaments contre le rhume contenant des vasoconstricteurs (pseudoéphédrine) élèvent la tension artérielle, accélèrent le cœur et peuvent déclencher poussée hypertensive, troubles du rythme ou décompensation.',
+      'Passés sur ordonnance (Liste I) en France depuis le 11 décembre 2024 pour risques rares d’infarctus, d’AVC et de spasmes vasculaires cérébraux (PRES/RCVS) ; certains associent en plus de l’ibuprofène, et la phényléphrine orale est jugée inefficace.',
     mechanismOrCaveatFr:
-      'Ces sympathomimétiques stimulent les récepteurs adrénergiques, s’opposent directement à l’effet des bêtabloquants et augmentent la postcharge cardiaque. En France, les vasoconstricteurs oraux par pseudoéphédrine font l’objet d’alertes sanitaires strictes et sont contre-indiqués en cas de maladie cardiovasculaire grave ou d’hypertension non contrôlée. Privilégiez le lavage nasal au sérum physiologique et demandez conseil à votre pharmacien.',
+      'Sympathomimétiques vasoconstricteurs s’opposant aux bêtabloquants et augmentant la postcharge. À la suite de la revue EMA 2024 (PRES, RCVS), l’ANSM a classé tous les décongestionnants oraux à la pseudoéphédrine sur Liste I le 11 décembre 2024 tout en continuant à les déconseiller pour un rhume. Les RCP BDPM (Actifed Rhume, Dolirhume) contre-indiquent coronaropathie sévère, HTA sévère/non contrôlée, insuffisance rénale et association au méthylphénidate ; Nurofen Rhume et Rhinadvil contiennent en outre de l’ibuprofène (AINS Classe III). Aux États-Unis, la FDA a proposé en novembre 2024 le retrait OTC de la phényléphrine orale faute d’efficacité. Privilégiez le lavage nasal au sérum physiologique et l’avis de votre pharmacien.',
     affectedPillars: ['beta_blocker', 'raas_arni', 'addon_hf'],
-    evidenceGrade: 'Sécurité pharmacologique / contre-indication cardiovasculaire',
-    sources: ['AHA 2016/2022', 'Alerte pharmacovigilance vasoconstricteurs'],
-    articleSlug: 'interactions-complements-aliments-medicaments',
+    evidenceGrade: 'Décision ANSM 11 déc. 2024 (Liste I) ; EMA 2024 ; RCP BDPM ; FDA nov. 2024 ; AHA 2016',
+    sources: ['ANSM (décembre 2024)', 'EMA PRAC/CHMP (2024)', 'RCP BDPM Actifed/Dolirhume', 'FDA (novembre 2024)', 'AHA 2016'],
+    articleSlug: 'cafeine-boissons-energisantes-et-stimulants',
+  },
+  {
+    id: 'boissons-energisantes-stimulants',
+    nameFr: 'Boissons énergisantes, brûleurs de graisse, pré-entraînements et poudres de caféine',
+    aliases: [
+      'Boissons énergisantes',
+      'Red Bull',
+      'Monster',
+      'Brûleurs de graisse',
+      'Pre-workout',
+      'Pré-entraînement',
+      'Orange amère',
+      'Synéphrine',
+      'Éphédra',
+      'DMAA',
+      'Yohimbine',
+      'Comprimés de caféine',
+    ],
+    verdict: 'avoid',
+    summaryFr:
+      'Les boissons énergisantes allongent le QTc et élèvent la tension au-delà de la seule caféine ; les brûleurs de graisse et pré-entraînements empilent des stimulants déconseillés par l’ANSES et l’AHA et contiennent fréquemment des médicaments cachés.',
+    mechanismOrCaveatFr:
+      'Environ 1 L de boisson énergisante allonge le QTc de 6 à 8 ms et élève la PA systolique de ~5 mmHg davantage que le placebo ou la même dose de caféine seule (Shah 2019, Fletcher 2017) ; l’ANSES (2013) recommande de ne jamais en boire avec de l’alcool ni pendant l’effort physique. L’ANSES (2014, 2016) et l’AHA (2016) déconseillent orange amère (p-synéphrine + caféine), éphédra, DMAA, yohimbine et compléments minceur/sportifs en cas de cardiopathie : 85 % des 317 produits minceur épinglés par la FDA contenaient de la sibutramine cachée, certains des diurétiques de l’anse ou du propranolol (Tucker 2018). Comprimés et poudres de caféine exposent à des erreurs de dose mortelles par fibrillation ventriculaire (Cappelletti 2018).',
+    affectedPillars: ['beta_blocker', 'raas_arni', 'loop_diuretic', 'addon_hf', 'other'],
+    evidenceGrade: 'Avis ANSES (2013, 2014, 2016) ; AHA 2016 ; Shah 2019 ; Fletcher 2017 ; Tucker 2018',
+    sources: ['ANSES 2013, 2014 et 2016', 'Shah 2019', 'Fletcher 2017', 'AHA 2016', 'Tucker 2018', 'Cappelletti 2018'],
+    articleSlug: 'cafeine-boissons-energisantes-et-stimulants',
+  },
+  {
+    id: 'stimulants-tdah',
+    nameFr: 'Stimulants prescrits pour le TDAH (méthylphénidate, lisdexamfétamine — avis spécialisé impératif)',
+    aliases: ['Méthylphénidate', 'Ritaline', 'Concerta', 'Medikinet', 'Quasym', 'Lisdexamfétamine', 'Xurta', 'Elvanse', 'TDAH'],
+    verdict: 'avoid',
+    summaryFr:
+      'Les RCP français et britanniques contre-indiquent ou déconseillent formellement ces stimulants dans l’insuffisance cardiaque, la cardiomyopathie et après un infarctus ; ne jamais initier ni arrêter un traitement prescrit sans réévaluation conjointe spécialiste + cardiologue.',
+    mechanismOrCaveatFr:
+      'Les RCP BDPM (Ritaline, sept. 2025) et UK eMC (Concerta XL) contre-indiquent explicitement le méthylphénidate en cas d’IC, cardiomyopathie, infarctus, angor ou arythmies graves (et l’association à la pseudoéphédrine) ; ceux de la lisdexamfétamine (Xurta, août 2026 ; Elvanse) contre-indiquent les MCV symptomatiques et mettent en garde dans l’IC/cardiomyopathie (possible allongement QTc). Les cohortes nationales 2024–2026 en population TDAH montrent une hausse du risque CV au long cours (Suède Zhang 2024 AOR 1,23–1,27 ; France SNDS Berthod 2026 HR calibré 1,85 ; Danemark Holt 2024 signal IC à 10 ans RR 1,7 à ≥ 1 DDD/j), sans essai dans l’ICFER. Toute conduite à tenir (maintien, arrêt, alternative non stimulante) relève uniquement d’une concertation psychiatre/neurologue + cardiologue.',
+    affectedPillars: ['beta_blocker', 'raas_arni', 'addon_hf', 'other'],
+    evidenceGrade: 'RCP officiels BDPM (Ritaline, Xurta) et eMC ; AHA 2016 ; cohortes Zhang 2024 / Holt 2024 / Berthod 2026',
+    sources: ['RCP BDPM Ritaline et Xurta', 'UK eMC Concerta XL et Elvanse', 'Zhang 2024', 'Holt 2024', 'Berthod 2026', 'AHA 2016'],
+    articleSlug: 'cafeine-boissons-energisantes-et-stimulants',
+  },
+  {
+    id: 'berberine',
+    nameFr: 'Berbérine (compléments cholestérol / glycémie)',
+    aliases: ['Berbérine', 'Berberis', 'Épine-vinette', 'Hydraste du Canada', 'Ozempic naturel'],
+    verdict: 'avoid',
+    summaryFr:
+      'Inhibe plusieurs enzymes hépatiques clés (CYP3A4, CYP2D6, CYP2C9) et la glycoprotéine P sans preuve clinique cardiaque moderne ; l’ANSES déconseille de l’associer à des médicaments.',
+    mechanismOrCaveatFr:
+      'Abaisse le LDL-c d’environ 0,19 g/L (0,5 mmol/L) dans des essais courts sans aucune donnée sur les infarctus ou la mortalité ni en ajout d’une statine (Liu 2025 ; seul essai IC Zeng 2003 non répliqué). Chez l’humain, augmente la sonde CYP3A4 (+40 %), multiplie par ~9 le ratio CYP2D6, double CYP2C9 (Guo 2012, résumés) et élève la ciclosporine (Wu 2005), rendant plausibles des interactions avec métoprolol/carvédilol, warfarine, apixaban/rivaroxaban, digoxine, simvastatine/atorvastatine et ivabradine. Teneur réelle très variable (33 à 100 %, Funk 2018). Avis préalable du pharmacien ou du cardiologue obligatoire, surtout sous anticoagulant ou digoxine.',
+    affectedPillars: ['anticoagulant', 'beta_blocker', 'lipid_lowering', 'addon_hf', 'raas_arni'],
+    evidenceGrade: 'Avis ANSES 2019 ; Guo 2012 ; Wu 2005 ; Liu 2025 (aucune donnée d’événement clinique)',
+    sources: ['Avis ANSES 2019', 'Guo 2012', 'Wu 2005', 'Liu 2025', 'Funk 2018', 'MSKCC 2025'],
+    articleSlug: 'berberine-cholesterol-et-interactions',
   },
   {
     id: 'reglisse-glycyrrhizine',
@@ -359,12 +466,12 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Millepertuis', 'Hypericum', 'St John’s wort', 'Plante antidépressive'],
     verdict: 'avoid',
     summaryFr:
-      'Diminue fortement l’efficacité de plusieurs médicaments cardiaques essentiels (anticoagulants, ivabradine, digoxine, statines) et expose à un syndrome sérotoninergique avec certains antidépresseurs.',
+      'Nommément cité sur les RCP européens, français et britanniques pour les quatre AOD, l’éplérénone, l’ivabradine et l’atorvastatine (perte d’efficacité), tandis qu’il agit en sens inverse sur le clopidogrel en majorant le risque hémorragique.',
     mechanismOrCaveatFr:
-      'Puissant inducteur du CYP3A4 et de la glycoprotéine P (variable selon le taux d’hyperforine). Les notices officielles imposent de l’éviter avec l’apixaban (Eliquis) et l’ivabradine (Procoralan) ; le NIH signale aussi une baisse d’efficacité de la warfarine, de la digoxine et de la simvastatine. Ne débutez jamais du millepertuis en cas de baisse de moral sans avis médical.',
-    affectedPillars: ['anticoagulant', 'addon_hf', 'lipid_lowering', 'other'],
-    evidenceGrade: 'Élevée pour les molécules citées (notices officielles)',
-    sources: ['Notices Eliquis et Procoralan', 'NCCIH', 'Nicolussi 2020'],
+      'Puissant inducteur des CYP3A4, CYP2C9, CYP2C19 et de la P-gp (selon la teneur en hyperforine). RCP EMA : éviter avec dabigatran (Pradaxa) et rivaroxaban (Xarelto ; AUC -24 % dans Scholz 2021) ; prudence / non recommandé avec apixaban (Eliquis ; éviter sur notice US) ; prudence avec édoxaban (Lixiana). RCP BDPM/eMC : baisse de 30 % de l’AUC d’éplérénone (Inspra, non recommandé), baisse de l’atorvastatine (Tahor, LDL +0,13 g/L dans Andren 2007 ; aucun avertissement sur la rosuvastatine) et avertissement de classe sur le ticagrélor (Brilique). À l’inverse, sur le clopidogrel (Plavix), l’induction CYP2C19 augmente le métabolite actif et le risque de saignement (déconseillé par l’EMA). Affaiblit aussi ivabradine, digoxine, warfarine et simvastatine, et expose au syndrome sérotoninergique avec les antidépresseurs.',
+    affectedPillars: ['anticoagulant', 'antiplatelet', 'mra', 'addon_hf', 'lipid_lowering', 'other'],
+    evidenceGrade: 'Élevée (vérification directe des RCP EMA, FR BDPM, UK eMC et FDA)',
+    sources: ['RCP EMA (Pradaxa, Xarelto, Eliquis, Lixiana, Brilique, Plavix)', 'RCP BDPM (Inspra, Tahor)', 'Notices Corlanor/Eliquis', 'Scholz 2021 / Andren 2007 / Lau 2011', 'NCCIH'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -425,16 +532,16 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
   },
   {
     id: 'extrait-the-vert-egcg',
-    nameFr: 'Extrait concentré de thé vert (EGCG, gélules « brûle-graisses »)',
-    aliases: ['Extrait de thé vert', 'EGCG', 'Catéchines concentrées', 'Brûle-graisses', 'Gélules thé vert'],
+    nameFr: 'Extrait concentré de thé vert (EGCG, gélules « brûle-graisses ») — digoxine, IEC et statines',
+    aliases: ['Extrait de thé vert', 'Thé vert et digoxine', 'EGCG', 'Catéchines concentrées', 'Brûle-graisses', 'Gélules thé vert'],
     verdict: 'avoid',
     summaryFr:
-      'Peut réduire fortement l’absorption de certains médicaments cardiaques (IEC, bêtabloquant, statines) et expose à un risque rare mais imprévisible d’atteinte hépatique grave.',
+      'Réduit de 31 % à 33 % l’exposition humaine à la digoxine et abaisse nettement l’absorption du lisinopril et de certaines statines, tout en exposant à un risque rare mais imprévisible d’atteinte hépatique grave.',
     mechanismOrCaveatFr:
-      'Bloque des transporteurs intestinaux : dans de petites études chez des volontaires sains, diminution de l’exposition au lisinopril (-67 %), au nadolol (-85 % même avec du thé infusé répété), à la rosuvastatine (-19 %) et à l’atorvastatine (-22 à -24 %). L’EFSA signale une toxicité hépatique dès 800 mg/j d’EGCG (plafond réglementaire UE 2022/2340), avec des cas graves rapportés dès 140 mg/j. Peut aussi augmenter la tension (caféine/stimulants associés). Distinct d’une consommation modérée de thé vert ordinaire.',
-    affectedPillars: ['raas_arni', 'beta_blocker', 'lipid_lowering'],
-    evidenceGrade: 'EFSA 2018 ; Règlement UE 2022/2340 ; études PK (Misaka, Kim)',
-    sources: ['EFSA 2018', 'Règlement UE 2022/2340', 'Misaka 2014/2021', 'USP 2020', 'Hoofnagle 2021'],
+      'Bloque des transporteurs intestinaux : dans des études humaines chez volontaires sains, baisse de la digoxine (-31 % en prise unique et -33 % après 13 jours avec 300 mg de catéchines, Kim 2018), du lisinopril (-67 %), du nadolol (-85 %), du céliprolol (-98,6 %), de la rosuvastatine (-19 %) et de l’atorvastatine (-22 à -24 %). Aucune étude PK humaine n’existe pour les bêtabloquants de l’ICFER (données murines uniquement pour le bisoprolol, Zeng 2022), les ARNI ou les iSGLT2. Toxicité hépatique signalée dès 800 mg/j d’EGCG par l’EFSA (plafond UE 2022/2340 ; cas graves dès 140 mg/j) et hausse tensionnelle possible. Distinct d’une consommation modérée de thé vert infusé classique.',
+    affectedPillars: ['addon_hf', 'raas_arni', 'beta_blocker', 'lipid_lowering'],
+    evidenceGrade: 'Kim 2018 (digoxine humain) ; EFSA 2018 ; Règlement UE 2022/2340 ; études PK (Misaka, Kim)',
+    sources: ['Kim 2018 (digoxine)', 'EFSA 2018', 'Règlement UE 2022/2340', 'Misaka 2014/2021', 'Kyriacou 2025 / Zeng 2022', 'Hoofnagle 2021'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -445,7 +552,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Sous antivitamine K (warfarine — Coumadine, fluindione — Préviscan, acénocoumarol — Sintrom), les compléments contenant de la vitamine K ou les changements brusques de consommation déséquilibrent l’INR.',
     mechanismOrCaveatFr:
-      'Les AVK agissent en bloquant le cycle de la vitamine K. Un apport soudain élevé (complément de vitamine K1/K2, cure de thé vert ou changement alimentaire brutal) diminue l’INR et expose à un risque de caillot (thrombus), tandis qu’un arrêt brutal augmente le risque hémorragique. Il ne faut pas supprimer les légumes verts, mais garder une consommation régulière et éviter tout complément contenant de la vitamine K sans avis médical. (Non applicable aux AOD comme l’apixaban ou le rivaroxaban.)',
+      'Les AVK agissent en bloquant le cycle de la vitamine K. Un apport soudain élevé (complément de vitamine K1/K2, cure de thé vert ou changement alimentaire brutal) diminue l’INR et expose à un risque de caillot (thrombus), tandis qu’un arrêt brutal augmente le risque hémorragique. Il ne faut pas supprimer les légumes verts, mais garder une consommation régulière et éviter tout complément contenant de la vitamine K sans avis médical. (Non applicable aux AOD comme l’apixaban ou le rivaroxaban ; pour le rivaroxaban 15–20 mg, la prise avec un repas est en revanche indispensable.)',
     affectedPillars: ['anticoagulant'],
     evidenceGrade: 'Mécanisme pharmacologique direct des AVK',
     sources: ['Suivi des antivitamines K', 'Interactions aliments-médicaments'],
@@ -457,26 +564,26 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     aliases: ['Danshen', 'Sauge rouge', 'Salvia miltiorrhiza', 'Compound Danshen'],
     verdict: 'avoid',
     summaryFr:
-      'Associé à des cas de surdosage hémorragique grave sous warfarine, fausse certains dosages de digoxine et accélère l’élimination d’autres médicaments en prise régulière.',
+      'Associé à des cas de surdosage hémorragique grave sous warfarine et à un signal de saignements précoces multipliés par ~4 sous AOD (Liao 2026), fausse certains dosages de digoxine et induit CYP3A4/P-gp.',
     mechanismOrCaveatFr:
-      'Inhibe l’agrégation plaquettaire, potentialise la warfarine (3 cas de surdosage majeur rapportés, plus un cas sur valve mécanique) et induit CYP3A4 et P-gp en usage répété. Qualité très aléatoire (39,7 % de non-conformité dans les contrôles chinois). L’essai QUEST concernait une formule hospitalière chinoise à 11 plantes et ne valide jamais le danshen acheté seul.',
+      'Inhibe l’agrégation plaquettaire et potentialise la warfarine (3 cas de surdosage majeur + 1 cas sur valve mécanique). Dans une série autocontrôlée taïwanaise majoritairement sous AOD (Liao 2026, 146 patients), les saignements ont augmenté aux jours 1–14 (aIRR 3,98) et 15–28 (aIRR 3,99), y compris digestifs (3,79) et intracrâniens (3,59), sans saignement majeur hospitalisé et avec atténuation en analyse premier événement (digestif aIRR 2,02) ; une cohorte antérieure à 99 % sous warfarine (Hsu 2022) était neutre sur les saignements hospitalisés (aHR 0,948 ns). Qualité très aléatoire (39,7 % de non-conformité en Chine). À éviter avec tout anticoagulant ; l’essai QUEST (11 plantes) ne valide jamais le danshen seul.',
     affectedPillars: ['anticoagulant', 'antiplatelet', 'addon_hf'],
-    evidenceGrade: 'Cas cliniques graves et études pharmacocinétiques',
-    sources: ['Chan 2001', 'Izzat 1998', 'Qiu 2010-2014', 'Dasgupta'],
+    evidenceGrade: 'Cas cliniques graves warfarine ; Liao 2026 (AOD, observationnel) ; études PK',
+    sources: ['Liao 2026', 'Hsu 2022', 'Chan 2001', 'Izzat 1998', 'Qiu 2010–2014', 'Dasgupta'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
     id: 'ginkgo-biloba',
     nameFr: 'Ginkgo biloba (avec anticoagulants ou antiagrégants)',
-    aliases: ['Ginkgo', 'Ginkgo biloba', 'Tanakan', 'Complément mémoire'],
+    aliases: ['Ginkgo', 'Ginkgo biloba', 'EGb 761', 'Tanakan', 'Complément mémoire'],
     verdict: 'avoid',
     summaryFr:
-      'Risque accru de saignement rapporté avec la warfarine (HR 1,38 en observationnel) et cas d’hémorragies graves ; la monographie européenne demande un arrêt 3 à 4 jours avant toute chirurgie.',
+      'Signaux hémorragiques rapportés avec la warfarine (HR 1,38), le clopidogrel (OR 1,10) et l’aspirine (OR 1,12), malgré un essai neutre financé par le fabricant sur EGb 761 + rivaroxaban ; arrêt EMA 3 à 4 jours avant chirurgie.',
     mechanismOrCaveatFr:
-      'Bien que 18 petits essais n’aient pas montré d’effet sur les tests de coagulation en laboratoire, une vaste étude observationnelle américaine a retrouvé davantage de saignements sous warfarine et l’EMA recommande un avis médical en cas d’anticoagulant (prudence particulière avec le dabigatran) ou d’antiagrégant (aspirine, clopidogrel). Aucune donnée disponible avec apixaban, rivaroxaban ou ticagrélor.',
+      'Bien que 18 petits essais n’aient pas modifié les tests de coagulation et que l’extrait standardisé EGb 761 (240 mg/j × 8 j) n’ait pas altéré une dose unique de rivaroxaban chez 41 volontaires sains (Hoerr 2022, financé par le fabricant), des études de vie réelle montrent un signal hémorragique sous warfarine (Stoddard 2015, HR 1,38) et avec clopidogrel/aspirine (Mai 2025, effectifs AOD et ticagrélor trop petits pour conclure). L’EMA demande un avis médical sous anticoagulant (prudence avec le dabigatran) ou antiagrégant, et un arrêt 3 à 4 jours avant chirurgie.',
     affectedPillars: ['anticoagulant', 'antiplatelet'],
-    evidenceGrade: 'Monographie EMA ; Stoddard 2015 (HR 1,38)',
-    sources: ['Monographie EMA Ginkgo', 'Stoddard 2015', 'Kellermann et Kloft 2011', 'NCCIH'],
+    evidenceGrade: 'Monographie EMA ; Stoddard 2015 (HR 1,38) ; Hoerr 2022 vs Mai 2025 (discordants)',
+    sources: ['Monographie EMA Ginkgo', 'Stoddard 2015', 'Hoerr 2022', 'Mai 2025', 'NCCIH'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -487,10 +594,10 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Effet antiagrégant plaquettaire pouvant s’ajouter à celui de l’aspirine, du clopidogrel ou des anticoagulants ; la monographie européenne recommande d’arrêter 7 jours avant une chirurgie.',
     mechanismOrCaveatFr:
-      'Cet avertissement vise uniquement les compléments et extraits concentrés (pas l’ail utilisé normalement en cuisine). Un petit essai d’extrait d’ail vieilli sous warfarine était rassurant, mais les données manquent avec les AOD et la bithérapie antiagrégante : par prudence, éviter sans accord de votre cardiologue.',
+      'Cet avertissement vise uniquement les compléments et extraits concentrés (pas l’ail utilisé normalement en cuisine). Un petit essai d’extrait d’ail vieilli sous warfarine était rassurant, mais aucun essai humain n’existe avec les AOD ni avec le clopidogrel ou le ticagrélor (signal mécanistique P-gp + antiplaquettaire, Grzesk 2021) : par prudence, éviter sans accord de votre cardiologue.',
     affectedPillars: ['antiplatelet', 'anticoagulant'],
     evidenceGrade: 'Monographie EMA (prudence + arrêt 7 jours avant chirurgie)',
-    sources: ['Monographie EMA Ail', 'Macan 2006', 'NCCIH'],
+    sources: ['Monographie EMA Ail', 'Macan 2006', 'Grzesk 2021', 'NCCIH'],
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
@@ -523,10 +630,10 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Aucun bénéfice sur l’infarctus ou la mortalité dans 15 essais (Cochrane 2017, 71 422 personnes), tendance défavorable après infarctus pour la triple association B9 + B12 + B6 (NORVIT, RR 1,22), et risque de neuropathie sensitive avec la vitamine B6 à forte dose.',
     mechanismOrCaveatFr:
-      'Dans NORVIT (3 749 patients après infarctus, B6 à 40 mg/j), la triple association B9 + B12 + B6 a tendu vers davantage de récidives coronaires ou AVC (RR 1,22 ; IC 95 % 1,00–1,50 ; p = 0,05) ; dans la néphropathie diabétique, de fortes doses combinées ont accéléré le déclin rénal (ESPEN 2022). L’acide folique au-delà de 1 mg/j peut masquer une carence en vitamine B12, et la vitamine B6 au long cours expose à une neuropathie sensitive (signes dès 100 mg/j ; limite supérieure européenne EFSA 12 mg/j, dépassée par certains produits magnésium-B6). À ne pas confondre avec la correction médicale d’une carence documentée en B12 (sous metformine ou IPP) ou en B1 (sous diurétiques de l’anse).',
+      'Dans NORVIT (3 749 patients après infarctus, B6 à 40 mg/j), la triple association B9 + B12 + B6 a tendu vers davantage de récidives coronaires ou AVC (RR 1,22 ; IC 95 % 1,00–1,50 ; p = 0,05) ; dans la néphropathie diabétique, de fortes doses combinées ont accéléré le déclin rénal (ESPEN 2022). L’acide folique au-delà de 1 mg/j peut masquer une carence en vitamine B12, et la vitamine B6 au long cours expose à une neuropathie sensitive (signes dès 100 mg/j ; limite supérieure européenne EFSA 12 mg/j, dépassée par certains produits magnésium-B6). À ne pas confondre avec la correction médicale d’une carence documentée en B12 (sous metformine ou IPP ≥ 2 ans, OR 1,65 Lam 2013) ou en B1 (sous diurétiques de l’anse).',
     affectedPillars: ['antiplatelet', 'loop_diuretic', 'other'],
     evidenceGrade: 'Cochrane 2017 (qualité élevée, aucun bénéfice IDM/décès) ; NORVIT 2006 ; ESPEN 2022',
-    sources: ['Cochrane 2017', 'NORVIT 2006', 'ESPEN 2022', 'AHA/ACC/HFSA 2022'],
+    sources: ['Cochrane 2017', 'NORVIT 2006', 'ESPEN 2022', 'Lam 2013', 'AHA/ACC/HFSA 2022'],
     articleSlug: 'vitamines-b-insuffisance-cardiaque',
   },
   {

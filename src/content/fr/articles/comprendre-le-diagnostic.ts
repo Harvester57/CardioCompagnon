@@ -88,7 +88,7 @@ L'ESC formule trois grands objectifs du traitement : **vivre plus longtemps, év
 - **Traitements additionnels.** La digitoxine a réduit les décès ou hospitalisations pour insuffisance cardiaque dans l'essai DIGIT-HF (2025), et les recommandations ESC 2026 ont renforcé la place de la digoxine et de la digitoxine. Le vériciguat n'a pas atteint son critère principal chez les patients stables (essai VICTOR, *Lancet* 2025). La finérénone n'a pas encore été évaluée pour une FEVG inférieure à 40 % ; l'essai FINALITY-HF est attendu vers 2028.
 - **La notion de « viabilité » myocardique.** L'idée que rouvrir des artères irriguant un muscle « hibernant » restaure la fonction de pompe a été remise en question par REVIVED-BCIS2 : dans son analyse de viabilité, l'étendue du muscle viable n'a pas permis d'identifier les patients tirant bénéfice d'une angioplastie par stents.
 
-Pour préparer vos consultations ou explorer les autres volets du suivi, vous pouvez consulter les articles liés ci-dessous, notamment *Examens et chiffres*, *Médicaments : mode d'action, effets secondaires et bilans sanguins*, *Réadaptation cardiaque (SMR) et activité physique*, *Santé émotionnelle, anxiété et dépression*, *Soins de support, soins palliatifs et anticipation*, *Permis de conduire* et *Vivre avec une insuffisance cardiaque en France*.
+Pour préparer vos consultations ou explorer les autres volets du suivi, vous pouvez consulter les articles liés ci-dessous, notamment *Examens et chiffres*, *EFX (VO2 max), strain (GLS), troponine chronique, Holter et imagerie d’ischémie*, *Anévrisme du ventricule gauche (cicatrice bombante après infarctus)*, *Médicaments : mode d'action, effets secondaires et bilans sanguins*, *Réadaptation cardiaque (SMR) et activité physique*, *Santé émotionnelle, anxiété et dépression*, *Soins de support, soins palliatifs et anticipation*, *Permis de conduire* et *Vivre avec une insuffisance cardiaque en France*.
 
 En cas d'aggravation brutale (essoufflement intense au repos, douleur thoracique, malaise ou perte de connaissance), appelez immédiatement le **15 (SAMU)** ou le **112** (ou le **114** par SMS pour les personnes sourdes ou malentendantes).`,
     },
@@ -110,6 +110,9 @@ En cas d'aggravation brutale (essoufflement intense au repos, douleur thoracique
     'occlusion-coronaire-chronique-cto',
     'stenose-aortique-fevg-reduite',
     'thrombus-vg-et-anticoagulants',
+    'anevrisme-ventricule-gauche',
+    'efx-strain-troponine-et-imagerie-cardiaque',
+    'insuffisance-cardiaque-avancee-stade-d',
     'traitements-additionnels-nouveaux',
     'gilet-defibrillateur-portable',
     'dysfonction-vg-asymptomatique-stade-b',

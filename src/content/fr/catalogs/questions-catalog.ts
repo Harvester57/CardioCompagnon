@@ -1199,4 +1199,436 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     relevantModules: ['core'],
     triggeredByRules: ['FR_SICK_LEAVE_2026', 'FR_ALD_CHECK'],
   },
+
+  // --- Insuffisance cardiaque avancée (stade D) et cœur droit ---
+  {
+    id: 'q_adv_i_need_help_referral',
+    interlocutor: 'cardiologist',
+    topicFr: 'Insuffisance cardiaque avancée (stade D)',
+    questionFr:
+      'Quels signes d’alerte « I NEED HELP » (y compris la nécessité de réduire mes médicaments de fond pour tension basse ou reins) devraient conduire à impliquer un centre expert d’insuffisance cardiaque avancée, et quel centre serait référent ?',
+    whyItMattersFr:
+      "L'ESC 2026 recommande en Classe I A une orientation précoce vers un centre expert dès que des signes d'IC avancée ou une intolérance aux traitements de fond apparaissent ; dans le registre HELP-HF, chaque critère supplémentaire augmentait le risque (HR 1,19).",
+    sources: ['ESC 2026 (Section 8)', 'HELP-HF (2023)', 'ISHLT 2023'],
+    articleSlug: 'insuffisance-cardiaque-avancee-stade-d',
+    relevantModules: ['core'],
+    triggeredByRules: ['LOW_BP_SYMPTOMATIC'],
+  },
+  {
+    id: 'q_adv_rv_tapse_paps',
+    interlocutor: 'cardiologist',
+    topicFr: 'Ventricule droit et pression pulmonaire',
+    questionFr:
+      'Que montrent le TAPSE et la pression artérielle pulmonaire estimée (PAPS / sPAP) sur mon échocardiographie, et si la pression pulmonaire est élevée, est-elle entièrement liée au cœur gauche ou un cathétérisme droit apporterait-il une information utile ?',
+    whyItMattersFr:
+      "Dans l'hypertension pulmonaire du groupe 2 liée au cœur gauche, l'ESC/ERS 2022 recommande d'optimiser d'abord le cœur gauche (Classe I A) et contre-indique les médicaments spécifiques de l'HTAP (Classe III A) ; une dysfonction ventriculaire droite ou une composante précapillaire sévère justifie un centre expert.",
+    sources: ['Recommandations ESC/ERS 2022 (HTP)', 'ESC 2026'],
+    articleSlug: 'ventricule-droit-et-hypertension-pulmonaire',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_adv_lvad_inotropes_palliative',
+    interlocutor: 'cardiologist',
+    topicFr: 'LVAD, greffe cardiaque et soins de support',
+    questionFr:
+      'Si une assistance circulatoire (LVAD), une greffe cardiaque ou des inotropes étaient un jour discutés dans mon parcours, comment les soins de support et l’anticipation seraient-ils associés en parallèle ?',
+    whyItMattersFr:
+      "L'ESC 2026 recommande d'intégrer l'anticipation (Classe I B1) et une équipe palliative (Classe I B2) en parallèle des options d'IC avancée ; l'ISHLT 2023 conseille une consultation de soins palliatifs lors de l'évaluation LVAD (Classe IIa C).",
+    sources: ['ESC 2026 (Section 8)', 'ISHLT 2023 MCS', 'MOMENTUM 3 (2022)'],
+    articleSlug: 'assistance-circulatoire-lvad',
+    relevantModules: ['core'],
+  },
+
+  // --- Angor et médicaments anti-angineux ---
+  {
+    id: 'q_angina_gtn_plan',
+    interlocutor: 'cardiologist',
+    topicFr: 'Angor et conduite à tenir en crise',
+    questionFr:
+      'Ma gêne thoracique ou mon essoufflement à l’effort correspond-il à un angor ? Que dois-je faire exactement avec ma trinitrine en spray (Natispray), et après combien de bouffées ou de minutes dois-je appeler le 15 ou le 112 ?',
+    whyItMattersFr:
+      "Le RCP de Natispray autorise jusqu'à 3 pulvérisations espacées de 2 à 3 minutes en position assise, mais les délais d'appel d'urgence varient selon les fiches (ANSM, sante.fr, FFC) : un plan écrit personnel évite toute hésitation et rappelle l'interdiction absolue avec les inhibiteurs de la PDE-5.",
+    sources: ['RCP Natispray', 'ESC 2024 SCC', 'ESC 2026 (Section 9.2)'],
+    articleSlug: 'angor-et-medicaments-anti-angineux',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_angina_second_line_france',
+    interlocutor: 'cardiologist',
+    topicFr: 'Médicaments anti-angineux en France',
+    questionFr:
+      'Si un anti-angineux supplémentaire est nécessaire en plus de mon bêtabloquant, lequel est le mieux adapté à ma tension, à mes reins et aux disponibilités/remboursements en France (patch nitré avec fenêtre libre de 8–12 h, ivabradine, ranolazine), ou faut-il rediscuter une revascularisation ?',
+    whyItMattersFr:
+      "En France, les dérivés nitrés oraux longue durée ne sont plus commercialisés (patchs uniquement avec 8–12 h sans patch pour éviter l'échappement), la trimétazidine et la ranolazine ne sont pas remboursées et la HAS a jugé le SMR du nicorandil insuffisant en 2026 ; l'ESC 2026 classe en Classe I la revascularisation pour angor persistant.",
+    sources: ['ESC 2026 (Section 9.2)', 'HAS (nicorandil 2026)', 'RCP Nitriderm TTS / Ranexa'],
+    articleSlug: 'angor-et-medicaments-anti-angineux',
+    relevantModules: ['core'],
+  },
+
+  // --- Antiplaquettaires, bithérapie (DAPT) et protection gastrique (IPP) ---
+  {
+    id: 'q_apt_aspirin_vs_clopidogrel_dapt',
+    interlocutor: 'cardiologist',
+    topicFr: 'Antiplaquettaires et bithérapie (DAPT)',
+    questionFr:
+      'L’aspirine ou le clopidogrel (Plavix) est-il préférable au long cours dans mon cas, et en cas de stent, comment mon insuffisance cardiaque (qui augmente le risque thrombotique et hémorragique) oriente-t-elle la durée de bithérapie ?',
+    whyItMattersFr:
+      "L'ESC 2024 classe aspirine et clopidogrel à égalité (Classe I A) ; HOST-EXAM (10 ans) et PANTHER montrent moins d'infarctus sous clopidogrel sans gain de survie, mais aucun essai n'a isolé les patients avec ICFER. La durée par défaut après stent en maladie stable est de 6 mois (1–3 mois si haut risque hémorragique).",
+    sources: ['ESC 2024 SCC', 'HOST-EXAM 10 ans (2026)', 'PANTHER (2023)', 'Otsuka (2023)'],
+    articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_apt_ppi_choice_and_labs',
+    interlocutor: 'pharmacist',
+    topicFr: 'Protection gastrique (IPP) et interactions',
+    questionFr:
+      'Ai-je besoin d’un protecteur gastrique (IPP) avec mes antiplaquettaires, lequel éviter avec le clopidogrel, et faut-il surveiller mon magnésium ou ma vitamine B12 en cas de traitement prolongé associé à des diurétiques ?',
+    whyItMattersFr:
+      "L'ESC recommande un IPP (Classe I A) en cas d'association antithrombotique à risque digestif élevé ; l'oméprazole et l'ésoméprazole sont déconseillés avec le clopidogrel (le pantoprazole interagit moins), et un usage prolongé d'IPP avec diurétiques ou digoxine justifie d'envisager un dosage de magnésium et de B12.",
+    sources: ['ESC 2024 SCC', 'EMA (2010)', 'FDA/MHRA IPP', 'Lam (2013)'],
+    articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
+    relevantModules: ['core'],
+  },
+
+  // --- Escalade et résistance aux diurétiques ---
+  {
+    id: 'q_diur_dry_weight_escalation',
+    interlocutor: 'cardiologist',
+    topicFr: 'Diurétiques et poids sec',
+    questionFr:
+      'Quelle est ma fourchette de « poids sec » ? Si la rétention d’eau résiste à mon diurétique habituel, privilégiez-vous une hausse de dose encadrée, un autre diurétique de l’anse, un ajout court de thiazide ou une perfusion en hôpital de jour, et quand contrôler ionogramme et créatinine ?',
+    whyItMattersFr:
+      "TRANSFORM-HF n'a montré aucune supériorité du torsémide sur le furosémide (mortalité ICFER HR 1,02) ; les ajouts hospitaliers (ADVOR, CLOROTIC) accélèrent la décongestion sans réduire la mortalité, et les thiazides doublent hypokaliémie et aggravation rénale (à éviter au long cours en phase stable selon l'ESC 2026).",
+    sources: ['ESC 2026 (Diurétiques)', 'TRANSFORM-HF (2023)', 'ADVOR (2022)', 'CLOROTIC (2023)'],
+    articleSlug: 'escalade-et-resistance-aux-diuretiques',
+    relevantModules: ['core', 'ckd'],
+    triggeredByRules: ['WEIGHT_GAIN_3D', 'EPOF_WORSENING'],
+  },
+  {
+    id: 'q_diur_resistance_referral',
+    interlocutor: 'cardiologist',
+    topicFr: 'Résistance aux diurétiques',
+    questionFr:
+      'Si je dois augmenter de manière répétée mes diurétiques ou recourir à des perfusions IV de secours, cela justifie-t-il une évaluation en centre expert d’insuffisance cardiaque avancée ?',
+    whyItMattersFr:
+      "L'ESC 2026 range l'escalade répétée des diurétiques et la résistance aux diurétiques parmi les signes d'alerte indiquant de contacter rapidement un centre d'insuffisance cardiaque avancée.",
+    sources: ['ESC 2026 (Diurétiques et Section 8)', 'Girerd (2022)'],
+    articleSlug: 'escalade-et-resistance-aux-diuretiques',
+    relevantModules: ['core'],
+    triggeredByRules: ['EPOF_WORSENING'],
+  },
+
+  // --- Chirurgie non cardiaque, soins dentaires et règles « jours de maladie » ---
+  {
+    id: 'q_periop_meds_and_icd',
+    interlocutor: 'cardiologist',
+    topicFr: 'Chirurgie non cardiaque et endoscopie',
+    questionFr:
+      'Avant une chirurgie programmée ou une coloscopie, quels traitements poursuivre (bêtabloquant, statine, aspirine, IEC/ARA2/ARNI), lesquels suspendre et combien de jours (iSGLT2 3–4 jours même sans diabète, GLP-1, P2Y12, AOD sans relais héparine, compléments 1–2 semaines), et mon DAI/CRT sera-t-il reprogrammé avant bistouri électrique monopolaire ?',
+    whyItMattersFr:
+      "Les iSGLT2 sont suspendus 3–4 jours avant une chirurgie majeure pour éviter l'acidocétose euglycémique ; STOP-or-NOT et SPACE n'ont montré aucun bénéfice à interrompre systématiquement IEC/ARA2 ; un simple aimant désactive les chocs d'un DAI mais ne protège pas la stimulation antibradycardique/CRT en cas de dépendance.",
+    sources: ['AHA/ACC 2024 NCS', 'ESC 2022 NCS', 'STOP-or-NOT (2024)', 'BSG/ESGE (2021)', 'ASA/HRS CIED'],
+    articleSlug: 'chirurgie-soins-dentaires-et-jours-de-maladie',
+    relevantModules: ['core', 'device'],
+    triggeredByRules: ['SGLT2_KETO_REMINDER'],
+  },
+  {
+    id: 'q_dental_prophylaxis_and_bleeding',
+    interlocutor: 'gp',
+    topicFr: 'Soins dentaires et antibioprophylaxie',
+    questionFr:
+      'Avant un soin ou une extraction dentaire, ai-je besoin d’antibiotiques préventifs (endocardite) ou seulement d’un bain de bouche antiseptique, mes antithrombotiques doivent-ils être poursuivis avec hémostase locale, et quel antalgique sûr remplacerait les AINS ?',
+    whyItMattersFr:
+      "Selon la HAS (octobre 2024) et l'ESC 2023, l'ICFER, les stents et les DAI/CRT seuls ne requièrent aucune antibioprophylaxie (réservée aux prothèses/TAVI, MitraClip, LVAD ou antécédent d'endocardite ; clindamycine retirée, prudence azithromycine avec amiodarone). La SFCO 2015 préconise le maintien de la monothérapie antiplaquettaire en chirurgie orale.",
+    sources: ['HAS oct. 2024 (endocardite dentaire)', 'ESC 2023 EI', 'SFCO 2015'],
+    articleSlug: 'chirurgie-soins-dentaires-et-jours-de-maladie',
+    relevantModules: ['core', 'device'],
+  },
+  {
+    id: 'q_thesis_sick_day_raasi_vs_sglt2i',
+    interlocutor: 'gp',
+    topicFr: 'Thèse : jours de maladie (SRAA/ARM vs iSGLT2)',
+    questionFr:
+      'Pouvons-nous rédiger un plan personnalisé « jours de maladie » distinguant quels comprimés ne jamais arrêter (bêtabloquant, antithrombotiques), quand suspendre temporairement l’iSGLT2 (acidocétose euglycémique même à glycémie normale) versus les bloqueurs du SRAA/ARM, et le protocole exact de reprise ?',
+    whyItMattersFr:
+      "Les cartes génériques d'auto-arrêt manquent de preuve dans l'ICFER : dans le seul essai randomisé (Fink 2022, MRC), 21 % des patients ont arrêté de mauvais médicaments et près de la moitié des SRAA/ARM stoppés ne sont jamais repris en vie réelle, tandis que les RCP EMA conseillent d'interrompre l'iSGLT2 en cas de maladie aiguë sévère ou de pertes digestives.",
+    sources: ['Fink (2022)', 'SMART-C (2022)', 'NICE NG148 (2024)', 'RCP EMA Forxiga / Jardiance'],
+    articleSlug: 'these-jours-de-maladie-sraa-vs-isglt2',
+    relevantModules: ['core', 'diabetes', 'ckd'],
+    triggeredByRules: ['SGLT2_KETO_REMINDER', 'CREATININE_JUMP'],
+  },
+
+  // --- Arythmies ventriculaires, chocs DAI, ablation et amiodarone ---
+  {
+    id: 'q_va_pvc_burden_and_holter',
+    interlocutor: 'cardiologist',
+    topicFr: 'Extrasystoles ventriculaires (ESV)',
+    questionFr:
+      'Quelle est ma charge quotidienne en extrasystoles ventriculaires (ESV), a-t-elle été enregistrée sur plus de 24 heures, et des ESV fréquentes (≥ 10 %) pourraient-elles aggraver ma FEVG ou perturber ma CRT ?',
+    whyItMattersFr:
+      "Un seul Holter 24 h manque environ 47 % des charges ≥ 10 % ; l'ESC 2022 recommande l'ablation (Classe I C) en cas de cardiomyopathie induite par les ESV, alors que les antiarythmiques de classe IC (flécaïnide) sont contre-indiqués après infarctus (CAST).",
+    sources: ['ESC 2022 (Arythmies ventriculaires)', 'Huizar (2019)', 'CAST (1991)'],
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+    relevantModules: ['core', 'device'],
+  },
+  {
+    id: 'q_va_shock_plan_and_ablation',
+    interlocutor: 'cardiologist',
+    topicFr: 'Chocs de DAI et ablation de TV',
+    questionFr:
+      'Disposé-je d’un plan écrit en cas de choc de DAI (quand contacter le centre vs appeler le 15/112 dès 2 chocs ou symptômes), combien d’ATP mon boîtier a-t-il délivrés, et comment pesez-vous ablation par cathéter face à amiodarone ou sotalol en cas de TV ?',
+    whyItMattersFr:
+      "L'ESC 2022 exige un plan écrit de choc ; ≥ 5 ATP en 6 mois prédisaient chocs et hospitalisations dans PARTITA. Dans VANISH2, l'ablation de 1re ligne a réduit le critère composite (HR 0,75) sans gain de survie, tandis que l'amiodarone s'accompagnait de trois fois plus de décès non cardiaques et de toxicité pulmonaire.",
+    sources: ['ESC 2022 AV/MSC', 'VANISH2 (NEJM 2025 / JACC 2026)', 'PARTITA (2022)', 'Falconer (2026)'],
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+    relevantModules: ['device'],
+  },
+  {
+    id: 'q_va_amiodarone_monitoring',
+    interlocutor: 'gp',
+    topicFr: 'Surveillance sous amiodarone (Cordarone)',
+    questionFr:
+      'Si je prends de l’amiodarone (Cordarone), qui coordonne mes bilans semestriels de thyroïde (TSH) et de foie (transaminases), mon ECG annuel, la surveillance pulmonaire, la protection solaire et la vérification des interactions avec mes autres médicaments ?',
+    whyItMattersFr:
+      "La demi-vie de 20 à 100 jours de l'amiodarone expose à des toxicités d'organes persistantes ; le RCP français ANSM contre-indique citalopram/escitalopram, moxifloxacine et dompéridone, recommande rosuvastatine/pravastatine plutôt que simvastatine/atorvastatine et impose d'ajuster warfarine et digoxine.",
+    sources: ['RCP ANSM Cordarone (2025)', 'Sorodoc (2024)', 'ESC 2022 AV/MSC'],
+    articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
+    relevantModules: ['core', 'atrialFibrillation', 'device'],
+  },
+
+  // --- Automesure tensionnelle et montres connectées ---
+  {
+    id: 'q_hbp_protocol_validated_cuff',
+    interlocutor: 'gp',
+    topicFr: 'Automesure tensionnelle à domicile',
+    questionFr:
+      'Souhaitez-vous que je mesure ma tension à domicile (selon la règle des 3), mon tensiomètre est-il validé (registre STRIDE BP) avec un brassard adapté, quelle zone doit m’amener à vous appeler, et comment mesurer en cas de fibrillation atriale ?',
+    whyItMattersFr:
+      "Dans un audit, seuls 5,5 % des tensiomètres vendus en ligne étaient validés ; les protocoles SFHTA/ESH (répéter 3 mesures, matin avant les comprimés et soir) doivent être adaptés à vos cibles d'IC et vérifiés en cas de FA.",
+    sources: ['ESH 2021 HBPM', 'SFHTA (règle des 3)', 'Picone (2020)', 'STRIDE BP'],
+    articleSlug: 'automesure-tensionnelle-domicile',
+    relevantModules: ['core', 'atrialFibrillation'],
+    triggeredByRules: ['LOW_BP_SYMPTOMATIC', 'LOW_BP_ASYMPTOMATIC'],
+  },
+  {
+    id: 'q_wearables_ecg_and_icd_magnets',
+    interlocutor: 'cardiologist',
+    topicFr: 'Montres connectées et sécurité des prothèses',
+    questionFr:
+      'Dois-je utiliser l’ECG ou les alertes de ma montre connectée (et lesquelles désactiver), et avec un DAI, comment respecter les distances face aux aimants (15 cm en usage courant, 30 cm en charge) et les restrictions européennes des applications ECG ?',
+    whyItMattersFr:
+      "15 à 26 % des ECG de montres en cardiologie sont inconclusifs et les alertes peuvent majorer l'anxiété (Mannhart 2023 ; Rosman 2024) ; les aimants peuvent mettre un DAI en mode aimant et la notice UE d'Apple déconseille son application ECG avec un dispositif implanté.",
+    sources: ['Mannhart (2023)', 'Rosman (2024)', 'Wegner (2026)', 'Notice FDA / UE Apple ECG'],
+    articleSlug: 'montres-connectees-et-capteurs-ic',
+    relevantModules: ['core', 'device', 'atrialFibrillation'],
+  },
+
+  // --- Vaccinations détaillées en France ---
+  {
+    id: 'q_vax_france_schedule_high_dose',
+    interlocutor: 'gp',
+    topicFr: 'Calendrier vaccinal 2026 en France',
+    questionFr:
+      'Quels vaccins sont recommandés cette année dans mon cas (grippe annuelle gratuite en France à tout âge en maladie coronaire/IC, dose standard ou haute dose, pneumocoque, COVID-19, et dès 65 ans VRS et zona), et lesquels peuvent être faits le même jour ?',
+    whyItMattersFr:
+      "Le vaccin antigrippal a réduit la mortalité après infarctus (IAMI) et les pneumonies/hospitalisations dans l'IC (IVVE), tandis que DAN-RSV a montré 83,3 % d'efficacité contre les hospitalisations VRS ; en France, le calendrier vaccinal 2026 ouvre la prise en charge grippe et pneumocoque dès le diagnostic.",
+    sources: ['Calendrier vaccinal France 2026', 'IAMI (2021)', 'IVVE (2022)', 'DANFLU-2 (2025)', 'DAN-RSV (2026)'],
+    articleSlug: 'vaccinations-insuffisance-cardiaque',
+    relevantModules: ['core'],
+    triggeredByRules: ['VACCINES_ANNUAL'],
+  },
+
+  // --- Santé sexuelle, voyages, canicule, tabac et alcool ---
+  {
+    id: 'q_life_sexual_health_pde5',
+    interlocutor: 'cardiologist',
+    topicFr: 'Santé sexuelle et dysfonction érectile',
+    questionFr:
+      'Mon état cardiaque autorise-t-il les rapports sexuels (y compris avec un DAI), passer de la spironolactone à l’éplérénone aiderait-il des troubles érectiles ou une gynécomastie sans arrêter mon bêtabloquant, et le sildénafil (Viagra) convient-il mieux que le tadalafil (Cialis) selon les RCP européens ?',
+    whyItMattersFr:
+      "Un rapport représente 3 à 5 METs (sûr en NYHA I–II stable) et NICE NG106 conseille de ne pas arrêter un bêtabloquant pour la seule dysfonction érectile. En Europe, Cialis contre-indique l'IC dès NYHA II alors que Viagra ne contre-indique que l'IC sévère ; tous sont strictement interdits avec les dérivés nitrés, nicorandil et riociguat.",
+    sources: ['Princeton IV (2024)', 'NICE NG106', 'RCP EMA Viagra / Cialis'],
+    articleSlug: 'vie-sexuelle-et-dysfonction-erectile-ic',
+    relevantModules: ['core', 'device'],
+  },
+  {
+    id: 'q_life_travel_altitude_heatwave',
+    interlocutor: 'cardiologist',
+    topicFr: 'Voyages, altitude, canicule et saunas',
+    questionFr:
+      'Puis-je prendre l’avion (ordonnance en DCI et carte DAI en cabine), quel plafond d’altitude me concerne en montagne, quel plan prévoir avant une canicule (recommandations ANSM), et dois-je éviter saunas brûlants et bains d’eau glacée ?',
+    whyItMattersFr:
+      "La plupart des IC stables NYHA I–II peuvent prendre l'avion ; les plafonds d'altitude divergent (Parati 2018 jusqu'à 3 000–3 500 m ou 2 500 m si angor vs BHF > 2 000 m). L'ANSM demande de ne jamais arrêter seul ses traitements pendant une canicule, et les bains glacés exposent à un conflit autonome arythmogène sur cicatrice.",
+    sources: ['Parati (2018)', 'BTS 2022 / BCS 2010', 'ANSM canicule (2025–2026)', 'AHA (2026)'],
+    articleSlug: 'voyages-canicule-et-climat-ic',
+    relevantModules: ['core', 'device'],
+  },
+  {
+    id: 'q_life_smoking_and_alcohol',
+    interlocutor: 'gp',
+    topicFr: 'Tabac et alcool',
+    questionFr:
+      'Pouvez-vous me prescrire des substituts nicotiniques ou de la varénicline (Champix) et m’orienter vers Tabac info service (39 89) ? Quelle limite personnelle d’alcool (ou zéro) me conseillez-vous compte tenu de mon cœur, d’un risque de FA et de mes traitements ?',
+    whyItMattersFr:
+      "Arrêter le tabac réduit la mortalité de 30 à 40 % dans l'ICFER (SOLVD) ; substituts nicotiniques et Champix (revenu en juin 2025, sans interaction CYP450) sont remboursés à 65 % en France, tandis que le HCSP et l'ESC 2024 déconseillent la e-cigarette. Pour l'alcool, réduire est toujours bénéfique (ESC 2026 ; ≤ 3 verres/semaine en cas de FA, ESC 2024).",
+    sources: ['SOLVD', 'EAGLES', 'HCSP / ameli.fr (2025–2026)', 'ESC 2024 FA', 'ESC 2026'],
+    articleSlug: 'tabac-et-alcool-insuffisance-cardiaque',
+    relevantModules: ['core', 'atrialFibrillation'],
+  },
+
+  // --- Comorbidités étendues, diabète détaillé, cause et examens spécialisés ---
+  {
+    id: 'q_comorb_gout_copd_thyroid_anaemia',
+    interlocutor: 'gp',
+    topicFr: 'Goutte, BPCO, thyroïde, anémie et fragilité',
+    questionFr:
+      'En cas de crise de goutte (sans AINS), la colchicine est-elle compatible avec mon DFGe et mes traitements et l’allopurinol reste-t-il la 1re ligne ? En cas de BPCO, puis-je garder un bêtabloquant β1-sélectif ? Ma TSH et les causes non martiales d’une éventuelle anémie (sans injections d’ASE) sont-elles vérifiées ?',
+    whyItMattersFr:
+      "La colchicine est contre-indiquée sous DFGe 30 en France et avec les macrolides ; l'hyperuricémie sans goutte ne se traite pas (EXACT-HF, ALL-HEART). La BPCO ne contre-indique pas les bêtabloquants β1-sélectifs dans l'ICFER, la TSH doit être suivie régulièrement, et les ASE sont contre-indiqués dans l'ICFER (RED-HF : surrisque de thromboses et d'AVC).",
+    sources: ['ANSM colchicine', 'EXACT-HF / ALL-HEART', 'CARES / FAST', 'RED-HF (2013)', 'ESC 2026'],
+    articleSlug: 'goutte-bpco-thyroide-et-autres-comorbidites',
+    relevantModules: ['core', 'ckd'],
+    triggeredByRules: ['CONTRAINDICATED_DRUG'],
+  },
+  {
+    id: 'q_comorb_diabetes_metformin_insulin',
+    interlocutor: 'gp',
+    topicFr: 'Diabète : metformine, insuline et sulfamides',
+    questionFr:
+      'Si je prends de la metformine, mon DFGe est-il bien au-dessus de 30–45 mL/min et quand la suspendre avant un scanner injecté ou une opération ? Si je prends insuline ou sulfamide, comment éviter les hypoglycémies dont les signes sont masqués par mon bêtabloquant ?',
+    whyItMattersFr:
+      "La metformine est admise dans l'IC chronique stable avec DFGe > 30 (ESC 2023 IIa B) mais doit être suspendue en cas d'injection de contraste iodé ou de jeûne opératoire ; les bêtabloquants peuvent masquer tremblements et palpitations lors d'une hypoglycémie.",
+    sources: ['ESC 2023 (Diabète et MCV)', 'RCP Metformine', 'CAROLINA (2024)'],
+    articleSlug: 'diabete-insuffisance-cardiaque',
+    relevantModules: ['diabetes', 'ckd'],
+  },
+  {
+    id: 'q_diag_cpet_gls_troponin',
+    interlocutor: 'cardiologist',
+    topicFr: 'Examens spécialisés (EFX, GLS, troponine, Holter)',
+    questionFr:
+      'Une épreuve d’effort cardiorespiratoire (EFX / CPET) serait-elle utile pour calibrer ma réadaptation ou quantifier mon souffle ? Mon GLS est-il suivi sur le même échographe, ma troponine chronique de base figure-t-elle dans mon courrier, et quelle durée de monitoring rythmique (Holter, patch, ILR) est adaptée ?',
+    whyItMattersFr:
+      "L'EFX mesure objectivement VO2 pic et pente VE/VCO2 ; le GLS varie jusqu'à 3,7 points entre constructeurs ; plus de la moitié des ICFER stables ont une troponine ultrasensible légèrement élevée en permanence (repère utile aux urgences) ; et un Holter 24 h manque souvent les arythmies intermittentes.",
+    sources: ['ESC 2026', 'ASE/EACVI (2015)', 'Aimo (2018)', 'ISHLT / Kittleson (2025)'],
+    articleSlug: 'efx-strain-troponine-et-imagerie-cardiaque',
+    relevantModules: ['core', 'stageB', 'hfImpEf'],
+  },
+  {
+    id: 'q_cause_amyloid_sarcoid_bystander',
+    interlocutor: 'cardiologist',
+    topicFr: 'Recherche d’une cause associée (amylose, sarcoïdose, NDLVC)',
+    questionFr:
+      'Existe-t-il des signes évoquant une coronaropathie fortuite associée à une autre cardiomyopathie (NDLVC, amylose cardiaque nécessitant scintigraphie osseuse et les 3 tests monoclonaux, ou sarcoïdose cardiaque relevant d’une TEP-18F-FDG) ?',
+    whyItMattersFr:
+      "Dans un grand registre IRM de coronaropathie obstructive (Bawaskar 2024), environ 1 patient sur 6 présentait une cardiomyopathie non ischémique ou double ; identifier une amylose ATTR (coexistant chez ~1 patient âgé sur 4) ou une sarcoïdose transforme la prise en charge et les seuils de DAI.",
+    sources: ['ESC 2023 (Cardiomyopathies)', 'Bawaskar (2024)', 'Garcia-Pavia (2021)', 'Imazio (2026)'],
+    articleSlug: 'confirmer-la-cause-dysfonction-vg',
+    relevantModules: ['core'],
+  },
+
+  // --- Réseau de soins et aides sociales en France ---
+  {
+    id: 'q_fr_ipa_mon_espace_sante',
+    interlocutor: 'gp',
+    topicFr: 'Réseau de soins en France (IPA et Mon espace santé)',
+    questionFr:
+      'Puis-je être suivi(e) en lien avec un(e) infirmier(ère) en pratique avancée (IPA) entre les consultations spécialisées, et mes comptes rendus (ETT, IRM, carte DAI, VSM) sont-ils bien déposés dans Mon espace santé (DMP) pour le SAMU 15 ?',
+    whyItMattersFr:
+      "L'IPA assure le suivi des cardiopathies stabilisées (bilans, renouvellements, première prescription d'APA, accès direct en structure coordonnée depuis janvier 2025, 100 % tarif sous ALD), et le DMP est accessible en urgence au SAMU 15 et aux hôpitaux sauf opposition.",
+    sources: ['service-public.fr (IPA A18019, Mon espace santé F36151)', 'ameli.fr (IPA 2026)'],
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_fr_optam_c2s_mdph_ajpa',
+    interlocutor: 'gp',
+    topicFr: 'Mutuelle, OPTAM, C2S et droits MDPH',
+    questionFr:
+      'Mon cardiologue ou la clinique est-il en Secteur 1 ou OPTAM (puis-je recevoir un devis), ma mutuelle ou la C2S couvre-t-elle les frais hors ALD 100 % (franchises/FPU 2026), et un dossier MDPH (CMI, AAH, PCH avant 60 ans) ou congé de proche aidant (AJPA) serait-il utile ?',
+    whyItMattersFr:
+      "Même en ALD 100 %, restent dus (hors C2S) dépassements d'honoraires, forfait journalier (23 €/j), FPU ALD (9,96 €) et franchises/participations non couvertes par les mutuelles (jusqu'à 140 €/an depuis oct. 2026). Les anciennes cartes papier MDPH expirent le 31 décembre 2026 et l'AJPA requiert incapacité ≥ 80 %, APA ou invalidité cat. 3.",
+    sources: ['ameli.fr (OPTAM, C2S, franchises 2026)', 'service-public.fr (CMI, AAH, PCH, AJPA)'],
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
+    relevantModules: ['core'],
+    triggeredByRules: ['FR_ALD_CHECK'],
+  },
+  {
+    id: 'q_fr_directives_personne_confiance_had',
+    interlocutor: 'cardiologist',
+    topicFr: 'Directives anticipées, personne de confiance et HAD',
+    questionFr:
+      'Comment rédiger et déposer dans Mon espace santé mes directives anticipées (incluant une mention explicite sur la désactivation des chocs de DAI) et ma personne de confiance, et quelles ressources locales (EMSP, PPA, HAD 100 % ALD) existent si mes besoins augmentent ?',
+    whyItMattersFr:
+      "En France (Loi Claeys-Leonetti et Loi 2026-404), les directives anticipées ont une validité illimitée et engagent le médecin, le témoignage de la personne de confiance cosignée prévaut, et l'HAD est couverte à 100 % sous ALD sans forfait journalier ; pourtant 99 % des directives omettent la question du DAI.",
+    sources: ['service-public.fr (F32010 / F32748 / F732)', 'CNSPFV (2026)', 'ESC 2026'],
+    articleSlug: 'soins-de-support-et-anticipation',
+    relevantModules: ['core', 'device'],
+  },
+
+  // --- Nouvelles thèses (Fer IV + iSGLT2, Potassium méditerranéen, CoQ10, Oméga-3, Décongestionnants) ---
+  {
+    id: 'q_thesis_iv_iron_tsat_phosphate',
+    interlocutor: 'cardiologist',
+    topicFr: 'Thèse : fer IV sous quadrithérapie et iSGLT2',
+    questionFr:
+      'Pour décider d’un fer intraveineux sous mon iSGLT2 et mon ARNI, vérifiez-vous surtout un CST < 20 % plutôt qu’une ferritine basse isolée ? En cas de cures répétées, quelle molécule (dérisomaltose ferrique vs carboxymaltose ferrique) et quel contrôle du phosphate prévoyez-vous ?',
+    whyItMattersFr:
+      "Les iSGLT2 et l'ARNI abaissent la ferritine par eux-mêmes ; le bénéfice sur les hospitalisations se concentre si CST < 20 % (IRONMAN, Anker 2025, Mandal 2026), et le carboxymaltose ferrique a provoqué 51,9 % d'hypophosphatémie modérée à sévère à J21 dans HEART-FID contre ~4–8 % sous dérisomaltose.",
+    sources: ['FAIR-HF2 (2025)', 'HEART-FID phosphate (2025)', 'IRONMAN (Cleland 2024)', 'Mandal (2026)'],
+    articleSlug: 'these-fer-iv-et-isglt2-quadritherapie',
+    relevantModules: ['core'],
+    triggeredByRules: ['IRON_DEFICIENCY_CHECK'],
+  },
+  {
+    id: 'q_thesis_med_diet_potassium',
+    interlocutor: 'cardiologist',
+    topicFr: 'Thèse : régime méditerranéen et potassium',
+    questionFr:
+      'Compte tenu de mon DFGe et de ma kaliémie sous ARNI/IEC, ARM et iSGLT2, puis-je consommer librement les légumes, légumineuses et fruits frais d’une alimentation méditerranéenne tout en évitant strictement les sels de régime au KCl et les additifs potassiques cachés ?',
+    whyItMattersFr:
+      "Les recommandations rénales évitent la restriction aveugle des végétaux frais si le potassium est normal et iSGLT2/ARNI réduisent l'hyperkaliémie sévère, mais aucun ECR n'a validé un apport potassique illimité jusqu'à DFGe 30 (hausse dans Turban 2021) et les sels KCl ou charcuteries « réduites en sel » apportent un potassium très concentré.",
+    sources: ['Turban (2021)', 'Neuen (2022)', 'KDIGO / KDOQI', 'RCP Entresto / ARM'],
+    articleSlug: 'these-regime-mediterraneen-potassium-icfer',
+    relevantModules: ['core', 'ckd'],
+    triggeredByRules: ['POTASSIUM_ALERT'],
+  },
+  {
+    id: 'q_thesis_coq10_modern_gdmt',
+    interlocutor: 'cardiologist',
+    topicFr: 'Thèse : CoQ10 sous quadrithérapie moderne',
+    questionFr:
+      'La coenzyme Q10 mérite-t-elle son coût en plus de ma quadrithérapie ou vaut-il mieux attendre les résultats des essais en cours (CORAL, DANUTRIO-HF), et peut-elle interférer avec la warfarine ou abaisser ma tension ?',
+    whyItMattersFr:
+      "Aucun essai achevé n'a évalué la CoQ10 sur la mortalité sous ARNI et iSGLT2 ; le signal pré-moderne repose sur Q-SYMBIO seul, l'analyse indépendante NIHR HTA 2022 est non significative (RR 0,68), et la CoQ10 peut réduire l'effet de la warfarine (exclue de CORAL et DANUTRIO-HF).",
+    sources: ['NIHR HTA (2022)', 'Cochrane (2021)', 'Q-SYMBIO (2014)', 'CORONA CoQ10 (2010)'],
+    articleSlug: 'these-coq10-mortalite-icfer-moderne',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_thesis_omega3_af_vs_fish',
+    interlocutor: 'cardiologist',
+    topicFr: 'Thèse : oméga-3 à faible dose et risque de FA',
+    questionFr:
+      'Manger du poisson gras deux fois par semaine est-il préférable aux gélules d’oméga-3, au vu de l’avertissement réglementaire sur la fibrillation atriale et de mes traitements antithrombotiques ?',
+    whyItMattersFr:
+      "Le surrisque de FA est net au-dessus de 1–1,5 g/jour (OMEMI, STRENGTH, REDUCE-IT) mais ne peut être exclu même à ≤ 1 g/jour (GISSI-HF FA, VITAL Rhythm), l'EMA/ANSM a inscrit la FA comme effet indésirable fréquent des esters éthyliques d'oméga-3, et le poisson gras alimentaire ne montre pas ce surrisque.",
+    sources: ['EMA/ANSM (2023–2024)', 'GISSI-HF FA (2013)', 'VITAL Rhythm (2021)', 'OMEMI (2021)'],
+    articleSlug: 'these-omega3-faible-dose-risque-fa',
+    relevantModules: ['core', 'atrialFibrillation'],
+  },
+  {
+    id: 'q_intx_herbs_decongestants_adhd',
+    interlocutor: 'pharmacist',
+    topicFr: 'Rhume, décongestionnants, plantes et stimulants',
+    questionFr:
+      'Que puis-je utiliser sans danger contre un rhume à la place de la pseudoéphédrine ou des comprimés combinés avec ibuprofène, et un produit à base de plantes (millepertuis, ginkgo, danshen, extrait de thé vert) ou un stimulant prescrit pour un TDAH est-il compatible avec mon ordonnance cardiaque ?',
+    whyItMattersFr:
+      "Depuis le 11 décembre 2024, toute la pseudoéphédrine orale est sur ordonnance (Liste I) en France pour risques d'infarctus et d'AVC ; le millepertuis diminue l'efficacité des AOD, de l'éplérénone et de l'atorvastatine ; le thé vert concentré réduit la digoxine ; et les stimulants TDAH nécessitent une coordination cardio-spécialiste.",
+    sources: ['ANSM pseudoéphédrine (déc. 2024)', 'RCP EMA millepertuis / TDAH', 'Études interactions AOD-plantes'],
+    articleSlug: 'cafeine-boissons-energisantes-et-stimulants',
+    relevantModules: ['core'],
+    triggeredByRules: ['CONTRAINDICATED_DRUG'],
+  },
 ];

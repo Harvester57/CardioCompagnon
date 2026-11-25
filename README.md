@@ -12,7 +12,7 @@ Private, local-first, offline-capable **Progressive Web App (PWA)** in French de
 - **Examens & Chiffres** ([src/features/exams/](./src/features/exams/ExamsPage.tsx)) -- Cardiac imaging with strict separation of echocardiography (`ETT`) and cardiac MRI (`IRM`), lab tracking (NT-proBNP/BNP, creatinine/eGFR/K+, ferritin/TSAT, LDL-c in `g/L` and `mmol/L`, Lp(a), HbA1c, CBC, TSH, digoxin), ECG, sleep apnoea (AHI), and optional AI-assisted report extraction with manual verification.
 - **Mon Plan & Consultations** ([src/features/plan/](./src/features/plan/PlanPage.tsx)) -- Prioritized deterministic follow-up plan, consultation question planner filtered by clinician role (cardiologist, GP, pharmacist, occupational physician), printable A4 cardiology summary (`@media print`), and 1-click emergency/care card.
 - **Vie en France & Droits** ([src/features/france/](./src/features/france/FrancePage.tsx)) -- Interactive checklists for French pathways (ALD 5/13, SMR cardiac rehabilitation, PRADO, HF telemonitoring, sick leave and return-to-work schemes, RQTH, AERAS / Loi Lemoine, vaccinations) plus an interactive French driving fitness calculator based on the *Arrete du 28 mars 2022*.
-- **Bibliotheque Scientifique** ([src/features/library/](./src/features/library/LibraryPage.tsx)) -- 51 offline French scientific articles with evidence classes, volatility badges, and reference dates (`asOf`), interactive cardiology glossary, full-text offline search, and optional grounded BYOK Q&A.
+- **Bibliotheque Scientifique** ([src/features/library/](./src/features/library/LibraryPage.tsx)) -- 85 offline French scientific articles with evidence classes, volatility badges, and reference dates (`asOf`), interactive cardiology glossary, full-text offline search, and optional grounded BYOK Q&A.
 - **Parametres** ([src/features/settings/](./src/features/settings/SettingsPage.tsx)) -- Clinical profile and dynamic modules (HFimpEF, CTO, aortic stenosis, LV thrombus/aneurysm, atrial fibrillation, CKD, diabetes, sleep apnoea, LifeVest, ICD/CRT), isolated Discovery Mode (`CardioCompagnonDemoDB`), light/dark theme, large-text mode, local notifications, optional PIN lock, encrypted backup/restore, and optional BYOK AI configuration.
 
 ### Privacy & Offline-First Design
@@ -74,7 +74,7 @@ All scripts are defined in [package.json](./package.json):
 | `npm run test:e2e` | Run Playwright E2E tests (requires a production build and Chromium) |
 | `npm run audit:prod` | Audit production dependencies (`npm audit --omit=dev`) |
 | `npm run check` | Run full verification suite (`typecheck`, `lint`, `static-check`, `test`, `audit:prod`) |
-| `npm run check:wiki-sync` | Verify the 51 articles against a local wiki source via [check-wiki-sync.ts](./scripts/check-wiki-sync.ts) (`WIKI_ROOT`) |
+| `npm run check:wiki-sync` | Verify the 85 articles against a local wiki source via [check-wiki-sync.ts](./scripts/check-wiki-sync.ts) (`WIKI_ROOT`) |
 
 To install the Playwright browser binary for E2E tests:
 
@@ -93,7 +93,7 @@ cardio-app/
 ├── scripts/                    # Static checks and wiki synchronization verifier
 └── src/
     ├── app/                    # App shell wiring, routes, PIN gate, banners, reminders
-    ├── content/fr/             # 51 French articles (import.meta.glob) + 5 structured catalogs
+    ├── content/fr/             # 85 French articles (import.meta.glob) + 5 structured catalogs
     ├── db/                     # Dexie schema, active/demo databases, hooks, demo seed
     ├── engine/                 # Pure deterministic clinical & French driving rules + unit helpers
     ├── features/               # Lazy-loaded feature modules (today, meds, exams, plan, france, library, settings)
@@ -107,7 +107,7 @@ Key entry points:
 - [src/db/database.ts](./src/db/database.ts) -- Dexie IndexedDB schema
 - [src/engine/evaluate.ts](./src/engine/evaluate.ts) -- Deterministic patient state evaluator
 - [src/services/index.ts](./src/services/index.ts) -- Security, backup, notification, and AI service exports
-- [src/content/fr/expected-slugs.ts](./src/content/fr/expected-slugs.ts) -- Canonical list of the 51 French library articles
+- [src/content/fr/expected-slugs.ts](./src/content/fr/expected-slugs.ts) -- Canonical list of the 85 French library articles
 
 ## CI/CD & Deployment
 

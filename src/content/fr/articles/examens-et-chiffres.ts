@@ -195,8 +195,25 @@ L'étude historique de **Kim et al. (NEJM 2000)** a inclus 50 patients (FEVG moy
 
 **La localisation de la cicatrice renseigne aussi sur la cause.** Une cicatrice d'infarctus débute sous la paroi interne (sous-endocardique) et peut s'étendre à toute l'épaisseur dans le territoire d'une artère coronaire. Une cicatrice en plein milieu de la paroi (médio-murale) ou sur sa face externe (sous-épicardique) évoque une autre cause (cardiomyopathie non ischémique, myocardite ancienne). Dans l'étude de référence de McCrohon (2003), tous les patients atteints de maladie coronaire présentaient un profil sous-endocardique/transmural, tandis que 59 % des patients atteints de cardiomyopathie dilatée n'avaient aucune cicatrice (voir *Confirmer la cause de la dysfonction du ventricule gauche*).`,
     },
+    {
+      headingFr: 'Au-delà du bilan standard : EFX, strain (GLS), troponine, Holter et imagerie d’ischémie',
+      bodyMarkdownFr: `Les courriers de cardiologie dans l'ICFER ischémique comportent fréquemment cinq examens plus spécialisés en complément de la FEVG, de la taille du VG et du NT-proBNP :
+
+- l’**épreuve d’effort cardiorespiratoire (EFX / VO2 max et pente VE/VCO2)** pour calibrer la réadaptation cardiaque (SMR), démasquer une limitation cachée ou évaluer une insuffisance cardiaque avancée ;
+- le **strain longitudinal global (\`GLS\`)** à l’échocardiographie (normale autour de −18 % à −22 %, valeur dépendante de la marque d’échographe) ;
+- la **troponine cardiaque ultrasensible (\`hs-cTnT\` / \`hs-cTnI\`)**, souvent modérément élevée et stable dans l’ICFER chronique (lésion myocardique chronique, distincte d’un infarctus aigu) ;
+- les **enregistreurs ambulatoires du rythme** (Holter 24–48 h, patchs ECG 7–14 jours et moniteur cardiaque implantable) quantifiant la FA silencieuse, les TV non soutenues et la **charge en extrasystoles ventriculaires (ESV)** ;
+- l’**imagerie anatomique ou fonctionnelle d’ischémie coronaire** (coroscanner, IRM de perfusion sous stress, TEP cardiaque, scintigraphie SPECT et échocardiographie de stress).
+
+Ces cinq examens sont détaillés dans *EFX (VO2 max), strain (GLS), troponine chronique, Holter et imagerie d’ischémie*.`,
+    },
   ],
   relatedArticleSlugs: [
+    'efx-strain-troponine-et-imagerie-cardiaque',
+    'anevrisme-ventricule-gauche',
+    'ventricule-droit-et-hypertension-pulmonaire',
+    'maladie-renale-insuffisance-cardiaque',
+    'fuite-mitrale-secondaire',
     'fraction-dejection',
     'cardiomyopathie-ischemique',
     'insuffisance-cardiaque-fevg-amelioree',

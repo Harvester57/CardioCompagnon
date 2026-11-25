@@ -126,7 +126,7 @@ La HAS précise également les situations où le gilet peut être inadapté : pr
 - **Activité physique :** environ la moitié des utilisateurs français indiquaient que le gilet leur donnait confiance pour pratiquer une activité physique ou participer à une réadaptation cardiaque (SMR cardiovasculaire).
 - **Conduite automobile sous LifeVest :**
   - **En France (Arrêté du 28 mars 2022, annexe § 1.2.6) : la conduite automobile est interdite tant que le gilet défibrillateur portable est indiqué**, jusqu’à la prise en charge définitive (implantation d’un DAI ou décision qu’aucun dispositif n’est nécessaire). Pour les conducteurs professionnels (groupe lourd), l’indication d’un gilet entraîne une **incompatibilité définitive**.
-  - **À l’étranger :** aucune règle spécifique au gilet n’a été trouvée dans les référentiels britannique (DVLA, novembre 2025), européen rythmologique (EHRA 2009) ou allemand (DGK 2015 et 2023), ni sur la conduite après un choc délivré par un gilet. Dans ces pays, ce sont les délais liés à la situation sous-jacente (infarctus, angioplastie, pontage, insuffisance cardiaque) qui s’appliquent. La règle écrite la plus proche après un choc est celle d’un choc approprié de DAI (environ 3 mois d’arrêt dans les avis EHRA et DGK, 6 mois ou plus au Royaume-Uni), mais son extension au gilet reste une extrapolation.
+  - **À l’étranger :** aucune règle spécifique au gilet n’a été trouvée dans les référentiels britannique (DVLA, novembre 2025), européen rythmologique (EHRA 2009) ou allemand (DGK 2015 et 2023), ni dans une revue internationale de 2019 comparant les règles de conduite en Europe, au Royaume-Uni, en Allemagne, aux États-Unis et au Canada (Margulescu 2019), ni sur la conduite après un choc délivré par un gilet. Dans ces pays, ce sont les délais liés à la situation sous-jacente (infarctus, angioplastie, pontage, insuffisance cardiaque) qui s’appliquent. La règle écrite la plus proche après un choc est celle d’un choc approprié de DAI (environ 3 mois d’arrêt dans les avis EHRA et DGK, 6 mois ou plus au Royaume-Uni), mais son extension au gilet reste une extrapolation.
   - Les pages d’information du fabricant n’interdisent pas la conduite mais renvoient à l’avis médical, mettent en garde contre les bruits de route ou vibrations pouvant masquer une alarme, et rappellent d’appeler immédiatement un médecin après un choc (le gilet n’appelle pas les secours automatiquement). Consultez l’article « Permis de conduire, insuffisance cardiaque et défibrillateur (France et UE) » et vérifiez toujours votre situation avec votre cardiologue.
 - **À la fin de la période de port :** la FEVG est remesurée (ETT ou IRM cardiaque). Selon le résultat et le bilan global, la suite consiste soit en l’implantation d’un DAI ou d’un CRT-D, soit en la poursuite du traitement médical seul sans dispositif.`,
     },
@@ -142,6 +142,7 @@ La HAS précise également les situations où le gilet peut être inadapté : pr
     'insuffisance-cardiaque-fevg-amelioree',
     'traitements-additionnels-nouveaux',
     'telesurveillance-insuffisance-cardiaque',
+    'montres-connectees-et-capteurs-ic',
     'revascularisation-pontage-stents',
     'regles-conduite-automobile',
     'essais-cliniques-cles',
@@ -178,7 +179,7 @@ La HAS précise également les situations où le gilet peut être inadapté : pr
       detail: 'Interdiction de conduire en France pendant l’indication d’un gilet défibrillateur (groupe léger et groupe lourd)',
     },
     {
-      label: 'Comparatifs internationaux conduite (DVLA 2025, EHRA 2009, DGK 2015/2023, FAQ ZOLL LifeVest)',
+      label: 'Comparatifs internationaux conduite (DVLA 2025, EHRA 2009, DGK 2015/2023, revue Margulescu 2019, FAQ ZOLL LifeVest)',
       detail: 'Absence de règle spécifique au gilet hors de France et recommandations pratiques du fabricant',
     },
   ],

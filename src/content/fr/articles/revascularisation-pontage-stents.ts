@@ -78,7 +78,8 @@ export const article: WikiArticle = {
 
 - **Les tests de viabilité n’ont pas permis d’identifier les répondeurs (Panza 2019) :** parmi 601 patients testés (81 % avec muscle viable), le bénéfice du pontage était similaire avec ou sans viabilité démontrée.
 - **L’angor ne prédisait pas non plus le gain de survie (Jolicoeur 2015) :** le pontage améliorait la survie avec ou sans angine de poitrine, tout en soulageant plus souvent l’angor (**50 % contre 41 %**).
-- **Atteinte tritronculaire (trois vaisseaux) :** bénéfice plus important qu’en cas d’atteinte mono- ou bitronculaire.`,
+- **Atteinte tritronculaire (trois vaisseaux) :** bénéfice plus important qu’en cas d’atteinte mono- ou bitronculaire.
+- **Retirer la cicatrice n’a pas amélioré le pronostic (STICH hypothèse 2, 2009) :** dans un volet distinct de STICH, 1 000 patients présentant une paroi antérieure immobile ou bombante ont été randomisés entre pontage seul et pontage associé à une **reconstruction ventriculaire chirurgicale**. Le geste supplémentaire a réduit la taille du cœur mais n’a pas diminué les décès ni les hospitalisations cardiaques (**58 % contre 59 %** ; **HR 0,99**). Voir *Anévrisme du ventricule gauche (cicatrice bombante après infarctus)*.`,
     },
     {
       headingFr: 'Risques, complications et détails de l’angioplastie dans REVIVED-BCIS2',
@@ -175,6 +176,9 @@ Ce texte rappelle que le risque péri-opératoire est plus élevé à FEVG ≤ 3
     },
   ],
   relatedArticleSlugs: [
+    'angor-et-medicaments-anti-angineux',
+    'fuite-mitrale-secondaire',
+    'antiplaquettaires-bitherapie-et-protection-gastrique',
     'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'cardiomyopathie-ischemique',
@@ -183,8 +187,11 @@ Ce texte rappelle que le risque péri-opératoire est plus élevé à FEVG ≤ 3
     'essais-cliniques-cles',
     'questions-equipe-cardiologie',
     'examens-et-chiffres',
+    'efx-strain-troponine-et-imagerie-cardiaque',
+    'confirmer-la-cause-dysfonction-vg',
     'recommandations-comparees-esc-us-nice',
     'occlusion-coronaire-chronique-cto',
+    'anevrisme-ventricule-gauche',
     'cholesterol-et-prevention-secondaire',
     'stenose-aortique-fevg-reduite',
     'gilet-defibrillateur-portable',
@@ -200,8 +207,8 @@ Ce texte rappelle que le risque péri-opératoire est plus élevé à FEVG ≤ 3
       detail: 'Angioplastie assistée par Impella dans la dysfonction VG sévère : critère principal neutre et mortalité en critère secondaire',
     },
     {
-      label: 'Essais STICH (2011), STICHES à 10 ans (2016) et sous-analyses (Petrie 2016, Panza 2019, Jolicoeur 2015)',
-      detail: 'Survie à 10 ans après pontage, risque opératoire à 30 jours, impact de l’âge, de la viabilité et de l’angor',
+      label: 'Essais STICH (2011), STICH hypothèse 2 (2009), STICHES à 10 ans (2016) et sous-analyses (Petrie 2016, Panza 2019, Jolicoeur 2015)',
+      detail: 'Survie à 10 ans après pontage, reconstruction ventriculaire chirurgicale (HR 0,99), risque opératoire à 30 jours, impact de l’âge, de la viabilité et de l’angor',
     },
     {
       label: 'Essai REVIVED-BCIS2 (NEJM 2022, annexe supplémentaire et analyse rythmique Circulation 2023)',

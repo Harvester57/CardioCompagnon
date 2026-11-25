@@ -16,6 +16,7 @@ export const article: WikiArticle = {
     'fer-oral',
     'ferritine',
     'cst',
+    'hypophosphatémie',
     'icfer',
   ],
   aliases: [
@@ -32,7 +33,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "De nombreuses personnes atteintes d'insuffisance cardiaque manquent de fer, même lorsque leur numération sanguine (hémoglobine) est normale. Cette carence aggrave la fatigue et l'essoufflement. Elle se dépiste par une prise de sang (ferritine et coefficient de saturation de la transferrine, ou CST). Lorsqu'elle est confirmée, une perfusion de fer intraveineux en hôpital de jour améliore les symptômes et réduit les hospitalisations pour insuffisance cardiaque d'environ un cinquième à un quart, sans effet démontré sur la mortalité. En revanche, les comprimés de fer par voie orale ne reconstituent quasiment pas les réserves et ne sont pas efficaces dans l'ICFER. Le fer intraveineux est un traitement médical prescrit sur bilan biologique, et non un complément à acheter librement.",
+    "De nombreuses personnes atteintes d'insuffisance cardiaque manquent de fer, même lorsque leur numération sanguine (hémoglobine) est normale. Cette carence aggrave la fatigue et l'essoufflement et se dépiste par une prise de sang (ferritine et coefficient de saturation de la transferrine, ou CST). Lorsqu'elle est confirmée — en particulier lorsque le CST est inférieur à 20 % — une perfusion de fer intraveineux en hôpital de jour améliore les symptômes et réduit les hospitalisations pour insuffisance cardiaque d'environ 20 % à 30 % (confirmé par une méta-analyse indépendante sans lien industriel de novembre 2026), sans effet démontré sur la mortalité. Toutefois, la preuve directe en ajout à la quadrithérapie moderne incluant un inhibiteur du SGLT2 reste limitée (7,2 % des participants sous iSGLT2 dans les grands essais ; 23,6 % dans FAIR-HF2), et le carboxymaltose ferrique (Ferinject) expose beaucoup plus souvent à une hypophosphatémie transitoire que le dérisomaltose ferrique (Monofer). Les comprimés de fer par voie orale ne reconstituent quasiment pas les réserves et ne sont pas efficaces dans l'ICFER. Le fer intraveineux est un traitement médical prescrit sur bilan biologique par votre équipe de cardiologie.",
   sections: [
     {
       headingFr: 'Comment définit-on la carence en fer ?',
@@ -45,7 +46,7 @@ export const article: WikiArticle = {
     },
     {
       headingFr: 'Ce que démontre le fer intraveineux',
-      bodyMarkdownFr: `Les spécialités évaluées dans les essais sont le **carboxymaltose ferrique (*Ferinject*)** et le **dérisomaltose ferrique (*Monofer*)**, administrés en perfusion intraveineuse. La méta-analyse de 2025 regroupe les six essais contrôlés contre placebo (**FAIR-HF**, **CONFIRM-HF**, **AFFIRM-AHF**, **IRONMAN**, **HEART-FID**, **FAIR-HF2**), totalisant **7 175 patients** avec une FEVG jusqu'à 50 % :
+      bodyMarkdownFr: `Les spécialités évaluées dans les essais sont le **carboxymaltose ferrique (*Ferinject*)** et le **dérisomaltose ferrique (*Monofer*)**, administrés en perfusion intraveineuse. La méta-analyse de 2025 (**Anker et al., *Nature Medicine* 2025**) regroupe les six essais contrôlés contre placebo (**FAIR-HF**, **CONFIRM-HF**, **AFFIRM-AHF**, **IRONMAN**, **HEART-FID**, **FAIR-HF2**), totalisant **7 175 patients** avec une FEVG jusqu'à 50 % :
 
 | Critère évalué | 12 premiers mois | Ensemble du suivi |
 |---|---|---|
@@ -55,13 +56,13 @@ export const article: WikiArticle = {
 | Mortalité toutes causes | Non significatif (**HR 0,82**) | Non significatif (**HR 0,92**) |
 
 - Le bénéfice porte essentiellement sur la **réduction des hospitalisations**, particulièrement marquée durant la première année.
-- **Tolérance rassurante :** pas davantage d'effets indésirables graves ni d'infections qu'avec le placebo.
-- L'effet ne variait pas entre insuffisance cardiaque **ischémique et non ischémique**, ni selon la fonction rénale, le taux d'hémoglobine ou les valeurs martiales de départ.
+- **Tolérance globale :** pas davantage d'événements indésirables graves qu'avec le placebo, mais une divergence majeure existe entre molécules sur l'hypophosphatémie (voir ci-dessous).
+- L'effet global ne différait pas de façon significative entre insuffisance cardiaque **ischémique et non ischémique** (ischémique **RR 0,74**, IC 95 % 0,56–0,92), ni selon la fonction rénale ou le taux d'hémoglobine.
 - **Sexe :** les femmes semblaient bénéficier moins que les hommes (**RR 0,98 contre 0,76**) ; les auteurs indiquent que cela pourrait relever du hasard, même si FAIR-HF2 a retrouvé une tendance similaire.
 
 ### FAIR-HF2 (JAMA, 2025) : l'essai le plus proche de la cardiomyopathie ischémique
 
-- **Population :** **1 105 patients** carencés en fer avec **FEVG ≤ 45 %** (dont quelques-uns entre 41 et 45 %) dans 70 centres européens ; âge moyen **70 ans**, majoritairement NYHA II-III ; **78 %** avaient une cardiomyopathie ischémique et **47 %** un antécédent d'infarctus du myocarde. Suivi médian de **16,6 mois**.
+- **Population :** **1 105 patients** carencés en fer avec **FEVG ≤ 45 %** (médiane 35 %, moyenne 34 %) dans 70 centres européens ; âge moyen **70 ans**, majoritairement NYHA II–III ; **78 %** avaient une cardiomyopathie ischémique et **47 %** un antécédent d'infarctus du myocarde. Suivi médian de **16,6 mois**.
 - **Schéma d'administration :** jusqu'à **2 000 mg** de carboxymaltose ferrique à l'initiation (en deux visites), puis **500 mg tous les 4 mois** sauf si les réserves en fer étaient déjà élevées ; le placebo était du sérum physiologique.
 - **Trois critères principaux :**
   - Décès cardiovasculaire ou 1re hospitalisation pour IC : **141 contre 166 patients**, **HR 0,79** (IC 0,63–0,99), p = 0,04 ;
@@ -70,13 +71,25 @@ export const article: WikiArticle = {
 - **Pourquoi HR 0,79 ne compte pas comme un succès formel :** avec trois critères principaux simultanés, la règle statistique préspécifiée (**Hochberg**) exigeait soit les trois à p ≤ 0,05, soit deux à p ≤ 0,025, soit un à p ≤ 0,0167. Aucune de ces conditions n'étant atteinte, l'essai est **formellement neutre**, même si l'ampleur de l'effet correspond aux essais antérieurs.
 - **Modification du critère principal en cours d'essai :** le critère unique d'origine (total des hospitalisations IC + décès CV) a été remplacé par ces trois critères en **mars 2024**, alors que les données restaient en aveugle, en raison des perturbations liées au COVID-19 et d'incertitudes sur les doses réellement reçues. L'ancien critère, devenu exploratoire, affichait un **RR de 0,76** (IC 0,59–0,98). Environ un tiers des participants (**34 % contre 38 %**) ont arrêté le traitement précocement, réduisant la puissance statistique.
 - **Mortalité :** mortalité toutes causes **HR 0,94** (IC 0,72–1,24) ; mortalité cardiovasculaire environ **HR 0,80** (IC 0,55–1,14) ; aucune n'est significative.
-- **Tolérance :** événements indésirables graves **48,2 % contre 49,9 %**. L'article principal ne rapporte pas les effets spécifiques du fer tels que l'hypophosphatémie.
-- **Sous-groupe ischémique :** estimation à **0,86** (IC 0,62–1,20) chez les patients ischémiques contre **0,57** (IC 0,35–0,94) chez les non ischémiques ; aucun test d'interaction n'est publié et les auteurs ne relèvent pas de différence significative entre sous-groupes (tout comme la méta-analyse poolée). Cela ne montre pas que le fer IV agirait moins bien en cas d'ischémie, mais n'apporte pas de certitude supplémentaire isolément.
-- **Traitement de fond associé :** seuls **24 %** environ recevaient un iSGLT2 (**36 à 40 %** un ARNI, environ **70 %** un ARM), les iSGLT2 modifiant eux-mêmes les paramètres martiaux : l'ampleur exacte du bénéfice additionnel au-dessus des quatre piliers complets reste donc moins certaine.
+- **Tolérance :** événements indésirables graves **48,2 % contre 49,9 %**. L'article principal ne rapporte pas l'hypophosphatémie.
+- **Sous-groupe ischémique :** dans l'analyse dédiée (**Khan 2026**, n = 858), le critère décès CV ou 1re hospitalisation IC affichait un **HR de 0,85** (IC 0,66–1,10) chez les patients ischémiques contre **0,61** (IC 0,39–0,98) chez les non-ischémiques (p d'interaction = **0,26**, non significatif). La méta-analyse regroupée ne retrouvant pas de différence par cause, ces données ne montrent pas que le fer IV agirait moins bien en cas d'ischémie.
+- **Traitement de fond associé :** **23,6 %** (261/1 105) prenaient un iSGLT2 (**38 %** un ARNI, **70,5 %** un ARM).
 
 ### Pourquoi les essais individuels semblaient « presque positifs »
 
-**AFFIRM-AHF**, **IRONMAN**, **HEART-FID** et **FAIR-HF2** ont chacun manqué de peu leur propre critère principal. Leur regroupement met en évidence une diminution statistiquement solide des hospitalisations, mais la méta-analyse a été menée par les investigateurs mêmes des essais et FAIR-HF2 a été cofinancé par le laboratoire fabricant. Certains experts continuent donc de débattre de l'ampleur exacte de l'effet.`,
+**AFFIRM-AHF**, **IRONMAN**, **HEART-FID** et **FAIR-HF2** ont chacun manqué de peu leur propre critère principal. Leur regroupement met en évidence une diminution statistiquement solide des hospitalisations, mais la méta-analyse initiale a été menée par les investigateurs mêmes des essais et FAIR-HF2 a été cofinancé par le laboratoire fabricant.`,
+    },
+    {
+      headingFr: 'Le fer IV reste-t-il efficace sous quadrithérapie moderne avec iSGLT2 ?',
+      bodyMarkdownFr: `Une enquête approfondie dédiée figure dans la fiche *Thèse : fer intraveineux, iSGLT2 et quadrithérapie moderne dans l'ICFER* (**verdict : partiellement étayée, confiance moyenne**) :
+
+- **Bénéfice global confirmé par une revue indépendante sans lien industriel (Mandal et al., *Open Heart*, novembre 2026) :** sur 18 cohortes indépendantes d'insuffisance cardiaque, cette revue sans conflit d'intérêts confirme avec une **certitude GRADE modérée** la baisse du total des hospitalisations pour IC (**RR 0,78**, IC 95 % **0,67–0,90** en modèle à effet fixe) et du risque d'au moins une hospitalisation (**RR 0,89**, 0,80–0,99, soit environ **25 admissions évitées pour 1 000 patients**), sans gain démontré sur la mortalité (**HR 0,93**, 0,84–1,03), tout en relevant que les intervalles à effets aléatoires croisent 1.
+- **Lacune directe sous iSGLT2 et quadrithérapie complète :** sur l'ensemble des 6 grands essais (7 175 patients), seuls **519 patients (~7,2 %)** prenaient un inhibiteur du SGLT2 à l'inclusion : **23,6 %** (261/1 105) dans FAIR-HF2, **7,5 %** (229/3 065) dans HEART-FID, **2,6 %** (29/1 137) dans IRONMAN et quasiment aucun dans les essais plus anciens. **Aucun essai ni méta-analyse n'a publié les hospitalisations pour IC stratifiées par iSGLT2 ou quadrithérapie.** Le sous-groupe d'IRONMAN sous iSGLT2 (**Docherty 2024**) ne comporte que **29 utilisateurs d'iSGLT2** et n'analyse que l'hémoglobine (+1,0 contre +0,4 g/dL à 4 semaines, p d'interaction = 0,10 ; 2 contre 0 infarctus/AVC ; zéro polyglobulie ; aucune donnée d'hospitalisation).
+- **Pourquoi le CST < 20 % est le filtre décisif sous traitement moderne :** les iSGLT2 (dapagliflozine — *Forxiga*, empagliflozine — *Jardiance*) et le sacubitril/valsartan (*Entresto*) abaissent eux-mêmes l'**hepcidine de 20 à 40 %** et la **ferritine d'environ 32 à 33 %** tout en stimulant la fabrication de globules rouges, augmentant de **70 %** les chances de remplir les anciens critères de carence martiale sous dapagliflozine dans DAPA-HF (**Docherty 2022** ; **Ferreira 2025** ; **Packer 2022/2024**). Une ferritine isolément < 100 µg/L avec un CST ≥ 20 % reflète donc souvent une mobilisation active du fer plutôt qu'un vrai déficit : dans **HEART-FID** (**Lewis 2025**), 89,8 % avaient une ferritine < 100 µg/L mais seulement **40,5 % avaient un CST < 20 %**, diluant l'effet. Les analyses sur données individuelles (**Ponikowski 2023**, p d'interaction = 0,019), **IRONMAN** (**Cleland 2024**), **Marques 2024** (CST < 20 % **RR 0,81** contre CST ≥ 20 % **RR 0,98**, p d'interaction = 0,05) et le consensus **Packer 2024** convergent sur **CST < 20 %** comme groupe répondeur, alors que la ferritine < 100 µg/L isolée avec CST ≥ 20 % montre un effet quasi nul (**RR 0,96–0,98**) et un signal de mortalité numériquement défavorable dans IRONMAN.
+- **Divergence majeure de sécurité entre FCM (*Ferinject*) et FDI (*Monofer*) :**
+  - **Hypophosphatémie :** dans la sous-étude prospective dédiée de **HEART-FID** (**Nouhravesh 2025**, n = 133), **51,9 %** des patients recevant du **carboxymaltose ferrique (FCM)** ont développé une **hypophosphatémie modérée à sévère** au 21e jour (dont **27,8 % sévère de grade 3**), régressive aux jours 91–119 après un cycle unique, contre environ **4 à 8 %** avec le **dérisomaltose ferrique (FDI)** dans les essais comparatifs et méta-analyses hors IC. Le risque culmine en cas de fonction rénale préservée (**DFG > 60**) et de **perfusions répétées**. L'agence britannique **MHRA (2020/2026)** recense **36 cas mondiaux d'ostéomalacie hypophosphatémique (53 % avec fractures)** sous FCM contre **0 sous FDI**.
+  - **Infections :** dans IRONMAN (**Foley 2025**), le FDI s'associait à **moins** de premières hospitalisations infectieuses (**HR 0,76**, IC 95 % **0,59–0,98**, uniquement en cas de CST < 20 %). Toutefois, **Mandal 2026** cote la sécurité infectieuse dans l'IC à une certitude **faible à très faible**, les données standardisées manquant pour la plupart des participants et FAIR-HF2 ayant comptabilisé davantage d'épisodes infectieux sous FCM (165 contre 118). Une infection active contre-indique toute perfusion.
+- **Essais en cours à l'ère des iSGLT2 :** **COMBINED-HF** (*NCT06434025*, Brésil, n = 99 ICFER naïfs d'iSGLT2, FCM + dapagliflozine, critère principal FEVG en IRM à 30 jours, statut non actualisé) et **INFERRCT** (*NCT05759078*, Pologne, n = 1 000 post-infarctus avec **CST < 20 %**, FCM contre placebo) n'ont pas encore publié leurs résultats.`,
     },
     {
       headingFr: 'Fer par voie orale : pourquoi les comprimés ne suffisent pas',
@@ -92,7 +105,7 @@ Prendre des comprimés de fer sans carence documentée expose par ailleurs à de
 
 ### Comprimés de fer « mieux absorbés » (Ferrochel, fer sucrosomial, maltol ferrique)
 
-Des formulations orales plus récentes sont commercialisées comme capables de contourner ces limites. À la date de **novembre 2026**, cela **n'est pas démontré dans l'insuffisance cardiaque** ; l'analyse complète des preuves figure dans *Fer oral à haute biodisponibilité dans l'insuffisance cardiaque* (verdict : preuves insuffisantes, plutôt défavorables).
+Des formulations orales plus récentes sont commercialisées comme capables de contourner ces limites. À la date de **novembre 2026**, cela **n'est pas démontré dans l'insuffisance cardiaque** ; l'analyse complète des preuves figure dans *Fer oral à haute biodisponibilité (Ferrochel, sucrosomial) et insuffisance cardiaque* (verdict : preuves insuffisantes, plutôt en défaveur).
 
 - **Ferrochel (bisglycinate ferreux) :** aucun essai clinique dans l'insuffisance cardiaque et aucune preuve qu'il contourne l'hepcidine. Dans de petites études d'absorption chez des volontaires sains (Bovell-Benjamin 2000 ; méta-analyse Fischer 2023), son assimilation restait régulée par les réserves en fer de l'organisme comme le fer classique.
 - **Maltol ferrique (*Feraccru*) :** a augmenté le CST de **14 % à 29 %** dans une petite étude sans groupe placebo (**ORION-HF**, 41 patients, dont seulement 16 avec une FEVG < 50 %, tous anémiés).
@@ -115,6 +128,7 @@ Des formulations orales plus récentes sont commercialisées comme capables de c
     },
   ],
   relatedArticleSlugs: [
+    'these-fer-iv-et-isglt2-quadritherapie',
     'fer-oral-haute-biodisponibilite',
     'vitamines-b-insuffisance-cardiaque',
     'nutrition-et-complements-insuffisance-cardiaque',
@@ -123,43 +137,32 @@ Des formulations orales plus récentes sont commercialisées comme capables de c
     'questions-equipe-cardiologie',
     'essais-cliniques-cles',
     'maladies-associees',
+    'goutte-bpco-thyroide-et-autres-comorbidites',
   ],
   sources: [
     {
-      label: 'Méta-analyse fer IV dans l’insuffisance cardiaque (2025)',
-      detail: 'Regroupement de 6 essais (FAIR-HF, CONFIRM-HF, AFFIRM-AHF, IRONMAN, HEART-FID, FAIR-HF2 ; 7 175 patients), sous-groupes et tolérance',
+      label: 'Anker et al. (Nature Medicine & EJHF 2025), FAIR-HF2 (JAMA 2025, texte intégral) et Khan et al. (2026)',
+      detail: '6 essais (7 175 patients, 23,6 % iSGLT2 dans FAIR-HF2, 7,2 % au total), règle de Hochberg, sous-groupe ischémique (78 %) et tolérance.',
     },
     {
-      label: 'FAIR-HF2 (JAMA, 2025, texte intégral)',
-      detail: 'Schéma posologique, règle de multiplicité de Hochberg, modification du critère principal en aveugle, tolérance, sous-groupe ischémique (78 %) et taux d’iSGLT2',
+      label: 'Mandal et al. (Open Heart nov. 2026, texte intégral), Foley et al. (IRONMAN 2025) et Nouhravesh et al. (HEART-FID phosphate, mai 2025)',
+      detail: 'Méta-analyse indépendante sans lien industriel (18 cohortes), sécurité infectieuse (IRONMAN HR 0,76) et hypophosphatémie à J21 (51,9 % FCM contre ~4–8 % FDI ; alertes MHRA).',
     },
     {
-      label: 'IRONOUT-HF (JAMA, 2017, texte intégral)',
-      detail: 'Population à 78 % ischémique (FEVG médiane 25 %), recharge martiale minimale, rôle de l’hepcidine et tolérance du fer oral',
+      label: 'HEART-FID (Mentz 2023, Lewis 2025), IRONMAN (Cleland 2024, Docherty 2024), Ponikowski (2023) et Packer (2022/2024)',
+      detail: 'Rôle décisif du CST < 20 % contre ferritine isolée < 100 µg/L, remodelage du fer par iSGLT2/ARNI et essais COMBINED-HF / INFERRCT.',
     },
     {
-      label: 'ORION-HF (EJHF, 2025, texte intégral), Karavidas et al. (2021) et registres d’essais (RISE-HF, PREFER-HF)',
-      detail: 'Études sur le maltol ferrique et le fer sucrosomial dans l’insuffisance cardiaque et statut des essais contrôlés',
+      label: 'IRONOUT-HF (JAMA 2017, texte intégral), ORION-HF (2025), Karavidas (2021), AEGIS-H2H, Bertani (2021), Bovell-Benjamin (2000), Fischer (2023) et Pantopoulos (2024)',
+      detail: 'Échec du fer oral classique dans l’ICFER (78 % ischémique), formes orales récentes et blocage par l’hepcidine.',
     },
     {
-      label: 'AEGIS-H2H, Bertani et al. (2021), Bovell-Benjamin et al. (2000), Fischer et al. (2023), Pantopoulos (2024), Abbati (2019) et Tomosugi (2023)',
-      detail: 'Comparaisons fer oral récent vs fer IV en MICI/MRC, absorption du bisglycinate ferreux (Ferrochel) et régulation par l’hepcidine',
+      label: 'Docherty (DAPA-HF 2022), Ferreira (EMPEROR 2025), Cabrera (2020), Marques (2026), Stoffel (2017), Sato (2025) et Ni (2025)',
+      detail: 'Modulation de l’hepcidine sous iSGLT2, limites de la ferritine seule et hyperferritinémie métabolique.',
     },
     {
-      label: 'Docherty et al. (2022), Ferreira et al. (2025), Cabrera et al. (2020), Marques et al. (2026) et Stoffel et al. (2017)',
-      detail: 'Modulation de l’hepcidine sous iSGLT2, tests d’absorption du fer dans l’IC et schéma un jour sur deux',
-    },
-    {
-      label: 'Recommandations ESC 2026 sur l’insuffisance cardiaque',
-      detail: 'Classes I/IIa pour le fer IV, bilan martial initial (Classe I C) et discussion du seuil CST < 20 %',
-    },
-    {
-      label: 'NICE NG106 (2025), AHA/ACC/HFSA 2022 et Khan et al. (2021)',
-      detail: 'Critères britanniques (1.4.5–1.4.7), note sur l’hypophosphatémie, recommandation américaine 2a B-R et contre-indication des ASE (Classe 3 : Danger)',
-    },
-    {
-      label: 'Sato et al. (revue narrative, 2025, texte intégral) et Ni et al. (2025, texte intégral)',
-      detail: 'Limites de la ferritine seule (CST ≤ 19,8 %, fer sérique ≤ 13 µmol/L) et hyperferritinémie métabolique chez 7 498 patients en ICFEP (grade 2/3 HR 1,43)',
+      label: 'Recommandations ESC 2026, NICE NG106 (2025), AHA/ACC/HFSA 2022 et Khan et al. (2021)',
+      detail: 'Classes ESC I/IIa, critères NICE 1.4.5–1.4.7 (note hypophosphatémie FCM), recommandation américaine 2a B-R et contre-indication des ASE.',
     },
   ],
   disclaimerType: 'medical',

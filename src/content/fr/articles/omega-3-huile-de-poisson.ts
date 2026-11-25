@@ -16,6 +16,8 @@ export const article: WikiArticle = {
     'gissi-hf',
     'fibrillation-atriale',
     'saignement',
+    'ema-prac',
+    'ansm',
     'compléments',
   ],
   aliases: [
@@ -25,94 +27,87 @@ export const article: WikiArticle = {
     'EPA',
     'DHA',
     'Icosapent éthyl',
+    'Omacor',
+    'Vazkepa',
     'GISSI-HF',
   ],
   linkedModules: ['core', 'atrialFibrillation'],
   plainSummaryFr:
-    "Les acides gras oméga-3 disposent des meilleures preuves cliniques parmi les compléments étudiés dans l'insuffisance cardiaque, mais le bénéfice observé est modeste et s'accompagne d'un compromis important. Dans le grand essai GISSI-HF (6 975 patients, majoritairement ICFER), une capsule de qualité pharmaceutique dosée à 1 g/j (environ 870 mg d'EPA + DHA) a légèrement réduit la mortalité (27 % contre 29 %, NNT 56 sur 4 ans), avant l'arrivée des traitements modernes (ARNI, iSGLT2). En contrepartie, les doses élevées augmentent le risque de fibrillation atriale (FA), un trouble du rythme mal toléré lorsque le ventricule gauche est dilaté et affaibli : une méta-analyse de 35 essais trouve des odds de FA majorés de 14 % globalement et de 43 % au-dessus de 1,5 g/j chez les patients à haut risque ; dans GISSI-HF, la FA était légèrement plus fréquente (11,2 % contre 9,8 %), sans significativité statistique. Les saignements n'augmentent pas globalement dans les grands essais, sauf légèrement à 4 g/j d'EPA purifié. Les gélules en vente libre ne sont pas équivalentes au médicament testé, et manger du poisson dans le cadre d'une alimentation équilibrée est une démarche différente. Toute supplémentation se discute d'abord avec votre cardiologue.",
+    "Les acides gras oméga-3 disposent des données d'essais les plus fournies parmi les compléments étudiés dans l'insuffisance cardiaque, mais le bénéfice est modeste et s'accompagne d'un risque de fibrillation atriale (FA) qui augmente avec la dose. Dans le grand essai GISSI-HF (6 975 patients, majoritairement ICFER), une capsule sur prescription de 1 g/j (~850–882 mg d'EPA + DHA) a légèrement réduit la mortalité (27 % contre 29 %, NNT 56 sur 4 ans), mais avant l'arrivée des traitements modernes (sacubitril/valsartan, iSGLT2). Au-dessus de 1 à 1,5 g/j (1,8 à 4 g/j), le risque de FA augmente nettement. Même à 1 g/j ou moins, une enquête dédiée conclut que le risque ne peut pas être déclaré nul : les analyses groupées convergent vers un léger décalage de +7 % à +12 % à la limite de la significativité (et GISSI-HF affiche +1,2 à +1,4 point absolu dans l'ICFER). En 2023–2024, les agences EMA, ANSM et MHRA ont ajouté la FA comme effet indésirable fréquent pour tous les esters éthyliques d'acides oméga-3 sur prescription (Omacor et génériques), avec arrêt définitif si une FA survient. À l'inverse, manger du poisson gras ne montre aucun excès de FA, et les gélules en vente libre ne sont ni équivalentes ni testées sur les événements cardiaques. Toute capsule se discute avec votre cardiologue ou votre pharmacien.",
   sections: [
     {
       headingFr: 'L’essai de référence dans l’insuffisance cardiaque : GISSI-HF',
-      bodyMarkdownFr: `- **Population :** 6 975 patients italiens atteints d'insuffisance cardiaque chronique (NYHA II à IV). Environ 90 % avaient une FEVG ≤ 40 %, ce qui en fait en pratique un essai d'ICFER.
-- **Traitement testé :** une spécialité sur prescription dosée à **1 g/j** (environ **870 mg d'EPA + DHA**) contre placebo, suivie pendant environ 4 ans.
-- **Résultats :**
-  - **Mortalité toutes causes :** 27 % contre 29 % (HR ajusté **0,91**, p = 0,041) ;
-  - **Décès ou hospitalisation cardiovasculaire :** 57 % contre 59 % (HR ajusté **0,92**) ;
-  - **Nombre de sujets à traiter (NNT) :** il fallait traiter environ **56 personnes pendant environ 4 ans** pour éviter un décès ;
-  - **Tolérance digestive :** troubles gastro-intestinaux dans 3 % des cas dans chaque groupe.
-- **Limites clés :**
-  - le bénéfice statistiquement significatif reposait sur l'analyse ajustée (la comparaison non ajustée n'était pas significative), et les auteurs eux-mêmes ont qualifié l'effet de petit ;
-  - le traitement de fond de l'époque ne comportait ni sacubitril/valsartan (*Entresto*), ni iSGLT2, ni les dispositifs modernes : le bénéfice résiduel en plus de la quadrithérapie actuelle est inconnu et probablement plus faible.`,
+      bodyMarkdownFr: `- **Population :** 6 975 patients italiens atteints d'insuffisance cardiaque chronique (NYHA II à IV), dont environ **90 % avec une FEVG ≤ 40 %** (en pratique un essai d'ICFER).
+- **Traitement testé :** une spécialité sur prescription dosée à **1 g/j** d'esters éthyliques d'acides oméga-3 (environ **850 à 882 mg d'EPA + DHA**) contre placebo d'huile d'olive, suivie sur une médiane de **3,9 ans**.
+- **Résultats principaux :**
+  - **Mortalité toutes causes :** 27 % contre 29 % (**HR ajusté 0,91**, p = 0,041) ;
+  - **Décès ou hospitalisation cardiovasculaire :** 57 % contre 59 % (**HR ajusté 0,92**) ;
+  - **Nombre de sujets à traiter (NNT) :** environ **56 personnes pendant ~4 ans** pour éviter un décès ;
+  - **Tolérance digestive :** troubles gastro-intestinaux dans 3 % des cas dans chaque bras.
+- **Fibrillation atriale dans GISSI-HF (analyses post hoc, non adjudiquées) :**
+  - Chez les **5 835 patients** sans FA sur l'ECG initial (**Aleksova 2013**) : **15,2 % (444) contre 14,0 % (408)**, **HR non ajusté 1,10** (IC 95 % **0,96–1,25**, p = 0,19), avec une incidence annuelle élevée d'environ **3,7 %/an** (cinq fois supérieure aux essais de prévention primaire) ;
+  - En excluant aussi tout antécédent de FA (**n = 4 991**, ligne investigateurs dans **Abuknesha 2026**) : **11,2 % (278/2 492) contre 9,8 % (244/2 499)**, **OR 1,16** (IC 95 % **0,97–1,39**, +1,4 point absolu, non significatif).
+- **Limites clés :** le gain de survie reposait sur l'ajustement statistique (comparaison brute non significative, p = 0,12) ; le traitement de fond précédait le sacubitril/valsartan (*Entresto*), les iSGLT2 et les dispositifs modernes, rendant le bénéfice résiduel actuel incertain et probablement plus faible.`,
     },
     {
       headingFr: 'Données sur la maladie coronaire',
-      bodyMarkdownFr: `Dans des populations cardiovasculaires plus larges (méta-analyse **An 2022**, texte intégral ; dose médiane **1,8 g/j**), les compléments d'oméga-3 ont été associés à une légère baisse des événements coronaires :
+      bodyMarkdownFr: `Dans des populations cardiovasculaires mixtes (méta-analyse **An 2022**, texte intégral ; dose médiane **1,8 g/j**, certitude modérée déclassée pour imprécision), les oméga-3 étaient associés à de modestes réductions coronaires : infarctus du myocarde **RR 0,85** (0,78–0,92 ; 12 essais), événements coronaires **RR 0,86** (0,80–0,93), décès CV **RR 0,93** (0,88–0,97), mais **aucune baisse de la mortalité totale** (**RR 0,97** ; 0,93–1,00) ni des **AVC** (**RR 1,06**).
 
-- **Infarctus du myocarde :** RR **0,85** (IC 95 % 0,78–0,92 ; 12 essais) ;
-- **Événements coronaires :** RR **0,86** (IC 95 % 0,80–0,93 ; 5 essais) ;
-- **Mortalité cardiovasculaire :** RR **0,93** (IC 95 % 0,88–0,97 ; 17 essais) ;
-- **Mortalité toutes causes :** pas de réduction démontrée (**RR 0,97** ; IC 95 % 0,93–1,00 ; 23 essais) ;
-- **AVC :** pas de réduction (**RR 1,06** ; IC 95 % 0,96–1,18).
+Cependant, les grands essais modernes à faible ou moyenne dose ajoutés aux statines et à l'angioplastie ont été **neutres** sur les événements cardiovasculaires : **OMEGA** (3 851 patients post-infarctus, 1 g/j : mort subite 1,5 % contre 1,5 %, mortalité totale 4,6 % contre 3,7 %, p = 0,18), **ASCEND** (15 480 diabétiques, 840 mg/j : RR 0,97), **Risk and Prevention** (12 505 patients à risque sans infarctus, 1 g/j : HR 0,97), **ORIGIN** (12 536 patients, 1 g/j : décès CV HR 0,98), **OMEMI** (1 014 post-infarctus âgés, 1,8 g/j : HR 1,08) et **STRENGTH** (13 078 patients, 4 g/j d'acides carboxyliques EPA+DHA : HR 0,99, arrêté pour futilité).
 
-Les auteurs ont coté ces résultats à une certitude modérée (déclassée pour imprécision) ; ils proviennent de populations mixtes et non d'essais dédiés à l'ICFER. La même analyse affiche un risque plus bas d'« arythmie » (RR 0,79 ; 6 essais) sans définir ni discuter ce critère : il ne doit pas être interprété comme un démenti du signal sur la fibrillation atriale ci-dessous.`,
+À l'opposé, l'EPA purifié à forte dose (**icosapent éthyl — *Vazkepa* 4 g/j**) dans **REDUCE-IT** (8 179 patients sous statine avec triglycérides 1,35–4,99 g/L, 71 % prévention secondaire, 18 % d'IC) a réduit les événements majeurs de 25 % (**17,2 % contre 22,0 %**, HR 0,75 ; débat connu sur le placebo à l'huile minérale), tandis que **RESPECT-EPA** (2 506 coronariens japonais, 1,8 g/j EPA pur, ouvert) a manqué de peu son critère principal (**HR 0,79**, p = 0,055). La mention « arythmie RR 0,79 » d'An 2022, non définie dans l'article, ne contredit pas le signal sur la fibrillation atriale détaillé ci-dessous.`,
     },
     {
-      headingFr: 'Le compromis majeur : le risque de fibrillation atriale (FA)',
-      bodyMarkdownFr: `**Méta-analyse de Gencer (2021)** regroupant 7 essais d'événements cardiovasculaires (81 210 participants suivis environ 5 ans) : les oméga-3 ont augmenté le risque de fibrillation atriale de **25 %** dans l'ensemble, avec une hausse d'environ **11 % par gramme supplémentaire par jour**.
+      headingFr: 'La courbe dose-réponse de la fibrillation atriale (FA)',
+      bodyMarkdownFr: `Une thèse dédiée (*Thèse : oméga-3 à faible dose et risque de fibrillation atriale*) évalue si une dose **≤ 1 g/j** évite le risque de FA dans la maladie coronaire ou l'ICFER : **verdict partiellement réfuté (confiance moyenne)**.
 
-| Dose quotidienne | Risque de fibrillation atriale (Gencer 2021) |
-|---|---|
-| **≤ 1 g/j** | +12 % (HR 1,12) |
-| **> 1 g/j** | +49 % (HR 1,49) |
+| Palier de dose | Essais clés | Résultat FA (oméga-3 contre témoin) | Contexte clinique |
+|---|---|---|---|
+| **≤ 1 g/j** (~840–882 mg EPA+DHA) | **VITAL Rhythm** (25 119, sans MCV), **ASCEND** (15 480, diabète sans ASCVD), **GISSI-HF** (ICFER), **RP** (12 505), **GISSI-P** (5 663) | VITAL **HR 1,09** (0,96–1,24 ; sous traitement 1,13) ; ASCEND EHR **RR 1,02** (autodéclaré 1,23) ; GISSI-HF **HR 1,10** (15,2 % vs 14,0 %) / strict **OR 1,16** (11,2 % vs 9,8 %) ; RP **HR 1,22** ; GISSI-P **OR 0,87** | Aucun essai significatif isolément ; VITAL Rhythm excluait toute MCV/IC et ne peut exclure jusqu'à +24 % de risque |
+| **1,8 g/j** (intermédiaire) | **OMEMI** (1 014 post-IDM âgés, EPA+DHA) ; **RESPECT-EPA** (2 506 coronariens, EPA pur) | OMEMI FA clinique **7,2 % vs 4,0 %** (HR 1,84, p = 0,06) et FA + micro-FA **11,9 % vs 6,5 %** (**HR 1,90 [1,16–3,11], p = 0,011**, médié à 65 % par la hausse d'EPA sérique) ; RESPECT-EPA **3,1 % vs 1,6 %** (**p = 0,017**, OR 1,97) | Quasi-doublement de la FA chez les coronariens bien au-dessous de 4 g/j, aussi bien avec EPA+DHA qu'avec EPA pur |
+| **4 g/j** (forte dose) | **STRENGTH** (13 078, EPA+DHA) ; **REDUCE-IT** (8 179, EPA pur) | STRENGTH **2,2 % vs 1,3 %** (**HR 1,69 [1,29–2,21], p < 0,001**) ; REDUCE-IT hosp. FA **3,1 % vs 2,1 %** (**HR 1,50 [1,14–1,98], p = 0,004** ; TEAE 5,3 % vs 3,9 %). Si **FA préalable** : **12,5 % vs 6,3 % (+6,2 points absolus, p = 0,007)** | Excès net quelle que soit la composition ; un antécédent de FA amplifie fortement le risque d'hospitalisation |
 
-**Méta-analyse d'Abuknesha (2026, texte intégral)** regroupant **35 essais (114 592 personnes, 0,6 à 4 g/j pendant 1 à 7 ans)**, incluant des données de FA non publiées de 15 essais :
-- **Tous essais confondus :** les odds de FA étaient augmentés de **14 % (OR 1,14 ; IC 95 % 1,04–1,25)**, augmentation significative présente dans le graphique principal (*forest plot*) mais absente du résumé.
-- **Stratification par risque cardiovasculaire et dose** (seuil fixé à 1,5 g/j ; comparaisons entre groupes *post hoc*) :
+### Réconciliation des méta-analyses (Gencer 2021, Jia 2021, Lombardi 2021, Abuknesha 2026)
 
-| Groupe (Abuknesha 2026) | Odds ratio de FA (IC 95 %) |
-|---|---|
-| **Haut risque CV, > 1,5 g/j** (12 essais) | **1,43 (1,14–1,79)** — environ 0,8 cas supplémentaire pour 100 personnes sur ~2 ans |
-| **Haut risque CV, ≤ 1,5 g/j** (6 essais) | 1,07 (0,99–1,16), à la limite de la significativité |
-| **Risque faible, forte dose** (12 petits essais, 19 cas de FA) | 1,03 (0,45–2,36) |
-| **Risque faible, faible dose** (7 essais) | 1,06 (0,95–1,18) |
-
-- **Résultat dans l'essai IC (GISSI-HF) :** seul essai d'insuffisance cardiaque inclus ; à sa dose de 870 mg d'EPA + DHA (capsule de 1 g/j), une nouvelle FA est survenue chez **11,2 % contre 9,8 %** (**OR 1,16** ; IC 95 % 0,97–1,39 : légèrement plus de FA, non significatif).
-- **Financement et liens d'intérêts :** l'analyse a été soutenue en partie par GOED (association professionnelle de l'industrie des oméga-3), dont l'article indique qu'elle n'a pas joué de rôle dans le travail ; plusieurs auteurs principaux ont des liens institutionnels ou commerciaux déclarés avec le secteur des oméga-3.
-
-**Points d'accord et de désaccord :**
-- **Accord :** les fortes doses augmentent nettement le risque de fibrillation atriale chez les patients atteints de maladie cardiaque.
-- **Aux faibles doses, question de significativité plus que de direction :** l'estimation de Gencer à ≤ 1 g/j (HR 1,12) et celles d'Abuknesha à faible dose (OR 1,06–1,07) pointent toutes légèrement vers le haut ; seule la première atteint la significativité statistique, avec des seuils de dose différents (1 g contre 1,5 g).
-
-**Étude observationnelle avec fortes réserves (O'Keefe 2025, prépublication UK Biobank) :** une analyse par plusieurs des mêmes auteurs a associé des taux sanguins plus élevés d'oméga-3 à un peu moins de FA sur 12,7 ans (**HR 0,86** ; IC 95 % 0,82–0,90 ; 0,87 dans le résumé), et l'usage autodéclaré d'huile de poisson à une absence de lien après ajustement sur l'âge (HR 1,00). Il s'agit d'une **prépublication non évaluée par les pairs**, avec auteurs liés au secteur des oméga-3, dans une population quasi indemne d'IC (0,4 % d'IC) où les taux bruts de FA étaient initialement plus élevés dans le quintile supérieur (7,3 % contre 6,7 %) : elle ne l'emporte pas sur les essais randomisés.
-
-**Positions des recommandations :**
-- **Déclaration AHA 2022 :** éviter les doses d'oméga-3 de **4 g/j ou plus** dans l'insuffisance cardiaque en raison du risque de FA.
-- **Recommandations américaines AHA/ACC/HFSA 2022 :** dans l'insuffisance cardiaque NYHA II à IV, les oméga-3 « peuvent être raisonnables » en traitement d'appoint pour réduire les décès et hospitalisations cardiovasculaires (recommandation faible : **Classe 2b, niveau B-R**).
-- **Recommandations ESC 2026 :** les oméga-3 ne sont pas mentionnés dans le texte principal.
-
-**Pourquoi la FA compte particulièrement ici :** sur un ventricule gauche dilaté et affaibli, la survenue d'une FA peut aggraver l'essoufflement, déclencher une décompensation et augmenter le risque d'AVC, imposant souvent l'ajout d'un anticoagulant en plus ou à la place de l'aspirine.`,
+- **Gencer 2021 (*Circulation*, NIH/académique, 7 ECR, 81 210 personnes) :** globalement **HR 1,25 (1,07–1,46)**, **HR 1,49** au-dessus de 1 g/j et **HR 1,12 (1,03–1,22, p = 0,024)** à ≤ 1 g/j, avec une pente linéaire de **+11 % par +1 g/j**. **Nuance décisive en texte intégral :** lorsque Gencer remplace les 301 cas autodéclarés d'ASCEND par les **1 177 cas issus des dossiers hospitaliers EHR (Parish 2020, RR 1,02)**, son estimation à ≤ 1 g/j devient **HR 1,08 (0,99–1,17, p = 0,077)** en effets aléatoires (Knapp-Hartung) tout en restant à la limite de la significativité en effets fixes (**HR 1,075 [1,003–1,153], p = 0,042**, I² = 0 %) avec une pente de **+10 % par +1 g/j**.
+- **Jia 2021** (8 ECR, 83 112 personnes, académique) trouve indépendamment **RR 1,12 (1,04–1,21, p = 0,004)** à ≤ 1 g/j et **RR 1,51** au-dessus de 1 g/j, sans hausse des AVC (**RR 1,04**). **Lombardi 2021** (AHA/NIH) rapporte **IRR 1,37** (et **1,29** avec VITAL).
+- **Abuknesha 2026** (35 essais, 114 592 personnes, cofinancée par GOED avec liens FARI/CardioTabs/OmegaQuant) rapporte un **OR global de 1,14 (1,04–1,25)** dans la figure 2 (omis du résumé), **OR 1,43 (1,14–1,79 ; +0,8 % absolu)** chez les patients à haut risque > 1,5 g/j, et **OR 1,07 (0,99–1,16)** chez les patients à haut risque ≤ 1,5 g/j. Deux réserves d'intégrité sont relevées : 128 témoins comptés deux fois entre strates, et une ligne **ORIGIN** (288/6 281 contre 259/6 255, 11,47 % du poids) correspondant à l'entier près aux *décès par arythmie* d'ORIGIN (*NEJM* 2012).
+- **Convergence réelle :** après prise en compte d'ASCEND-EHR, Gencer (1,075–1,08) et Abuknesha haut risque (1,07) convergent vers un **léger décalage haussier d'environ +7 % à +12 %** situé à la limite exacte de la significativité.
+- **Mécanismes proposés :** des études cellulaires (**Romero 2019**) impliquent les canaux mécanosensibles **PIEZO1** (ralentissement par le DHA, accélération par l'EPA), mais comme l'EPA pur sans DHA augmente aussi la FA (REDUCE-IT, RESPECT-EPA) et que l'EPA sérique médie 65 % du signal d'OMEMI, **Marcus et Link (*Circulation* 2024)** concluent que le mécanisme pro-arythmique humain reste inconnu.`,
     },
     {
-      headingFr: 'Risque hémorragique (y compris sous aspirine ou anticoagulants)',
-      bodyMarkdownFr: `- **Vue d'ensemble (Javaid 2024) :** sur l'ensemble des grands essais cardiovasculaires d'oméga-3 (environ 120 000 personnes), les saignements toutes gravités confondues ont été de **2,6 % contre 2,4 %** sous placebo (différence non significative ; aucun saignement fatal rapporté).
-- **EPA purifié à forte dose (icosapent éthyl — *Vazkepa* / *Vascepa*, 4 g/j) :** légère augmentation des saignements :
-  - en analyse groupée : RR **1,50**, soit environ **0,6 saignement supplémentaire pour 100 personnes** (environ 1 saignement en plus pour 166 personnes traitées), avec un effet dose-dépendant ;
-  - dans l'essai **REDUCE-IT** (où 79 % des participants prenaient un antiagrégant), les saignements graves ont été d'environ **2,7 % contre 2,1 %**.
-- **Avec les traitements antithrombotiques :**
-  - la notice de l'icosapent éthyl signale des saignements plus fréquents chez les patients recevant aussi de l'aspirine, du clopidogrel ou de la warfarine, et demande une surveillance clinique ;
-  - la notice d'une spécialité d'EPA + DHA sur prescription indique que l'association aux anticoagulants n'a pas été étudiée de façon approfondie et recommande un suivi périodique ;
-  - chez des volontaires sains, 4 g/j n'ont pas modifié l'effet d'une dose unique de warfarine ;
-  - **donnée manquante :** aucune source compilée n'apporte de données sur les saignements liés aux oméga-3 associés aux anticoagulants oraux directs (apixaban, rivaroxaban, édoxaban, dabigatran) ni à une double antiagrégation plaquettaire.
-- **Réserves :** la méta-analyse Javaid 2024 a été financée par le fabricant de l'icosapent éthyl, et les essais ont évalué des médicaments sur prescription, pas des compléments en vente libre. Bien que l'arrêt avant chirurgie soit souvent conseillé en pratique, cette revue n'a pas trouvé de preuve d'un excès de saignement périopératoire et aucun délai officiel d'arrêt n'a été identifié.`,
-    },
-    {
-      headingFr: 'Quelle place en pratique ?',
-      bodyMarkdownFr: `- Les oméga-3 peuvent être évoqués avec votre cardiologue comme un **petit complément éventuel**, jamais en remplacement des quatre piliers du traitement de fond.
-- Si votre cardiologue envisage cette piste, les données de l'ICFER portent sur environ **1 g/j d'un produit de qualité pharmaceutique**, et non sur des gélules surdosées en vente libre.
-- **Points non couverts par les sources compilées ici :** le bénéfice cardiovasculaire spécifique de l'icosapent éthyl à forte dose chez les patients coronariens hypertriglycéridémiques, et la comparaison directe entre la consommation de poisson gras et les capsules.`,
+      headingFr: 'Quatre produits distincts, positions réglementaires (EMA / ANSM / MHRA) et saignements',
+      bodyMarkdownFr: `| Exposition | Qualité et encadrement | Données sur la fibrillation atriale |
+|---|---|---|
+| **Esters éthyliques EPA+DHA sur prescription** (*Omacor 1 000 mg*, génériques) | Contrôle pharmaceutique ; RCP européen/français mentionnant la FA comme effet indésirable fréquent | Testés dans GISSI-HF, VITAL, ASCEND, RP, OMEMI ; léger signal limite à ≤ 1 g/j, excès net > 1 g/j |
+| **EPA purifié sur prescription** (*Vazkepa*, icosapent éthyl) | Spécialité pharmaceutique ; FA/flutter listés comme effet fréquent dès l'AMM européenne 2021 (5,8 % vs 4,5 %) | Excès net à 1,8 g/j (RESPECT-EPA) et 4 g/j (REDUCE-IT, surtout +6,2 % en cas de FA préalable) |
+| **Gélules d'huile de poisson en vente libre (OTC)** | Complément alimentaire ; audits montrant sous-dosage fréquent (3/32 conformes à l'étiquette, 83 % oxydés au-delà des normes dans **Albert 2015** ; jusqu'à 36 % de graisses saturées dans **Mason 2017**) | **Non testées dans les grands essais CV.** La cohorte UK Biobank **Chen 2024** (HR 1,13) n'ajustait l'âge qu'en binaire (**< 65 contre ≥ 65 ans**) ; l'ajustement continu sur l'âge ramène l'association à **HR 1,00 (0,97–1,02)** (**O'Keefe 2025**, prépublication). L'AHA (2019) déconseille de les substituer aux médicaments |
+| **Poisson gras alimentaire** (saumon, maquereau, sardines ; ~2 portions/sem.) | Matrice alimentaire complète (~250–700 mg/j d'EPA+DHA en moyenne) | **Aucun excès de FA :** méta-analyse FORCE sur 17 cohortes (**Qian 2023**, n = 54 799, 13,3 ans) : EPA **HR 1,00**, DHA **HR 0,90**, EPA+DHA **HR 0,93** |
+
+### Positions réglementaires et recommandations
+
+- **EMA PRAC (septembre 2023), ANSM France (novembre 2023) et UK MHRA (janvier 2024) :** ont ajouté la **fibrillation atriale comme effet indésirable fréquent** (jusqu'à 1 patient sur 10 ; incidence poolée 3,9 %) dans les notices de **tous les médicaments à base d'esters éthyliques d'acides oméga-3** (*Omacor 1 000 mg* et génériques), en précisant que le risque est dose-dépendant et **maximal à 4 g/j**, et que **le traitement doit être arrêté définitivement si une FA survient**. Cette évaluation ne porte ni sur le poisson alimentaire ni sur les compléments OTC non réglementés.
+- **ESC 2026 et NICE NG106 :** ne mentionnent ni ne recommandent les compléments d'oméga-3 dans l'insuffisance cardiaque chronique.
+- **AHA/ACC/HFSA 2022 (États-Unis) :** recommandation faible (**Classe 2b, niveau B-R**) en NYHA II–IV d'après GISSI-HF ; la déclaration **AHA 2022** conseille d'éviter les doses **≥ 4 g/j** dans l'IC.
+- **Enjeu dans l'ICFER ischémique :** une nouvelle FA aggrave volontiers la tolérance hémodynamique, rend l'ivabradine inefficace et déclenche une anticoagulation orale (score CHA₂DS₂-VA déjà ≥ 2).
+
+### Risque hémorragique (y compris sous aspirine ou anticoagulants)
+
+- **Vue d'ensemble (Javaid 2024, ~120 643 personnes, financé par le fabricant de l'icosapent éthyl) :** saignements globaux **2,6 % contre 2,4 %** (RR 1,09, non significatif ; aucun saignement fatal).
+- **EPA purifié à 4 g/j (icosapent éthyl) :** légère augmentation (**RR 1,50**, +0,6 saignement pour 100 traités, NNH 166) ; dans REDUCE-IT (79 % sous antiagrégant), saignements graves **2,7 % contre 2,1 %**, et **7,3 % contre 6,0 %** chez les patients avec FA préalable (dont 77,8 % sous anticoagulants).
+- **Antithrombotiques :** les notices demandent une surveillance des saignements avec l'aspirine, le clopidogrel ou la warfarine. **Aucune donnée d'essai dédiée** n'existe en association aux AOD (apixaban, rivaroxaban, édoxaban, dabigatran) ni à une bithérapie antiplaquettaire : vérifiez toujours avec votre cardiologue ou votre pharmacien.
+
+### Quelle place en pratique ?
+
+- **Poisson gras dans l'alimentation (~2 portions/semaine) :** raisonnable et à aborder, sans excès de FA observé.
+- **Oméga-3 sur prescription à ~1 g/j :** piste **possible mais de priorité faible**, décision exclusivement médicale (bénéfice moderne incertain, signal FA limite à +7–12 %, arrêt définitif imposé si une FA survient).
+- **Fortes doses (> 1 à 1,5 g/j ; surtout 4 g/j) :** ne pas débuter en automédication ; toute prescription pour hypertriglycéridémie relève d'une évaluation individuelle en cardiologie.
+- **Gélules en vente libre :** non étayées comme substitut.`,
     },
   ],
   relatedArticleSlugs: [
+    'these-omega3-faible-dose-risque-fa',
+    'fibrillation-atriale-insuffisance-cardiaque',
     'nutrition-et-complements-insuffisance-cardiaque',
     'coenzyme-q10',
     'vitamine-d-insuffisance-cardiaque',
@@ -124,20 +119,24 @@ Les auteurs ont coté ces résultats à une certitude modérée (déclassée pou
   ],
   sources: [
     {
-      label: 'GISSI-HF (2008)',
-      detail: '6 975 patients avec IC chronique (90 % FEVG ≤ 40 %), oméga-3 1 g/j (870 mg EPA+DHA) contre placebo sur 4 ans.',
+      label: 'GISSI-HF (2008), Aleksova et al. (2013), VITAL Rhythm (Albert 2021), ASCEND (Bowman 2018 ; Parish 2020), RP (2013) et OMEGA (2010)',
+      detail: 'Essai ICFER (6 975 patients), analyse FA post hoc GISSI-HF (15,2 % vs 14,0 % / strict 11,2 % vs 9,8 %) et essais à faible dose.',
     },
     {
-      label: 'Gencer et al. (2021), Abuknesha et al. (2026, texte intégral) et O’Keefe et al. (2025, prépublication)',
-      detail: 'Méta-analyses sur le risque dose-dépendant de fibrillation atriale (35 essais, ligne GISSI-HF, liens d’intérêts) et analyse observationnelle UK Biobank.',
+      label: 'OMEMI (Kalstad 2021 ; Myhre 2023), RESPECT-EPA (2024), STRENGTH (2020) et REDUCE-IT (Bhatt 2019 ; Olshansky 2023)',
+      detail: 'Excès de FA à 1,8 g/j et 4 g/j, médiation EPA et amplification en cas de FA préalable (+6,2 points).',
     },
     {
-      label: 'An et al. (2022, texte intégral) et Javaid et al. (2024)',
-      detail: 'Signaux coronaires complets (dose médiane 1,8 g/j) et méta-analyse du risque hémorragique (REDUCE-IT et notices icosapent éthyl / EPA+DHA).',
+      label: 'Gencer et al. (2021, texte intégral), Jia (2021), Lombardi (2021) et Abuknesha et al. (2026, texte intégral)',
+      detail: 'Réconciliation entre Gencer sensibilité ASCEND-EHR (1,075–1,08) et Abuknesha (1,07), et audit critique (ORIGIN, doublons de témoins).',
     },
     {
-      label: 'Recommandations AHA/ACC/HFSA 2022 et déclaration AHA 2022',
-      detail: 'Classe 2b (niveau B-R) en NYHA II–IV ; mise en garde contre les doses ≥ 4 g/j.',
+      label: 'EMA PRAC (sept. 2023), ANSM (nov. 2023), UK MHRA (janv. 2024), ESC 2026 et AHA/ACC/HFSA 2022',
+      detail: 'Classement de la FA en effet indésirable fréquent et règle d’arrêt définitif pour tous les esters éthyliques sur prescription.',
+    },
+    {
+      label: 'Qian (FORCE 2023), Chen (2024), O’Keefe (2025), Albert (2015), Mason (2017), Romero (2019), Marcus & Link (2024), An (2022) et Javaid (2024)',
+      detail: 'Poisson gras sans excès de FA, biais d’âge UK Biobank, qualité des gélules OTC, mécanismes PIEZO1 et méta-analyse hémorragique.',
     },
   ],
   disclaimerType: 'medical',

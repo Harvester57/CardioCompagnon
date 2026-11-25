@@ -72,8 +72,8 @@ L'Union européenne fixe un socle minimal que chaque État membre doit appliquer
   - **Groupe 1 :** conduite **interdite** tant que le gilet est indiqué, jusqu'à la décision définitive (implantation d'un DAI ou levée de l'indication) ;
   - **Groupe 2 :** **incompatibilité définitive** dès l'indication du gilet.
   - *Point de vigilance :* le mémento abrégé pour médecins (avril 2022) ne mentionne pas le gilet ; seule l'annexe de l'arrêté détaille cette règle.
-- **Qui décide et quelle démarche effectuer :** votre médecin traitant ou votre cardiologue a un devoir d'information, mais seul un **médecin agréé par la préfecture** (qui ne peut pas être votre propre médecin traitant) statue sur l'aptitude. En Groupe 1, il appartient au conducteur concerné par une affection listée de solliciter lui-même cette visite médicale. En Groupe 2, le contrôle médical est obligatoire avant délivrance puis périodique.
-- *Vérification de version :* les tableaux d'annexe consultés début 2026 ne portaient pas d'amendement depuis 2022 ; les règles évolueront lors de la transposition de la directive UE 2025/2205 d'ici 2028.`,
+- **Qui décide et quelle démarche effectuer :** votre médecin traitant ou votre cardiologue a un devoir d'information, mais seul un **médecin agréé par la préfecture** (qui ne peut pas être votre propre médecin traitant) statue sur l'aptitude. En Groupe 1, il appartient au conducteur concerné par une affection listée de solliciter lui-même cette visite médicale. En Groupe 2, le contrôle médical est obligatoire avant délivrance puis périodique. Pour des fiches pratiques dédiées aux porteurs de DAI ou une question de droits, vous pouvez aussi consulter l'association **APODEC** ou **Santé Info Droits** (voir l'article « Réseau de soins en France, aides sociales, mutuelle et associations »).
+- *Vérification de version :* les tableaux d'annexe consultés début 2026 ne portaient pas d'amendement depuis 2022 (une version révisée de l'annexe Groupe 2 n'a pas été vérifiée séparément) ; les règles évolueront lors de la transposition de la directive UE 2025/2205 d'ici 2028.`,
     },
     {
       headingFr: 'Comparaison des règles nationales actuelles (France, Royaume-Uni, Canada)',
@@ -114,25 +114,30 @@ Contrairement à la France, aucune règle spécifique au gilet défibrillateur n
 ### Repères européens historiques et autres pays
 
 - **Consensus européen EHRA 2009 (Groupe 1) :** 4 semaines en prévention primaire, 3 mois en prévention secondaire ou après choc approprié, arrêt jusqu'à correction de la cause après choc inapproprié, 1 semaine après changement de boîtier, 4 semaines après révision de sonde. L'EHRA s'est appuyée sur une formule de « risque de dommage » acceptant environ un risque annuel de **1 sur 20 000** pour les autres usagers de la route.
-- **Comparaison internationale 2019 (Margulescu) — prévention primaire (Groupe 1) :** 4 semaines (EHRA, Canada), 1 mois (Royaume-Uni), 2 semaines (Australie), 1 à 2 semaines (Allemagne), 1 semaine (anciens avis américains AHA/HRS et Japon). En 2019, un DAI excluait la conduite professionnelle dans toutes les juridictions étudiées, hormis une exception canadienne à très faible risque.
+- **Comparaison internationale 2019 (Margulescu) — prévention primaire (Groupe 1) :** 4 semaines (EHRA, Canada), 1 mois (Royaume-Uni), 2 semaines (Australie), 1 à 2 semaines (Allemagne), 1 semaine (anciens avis américains AHA/HRS et Japon). Après un choc approprié (rapporté en 2019) : environ 3 mois (EHRA, Allemagne, Japon) ; au Royaume-Uni, 6 mois en cas de symptômes sans perte de connaissance et 2 ans en cas de perte de connaissance. En 2019, un DAI excluait la conduite professionnelle dans toutes les juridictions étudiées, hormis une exception canadienne à très faible risque.
 - **États-Unis (article ACC 2011, non réactualisé) :** environ 1 semaine en prévention primaire, 6 mois en prévention secondaire, interdiction définitive en transport commercial inter-États ; règles privées fixées par chaque État.
 - **Royaume-Uni (nuance DVLA) :** ne pas déclarer une affection qui compromet la conduite expose à une amende pouvant atteindre 1 000 £ et à des poursuites en cas d'accident. Les anciennes pages publiques GOV.UK (2015) paraissent plus restrictives que le standard professionnel DVLA de novembre 2025.
-- **Recommandations ESC 2022 (arythmies ventriculaires) :** ne fixent aucun délai chiffré mais recommandent d'informer systématiquement chaque porteur de DAI des restrictions de conduite et de la conduite à tenir après un choc.
+- **Recommandations ESC 2022 (arythmies ventriculaires) :** ne fixent aucun délai chiffré (ni dans le texte principal ni dans le supplément en ligne de 182 pages), mais recommandent d'informer systématiquement chaque porteur de DAI des restrictions de conduite et de la conduite à tenir après un choc (voir aussi l'article « Arythmies ventriculaires et médicaments antiarythmiques »).
 
-### Ordre de grandeur du risque de choc au volant
+### Ordre de grandeur du risque de choc au volant et points non couverts
 
 - Dans les essais de prévention primaire, un choc survient chez environ **7,5 % des patients par an** (EHRA 2009 ; ACC 2011).
 - La probabilité estimée de recevoir un choc pendant la conduite est d'environ **0,15 % des patients par an** (article ACC 2011).
-- Plusieurs auteurs (Margulescu 2019) soulignent que nombre de réglementations reposent sur des données anciennes et plaident pour une évaluation davantage individualisée.`,
+- Plusieurs auteurs (Margulescu 2019) soulignent que nombre de réglementations reposent sur des données anciennes et plaident pour une évaluation davantage individualisée.
+- *Limites des sources :* aucune recommandation de conduite EHRA ou américaine plus récente (post-2009 / post-2011) n'a été retrouvée en accès libre, les trois errata de la CCS 2023 n'ont pas été lus et les règles spécifiques de l'assistance circulatoire (LVAD) font l'objet d'une évaluation dédiée (voir l'article sur le LVAD).`,
     },
   ],
   relatedArticleSlugs: [
     'dispositifs-cardiaques-dai-crt',
+    'gilet-defibrillateur-portable',
+    'arythmies-ventriculaires-et-antiarythmiques',
+    'assistance-circulatoire-lvad',
+    'fibrillation-atriale-insuffisance-cardiaque',
     'vivre-avec-insuffisance-cardiaque',
+    'vivre-avec-insuffisance-cardiaque-en-france',
+    'reseau-de-soins-et-aides-sociales-france',
     'recommandations-comparees-esc-us-nice',
     'questions-equipe-cardiologie',
-    'gilet-defibrillateur-portable',
-    'vivre-avec-insuffisance-cardiaque-en-france',
   ],
   sources: [
     {
@@ -154,7 +159,7 @@ Contrairement à la France, aucune règle spécifique au gilet défibrillateur n
       detail: 'Délais canadiens après DAI, chocs, infarctus, angioplastie et insuffisance cardiaque.',
     },
     {
-      label: 'Consensus EHRA (2009), ESC 2022 (arythmies ventriculaires) et revue Margulescu (2019)',
+      label: 'Consensus EHRA (2009), ESC 2022 (arythmies ventriculaires, texte intégral et supplément) et revue Margulescu (2019)',
       detail: 'Formule du risque de dommage (1 sur 20 000/an), comparaison internationale des délais et obligation d’information des porteurs de DAI.',
     },
     {

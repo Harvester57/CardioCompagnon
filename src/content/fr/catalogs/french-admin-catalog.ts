@@ -6,12 +6,12 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
     titleFr: 'Demande d’ALD exonérante (ALD 5 insuffisance cardiaque / ALD 13 maladie coronarienne)',
     category: 'couverture',
     summaryFr:
-      "L'ALD exonérante assure une prise en charge à 100 % du tarif de la Sécurité sociale pour les soins liés à votre insuffisance cardiaque (ALD 5, critères HAS juillet 2025 : symptômes + FEVG < 40 % en systolique, ou épisode congestif avec FEVG > 40 %) et/ou à votre maladie coronarienne (ALD 13, ischémie documentée), pour 10 ans renouvelables. Elle maintient également le plafond de 3 ans d'indemnités journalières après la réforme d'octobre 2026.",
+      "L'ALD exonérante assure une prise en charge à 100 % du tarif de la Sécurité sociale pour les soins liés à votre insuffisance cardiaque (ALD 5, critères HAS juillet 2025 : symptômes + FEVG < 40 % en systolique, ou épisode congestif avec FEVG > 40 %) et/ou à votre maladie coronarienne (ALD 13, ischémie documentée), pour 10 ans renouvelables, y compris le suivi par un infirmier en pratique avancée (IPA, accès direct en structure coordonnée depuis le 22 janvier 2025). Elle maintient le plafond de 3 ans d'indemnités journalières après octobre 2026, mais laisse à charge les dépassements d'honoraires (vérifiez l'OPTAM), le forfait journalier (23 €/jour) et le FPU réduit (9,96 € en ALD) depuis le 1er mars 2026, ainsi que les participations et franchises plafonnées à 70 € + 70 € = 140 €/an depuis le 1er octobre 2026 (d'où l'intérêt de conserver une mutuelle ou de vérifier votre éligibilité à la C2S).",
     stepsFr: [
-      'Demander à votre médecin traitant d’établir le protocole de soins en lien avec votre cardiologue (joindre comptes rendus d’ETT, d’IRM cardiaque ou de coronarographie).',
+      'Demander à votre médecin traitant d’établir le protocole de soins en lien avec votre cardiologue (joindre comptes rendus d’ETT, d’IRM cardiaque ou de coronarographie) et vérifier son intégration dans Mon espace santé.',
       'Attendre la validation du médecin-conseil de votre CPAM, puis signer le protocole de soins et vérifier votre attestation de droits sur ameli.fr.',
-      'Présenter votre protocole de soins lors des consultations afin que les prescriptions liées à votre cardiopathie figurent dans la partie haute de l’ordonnance bizone.',
-      'Anticiper le renouvellement avant l’échéance (10 ans) et vérifier auprès de votre mutuelle la couverture des frais non pris en charge (dépassements d’honoraires, forfait hospitalier).',
+      'Présenter votre protocole lors des consultations (y compris auprès d’un IPA en structure coordonnée) afin que les prescriptions liées à votre cardiopathie figurent dans la partie haute de l’ordonnance bizone.',
+      'Conserver une mutuelle (ou demander la C2S selon vos revenus, qui exonère dépassements, forfait journalier 23 €/jour, FPU 9,96 € et franchises/participations), vérifier l’adhésion OPTAM sur annuairesante.ameli.fr et suivre votre compteur de franchises (rattrapage possible jusqu’à 5 ans en tiers payant) dans votre compte ameli.',
     ],
     officialLinks: [
       {
@@ -23,6 +23,10 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.service-public.fr/particuliers/vosdroits/F34068',
       },
       {
+        label: 'service-public.fr — Complémentaire santé solidaire C2S (fiche F10027)',
+        url: 'https://www.service-public.fr/particuliers/vosdroits/F10027',
+      },
+      {
         label: 'HAS — Actes et prestations ALD 5 (insuffisance cardiaque, 2025)',
         url: 'https://www.has-sante.fr/jcms/fc_2875171/fr/resultat-de-recherche?text=ALD+5+insuffisance+cardiaque',
       },
@@ -32,20 +36,24 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
   },
   {
     id: 'smr_rehab',
-    titleFr: 'Réadaptation cardiaque en SMR cardiovasculaire',
+    titleFr: 'Réadaptation cardiaque en SMR cardiovasculaire et relais APA',
     category: 'parcours_soins',
     summaryFr:
-      "La réadaptation cardiaque (ESC 2026 Classe I, GERS-P/SFC 2023 Classe I grade A) se déroule en service de SMR (ex-SSR) mention cardiovasculaire, en hospitalisation complète ou en hôpital de jour (au moins 20 séances combinant endurance aérobie, renforcement musculaire encadré et entraînement inspiratoire). Elle inclut aussi l'éducation thérapeutique (ETP), le suivi diététique et psychologique et la préparation à la reprise du travail. Aucune entente préalable n'est nécessaire et les séances sont prises en charge à 100 % par l'Assurance Maladie.",
+      "La réadaptation cardiaque (ESC 2026 Classe I, GERS-P/SFC 2023 Classe I grade A) se déroule en service de SMR (ex-SSR) mention cardiovasculaire, en hospitalisation complète ou en hôpital de jour (au moins 20 séances combinant endurance aérobie, renforcement musculaire encadré, entraînement inspiratoire, ETP, suivi diététique et psychologique). Aucune entente préalable n'est nécessaire et les séances SMR sont prises en charge à 100 % par l'Assurance Maladie. En relais de ville, l'activité physique adaptée (APA / sport sur ordonnance) peut être prescrite par tout médecin ou un IPA (depuis avril 2025) et renouvelée une fois par un kinésithérapeute, mais n'est pas remboursée au niveau national pour l'IC même en ALD : appuyez-vous sur les 581 Maisons Sport-Santé, les forfaits prévention des mutuelles et les Clubs Cœur et Santé de la FFC.",
     stepsFr: [
-      'Demander une prescription de réadaptation cardiaque à la sortie d’hospitalisation, ou directement à votre cardiologue de ville ou à votre médecin traitant.',
-      'Choisir avec votre médecin le centre SMR cardiovasculaire adapté (hôpital de jour si vous habitez à proximité, ou séjour complet, recommandé d’emblée en classe NYHA IIIb selon le GERS-P).',
-      'Transmettre le dossier médical au centre SMR choisi (aucune demande d’accord préalable CPAM n’est requise).',
-      'Suivre l’ensemble du programme (endurance, renforcement musculaire encadré, ETP, optimisation des traitements) puis organiser avec votre équipe le relais d’activité physique après la sortie (au moins 3 séances/semaine selon la HAS 2022, en validant les charges adaptées).',
+      'Demander une prescription de réadaptation cardiaque en SMR à la sortie d’hospitalisation, ou directement à votre cardiologue de ville ou à votre médecin traitant.',
+      'Choisir avec votre médecin le centre SMR cardiovasculaire adapté (hôpital de jour si vous habitez à proximité, ou séjour complet, recommandé d’emblée en classe NYHA IIIb selon le GERS-P) ; aucune entente préalable CPAM n’est requise.',
+      'Suivre l’ensemble du programme SMR (endurance, renforcement musculaire encadré, ETP, optimisation des traitements et soutien psychologique).',
+      'Organiser le relais d’activité physique après la sortie (au moins 3 séances/semaine selon la HAS 2022) : demander une ordonnance d’APA à votre médecin ou à un IPA, repérer une Maison Sport-Santé (sports.gouv.fr) ou un Club Cœur et Santé FFC, et vérifier le forfait sport-santé de votre mutuelle.',
     ],
     officialLinks: [
       {
         label: 'HAS — Orientation vers la réadaptation cardiaque (2024)',
         url: 'https://www.has-sante.fr/jcms/fc_2875171/fr/resultat-de-recherche?text=readaptation+cardiaque',
+      },
+      {
+        label: 'sports.gouv.fr — Annuaire des 581 Maisons Sport-Santé',
+        url: 'https://www.sports.gouv.fr/maisons-sport-sante',
       },
       {
         label: 'ameli.fr — Insuffisance cardiaque et prise en charge',
@@ -186,24 +194,36 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
   },
   {
     id: 'rqth_mdph',
-    titleFr: 'Reconnaissance de la qualité de travailleur handicapé (RQTH — MDPH)',
+    titleFr: 'Droits MDPH : RQTH, cartes CMI, AAH, PCH et soutien aux proches aidants (AJPA)',
     category: 'travail',
     summaryFr:
-      "Attribuée par la MDPH, la RQTH facilite les aménagements de poste, l'accès aux dispositifs de reconversion et double la durée du préavis légal en cas de licenciement. Vous n'avez aucune obligation d'en informer votre employeur si vous ne souhaitez pas la mobiliser immédiatement.",
+      "Le dossier MDPH (Cerfa 15692*01, évalué sur le retentissement fonctionnel) rassemble plusieurs droits essentiels : RQTH (aménagements de poste, préavis doublé, sans obligation d'en informer l'employeur ; équivalence automatique depuis le 1er janvier 2024 pour les titulaires d'une pension d'invalidité CPAM ou d'une CMI Invalidité), cartes CMI Stationnement / Priorité / Invalidité (attention : les anciennes cartes papier expirent le 31 décembre 2026), AAH déconjugalisée (jusqu'à 1 041,59 €/mois), PCH (demande avant 60 ans) et conditions ouvrant à vos proches le congé de proche aidant et l'AJPA (66,64 €/jour, 66 jours par personne aidée jusqu'à 4 personnes ; l'ALD 5 seule ne suffit pas).",
     stepsFr: [
-      'Retirer ou compléter en ligne le dossier de demande MDPH (formulaire Cerfa) et faire remplir le certificat médical détaillé par votre médecin traitant ou votre cardiologue.',
-      'Joindre les justificatifs d’identité, de domicile et vos comptes rendus médicaux décrivant le retentissement sur votre activité professionnelle.',
-      'Déposer le dossier complet à la MDPH de votre département (délai légal d’instruction jusqu’à 4 mois ; l’absence de réponse vaut rejet).',
-      'Décider librement, une fois la RQTH accordée, de la communiquer ou non à votre employeur ou au médecin du travail pour activer des aménagements.',
+      'Compléter le dossier unique MDPH (en ligne ou Cerfa 15692*01) avec le certificat médical détaillé de votre médecin ou cardiologue décrivant l’impact fonctionnel quotidien et professionnel (demander si besoin RQTH, CMI, AAH ou PCH en un seul dépôt).',
+      'Vérifier si vous disposez déjà d’une équivalence RQTH automatique (pension d’invalidité CPAM ou CMI Invalidité, Loi pour le plein emploi) et penser à remplacer toute ancienne carte papier de stationnement ou d’invalidité avant le 31 décembre 2026.',
+      'Déposer le dossier tôt (délai légal CDAPH jusqu’à 4 mois ; l’absence de réponse vaut rejet ; recours RAPO sous 2 mois) afin que vos proches puissent mobiliser le congé de proche aidant et l’AJPA (66,64 €/jour) sans préavis en cas de dégradation brutale.',
+      'Décider librement, une fois la RQTH accordée, de la communiquer ou non à votre employeur ou au médecin du travail ; en cas de difficulté, solliciter une assistante sociale hospitalière ou Santé Info Droits (01 53 62 40 30).',
     ],
     officialLinks: [
       {
-        label: 'service-public.fr — Reconnaissance de la qualité de travailleur handicapé (fiche F1650)',
+        label: 'service-public.fr — RQTH (fiche F1650)',
         url: 'https://www.service-public.fr/particuliers/vosdroits/F1650',
+      },
+      {
+        label: 'service-public.fr — Carte mobilité inclusion CMI (fiche F34049)',
+        url: 'https://www.service-public.fr/particuliers/vosdroits/F34049',
+      },
+      {
+        label: 'service-public.fr — Allocation aux adultes handicapés AAH (fiche F12242)',
+        url: 'https://www.service-public.fr/particuliers/vosdroits/F12242',
+      },
+      {
+        label: 'service-public.fr — Congé de proche aidant et AJPA (fiche F16920)',
+        url: 'https://www.service-public.fr/particuliers/vosdroits/F16920',
       },
     ],
     asOf: '2026-11-25',
-    articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
+    articleSlug: 'reseau-de-soins-et-aides-sociales-france',
   },
   {
     id: 'pension_invalidite',
@@ -282,27 +302,31 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
   },
   {
     id: 'vaccinations_ic',
-    titleFr: 'Vaccinations recommandées dans l’insuffisance cardiaque',
+    titleFr: 'Vaccinations recommandées dans l’insuffisance cardiaque (calendrier avril 2026)',
     category: 'prevention',
     summaryFr:
-      "Les infections respiratoires favorisent les décompensations cardiaques. Les recommandations ESC 2026 (Classe IIa) et le guide HAS ALD 5 (2025) recommandent la vaccination annuelle contre la grippe, la vaccination contre le pneumocoque, ainsi que la vaccination contre la Covid-19 et contre le VRS (après 65 ans).",
+      "Les infections respiratoires sont un déclencheur majeur de décompensation cardiaque. Selon le calendrier vaccinal français d'avril 2026 et la HAS : vaccination antigrippale annuelle gratuite à tout âge (bon d'Assurance Maladie via « maladies des coronaires » ou « insuffisances cardiaques graves » ; vaccins Efluelda haute dose ou Fluad adjuvanté préférés dès 65 ans ; campagne 2026–2027 ouverte le 13 octobre 2026), rappel Covid-19 chaque automne, 1 dose pneumocoque dès 18 ans (Capvaxive PCV21 préféré par la HAS depuis juillet 2026, Prevenar 20 acceptable ; 65 % sur ordonnance), et à partir de 65 ans 1 dose VRS (Abrysvo ou Arexvy ; statut de remboursement seniors à vérifier en pharmacie fin 2026) ainsi que 2 doses contre le zona (Shingrix, remboursé à 65 %).",
     stepsFr: [
-      'Faire le point sur votre carnet vaccinal avec votre médecin traitant, votre pharmacien ou votre infirmière insuffisance cardiaque / IPA.',
-      'Réaliser la vaccination antigrippale chaque automne (prise en charge à 100 % avec le bon de l’Assurance Maladie en cas de pathologie cardiaque chronique).',
-      'Vérifier la mise à jour de votre vaccination antipneumococcique et discuter des rappels Covid-19 ainsi que du vaccin contre le VRS si vous avez 65 ans ou plus.',
-      'Noter chaque vaccination dans votre dossier médical partagé (Mon espace santé) et dans votre journal de suivi.',
+      'Faire le point sur votre carnet vaccinal avec votre médecin traitant, votre pharmacien ou votre infirmière IC / IPA (plusieurs vaccins peuvent être administrés le même jour sur deux sites différents).',
+      'Réaliser chaque automne (campagne ouverte le 13 octobre 2026) la vaccination contre la grippe (gratuite avec le bon CPAM ; demander le bon au médecin, pharmacien ou infirmier si vous avez moins de 65 ans ; Efluelda ou Fluad privilégiés dès 65 ans) et le rappel Covid-19.',
+      'Demander une ordonnance pour une dose unique de vaccin antipneumococcique conjugué (Capvaxive PCV21 préféré depuis juillet 2026, ou Prevenar 20 ; remboursé à 65 %, rattrapage possible après anciens vaccins PCV13/PPSV23).',
+      'À partir de 65 ans, discuter du vaccin contre le VRS (en faisant confirmer les conditions exactes de remboursement en pharmacie ou auprès de votre CPAM fin 2026) et de Shingrix contre le zona (2 doses à 2 mois d’intervalle, remboursé à 65 %), puis enregistrer chaque vaccin dans Mon espace santé.',
     ],
     officialLinks: [
       {
-        label: 'ameli.fr — Vaccination et prise en charge pour les personnes fragiles',
+        label: 'ameli.fr — Vaccination et campagne grippe / Covid-19',
         url: 'https://www.ameli.fr/assure/sante/themes/vaccination',
       },
       {
-        label: 'HAS — Guide ALD 5 insuffisance cardiaque (vaccinations listées, 2025)',
-        url: 'https://www.has-sante.fr/jcms/fc_2875171/fr/resultat-de-recherche?text=ALD+5+insuffisance+cardiaque',
+        label: 'sante.gouv.fr — Calendrier des vaccinations 2026',
+        url: 'https://sante.gouv.fr/prevention-en-sante/preserver-sa-sante/vaccination/calendrier-vaccinal',
+      },
+      {
+        label: 'HAS — Stratégie vaccinale pneumocoque (Capvaxive PCV21, juillet 2026)',
+        url: 'https://www.has-sante.fr/jcms/fc_2875171/fr/resultat-de-recherche?text=Capvaxive+pneumocoque',
       },
     ],
-    asOf: '2026-11-24',
-    articleSlug: 'vivre-avec-insuffisance-cardiaque',
+    asOf: '2026-11-25',
+    articleSlug: 'vaccinations-insuffisance-cardiaque',
   },
 ];

@@ -32,7 +32,7 @@ npm run test:watch       # Run Vitest in watch mode
 npm run test:e2e         # Run Playwright E2E tests against built preview
 npm run audit:prod       # Check production dependencies for vulnerabilities
 npm run check            # Full verification gate: typecheck + lint + static-check + test + audit:prod
-npm run check:wiki-sync  # Verify 51 French articles match local wiki frontmatter dates (uses WIKI_ROOT)
+npm run check:wiki-sync  # Verify 85 French articles match local wiki frontmatter dates (uses WIKI_ROOT)
 ```
 
 ## 3. Architecture & Directory Boundaries
@@ -43,7 +43,7 @@ Keep changes scoped to the appropriate architectural layer:
 - [src/db/index.ts](./src/db/index.ts) -- Dexie schema (`CardioCompagnonDB` for active user data and `CardioCompagnonDemoDB` for isolated Discovery Mode), React hooks, demo seed, and `state-loader.ts`. Never mix active and demo databases. When changing indexed fields in [database.ts](./src/db/database.ts), add a new Dexie schema version instead of mutating version 1 in place.
 - [src/engine/index.ts](./src/engine/index.ts) -- Pure, deterministic, offline clinical and regulatory rules engine (`evaluatePatientState`, `evaluateFrenchDrivingFitness`, unit conversions in [units.ts](./src/engine/units.ts), and rule modules in [daily-vitals.rules.ts](./src/engine/rules/daily-vitals.rules.ts), [medications.rules.ts](./src/engine/rules/medications.rules.ts), [labs-imaging.rules.ts](./src/engine/rules/labs-imaging.rules.ts), [french-rights.rules.ts](./src/engine/rules/french-rights.rules.ts), [driving.rules.ts](./src/engine/rules/driving.rules.ts)). Must never depend on network calls, browser globals, or AI.
 - [src/services/index.ts](./src/services/index.ts) -- Web Crypto (`crypto.ts`), PIN lock (`pin-lock.ts`), JSON and encrypted backup/restore (`backup.ts`), local notifications (`notifications.ts`), and optional BYOK AI (`ai/`). Backups must exclude BYOK API keys by default.
-- [src/content/fr/index.ts](./src/content/fr/index.ts) -- Auto-discovers all 51 French scientific articles via `import.meta.glob('./articles/*.ts', { eager: true })`. Slugs must stay in sync with [expected-slugs.ts](./src/content/fr/expected-slugs.ts) and the 5 structured catalogs (`medications-reference.ts`, `interactions-catalog.ts`, `french-admin-catalog.ts`, `questions-catalog.ts`, `glossary.ts`).
+- [src/content/fr/index.ts](./src/content/fr/index.ts) -- Auto-discovers all 85 French scientific articles via `import.meta.glob('./articles/*.ts', { eager: true })`. Slugs must stay in sync with [expected-slugs.ts](./src/content/fr/expected-slugs.ts) and the 5 structured catalogs (`medications-reference.ts`, `interactions-catalog.ts`, `french-admin-catalog.ts`, `questions-catalog.ts`, `glossary.ts`).
 - [src/ui/index.ts](./src/ui/index.ts) -- Shared design system ([theme.css](./src/ui/theme.css) with light default, dark mode, large text mode, and `@media print` A4 rules), `AppShell`, `DisclaimerBanner`, `TriageBadge`, `EvidenceBadge`, `GlossaryTooltip`, and `Card`.
 - [src/app/routes.tsx](./src/app/routes.tsx) -- Lazy-loaded routes for the 7 feature modules (`today`, `meds`, `exams`, `plan`, `france`, `library`, `settings`) wrapped in `HashRouter`, `RouteErrorBoundary`, `PinLockGate`, `NotificationScheduler`, and `BackupReminderBanner`.
 
@@ -86,7 +86,7 @@ This repository includes local skills under `.agents/skills/`:
 - [web-component-design](./.agents/skills/web-component-design/SKILL.md) -- Accessible component APIs and styling patterns.
 
 **Custom project skills:**
-- [wiki-article-sync](./.agents/skills/wiki-article-sync/SKILL.md) -- Authoring/syncing the 51 French articles and 5 structured catalogs from `wiki/` and `output/`.
+- [wiki-article-sync](./.agents/skills/wiki-article-sync/SKILL.md) -- Authoring/syncing the 85 French articles and 5 structured catalogs from `wiki/` and `output/`.
 - [clinical-rules-engine](./.agents/skills/clinical-rules-engine/SKILL.md) -- Deterministic rules, non-medical-device wording, French 3-tier triage, and ETT/IRM separation.
 - [dexie-backup-migration](./.agents/skills/dexie-backup-migration/SKILL.md) -- Safe Dexie schema migrations, Discovery Mode isolation, and backup/restore compatibility.
 

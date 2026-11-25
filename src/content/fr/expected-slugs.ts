@@ -1,5 +1,5 @@
 export const EXPECTED_ARTICLE_SLUGS = [
-  // Lot 1 -- Diagnostic, Chiffres & Comorbidites (11)
+  // Lot 1 -- Diagnostic, Chiffres, Stade B, Anevrisme & Examens specialises (10)
   'comprendre-le-diagnostic',
   'cardiomyopathie-ischemique',
   'fraction-dejection',
@@ -7,12 +7,29 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'dysfonction-vg-asymptomatique-stade-b',
   'confirmer-la-cause-dysfonction-vg',
   'insuffisance-cardiaque-fevg-amelioree',
+  'thrombus-vg-et-anticoagulants',
+  'anevrisme-ventricule-gauche',
+  'efx-strain-troponine-et-imagerie-cardiaque',
+
+  // Lot 2 -- Insuffisance Cardiaque Avancee (Stade D), LVAD, Greffe & Coeur Droit (5)
+  'insuffisance-cardiaque-avancee-stade-d',
+  'assistance-circulatoire-lvad',
+  'transplantation-cardiaque-france',
+  'inotropes-insuffisance-cardiaque-avancee',
+  'ventricule-droit-et-hypertension-pulmonaire',
+
+  // Lot 3 -- Comorbidites & Valvulopathies (9)
   'maladies-associees',
   'stenose-aortique-fevg-reduite',
   'tension-arterielle-insuffisance-cardiaque',
   'apnee-du-sommeil-insuffisance-cardiaque',
+  'maladie-renale-insuffisance-cardiaque',
+  'fibrillation-atriale-insuffisance-cardiaque',
+  'fuite-mitrale-secondaire',
+  'diabete-insuffisance-cardiaque',
+  'goutte-bpco-thyroide-et-autres-comorbidites',
 
-  // Lot 2 -- Traitements de Fond, Add-ons, Lipides & Fer IV (10)
+  // Lot 4 -- Traitements de Fond, Add-ons, Anti-angineux, Antiplaquettaires, Diuretiques, Peri-operatoire & Rythme (21)
   'medicaments-insuffisance-cardiaque',
   'medicaments-effets-secondaires-suivi',
   'traitements-additionnels-nouveaux',
@@ -21,41 +38,62 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'cholesterol-et-prevention-secondaire',
   'carence-martiale-et-fer-iv',
   'fer-oral-haute-biodisponibilite',
+  'these-fer-iv-et-isglt2-quadritherapie',
   'medicaments-glp1-et-incretines',
   'cellules-souches-et-therapies-regeneratives',
-
-  // Lot 3 -- Dispositifs, Revascularisation, CTO & Thrombus (6)
+  'angor-et-medicaments-anti-angineux',
+  'antiplaquettaires-bitherapie-et-protection-gastrique',
+  'escalade-et-resistance-aux-diuretiques',
+  'chirurgie-soins-dentaires-et-jours-de-maladie',
+  'these-jours-de-maladie-sraa-vs-isglt2',
   'dispositifs-cardiaques-dai-crt',
   'gilet-defibrillateur-portable',
-  'telesurveillance-insuffisance-cardiaque',
+  'arythmies-ventriculaires-et-antiarythmiques',
   'revascularisation-pontage-stents',
   'occlusion-coronaire-chronique-cto',
-  'thrombus-vg-et-anticoagulants',
 
-  // Lot 4 -- Nutrition, Complements, Interactions & Playbook (12)
+  // Lot 5 -- Nutrition, Complements, Interactions, Playbook & Theses Nutrition (19)
   'nutrition-et-complements-insuffisance-cardiaque',
   'guide-pratique-nutrition-complements',
   'tableau-preuves-nutrition-complements',
   'sel-et-liquides-insuffisance-cardiaque',
   'alimentation-cardioprotectrice',
+  'these-regime-mediterraneen-potassium-icfer',
   'poids-obesite-et-denutrition',
   'omega-3-huile-de-poisson',
+  'these-omega3-faible-dose-risque-fa',
   'coenzyme-q10',
+  'these-coq10-mortalite-icfer-moderne',
   'vitamine-d-insuffisance-cardiaque',
   'vitamines-b-insuffisance-cardiaque',
   'magnesium-insuffisance-cardiaque',
+  'berberine-cholesterol-et-interactions',
+  'cafeine-boissons-energisantes-et-stimulants',
+  'complements-energetiques-cardiaques',
+  'fibres-alimentaires-et-axe-intestin-coeur',
   'interactions-complements-aliments-medicaments',
 
-  // Lot 5 -- Vie Quotidienne, France, Readaptation & Conduite (7)
+  // Lot 6 -- Automesure, Objets connectes, Telesurveillance, Vaccinations & Vie Quotidienne (13)
+  'telesurveillance-insuffisance-cardiaque',
+  'automesure-tensionnelle-domicile',
+  'montres-connectees-et-capteurs-ic',
+  'guide-pratique-automesure-et-montres-connectees',
+  'vaccinations-insuffisance-cardiaque',
   'vivre-avec-insuffisance-cardiaque',
-  'vivre-avec-insuffisance-cardiaque-en-france',
   'readaptation-cardiaque-et-activite-physique',
   'musculation-vs-endurance-readaptation-cardiaque',
+  'vie-sexuelle-et-dysfonction-erectile-ic',
+  'voyages-canicule-et-climat-ic',
+  'tabac-et-alcool-insuffisance-cardiaque',
   'depression-et-sante-emotionnelle',
   'soins-de-support-et-anticipation',
+
+  // Lot 7 -- France, Reseau de Soins & Conduite (3)
+  'vivre-avec-insuffisance-cardiaque-en-france',
+  'reseau-de-soins-et-aides-sociales-france',
   'regles-conduite-automobile',
 
-  // Lot 6 -- Questions Equipe Medicale, Glossaire & References (5)
+  // Lot 8 -- Questions Equipe Medicale, Glossaire & References (5)
   'questions-equipe-cardiologie',
   'glossaire-cardiologie',
   'recommandations-comparees-esc-us-nice',

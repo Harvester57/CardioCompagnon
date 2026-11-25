@@ -20,6 +20,7 @@ export const article: WikiArticle = {
     'micronutriments',
     'carence',
     'insuffisance-cardiaque',
+    'ipp',
   ],
   aliases: [
     'Vitamines B',
@@ -42,7 +43,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Les « vitamines B » regroupent huit vitamines distinctes dont l'intérêt diffère dans la cardiomyopathie ischémique. Aucune vitamine B n'a démontré qu'elle prolonge la vie, réduit les hospitalisations ou renforce durablement la pompe cardiaque dans l'ICFER. La thiamine (B1) peut diminuer sous diurétiques de l'anse (comme le furosémide — Lasilix) : corriger une carence avérée est logique, mais 7 petits essais randomisés (274 patients) n'ont pas montré de gain significatif de FEVG. L'association acide folique + B12 + B6 (souvent vendue comme complexe B « cœur / homocystéine ») n'a réduit ni les infarctus ni les décès dans 15 essais (71 422 personnes, Cochrane 2017) et a même montré une tendance défavorable après un infarctus (NORVIT, RR 1,22). Un dosage de vitamine B12 mérite en revanche d'être discuté si vous prenez de la metformine ou un médicament contre l'acidité gastrique au long cours. Quant à la vitamine B3 et aux précurseurs du NAD+, ils restent expérimentaux. Informez toujours votre équipe et votre pharmacien de tout complément vitaminique : aucun ne remplace vos médicaments prescrits.",
+    "Les « vitamines B » regroupent huit vitamines distinctes dont l'intérêt diffère dans la cardiomyopathie ischémique. Aucune vitamine B n'a démontré qu'elle prolonge la vie, réduit les hospitalisations ou renforce durablement la pompe cardiaque dans l'ICFER. La thiamine (B1) peut diminuer sous diurétiques de l'anse (comme le furosémide — Lasilix) : corriger une carence avérée est logique, mais 7 petits essais randomisés (274 patients) n'ont pas montré de gain significatif de FEVG. L'association acide folique + B12 + B6 (souvent vendue comme complexe B « cœur / homocystéine ») n'a réduit ni les infarctus ni les décès dans 15 essais (71 422 personnes, Cochrane 2017) et a même montré une tendance défavorable après un infarctus (NORVIT, RR 1,22). Un dosage de vitamine B12 mérite en revanche d'être discuté si vous prenez de la metformine ou un inhibiteur de la pompe à protons (IPP) depuis deux ans ou plus. Quant à la vitamine B3 et aux précurseurs du NAD+, ils restent expérimentaux. Informez toujours votre équipe et votre pharmacien de tout complément vitaminique : aucun ne remplace vos médicaments prescrits.",
   sections: [
     {
       headingFr: 'Les vitamines B en un coup d’œil',
@@ -50,7 +51,7 @@ export const article: WikiArticle = {
 |---|---|---|---|
 | **B1 — thiamine** | Perte urinaire sous diurétiques de l'anse ; une carence sévère cause le béribéri cardiaque | Méta-analyse He 2024 (7 essais) ; ESPEN 2022 | **Dépister et corriger en cas de carence ; pas un traitement de l'IC** |
 | **B9 — acide folique** | Abaisse l'homocystéine sanguine | Cochrane 2017 (15 essais) ; NORVIT 2006 | **Non étayée** pour le cœur ; éviter les associations avec B6 après un infarctus |
-| **B12 — cobalamine** | Abaisse l'homocystéine ; carence possible sous metformine, IPP ou avec l'âge | Cochrane 2017 ; ESPEN 2022 | **Dépister et corriger en cas de carence** |
+| **B12 — cobalamine** | Abaisse l'homocystéine ; carence possible sous metformine, IPP ou avec l'âge | Cochrane 2017 ; ESPEN 2022 ; Lam 2013 | **Dépister et corriger en cas de carence** |
 | **B6 — pyridoxine** | Abaisse l'homocystéine | NORVIT 2006 ; Cochrane 2017 ; ESPEN 2022 | **Non étayée** ; neurotoxique à forte dose |
 | **B3 — niacine / précurseurs du NAD+** | Le NAD+ soutient l'énergie des cellules cardiaques et baisse dans l'IC | Essai NAD+ IV Yu 2025 ; étude murine Boitard 2025 | **Expérimental** ; aucune preuve pour les comprimés oraux |
 | **B2, B5, B7** | Non étudiées comme traitements de l'IC dans les sources analysées | — | Aucune donnée permettant de conclure |`,
@@ -117,7 +118,8 @@ L'homocystéine doit être considérée comme un **marqueur** accompagnant la ma
       headingFr: 'Vitamine B12, acide folique et vitamine B6 : dépistage ciblé et sécurité',
       bodyMarkdownFr: `### Quand discuter d'un dosage de vitamine B12
 
-- **Facteurs de risque cités par ESPEN 2022 :** prise prolongée de **metformine** (6 à 12 mois ou plus), prise au long cours d'**inhibiteurs de la pompe à protons (IPP)** ou d'anti-H2 (observationnel, sans essai randomisé dédié), âge supérieur à 50–60 ans, alimentation végétalienne, ou antécédent de chirurgie gastrique ou intestinale.
+- **IPP au long cours et vitamine B12 (les chiffres) :** dans une vaste étude cas-témoins américaine (**Lam 2013**, *JAMA*, **25 956 patients** présentant une carence nouvellement diagnostiquée en B12), une prise d'inhibiteurs de la pompe à protons (IPP) pendant **2 ans ou plus** était associée à une carence en vitamine B12 (**OR 1,65**), et davantage encore au-delà de 1,5 comprimé par jour (**OR 1,95**), tandis que le lien était plus faible avec les anti-H2 (**OR 1,25**). Il s'agit d'une donnée observationnelle, et une synthèse de 2023 trouvait une association plus modérée (**OR 1,42**). L'essai randomisé de 3 ans du pantoprazole (**COMPASS**, Moayyedi 2019) n'a pas mesuré la vitamine B12. Pour comprendre pourquoi un IPP est fréquemment prescrit avec les antiagrégants (et ne pas l'arrêter sans avis médical), consultez la fiche *Antiplaquettaires, bithérapie et protection gastrique*.
+- **Autres facteurs de risque cités par ESPEN 2022 :** prise prolongée de **metformine** (6 à 12 mois ou plus), prise au long cours d'**IPP** ou d'anti-H2 (sans essai randomisé dédié), âge supérieur à 50–60 ans, alimentation végétalienne, ou antécédent de chirurgie gastrique ou intestinale.
 - **Signes d'appel et modalités :** un bilan est conseillé en cas d'anémie, de globules rouges augmentés de volume (macrocytose), de fourmillements ou d'atteinte nerveuse des pieds (polyneuropathie), ou de troubles de la mémoire et de l'humeur. L'idéal repose sur **deux marqueurs** (holotranscobalamine et acide méthylmalonique), ou sur la B12 sérique à défaut, avec un contrôle au moins annuel chez les personnes à risque (**ESPEN 2022**).
 - Corriger une véritable carence en vitamine B12 relève des soins médicaux courants, indépendamment de la prévention cardiaque.
 
@@ -160,14 +162,17 @@ L'homocystéine doit être considérée comme un **marqueur** accompagnant la ma
     },
   ],
   relatedArticleSlugs: [
+    'antiplaquettaires-bitherapie-et-protection-gastrique',
     'essais-cliniques-en-cours-et-a-suivre',
     'nutrition-et-complements-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
     'vitamine-d-insuffisance-cardiaque',
     'magnesium-insuffisance-cardiaque',
     'coenzyme-q10',
+    'complements-energetiques-cardiaques',
     'interactions-complements-aliments-medicaments',
     'carence-martiale-et-fer-iv',
+    'goutte-bpco-thyroide-et-autres-comorbidites',
   ],
   sources: [
     {
@@ -175,8 +180,8 @@ L'homocystéine doit être considérée comme un **marqueur** accompagnant la ma
       detail: '7 essais randomisés en double aveugle (274 patients) : absence d’effet significatif sur la FEVG (+1,65 point, -0,06 après correction du biais de publication), le NT-proBNP ou la marche ; essai Keith 2019 en IRM.',
     },
     {
-      label: 'Recommandations ESPEN 2022 sur les micronutriments',
-      detail: 'Facteurs de risque de carence (diurétiques et thiamine, metformine/IPP et B12), dosages recommandés (diphosphate de thiamine, holotranscobalamine/AMM), seuils de tolérance (folates 1 mg/j, toxicité de la B6 et de la niacine).',
+      label: 'Recommandations ESPEN 2022, Lam et al. (2013, JAMA) et essai COMPASS pantoprazole (Moayyedi 2019)',
+      detail: 'Facteurs de risque de carence (diurétiques et thiamine, metformine/IPP et B12 — OR 1,65 après ≥ 2 ans d’IPP dans Lam 2013, B12 non mesurée dans COMPASS), dosages recommandés et toxicité de la B6 et de la niacine.',
     },
     {
       label: 'Revue Cochrane (2017) et essai NORVIT (2006)',

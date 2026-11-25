@@ -48,7 +48,7 @@ export const article: WikiArticle = {
 - un muscle qui a manqué d'apport sanguin de façon brève et qui peut récupérer ;
 - un muscle qui est mort à la suite d'un manque prolongé d'oxygène, comme lors de nombreux infarctus, qui se transforme en cicatrice et ne peut pas récupérer.
 
-Une **IRM cardiaque** permet de visualiser cette cicatrice (Cleveland Clinic ; guide patient ESC).
+Une **IRM cardiaque** permet de visualiser cette cicatrice (Cleveland Clinic ; guide patient ESC). Lorsque la paroi cicatricielle amincie bombe vers l'extérieur à chaque battement, on parle d'anévrisme du ventricule gauche (voir *Anévrisme du ventricule gauche (cicatrice bombante après infarctus)*).
 
 Cette distinction explique pourquoi les cardiologues parlent parfois de myocarde « viable » ou « hibernant ». Savoir si rétablir la circulation vers ce muscle améliore réellement l'évolution clinique est une question distincte et aujourd'hui débattue (voir *Revascularisation coronaire : pontage et stents*).`,
     },
@@ -106,12 +106,15 @@ Pour l'ampleur du bénéfice des traitements modernes, voir *Les médicaments de
     'glossaire-cardiologie',
     'alimentation-cardioprotectrice',
     'examens-et-chiffres',
+    'efx-strain-troponine-et-imagerie-cardiaque',
     'essais-cliniques-cles',
     'cholesterol-et-prevention-secondaire',
     'occlusion-coronaire-chronique-cto',
     'thrombus-vg-et-anticoagulants',
+    'anevrisme-ventricule-gauche',
     'confirmer-la-cause-dysfonction-vg',
     'dysfonction-vg-asymptomatique-stade-b',
+    'insuffisance-cardiaque-avancee-stade-d',
     'cellules-souches-et-therapies-regeneratives',
     'dispositifs-cardiaques-dai-crt',
     'medicaments-insuffisance-cardiaque',

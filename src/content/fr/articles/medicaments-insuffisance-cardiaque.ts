@@ -156,6 +156,10 @@ Contrairement aux quatre piliers du traitement de fond, les diurétiques n'ont p
 - **Un plan écrit personnalisé** est recommandé lors de toute diminution de dose : fourchette de poids cible, signes de retour de la rétention hydrique (prise de poids accompagnée d'œdèmes ou d'essoufflement), signes de déshydratation excessive (vertiges, tension basse, hausse de la créatinine), dates des bilans sanguins et dose de reprise prévue.
 - **Limites de cette revue :** revue narrative sans recherche systématique, ne citant ni les recommandations ESC ni les recommandations américaines sur l'insuffisance cardiaque, comportant plusieurs imprécisions de citation et sans tableaux posologiques médicament par médicament. Toute modification de dose relève exclusivement de votre équipe médicale.
 
+### Quand le liquide s'accumule malgré le traitement
+
+Le problème inverse — l'escalade des diurétiques lorsque la rétention d'eau revient — fait l'objet d'une fiche dédiée : *Escalade et résistance aux diurétiques dans l’insuffisance cardiaque*. En résumé : dans **TRANSFORM-HF**, le torasémide et le furosémide ont donné la même survie ; à l'hôpital, l'ajout d'acétazolamide intraveineux (**ADVOR**) ou d'hydrochlorothiazide (**CLOROTIC**) a accéléré la décongestion sans réduire les décès ni les réhospitalisations, et les thiazidiques ont fortement accru l'hypokaliémie et les variations de la créatinine. Les recommandations **ESC 2026** classent ces adjuvants en **Classe IIa (B1)** chez les patients hospitalisés déjà sous diurétique de l'anse et déconseillent l'usage chronique de thiazidiques chez les patients stables.
+
 Pour les bilans sanguins associés, voir *Médicaments : mode d'action, effets secondaires et bilans sanguins* ; pour la baisse du sodium sanguin (hyponatrémie), voir *Sel et liquides dans l'insuffisance cardiaque*.`,
     },
     {
@@ -181,6 +185,7 @@ Pour les bilans sanguins associés, voir *Médicaments : mode d'action, effets s
 - **Angor :** les bêtabloquants constituent le traitement anti-angineux de première intention dans l'ICFER.
 - **Médicaments à éviter :** les inhibiteurs calciques bradycardisants — **vérapamil (*Isoptine*)** et **diltiazem (*Tildiem*)** — doivent être évités dans l'ICFER. Les recommandations NICE ajoutent à la liste des médicaments à éviter les inhibiteurs calciques dihydropyridiniques à action courte.
 - **Priorité thérapeutique :** les anti-angineux ne doivent pas se substituer au traitement de fond de l'insuffisance cardiaque.
+- **Suite de l'escalade anti-angineuse :** après le bêtabloquant viennent l'ivabradine (rythme sinusal, fréquence > 70 bpm), un dérivé nitré longue durée (en France principalement en patch) ou la ranolazine (**ESC 2024 IIa B**), l'amlodipine ou la félodipine, puis le nicorandil ou la trimétazidine (**IIb B**), avec la trinitrine sublinguale (*Natispray*) pour les crises. Aucune de ces molécules n'améliore la survie, et les dérivés nitrés ne doivent jamais être associés aux médicaments de type sildénafil (IPDE-5). Les détails, la disponibilité en France et les règles d'urgence figurent dans *Angor et médicaments anti-angineux dans l’ICFER ischémique*.
 - **Autres classes associées :** selon le profil individuel, une statine (et d'autres hypolipémiants), un antiagrégant plaquettaire (aspirine ou clopidogrel), un anticoagulant ou un antiarythmique peuvent être prescrits (voir *Cholestérol LDL, aspirine et prévention secondaire coronaire* et *Thrombus du ventricule gauche et anticoagulants*).
 
 ### Deux questions fréquentes liées au contexte
@@ -190,6 +195,13 @@ Pour les bilans sanguins associés, voir *Médicaments : mode d'action, effets s
     },
   ],
   relatedArticleSlugs: [
+    'maladie-renale-insuffisance-cardiaque',
+    'diabete-insuffisance-cardiaque',
+    'fibrillation-atriale-insuffisance-cardiaque',
+    'fuite-mitrale-secondaire',
+    'escalade-et-resistance-aux-diuretiques',
+    'angor-et-medicaments-anti-angineux',
+    'these-fer-iv-et-isglt2-quadritherapie',
     'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'insuffisance-cardiaque-fevg-amelioree',
@@ -215,8 +227,12 @@ Pour les bilans sanguins associés, voir *Médicaments : mode d'action, effets s
   ],
   sources: [
     {
-      label: 'Recommandations ESC 2026 sur l’insuffisance cardiaque',
-      detail: 'Tableau 5, titration, traitements additionnels, fer IV, anti-angineux, stade B et tension artérielle',
+      label: 'Recommandations ESC 2026 sur l’insuffisance cardiaque (y compris sections diurétiques et décongestion)',
+      detail: 'Tableau 5, titration, traitements additionnels, fer IV, escalade diurétique (acétazolamide/hydrochlorothiazide IIa B1, escalade ambulatoire), anti-angineux, stade B et tension artérielle',
+    },
+    {
+      label: 'Recommandations ESC 2024 sur les syndromes coronariens chroniques (section anti-angineux)',
+      detail: 'Classes des traitements anti-angineux (Tableau 16) et précisions spécifiques à l’ICFER (section 5.1)',
     },
     {
       label: 'Guide patient ESC 2026 sur l’insuffisance cardiaque',

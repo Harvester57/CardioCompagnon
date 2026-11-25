@@ -217,7 +217,8 @@ Les recommandations **ESC/EAS 2019** précisent que l'initiation d'un traitement
 - Au long cours, l'ESC 2024 privilégie l'**anticoagulant seul**, avec une préférence pour un anticoagulant oral direct (**AOD**) plutôt que la warfarine.
 - Après un stent non compliqué, l'aspirine est arrêtée précocement (vers **1 semaine**), suivie de l'association anticoagulant + clopidogrel jusqu'à **6 mois** (jusqu'à **12 mois** si risque thrombotique élevé), puis de l'anticoagulant seul. C'est pourquoi votre cardiologue peut arrêter l'aspirine lorsqu'un anticoagulant est instauré (voir *Thrombus du ventricule gauche et anticoagulants*).
 
-*Précision importante :* l'**aspirine à faible dose** (75–100 mg/j) ne fait **pas** partie des anti-inflammatoires antalgiques (**AINS**) contre-indiqués dans l'insuffisance cardiaque. Certains compléments alimentaires peuvent toutefois majorer le risque de saignement avec l'aspirine (voir *Interactions entre compléments, aliments et médicaments cardiaques*).`,
+- **Pour aller plus loin :** les essais comparant l'aspirine au clopidogrel (**HOST-EXAM** jusqu'à 10 ans, **SMART-CHOICE 3**, **PANTHER**), la durée de bithérapie (DAPT) après un stent et ce que change l'insuffisance cardiaque, la position américaine ACC/AHA 2023 (aspirine 1 A ; clopidogrel plus nuancé qu'en Europe) ainsi que la protection gastrique par inhibiteur de la pompe à protons (IPP) et l'interaction clopidogrel-oméprazole sont détaillés dans *Antiplaquettaires, bithérapie (DAPT) et protection gastrique par IPP*.
+- *Précision importante :* l'**aspirine à faible dose** (75–100 mg/j) ne fait **pas** partie des anti-inflammatoires antalgiques (**AINS**) contre-indiqués dans l'insuffisance cardiaque. Certains compléments alimentaires peuvent toutefois majorer le risque de saignement avec l'aspirine (voir *Interactions entre compléments, aliments et médicaments cardiaques*).`,
     },
     {
       headingFr: 'La colchicine à faible dose',
@@ -254,7 +255,7 @@ Les recommandations **ESC/EAS 2019** précisent que l'initiation d'un traitement
 - **Statines :** selon la FFC, des douleurs ou crampes musculaires surviennent chez environ **5 %** des patients ; les statines sont globalement bien tolérées. Dans CORONA et GISSI-HF, la rosuvastatine n'a pas entraîné d'excès d'effets musculaires. Dans RACING, une statine modérée + ézétimibe a causé moins d'arrêts ou de baisses de dose (**4,8 % contre 8,2 %**) qu'une forte dose de statine seule. En cas d'intolérance avérée aux statines, l'ESC/EAS 2025 recommande les non-statines à bénéfice prouvé (ézétimibe, anti-PCSK9, acide bempédoïque — **I A**).
 - **Bilans sanguins et coenzyme Q10 (ACC/AHA 2026) :** le dosage systématique des **CK** (enzymes musculaires) en l'absence de symptômes musculaires sévères (**COR 3 : Absence de bénéfice, LOE A**) et les bilans hépatiques systématiques sans signe d'atteinte hépatique (**COR 3 : Absence de bénéfice, LOE B-NR**) ne sont pas recommandés. La **coenzyme Q10** pour prévenir ou traiter les douleurs musculaires sous statines n'est pas recommandée (**COR 3 : Absence de bénéfice, LOE B-R**).
 - **Médicaments cardiaques plafonnant certaines statines (ACC/AHA 2026, Tableau 27) :** ces plafonds concernent la **simvastatine** et la **lovastatine** (la rosuvastatine et l'atorvastatine ne sont pas plafonnées par ces traitements) :
-  - **amiodarone (*Cordarone*) :** simvastatine au maximum 20 mg ;
+  - **amiodarone (*Cordarone*) :** simvastatine au maximum 20 mg *(le RCP français de Cordarone recommande en pratique de privilégier la rosuvastatine ou la pravastatine ; voir Arythmies ventriculaires, chocs de DAI et médicaments antiarythmiques)* ;
   - **diltiazem, vérapamil ou dronédarone :** simvastatine au maximum 10 mg ;
   - **ticagrélor :** simvastatine au maximum 40 mg ;
   - **ranolazine :** simvastatine ou lovastatine uniquement si aucune autre statine n'est utilisable, au maximum 20 mg ;
@@ -278,6 +279,9 @@ Les recommandations **ESC/EAS 2019** précisent que l'initiation d'un traitement
     },
   ],
   relatedArticleSlugs: [
+    'diabete-insuffisance-cardiaque',
+    'vaccinations-insuffisance-cardiaque',
+    'antiplaquettaires-bitherapie-et-protection-gastrique',
     'cardiomyopathie-ischemique',
     'medicaments-insuffisance-cardiaque',
     'occlusion-coronaire-chronique-cto',
@@ -286,6 +290,12 @@ Les recommandations **ESC/EAS 2019** précisent que l'initiation d'un traitement
     'interactions-complements-aliments-medicaments',
     'omega-3-huile-de-poisson',
     'alimentation-cardioprotectrice',
+    'berberine-cholesterol-et-interactions',
+    'coenzyme-q10',
+    'these-coq10-mortalite-icfer-moderne',
+    'goutte-bpco-thyroide-et-autres-comorbidites',
+    'tabac-et-alcool-insuffisance-cardiaque',
+    'arythmies-ventriculaires-et-antiarythmiques',
     'recommandations-comparees-esc-us-nice',
     'essais-cliniques-cles',
     'questions-equipe-cardiologie',

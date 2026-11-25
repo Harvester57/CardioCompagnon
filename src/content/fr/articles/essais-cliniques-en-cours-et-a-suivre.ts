@@ -14,6 +14,7 @@ export const article: WikiArticle = {
     'recherche',
     'revascularisation',
     'dispositifs',
+    'stenose-aortique',
     'cellules-souches',
     'complements',
     'organisation-des-soins',
@@ -21,6 +22,10 @@ export const article: WikiArticle = {
     'profid-ehra',
     'colt-hf',
     'cardiamp',
+    'coral',
+    'danutrio-hf',
+    'disco',
+    'ambu-vad',
   ],
   aliases: [
     'Essais en cours',
@@ -31,7 +36,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "De nombreux essais cliniques évaluent de nouvelles approches pour un cœur affaibli par une maladie coronaire. La plupart nécessiteront encore deux à cinq ans avant de livrer leurs résultats, et la majorité des pistes innovantes échouent lorsqu'elles sont testées rigoureusement. Au 25 novembre 2026, les études les plus directement pertinentes pour une cardiomyopathie ischémique avec FEVG autour de 35 % comparent le pontage aux stents dans les atteintes pluritronculaires (STICH3, vers 2029), réévaluent le défibrillateur préventif sous traitement moderne (PROFID-EHRA, vers 2027–2028), testent la thiamine et la colchicine (COLT-HF, vers 2027) ainsi que la thérapie cellulaire autologue contre procédure factice (CardiAMP HF II, vers 2027). Un essai en cours ne prouve pas qu'un traitement fonctionne.",
+    "De nombreux essais cliniques évaluent de nouvelles approches pour un cœur affaibli par une maladie coronaire. La plupart nécessiteront encore deux à cinq ans avant de livrer leurs résultats, et la majorité des pistes innovantes échouent lorsqu'elles sont testées rigoureusement. Au 25 novembre 2026, les études les plus directement pertinentes couvrent le pontage face aux stents (STICH3, ~2029), le défibrillateur préventif sous traitement moderne (PROFID-EHRA, ~2027–2028), la thiamine et la colchicine (COLT-HF, ~2027), la thérapie cellulaire autologue (CardiAMP HF II, ~2027), la CoQ10 (CORAL mai 2028, DANUTRIO-HF déc. 2028, SELEQT-HF 2030), le fer IV à l'ère des iSGLT2 (INFERRCT déc. 2026, COMBINED-HF), le rétrécissement aortique modéré (PROGRESS NEJM nov. 2026 et EXPAND TAVR II sept. 2027), la pause péri-opératoire des iSGLT2 en France (DISCO, CHU Toulouse, 2029) et les LVAD précoces (AMBU-VAD, TEAM-HF). Un essai en cours ne prouve pas qu'un traitement fonctionne.",
   sections: [
     {
       headingFr: "Comment lire le niveau d'applicabilité et les dates des registres",
@@ -42,7 +47,7 @@ export const article: WikiArticle = {
 - **Indirect :** cible une population différente (FEVG > 40 %, infarctus aigu récent, toute FEVG) ou ne précise pas la cause ni la FEVG.
 - **Non applicable :** exclut les patients d'origine ischémique.
 
-Tous les statuts et calendriers proviennent des registres publics d'essais cliniques consultés le **25 novembre 2026**, sauf mention d'une autre source. Les dates annoncées (« est. ») sont des estimations des promoteurs et glissent fréquemment. Les résultats d'essais ne sauraient justifier une modification de traitement sans l'avis de votre cardiologue.`,
+Tous les statuts et calendriers proviennent des registres publics d'essais cliniques (ClinicalTrials.gov et ISRCTN) consultés le **25 novembre 2026**, sauf mention d'une autre source. Les dates annoncées (« est. ») sont des estimations des promoteurs et glissent fréquemment. Les résultats d'essais ne sauraient justifier une modification de traitement sans l'avis de votre cardiologue.`,
     },
     {
       headingFr: 'La sélection prioritaire : les essais les plus directement pertinents',
@@ -68,7 +73,7 @@ Tous les statuts et calendriers proviennent des registres publics d'essais clini
 
 - **PROFID-EHRA :** compare le traitement médical seul au traitement médical + DAI, au moins 3 mois après un infarctus avec FEVG ≤ 35 %, afin de vérifier si l'absence de DAI est « non inférieure » sur la survie.
 - **Left vs Left** (NCT05650658, 2 136 patients estimés, fin principale estimée juin 2029) : compare la stimulation physiologique du système de conduction (faisceau de His ou branche gauche) à la resynchronisation biventriculaire (CRT) classique. **Applicabilité partielle :** ne concerne que les patients avec QRS large (≥ 130 ms) ou besoin élevé de stimulation.
-- **PREVENT-VT** (NCT06543173, 62 patients estimés, 2030) : ablation précoce par cathéter des circuits cicatriciels de tachycardie ventriculaire (TV) après pose d'un DAI préventif dans la **cardiomyopathie ischémique avec FEVG ≤ 35 %** et marqueur de haut risque. **Applicabilité directe**, mais petite étude de faisabilité comptant les épisodes de TV. (Chez les patients ayant déjà présenté une TV après infarctus, l'essai VANISH2 a rapporté moins d'événements avec une ablation de première intention, d'après un résumé de recherche uniquement.)
+- **PREVENT-VT** (NCT06543173, 62 patients estimés, 2030) : ablation précoce par cathéter des circuits cicatriciels de tachycardie ventriculaire (TV) après pose d'un DAI préventif dans la **cardiomyopathie ischémique avec FEVG ≤ 35 %** et marqueur de haut risque. **Applicabilité directe**, mais petite étude de faisabilité comptant les épisodes de TV. (Chez les patients ayant déjà présenté une TV après infarctus, **VANISH2** a rapporté moins d'événements composites avec une ablation de première intention, sans gain de survie.)
 
 ### Diagnostics et imagerie
 
@@ -77,83 +82,101 @@ Tous les statuts et calendriers proviennent des registres publics d'essais clini
 - **Recherches sans résultat positif dans les registres (non exhaustif) :** aucun essai randomisé en recrutement de titration guidée par le NT-proBNP ni aucun nouvel essai de dépistage par IA-ECG ou IA-échographie dans l'ICFER n'a été retrouvé lors de l'extraction de registres réalisée pour cet article.`,
     },
     {
-      headingFr: "Dispositifs d'insuffisance cardiaque et nouveaux médicaments",
-      bodyMarkdownFr: `### Dispositifs d'insuffisance cardiaque
+      headingFr: "Dispositifs d'insuffisance cardiaque, rétrécissement aortique modéré et nouveaux médicaments",
+      bodyMarkdownFr: `### Dispositifs d'insuffisance cardiaque et rétrécissement aortique modéré
 
 - **RELIEVE-HFrEF** (NCT07696975) : petit shunt interatrial entre les oreillettes vs procédure factice, FEVG ≤ 40 %, NYHA III. **Pas encore en recrutement** (début estimé juillet 2027). Fait suite à un sous-groupe générateur d'hypothèses de l'essai RELIEVE-HF où les patients ICFER avaient moins d'événements (17,5 % vs 32,7 %) tandis que ceux avec ICFEP évoluaient moins bien. Applicabilité partielle (patients plus symptomatiques).
 - **CORCINCH-HF** (AccuCinch, NCT04331769) : implant par cathéter réduisant la taille d'un ventricule dilaté (FEVG 20–40 %). **Suspendu** dans l'attente de modifications du protocole (fiche de registre mise à jour en juin 2026).
 - **PROACTIVE-HF-2** (capteur de pression pulmonaire Cordella, NCT05934487, 1 750 patients estimés, sept. 2028) : suivi guidé par pression artérielle pulmonaire en NYHA II–III après hospitalisation IC récente. Applicabilité partielle.
 - **AIM HIGHer** (modulation de la contractilité cardiaque) : inclut uniquement des FEVG de 40 à 70 % (**indirect**).
+- **EXPAND TAVR II (` + '`NCT05149755`' + `, Medtronic) :** recrutement clos (` + '`ACTIVE_NOT_RECRUITING`' + `, mis à jour sept. 2026), **650 patients estimés** ≥ 65 ans avec FEVG > 20 % et rétrécissement aortique modéré à risque, comparant TAVI auto-expansible (Evolut PRO+/FX) + traitement de fond vs traitement de fond seul ; critère principal à 2 ans (décès, hospitalisation/événement IC ou instabilité conduisant à un remplacement valvulaire), fin principale estimée **septembre 2027**. **Applicabilité partielle — limite clé en ICFER :** exige ` + '`Vmax ≥ 3,0 m/s`' + ` ou ` + '`gradient moyen ≥ 20 mmHg`' + `, **excluant les sténoses modérées bas gradient (< 20 mmHg)** fréquentes dans l'ICFER.
+- **PROGRESS (` + '`NCT04889872`' + `, Edwards) :** la cohorte randomisée de 744 patients avec sténose aortique modérée **a été publiée dans le *NEJM* le 2 novembre 2026** (résumé vérifié : décès toutes causes ou événement IC à 2 ans **16,7 % vs 23,9 %**, **différence de risque -7,2 points** [IC 95 % -13,1 à -1,3 ; p = 0,02] ; mortalité totale 8,4 % vs 7,3 % ; événement IC 10,8 % vs 19,0 % ; FEVG majoritairement préservée — seulement 25 % de FEVG < 60 % selon la couverture secondaire ; aucun sous-groupe ICFER encore consultable). La fiche ClinicalTrials.gov reste ` + '`RECRUITING`' + ` (2 250 estimés, fin principale **juin 2029**) pour sa **phase d'accès continu** post-randomisation. **Applicabilité partielle / indirecte.**
 
 ### Nouveaux médicaments
 
-- **Finérénone (Kerendia) :** **FINALITY-HF** (ICFER chez les patients ne pouvant prendre spironolactone ou éplérénone ; fin principale estimée d'août 2026 dépassée, toujours en recrutement), **REDEFINE-HF** et **CONFIRMATION-HF** (fin estimée novembre 2027 pour les deux).
+- **Finérénone (*Kerendia*) :** **FINALITY-HF** (ICFER chez les patients ne pouvant prendre spironolactone ou éplérénone ; fin principale estimée d'août 2026 dépassée, toujours en recrutement), **REDEFINE-HF** et **CONFIRMATION-HF** (fin estimée novembre 2027 pour les deux).
 - **BalanceD-HF** (NCT06307652, 4 005 patients inclus, fin principale estimée avril 2027) : balcinrénone (nouveau modulateur du récepteur minéralocorticoïde) + dapagliflozine vs dapagliflozine. **Applicabilité partielle :** requiert une fonction rénale diminuée (DFGe 20–60), un événement IC récent et l'absence d'ARM, sans limite de FEVG.
-- **COMET-HF** (omécamtiv mécarbil, NCT06736574, 1 800 patients estimés, sept. 2027) : réservé aux FEVG sévèrement réduites.
+- **COMET-HF** (omécamtiv mécarbil, NCT06736574, 1 800 patients estimés, sept. 2027) : réservé aux FEVG sévèrement réduites (< 30 %).
 - **Signaux précoces de phase 2 (non prêts pour la pratique) :** **LUMINARA** (agoniste oral de la relaxine AZD5462) a montré une diminution limite, non significative, du volume ventriculaire dans le groupe FEVG ≤ 35 % (-5,4 mL/m², p = 0,054). Un nouvel essai anti-miR-132 (NCT06979375) se poursuit après l'échec de **HF-REVERT**. **ARTEMIS** (ziltivékimab anti-inflammatoire, 8 350 patients, résultats attendus en 2027) inclut des infarctus aigus récents et non des cardiomyopathies chroniques.
 - **Autres nouvelles classes (registres au 25 nov. 2026) :**
-  - **CALIBRATE-HF** (NCT07750873, en recrutement, 525 patients estimés, sept. 2028) : inhibiteur oral de CaMKII (CRD-4730) dans les FEVG ≤ 40 %, NYHA II–III ; patients ischémiques admissibles. **Applicabilité partielle :** phase 2 sur critères d'imagerie et biologiques, pas sur événements cliniques.
+  - **CALIBRATE-HF** (NCT07750873, en recrutement, 525 patients estimés, sept. 2028) : inhibiteur oral de CaMKII (CRD-4730) dans les FEVG ≤ 40 %, NYHA II–III ; patients ischémiques admissibles. **Applicabilité partielle :** phase 2 sur critères d'imagerie et biologiques.
   - **GOAL-HF2** (NCT07584967, en recrutement, 400 patients estimés) : agoniste oral du récepteur de la ghréline (AC01) dans les FEVG ≤ 35 % chroniques. Applicabilité partielle ; critères intermédiaires de phase 2.
   - **Danicamtiv** (activateur de la myosine) : son essai principal (**KINSHIP-DCM**) **exclut** l'insuffisance cardiaque principalement liée à une maladie coronaire (**non applicable**).
   - **Istaroxime :** évalué uniquement en perfusion de 48 heures dans le choc cardiogénique débutant (**RESCUE HF-CS**), pas en traitement de fond.
-  - **Anticorps activateurs du récepteur des peptides natriurétiques (NPR1) :** développement à l'arrêt — **XXB750** (Novartis) interrompu (hausse du NT-proBNP à la forte dose, avec signal de danger décrit dans la presse spécialisée) et **REGN5381** (Regeneron) interrompu sur décision du promoteur.
-  - Aucun essai enregistré de siRNA ou d'oligonucléotide antisens ciblant directement le cœur dans l'ICFER n'a été retrouvé (recherche non exhaustive).
+  - **Anticorps activateurs du récepteur des peptides natriurétiques (NPR1) :** développement à l'arrêt — **XXB750** (Novartis) interrompu (hausse du NT-proBNP à la forte dose) et **REGN5381** (Regeneron) interrompu sur décision du promoteur.
 - **Médicaments GLP-1 et nouvelles incrétines (registres au 25 nov. 2026) :**
   - **Aucun essai sur critères cliniques durs dans l'ICFER** n'a été retrouvé sur ClinicalTrials.gov pour un agoniste GLP-1, un double ou un triple agoniste (EU CTIS et WHO ICTRP non interrogés).
   - Deux petits essais évaluent uniquement la capacité fonctionnelle dans l'ICFER : tirzépatide vs placebo (NCT07738276, 60 patients, marche de 6 minutes, juin 2027) et sémaglutide vs régime alimentaire (NCT06423599, 100 patients, pic de VO2, déc. 2027). **Applicabilité partielle :** critères intermédiaires.
-  - **TRIUMPH-Outcomes** (rétatrutide, NCT06383390, ~10 000 patients, 2029) : IMC ≥ 27 avec maladie artérielle ou rénale ; hospitalisations IC intégrées au critère ; exclut seulement la classe NYHA IV et l'IC aiguë, sans critère de FEVG. **Applicabilité partielle** si des résultats spécifiques ICFER sont publiés.
+  - **TRIUMPH-Outcomes** (rétatrutide, NCT06383390, ~10 000 patients, 2029) : IMC ≥ 27 avec maladie artérielle ou rénale ; exclut seulement la classe NYHA IV et l'IC aiguë, sans critère de FEVG. **Applicabilité partielle** si des résultats spécifiques ICFER sont publiés.
   - **MARITIME-HF** (MariTide, ~5 056 patients) : impose une FEVG > 40 % (**non applicable**).`,
     },
     {
       headingFr: 'Thérapies cellulaires, tissulaires et géniques (phases précoces)',
-      bodyMarkdownFr: `Ces approches demeurent **expérimentales**. Aucune n'est autorisée pour la cardiomyopathie ischémique dans l'Union européenne (liste EMA des médicaments de thérapie innovante, juin 2026), et le domaine cellulaire accumule un long historique d'essais neutres : **CONCERT-HF** (ICFER ischémique, 2021) n'a montré aucun changement de FEVG ni de cicatrice, et **DREAM-HF** (cellules de donneur vs procédure factice, 565 patients, 2023) s'est révélé négatif sur son critère principal.
+      bodyMarkdownFr: `Ces approches demeurent **expérimentales**. Aucune n'est autorisée pour la cardiomyopathie ischémique dans l'Union européenne (liste EMA des médicaments de thérapie innovante, juin 2026), et le domaine cellulaire accumule un long historique d'essais neutres (**CONCERT-HF**, **DREAM-HF**).
 
-- **Mesoblast (cellules de DREAM-HF) :** après cet essai négatif, le laboratoire a déposé aux États-Unis en 2026 un dossier pour une indication étroite — l'insuffisance cardiaque droite et les saignements digestifs chez les porteurs d'une assistance circulatoire mécanique (LVAD) — et non pour la cardiomyopathie ischémique en général. Aucune décision de la FDA n'a été retrouvée (**applicabilité indirecte**).
-- **CardiAMP HF II** (**applicabilité directe**) prolonge **CardiAMP-HF**, qui était neutre sur son critère principal (win ratio 1,01 ; p = 0,954). Le nouvel essai a remplacé un niveau de son critère hiérarchique principal par la qualité de vie, domaine où le premier essai affichait un signal post hoc ; le promoteur est le fabricant du procédé. Un éventuel résultat positif devra donc être interprété avec rigueur.
+- **Mesoblast (cellules de DREAM-HF) :** après l'essai négatif, le laboratoire a déposé aux États-Unis en 2026 un dossier pour une indication étroite — l'insuffisance cardiaque droite et les saignements digestifs chez les porteurs d'une assistance circulatoire mécanique (LVAD) — et non pour la cardiomyopathie ischémique en général (**applicabilité indirecte**).
+- **CardiAMP HF II** (**applicabilité directe**) prolonge **CardiAMP-HF**, qui était neutre sur son critère principal (win ratio 1,01 ; p = 0,954). Le nouvel essai a remplacé un niveau de son critère hiérarchique principal par la qualité de vie, domaine où le premier essai affichait un signal post hoc ; le promoteur est le fabricant du procédé.
 - **Muscle cardiaque cultivé en laboratoire (cellules iPS) :**
-  - **BioVAT-HF** (Allemagne, NCT04396899, toujours en recrutement, NEJM 2026, bras unique) : suture de patchs de myocarde dérivés de cellules iPS de donneur sur le cœur de patients avec FEVG ≤ 35 %. Chez 12 patients avec suivi précoce, la FEVG a progressé de 3,9 points (p = 0,04 ; qualité de vie non significativement améliorée), au prix d'une immunosuppression obligatoire, d'effets indésirables chez tous les patients et de 3 décès parmi les 20 patients traités (vasoplégie, COVID-19, dissection aortique), dans un essai cofinancé par le développeur.
-  - **LAPiS** (Japon, Heartseed HS-001) : injection de sphéroïdes myocardiques issus de cellules iPS chez 10 patients ischémiques lors d'un pontage programmé. Le laboratoire rapporte une FEVG moyenne passant d'environ 23–25 % à 31 % à 52 semaines, mais en l'absence de groupe témoin et avec un pontage simultané, l'effet propre des cellules ne peut être isolé. Un dépôt réglementaire japonais était visé pour 2026 sans confirmation trouvée.
-- **Première autorisation mondiale (Japon uniquement — RiHEART) :** en février 2026, l'autorité japonaise (PMDA) a accordé à **RiHEART** (Cuorips — feuillets de myocarde dérivés de cellules iPS appliqués sur le cœur par incision thoracique) une **autorisation conditionnelle limitée dans le temps (7 ans)** pour l'insuffisance cardiaque sévère sur cardiomyopathie ischémique (NYHA III–IV, FEVG ≤ 35 %) malgré traitement standard. Le dossier reposait sur une unique étude non contrôlée de **8 patients** : seuls 2 ont atteint l'objectif principal d'amélioration de la FEVG à l'ETT (non confirmé au scanner), aucun décès ni réaction attribuée aux feuillets n'a été relevé, mais 7 patients sur 8 ont présenté des effets indésirables potentiellement liés aux 3 mois d'immunosuppression. Chaque patient traité doit faire l'objet d'un suivi obligatoire ; aucun dossier ni essai européen n'a été identifié. Une autorisation conditionnelle signifie « jugé assez prometteur pour recueillir des preuves en vie réelle », et non un bénéfice démontré.
-- **Thérapie génique :** **MUSIC-HFrEF1** (SERCA2a, ouvert à l'ICFER ischémique) présente une fiche de registre obsolète (non actualisée depuis 2024). **GenePHIT** (AB-1002) **exclut** la cardiomyopathie ischémique.`,
+  - **BioVAT-HF** (Allemagne, NCT04396899, toujours en recrutement, NEJM 2026, bras unique) : suture de patchs de myocarde dérivés de cellules iPS de donneur sur le cœur de patients avec FEVG ≤ 35 %. Chez 12 patients avec suivi précoce, la FEVG a progressé de 3,9 points (p = 0,04 ; qualité de vie non significativement améliorée), au prix d'une immunosuppression obligatoire, d'effets indésirables chez tous les patients et de 3 décès parmi les 20 patients traités (vasoplégie, COVID-19, dissection aortique).
+  - **LAPiS** (Japon, Heartseed HS-001) : injection de sphéroïdes myocardiques issus de cellules iPS chez 10 patients ischémiques lors d'un pontage programmé ; sans groupe témoin et avec un pontage simultané, l'effet propre des cellules ne peut être isolé.
+- **Première autorisation conditionnelle mondiale (Japon uniquement — RiHEART) :** en février 2026, l'autorité japonaise (PMDA) a accordé à **RiHEART** (Cuorips — feuillets de myocarde dérivés de cellules iPS) une **autorisation conditionnelle limitée dans le temps (7 ans)** sur la base d'une étude non contrôlée de **8 patients** (seuls 2 ont atteint l'objectif de FEVG à l'ETT, non confirmé au scanner ; 7 sur 8 ont eu des effets indésirables liés aux 3 mois d'immunosuppression). Aucun dossier européen n'a été identifié.
+- **Thérapie génique :** **MUSIC-HFrEF1** (SERCA2a) présente une fiche obsolète (2024). **GenePHIT** (AB-1002) **exclut** la cardiomyopathie ischémique.`,
     },
     {
-      headingFr: 'Compléments alimentaires, nutrition et organisation des soins',
-      bodyMarkdownFr: `### Compléments et nutrition
+      headingFr: 'Compléments alimentaires, fer intraveineux, nutrition et organisation des soins',
+      bodyMarkdownFr: `### Compléments, fer IV et nutrition
 
 Les essais en cours ne modifient pas les verdicts actuels sur les compléments alimentaires.
 
 - **Thiamine — COLT-HF :** seul grand essai sur critères cliniques d'un complément conçu spécifiquement pour l'insuffisance cardiaque **ischémique** (FEVG ≤ 45 %). Le bras thiamine est mené en ouvert (sans placebo).
-- **Coenzyme Q10 — CORAL (soins primaires, Royaume-Uni) :** environ 950 patients avec ICFER recevant 100 mg de CoQ10 trois fois par jour ou un placebo, avec la qualité de vie à 12 mois comme critère ; poursuite prévue jusqu'aux environs de janvier 2027 (site de l'étude ; fiche registre non lisible).
-- **Sélénium — SIRI-HF (Suède / Norvège) :** 4 326 patients estimés, tout type d'insuffisance cardiaque, résultats attendus vers 2030 (**applicabilité indirecte** pour l'ICFER).
-- **Autres pistes :** seules de petites études mécanistiques existent pour les boissons cétoniques (Duke, terminée sans résultats) et les gélules de sel (RESALT-CHF, pas encore en recrutement). Aucun essai enregistré sur critères cliniques n'a été trouvé pour les oméga-3, la créatine, la L-carnitine, le D-ribose ou la taurine dans l'ICFER. **Correction (25 nov. 2026) :** pour le magnésium, un essai israélien de phase 3 a été enregistré (NCT03840226 : oxyde de magnésium oral vs placebo pendant 1 an chez ~320 patients IC NYHA II–IV sous diurétiques ; critères : distance de marche et qualité de vie, hospitalisations IC en secondaire ; statut inconnu depuis décembre 2023, aucun résultat publié).
+- **Coenzyme Q10 — trois grands essais européens vérifiés sur registres publics (25 nov. 2026) :**
+  - **CORAL (Royaume-Uni, ` + '`ISRCTN26946710`' + `, NIHR HTA) :** essai de soins primaires chez **950** patients ciblés (1 025 dans le protocole *BMJ Open* nov. 2026) avec ICFER / dysfonction VG (NYHA ≥ II ; **exclut la warfarine**), testant l'ubiquinone pharmaceutique *Myoqinon* 100 mg × 3/jour (300 mg/j) vs placebo pendant 12 mois ; **critère principal : qualité de vie KCCQ à 12 mois** (non dimensionné pour la mortalité) ; recrutement fév. 2025 – nov. 2026, fin globale **mai 2028** (remplaçant les mentions obsolètes de janv. 2027). **Applicabilité directe pour la qualité de vie.**
+  - **DANUTRIO-HF (Danemark, ` + '`NCT06694727`' + `, Herlev & Gentofte + Pharma Nord) :** **4 044 patients estimés**, essai randomisé de registre 2×2 quadruple aveugle (**exclut les AVK/warfarine** ; absence de comité indépendant de surveillance DMC notée au registre) évaluant **CoQ10 100 mg × 2/jour (200 mg/j)** et **sélénium 100 µg × 2/jour** dans l'IC toute FEVG sous bloqueur SRAA + bêtabloquant ; critère principal **1re hospitalisation IC ou décès CV** (~33 mois) ; fin principale estimée **décembre 2028** (fin étude juin 2029). **Applicabilité partielle à directe** (premier essai moderne de puissance adéquate sur critères cliniques durs pour la CoQ10, sans limite de FEVG).
+  - **SELEQT-HF (Pays-Bas, ` + '`NCT07234422`' + `, NHI/UMCG + Pharma Nord) :** **1 100 patients estimés**, triple aveugle, évaluant l'**association sélénium 200 µg/j + CoQ10 200 mg/j** vs placebo dans l'IC toute FEVG NYHA II–IV avec NT-proBNP élevé ; fin principale estimée **décembre 2030**. **Applicabilité partielle / indirecte** (toute FEVG ; ne peut isoler l'effet propre de la CoQ10).
+- **Fer intraveineux à l'ère des iSGLT2 :**
+  - **COMBINED-HF (` + '`NCT06434025`' + `, Brésil) :** essai triple aveugle à 3 bras chez **99 patients ICFER (FEVG < 40 %) naïfs d'iSGLT2** carencés en fer comparant **carboxymaltose ferrique IV 1 000 mg + dapagliflozine 10 mg**, FCM + placebo ou double placebo ; critère principal **FEVG à l'IRM à 30 jours** (intermédiaire) ; statut **` + '`UNKNOWN`' + `** (date estimée mai 2026 dépassée, aucun résultat publié). **Population directe, critère intermédiaire.**
+  - **INFERRCT (` + '`NCT05759078`' + `, Pologne) :** essai académique en double aveugle chez **1 000 patients dans les 4 semaines après infarctus aigu** ayant strictement un **CST < 20 %** et des critères de haut risque (FEVG ≤ 50 %, NT-proBNP élevé ou congestion), comparant **FCM IV 1 000 mg** (réévalué à 4–6 mois) vs placebo salin sur un win ratio hiérarchique jusqu'à 36 mois ; en recrutement, fin estimée **décembre 2026**. **Applicabilité partielle** (post-IDM aigu plutôt qu'ICFER chronique stable).
+- **Sélénium — SIRI-HF (Suède / Norvège) :** 4 326 patients estimés, tout type d'IC, résultats attendus vers 2030 (**indirect**).
+- **Boissons cétoniques :** domaine le plus actif avec 34 études enregistrées, toutes petites ou mécanistiques. L'essai croisé de Duke (` + '`NCT06195982`' + `, 25 patients) s'est terminé le 27 août 2026 sans résultat publié ; l'essai d'Aarhus sur 14 jours (*Circulation* 2024) a montré +0,3 L/min de débit cardiaque sans gain de capacité d'effort. **KETO-AHF (` + '`NCT06653725`' + `)** est le plus vaste (250 patients, 1,3-butanediol vs placebo 30 jours après hospitalisation IC, FEVG ≤ 35 %, win ratio composite, en recrutement, attendu **2028**).
+- **Microbiote intestinal et autres compléments :** les capsules de transplantation fécale sont en phase 1–2 (surtout ICFEP) ; **GutHeart** (rifaximine ou levure probiotique dans l'ICFER) était neutre. **RESALT-CHF** (gélules de sel) ne recrute pas encore. Au 25 nov. 2026 sur ClinicalTrials.gov : aucun essai clinique ICFER en cours pour créatine, taurine, D-ribose (essai retiré sans patient), berbérine, oméga-3 ou L-carnitine. Pour le magnésium, un essai israélien de phase 3 (` + '`NCT03840226`' + `, ~320 patients IC sous diurétiques) reste de statut inconnu depuis décembre 2023 sans résultat publié.
 
-### Organisation des soins et réadaptation
+### Organisation des soins, chirurgie et règles « jours de maladie »
 
-- **Optimisation accélérée des médicaments :** **TIME-HF** (Inde, ESC 2026 ; communiqué de presse uniquement, sans fiche registre trouvée) a rapporté qu'un modèle coordonné par des infirmières avec appui téléphonique augmentait le recours aux quatre piliers (37,3 % vs 22,1 %) et la survie sans hospitalisation (84,0 % vs 79,4 %). **PATRIOT-HF** (US Veterans Affairs, titration conduite par des pharmaciens, pas encore en recrutement) et de petits essais de titration numérique (**VITAL-HF**, **ENGAGE-HF**) explorent des schémas voisins.
-- **Réadaptation basée sur le yoga — Yoga-CaRe HF (AHA 2026) :** 3 492 patients avec ICFER en Inde ; amélioration de la qualité de vie (+8,1 points) et de la marche de 6 minutes (+25,5 m), sans baisse significative des décès, hospitalisations ou AVC (HR 0,90 ; 0,78–1,04 ; médiane 15 mois). Données de congrès uniquement.`,
+- **Optimisation accélérée des médicaments :** **TIME-HF** (Inde, ESC 2026 ; communiqué uniquement) a rapporté qu'un suivi infirmier téléphonique augmentait le recours aux 4 piliers (37,3 % vs 22,1 %) et la survie sans hospitalisation (84,0 % vs 79,4 %). **PATRIOT-HF** (titration par pharmaciens, US VA) et des essais numériques (**VITAL-HF**, **ENGAGE-HF**) testent des schémas voisins.
+- **Réadaptation basée sur le yoga — Yoga-CaRe HF (AHA 2026) :** 3 492 patients ICFER en Inde ; amélioration KCCQ/MLHFQ (+8,1 pts) et marche de 6 min (+25,5 m), sans baisse significative des événements cliniques (HR 0,90 ; 0,78–1,04). Données de congrès uniquement.
+- **Pause péri-opératoire des iSGLT2 — DISCO (` + '`NCT07766109`' + `, CHU de Toulouse, France) :** essai de phase 4 en ouvert (**434 patients estimés**) chez des patients avec **FEVG < 50 %** sous dapagliflozine ou empagliflozine opérés de **chirurgie cardiaque**, comparant la poursuite jusqu'au matin de l'opération à une pause systématique de 3 jours (avec surveillance de la cétonémie capillaire dans les deux bras) sur les événements CV à 30 jours ; ` + '`NOT_YET_RECRUITING`' + `, estimé **décembre 2026 – mars 2029**. **Applicabilité partielle** (chirurgie cardiaque en France à FEVG < 50 %, et non jours de maladie à domicile).
+- **Règles « jours de maladie » — PAUSE (` + '`NCT06433414`' + `, Université d'Alberta, Canada) :** essai pilote en grappes sur 16 pharmacies (**320 patients estimés**) comparant une application mobile à une fiche papier sur la faisabilité et l'adhésion à des scénarios simulés (` + '`NOT_YET_RECRUITING`' + `, **janvier–décembre 2027** ; non dimensionné pour IRA, acidocétose ou hospitalisations IC). **Applicabilité indirecte.**`,
     },
     {
-      headingFr: 'Ce qui a échoué ou stagné en 2025–2026',
+      headingFr: 'Insuffisance cardiaque avancée : pompes cardiaques (LVAD), myosine et xénogreffes',
+      bodyMarkdownFr: `Ces essais ne concernent que l'hypothèse d'une évolution vers une insuffisance cardiaque avancée (stade D).
+
+| Essai | Question testée | Population | Statut (25 nov. 2026) |
+|---|---|---|---|
+| **AMBU-VAD** (` + '`NCT04768322`' + `, coordination française) | LVAD HeartMate 3 précoce vs traitement médical | 92 patients, FEVG ≤ 35 %, profils INTERMACS 4–6 | En recrutement ; fin attendue en **2029** |
+| **TEAM-HF** (` + '`NCT06526195`' + `, Abbott) | LVAD plus précoce chez des patients ambulatoires | ~850 patients, FEVG ≤ 30 %, pression pulmonaire élevée | En recrutement ; fin principale attendue en **2029** |
+| **COMET-HF** (` + '`NCT06736574`' + `) | Omécamtiv mécarbil vs placebo | ~1 800 patients, FEVG < 30 %, NT-proBNP élevé, événement IC récent | En recrutement ; fin principale estimée **2027–2028** |
+| **EXPRESS** (United Therapeutics) | Premier essai prospectif de transplantation de cœur porcin génétiquement modifié | ≥ 50 ans, stade D sans autre option | Autorisé par la FDA en mai 2026 ; États-Unis uniquement |`,
+    },
+    {
+      headingFr: 'Ce qui a échoué ou stagné en 2025–2026 et précautions de lecture',
       bodyMarkdownFr: `| Essai | Traitement évalué | Résultat | Applicabilité |
 |---|---|---|---|
-| **H-HeFT** (DANHEART, Eur Heart J 2026) | Hydralazine + dinitrate d'isosorbide, FEVG ≤ 40 % | Neutre : HR 0,90 (0,67–1,21) ; décès 19,4 % vs 24,2 % (ns) ; plus de la moitié ont arrêté le médicament | Direct (FEVG médiane 35 %, 52–56 % ischémiques) |
+| **H-HeFT** (DANHEART, Eur Heart J 2026) | Hydralazine + dinitrate d'isosorbide, FEVG ≤ 40 % | Neutre : HR 0,90 (0,67–1,21) ; décès 19,4 % vs 24,2 % (ns) ; > 50 % d'arrêts | Direct (FEVG médiane 35 %, 52–56 % ischémiques) |
 | **Met-HeFT** (DANHEART) | Metformine dans l'ICFER avec risque diabétique | Neutre : HR 1,10 (0,84–1,42) | Partiel |
-| **CHIP-BCIS3** (ACC 2026 / NEJM) | Assistance Impella lors d'une angioplastie à haut risque | Neutre ; davantage de décès CV sous pompe (secondaire) ; mortalité totale 47 vs 33 (HR 1,54 ; 0,99–2,41) | Partiel (FEVG ≤ 35 % avec atteinte coronaire étendue ; surtout présentations aiguës) |
+| **CHIP-BCIS3** (ACC 2026 / NEJM) | Assistance Impella lors d'une angioplastie à haut risque | Neutre ; davantage de décès CV sous pompe (secondaire) ; mortalité totale 47 vs 33 (HR 1,54) | Partiel (FEVG ≤ 35 % ; surtout présentations aiguës) |
 | **CardiAMP-HF** (ACC 2025) | Cellules de moelle osseuse dans l'ICFER ischémique | Neutre (win ratio 1,01) | Direct |
 | **HF-REVERT** (2026) | Anti-miR-132 précocement après infarctus | Critère de remodelage non atteint | Partiel |
 | **LUMINARA** (ESC 2026) | Agoniste oral de la relaxine (AZD5462) | Effet limite, non significatif (p = 0,054) | Indirect |
 | **Cycle-1-REF** (HFSA 2026) | Inhibiteur oral de PDE9 | Pas d'effet net sur le NT-proBNP | Partiel |
-| **NATRIX-BNP** | Anticorps activateur de NPR1 (REGN5381) | Interrompu (« décision du promoteur ») ; pas de baisse du NT-proBNP | Partiel |
-| **XXB750** (Novartis) | Anticorps activateur de NPR1 | Interrompu ; hausse du NT-proBNP à forte dose (ratio 1,515 vs 0,903 sous placebo, résultats de registre) | Partiel |
+| **NATRIX-BNP / XXB750** | Anticorps activateurs de NPR1 | Interrompus (absence de baisse ou hausse du NT-proBNP à forte dose) | Partiel |
 | **SHINE-CTO** | Angioplastie de CTO contre procédure factice | Retiré en 2021, aucun patient inclus | — |
 
-**Enseignements transversaux :** les médicaments anciens repositionnés à faible coût (hydralazine-dérivé nitré, metformine) n'ont pas démontré de bénéfice supplémentaire sur les traitements de fond modernes ; les programmes cellulaires et géniques prolongent souvent des signaux secondaires ou en sous-groupe dans de nouveaux essais remodelés ; les essais de phase 2 sur marqueurs intermédiaires (NT-proBNP, volume du VG) sont fréquemment interrompus discrètement ; enfin, plusieurs programmes excluent d'emblée les patients ischémiques.`,
-    },
-    {
-      headingFr: 'Précautions de lecture et limites',
-      bodyMarkdownFr: `- **Décalage des registres :** les fiches publiques ne sont pas toujours actualisées rapidement. Yoga-CaRe HF apparaît encore « en recrutement » après présentation de ses résultats ; PROTECT IV et FINALITY-HF ont dépassé leurs dates estimées sans résultats publiés ; MUSIC-HFrEF1 n'a plus été mis à jour depuis 2024.
-- **Données préliminaires de congrès :** plusieurs résultats 2026 reposent encore sur des présentations en congrès ou des communiqués de presse (Met-HeFT, Yoga-CaRe HF, LUMINARA, TIME-HF) et peuvent évoluer lors de la publication complète évaluée par les pairs. H-HeFT a en revanche été vérifié sur son texte intégral (Eur Heart J 2026) et CHIP-BCIS3 sur son résumé NEJM 2026.
-- **Discussion avec votre équipe médicale :** si vous vous demandez si un essai clinique est ouvert en France (notamment en CHU ou en centre expert d'insuffisance cardiaque) et si une participation aurait un sens dans votre situation, parlez-en directement avec votre cardiologue.`,
+### Précautions de lecture
+
+- **Décalage des registres :** Yoga-CaRe HF apparaît encore « en recrutement » après présentation de ses résultats ; PROTECT IV, FINALITY-HF et COMBINED-HF ont dépassé leurs dates estimées sans résultats publiés ; MUSIC-HFrEF1 n'a plus été mis à jour depuis 2024.
+- **Données préliminaires :** plusieurs résultats 2026 reposent encore sur des présentations en congrès, des communiqués ou des résumés (Met-HeFT, Yoga-CaRe HF, LUMINARA, TIME-HF, résumé NEJM de PROGRESS) et peuvent évoluer lors de l'analyse complète.
+- **Discussion médicale :** si vous vous demandez si un essai clinique académique ouvert en France (en CHU ou en centre expert d'insuffisance cardiaque) correspond à votre situation, parlez-en directement avec votre cardiologue.`,
     },
   ],
   relatedArticleSlugs: [
@@ -161,34 +184,39 @@ Les essais en cours ne modifient pas les verdicts actuels sur les compléments a
     'essais-cliniques-cles',
     'revascularisation-pontage-stents',
     'dispositifs-cardiaques-dai-crt',
+    'stenose-aortique-fevg-reduite',
     'occlusion-coronaire-chronique-cto',
     'vitamines-b-insuffisance-cardiaque',
     'readaptation-cardiaque-et-activite-physique',
     'cellules-souches-et-therapies-regeneratives',
     'coenzyme-q10',
+    'these-coq10-mortalite-icfer-moderne',
+    'these-fer-iv-et-isglt2-quadritherapie',
+    'these-jours-de-maladie-sraa-vs-isglt2',
     'finerenone-et-nouveaux-arm',
     'medicaments-glp1-et-incretines',
     'magnesium-insuffisance-cardiaque',
+    'complements-energetiques-cardiaques',
+    'fibres-alimentaires-et-axe-intestin-coeur',
     'telesurveillance-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
     'medicaments-insuffisance-cardiaque',
+    'insuffisance-cardiaque-avancee-stade-d',
+    'assistance-circulatoire-lvad',
+    'inotropes-insuffisance-cardiaque-avancee',
   ],
   sources: [
     {
-      label: 'Extraction des registres publics d’essais cliniques (ClinicalTrials.gov, 25 novembre 2026)',
-      detail: 'Statut, effectifs, critères d’éligibilité et dates estimées de 47 essais en cardiomyopathie ischémique / ICFER, incluant STICH3, PROFID-EHRA, COLT-HF, CardiAMP HF II, PCI-GULF, PROTECT IV, ISCHEMIA-CTO, SHINE-CTO (retiré) et le pipeline GLP-1/incrétines',
+      label: 'Registres publics ClinicalTrials.gov et ISRCTN (25 novembre 2026)',
+      detail: '47 essais en cardiomyopathie ischémique / ICFER ainsi que CORAL (ISRCTN26946710), DANUTRIO-HF (NCT06694727), SELEQT-HF (NCT07234422), COMBINED-HF (NCT06434025), INFERRCT (NCT05759078), EXPAND TAVR II (NCT05149755), PROGRESS (NCT04889872), DISCO (NCT07766109), PAUSE (NCT06433414), AMBU-VAD (NCT04768322), TEAM-HF (NCT06526195) et KETO-AHF (NCT06653725)',
     },
     {
-      label: 'Essais publiés ou présentés en 2026 : H-HeFT (Eur Heart J 2026), Met-HeFT (ESC 2026), CHIP-BCIS3 (NEJM 2026), Yoga-CaRe HF (AHA 2026) et LUMINARA (ESC 2026)',
-      detail: 'Texte intégral H-HeFT, résumé NEJM CHIP-BCIS3, présentations de congrès et synthèses de résultats 2026 (TIME-HF, HF-REVERT, Cycle-1-REF, RELIEVE-HF)',
+      label: 'Résultats 2026 : PROGRESS (NEJM nov. 2026), H-HeFT (Eur Heart J 2026), Met-HeFT (ESC 2026), CHIP-BCIS3 (NEJM 2026), Yoga-CaRe HF (AHA 2026), LUMINARA (ESC 2026) et TIME-HF',
+      detail: 'Texte intégral H-HeFT, résumés NEJM PROGRESS et CHIP-BCIS3, présentations de congrès et synthèses de résultats 2026',
     },
     {
-      label: 'Thérapies cellulaires et réglementation : BioVAT-HF (NEJM 2026), rapport PMDA RiHEART (fév. 2026), LAPiS (Heartseed), CardiAMP-HF, DREAM-HF (JACC 2023), CONCERT-HF (EJHF 2021) et liste EMA des MTI (juin 2026)',
-      detail: 'Évaluation des patchs et sphéroïdes dérivés de cellules iPS, autorisation conditionnelle japonaise de RiHEART et absence de thérapie cardiaque cellulaire autorisée dans l’UE',
-    },
-    {
-      label: 'Protocole PROFID-EHRA (2026) et registres finérénone (FINALITY-HF, REDEFINE-HF, CONFIRMATION-HF)',
-      detail: 'Schéma d’évaluation du DAI préventif sous traitement moderne et calendrier des essais de finérénone dans l’insuffisance cardiaque',
+      label: 'Thérapies cellulaires et IC avancée : BioVAT-HF (NEJM 2026), rapport PMDA RiHEART (fév. 2026), LAPiS, CardiAMP-HF, DREAM-HF, CONCERT-HF, liste EMA MTI (juin 2026) et EXPRESS (xénogreffe FDA mai 2026)',
+      detail: 'Évaluation des patchs/sphéroïdes iPS, absence de MTI cardiaque autorisé dans l’UE et essais de LVAD/inotropes/xénogreffes',
     },
   ],
   disclaimerType: 'medical',

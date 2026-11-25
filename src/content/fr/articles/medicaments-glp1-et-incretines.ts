@@ -109,7 +109,7 @@ Le statut d'approbation de l'**orforglipron** et du **CagriSema** repose sur la 
       bodyMarkdownFr: `- **Déshydratation et fonction rénale :** le RCP européen de *Wegovy* prévient que nausées, vomissements et diarrhées peuvent provoquer une déshydratation susceptible, rarement, d'aggraver la fonction rénale. Si vous prenez un diurétique de l'anse, un inhibiteur du SGLT2 (iSGLT2), un ARNI et un ARM, convenez à l'avance avec votre cardiologue ou votre médecin traitant d'une conduite à tenir en cas de vomissements ou de diarrhées (« jours de maladie »). Ne modifiez pas vos traitements sans avis médical.
 - **Insuffisance cardiaque sévère :** la classe **NYHA IV** n'a pas été étudiée et l'utilisation de *Wegovy* n'y est pas recommandée (RCP européen).
 - **Fréquence cardiaque :** élévation du pouls décrite ci-dessus, à surveiller particulièrement dans l'ICFER.
-- **Yeux et anesthésie :** le RCP signale un risque rare de neuropathie optique ischémique antérieure non artéritique (**NOIA-NA / NAION**, risque relatif environ doublé, soit environ **1 cas supplémentaire pour 10 000 personnes-années**) ainsi qu'un risque d'inhalation du contenu gastrique lors d'une **anesthésie générale ou d'une sédation profonde** (vidange gastrique ralentie — à signaler impérativement à l'anesthésiste avant tout examen ou intervention).
+- **Yeux et anesthésie :** le RCP signale un risque rare de neuropathie optique ischémique antérieure non artéritique (**NOIA-NA / NAION**, risque relatif environ doublé, soit environ **1 cas supplémentaire pour 10 000 personnes-années**) ainsi qu'un risque d'inhalation du contenu gastrique lors d'une **anesthésie générale ou d'une sédation profonde** (vidange gastrique ralentie — à signaler impérativement à l'anesthésiste avant tout examen ou intervention ; voir *Chirurgie, soins dentaires et règles des « jours de maladie »*).
 - **Fonte musculaire (masse maigre) :** dans une méta-analyse en réseau de 22 essais (**Karakasis 2025**), environ **un quart** du poids perdu sous GLP-1 correspondait à de la masse maigre (moyenne **-0,86 kg**), le sémaglutide à forte dose et le tirzépatide figurant parmi les moins épargneurs pour le muscle. Or la fonte musculaire touche déjà environ **1 personne sur 5** atteinte d'insuffisance cardiaque chronique (déclaration HFA 2025).
 - **Reprise de poids à l'arrêt :** dans **SURMOUNT-4**, les patients passés sous placebo après 36 semaines de tirzépatide ont repris **14,0 %** de leur poids corporel au cours de l'année suivante, alors que ceux qui poursuivaient le traitement ont encore perdu **5,5 %**. Dans l'extension de **STEP 1**, un an après l'arrêt du sémaglutide, environ **deux tiers** du poids perdu étaient revenus et la plupart des améliorations métaboliques s'étaient effacées.
 - **Association aux iSGLT2 :** les iSGLT2 favorisent eux aussi la perte hydrique et, en cas d'apport alimentaire très réduit, exposent à un risque rare d'acidocétose. Consultez également la fiche *Interactions entre compléments, aliments et médicaments*.`,
@@ -161,6 +161,7 @@ Si vous vivez avec un diabète de type 2 ou une obésité sévère en plus d'une
     },
   ],
   relatedArticleSlugs: [
+    'diabete-insuffisance-cardiaque',
     'poids-obesite-et-denutrition',
     'maladies-associees',
     'essais-cliniques-cles',
@@ -168,6 +169,8 @@ Si vous vivez avec un diabète de type 2 ou une obésité sévère en plus d'une
     'traitements-additionnels-nouveaux',
     'questions-equipe-cardiologie',
     'dysfonction-vg-asymptomatique-stade-b',
+    'cafeine-boissons-energisantes-et-stimulants',
+    'chirurgie-soins-dentaires-et-jours-de-maladie',
     'interactions-complements-aliments-medicaments',
     'vivre-avec-insuffisance-cardiaque-en-france',
   ],

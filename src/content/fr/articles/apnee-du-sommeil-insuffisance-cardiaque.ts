@@ -19,6 +19,8 @@ export const article: WikiArticle = {
     'advent-hf',
     'comorbidités',
     'dépistage',
+    'stop-bang',
+    'polygraphie',
     'polysomnographie',
   ],
   aliases: [
@@ -158,11 +160,13 @@ La formulation en vigueur nomme directement l'insuffisance cardiaque symptomatiq
     },
   ],
   relatedArticleSlugs: [
+    'fibrillation-atriale-insuffisance-cardiaque',
     'glossaire-cardiologie',
     'maladies-associees',
     'tension-arterielle-insuffisance-cardiaque',
     'poids-obesite-et-denutrition',
     'dispositifs-cardiaques-dai-crt',
+    'fuite-mitrale-secondaire',
     'essais-cliniques-cles',
     'questions-equipe-cardiologie',
     'vivre-avec-insuffisance-cardiaque-en-france',
@@ -170,6 +174,7 @@ La formulation en vigueur nomme directement l'insuffisance cardiaque symptomatiq
     'vivre-avec-insuffisance-cardiaque',
     'recommandations-comparees-esc-us-nice',
     'comprendre-le-diagnostic',
+    'voyages-canicule-et-climat-ic',
   ],
   sources: [
     { label: 'Recommandations ESC 2026 — troubles respiratoires du sommeil', detail: "Prévalence, polysomnographie, contre-indication de l'ASV dans le SACS (Classe III, A) et Classe IIb dans le SAOS" },
