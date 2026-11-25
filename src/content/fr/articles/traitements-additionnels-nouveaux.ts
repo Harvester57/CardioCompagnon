@@ -83,16 +83,26 @@ export const article: WikiArticle = {
     },
     {
       headingFr: 'À l’horizon (état des connaissances en novembre 2026)',
-      bodyMarkdownFr: `- **FINALITY-HF :** essai évaluant la finérénone dans l'ICFER chez des patients ne pouvant pas prendre ou ne tolérant pas la spironolactone ou l'éplérénone ; fin d'étude enregistrée pour **janvier 2028**.
+      bodyMarkdownFr: `- **FINALITY-HF :** essai évaluant la finérénone dans l'ICFER chez des patients ne pouvant pas prendre ou ne tolérant pas la spironolactone ou l'éplérénone ; fin globale d'étude enregistrée pour **janvier 2028**.
 - **COMET-HF :** essai évaluant l'omécamtiv mécarbil dans l'insuffisance cardiaque à FEVG sévèrement réduite ; fin du critère principal attendue en **2027**.
-- **PROFID-EHRA :** essai visant à déterminer si le DAI conserve un bénéfice de survie chez les patients ayant eu un infarctus du myocarde et recevant les traitements modernes ; fin estimée en **novembre 2027** (voir *Dispositifs cardiaques implantés : DAI et CRT*).`,
+- **PROFID-EHRA :** essai visant à déterminer si le DAI conserve un bénéfice de survie chez les patients ayant eu un infarctus du myocarde et recevant les traitements modernes ; fin estimée en **novembre 2027** (voir *Dispositifs cardiaques implantés : DAI et CRT*).
+- **Vérification des registres au 25 novembre 2026 :** **FINALITY-HF** recrute toujours bien que sa date estimée d'achèvement du *critère principal* (**août 2026**) soit dépassée ; **COMET-HF** recrute avec une fin du critère principal estimée à **septembre 2027** ; le calendrier de **PROFID-EHRA** est inchangé.
+- **BalanceD-HF :** essai comparant le **balcinrénone associé à la dapagliflozine** à la dapagliflozine seule chez **4 005 patients** ayant une fonction rénale diminuée et un événement récent d'insuffisance cardiaque, sans ARM (sans limite de FEVG) ; fin du critère principal estimée en **avril 2027**.
+- **Traitements évalués et neutres en 2026 :** l'association **hydralazine + dinitrate d'isosorbide** (**H-HeFT**) et la **metformine** (**Met-HeFT**) dans l'essai **DANHEART**, ainsi que plusieurs molécules de phase 2, n'ont pas démontré de bénéfice.
+- **Les traitements par cellules souches ne constituent pas une option disponible :** aucune thérapie cellulaire pour l'insuffisance cardiaque n'est autorisée dans l'Union européenne (liste EMA des médicaments de thérapie innovante, juin 2026) ni approuvée aux États-Unis, et les essais les mieux contrôlés (**CONCERT-HF**, **DREAM-HF**, **CardiAMP-HF**) n'ont pas atteint leurs critères principaux. Le muscle cardiaque cultivé en laboratoire à partir de cellules iPS reste au stade d'essais précoces et ne bénéficie que d'une autorisation conditionnelle au Japon uniquement. Voir *Cellules souches et thérapies régénératives*.
+- **Incrétines et agonistes du GLP-1 :** pour le sémaglutide, le tirzépatide et le rétatrutide (bénéfices artériels, absence de preuve spécifique dans l'ICFER à FEVG autour de 35 % et conditions de remboursement en France), voir *Médicaments GLP-1 et incrétines*.
+- La liste complète des essais en cours et à venir, avec leur degré d'applicabilité à une cardiomyopathie ischémique autour de 35 % de FEVG, est rassemblée dans *Essais cliniques en cours et à suivre*.`,
     },
   ],
   relatedArticleSlugs: [
+    'essais-cliniques-en-cours-et-a-suivre',
+    'cellules-souches-et-therapies-regeneratives',
+    'medicaments-glp1-et-incretines',
     'medicaments-insuffisance-cardiaque',
     'comprendre-le-diagnostic',
     'medicaments-additionnels-ivabradine-digoxine-vericiguat',
     'finerenone-et-nouveaux-arm',
+    'carence-martiale-et-fer-iv',
     'gilet-defibrillateur-portable',
     'telesurveillance-insuffisance-cardiaque',
     'dispositifs-cardiaques-dai-crt',
@@ -113,6 +123,14 @@ export const article: WikiArticle = {
     {
       label: 'FINEARTS-HF, FINE-HEART, ARTS-HF et DIAMOND (textes intégraux)',
       detail: 'Populations finérénone, phase 2 ICFER, essai patiromer et registres FINALITY-HF / COMET-HF',
+    },
+    {
+      label: 'Registres d’essais cliniques (état au 25 novembre 2026) et DANHEART (H-HeFT et Met-HeFT, ESC 2026)',
+      detail: 'Statut actualisé de FINALITY-HF, COMET-HF, PROFID-EHRA et BalanceD-HF ; résultats neutres de l’hydralazine-dinitrate d’isosorbide et de la metformine',
+    },
+    {
+      label: 'Liste EMA (CAT) des thérapies innovantes (juin 2026), CONCERT-HF (EJHF, 2021) et DREAM-HF (JACC, 2023)',
+      detail: 'Absence de thérapie cellulaire cardiaque autorisée en Union européenne ; résultats neutres sur le critère principal des essais contrôlés',
     },
     {
       label: 'VEST, HF-OPT, revue autrichienne Goetz (2023), position DGK (2019), TIM-HF2, MORE-CARE, Scholte 2023, MONITOR-HF et méta-analyse fer IV 2025',

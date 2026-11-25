@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/living-with-heart-failure-in-france.md',
   titleFr: 'Vivre avec une insuffisance cardiaque en France : ALD, travail, emprunt et réadaptation',
   category: 'france',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'hot',
   tags: [
@@ -23,6 +23,9 @@ export const article: WikiArticle = {
     'prado',
     'invalidité',
     'rqth',
+    'glp-1',
+    'wegovy',
+    'mounjaro',
   ],
   aliases: [
     'France',
@@ -40,10 +43,12 @@ export const article: WikiArticle = {
     'PRADO',
     'Réadaptation cardiaque',
     'SMR cardiovasculaire',
+    'Wegovy remboursement France',
+    'Mounjaro remboursement France',
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Cet article rassemble les règles pratiques françaises applicables après un diagnostic d'insuffisance cardiaque ou de maladie coronarienne, vérifiées au 24 novembre 2026 : prise en charge à 100 % en ALD (ALD 5 et ALD 13), réforme des arrêts maladie au 15 octobre 2026 (maintien de 3 ans d'indemnités journalières en ALD exonérante contre 1 an hors ALD), reprise du travail et temps partiel thérapeutique, RQTH et invalidité, assurance emprunteur (Loi Lemoine et convention AERAS), accès à la réadaptation cardiaque (SMR) et suivi post-hospitalisation PRADO. Les règles et montants évoluant régulièrement, vérifiez toujours votre situation individuelle auprès de votre CPAM, de service-public.fr ou d'un conseiller.",
+    "Cet article rassemble les règles pratiques françaises applicables après un diagnostic d'insuffisance cardiaque ou de maladie coronarienne, vérifiées sur les pages officielles fin novembre 2026 : prise en charge à 100 % en ALD (ALD 5 et ALD 13), réforme des arrêts maladie au 15 octobre 2026 (maintien de 3 ans d'indemnités journalières en ALD exonérante contre 1 an hors ALD), reprise du travail et temps partiel thérapeutique, RQTH et invalidité, assurance emprunteur (Loi Lemoine et convention AERAS), accès à la réadaptation cardiaque (SMR et repères GERS-P/HAS), suivi post-hospitalisation PRADO et conditions françaises de remboursement des médicaments de l'obésité (Wegovy, Mounjaro depuis le 15 juin 2026). Les règles et montants évoluant régulièrement, vérifiez toujours votre situation individuelle auprès de votre CPAM, de service-public.fr ou d'un conseiller.",
   sections: [
     {
       headingFr: 'ALD (ALD 5 et ALD 13) : prise en charge à 100 % des soins liés',
@@ -139,6 +144,8 @@ Une complémentaire santé (mutuelle) peut couvrir une partie de ces frais. En c
 - **Modalités d'accès et prise en charge :** deux voies sont possibles — directement au décours d'une hospitalisation, ou sur **prescription directe de votre médecin traitant ou de votre cardiologue de ville**. Vous choisissez librement votre centre. **Aucune entente préalable n'est nécessaire et les séances sont prises en charge à 100 %** par l'Assurance Maladie.
 - **Contenu du programme (HAS 2024) :** réentraînement physique progressif et supervisé, optimisation des traitements et des facteurs de risque, **éducation thérapeutique du patient (ETP)**, accompagnement psychologique, diététique et aide au sevrage tabagique, ainsi que **préparation à la reprise du travail**.
 - **Bénéfices cités par la HAS :** baisse de **12 %** de la mortalité et de **20 à 30 %** des réhospitalisations dans l'insuffisance cardiaque (surtout à FEVG réduite, selon l'adhésion au programme).
+- **Contenu précis de l'entraînement en France (Société Française de Cardiologie, GERS-P 2023) :** la réadaptation dans l'ICFER est recommandée en **Classe I, grade A**. Une épreuve d'effort cardiorespiratoire préalable est réalisée ; les patients en classe **NYHA IIIb** débutent en hospitalisation complète. L'endurance constitue le socle (**3 à 6 séances par semaine**, en continu au premier seuil ventilatoire ou en fractionné), complétée par un **renforcement musculaire** **2 à 3 fois par semaine** (environ **30 à 70 %** de la charge maximale 1RM pour les bras, **40 à 80 %** pour les jambes, en commençant par **10 à 15 répétitions**) ainsi qu'un entraînement des muscles inspiratoires. Le programme compte au moins **20 séances**, souvent davantage dans l'insuffisance cardiaque ; après la sortie, l'objectif d'entretien est d'environ **150 minutes** d'endurance modérée (ou **75 minutes** vigoureuse) par semaine plus 2 à 3 séances de renforcement.
+- **Prescription d'activité physique en relais (HAS 2022) :** après la réadaptation, le médecin traitant ou le cardiologue prescrit au moins **3 séances par semaine de 30 à 60 minutes** associant endurance et **renforcement musculaire**. La HAS mentionne les efforts intenses, la plongée, le sport de compétition et « la musculation » parmi les contre-indications dans l'IC chronique sans définir le terme « musculation » : faites toujours préciser par votre équipe de réadaptation quelles charges vous sont autorisées (une fiche patient HAS de 2 pages reprend ces repères). Aucune recommandation française ni européenne ne place la musculation au-dessus de l'endurance (voir l'article « Musculation versus entraînement aérobie en réadaptation cardiaque »).
 - **Un recours encore trop faible :** en France, après un infarctus du myocarde, seuls **10,8 % à 34,8 %** des patients accèdent à une réadaptation selon les régions. Le taux de « 10 % des patients insuffisants cardiaques » cité par la HAS provient d'un registre américain, aucune donnée consolidée française spécifique à l'insuffisance cardiaque n'ayant été recensée dans la note de cadrage.`,
     },
     {
@@ -152,20 +159,24 @@ Mis en place par l'Assurance Maladie depuis 2013 avec la Société Française de
 - consultation chez votre **médecin traitant dans la première semaine** suivant la sortie, puis chez votre **cardiologue au cours du deuxième mois** ;
 - remise d'un carnet de suivi à la sortie de l'hôpital.
 
-### Télésurveillance, permis de conduire et apnée du sommeil
+### Médicaments de l'obésité (Wegovy, Mounjaro), télésurveillance, permis et apnée du sommeil
 
+- **Médicaments de perte de poids (sémaglutide — *Wegovy*, tirzépatide — *Mounjaro*) :** remboursés à **65 % depuis le 15 juin 2026** uniquement pour un **IMC initial ≥ 40 kg/m²**, ou **≥ 35 kg/m²** associé à l'une des **15 pathologies listées** (telles que le diabète de type 2 ou l'hypertension artérielle traitée). Selon les informations publiées sur Vidal (les arrêtés du **10 juin 2026**, publiés au Journal officiel du **12 juin 2026**, n'ayant pas été lus directement), **la maladie coronarienne et l'insuffisance cardiaque ne figurent pas dans cette liste**. La primo-prescription doit émaner d'un service spécialisé de prise en charge de l'obésité, avec formulaire d'éligibilité Assurance Maladie (AmeliPro) ; tout médecin peut ensuite assurer le renouvellement. Le tirzépatide (*Mounjaro*) bénéficie séparément d'un remboursement dans le diabète de type 2 (avis HAS 2024 et 2026). Voir l'article « Médicaments GLP-1 et nouvelles incrétines ».
 - **Télésurveillance à domicile :** remboursée en France depuis juillet 2023 selon le référentiel HAS (après hospitalisation récente pour insuffisance cardiaque, ou en classe NYHA II ou plus avec NT-proBNP élevé). Voir l'article dédié sur la télésurveillance.
 - **Permis de conduire :** l'aptitude relève de l'arrêté du 28 mars 2022 et d'un **médecin agréé** ; voir l'article dédié sur les règles de conduite.
 - **Apnée du sommeil (PPC) :** l'insuffisance cardiaque symptomatique fait partie des comorbidités reconnues ouvrant droit à la prise en charge d'une pression positive continue (PPC) dès une apnée modérée ; la HAS a réexaminé ces indications en 2026 et les a maintenues inchangées.
 
-### Limites des sources vérifiées au 24 novembre 2026
+### Limites des sources vérifiées fin novembre 2026
 
-Quelques éléments n'ont pas pu être vérifiés dans le texte consolidé sur Légifrance : le texte intégral consolidé de l'annexe à l'article D.160-4 et des articles R.323-1, R.323-3 et R.323-3-1 après la réforme d'octobre 2026, le plafond chiffré consolidé du temps partiel thérapeutique hors ALD exonérante, ainsi que le décompte exact des jours de temps partiel thérapeutique sur le compteur d'IJ. Vérifiez toujours votre cas précis auprès de votre CPAM ou de votre service social.`,
+Quelques éléments n'ont pas pu être vérifiés dans le texte consolidé sur Légifrance : le texte intégral consolidé de l'annexe à l'article D.160-4 et des articles R.323-1, R.323-3 et R.323-3-1 après la réforme d'octobre 2026, le plafond chiffré consolidé du temps partiel thérapeutique hors ALD exonérante, le décompte exact des jours de temps partiel thérapeutique sur le compteur d'IJ, ainsi que le texte intégral des arrêtés du 10 juin 2026 sur les médicaments de l'obésité. Vérifiez toujours votre cas précis auprès de votre CPAM ou de votre service social.`,
     },
   ],
   relatedArticleSlugs: [
+    'glossaire-cardiologie',
     'vivre-avec-insuffisance-cardiaque',
     'readaptation-cardiaque-et-activite-physique',
+    'musculation-vs-endurance-readaptation-cardiaque',
+    'medicaments-glp1-et-incretines',
     'telesurveillance-insuffisance-cardiaque',
     'regles-conduite-automobile',
     'depression-et-sante-emotionnelle',
@@ -205,14 +216,19 @@ Quelques éléments n'ont pas pu être vérifiés dans le texte consolidé sur L
         'Exemption de questionnaire médical (Loi Lemoine, ≤ 200 000 € avant 60 ans), niveaux AERAS, absence d’entrée cardiaque dans la grille et périmètre du droit à l’oubli.',
     },
     {
-      label: 'HAS — Fiche orientation réadaptation cardiaque (2024) et Note de cadrage SMR cardiovasculaire (2023)',
+      label: 'HAS — Fiche orientation réadaptation cardiaque (2024), Note de cadrage SMR (2023), HAS activité physique IC (2022) et GERS-P / SFC (2023)',
       detail:
-        'Accès direct sans entente préalable, prise en charge à 100 %, contenu multidisciplinaire, bénéfices cliniques et taux de recours en France.',
+        'Accès direct sans entente préalable, prise en charge à 100 %, contenu multidisciplinaire, doses d’endurance et de renforcement musculaire, bénéfices cliniques et taux de recours en France.',
     },
     {
       label: 'ameli.fr — Programme PRADO Insuffisance cardiaque',
       detail:
         'Durée du suivi (2 ou 6 mois selon la classe NYHA), rythme des visites infirmières, consultations médecin traitant et cardiologue.',
+    },
+    {
+      label: 'service-public.fr, Vidal (2026) et HAS Commission de la Transparence Mounjaro diabète de type 2 (2024, 2026)',
+      detail:
+        'Conditions de remboursement à 65 % de Wegovy et Mounjaro dans l’obésité depuis le 15 juin 2026 (IMC ≥ 40 ou ≥ 35 avec comorbidités listées, hors maladie coronarienne/IC) et prise en charge distincte dans le diabète de type 2.',
     },
     {
       label: 'HAS CNEDiMTS — Indications PPC (2014 et avis 2026)',

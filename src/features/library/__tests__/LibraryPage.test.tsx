@@ -53,12 +53,12 @@ afterEach(() => {
 });
 
 describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
-  it('affiche les 44 articles et permet le filtrage par categorie et par profil clinique', async () => {
+  it('affiche les 51 articles et permet le filtrage par categorie et par profil clinique', async () => {
     renderLibrary();
 
     const articlesList = screen.getByRole('list', { name: 'Liste des fiches scientifiques' });
-    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(44);
-    expect(screen.getByText('44 fiches affichées sur 44')).toBeInTheDocument();
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(51);
+    expect(screen.getByText('51 fiches affichées sur 51')).toBeInTheDocument();
 
     // Filtre categorie "france" (2 articles)
     fireEvent.click(screen.getByRole('button', { name: /France & Droits \(2\)/i }));
@@ -68,8 +68,8 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     ).toBeInTheDocument();
 
     // Reinitialiser sur Toutes
-    fireEvent.click(screen.getByRole('button', { name: /Toutes \(44\)/i }));
-    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(44);
+    fireEvent.click(screen.getByRole('button', { name: /Toutes \(51\)/i }));
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(51);
 
     // Filtre "Pertinent pour mon profil" : sans modules optionnels, masque les fiches strictement specifiques (ex. CTO)
     const profileFilterButton = screen.getByRole('button', {
@@ -78,7 +78,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     fireEvent.click(profileFilterButton);
 
     const defaultRelevantCount = within(articlesList).getAllByRole('listitem').length;
-    expect(defaultRelevantCount).toBeLessThan(44);
+    expect(defaultRelevantCount).toBeLessThan(51);
     expect(screen.queryByText(/Occlusion coronaire chronique/i)).not.toBeInTheDocument();
 
     // Activer le module CTO dans PatientProfile : la fiche CTO devient pertinente
@@ -94,7 +94,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     });
   });
 
-  it('effectue une recherche instantanee sans accents couvrant les 44 articles et le glossaire', () => {
+  it('effectue une recherche instantanee sans accents couvrant les 51 articles et le glossaire', () => {
     renderLibrary();
 
     const searchInput = screen.getByLabelText(/Recherche plein texte hors ligne/i);
@@ -103,7 +103,7 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     const articlesList = screen.getByRole('list', { name: 'Liste des fiches scientifiques' });
     const matchedItems = within(articlesList).getAllByRole('listitem');
     expect(matchedItems.length).toBeGreaterThan(0);
-    expect(matchedItems.length).toBeLessThan(44);
+    expect(matchedItems.length).toBeLessThan(51);
     expect(
       within(articlesList).getByRole('heading', { name: /Fraction d'éjection/i }),
     ).toBeInTheDocument();

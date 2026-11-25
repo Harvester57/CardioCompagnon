@@ -8,11 +8,19 @@ export const article: WikiArticle = {
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
-  tags: ['coenzyme-q10', 'ubiquinone', 'ubiquinol', 'compléments', 'q-symbio', 'insuffisance-cardiaque'],
-  aliases: ['CoQ10', 'Ubiquinone', 'Ubiquinol', 'Q-SYMBIO'],
+  tags: [
+    'coenzyme-q10',
+    'ubiquinone',
+    'ubiquinol',
+    'compléments',
+    'q-symbio',
+    'coral',
+    'insuffisance-cardiaque',
+  ],
+  aliases: ['CoQ10', 'Ubiquinone', 'Ubiquinol', 'Q-SYMBIO', 'CORAL'],
   linkedModules: ['core'],
   plainSummaryFr:
-    "La coenzyme Q10 (CoQ10) est le complément alimentaire au sujet duquel les patients et leurs proches posent le plus de questions. Son signal clinique est intrigant mais fragile (certitude faible) : l'essai randomisé Q-SYMBIO (420 patients NYHA III–IV, FEVG moyenne 31 %, environ 70 % de cause ischémique) a montré qu'une prise de 300 mg/j pendant 2 ans divisait par deux les événements cardiaques majeurs (HR 0,50) et réduisait la mortalité de 18 % à 10 %, sans effet à 16 semaines ni amélioration de la fonction cardiaque ou du NT-proBNP à 2 ans. Toutefois, cet essai était de petite taille, a été interrompu prématurément à 420 patients sur 550 prévus, financé en partie par des fabricants de compléments, sans résultat séparé pour les patients ischémiques, jamais répliqué en plus de 10 ans, et conduit avant les traitements modernes (sacubitril/valsartan, iSGLT2). Aucune recommandation internationale ne conseille la CoQ10. Généralement bien tolérée, elle peut interagir avec certains antihypertenseurs et anticoagulants (warfarine) : c'est un sujet à évoquer avec votre cardiologue, jamais un substitut au traitement prescrit.",
+    "La coenzyme Q10 (CoQ10) est le complément alimentaire au sujet duquel les patients et leurs proches posent le plus de questions. Son signal clinique est intrigant mais fragile (certitude faible) : l'essai randomisé Q-SYMBIO (420 patients NYHA III–IV, FEVG moyenne 31 %, environ 70 % de cause ischémique) a montré qu'une prise de 300 mg/j pendant 2 ans divisait par deux les événements cardiaques majeurs (HR 0,50) et réduisait la mortalité de 18 % à 10 %, sans effet à 16 semaines ni amélioration de la fonction cardiaque ou du NT-proBNP à 2 ans. Toutefois, cet essai était de petite taille, a été interrompu prématurément à 420 patients sur 550 prévus, financé en partie par des fabricants de compléments, sans résultat séparé pour les patients ischémiques, jamais répliqué en plus de 10 ans, et conduit avant les traitements modernes (sacubitril/valsartan, iSGLT2). Un nouvel essai britannique contre placebo (CORAL, environ 950 patients) est en cours jusqu'en 2027, mais il mesure la qualité de vie et non les décès ou hospitalisations. Aucune recommandation internationale ne conseille la CoQ10. Généralement bien tolérée, elle peut interagir avec certains antihypertenseurs et anticoagulants (warfarine) : c'est un sujet à évoquer avec votre cardiologue, jamais un substitut au traitement prescrit.",
   sections: [
     {
       headingFr: 'L’essai principal : Q-SYMBIO (2014, texte intégral)',
@@ -74,16 +82,27 @@ export const article: WikiArticle = {
 
 Si vous envisagez d'essayer la CoQ10, parlez-en d'abord à votre cardiologue et à votre pharmacien afin de vérifier l'absence d'interaction avec votre ordonnance.`,
     },
+    {
+      headingFr: 'Un nouvel essai contrôlé contre placebo est en cours : CORAL',
+      bodyMarkdownFr: `- **CORAL** (Royaume-Uni, référence **ISRCTN26946710** ; financé par le NIHR) évalue la coenzyme Q10 **100 mg trois fois par jour** contre placebo pendant **12 mois** chez environ **950 patients** atteints d'ICFER recrutés en médecine générale. Le critère de jugement principal est la **qualité de vie (score KCCQ)**, et non les décès ou les hospitalisations. L'essai est décrit comme se déroulant de **mars 2024 à environ janvier 2027** ; la page complète du registre n'ayant pas pu être consultée, le seuil exact de FEVG et le fournisseur du produit ne sont pas vérifiés.
+- Il s'agirait du premier essai contrôlé contre placebo de taille conséquente sur la CoQ10 depuis Q-SYMBIO. Toutefois, comme il mesure la qualité de vie, il ne pourra pas confirmer l'effet de Q-SYMBIO sur les événements cardiovasculaires majeurs : le verdict actuel reste donc inchangé jusqu'à la publication de ses résultats.`,
+    },
   ],
   relatedArticleSlugs: [
+    'essais-cliniques-en-cours-et-a-suivre',
     'nutrition-et-complements-insuffisance-cardiaque',
     'omega-3-huile-de-poisson',
     'vitamine-d-insuffisance-cardiaque',
+    'vitamines-b-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
     'interactions-complements-aliments-medicaments',
     'medicaments-insuffisance-cardiaque',
   ],
   sources: [
+    {
+      label: 'Registres d’essais cliniques (instantané du 25 novembre 2026)',
+      detail: 'Essai britannique CORAL (ISRCTN26946710, NIHR) évaluant la CoQ10 300 mg/j contre placebo sur la qualité de vie (KCCQ) dans l’ICFER.',
+    },
     {
       label: 'Q-SYMBIO (Mortensen et al., JACC: Heart Failure, 2014, texte intégral)',
       detail: '420 patients NYHA III–IV (FEVG moyenne 31 %, ~70 % ischémiques), CoQ10 300 mg/j contre placebo sur 2 ans, sous-groupes, règles d’événements, financement, arrêt précoce et limites.',

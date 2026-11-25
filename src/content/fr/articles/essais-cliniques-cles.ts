@@ -36,6 +36,11 @@ export const article: WikiArticle = {
     'sprint',
     'irm-cardiaque',
     'obesite',
+    'glp-1',
+    'incretines',
+    'cellules-souches',
+    'vitamines-b',
+    'musculation',
   ],
   aliases: [
     'Noms des essais cliniques',
@@ -56,6 +61,8 @@ export const article: WikiArticle = {
       headingFr: 'Revascularisation (pontage aorto-coronarien et stents)',
       bodyMarkdownFr: `| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
 |---|---|---|---|
+| **CHIP-BCIS3** (NEJM 2026 ; dépêche et registre NCT05003817 consultés) | 300 patients britanniques, FEVG ≤ 35 % (ou ≤ 45 % avec IM sévère) et maladie coronaire étendue (FEVG médiane 27 %, 62,7 % de présentations aiguës) ; assistance par pompe Impella pendant l'angioplastie vs angioplastie standard | Neutre : win ratio 0,85 (0,63–1,15 ; p = 0,30). Décès toutes causes : 47 vs 33 patients, HR 1,54 (0,99–2,41) (résumé NEJM) ; décès cardiovasculaires 26,7 % vs 14,5 % (HR 1,91 ; 1,11–3,30 ; dépêches ; critère secondaire) | Partiel (majoritairement présentations aiguës) ; plaide contre l'assistance systématique par pompe |
+| **STICH3** (en cours : STICH3C NCT05427370 ; STICH3-BCIS4) | FEVG ≤ 40 %, atteinte pluritronculaire, éligible aux deux gestes ; pontage (CABG) vs stents (PCI) | **Pas encore de résultats.** STICH3C en recrutement, 754 patients estimés, fin principale estimée avril 2029 (registre, 25 nov. 2026) | Direct à sa publication |
 | **STICH / STICHES** (NEJM 2016) | 1 212 patients, maladie coronaire accessible au pontage, FEVG ≤ 35 % ; pontage + médicaments vs médicaments seuls ; ~10 ans | Mortalité toutes causes : 58,9 % vs 66,1 % (HR 0,84). Le pontage a amélioré la survie à long terme | Direct (époque antérieure) |
 | **REVIVED-BCIS2** (NEJM 2022) | 700 patients, FEVG ≤ 35 %, atteinte coronaire étendue, myocarde viable ; angioplastie (stents) + traitement optimal vs traitement seul ; médiane 41 mois | Décès ou hospitalisation pour IC : 37,2 % vs 38,0 % (HR 0,99) ; pas de gain de FEVG. Complications rares (hémorragies majeures ~2 %) | Direct |
 | Sous-étude REVIVED ETT vs IRM (2025) | 373 patients de REVIVED ayant eu les deux examens | FEVG moyenne 31,4 % (ETT) vs 25,8 % (IRM) ; un tiers des patients < 35 % à l'IRM étaient ≥ 35 % à l'ETT | Direct |
@@ -91,6 +98,8 @@ export const article: WikiArticle = {
       headingFr: 'Médicaments de fond et traitements additionnels',
       bodyMarkdownFr: `| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
 |---|---|---|---|
+| **H-HeFT** (DANHEART, Eur Heart J 2026 ; texte intégral consulté) | 592 patients danois avec ICFER (FEVG médiane 35 %, 52–56 % ischémiques, ~41 % sous iSGLT2) ; hydralazine + dinitrate d'isosorbide vs placebo, 3,7 ans | Neutre : HR 0,90 (0,67–1,21) sur le critère composite ; décès 19,4 % vs 24,2 % (HR 0,72 ; 0,51–1,02, ns) ; plus de la moitié ont arrêté le traitement, seulement 24 % ont atteint la dose cible (hypotension, étourdissements, céphalées) | Direct (population concordante ; âge médian 72 ans, 18 % de femmes) |
+| **Met-HeFT** (DANHEART, ESC 2026 ; communiqué de presse consulté) | 940 patients avec ICFER et diabète, prédiabète ou risque diabétique ; metformine vs placebo | Neutre : HR 1,10 (0,84–1,42), p = 0,48 | Partiel |
 | PARADIGM-HF | 8 399 patients ICFER ; sacubitril/valsartan (Entresto) vs énalapril | Base de la modélisation combinée ci-dessous. Risque résiduel de mort subite : 3,3 pour 100 patients-années sous traitement moderne | Indirect (causes mixtes) |
 | DAPA-HF | 4 744 patients ICFER ; dapagliflozine (Forxiga) vs placebo | Base de la modélisation combinée | Indirect |
 | EMPHASIS-HF | 2 737 patients ≥ 55 ans, symptômes légers, FEVG basse ; éplérénone (Inspra) | Base de la modélisation (bras placebo comme population de référence) | Indirect |
@@ -152,10 +161,14 @@ export const article: WikiArticle = {
 | Revue parapluie Chua (Complement Ther Med 2025) | 22 revues sur acupuncture, Tai Chi et autres exercices corps-esprit, phytothérapie chinoise et compléments dans l'IC chronique toute FEVG ; majorité d'essais chinois | Certitude modérée uniquement pour la CoQ10 (mortalité RR 0,58, d'après Q-SYMBIO seul), le Tai Chi (hospitalisations RR 0,47, 3 essais) et les gélules Qishen Yiqi (mortalité OR 0,43, surtout essais d'un même fabricant). La vitamine E a augmenté les hospitalisations IC (RR 1,21) ; la vitamine D a réduit la distance de marche d'environ 39 m. 11 revues sur 21 de qualité critique très faible ; QUEST non inclus | Partiellement direct (quelques revues en IC coronarienne ; surtout critères intermédiaires) |
 | CORDIOPREV (Lancet 2022) | 1 002 patients coronariens ; alimentation méditerranéenne vs pauvre en graisses ; 7 ans | Événements CV majeurs réduits d'environ 25 % ; excluait les FEVG ≤ 35 % | Indirect |
 | Revue parapluie Hareer (Nutr Diet 2024) | 18 méta-analyses de 238 essais d'alimentation méditerranéenne (~198 000 personnes) ; aucune revue limitée à l'IC, aucune donnée de FEVG | Moins d'AVC dans chaque revue les rapportant (RR 0,58–0,65). En cas de cardiopathie existante vs soins usuels : mortalité RR 0,44 et décès CV RR 0,35, mais issus de très peu d'essais avec faible certitude. Sans cardiopathie, mortalité inchangée (HR 1,00). 15 revues sur 18 de qualité faible ou très faible | Indirect (maladie coronaire, pas ICFER) |
+| **NORVIT** (NEJM 2006) | 3 749 personnes dans les 7 jours suivant un infarctus ; acide folique + vitamine B12 + vitamine B6 (40 mg), acide folique + B12, B6 seule ou placebo ; médiane 40 mois | Homocystéine abaissée de 27 %, sans réduction des événements ; triple association RR 1,22 (1,00–1,50 ; p = 0,05) pour récidive d'infarctus, AVC ou mort subite coronaire | Partiellement direct (post-IDM ; FEVG non rapportée) |
+| Revue Cochrane homocystéine (2017) | 15 essais randomisés, 71 422 personnes avec ou sans maladie CV ; vitamine B6, acide folique et/ou B12 vs placebo | Infarctus RR 1,02, mortalité RR 1,01 (preuves de haute qualité, aucun effet) ; AVC RR 0,90 | Indirect (aucune donnée d'IC ni de FEVG) |
+| Méta-analyse thiamine He (Clin Cardiol 2024) | 7 petits essais randomisés en double aveugle, 274 patients avec IC chronique ; thiamine (vitamine B1) 100–500 mg/jour pendant 1 semaine à 6 mois | FEVG +1,65 point (-1,10 à 4,41, ns) ; aucun changement sur la marche, le NT-proBNP ou la classe NYHA ; statut en thiamine amélioré | Partiellement direct (IC toute cause ; part ischémique non rapportée) |
+| Essai NAD+ intraveineux Yu (Am J Cardiovasc Drugs 2025) | 180 patients chinois hospitalisés, 100 % cardiomyopathie ischémique, FEVG ≤ 45 % (moyenne ~41 %) ; NAD+ IV 10 mg/jour vs placebo pendant 7 jours ; monocentrique, cofinancé par le fabricant | FEVG à 1 mois : 45,4 % vs 42,4 % (p = 0,024) ; MACCE à 6 mois 14,6 % vs 24,7 % et hospitalisations IC 13,5 % vs 23,6 % (tous deux ns) | Population directe, critère intermédiaire ; non transposable aux compléments oraux de vitamine B3 |
 | EFFORT sous-groupe IC (JACC 2021) | 645 patients hospitalisés avec IC à risque nutritionnel, âge médian 79 ans, en ouvert ; FEVG connue chez la moitié, < 40 % chez seulement 66 patients ; ~57 % d'origine coronaire | Mortalité à 30 jours : 8,4 % vs 14,8 % (OR ajusté 0,44) ; mortalité à 180 jours HR 0,74 uniquement après ajustement ; réhospitalisations non réduites | Indirect (patients âgés hospitalisés ; majoritairement hors ICFER) |`,
     },
     {
-      headingFr: 'Perte de poids et obésité',
+      headingFr: 'Perte de poids, obésité et médicaments GLP-1 / incrétines',
       bodyMarkdownFr: `Aucun essai n'a encore évalué un médicament amaigrissant sur des critères cliniques durs chez des patients sélectionnés pour une obésité avec ICFER. Les résultats positifs concernent l'insuffisance cardiaque à FEVG préservée ; les données dans l'ICFER sont réduites et contrastées, et la prise de position 2025 de la HFA qualifie la sécurité dans l'ICFER de « débattue » en appelant à des essais dédiés. Les chiffres ci-dessous reprennent cette synthèse.
 
 | Essai / Étude | Population et comparaison | Résultat principal | Applicabilité |
@@ -163,14 +176,36 @@ export const article: WikiArticle = {
 | STEP-HFpEF, STEP-HFpEF DM, SUMMIT | 529, 616 et 731 personnes avec obésité et **FEVG ≥ 45 %** ; sémaglutide (Wegovy) 2,4 mg/semaine ou tirzépatide (Mounjaro) vs placebo | Poids -13,3 % vs -2,6 % (STEP-HFpEF), avec amélioration des symptômes et de la distance de marche. SUMMIT : décès CV ou aggravation IC 9,9 % vs 15,3 % (HR 0,62 ; 0,41–0,95), surtout moins d'aggravations IC | **Non applicable** : FEVG préservée uniquement |
 | FIGHT et LIVE (liraglutide) | Patients avec ICFER (FIGHT : hospitalisation récente, FEVG moyenne 27 %) ; non sélectionnés sur l'obésité ; doses antidiabétiques | FIGHT : numériquement plus d'hospitalisations IC (non significatif). LIVE : plus d'événements cardiaques graves, 12 (10 %) vs 3 (3 %), sur un faible nombre d'événements | Direct sur la FEVG, mais petits effectifs ; à l'origine de la question de sécurité dans l'ICFER |
 | SELECT, sous-groupe ICFER | 1 347 personnes en surpoids ou obésité (IMC moyen 33,4) avec ICFER, sans diabète ; ~60 % NYHA II, NYHA IV exclu ; sémaglutide 2,4 mg vs placebo | Événements CV majeurs réduits de 35 % ; hospitalisations IC isolées non réduites (HR 1,08) | Partiellement direct (stade modéré, analyse en sous-groupe) |
-| Revue de dossiers régime cétogène Moseley (J Card Fail Intersections 2025) | 125 patients avec IC et obésité sévère (IMC moyen 45) dans un centre américain, suivis ≥ 1 an ; le groupe « ICFER » (59 patients) incluait des FEVG modérément réduites ou améliorées et 6 porteurs d'assistance circulatoire ; sans groupe témoin | Poids médian -11,2 kg sur ~2 ans ; FEVG inchangée. Hospitalisations IC réduites par rapport à l'année précédente (rapport de taux 0,5), mais non significatif dans le groupe ICFER (0,6 ; 0,3–1,1). Seulement 2 patients sous iSGLT2 ; corps cétoniques et acidocétose non surveillés | Faible niveau de preuve (observationnel avant/après) ; ne permet pas d'écarter le risque d'acidocétose sous iSGLT2 |`,
+| Revue de dossiers régime cétogène Moseley (J Card Fail Intersections 2025) | 125 patients avec IC et obésité sévère (IMC moyen 45) dans un centre américain, suivis ≥ 1 an ; le groupe « ICFER » (59 patients) incluait des FEVG modérément réduites ou améliorées et 6 porteurs d'assistance circulatoire ; sans groupe témoin | Poids médian -11,2 kg sur ~2 ans ; FEVG inchangée. Hospitalisations IC réduites par rapport à l'année précédente (rapport de taux 0,5), mais non significatif dans le groupe ICFER (0,6 ; 0,3–1,1). Seulement 2 patients sous iSGLT2 ; corps cétoniques et acidocétose non surveillés | Faible niveau de preuve (observationnel avant/après) ; ne permet pas d'écarter le risque d'acidocétose sous iSGLT2 |
+
+### Médicaments GLP-1 et nouvelles incrétines : événements cardiaques (ajout du 25 novembre 2026)
+
+| Essai / Étude | Population et comparaison | Résultat principal | Applicabilité |
+|---|---|---|---|
+| **SOUL**, analyse IC (JAMA Intern Med 2026) | 9 650 patients avec diabète de type 2 et maladie artérielle ou rénale ; 592 avec ICFER déclarée par l'investigateur (~88 % de coronaropathie dans l'ensemble du groupe IC ; non rapporté pour l'ICFER seule) ; sémaglutide oral (Rybelsus) 14 mg vs placebo | Essai global : MACE HR 0,86. ICFER : événements IC ou décès CV HR 0,98 (0,70–1,38), MACE HR 0,93 (0,66–1,31) ; FEVG préservée HR 0,59 ; interaction selon le sous-type p = 0,14 | **Partiel** (sous-groupe randomisé ; diabète uniquement ; FEVG non mesurée) |
+| Méta-analyse Christophides (2026) | 14 essais randomisés, 15 180 patients avec IC établie, stratifiés par FEVG | Hospitalisations IC dans l'ICFER : RR 1,38 (1,03–1,85), issu uniquement de FIGHT et d'une analyse d'EXSCEL ; décès CV RR 0,71 (0,54–0,95) avant 65 ans d'après deux analyses post hoc (exploratoire) ; bénéfice au-dessus de 40 % de FEVG | Partiel ; données minces |
+| Kassab (2026, cohorte TriNetX) | 1 275 paires appariées avec ICFER, FEVG moyenne 30 %, 68 % de coronaropathie | Mortalité à 1 an HR 0,54 sous agonistes du GLP-1 | Population partielle, observationnel et exposé aux biais |
+| Karlström (2025, registre suédois SwedeHF) | 808 utilisateurs de GLP-1 parmi 35 055 patients IC avec IMC > 25 ; utilisateurs diabétiques à 96 %, 59 % ischémiques | FEVG ≤ 40 % : décès CV à 2 ans HR ajusté 0,43 (0,24–0,79) ; mortalité toutes causes appariée non significative | Population partielle ; biais de temps immortel intégré à la définition de l'exposition |
+| Kokura (2026, TriNetX, résumé) | 3 158 paires appariées, ICFER + diabète de type 2 | Mortalité HR 0,71 (0,62–0,83) ; hospitalisations HR 1,05 | Population partielle, observationnel ; chevauchement probable avec Kassab |
+| **SURPASS-CVOT** (NEJM 2025) | 13 165 patients avec diabète et maladie artérielle ; tirzépatide (Mounjaro) vs dulaglutide (Trulicity) | MACE HR 0,92 (0,83–1,01) : non inférieur, non supérieur. Chez les 20,3 % avec IC : décès CV ou événements IC HR 0,85 (0,70–1,03) ; FEVG non rapportée | Indirect |
+| **TRIUMPH-3**, rétatrutide (résultats préliminaires, non évalués par les pairs) | 1 949 patients avec IMC ≥ 35 et maladie CV établie | Poids -21,6 % / -22,6 % vs -3,2 % ; MACE-5 HR 0,82 (0,55–1,22), MACE-3 HR 1,12 (0,64–1,96) : non concluant | Extrapolé (aucun résultat ICFER publié) |`,
     },
     {
       headingFr: 'Activité physique, moral et soins palliatifs',
       bodyMarkdownFr: `| Essai / Revue | Population et comparaison | Résultat principal | Applicabilité |
 |---|---|---|---|
+| **Yoga-CaRe HF** (AHA 2026 ; diapositives et dépêches consultées) | 3 492 patients indiens avec ICFER (âge médian 57 ans) ; réadaptation basée sur le yoga vs soins usuels renforcés | Qualité de vie +8,1 points MLHFQ à 3 mois, marche de 6 minutes +25,5 m ; décès, hospitalisation ou AVC non significativement réduits (21,0 % vs 22,8 % ; HR 0,90 ; 0,78–1,04 ; médiane 15 mois). Données de congrès uniquement | Indirect (non vérifié) : patients plus jeunes ; seuil de FEVG et part ischémique non précisés |
 | **Revue Cochrane** (2024) | 60 essais, 8 728 patients avec IC ; réadaptation par exercice vs absence | Hospitalisations toutes causes : 15,9 % vs 23,8 % (RR 0,69) ; pas d'effet net sur la mortalité ; meilleure qualité de vie | Indirect (FEVG et causes mixtes) |
 | **HF-ACTION** (JAMA 2009) | 2 331 patients ambulatoires ICFER, 51 % ischémiques ; entraînement physique | Décès ou hospitalisation : HR 0,93 (ns) ; HR ajusté 0,89 | Partiellement direct (ère ancienne) |
+| Feiereisen (MSSE 2007 ; résumé) | 60 personnes avec IC chronique sévère ; renforcement musculaire vs endurance vs combiné vs témoin | Les trois modes ont amélioré le pic de VO2 par rapport au témoin ; aucun n'était supérieur | Non évaluable (FEVG et cause absentes du résumé) |
+| Méta-analyse Tucker (2019 ; texte intégral) | Essais randomisés ICFER 2007–2017 | Endurance aérobie : FEVG +3,8 points (+6,3 points sur ≥ 6 mois) ; renforcement seul ou combiné : +1,9 point (-2,0 à 5,9, ns) | Partiel (ICFER, causes mixtes ; l'unique essai de renforcement seul était 100 % ischémique) |
+| Méta-analyse Santos (2018 ; résumé) | 59 essais randomisés, IC systolique ; chaque modalité vs témoin | Pic de VO2 : renforcement +3,57, aérobie +2,63 (aucune différence entre modes) ; seule l'endurance aérobie a amélioré la FEVG | Partiel (caractéristiques non vérifiées) |
+| Méta-analyse Hollings (2017 ; résumé) | 34 essais randomisés, 1 940 patients coronariens | Renforcement = endurance sur la capacité d'effort (DMS -0,13, ns) ; l'entraînement combiné a surpassé l'endurance pour la capacité d'effort et la force | Indirect (maladie coronaire, FEVG non rapportée) |
+| Méta-analyse Terada (2026 ; résumé) | 15 essais randomisés, 526 personnes, 89 % d'ICFER ; combiné vs endurance seule | Capacité d'effort DMS 0,40, marche de 6 minutes +48 m, force du haut du corps +8,3 kg ; aucune différence sur la qualité de vie ou la fonction cardiaque | Partiel (cause non rapportée) |
+| **SMARTEX-HF** (Circulation 2017 ; texte intégral) | 261 patients ICFER, FEVG médiane 29 %, 59 % ischémiques ; fractionné haute intensité (HIIT) vs continu modéré vs conseils, 12 semaines | HIIT non supérieur au continu modéré sur le diamètre VG (-1,2 mm, ns), la FEVG ou le pic de VO2 ; les deux ont surpassé les conseils sur le pic de VO2 ; gains perdus à 52 semaines ; patients avec événement indésirable grave : HIIT 39 %, modéré 25 %, conseils 34 % (p = 0,16) | Direct (sous-groupe ischémique : aucune interaction) |
+| Lan 2020 / Munch 2018 / Jakovljevic 2010 (petits essais face-à-face) | 12 à 14 patients par bras ; IC à FEVG réduite, NYHA I–II | Musculation et endurance ont augmenté le pic de VO2 de manière similaire ; dans Jakovljevic (16 patients, quasi-randomisé, 19 % ischémiques), seule l'endurance a augmenté le débit cardiaque et le volume d'éjection ; dans Lan, taille du VG inchangée dans tous les bras | Partiel à indirect (cause rarement précisée) |
+| **REHAB-HF** (NEJM 2021 ; texte intégral) | 349 adultes ≥ 60 ans hospitalisés pour IC, 97 % fragiles ou pré-fragiles ; réadaptation multidomaine vs contrôle attentionnel | Score SPPB +1,5, marche de 6 minutes +34 m, KCCQ +7 ; aucun changement sur réhospitalisations ou décès à 6 mois ; sous-groupe ICFER : SPPB +1,1, rapport de taux de décès 2,21 (0,78–6,25 ; interaction ICFER vs ICFEP p = 0,08 ; 18 décès ICFER au total) | Partiel (sous-groupe ICFER FEVG < 45 %, patients âgés) |
+| Analyse fragilité HF-ACTION (Circulation 2022 ; résumé ; post hoc) | 2 130 patients ICFER, 59 % fragiles | Entraînement aérobie : hospitalisation ou décès HR 0,83 chez les fragiles vs 1,04 chez les non-fragiles (interaction p = 0,04) | Direct (sous-groupe post hoc d'un essai neutre) |
 | Essai TCC Freedland (JAMA IM 2015) | 158 patients IC avec dépression ; thérapie cognitivo-comportementale vs soins usuels renforcés | Rémission de la dépression : 46 % vs 19 % | Indirect |
 | SADHART-CHF (JACC 2010) | 469 patients, FEVG ≤ 45 %, dépression majeure ; sertraline vs placebo | Amélioration similaire dans les deux bras (p = 0,89) | Partiellement direct |
 | MOOD-HF (JAMA 2016) | 372 patients, FEVG < 45 % (moyenne ~35 %), environ deux tiers ischémiques, dépression majeure ; escitalopram vs placebo en plus d'un suivi infirmier d'IC | Aucune différence sur l'humeur ni sur décès/hospitalisations (HR 0,99 ; 0,76–1,27) ; arrêté pour futilité ; pas de différence dans le sous-groupe ischémique (interaction p = 0,97) | Majoritairement direct |
@@ -188,6 +223,8 @@ export const article: WikiArticle = {
       headingFr: 'Occlusion coronaire chronique (CTO)',
       bodyMarkdownFr: `| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
 |---|---|---|---|
+| **SHINE-CTO** (NCT02784418) | Essai prévu d'angioplastie de CTO contre procédure factice (sham) | **Retiré en 2021** (« problèmes de financement liés à la pandémie »), 0 patient inclus ; aucun résultat ne sera publié (registre, 25 nov. 2026) | Non applicable |
+| **ISCHEMIA-CTO** (en cours, NCT03563417) | Angioplastie de CTO vs médicaments ; 1 560 patients estimés | **Pas encore de résultats.** En recrutement ; fin principale estimée novembre 2028 (registre, 25 nov. 2026) | Partiel (sans restriction de FEVG) |
 | Méta-analyse van Veelen (2021) | 5 essais randomisés, 1 790 patients, FEVG moyenne ~53 % ; angioplastie de CTO vs médicaments | Pas de réduction des décès (RR 1,14 jusqu'à ~4 ans), des événements majeurs ni de gain de FEVG ; moins d'angor à 1 an (RR 0,65, 2 essais) | Indirect (FEVG quasi normale, surtout angor) |
 | DECISION-CTO (2019) | Patients avec CTO ; PCI vs pas de PCI ; arrêté prématurément | Critère composite : 22,3 % vs 22,4 % à ~4 ans ; ~20 % de croisement | Indirect (résumé seul) |
 | EXPLORE (2016) | 304 patients après STEMI avec une seconde artère occluse (FEVG moyenne ~41 %) ; PCI précoce de CTO vs non | Pas de différence globale de FEVG (44,1 % vs 44,8 %) ; sous-groupe IVA favorable, mais aucun bénéfice dans le sous-groupe avec FEVG initiale ≤ 40 % (84 patients). Sous-étude IRM : récupération uniquement dans les segments affaiblis mais viables du territoire CTO. À 10 ans : pas moins d'événements majeurs (HR 1,10), plus de décès CV sous PCI en analyse non planifiée, moins d'essoufflement | Indirect (sous-groupe générateur d'hypothèses) |
@@ -267,8 +304,20 @@ export const article: WikiArticle = {
 | Gulati 2013 | 472 patients avec cardiomyopathie dilatée non ischémique | Fibrose médio-pariétale associée à la mortalité (HR ajusté 2,43) et à la mort subite (HR 4,61) | Non ischémique |
 | Jones 2024 | 453 patients avec coronaropathie significative (FEVG moyenne 47 %) | 14 % présentaient une cicatrice non ischémique, sans prédiction indépendante d'événements | Double pathologie ; cohorte non spécifique de l'ICFER |`,
     },
+    {
+      headingFr: 'Cellules souches et thérapies régénératives',
+      bodyMarkdownFr: `Aucun de ces traitements n'est autorisé dans l'Union européenne (liste EMA des médicaments de thérapie innovante, juin 2026).
+
+| Essai / Revue | Population et comparaison | Résultat principal | Applicabilité |
+|---|---|---|---|
+| **DREAM-HF** (JACC 2023 ; résumé, registre NCT02032004) | 565 patients randomisés (537 analysés), ICFER de cause ischémique ou non ischémique, NYHA II–III ; cellules précurseurs mésenchymateuses de donneur vs procédure factice (sham) ; ~30 mois ; financé par Mesoblast | **Négatif :** événements IC récurrents HR 1,17 (0,81–1,69), p = 0,41 ; critères secondaires également négatifs. Infarctus ou AVC HR 0,42 et sous-groupe inflammatoire (CRP) purement exploratoires | Partiel (causes mixtes ; tranche de FEVG et part ischémique non lues) |
+| **CONCERT-HF** (Eur J Heart Fail 2021 ; résumé) | 125 patients avec ICFER ischémique, FEVG moyenne 28,6 %, cicatrice IRM ; cellules stromales de moelle osseuse autologues et/ou cellules cardiaques c-kit vs placebo | Aucune différence sur la FEVG, les volumes du VG, la cicatrice, la marche de 6 minutes ou le pic de VO2 ; signaux nominaux sur MACE et qualité de vie parmi de nombreux critères. Suspendu en 2018 après des demandes de rétractation de 31 articles fondant l'hypothèse des cellules c-kit | Direct (phase II) |
+| **CardiAMP-HF** (ACC 2025 ; dépêche spécialisée) | 115 patients analysés, ICFER ischémique, FEVG 20–40 % ; cellules autologues de moelle osseuse vs procédure factice / placebo | Neutre : win ratio 1,01, p = 0,954 ; l'essai de suivi CardiAMP HF II sélectionne un sous-groupe post hoc selon le NT-proBNP | Direct |
+| Revue Cochrane cellules souches (2016) | 38 essais randomisés, 1 907 personnes avec cardiopathie ischémique chronique, IC ischémique ou angor réfractaire ; cellules autologues de moelle osseuse | Mortalité à long terme RR 0,42 (9 petits essais, 491 personnes) ; hospitalisations IC RR 0,63 (ns) ; aucun gain durable de FEVG à l'IRM ; preuves toutes de faible qualité | Partiel (population mixte, époque antérieure) |`,
+    },
   ],
   relatedArticleSlugs: [
+    'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'revascularisation-pontage-stents',
     'dispositifs-cardiaques-dai-crt',
@@ -279,12 +328,15 @@ export const article: WikiArticle = {
     'tableau-preuves-nutrition-complements',
     'alimentation-cardioprotectrice',
     'poids-obesite-et-denutrition',
+    'medicaments-glp1-et-incretines',
     'carence-martiale-et-fer-iv',
     'sel-et-liquides-insuffisance-cardiaque',
     'omega-3-huile-de-poisson',
     'coenzyme-q10',
     'vitamine-d-insuffisance-cardiaque',
+    'vitamines-b-insuffisance-cardiaque',
     'readaptation-cardiaque-et-activite-physique',
+    'musculation-vs-endurance-readaptation-cardiaque',
     'depression-et-sante-emotionnelle',
     'maladies-associees',
     'cardiomyopathie-ischemique',
@@ -300,23 +352,28 @@ export const article: WikiArticle = {
     'apnee-du-sommeil-insuffisance-cardiaque',
     'tension-arterielle-insuffisance-cardiaque',
     'confirmer-la-cause-dysfonction-vg',
+    'cellules-souches-et-therapies-regeneratives',
   ],
   sources: [
     {
-      label: 'Essais de revascularisation et CTO (STICH/STICHES, REVIVED-BCIS2, van Veelen 2021, EXPLORE, REVASC, ISCHEMIA-CTO, ORBITA-CTO)',
-      detail: 'Comparaison pontage, angioplastie et traitement médical optimal dans la dysfonction VG ischémique et la CTO (textes intégraux)',
+      label: 'Essais de revascularisation et CTO (CHIP-BCIS3, STICH3, STICH/STICHES, REVIVED-BCIS2, van Veelen 2021, EXPLORE, REVASC, ISCHEMIA-CTO, SHINE-CTO retiré, ORBITA-CTO)',
+      detail: 'Comparaison pontage, angioplastie, assistance Impella et traitement médical optimal dans la dysfonction VG ischémique et la CTO (textes intégraux, résumé NEJM 2026 et registres)',
     },
     {
       label: 'Essais DAI, CRT et gilet (MADIT-II, SCD-HeFT, DINAMIT/IRIS, Shun-Shin 2017, PROFID, EU-CERT-ICD, CMR GUIDE, PROFID-EHRA, VEST, Goetz 2023, WEARIT-II, HF-OPT, PRAETORIAN)',
       detail: 'Prévention de la mort subite, évolution du risque rythmique sous traitement moderne et revue systématique sur le gilet défibrillateur',
     },
     {
-      label: 'Essais médicamenteux et registres (PARADIGM-HF, DAPA-HF, EMPHASIS-HF, Vaduganathan 2020, STRONG-HF, VICTORIA/VICTOR poolé et par traitement de fond, SHIFT, DIG, DIGIT-HF selon FA, DECISION, FINEARTS-HF, FINE-HEART, ARTS-HF, DIAMOND, TITRATE-HF, OPTIPHARM-HF, SwedeHF, TRED-HF)',
-      detail: 'Quadrithérapie, titration rapide, traitements additionnels, nouveaux ARM, registres de pratique réelle et risque de rechute à l’arrêt (textes intégraux)',
+      label: 'Essais médicamenteux et registres (H-HeFT, Met-HeFT, PARADIGM-HF, DAPA-HF, EMPHASIS-HF, Vaduganathan 2020, STRONG-HF, VICTORIA/VICTOR poolé et par traitement de fond, SHIFT, DIG, DIGIT-HF selon FA, DECISION, FINEARTS-HF, FINE-HEART, ARTS-HF, DIAMOND, TITRATE-HF, OPTIPHARM-HF, SwedeHF, TRED-HF)',
+      detail: 'Quadrithérapie, essais DANHEART 2026, titration rapide, traitements additionnels, nouveaux ARM, registres de pratique réelle et risque de rechute à l’arrêt (textes intégraux)',
     },
     {
-      label: 'Essais télésurveillance, nutrition, obésité, réadaptation et comorbidités (Scholte 2023, TIM-HF2, MONITOR-HF, IN-TIME, MORE-CARE, MANAGE-HF, SODIUM-HF, FRESH-UP, FAIR-HF2, Q-SYMBIO, Chua 2025, Hareer 2024, EFFORT, HFA 2025 obésité, Moseley 2025, Cochrane 2024, HF-ACTION, MOOD-HF, COAPT, CASTLE-HTx, TAVR UNLOAD, WARCEF, COMMANDER-HF)',
-      detail: 'Suivi à distance, fer IV, sel/liquides, revues parapluies nutrition/compléments, perte de poids, exercice, moral, valvulopathies et anticoagulation',
+      label: 'Essais GLP-1 / incrétines, nutrition, vitamines B et thérapies cellulaires (SOUL, SELECT, STEP-HFpEF, SUMMIT, FIGHT, LIVE, Christophides 2026, Kassab 2026, Karlström 2025, Kokura 2026, SURPASS-CVOT, TRIUMPH-3, NORVIT, Cochrane 2017, He 2024, Yu 2025, DREAM-HF, CONCERT-HF, CardiAMP-HF, Cochrane 2016)',
+      detail: 'Agonistes GLP-1 et incrétines dans l’ICFER, vitamines B et NAD+ IV, essais de cellules souches et synthèses obésité / alimentation (HFA 2025, Moseley 2025, Chua 2025, Hareer 2024)',
+    },
+    {
+      label: 'Essais télésurveillance, réadaptation physique, modalités d’exercice et comorbidités (Scholte 2023, TIM-HF2, MONITOR-HF, IN-TIME, MORE-CARE, MANAGE-HF, Yoga-CaRe HF, Cochrane 2024, HF-ACTION, SMARTEX-HF, REHAB-HF, Tucker 2019, Santos 2018, Hollings 2017, Terada 2026, Feiereisen 2007, Lan 2020, Munch 2018, Jakovljevic 2010, MOOD-HF, COAPT, CASTLE-HTx, TAVR UNLOAD, WARCEF, COMMANDER-HF)',
+      detail: 'Suivi à distance, endurance vs renforcement musculaire, HIIT, fragilité, moral, valvulopathies et anticoagulation',
     },
     {
       label: 'Essais prévention secondaire, stade B, sommeil, TA et IRM (CORONA, GISSI-HF statine, IMPROVE-IT, RACING, FOURIER, Kelly 2024, ODYSSEY, Lp(a)HORIZON, SOLVD, SAVE, CAPRICORN, SERVE-HF, ADVENT-HF, SAVE CPAP, JAMA 2023 CPAP poolé, SPRINT, McCrohon, Gulati, Jones)',

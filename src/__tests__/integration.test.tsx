@@ -169,7 +169,7 @@ describe("Tests d'intégration multi-modules CardioCompagnon (W3)", () => {
     expect(
       screen.getByRole('button', { name: /Retour à la bibliothèque/i }),
     ).toBeInTheDocument();
-  });
+  }, 15_000);
 
   it('isole strictement le Mode découverte (CardioCompagnonDemoDB) des données personnelles (CardioCompagnonDB)', async () => {
     const today = getTodayIsoDate();

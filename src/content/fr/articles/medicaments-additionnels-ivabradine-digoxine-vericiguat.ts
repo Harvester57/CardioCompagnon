@@ -168,7 +168,7 @@ La digitoxine n'est plus commercialisée aux États-Unis mais reste disponible d
 ### Sécurité : signes de surdosage en digoxine
 
 - **Signes d'alerte :** nausées, vomissements, perte d'appétit, confusion, vertiges, **vision floue ou teintée de jaune**, pouls trop lent, rapide ou irrégulier. Ils nécessitent un avis médical rapide.
-- **Facteurs augmentant le risque :** baisse du potassium ou du magnésium (notamment sous diurétiques), altération de la fonction rénale, âge avancé.
+- **Facteurs augmentant le risque :** baisse du potassium ou du magnésium (notamment sous diurétiques ; voir *Magnésium et insuffisance cardiaque*), altération de la fonction rénale, âge avancé.
 - **Interactions élevant la digoxinémie :** **amiodarone (*Cordarone*)**, vérapamil, clarithromycine/érythromycine ; d'autres médicaments cités incluent certains antifongiques, diurétiques, AINS, inhibiteurs de la pompe à protons (IPP) et millepertuis. La réglisse doit être limitée.
 - **Dosage sanguin :** NICE déconseille un dosage systématique de routine ; un prélèvement réalisé **8 à 12 heures après la prise** permet de confirmer un soupçon de toxicité ou de vérifier l'observance, sachant qu'une toxicité peut survenir même dans la zone dite « normale ». En cas d'insuffisance rénale, un contrôle est nécessaire en laissant **8 à 10 jours** pour atteindre l'état d'équilibre.
 - **Ne pas arrêter soi-même :** les guides patients déconseillent tout arrêt sans avis médical, et l'étude DECISION suggère qu'un arrêt peut s'accompagner d'une aggravation.`,
@@ -239,6 +239,7 @@ Le vériciguat stimule une enzyme (la guanylate cyclase soluble, sGC) qui déten
     },
   ],
   relatedArticleSlugs: [
+    'magnesium-insuffisance-cardiaque',
     'medicaments-insuffisance-cardiaque',
     'traitements-additionnels-nouveaux',
     'finerenone-et-nouveaux-arm',
@@ -246,6 +247,7 @@ Le vériciguat stimule une enzyme (la guanylate cyclase soluble, sGC) qui déten
     'interactions-complements-aliments-medicaments',
     'maladies-associees',
     'essais-cliniques-cles',
+    'essais-cliniques-en-cours-et-a-suivre',
     'recommandations-comparees-esc-us-nice',
     'questions-equipe-cardiologie',
   ],

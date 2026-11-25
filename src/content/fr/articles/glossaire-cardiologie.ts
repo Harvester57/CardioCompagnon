@@ -32,6 +32,7 @@ export const article: WikiArticle = {
 | **Acide bempédoïque** | Comprimé quotidien réduisant le cholestérol LDL ; recommandé en Classe I (ESC) en cas d'intolérance aux statines, et possible en ajout à statine + ézétimibe. |
 | **AERAS (convention)** | Convention française « s'Assurer et Emprunter avec un Risque Aggravé de Santé ». Aucun questionnaire de santé si la part assurée est ≤ 200 000 € par personne et si le prêt se termine avant 60 ans (loi Lemoine) ; au-delà, examen jusqu'à trois niveaux. Le droit à l'oubli ne couvre pas les pathologies cardiaques. |
 | **Aggravation de l'insuffisance cardiaque (worsening heart failure)** | Définition universelle 2026 : détérioration progressive des symptômes, des signes cliniques ou de la qualité de vie chez une personne déjà diagnostiquée avec une insuffisance cardiaque (par exemple essoufflement ou œdèmes accrus, hausse du NT-proBNP, ou affaiblissement de la pompe à l'imagerie). Ne nécessite pas obligatoirement une consultation ou une hospitalisation, et exclut les aggravations principalement dues à un autre déclencheur (infarctus, infection, oubli de traitement). À distinguer de la *décompensation cardiaque*. |
+| **Agoniste du GLP-1 / incrétine** | Médicaments imitant des hormones digestives pour réguler la glycémie et réduire l'appétit (sémaglutide / *Wegovy*, *Ozempic*, *Rybelsus* ; double agoniste GIP/GLP-1 tirzépatide / *Mounjaro* ; triple agoniste rétatrutide en phase 3). Bénéfice démontré sur les infarctus/AVC et dans l'HFpEF, mais non démontré sur l'ICFER (SOUL HR 0,98 ; sécurité rythmique et hausse de fréquence cardiaque à surveiller). |
 | **AINS (anti-inflammatoires non stéroïdiens)** | Médicaments contre la douleur ou l'inflammation (ibuprofène, kétoprofène, diclofénac...) à éviter dans l'insuffisance cardiaque car ils favorisent la rétention hydrosodée, les poussées et l'insuffisance rénale. |
 | **ALD (affection de longue durée)** | Statut français d'exonération du ticket modérateur (ALD 5 pour insuffisance cardiaque grave, ALD 13 pour maladie coronaire) : prise en charge à 100 % du tarif de l'Assurance Maladie pour les soins inscrits au *protocole de soins* (hors dépassements d'honoraires et franchises). |
 | **Angiœdème** | Gonflement brutal et rare des lèvres, de la bouche, de la langue ou de la gorge sous IEC ou sacubitril/valsartan (*Entresto*) ; urgence médicale immédiate (appeler le 15 / SAMU ou le 112). |
@@ -46,6 +47,8 @@ export const article: WikiArticle = {
 | **Bêtabloquant** | Pilier du traitement de fond (bisoprolol / *Cardensiel*, carvédilol, nébivolol, métoprolol succinate) ; également traitement de première ligne de l'angor dans l'ICFER. |
 | **CardioMEMS (capteur de pression artérielle pulmonaire)** | Petit capteur implanté dans une branche de l'artère pulmonaire permettant de détecter une élévation des pressions avant les symptômes de congestion. ESC 2026 : à envisager (Classe IIa) en NYHA III avec hospitalisation dans l'année ; réduit les hospitalisations sans effet démontré sur la survie. Non remboursé en France (avis HAS 2021). |
 | **Cardiomyopathie dilatée (CMD / DCM)** | Ventricule gauche dilaté et affaibli **non expliqué uniquement** par une maladie coronaire ou une surcharge anormale telle qu'une hypertension artérielle ou une valvulopathie (ESC 2023). Les causes incluent des variants génétiques, une myocardite passée ou l'alcool. |
+| **Cellules iPS (cellules souches pluripotentes induites)** | Cellules adultes (par exemple de peau ou de sang) reprogrammées en laboratoire en cellules souches pouvant être différenciées en cellules de muscle cardiaque. Utilisées à partir de donneurs dans les patchs et feuillets expérimentaux (BioVAT-HF, RiHEART, LAPiS) ; un traitement immunosuppresseur est alors nécessaire. |
+| **Cellules stromales / précurseurs mésenchymateuses (CSM / CPM / MSC / MPC)** | Cellules de soutien prélevées dans la moelle osseuse (du patient lui-même ou d'un donneur) et testées comme traitement de l'insuffisance cardiaque ; le plus grand essai contrôlé contre procédure factice (DREAM-HF) a été négatif sur son critère principal. |
 | **CHA₂DS₂-VA** | Score européen d'évaluation du risque d'AVC en cas de fibrillation atriale. L'insuffisance cardiaque compte 1 point ; une anticoagulation est recommandée à partir de 2 points. |
 | **Chélateur de potassium** | Poudre orale (patiromer, cyclosilicate de zirconium sodique) éliminant le potassium par voie digestive afin de maintenir les ARM malgré une tendance à l'hyperkaliémie ; bénéfice clinique direct non démontré. |
 | **Classe de recommandation (I, IIa, IIb, III)** | Force d'une recommandation : **I** = recommandé ; **IIa** = doit être envisagé ; **IIb** = peut être envisagé ; **III** = non recommandé (inutile ou délétère). |
@@ -79,9 +82,11 @@ export const article: WikiArticle = {
 | **Gilet défibrillateur portable (LifeVest)** | Gilet porté sous les vêtements jour et nuit, capable de détecter et choquer un trouble du rythme grave pendant les premiers mois avant la décision de DAI ; peut être envisagé comme passerelle temporaire (ESC 2026, Classe IIb). Conduite automobile interdite en France pendant son indication. |
 | **Groupe 1 / Groupe 2 (permis de conduire)** | Catégories européennes : groupe 1 (groupe léger) = voitures et motos ; groupe 2 (groupe lourd) = poids lourds et transport en commun. |
 | **Heart Team (équipe médico-chirurgicale)** | Équipe multidisciplinaire discutant les choix de revascularisation ou d'intervention valvulaire ; l'ESC 2026 demande qu'elle comprenne un spécialiste de l'insuffisance cardiaque. |
+| **Hepcidine / ferroportine** | L'hepcidine est une hormone souvent élevée dans l'insuffisance cardiaque qui ferme la ferroportine, porte de sortie du fer hors des cellules intestinales ; elle explique pourquoi le fer oral recharge mal les réserves par rapport au fer intraveineux. |
 | **HFimpEF (insuffisance cardiaque à FEVG améliorée)** | Hausse de la FEVG d'au moins 10 points aboutissant au-dessus de 40 % (définition ESC 2026). La Définition universelle 2026 retient la même description mais précise que la FEVG seule ne suffit pas à la définir. |
 | **HFmrEF** | Ancienne catégorie « FEVG modérément réduite » (41–49 %), **supprimée par l'ESC 2026** et non utilisée dans la Définition universelle 2026 ; encore présente dans les recommandations américaines, britanniques et les documents antérieurs. |
 | **HFpEF (insuffisance cardiaque à FEVG préservée)** | Insuffisance cardiaque avec FEVG ≥ 50 % associée à des anomalies structurelles ou fonctionnelles du cœur. |
+| **HIIT (entraînement fractionné à haute intensité)** | Protocole d'endurance alternant des intervalles d'effort soutenu et de récupération. Dans SMARTEX-HF (plus grand essai dans l'ICFER), le HIIT n'a pas fait mieux que l'endurance continue modérée sur le remodelage du ventricule gauche ou la capacité d'effort. |
 | **Hyperkaliémie** | Taux élevé de potassium dans le sang. Les IEC, ARA2, ARNI et ARM peuvent l'augmenter, justifiant des bilans sanguins réguliers. |`,
     },
     {
@@ -120,6 +125,7 @@ export const article: WikiArticle = {
 | **PRADO insuffisance cardiaque** | Programme d'accompagnement de retour à domicile de l'Assurance Maladie après une hospitalisation pour insuffisance cardiaque (coordination médecin traitant, infirmière, cardiologue). |
 | **Prévention primaire vs secondaire (DAI)** | Primaire : DAI implanté avant la survenue d'un trouble du rythme grave. Secondaire : DAI implanté après un arrêt cardiaque ou une arythmie ventriculaire grave. |
 | **Prévention secondaire coronaire** | Ensemble des mesures visant à éviter un nouvel infarctus ou AVC en cas de maladie coronaire connue : baisse du LDL, antiagrégant plaquettaire, contrôle tensionnel, parfois colchicine. |
+| **Procédure factice (sham)** | Intervention simulée (par exemple introduction d'un cathéter dans le cœur sans injection active) réalisée dans le groupe comparateur afin que ni les patients ni les évaluateurs ne sachent qui a reçu le traitement actif ; constitue l'évaluation la plus rigoureuse des thérapies cellulaires injectées. |
 | **QRS / BBG (bloc de branche gauche)** | Paramètres de l'ECG utilisés pour décider d'une CRT : un BBG avec durée du QRS ≥ 150 ms est la principale indication de Classe I dans l'ESC 2026. |
 | **Récupération (insuffisance cardiaque)** | Définition universelle 2026 : maintien durable dans le temps d'une structure cardiaque, d'une fonction, de biomarqueurs sanguins et de symptômes revenus à la normale sur un suivi prolongé. Critère plus strict que la rémission ; seule une minorité de patients l'atteint. |
 | **Rémission** | ESC 2026 : terme employé pour une FEVG améliorée (le cœur va mieux mais reste vulnérable, donc le traitement se poursuit). La Définition universelle 2026 l'emploie plus strictement : FEVG revenue à la normale, symptômes minimes (NYHA I) et biomarqueurs stables, avec un risque persistant de rechute ; une hausse plus modeste est qualifiée d'« amélioration ». |
@@ -137,6 +143,7 @@ export const article: WikiArticle = {
 | **TEER (M-TEER / MitraClip)** | Réparation percutanée bord à bord de la valve mitrale par pose d'un clip via cathéter. |
 | **Télésurveillance de l'insuffisance cardiaque** | Transmission depuis le domicile du poids, des symptômes et parfois de la tension à une équipe infirmière/médicale entre les consultations (non surveillée 24 h/24 en temps réel). ESC 2026 : Classe IIb ; remboursée en France depuis 2023 pour les patients éligibles. |
 | **Temps partiel thérapeutique (mi-temps thérapeutique)** | Reprise progressive du travail prescrite par le médecin, avec indemnités journalières complétant le salaire réduit. Depuis 2019, ne nécessite plus d'arrêt de travail à temps plein préalable. |
+| **Thérapie cellulaire (cellules souches) / MTI (ATMP)** | Traitement utilisant des cellules vivantes pour tenter de réparer le cœur. Dans l'Union européenne, les thérapies cellulaires, géniques et tissulaires sont des médicaments de thérapie innovante (MTI / ATMP) autorisés de façon centralisée ; en juin 2026, aucun n'est autorisé pour le cœur. Les injections payantes hors essai clinique enregistré ne constituent pas un traitement prouvé. |
 | **Thrombus intraventriculaire gauche (thrombus VG)** | Caillot sanguin fixé sur la paroi interne du ventricule gauche, le plus souvent sur une zone peu mobile (fréquemment l'apex après un infarctus du territoire de l'IVA). |
 | **Traitement de fond (les 4 piliers / FMT / GDMT)** | Socle thérapeutique associant quatre classes médicamenteuses (IEC ou ARNI, bêtabloquant, ARM, iSGLT2) dans l'ICFER. |
 | **Vériciguat (*Verquvo*)** | Comprimé additionnel stimulant la voie de relaxation vasculaire (stimulateur de la guanylate cyclase soluble, sGC). Bénéfique après aggravation récente (VICTORIA) mais neutre sur le critère principal chez les patients stables (VICTOR) ; ESC 2026 Classe IIb. Contre-indiqué avec les inhibiteurs de la PDE5 (sildénafil, tadalafil...). |
@@ -147,7 +154,11 @@ export const article: WikiArticle = {
   relatedArticleSlugs: [
     'comprendre-le-diagnostic',
     'essais-cliniques-cles',
+    'essais-cliniques-en-cours-et-a-suivre',
     'cardiomyopathie-ischemique',
+    'cellules-souches-et-therapies-regeneratives',
+    'medicaments-glp1-et-incretines',
+    'fer-oral-haute-biodisponibilite',
     'fraction-dejection',
     'questions-equipe-cardiologie',
     'examens-et-chiffres',
@@ -158,6 +169,7 @@ export const article: WikiArticle = {
     'occlusion-coronaire-chronique-cto',
     'thrombus-vg-et-anticoagulants',
     'apnee-du-sommeil-insuffisance-cardiaque',
+    'musculation-vs-endurance-readaptation-cardiaque',
     'vivre-avec-insuffisance-cardiaque-en-france',
   ],
   sources: [
@@ -168,6 +180,10 @@ export const article: WikiArticle = {
     {
       label: 'ASE/EACVI 2015, EACVI/ASE 2017, ESC/EACTS 2025, ESC 2023 (cardiomyopathies) et ESC 2024 (FA et SCC)',
       detail: 'Normes de volumes VG, rétrécissement aortique bas débit, CMD, double pathologie, score CHA₂DS₂-VA et prévention secondaire',
+    },
+    {
+      label: 'Thérapies cellulaires, incrétines, fer et réadaptation (EMA liste MTI juin 2026, DREAM-HF, BioVAT-HF NEJM 2026, PMDA RiHEART 2026, SOUL 2026, IRONOUT-HF, SMARTEX-HF)',
+      detail: 'Cellules iPS, CSM/CPM, MTI/ATMP, procédure factice (sham), agonistes du GLP-1/incrétines, hepcidine/ferroportine et HIIT',
     },
     {
       label: 'Essais et méta-analyses de référence (REVIVED-BCIS2, SERVE-HF, FINEARTS-HF, DIAMOND, PRAETORIAN, VEST, SHIFT)',

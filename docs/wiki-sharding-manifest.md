@@ -3,7 +3,7 @@
 > **Document associe :** [Specification de Conception et d'Architecture](./design-spec.md)
 > **Source locale :** `C:\Users\Florian\Documents\wiki\topics\ischaemic-cardiomyopathy`
 > **Date de reference du wiki (`asOf`) :** `2026-11-24` / `2026-11-25` (synchronise par article avec le frontmatter YAML source)
-> **Couverture totale :** 44 fichiers sources (43 articles compiles dans `wiki/` + 1 playbook dans `output/`) repartis en 6 lots disjoints (`W1-Content-1` a `W1-Content-6`)
+> **Couverture totale :** 51 fichiers sources (50 articles/theses compiles dans `wiki/` + 1 playbook dans `output/`) repartis en 6 lots disjoints (`W1-Content-1` a `W1-Content-6`)
 
 ---
 
@@ -29,17 +29,17 @@
 
 | Lot | Domaine clinique | Articles | Lignes source | Catalogues structures exclusifs |
 |---|---|---:|---:|---|
-| `W1-Content-1` | Diagnostic, chiffres, stade B, recuperation et comorbidites | 11 | 1 847 | Aucun |
-| `W1-Content-2` | Traitements de fond, effets secondaires, add-ons, lipides et fer IV | 7 | 1 861 | `src/content/fr/catalogs/medications-reference.ts` |
-| `W1-Content-3` | Dispositifs (DAI/CRT/LifeVest), telesurveillance, revascularisation, CTO, thrombus | 6 | 1 617 | Aucun |
-| `W1-Content-4` | Nutrition, sel/liquides, poids, complements, vitamine D, interactions et playbook | 10 | 2 063 | `src/content/fr/catalogs/interactions-catalog.ts` |
-| `W1-Content-5` | Vie quotidienne, droits en France, readaptation, psychologie, anticipation, conduite | 6 | 1 026 | `src/content/fr/catalogs/french-admin-catalog.ts` |
-| `W1-Content-6` | Questions pour l'equipe, glossaire, recommandations comparees et essais cles | 4 | 1 375 | `src/content/fr/catalogs/questions-catalog.ts`, `src/content/fr/catalogs/glossary.ts` |
-| **Total** | **Couverture complete du wiki** | **44** | **9 789+** | **5 catalogues structures** |
+| `W1-Content-1` | Diagnostic, chiffres, stade B, recuperation et comorbidites | 11 | 1 847+ | Aucun |
+| `W1-Content-2` | Traitements de fond, effets secondaires, add-ons, lipides, fer IV/oral, GLP-1 et cellules souches | 10 | 2 726+ | `src/content/fr/catalogs/medications-reference.ts` |
+| `W1-Content-3` | Dispositifs (DAI/CRT/LifeVest), telesurveillance, revascularisation, CTO, thrombus | 6 | 1 617+ | Aucun |
+| `W1-Content-4` | Nutrition, sel/liquides, poids, complements, vitamine D, vitamines B, magnesium, interactions et playbook | 12 | 2 565+ | `src/content/fr/catalogs/interactions-catalog.ts` |
+| `W1-Content-5` | Vie quotidienne, droits en France, readaptation (endurance vs musculation), psychologie, anticipation, conduite | 7 | 1 255+ | `src/content/fr/catalogs/french-admin-catalog.ts` |
+| `W1-Content-6` | Questions pour l'equipe, glossaire, recommandations comparees, essais cles et essais a suivre | 5 | 1 590+ | `src/content/fr/catalogs/questions-catalog.ts`, `src/content/fr/catalogs/glossary.ts` |
+| **Total** | **Couverture complete du wiki** | **51** | **11 600+** | **5 catalogues structures** |
 
 ---
 
-## 3. Cartographie Exacte des 44 Fichiers (Source -> Cible)
+## 3. Cartographie Exacte des 51 Fichiers (Source -> Cible)
 
 ### Lot `W1-Content-1` -- Diagnostic, Chiffres & Comorbidites (11 fichiers, 1 847 lignes)
 
@@ -57,7 +57,7 @@
 | 10 | `wiki/concepts/blood-pressure-in-heart-failure.md` | `tension-arterielle-insuffisance-cardiaque` | `src/content/fr/articles/tension-arterielle-insuffisance-cardiaque.ts` | Tension arterielle et insuffisance cardiaque | `comorbidites` | `core`, `aorticStenosis` |
 | 11 | `wiki/concepts/sleep-apnoea-in-heart-failure.md` | `apnee-du-sommeil-insuffisance-cardiaque` | `src/content/fr/articles/apnee-du-sommeil-insuffisance-cardiaque.ts` | Apnee du sommeil et insuffisance cardiaque | `comorbidites` | `sleepApnoea` |
 
-### Lot `W1-Content-2` -- Traitements de Fond, Add-ons, Lipides & Fer IV (7 fichiers, 1 861 lignes)
+### Lot `W1-Content-2` -- Traitements de Fond, Add-ons, Lipides, Fer, GLP-1 & Cellules Souches (10 fichiers)
 
 | # | Fichier source (relatif au wiki) | `articleId` (slug) | Fichier cible | Titre francais cible | Categorie | Modules lies |
 |---:|---|---|---|---|---|---|
@@ -68,6 +68,9 @@
 | 16 | `wiki/concepts/finerenone-and-newer-mras.md` | `finerenone-et-nouveaux-arm` | `src/content/fr/articles/finerenone-et-nouveaux-arm.ts` | Finerenone, nouveaux ARM et chelateurs de potassium | `traitements` | `ckd`, `diabetes` |
 | 17 | `wiki/concepts/cholesterol-and-secondary-prevention.md` | `cholesterol-et-prevention-secondaire` | `src/content/fr/articles/cholesterol-et-prevention-secondaire.ts` | Cholesterol LDL, aspirine et prevention secondaire coronaire | `traitements` | `core` |
 | 18 | `wiki/concepts/iron-deficiency-and-iv-iron.md` | `carence-martiale-et-fer-iv` | `src/content/fr/articles/carence-martiale-et-fer-iv.ts` | Carence en fer et fer intraveineux | `traitements` | `core` |
+| 19 | `wiki/theses/high-bioavailability-oral-iron-in-heart-failure.md` | `fer-oral-haute-biodisponibilite` | `src/content/fr/articles/fer-oral-haute-biodisponibilite.ts` | Fer oral a haute biodisponibilite (Ferrochel, sucrosomial) et insuffisance cardiaque | `traitements` | `core` |
+| 20 | `wiki/concepts/glp1-and-incretin-medicines.md` | `medicaments-glp1-et-incretines` | `src/content/fr/articles/medicaments-glp1-et-incretines.ts` | Medicaments GLP-1 et incretines (semaglutide, tirzepatide, retatrutide) | `traitements` | `core`, `diabetes` |
+| 21 | `wiki/concepts/stem-cell-and-regenerative-therapies.md` | `cellules-souches-et-therapies-regeneratives` | `src/content/fr/articles/cellules-souches-et-therapies-regeneratives.ts` | Cellules souches et therapies regeneratives dans la cardiomyopathie ischemique | `traitements` | `core` |
 
 **Catalogue supplementaire exclusif a `W1-Content-2` :**
 - `src/content/fr/catalogs/medications-reference.ts` : referentiel structure `MEDICATION_REFERENCES: MedicationReference[]` couvrant les 4 piliers (doses de depart, doses cibles ESC, frequence de titration, noms commerciaux francais), diuretiques de l'anse, prevention secondaire, add-ons et liste des classes a eviter en ICFER (AINS, verapamil, diltiazem, moxonidine).
@@ -83,46 +86,50 @@
 | 23 | `wiki/concepts/chronic-total-occlusion.md` | `occlusion-coronaire-chronique-cto` | `src/content/fr/articles/occlusion-coronaire-chronique-cto.ts` | Occlusion coronaire chronique (CTO) et collaterales | `dispositifs` | `cto` |
 | 24 | `wiki/concepts/lv-thrombus-and-blood-thinners.md` | `thrombus-vg-et-anticoagulants` | `src/content/fr/articles/thrombus-vg-et-anticoagulants.ts` | Thrombus du ventricule gauche et anticoagulants | `comorbidites` | `lvThrombusOrAneurysm` |
 
-### Lot `W1-Content-4` -- Nutrition, Complements, Vitamine D, Interactions & Playbook (10 fichiers)
+### Lot `W1-Content-4` -- Nutrition, Complements, Vitamine D, Vitamines B, Magnesium, Interactions & Playbook (12 fichiers)
 
 | # | Fichier source (relatif au wiki) | `articleId` (slug) | Fichier cible | Titre francais cible | Categorie | Modules lies |
 |---:|---|---|---|---|---|---|
-| 25 | `wiki/topics/nutrition-and-supplements-in-heart-failure.md` | `nutrition-et-complements-insuffisance-cardiaque` | `src/content/fr/articles/nutrition-et-complements-insuffisance-cardiaque.ts` | Nutrition et complements alimentaires dans l'insuffisance cardiaque | `nutrition` | `core` |
-| 26 | `output/playbook-nutritional-interventions-and-supplements-2026-11-24.md` | `guide-pratique-nutrition-complements` | `src/content/fr/articles/guide-pratique-nutrition-complements.ts` | Guide pratique : interventions nutritionnelles et complements | `nutrition` | `core` |
-| 27 | `wiki/references/nutrition-and-supplement-evidence-table.md` | `tableau-preuves-nutrition-complements` | `src/content/fr/articles/tableau-preuves-nutrition-complements.ts` | Tableau des niveaux de preuve : nutrition et complements | `nutrition` | `core` |
-| 28 | `wiki/concepts/salt-and-fluid-in-heart-failure.md` | `sel-et-liquides-insuffisance-cardiaque` | `src/content/fr/articles/sel-et-liquides-insuffisance-cardiaque.ts` | Sel et apports hydriques dans l'insuffisance cardiaque | `nutrition` | `core` |
-| 29 | `wiki/concepts/heart-healthy-eating-patterns.md` | `alimentation-cardioprotectrice` | `src/content/fr/articles/alimentation-cardioprotectrice.ts` | Alimentation cardioprotectrice (modele mediterraneen) | `nutrition` | `core` |
-| 30 | `wiki/concepts/weight-obesity-and-malnutrition.md` | `poids-obesite-et-denutrition` | `src/content/fr/articles/poids-obesite-et-denutrition.ts` | Poids, obesite et denutrition (cachexie cardiaque) | `nutrition` | `core` |
-| 31 | `wiki/concepts/omega-3-fish-oil.md` | `omega-3-huile-de-poisson` | `src/content/fr/articles/omega-3-huile-de-poisson.ts` | Acides gras omega-3 (huiles de poisson) | `nutrition` | `core`, `atrialFibrillation` |
-| 32 | `wiki/concepts/coenzyme-q10.md` | `coenzyme-q10` | `src/content/fr/articles/coenzyme-q10.ts` | Coenzyme Q10 (CoQ10) | `nutrition` | `core` |
-| 33 | `wiki/concepts/vitamin-d-in-heart-failure.md` | `vitamine-d-insuffisance-cardiaque` | `src/content/fr/articles/vitamine-d-insuffisance-cardiaque.ts` | Vitamine D et insuffisance cardiaque | `nutrition` | `core` |
-| 34 | `wiki/concepts/supplement-and-food-drug-interactions.md` | `interactions-complements-aliments-medicaments` | `src/content/fr/articles/interactions-complements-aliments-medicaments.ts` | Interactions entre complements, aliments et medicaments cardiaques | `nutrition` | `core` |
+| 28 | `wiki/topics/nutrition-and-supplements-in-heart-failure.md` | `nutrition-et-complements-insuffisance-cardiaque` | `src/content/fr/articles/nutrition-et-complements-insuffisance-cardiaque.ts` | Nutrition et complements alimentaires dans l'insuffisance cardiaque | `nutrition` | `core` |
+| 29 | `output/playbook-nutritional-interventions-and-supplements-2026-11-24.md` | `guide-pratique-nutrition-complements` | `src/content/fr/articles/guide-pratique-nutrition-complements.ts` | Guide pratique : interventions nutritionnelles et complements | `nutrition` | `core` |
+| 30 | `wiki/references/nutrition-and-supplement-evidence-table.md` | `tableau-preuves-nutrition-complements` | `src/content/fr/articles/tableau-preuves-nutrition-complements.ts` | Tableau des niveaux de preuve : nutrition et complements | `nutrition` | `core` |
+| 31 | `wiki/concepts/salt-and-fluid-in-heart-failure.md` | `sel-et-liquides-insuffisance-cardiaque` | `src/content/fr/articles/sel-et-liquides-insuffisance-cardiaque.ts` | Sel et apports hydriques dans l'insuffisance cardiaque | `nutrition` | `core` |
+| 32 | `wiki/concepts/heart-healthy-eating-patterns.md` | `alimentation-cardioprotectrice` | `src/content/fr/articles/alimentation-cardioprotectrice.ts` | Alimentation cardioprotectrice (modele mediterraneen) | `nutrition` | `core` |
+| 33 | `wiki/concepts/weight-obesity-and-malnutrition.md` | `poids-obesite-et-denutrition` | `src/content/fr/articles/poids-obesite-et-denutrition.ts` | Poids, obesite et denutrition (cachexie cardiaque) | `nutrition` | `core` |
+| 34 | `wiki/concepts/omega-3-fish-oil.md` | `omega-3-huile-de-poisson` | `src/content/fr/articles/omega-3-huile-de-poisson.ts` | Acides gras omega-3 (huiles de poisson) | `nutrition` | `core`, `atrialFibrillation` |
+| 35 | `wiki/concepts/coenzyme-q10.md` | `coenzyme-q10` | `src/content/fr/articles/coenzyme-q10.ts` | Coenzyme Q10 (CoQ10) | `nutrition` | `core` |
+| 36 | `wiki/concepts/vitamin-d-in-heart-failure.md` | `vitamine-d-insuffisance-cardiaque` | `src/content/fr/articles/vitamine-d-insuffisance-cardiaque.ts` | Vitamine D et insuffisance cardiaque | `nutrition` | `core` |
+| 37 | `wiki/concepts/b-vitamins-in-heart-failure.md` | `vitamines-b-insuffisance-cardiaque` | `src/content/fr/articles/vitamines-b-insuffisance-cardiaque.ts` | Vitamines B et insuffisance cardiaque | `nutrition` | `core` |
+| 38 | `wiki/concepts/magnesium-in-heart-failure.md` | `magnesium-insuffisance-cardiaque` | `src/content/fr/articles/magnesium-insuffisance-cardiaque.ts` | Magnesium et insuffisance cardiaque : formes et supplementation | `nutrition` | `core`, `ckd` |
+| 39 | `wiki/concepts/supplement-and-food-drug-interactions.md` | `interactions-complements-aliments-medicaments` | `src/content/fr/articles/interactions-complements-aliments-medicaments.ts` | Interactions entre complements, aliments et medicaments cardiaques | `nutrition` | `core` |
 
 **Catalogue supplementaire exclusif a `W1-Content-4` :**
 - `src/content/fr/catalogs/interactions-catalog.ts` : referentiel structure `INTERACTIONS_CATALOG: InteractionItem[]` alimentant le verificateur interactif du module *Traitements & Securite* (verdicts `worth_raising` / `possible` / `not_supported` / `avoid`, classes medicamenteuses concernees, mecanisme, sources).
 
-### Lot `W1-Content-5` -- Vie Quotidienne, France, Readaptation & Conduite (6 fichiers, 1 026 lignes)
+### Lot `W1-Content-5` -- Vie Quotidienne, France, Readaptation & Conduite (7 fichiers)
 
 | # | Fichier source (relatif au wiki) | `articleId` (slug) | Fichier cible | Titre francais cible | Categorie | Modules lies |
 |---:|---|---|---|---|---|---|
-| 34 | `wiki/topics/living-with-heart-failure.md` | `vivre-avec-insuffisance-cardiaque` | `src/content/fr/articles/vivre-avec-insuffisance-cardiaque.ts` | Vivre au quotidien avec une insuffisance cardiaque | `quotidien` | `core` |
-| 35 | `wiki/topics/living-with-heart-failure-in-france.md` | `vivre-avec-insuffisance-cardiaque-en-france` | `src/content/fr/articles/vivre-avec-insuffisance-cardiaque-en-france.ts` | Vivre avec une insuffisance cardiaque en France : ALD, travail, emprunt et readaptation | `france` | `core` |
-| 36 | `wiki/concepts/cardiac-rehabilitation-and-exercise.md` | `readaptation-cardiaque-et-activite-physique` | `src/content/fr/articles/readaptation-cardiaque-et-activite-physique.ts` | Readaptation cardiaque (SMR) et activite physique | `quotidien` | `core` |
-| 37 | `wiki/concepts/depression-and-emotional-health.md` | `depression-et-sante-emotionnelle` | `src/content/fr/articles/depression-et-sante-emotionnelle.ts` | Sante emotionnelle, anxiete et depression | `quotidien` | `core` |
-| 38 | `wiki/concepts/palliative-care-and-advance-planning.md` | `soins-de-support-et-anticipation` | `src/content/fr/articles/soins-de-support-et-anticipation.ts` | Soins de support, soins palliatifs et anticipation | `quotidien` | `core`, `device` |
-| 39 | `wiki/references/driving-rules.md` | `regles-conduite-automobile` | `src/content/fr/articles/regles-conduite-automobile.ts` | Permis de conduire, insuffisance cardiaque et defibrillateur (France et UE) | `france` | `core`, `device`, `lifeVest` |
+| 40 | `wiki/topics/living-with-heart-failure.md` | `vivre-avec-insuffisance-cardiaque` | `src/content/fr/articles/vivre-avec-insuffisance-cardiaque.ts` | Vivre au quotidien avec une insuffisance cardiaque | `quotidien` | `core` |
+| 41 | `wiki/topics/living-with-heart-failure-in-france.md` | `vivre-avec-insuffisance-cardiaque-en-france` | `src/content/fr/articles/vivre-avec-insuffisance-cardiaque-en-france.ts` | Vivre avec une insuffisance cardiaque en France : ALD, travail, emprunt et readaptation | `france` | `core` |
+| 42 | `wiki/concepts/cardiac-rehabilitation-and-exercise.md` | `readaptation-cardiaque-et-activite-physique` | `src/content/fr/articles/readaptation-cardiaque-et-activite-physique.ts` | Readaptation cardiaque (SMR) et activite physique | `quotidien` | `core` |
+| 43 | `wiki/theses/resistance-vs-aerobic-training-in-cardiac-rehab.md` | `musculation-vs-endurance-readaptation-cardiaque` | `src/content/fr/articles/musculation-vs-endurance-readaptation-cardiaque.ts` | Musculation versus entrainement aerobie en readaptation cardiaque | `quotidien` | `core` |
+| 44 | `wiki/concepts/depression-and-emotional-health.md` | `depression-et-sante-emotionnelle` | `src/content/fr/articles/depression-et-sante-emotionnelle.ts` | Sante emotionnelle, anxiete et depression | `quotidien` | `core` |
+| 45 | `wiki/concepts/palliative-care-and-advance-planning.md` | `soins-de-support-et-anticipation` | `src/content/fr/articles/soins-de-support-et-anticipation.ts` | Soins de support, soins palliatifs et anticipation | `quotidien` | `core`, `device` |
+| 46 | `wiki/references/driving-rules.md` | `regles-conduite-automobile` | `src/content/fr/articles/regles-conduite-automobile.ts` | Permis de conduire, insuffisance cardiaque et defibrillateur (France et UE) | `france` | `core`, `device`, `lifeVest` |
 
 **Catalogue supplementaire exclusif a `W1-Content-5` :**
 - `src/content/fr/catalogs/french-admin-catalog.ts` : referentiel structure `FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[]` couvrant chaque demarche identifiee par `FrenchAdminItemId` (`ald_5_13`, `smr_rehab`, `prado_ic`, `telesurveillance_ic`, `arret_travail_ij`, `visite_pre_reprise`, `temps_partiel_therapeutique`, `rqth_mdph`, `pension_invalidite`, `emprunt_aeras_lemoine`, `permis_medecin_agree`, `vaccinations_ic`).
 
-### Lot `W1-Content-6` -- Questions Equipe Medicale, Glossaire & References (4 fichiers, 1 375 lignes)
+### Lot `W1-Content-6` -- Questions Equipe Medicale, Glossaire & References (5 fichiers)
 
 | # | Fichier source (relatif au wiki) | `articleId` (slug) | Fichier cible | Titre francais cible | Categorie | Modules lies |
 |---:|---|---|---|---|---|---|
-| 40 | `wiki/references/questions-for-the-cardiology-team.md` | `questions-equipe-cardiologie` | `src/content/fr/articles/questions-equipe-cardiologie.ts` | Questions a poser a l'equipe de cardiologie | `references` | `core` |
-| 41 | `wiki/references/glossary.md` | `glossaire-cardiologie` | `src/content/fr/articles/glossaire-cardiologie.ts` | Glossaire medical de la cardiomyopathie ischemique | `references` | `core` |
-| 42 | `wiki/references/guidelines-compared.md` | `recommandations-comparees-esc-us-nice` | `src/content/fr/articles/recommandations-comparees-esc-us-nice.ts` | Recommandations europeennes (ESC), americaines et britanniques comparees | `references` | `core` |
-| 43 | `wiki/references/key-trials.md` | `essais-cliniques-cles` | `src/content/fr/articles/essais-cliniques-cles.ts` | Les grands essais cliniques de reference | `references` | `core` |
+| 47 | `wiki/references/questions-for-the-cardiology-team.md` | `questions-equipe-cardiologie` | `src/content/fr/articles/questions-equipe-cardiologie.ts` | Questions a poser a l'equipe de cardiologie | `references` | `core` |
+| 48 | `wiki/references/glossary.md` | `glossaire-cardiologie` | `src/content/fr/articles/glossaire-cardiologie.ts` | Glossaire medical de la cardiomyopathie ischemique | `references` | `core` |
+| 49 | `wiki/references/guidelines-compared.md` | `recommandations-comparees-esc-us-nice` | `src/content/fr/articles/recommandations-comparees-esc-us-nice.ts` | Recommandations europeennes (ESC), americaines et britanniques comparees | `references` | `core` |
+| 50 | `wiki/references/key-trials.md` | `essais-cliniques-cles` | `src/content/fr/articles/essais-cliniques-cles.ts` | Les grands essais cliniques de reference | `references` | `core` |
+| 51 | `wiki/topics/trials-to-watch-ongoing-and-planned-research.md` | `essais-cliniques-en-cours-et-a-suivre` | `src/content/fr/articles/essais-cliniques-en-cours-et-a-suivre.ts` | Essais cliniques en cours et recherche a suivre | `references` | `core` |
 
 **Catalogues supplementaires exclusifs a `W1-Content-6` :**
 - `src/content/fr/catalogs/questions-catalog.ts` : referentiel structure `QUESTIONS_CATALOG: QuestionCatalogItem[]` extrayant toutes les questions de `questions-for-the-cardiology-team.md`, taguees par interlocuteur (`cardiologist` | `gp` | `pharmacist` | `occupational_doctor`), par module conditionnel (`relevantModules`) et liees aux regles deterministes qui les font remonter en priorite.
@@ -176,7 +183,7 @@ Tous les agents (Contenu, Moteur, UI) doivent respecter strictement cette termin
 ## 5. Verification Automatique de Completude (Gate 1)
 
 Le test unitaire `src/content/fr/__tests__/manifest.test.ts` (ecrit en Wave 0) doit verifier automatiquement a la fin de Wave 1 :
-1. Le nombre d'articles charges par `import.meta.glob` est **exactement egal a 44**.
+1. Le nombre d'articles charges par `import.meta.glob` est **exactement egal a 51**.
 2. Chaque `articleId` de `EXPECTED_ARTICLE_SLUGS` est present exactement une fois, avec `summaryFr`, `sections.length > 0`, `sources.length > 0` et un `asOf` ISO aligne sur le frontmatter source.
 3. Aucun lien interne `relatedArticleIds` ne pointe vers un slug inexistant.
 4. Les 5 catalogues (`MEDICATION_REFERENCES`, `INTERACTIONS_CATALOG`, `FRENCH_ADMIN_CATALOG`, `QUESTIONS_CATALOG`, `GLOSSARY_TERMS`) sont non vides et leurs `articleId` / `adminItemId` sont tous valides au sens TypeScript.

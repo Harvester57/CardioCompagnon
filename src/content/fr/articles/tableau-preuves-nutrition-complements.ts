@@ -17,9 +17,12 @@ export const article: WikiArticle = {
     'aha',
     'nice',
     'fer-iv',
+    'fer-oral',
     'oméga-3',
     'coenzyme-q10',
     'vitamine-d',
+    'vitamines-b',
+    'magnésium',
   ],
   aliases: [
     'Tableau des compléments',
@@ -45,6 +48,7 @@ export const article: WikiArticle = {
 |---|---|---|---|---|---|
 | **Fer intraveineux (si carence)** | 6 essais randomisés, 7 175 patients ; FAIR-HF2 | Hospitalisations IC + décès CV : RR 0,81 ; pas d'effet sur la survie globale | Élevée | Surtout directe (78 % ischémique dans FAIR-HF2 ; pas de différence selon la cause) | **À aborder avec l'équipe** |
 | **Fer oral** | IRONOUT-HF, 225 patients | Aucun changement du pic de VO₂ ni des symptômes | Modérée | Partiellement directe (ICFER, causes mixtes) | Non étayé |
+| **Fer oral « mieux absorbé » (Ferrochel / bisglycinate, sucrosomial, maltol ferrique)** | Aucun essai randomisé dans l'ICFER avec résultats ; ORION-HF (mono-bras, 41 patients, dont 16 avec FEVG < 50 %) ; Karavidas 2021 (non randomisé, 25 patients) | Hausses non contrôlées du CST/ferritine ou de la marche ; dans les MICI, reconstitution des réserves très inférieure au fer IV ; aucune preuve qu'une forme contourne l'hepcidine | Faible | Indirecte à partiellement directe | Non étayé (voir la fiche dédiée sur le fer oral à haute biodisponibilité) |
 | **Oméga-3, 1 g/j** | GISSI-HF, 6 975 patients | Décès 27 % contre 29 %, HR ajusté 0,91 | Modérée (avant traitements modernes) | Partiellement directe (90 % FEVG ≤ 40 %, causes mixtes) | Possible, priorité faible |
 | **Oméga-3 et FA à 1 g/j** | Ligne GISSI-HF dans Abuknesha 2026 | FA 11,2 % contre 9,8 %, OR 1,16 (0,97–1,39), ns | Un seul essai, non significatif | Partiellement directe (90 % FEVG ≤ 40 %, causes mixtes) | À mentionner à l'équipe, surtout en cas de FA existante |
 | **Oméga-3, forte dose** | Gencer 2021 (81 210 pts) ; Abuknesha 2026 (35 essais, 114 592 pts) | FA HR 1,49 au-dessus de 1 g/j (Gencer) ; OR 1,43 au-dessus de 1,5 g/j chez les patients à haut risque, OR 1,14 sur tous les essais (Abuknesha) | Modérée (Abuknesha financée en partie par l'industrie) | Indirecte | **À éviter ≥ 4 g/j (AHA)** |
@@ -53,11 +57,15 @@ export const article: WikiArticle = {
 | **Bêta-carotène** | An 2022 ; USPSTF | Décès toutes causes RR 1,10 ; décès CV RR 1,12 ; AVC RR 1,09 ; USPSTF grade D | Faible (GRADE An 2022) | Indirecte | **À éviter** |
 | **Calcium + vitamine D** | Khan 2019 | AVC : RR 1,17 | Modérée | Indirecte | **À éviter sauf prescription** |
 | **Vitamine D seule** | An 2022 (63 essais) ; Khan 2021 ; Chua 2025 (reprend Khan) ; Kampka 2025 ; AHA 2022 ; EVITA (rapporté) | Aucun effet CV (décès RR 0,99) ; dans les essais IC, marche de 6 min raccourcie de 39 m (certitude élevée) malgré FEVG +4,33 points (essais très hétérogènes ; autres analyses sans effet FEVG) ; VITAL-HF neutre ; EVITA décès HR 1,09 | Modérée | Indirecte (essais IC toutes FEVG ; essais d'événements en population générale) | Non étayé (traiter uniquement une carence) |
-| **Thiamine (vitamine B1)** | Khan 2021 (4 essais, 150 pts) ; méta-analyse 2024 (rapportée) | FEVG +3,59 points dans Khan 2021 (intermédiaire) ; non confirmé ensuite (+1,65 %, ns) | Faible | Indirecte (essais IC, FEVG non séparées) | Uniquement si carence avérée |
+| **Thiamine (vitamine B1)** | Méta-analyse He 2024 (7 essais randomisés, 274 patients) ; cartographie Khan 2021 (4 essais, 150 patients) ; ESPEN 2022 | FEVG +1,65 point (-1,10 à 4,41, ns), quasi nul après correction du biais de publication ; aucun effet sur la marche, le NT-proBNP ou la classe NYHA ; le +3,59 de Khan 2021 non confirmé. ESPEN : dosage possible sous diurétiques prolongés (suggère 50 mg/j avec diurétiques chroniques) | Faible | Indirecte (essais IC toutes FEVG ; part ischémique non précisée) | Uniquement si carence (dosage à discuter sous diurétiques de l'anse au long cours) |
+| **Acide folique + B12 ± B6 (baisse de l'homocystéine)** | Cochrane 2017 (15 essais randomisés, 71 422 patients) ; NORVIT 2006 (3 749 patients post-infarctus) | Aucun effet sur l'infarctus (RR 1,02) ni la mortalité (RR 1,01), haute qualité ; AVC RR 0,90. Après infarctus, tendance défavorable avec la triple association (RR 1,22 ; IC 95 % 1,00–1,50) | Élevée (Cochrane) | Indirecte (populations coronariennes et à haut risque ; aucune donnée IC ou FEVG) | Non étayé ; **à éviter en triple association en automédication après un infarctus** |
+| **Vitamine B12 (correction de carence)** | ESPEN 2022 | Metformine, IPP et anti-H2 sont des facteurs de risque ; dépistage par holo-TC + acide méthylmalonique (AMM) ou vitamine B12 sérique | Faible (consensus) | Indirecte | Doser et traiter si carence avérée |
+| **Vitamine B6, forte dose** | NORVIT 2006 ; ESPEN 2022 | Aucun bénéfice (B6 40 mg : RR 1,14, ns) ; risque de neuropathie sensitive en cas de fortes doses prolongées | Modérée | Indirecte | **À éviter à forte dose** |
+| **NAD+ intraveineux (dérivé de la vitamine B3, perfusion hospitalière)** | Essai randomisé Yu 2025 (180 patients, 100 % ischémiques, FEVG ≤ 45 %) | FEVG à 1 mois : 45,4 % contre 42,4 % (p = 0,024) ; événements cardiovasculaires majeurs et hospitalisations IC non significatifs ; essai monocentrique financé par l'industrie | Faible | Population directe, critère intermédiaire | Expérimental ; ne constitue pas une preuve pour la vitamine B3 orale ni les compléments « boosters de NAD » |
 | **L-carnitine** | Khan 2021 | FEVG +0,49 point (intermédiaire) ; décès RR 0,58 (0,16–2,12), ns | Faible | Indirecte (essais IC, FEVG non séparées) | Non étayé |
 | **Vitamine C, sélénium** | An 2022 | Aucun effet sur décès, décès CV, infarctus ou AVC | Modérée | Indirecte | Non étayé |
 | **Multivitamines** | Khan 2019 ; USPSTF (An 2022 ne les a pas analysées) | Aucun bénéfice CV ; USPSTF grade I | Modérée | Indirecte | Non étayé |
-| **Magnésium** | An 2022 | Pression artérielle environ 5 mmHg plus basse (certitude faible) ; aucune donnée d'événements cliniques | Faible | Indirecte (essais de facteurs de risque excluant cardiopathies sévères) | Aucune donnée d'événements ; en parler à l'équipe |
+| **Magnésium (toute forme)** | An 2022 ; Argeros 2025 ; MACH ; Chimura 2026 (GALACTIC-HF) ; Yin 2026 | Pression artérielle environ -2,8 / -2,0 mmHg (surtout si carence ou HTA) ; un minuscule essai NYHA IV sur l'orotate (MACH, 79 patients) a suggéré une meilleure survie, jamais répliqué ; chez 6 147 patients ICFER ambulatoires, un magnésium bas n'était pas lié à un moins bon pronostic, contrairement à un taux élevé ; chez des vétérans américains avec IC, débuter du magnésium oral était associé à moins d'événements uniquement si le taux était bas (HR 0,91) et à davantage s'il était normal (HR 1,11, observationnel) ; absorption peu différente selon les sels (oxyde le moins bien absorbé), aucune preuve sur les événements cardiaques ; ESC 2022 : Mg + K IV pour les torsades de pointes (Classe I, niveau C) | Faible | Mixte : données IC directes mais essai minuscule ou observationnelles ; données tension indirectes | Doser et corriger une carence avec l'équipe ; pas un traitement du cœur ; prudence si insuffisance rénale |
 | **Aubépine** | AHA 2022 | Résultats contradictoires ; peut aggraver l'IC | Faible | Directe | Non étayé |
 | **Muguet, actée bleue** | AHA 2022 | Toxiques | Faible (experts) | Directe | **À éviter** |
 | **Réglisse (glycyrrhizine)** | Monographie EMA 2026 ; revue Deutch 2019 | Rétention hydrosodée, hypokaliémie, HTA ; cas d'IC aiguë ; ne pas associer aux diurétiques ni à la digoxine | Modérée (mécanisme, régulateur, cas) | Directe | **À éviter** |
@@ -127,13 +135,17 @@ export const article: WikiArticle = {
     },
   ],
   relatedArticleSlugs: [
+    'essais-cliniques-en-cours-et-a-suivre',
     'nutrition-et-complements-insuffisance-cardiaque',
     'guide-pratique-nutrition-complements',
     'carence-martiale-et-fer-iv',
+    'fer-oral-haute-biodisponibilite',
     'interactions-complements-aliments-medicaments',
     'omega-3-huile-de-poisson',
     'coenzyme-q10',
     'vitamine-d-insuffisance-cardiaque',
+    'vitamines-b-insuffisance-cardiaque',
+    'magnesium-insuffisance-cardiaque',
     'sel-et-liquides-insuffisance-cardiaque',
     'alimentation-cardioprotectrice',
     'poids-obesite-et-denutrition',
@@ -143,8 +155,12 @@ export const article: WikiArticle = {
   ],
   sources: [
     {
-      label: 'Essais cliniques et méta-analyses sur les compléments',
-      detail: 'Méta-analyse fer IV 2025, FAIR-HF2, IRONOUT-HF, GISSI-HF, Gencer 2021, Abuknesha 2026, Q-SYMBIO (texte intégral), Khan 2021 (texte intégral), An 2022 (texte intégral), Gormaz-Carrasco 2022, Khan 2019, USPSTF 2022, QUEST (Nature Medicine 2024).',
+      label: 'Essais cliniques et méta-analyses sur les compléments et le fer',
+      detail: 'Méta-analyse fer IV 2025, FAIR-HF2, IRONOUT-HF, ORION-HF, Karavidas 2021, AEGIS-H2H, Bertani 2021, Pantopoulos 2024, GISSI-HF, Gencer 2021, Abuknesha 2026, Q-SYMBIO (texte intégral), Khan 2021 (texte intégral), An 2022 (texte intégral), Gormaz-Carrasco 2022, Khan 2019, USPSTF 2022, QUEST (Nature Medicine 2024).',
+    },
+    {
+      label: 'Sources cliniques vitamines B et magnésium (novembre 2026)',
+      detail: 'Vitamines B : He 2024 (thiamine), ESPEN 2022, Cochrane 2017 (homocystéine), NORVIT 2006, Yu 2025 (NAD+ IV). Magnésium : Chimura 2026 (GALACTIC-HF), MACH, Argeros 2025, Merschmann 2025, NIH ODS, Aal-Hamad 2023, Yin 2026, Khraisat 2026, ESC 2022 (arythmies ventriculaires).',
     },
     {
       label: 'Revues et études 2023–2025 sur la vitamine D et la médecine intégrative',

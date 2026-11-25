@@ -130,6 +130,7 @@ N'interrompez jamais ni ne réduisez vous-même vos médicaments parce que votre
     'gilet-defibrillateur-portable',
     'occlusion-coronaire-chronique-cto',
     'dysfonction-vg-asymptomatique-stade-b',
+    'cellules-souches-et-therapies-regeneratives',
   ],
   sources: [
     { label: 'Revue HFimpEF (récupération et rechute)', detail: 'Définitions universelles, fréquences, facteurs prédictifs, survie et rechutes' },

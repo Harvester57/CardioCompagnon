@@ -31,6 +31,9 @@ export const article: WikiArticle = {
     'extrait-thé-vert',
     'digoxine',
     'phytothérapie-chinoise',
+    'vitamines-b',
+    'vitamine-b6',
+    'magnésium',
   ],
   aliases: [
     'Produits à éviter',
@@ -55,6 +58,9 @@ export const article: WikiArticle = {
     'Phytothérapie chinoise',
     'Qishen Yiqi',
     'Pueraria',
+    'Vitamines B',
+    'Vitamine B6',
+    'Magnésium et interactions',
   ],
   linkedModules: ['core'],
   plainSummaryFr:
@@ -106,7 +112,11 @@ L'acidocétose sous iSGLT2 peut survenir avec une glycémie presque normale (« 
 | **Oméga-3 à forte dose** | Risque de fibrillation atriale augmenté d'environ 49 % au-dessus de 1 g/j | Gencer 2021 |
 | **Aubépine** | Preuves contradictoires ; risque possible d'aggravation de l'IC | AHA 2022 |
 | **Muguet, actée bleue (blue cohosh)** | Produits toxiques ; interactions du muguet avec la digoxine, hypokaliémie et troubles du rythme | AHA 2022 |
-| **Vitamine D seule** | Aucun bénéfice démontré ; interactions possibles avec digoxine, inhibiteurs calciques et diurétiques (voir la fiche *Vitamine D et insuffisance cardiaque*) | AHA 2022 |`,
+| **Vitamine D seule** | Aucun bénéfice démontré ; interactions possibles avec digoxine, inhibiteurs calciques et diurétiques (voir la fiche *Vitamine D et insuffisance cardiaque*) | AHA 2022 |
+| **Acide folique + B12 + B6 ensemble (complexes B « cœur »)** | Après un infarctus, tendance à davantage de récidives d'infarctus, d'AVC ou de morts subites coronaires (RR 1,22 ; IC 95 % 1,00–1,50 ; p = 0,05) ; aucun bénéfice sur l'infarctus ou la mortalité dans 15 essais (voir la fiche *Vitamines B et insuffisance cardiaque*) | NORVIT 2006 ; Cochrane 2017 |
+| **Vitamine B6 à forte dose** | Atteinte des nerfs sensitifs (neuropathie) en cas de prise prolongée à forte dose (dès environ 100 mg/j ; limite supérieure européenne 12 mg/j) | ESPEN 2022 |
+
+**Médicaments pouvant abaisser les vitamines B ou le magnésium :** les recommandations **ESPEN 2022** citent les **diurétiques de l'anse** au long cours comme cause de déplétion en thiamine (vitamine B1), ainsi que la **metformine** et les **antisécrétoires gastriques** (IPP, anti-H2) au long cours comme causes de carence en vitamine B12. Les diurétiques et les IPP prolongés peuvent également abaisser le **magnésium**, mais celui-ci peut s'accumuler si la fonction rénale est diminuée et réduire l'absorption de certains médicaments (tétracyclines, fluoroquinolones, bisphosphonates et rosuvastatine avec les antiacides au magnésium ; voir les fiches *Vitamines B* et *Magnésium*). Ces situations justifient de demander à votre équipe si un bilan sanguin est pertinent, et non de débuter un complément de votre propre initiative.`,
     },
     {
       headingFr: '5. Plantes médicinales et aliments à surveiller',
@@ -207,6 +217,8 @@ Des zones d'ombre persistent dans la littérature (boissons énergisantes et sti
     'omega-3-huile-de-poisson',
     'coenzyme-q10',
     'vitamine-d-insuffisance-cardiaque',
+    'vitamines-b-insuffisance-cardiaque',
+    'magnesium-insuffisance-cardiaque',
     'poids-obesite-et-denutrition',
     'nutrition-et-complements-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
@@ -231,6 +243,10 @@ Des zones d'ombre persistent dans la littérature (boissons énergisantes et sti
     {
       label: 'Revues, essais et méta-analyses (Cochrane 2022, Khan 2021 texte intégral, An 2022, Gencer 2021, Javaid 2024, Chua 2025, QUEST 2024)',
       detail: 'Données pharmacocinétiques et cliniques sur les substituts de sel, vitamines, ginseng, danshen, thé vert, formules de phytothérapie chinoise et risque hémorragique.',
+    },
+    {
+      label: 'Recommandations ESPEN 2022, essai NORVIT (2006) et revue Cochrane (2017)',
+      detail: 'Déplétion en thiamine (diurétiques) et en B12 (metformine, IPP), neurotoxicité de la vitamine B6 à forte dose, et absence de bénéfice (voire tendance défavorable post-infarctus) des complexes B9 + B12 + B6.',
     },
   ],
   disclaimerType: 'medical',

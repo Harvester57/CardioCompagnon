@@ -131,6 +131,7 @@ export const article: WikiArticle = {
     },
   ],
   relatedArticleSlugs: [
+    'medicaments-glp1-et-incretines',
     'comprendre-le-diagnostic',
     'medicaments-insuffisance-cardiaque',
     'fraction-dejection',

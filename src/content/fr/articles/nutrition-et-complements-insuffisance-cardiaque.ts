@@ -18,6 +18,8 @@ export const article: WikiArticle = {
     'coenzyme-q10',
     'oméga-3',
     'vitamine-d',
+    'vitamines-b',
+    'magnésium',
     'interactions',
     'synthèse',
   ],
@@ -30,7 +32,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "L'alimentation et les compléments alimentaires ne peuvent pas remplacer le traitement de fond. Les quatre piliers médicamenteux réduisent, d'après les modélisations, les décès cardiovasculaires ou les hospitalisations pour insuffisance cardiaque d'environ 60 % par rapport à l'ancienne bithérapie : aucun complément n'approche cet effet. Quatre sujets méritent toutefois d'être abordés avec votre équipe de cardiologie : un bilan martial (le fer intraveineux, en cas de carence, diminue les hospitalisations et améliore les symptômes, contrairement aux comprimés), une alimentation de type méditerranéen pour protéger les artères coronaires, une consommation modérée de sel sans restriction extrême (et des apports hydriques guidés par la soif sauf consigne contraire de l'équipe), et la surveillance de toute perte de poids involontaire. Les oméga-3 et la coenzyme Q10 relèvent du « possible, à discuter d'abord ». La plupart des vitamines (dont la vitamine D hors carence avérée) n'apportent aucun bénéfice cardiaque, et plusieurs produits en vente libre sont à éviter avec les médicaments de l'insuffisance cardiaque. Quinze textes intégraux supplémentaires analysés en novembre 2026 ne modifient aucun de ces verdicts.",
+    "L'alimentation et les compléments alimentaires ne peuvent pas remplacer le traitement de fond. Les quatre piliers médicamenteux réduisent, d'après les modélisations, les décès cardiovasculaires ou les hospitalisations pour insuffisance cardiaque d'environ 60 % par rapport à l'ancienne bithérapie : aucun complément n'approche cet effet. Quatre sujets méritent toutefois d'être abordés avec votre équipe de cardiologie : un bilan martial (le fer intraveineux, en cas de carence, diminue les hospitalisations et améliore les symptômes, contrairement aux comprimés, y compris les formes dites « mieux absorbées »), une alimentation de type méditerranéen pour protéger les artères coronaires, une consommation modérée de sel sans restriction extrême (et des apports hydriques guidés par la soif sauf consigne contraire de l'équipe), et la surveillance de toute perte de poids involontaire. Les oméga-3 et la coenzyme Q10 relèvent du « possible, à discuter d'abord ». La plupart des vitamines et minéraux (vitamine D, vitamines B et magnésium hors carence avérée) n'apportent aucun bénéfice cardiaque démontré, et plusieurs produits en vente libre — dont la triple association acide folique + B12 + B6 après un infarctus et la vitamine B6 à forte dose — sont à éviter sans avis médical. Quinze textes intégraux supplémentaires et cinq sources cliniques sur les vitamines B analysés en novembre 2026 ne modifient aucun de ces verdicts.",
   sections: [
     {
       headingFr: "L'essentiel en un coup d'œil",
@@ -45,10 +47,12 @@ export const article: WikiArticle = {
 | **À aborder avec l'équipe** | Dépistage nutritionnel si le poids ou l'appétit baisse | Soutien nutritionnel chez des patients hospitalisés à risque (âge médian 79 ans ; peu de FEVG réduites) : mortalité à 30 jours réduite de 14,8 % à 8,4 %, sans baisse des réadmissions (EFFORT) |
 | **Possible, priorité faible** | Oméga-3, environ 1 g/j de qualité pharmaceutique | Petite baisse de mortalité (NNT 56 sur 4 ans) avant les traitements modernes (GISSI-HF) ; risque de fibrillation atriale dépendant de la dose (dans GISSI-HF, FA 11,2 % contre 9,8 %, non significatif) |
 | **Possible, priorité faible** | Coenzyme Q10 | Un petit essai (Q-SYMBIO, environ 70 % ischémique) a divisé par deux les événements majeurs ; arrêté précocement, financé en partie par l'industrie, jamais répliqué ; aucune recommandation officielle |
-| **Non étayé** | Fer par voie orale (comprimés) | Aucun bénéfice dans l'essai IRONOUT-HF |
+| **Non étayé** | Fer par voie orale (comprimés), y compris les formes « mieux absorbées » (Ferrochel / bisglycinate, sucrosomial, maltol ferrique) | Aucun bénéfice dans l'essai IRONOUT-HF ; les formes plus récentes n'ont pas été testées dans de véritables essais randomisés dans l'insuffisance cardiaque |
 | **Non étayé** | Multivitamines, vitamines C et D, sélénium, antioxydants | Aucun bénéfice cardiovasculaire dans les grandes méta-analyses ; la vitamine D a raccourci la distance de marche dans les essais IC |
-| **Non étayé** | Thiamine (vitamine B1), L-carnitine (hors carence avérée) | Signaux limités à la FEVG (critère intermédiaire), non confirmés par les analyses ultérieures |
+| **Non étayé** | Thiamine (vitamine B1), L-carnitine (hors carence avérée) ; acide folique, B12 et B6 « pour le cœur » | Thiamine : aucun gain de FEVG dans 7 essais randomisés (He 2024), dosage à discuter sous diurétiques de l'anse au long cours ; vitamines B abaissant l'homocystéine : pas moins d'infarctus ni de décès, signal possible de nocivité de la triple association après infarctus |
+| **Non étayé** | Compléments de magnésium, toute forme (hors carence avérée) | Un seul minuscule essai non répliqué sur l'orotate (MACH) ; chez 6 147 patients ICFER ambulatoires, un magnésium bas ne prédisait pas de moins bon pronostic, contrairement à un taux élevé ; chez des vétérans américains, supplémenter un taux bas était associé à un peu moins d'événements mais supplémenter un taux normal à davantage (données observationnelles) : doser d'abord ; prudence en cas d'insuffisance rénale |
 | **Non étayé** | Ginseng | Aucun bénéfice prouvé seul ; effet imprévisible sur la warfarine ; peut fausser certains dosages de digoxine |
+| **À éviter** | Acide folique + B12 + B6 pris ensemble en automédication après un infarctus ; vitamine B6 à forte dose | Tendance à davantage d'événements cardiaques dans NORVIT (RR 1,22) ; risque d'atteinte nerveuse (neuropathie) en cas de fortes doses prolongées de vitamine B6 |
 | **À éviter** | Substituts de sel au potassium et comprimés de potassium (hors prescription) | Augmentent la kaliémie avec les ARNI, IEC, ARA2 et ARM |
 | **À éviter** | Antalgiques AINS en vente libre (ibuprofène, kétoprofène, naproxène, diclofénac) | Risque d'atteinte rénale et de rétention hydrosodée avec les médicaments de l'insuffisance cardiaque |
 | **À éviter** | Vitamine E, bêta-carotène, calcium + vitamine D en automédication (hors prescription) | Signaux d'effets délétères |
@@ -80,8 +84,8 @@ export const article: WikiArticle = {
   - la mise en garde contre les AINS s'applique à tous les traitements de l'insuffisance cardiaque : les recommandations ESC 2026 classent les AINS et inhibiteurs de la COX-2 comme **non recommandés** (Classe III, niveau B2).`,
     },
     {
-      headingFr: 'Ce qu’ajoutent les 15 nouveaux textes intégraux (novembre 2026)',
-      bodyMarkdownFr: `Quinze textes intégraux supplémentaires sur l'alimentation, l'obésité, la dénutrition et les compléments ont été analysés le 25 novembre 2026. **Aucun ne modifie les verdicts du tableau ci-dessus.** Il s'agit majoritairement de revues, d'enquêtes ou de petites études observationnelles, dont plusieurs ne concernent pas l'ICFER.
+      headingFr: 'Ce qu’ajoutent les nouveaux textes intégraux et les sources sur les vitamines B (novembre 2026)',
+      bodyMarkdownFr: `Quinze textes intégraux supplémentaires sur l'alimentation, l'obésité, la dénutrition et les compléments, ainsi que cinq sources cliniques sur les vitamines B, ont été analysés le 25 novembre 2026. **Aucun ne modifie les verdicts du tableau ci-dessus.** Il s'agit majoritairement de revues, d'enquêtes ou de petites études observationnelles, dont plusieurs ne concernent pas l'ICFER.
 
 ### Modèles alimentaires
 - **Revue parapluie sur le régime méditerranéen (Hareer 2024) :** les AVC étaient régulièrement réduits, mais la baisse de mortalité chez les patients cardiaques repose sur très peu d'essais avec une certitude faible. La baisse de 70 % des événements d'IC (**RR 0,30**) provient de deux essais anciens chez des personnes majoritairement indemnes d'IC au départ. Il n'existe toujours aucun essai randomisé de modèle alimentaire dans l'ICFER établie.
@@ -108,7 +112,12 @@ export const article: WikiArticle = {
   - **Tai Chi :** moins d'hospitalisations (**RR 0,47** ; IC 95 % 0,25–0,88) dans trois petits essais sans problème de sécurité signalé — activité douce à discuter avec votre équipe (voir la fiche réadaptation cardiaque et activité physique) ;
   - **Phytothérapie chinoise :** majoritairement de petits essais chinois de faible qualité ; un produit sur prescription en Chine (*Qishen Yiqi*) présentait un signal de mortalité de certitude modérée, mais les effets indésirables et interactions sont mal documentés (toujours vérifier avec l'équipe et le pharmacien).
 - **Vitamine D (Kampka 2025 ; Hung 2023) :** carence fréquente dans l'ICFER (56 à 83 %), mais aucun essai randomisé ne montre moins de décès ou d'hospitalisations ; la revue de 2025 conseille de corriger une carence avérée et non de supplémenter systématiquement. L'enquête transversale américaine NHANES (OR ajusté 1,48 sous 30 nmol/L) ne prouve pas la causalité et ne comporte ni données spécifiques IC ni données de traitement.
-- **Vitamines B (Boitard 2025) :** étude chez la souris mâle (cocktail vitamines B + nicotinamide riboside dans un modèle non ischémique de surcharge de pression) ; aucune donnée humaine, aucune raison de prendre ces compléments.`,
+- **Vitamines B chez la souris (Boitard 2025) :** étude chez la souris mâle (cocktail vitamines B + nicotinamide riboside dans un modèle non ischémique de surcharge de pression) ; aucune donnée humaine, aucune raison de prendre ces compléments.
+- **Vitamines B chez l'être humain (recherches du 25 novembre 2026 ; détail dans la fiche dédiée aux vitamines B) :**
+  - **Thiamine (vitamine B1) :** 7 petits essais randomisés (274 patients) n'ont montré aucun gain de FEVG (**+1,65 point**, non significatif). Les diurétiques de l'anse au long cours peuvent l'épuiser, et la recommandation **ESPEN 2022** indique qu'un dosage sanguin *peut* être réalisé dans les cardiomyopathies sous diurétiques prolongés (recommandation faible ; **He 2024** ; **ESPEN 2022**).
+  - **Acide folique, vitamine B12 et vitamine B6 :** abaissent l'homocystéine sans prévenir les infarctus ni les décès (**Cochrane 2017**, 15 essais randomisés, 71 422 personnes) ; après un infarctus, la triple association montrait une tendance défavorable (**NORVIT 2006**, **RR 1,22** ; IC 95 % 1,00–1,50).
+  - **Vitamine B12 :** mérite d'être dosée en cas de traitement prolongé par metformine ou antiacides (IPP ou anti-H2) (**ESPEN 2022**).
+  - **NAD+ intraveineux (dérivé de la vitamine B3) :** a augmenté la FEVG d'environ 2 points de plus que le placebo à 1 mois chez 180 patients chinois atteints de cardiomyopathie ischémique, sans bénéfice clinique significatif ; il s'agit d'une perfusion hospitalière et non d'un complément alimentaire (**Yu 2025**).`,
     },
     {
       headingFr: 'Les points de divergence entre les sources',
@@ -136,8 +145,11 @@ Aucun de ces repères généraux ne constitue un objectif personnalisé : vos ci
     'omega-3-huile-de-poisson',
     'coenzyme-q10',
     'vitamine-d-insuffisance-cardiaque',
+    'vitamines-b-insuffisance-cardiaque',
+    'magnesium-insuffisance-cardiaque',
     'interactions-complements-aliments-medicaments',
     'carence-martiale-et-fer-iv',
+    'fer-oral-haute-biodisponibilite',
     'medicaments-insuffisance-cardiaque',
     'maladies-associees',
     'readaptation-cardiaque-et-activite-physique',
@@ -161,6 +173,10 @@ Aucun de ces repères généraux ne constitue un objectif personnalisé : vos ci
     {
       label: 'Textes intégraux nutrition, obésité et compléments (novembre 2026)',
       detail: 'Hareer 2024, Schwingshackl 2026, Lai 2025, Folta 2026, Rutters 2024, Qiu 2025, Moseley 2025, Kinugasa 2022, Kitao 2025, Chua 2025, Kampka 2025, Hung 2023, Boitard 2025.',
+    },
+    {
+      label: 'Sources cliniques vitamines B (novembre 2026)',
+      detail: 'He 2024 (méta-analyse thiamine dans l’IC), recommandation micronutriments ESPEN 2022, revue Cochrane 2017 (homocystéine), NORVIT 2006 (post-infarctus) et essai Yu 2025 (NAD+ intraveineux).',
     },
     {
       label: 'Notices réglementaires et monographies européennes (EMA / EFSA)',

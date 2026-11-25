@@ -87,7 +87,7 @@ Ces grands essais montrent que la vitamine D ne prévient pas les maladies cardi
     },
     {
       headingFr: 'Autres vitamines : ce qu’ajoutent les études récentes',
-      bodyMarkdownFr: `- **Vitamines du groupe B :** une étude chez la souris de 2025 (**Boitard 2025**) a observé qu'un mélange de nicotinamide riboside, de folates et de vitamine B12 dans l'alimentation ralentissait l'affaiblissement cardiaque chez des souris mâles soumises à une surcharge de pression (modèle non ischémique). Il ne s'agit **pas d'une preuve chez l'être humain** : aucune donnée clinique n'existe et les auteurs précisent que cette combinaison n'a jamais été testée dans l'ICFER.
+      bodyMarkdownFr: `- **Vitamines du groupe B :** une étude chez la souris de 2025 (**Boitard 2025**) a observé qu'un mélange de nicotinamide riboside, de folates et de vitamine B12 dans l'alimentation ralentissait l'affaiblissement cardiaque chez des souris mâles soumises à une surcharge de pression (modèle non ischémique). Il ne s'agit **pas d'une preuve chez l'être humain** : aucune donnée clinique n'existe et les auteurs précisent que cette combinaison n'a jamais été testée dans l'ICFER. Les données d'essais cliniques chez l'être humain portant sur la thiamine (B1), l'acide folique (B9), la vitamine B12, la vitamine B6 et le NAD+ sont détaillées dans la fiche consacrée aux **vitamines B dans l'insuffisance cardiaque**.
 - **Alimentation « antioxydante » :** une enquête transversale américaine de 2025 portant sur 7 022 adultes hypertendus (**Qiu 2025**, NHANES) a associé un score plus favorable de « balance oxydative » (alimentation et mode de vie) à une moindre fréquence d'insuffisance cardiaque autodéclarée (quartile supérieur contre inférieur : **OR 0,56**). Le score était largement tiré par la consommation d'alcool et le poids, sans ajustement sur les médicaments et sans étude de compléments : cela ne justifie en rien les compléments antioxydants, qui ont échoué dans les essais randomisés (**An 2022**).`,
     },
     {
@@ -99,6 +99,8 @@ Ces grands essais montrent que la vitamine D ne prévient pas les maladies cardi
     },
   ],
   relatedArticleSlugs: [
+    'magnesium-insuffisance-cardiaque',
+    'vitamines-b-insuffisance-cardiaque',
     'nutrition-et-complements-insuffisance-cardiaque',
     'coenzyme-q10',
     'omega-3-huile-de-poisson',

@@ -112,6 +112,7 @@ Pour l'ampleur du bénéfice des traitements modernes, voir *Les médicaments de
     'thrombus-vg-et-anticoagulants',
     'confirmer-la-cause-dysfonction-vg',
     'dysfonction-vg-asymptomatique-stade-b',
+    'cellules-souches-et-therapies-regeneratives',
     'dispositifs-cardiaques-dai-crt',
     'medicaments-insuffisance-cardiaque',
   ],

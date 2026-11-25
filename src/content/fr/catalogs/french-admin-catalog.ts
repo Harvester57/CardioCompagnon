@@ -27,7 +27,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.has-sante.fr/jcms/fc_2875171/fr/resultat-de-recherche?text=ALD+5+insuffisance+cardiaque',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {
@@ -35,12 +35,12 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
     titleFr: 'Réadaptation cardiaque en SMR cardiovasculaire',
     category: 'parcours_soins',
     summaryFr:
-      "La réadaptation cardiaque (ESC 2026 Classe I) se déroule en service de SMR (ex-SSR) mention cardiovasculaire, en hospitalisation complète ou en hôpital de jour. Elle associe réentraînement physique supervisé, éducation thérapeutique (ETP), suivi diététique et psychologique, et préparation à la reprise du travail. Aucune entente préalable n'est nécessaire et les séances sont prises en charge à 100 % par l'Assurance Maladie.",
+      "La réadaptation cardiaque (ESC 2026 Classe I, GERS-P/SFC 2023 Classe I grade A) se déroule en service de SMR (ex-SSR) mention cardiovasculaire, en hospitalisation complète ou en hôpital de jour (au moins 20 séances combinant endurance aérobie, renforcement musculaire encadré et entraînement inspiratoire). Elle inclut aussi l'éducation thérapeutique (ETP), le suivi diététique et psychologique et la préparation à la reprise du travail. Aucune entente préalable n'est nécessaire et les séances sont prises en charge à 100 % par l'Assurance Maladie.",
     stepsFr: [
       'Demander une prescription de réadaptation cardiaque à la sortie d’hospitalisation, ou directement à votre cardiologue de ville ou à votre médecin traitant.',
-      'Choisir avec votre médecin le centre SMR cardiovasculaire adapté (hôpital de jour si vous habitez à proximité, ou séjour complet).',
+      'Choisir avec votre médecin le centre SMR cardiovasculaire adapté (hôpital de jour si vous habitez à proximité, ou séjour complet, recommandé d’emblée en classe NYHA IIIb selon le GERS-P).',
       'Transmettre le dossier médical au centre SMR choisi (aucune demande d’accord préalable CPAM n’est requise).',
-      'Suivre l’ensemble du programme (exercice, ETP, optimisation des traitements) et planifier le relais d’activité physique après la sortie.',
+      'Suivre l’ensemble du programme (endurance, renforcement musculaire encadré, ETP, optimisation des traitements) puis organiser avec votre équipe le relais d’activité physique après la sortie (au moins 3 séances/semaine selon la HAS 2022, en validant les charges adaptées).',
     ],
     officialLinks: [
       {
@@ -52,7 +52,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.ameli.fr/assure/sante/themes/insuffisance-cardiaque',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'readaptation-cardiaque-et-activite-physique',
   },
   {
@@ -73,7 +73,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.ameli.fr/assure/droits-demarches/maladie-accident-hospitalisation/hospitalisation/prado-retour-domicile',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {
@@ -81,12 +81,12 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
     titleFr: 'Télésurveillance médicale de l’insuffisance cardiaque',
     category: 'parcours_soins',
     summaryFr:
-      "Remboursée en France depuis juillet 2023 selon le référentiel HAS, la télésurveillance permet de transmettre régulièrement votre poids et vos symptômes à une équipe de suivi qui repère les signes précoces de décompensation. Elle s'adresse notamment aux patients sortant d'une hospitalisation récente pour insuffisance cardiaque ou en classe NYHA II ou plus avec NT-proBNP élevé. Elle ne remplace jamais les appels d'urgence.",
+      "Remboursée en droit commun depuis le 1er juillet 2023 selon le référentiel HAS (60 %, ou 100 % en ALD exonérante, sans dépassement d'honoraires sur le forfait opérateur), la télésurveillance permet de transmettre votre poids quotidien et vos symptômes à une équipe de suivi. Elle s'adresse aux patients ayant eu une hospitalisation pour IC dans les 12 derniers mois ou en classe NYHA II ou plus avec BNP > 100 pg/mL ou NT-proBNP > 1 000 pg/mL. Elle ne remplace jamais les appels d'urgence.",
     stepsFr: [
       'Demander à votre cardiologue si vous remplissez les critères d’éligibilité HAS à la télésurveillance de l’insuffisance cardiaque.',
-      'Donner votre consentement et recevoir la prescription médicale pour une solution de télésurveillance référencée.',
-      'Installer la balance connectée ou l’application dédiée et transmettre vos mesures selon le rythme convenu avec l’équipe infirmière.',
-      'Conserver les numéros d’urgence (15 / SAMU, 112) : les alertes de télésurveillance ne sont pas traitées en temps réel.',
+      'Donner votre consentement et recevoir la prescription médicale (initialement pour 6 mois renouvelables) pour une solution de télésurveillance référencée.',
+      'Installer la balance connectée ou l’application dédiée et transmettre vos mesures selon le rythme convenu avec l’équipe infirmière (les alertes sont analysées au moins deux fois par semaine).',
+      'Conserver les numéros d’urgence (15 / SAMU, 112, 114 par SMS) : les alertes de télésurveillance ne sont pas traitées en temps réel.',
     ],
     officialLinks: [
       {
@@ -98,7 +98,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.ameli.fr/assure/remboursements/rembourse/telesurveillance-medicale',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'telesurveillance-insuffisance-cardiaque',
   },
   {
@@ -127,7 +127,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.ameli.fr/assure/remboursements/indemnites-journalieres-maladie-maternite-paternite/arret-maladie-salarie',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {
@@ -152,7 +152,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.service-public.fr/particuliers/vosdroits/F144',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {
@@ -181,7 +181,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.service-public.fr/particuliers/vosdroits/F12788',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {
@@ -202,7 +202,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.service-public.fr/particuliers/vosdroits/F1650',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {
@@ -227,7 +227,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.ameli.fr/assure/droits-demarches/invalidite-handicap/invalidite',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {
@@ -252,7 +252,7 @@ export const FRENCH_ADMIN_CATALOG: FrenchAdminCatalogItem[] = [
         url: 'https://www.aeras-infos.fr/',
       },
     ],
-    asOf: '2026-11-24',
+    asOf: '2026-11-25',
     articleSlug: 'vivre-avec-insuffisance-cardiaque-en-france',
   },
   {

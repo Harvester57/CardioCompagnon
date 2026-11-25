@@ -104,6 +104,19 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     relevantModules: ['core'],
     triggeredByRules: ['IRON_DEFICIENCY_CHECK'],
   },
+  {
+    id: 'q_iron_high_bioavail_oral',
+    interlocutor: 'cardiologist',
+    topicFr: 'Carence en fer : fer oral « haute biodisponibilité »',
+    questionFr:
+      'On me propose un fer oral « mieux absorbé » (bisglycinate ferreux / Ferrochel, fer sucrosomial, maltol ferrique, fer héminique ou lactoferrine) à la place du fer intraveineux : est-ce une alternative démontrée dans mon ICFER ?',
+    whyItMattersFr:
+      "Aucun essai randomisé publié dans l'ICFER n'a validé le bisglycinate ferreux (Ferrochel) ou ces formes récentes ; en cas d'hepcidine élevée, le blocage de la ferroportine limite la recharge des réserves par voie orale. Le fer intraveineux reste la seule voie étayée par les essais et l'ESC 2026.",
+    sources: ['IRONOUT-HF (2017)', 'ORION-HF (2025)', 'AEGIS-H2H (2021)', 'ESC 2026'],
+    articleSlug: 'fer-oral-haute-biodisponibilite',
+    relevantModules: ['core'],
+    triggeredByRules: ['IRON_DEFICIENCY_CHECK'],
+  },
 
   // --- Dispositifs (DAI / CRT) ---
   {
@@ -652,13 +665,50 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
   {
     id: 'q_diet_bmi_waist_glp1',
     interlocutor: 'cardiologist',
-    topicFr: 'Poids, obésité et traitements',
+    topicFr: 'Poids, obésité et traitements (GLP-1 / incrétines)',
     questionFr:
-      "Mon poids doit-il être jugé sur l'IMC seul ou aussi sur le tour de taille ? En cas d'obésité, un traitement de perte de poids comme le sémaglutide ou le tirzépatide aiderait-il ou nuirait-il à mon cœur ?",
+      "Mon poids doit-il être jugé sur l'IMC seul ou aussi sur le tour de taille ? En cas d'obésité, un traitement comme le sémaglutide (Wegovy, Ozempic, Rybelsus) ou le tirzépatide (Mounjaro) aiderait-il ou nuirait-il à mon cœur ?",
     whyItMattersFr:
-      "La HFA 2025 propose d'ajouter le rapport tour de taille / taille à l'IMC. Les bénéfices cardiaques de ces molécules ne sont prouvés que dans l'IC à FEVG préservée (SUMMIT : HR 0,62) ; dans l'ICFER, les données sont limitées et mitigées (LIVE : 12 événements cardiaques graves contre 3 sous liraglutide) et leur sécurité reste débattue.",
-    sources: ['Déclaration HFA obésité (2025)'],
-    articleSlug: 'poids-obesite-et-denutrition',
+      "La HFA 2025 propose d'ajouter le rapport tour de taille / taille à l'IMC. Les bénéfices cardiaques de ces molécules ne sont prouvés que dans l'IC à FEVG préservée (SUMMIT : HR 0,62) ; dans l'ICFER, les données sont limitées et mitigées (LIVE : 12 événements cardiaques graves contre 3 sous liraglutide ; SOUL : chez 592 patients diabétiques avec ICFER, le sémaglutide oral n'a pas modifié les événements d'IC, HR 0,98) et leur sécurité reste débattue.",
+    sources: ['Déclaration HFA obésité (2025)', 'SOUL (JAMA Intern Med 2026)'],
+    articleSlug: 'medicaments-glp1-et-incretines',
+    relevantModules: ['core', 'diabetes'],
+  },
+  {
+    id: 'q_glp1_hr_rhythm_device',
+    interlocutor: 'cardiologist',
+    topicFr: 'Incrétines (GLP-1) et rythme cardiaque',
+    questionFr:
+      "Si un médicament de type GLP-1 ou incrétine était instauré, comment ma fréquence cardiaque et mon rythme seraient-ils surveillés, et les données de mon dispositif implanté seraient-elles contrôlées ?",
+    whyItMattersFr:
+      "Le RCP de Wegovy (sémaglutide) rapporte une hausse moyenne de 3 bpm (et ≥ 10 bpm à un moment donné chez deux tiers des patients), et une petite étude observationnelle chez des patients avec ICFER porteurs de prothèse implantée (Marques 2025) a relevé +7 bpm et davantage d'événements ventriculaires non soutenus et de thérapies cumulés (33 contre 3 ; applicabilité partielle).",
+    sources: ['RCP européen Wegovy (2026)', 'Marques (2025)'],
+    articleSlug: 'medicaments-glp1-et-incretines',
+    relevantModules: ['core', 'diabetes', 'device'],
+  },
+  {
+    id: 'q_glp1_gi_sick_days',
+    interlocutor: 'gp',
+    topicFr: 'Incrétines (GLP-1) et déshydratation',
+    questionFr:
+      'Que dois-je faire de mon diurétique et de mes autres médicaments cardiaques les jours de vomissements ou de diarrhée (notamment sous traitement par GLP-1) ?',
+    whyItMattersFr:
+      "Le RCP de Wegovy avertit que les effets digestifs peuvent entraîner une déshydratation et, plus rarement, une altération de la fonction rénale ; les diurétiques et les iSGLT2 augmentent également les pertes hydriques.",
+    sources: ['RCP européen Wegovy (2026)'],
+    articleSlug: 'medicaments-glp1-et-incretines',
+    relevantModules: ['core', 'diabetes', 'ckd'],
+    triggeredByRules: ['SGLT2_KETO_REMINDER'],
+  },
+  {
+    id: 'q_glp1_retatrutide_trials',
+    interlocutor: 'cardiologist',
+    topicFr: 'Nouvelles incrétines (rétatrutide) et essais',
+    questionFr:
+      "Y a-t-il lieu d'attendre des données dans l'insuffisance cardiaque avant d'envisager des molécules plus récentes comme le rétatrutide (retatrutide), et serais-je éligible à un essai clinique ?",
+    whyItMattersFr:
+      "Le rétatrutide a entraîné environ 25 % de perte de poids dans TRIUMPH-1, mais aucun résultat n'est disponible dans l'ICFER, les événements cardiaques de TRIUMPH-3 étaient non concluants, et aucun essai d'événements cliniques dédié à l'ICFER n'a été recensé sur ClinicalTrials.gov.",
+    sources: ['Programme TRIUMPH (2026)', 'Registre ClinicalTrials.gov (novembre 2026)'],
+    articleSlug: 'medicaments-glp1-et-incretines',
     relevantModules: ['core', 'diabetes'],
   },
   {
@@ -685,6 +735,31 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     sources: ['Kampka (2025)', 'Chua (2025)'],
     articleSlug: 'vitamine-d-insuffisance-cardiaque',
     relevantModules: ['core'],
+  },
+  {
+    id: 'q_diet_b_vitamins_thiamine_b12',
+    interlocutor: 'gp',
+    topicFr: 'Vitamines B (thiamine B1, B12, B6/B9)',
+    questionFr:
+      "Je prends un diurétique de l'anse (furosémide / Lasilix ou bumétanide / Burinex) au long cours, et/ou de la metformine ou un IPP : faut-il doser ma thiamine (vitamine B1) ou ma vitamine B12, et mon complexe de vitamines B vaut-il la peine d'être poursuivi ?",
+    whyItMattersFr:
+      "Les diurétiques de l'anse peuvent appauvrir en thiamine (ESPEN 2022 autorise son dosage en cas de diurétique prolongé) et metformine/IPP exposent au déficit en B12 ; mais la thiamine en comprimés n'a pas amélioré la FEVG sur 7 essais (He 2024) et le trio acide folique + B12 + B6 n'a pas prévenu les événements cardiaques, avec un possible signal défavorable post-infarctus (Cochrane 2017 ; NORVIT).",
+    sources: ['ESPEN (2022)', 'He (2024)', 'Cochrane (2017)', 'NORVIT (2006)'],
+    articleSlug: 'vitamines-b-insuffisance-cardiaque',
+    relevantModules: ['core', 'diabetes'],
+  },
+  {
+    id: 'q_diet_magnesium_testing_safety',
+    interlocutor: 'pharmacist',
+    topicFr: 'Magnésium, reins et interactions',
+    questionFr:
+      "Avec mon diurétique ou mon IPP au long cours, mon taux de magnésium doit-il être dosé avant tout complément, et une forme précise (ou un produit magnésium + vitamine B6 comme Magné B6) est-elle sûre avec mes reins et mes médicaments ?",
+    whyItMattersFr:
+      "Aucun essai solide ne montre de bénéfice cardiaque du magnésium en routine ; dans GALACTIC-HF, c'est un magnésium élevé qui prédisait plus d'événements, et dans Yin (2026) la supplémentation s'associait à un moindre risque seulement si le taux était bas (HR 0,91) et à plus d'événements s'il était normal (HR 1,11). Le magnésium s'accumule en cas d'insuffisance rénale (< 30 mL/min), interagit avec certains médicaments (rosuvastatine avec antiacides) et les associations avec B6 peuvent dépasser la limite UE de 12 mg/j de B6.",
+    sources: ['GALACTIC-HF (2026)', 'Yin (2026)', 'EFSA / NIH ODS'],
+    articleSlug: 'magnesium-insuffisance-cardiaque',
+    relevantModules: ['core', 'ckd'],
+    triggeredByRules: ['CREATININE_JUMP'],
   },
   {
     id: 'q_diet_herbs_taichi',
@@ -792,6 +867,19 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
       'Les programmes encadrés à domicile et en centre obtiennent des résultats comparables sur les hospitalisations et la qualité de vie dans la revue Cochrane 2024.',
     sources: ['Revue Cochrane (2024)', 'ESC 2026'],
     articleSlug: 'readaptation-cardiaque-et-activite-physique',
+    relevantModules: ['core'],
+    triggeredByRules: ['FR_SMR_REHAB'],
+  },
+  {
+    id: 'q_rehab_resistance_vs_aerobic',
+    interlocutor: 'cardiologist',
+    topicFr: 'Réadaptation : renforcement musculaire et endurance',
+    questionFr:
+      "En réadaptation cardiaque, quelle place accorder au renforcement musculaire (poids, élastiques, appareils) par rapport à l'endurance (marche, vélo), et quelles charges sont sûres pour mon cœur ?",
+    whyItMattersFr:
+      "Le renforcement musculaire est sûr dans l'IC stable et améliore force et VO2 pic (+2,6 mL/kg/min), mais ne remplace pas l'endurance, seule modalité ayant un effet constant sur la FEVG et un essai d'événements cliniques (HF-ACTION). Les recommandations (ESC 2026, GERS-P 2023, HAS 2022) associent endurance et renforcement ; faites préciser les charges autorisées par l'équipe de réadaptation.",
+    sources: ['ESC 2026', 'GERS-P/SFC (2023)', 'HAS (2022)', 'HF-ACTION (2009)', 'Terada (2026)', 'SMARTEX-HF (2017)'],
+    articleSlug: 'musculation-vs-endurance-readaptation-cardiaque',
     relevantModules: ['core'],
     triggeredByRules: ['FR_SMR_REHAB'],
   },
@@ -1030,6 +1118,32 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     articleSlug: 'apnee-du-sommeil-insuffisance-cardiaque',
     relevantModules: ['sleepApnoea'],
     triggeredByRules: ['CSA_ASV_CONTRAINDICATION'],
+  },
+
+  // --- Thérapies cellulaires (cellules souches) et essais cliniques en cours ---
+  {
+    id: 'q_trials_stem_cells_clinics',
+    interlocutor: 'cardiologist',
+    topicFr: 'Thérapies cellulaires (cellules souches)',
+    questionFr:
+      "Des thérapies par cellules souches ou patchs de muscle cardiaque sont-elles autorisées en France ou en Europe pour une cardiomyopathie ischémique, et que penser des cliniques proposant des injections payantes ?",
+    whyItMattersFr:
+      "Aucun médicament de thérapie innovante (MTI / ATMP) n'est autorisé pour le cœur dans l'UE (liste EMA juin 2026) ni aux États-Unis (FDA). Les essais contrôlés contre procédure factice (DREAM-HF, CONCERT-HF, CardiAMP-HF) ont été neutres, les patchs iPS (BioVAT-HF, RiHEART) restent très précoces sous immunosuppresseurs, et les cliniques payantes hors essai enregistré exposent à des complications graves.",
+    sources: ['Liste MTI EMA (juin 2026)', 'FDA', 'DREAM-HF (2023)', 'CONCERT-HF (2021)', 'BioVAT-HF (NEJM 2026)'],
+    articleSlug: 'cellules-souches-et-therapies-regeneratives',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_trials_ongoing_eligibility',
+    interlocutor: 'cardiologist',
+    topicFr: 'Essais cliniques en cours',
+    questionFr:
+      "Un essai clinique enregistré (par exemple PROFID-EHRA, STICH3, COLT-HF ou un protocole hospitalier dédié) correspond-il à ma situation, et comment vérifier son cadre officiel ?",
+    whyItMattersFr:
+      "Un essai en cours ne constitue pas une preuve d'efficacité, mais participer à un essai académique enregistré (euclinicaltrials.eu ou ClinicalTrials.gov, toujours gratuit pour le patient) peut être discuté avec votre équipe de cardiologie.",
+    sources: ['Registres ClinicalTrials.gov et EU CTIS (novembre 2026)', 'Protocole PROFID-EHRA (2026)'],
+    articleSlug: 'essais-cliniques-en-cours-et-a-suivre',
+    relevantModules: ['core'],
   },
 
   // --- Démarches pratiques en France et travail ---

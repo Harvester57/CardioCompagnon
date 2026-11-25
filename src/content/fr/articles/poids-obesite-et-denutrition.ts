@@ -36,7 +36,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Dans l'insuffisance cardiaque, le poids doit être surveillé dans les deux sens. L'excès de poids n'est pas protecteur malgré la notion médiatisée de « paradoxe de l'obésité », largement due aux limites de l'IMC : l'adiposité abdominale est au contraire associée à davantage d'hospitalisations. Une perte de poids progressive qui préserve le muscle (déficit calorique modéré, protéines suffisantes et exercice) est raisonnable, mais seuls quelques très petits essais randomisés (14 à 99 patients) l'ont testée dans l'ICFER, sans évaluer décès ni hospitalisations ; elle doit donc être planifiée avec votre équipe. Les traitements injectables récents de l'obésité (sémaglutide, tirzépatide) ont prouvé un bénéfice cardiaque uniquement dans l'IC à FEVG préservée, tandis que leur sécurité reste débattue dans l'ICFER. À l'opposé, perdre du poids sans le vouloir ou perdre l'appétit est un signal d'alerte : dans l'essai EFFORT (patients hospitalisés à risque, âge médian 79 ans, peu de FEVG réduites), un soutien nutritionnel adapté a réduit la mortalité à 30 jours de 14,8 % à 8,4 %. Pour dépister la dénutrition, un court questionnaire (MNA-SF) est plus fiable que le score CONUT, faussé par les statines.",
+    "Dans l'insuffisance cardiaque, le poids doit être surveillé dans les deux sens. L'excès de poids n'est pas protecteur malgré la notion médiatisée de « paradoxe de l'obésité », largement due aux limites de l'IMC : l'adiposité abdominale est au contraire associée à davantage d'hospitalisations. Une perte de poids progressive qui préserve le muscle (déficit calorique modéré, protéines suffisantes et exercice) est raisonnable, mais seuls quelques très petits essais randomisés (14 à 99 patients) l'ont testée dans l'ICFER, sans évaluer décès ni hospitalisations ; elle doit donc être planifiée avec votre équipe. Les traitements récents de l'obésité (sémaglutide, tirzépatide) ont prouvé un bénéfice cardiaque uniquement dans l'IC à FEVG préservée ; dans l'ICFER, leur sécurité reste débattue et le sémaglutide oral s'est révélé neutre dans le sous-groupe ICFER de l'essai SOUL. À l'opposé, perdre du poids sans le vouloir ou perdre l'appétit est un signal d'alerte : dans l'essai EFFORT (patients hospitalisés à risque, âge médian 79 ans, peu de FEVG réduites), un soutien nutritionnel adapté a réduit la mortalité à 30 jours de 14,8 % à 8,4 %. Pour dépister la dénutrition, un court questionnaire (MNA-SF) est plus fiable que le score CONUT, faussé par les statines.",
   sections: [
     {
       headingFr: 'Le « paradoxe de l’obésité » : pourquoi il est trompeur',
@@ -62,10 +62,11 @@ export const article: WikiArticle = {
   - **Essai SELECT (sémaglutide) :** dans la population globale (obésité avec maladie cardiovasculaire, majoritairement sans IC), les événements d'IC ont baissé (**HR 0,82**). Toutefois, dans le **sous-groupe ICFER de SELECT** (1 347 patients, surtout NYHA II, aucun NYHA IV), les événements cardiaques majeurs ont diminué de 35 %, mais **les hospitalisations pour IC seules n'ont pas diminué (HR 1,08, non significatif)**, dans une population moins sévère que celle des essais IC habituels.
   - **Essais positifs dédiés à l'IC (STEP-HFpEF, SUMMIT) :** ils ont porté uniquement sur l'IC à **FEVG préservée** (dans SUMMIT, le tirzépatide a réduit le critère décès CV ou aggravation d'IC, **HR 0,62**).
   - Les agonistes du GLP-1 accélèrent la fréquence cardiaque d'environ **3 à 5 battements par minute** et entraînent davantage de perte musculaire que d'autres méthodes d'amaigrissement. La HFA appelle à des essais cliniques dédiés dans l'ICFER obèse.
+  - **Mise à jour (25 novembre 2026 — essai SOUL) :** chez les **592 patients** atteints de diabète et d'ICFER inclus dans l'essai **SOUL**, le **sémaglutide par voie orale** n'a pas clairement modifié les événements d'insuffisance cardiaque ni les décès cardiovasculaires (**HR 0,98** ; IC 95 % 0,70–1,38), contrairement à ce qui était observé en FEVG préservée (**HR 0,59**). Aucun essai d'événements cliniques portant sur un agoniste du GLP-1 ou une molécule plus récente (y compris le rétatrutide) dans l'ICFER n'a été retrouvé sur ClinicalTrials.gov. Les détails complets (molécules de nouvelle génération, profil de sécurité et accès/remboursement en France) figurent dans la fiche dédiée aux **médicaments GLP-1 et incrétines**.
 
 **Perdre du poids tout en protégeant le muscle (HFA 2025) :**
 - La fonte musculaire touche environ **20 %** des personnes atteintes d'IC chronique (plus marquée dans l'ICFER), exposant à l'**obésité sarcopénique** ; la HFA suggère d'évaluer la fonction musculaire (force de préhension, test du lever de chaise).
-- Un **déficit calorique modéré associé à des apports suffisants en protéines et à l'activité physique** est préférable à toute approche isolée. Le repère souvent cité d'environ **1,2 g de protéines par kg et par jour** provient de l'essai **SECRET** (patients ≥ 60 ans atteints d'**ICFEP** obèse, et non d'ICFER) : c'est un point de repère raisonnable, non une cible validée spécifiquement dans l'ICFER.
+- Un **déficit calorique modéré associé à des apports suffisants en protéines et à l'activité physique** (incluant un renforcement musculaire adapté en complément de l'endurance ; voir la fiche **musculation contre endurance en réadaptation cardiaque**) est préférable à toute approche isolée. Le repère souvent cité d'environ **1,2 g de protéines par kg et par jour** provient de l'essai **SECRET** (patients ≥ 60 ans atteints d'**ICFEP** obèse, et non d'ICFER) : c'est un point de repère raisonnable, non une cible validée spécifiquement dans l'ICFER.
 - Les médicaments de fond de l'IC restent recommandés quel que soit l'IMC (les iSGLT2 induisent eux-mêmes environ 1,5 à 2 kg de baisse pondérale). Les anciens coupe-faim (sibutramine, fenfluramine, phentermine) sont jugés inadaptés dans l'insuffisance cardiaque.
 - **Maintien à long terme (Rutters 2024, hors IC) :** fixation d'objectifs, autosuivi, résolution de problèmes, soutien social, contacts fréquents et plan de maintien aident à tenir, mais la perte nette durable moyenne n'est que de **1 à 3 kg** (reprise partiellement biologique), sans baisse démontrée de la mortalité.
 
@@ -123,17 +124,23 @@ Ces deux situations méritent d'être signalées à votre cardiologue, votre mé
     },
   ],
   relatedArticleSlugs: [
+    'medicaments-glp1-et-incretines',
     'nutrition-et-complements-insuffisance-cardiaque',
     'alimentation-cardioprotectrice',
     'sel-et-liquides-insuffisance-cardiaque',
     'interactions-complements-aliments-medicaments',
     'vivre-avec-insuffisance-cardiaque',
     'readaptation-cardiaque-et-activite-physique',
+    'musculation-vs-endurance-readaptation-cardiaque',
     'apnee-du-sommeil-insuffisance-cardiaque',
     'examens-et-chiffres',
     'maladies-associees',
   ],
   sources: [
+    {
+      label: 'Essai SOUL — analyse insuffisance cardiaque selon la FEVG (JAMA Internal Medicine, 2026, texte intégral)',
+      detail: '592 patients diabétiques avec ICFER sous sémaglutide oral (HR 0,98 ; IC 95 % 0,70–1,38) contre réduction des événements en FEVG préservée (HR 0,59).',
+    },
     {
       label: 'Déclaration d’experts HFA (ESC) 2025 sur l’obésité dans l’IC et Morris & Rider (2025)',
       detail: 'Paradoxe de l’obésité (PARADIGM-HF, MAGGIC, ASIAN-HF), 4 petits essais randomisés dans l’ICFER, débat sur les GLP-1 (FIGHT, LIVE, SELECT ICFER, SUMMIT), préservation musculaire et risques de la chirurgie bariatrique.',

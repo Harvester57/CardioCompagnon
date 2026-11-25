@@ -17,6 +17,10 @@ export const article: WikiArticle = {
     'fevg',
     'dai',
     'crt',
+    'exercice',
+    'renforcement-musculaire',
+    'cellules-souches',
+    'france',
   ],
   aliases: [
     'ESC vs AHA',
@@ -43,7 +47,7 @@ export const article: WikiArticle = {
 | **Ordre d'initiation** | Débuter les quatre précocement | Débuter les quatre tôt, titration en environ 3 mois si possible (parcours ACC 2024) | Aucun ordre fixe ; inutile d'atteindre la dose maximale d'un médicament avant d'ajouter le suivant |
 | **Poursuite après amélioration de la FEVG** | Oui (Classe I) | Oui, même sans symptôme | Non abordé |
 | **Stades A–D** | Adopte les stades A à D de l'AHA/ACC | Stades A (« à risque ») à D | Non utilisés |
-| **Réadaptation cardiaque** | Classe I pour les patients stables | Non détaillé dans les extraits examinés | **Proposer** un programme personnalisé basé sur l'exercice |
+| **Réadaptation cardiaque** | Classe I (B1) pour l'entraînement personnalisé en réadaptation ; Classe I (B2) au long cours hors réadaptation ; Classe IIa (B1) après une décompensation | Non détaillé dans les extraits examinés | **Proposer** un programme personnalisé basé sur l'exercice |
 
 Une FEVG à 35 % est classée « réduite » dans les trois référentiels ; une FEVG à 45 % est « réduite » selon l'ESC 2026 mais « modérément réduite » aux États-Unis et au Royaume-Uni.`,
     },
@@ -146,6 +150,28 @@ Aux États-Unis (2022) : **Classe 1 (B-R)** si FEVG ≤ 35 %, rythme sinusal, BB
 Le principal désaccord porte sur l'ASV : la recommandation cardiologique européenne dit clairement non dans le SACS avec ICFER, tandis que la recommandation américaine de médecine du sommeil (AASM 2025) laisse une place très encadrée en centre expert. Les classes américaines 2022 pour le stade B proviennent des diapositives AHA, non du texte intégral des recommandations.`,
     },
     {
+      headingFr: 'Cellules souches et thérapies régénératives',
+      bodyMarkdownFr: `| Sujet | ESC 2026 | États-Unis 2022 | Autres référentiels |
+|---|---|---|---|
+| **Thérapie cellulaire, cellules souches, régénérative ou génique dans l'IC** | Non mentionnée (texte intégral et liste des lacunes de preuves vérifiés) | Non mentionnée (texte intégral et tableau des lacunes vérifiés) | ESC 2021 : non mentionnée ; document de position du groupe de travail ESC 2016 : stade expérimental (résumé seul) |
+
+Les trois référentiels gardent le silence : aucun ne recommande ces traitements et aucun ne les déconseille explicitement. Au 25 novembre 2026, aucune thérapie cellulaire ou génique cardiaque n'est autorisée dans l'Union européenne (liste EMA des médicaments de thérapie innovante, juin 2026).`,
+    },
+    {
+      headingFr: "Type d'exercice : endurance, renforcement musculaire ou les deux ?",
+      bodyMarkdownFr: `Aucune recommandation n'affirme que la musculation surpasse l'endurance aérobie. Toutes traitent l'endurance (exercice aérobie) comme le socle et ajoutent le renforcement musculaire en complément, ou utilisent le renforcement comme première étape chez les patients très affaiblis ou déconditionnés.
+
+| Sujet | ESC 2026 (IC) | ESC 2020 (cardiologie du sport) | Prise de position AHA 2023 (États-Unis) | France : GERS-P/SFC 2023 et HAS 2022 |
+|---|---|---|---|---|
+| **Réadaptation / entraînement** | Classe I (B1) en réadaptation ; Classe I (B2) au long cours | Réadaptation pour toute ICFER stable : Classe I (A) | Combiné à l'endurance aérobie dans l'IC stable | GERS-P : réadaptation dans l'ICFER Classe I, grade A |
+| **Types d'exercice** | Aérobie, renforcement musculaire et entraînement des muscles inspiratoires, prescrits selon le principe FITT ; aucun classement hiérarchique ; doses détaillées dans le supplément S8.4 (non consulté) | Le renforcement musculaire complète l'endurance aérobie sans la remplacer | Renforcement lorsque l'aérobie n'est pas réalisable, ou en première étape si déconditionnement ; sinon combiné | L'endurance est le socle (3 à 6 séances/semaine) ; ajouter le renforcement 2 à 3 fois/semaine et l'entraînement des muscles respiratoires (GERS-P) ; associer endurance et renforcement (HAS) |
+| **Intensité du renforcement** | Non précisée dans le texte principal | Charge permettant 10 à 15 répétitions autour d'une perception Borg 15 | Débuter à 40–60 % du maximum (1RM), 8 à 12 répétitions, ≥ 2 jours/semaine ; au-delà de 80 % uniquement après environ 6 mois | 30–70 % de 1RM pour les bras, 40–80 % pour les jambes, en débutant à 10–15 répétitions (GERS-P) |
+| **Entraînement par intervalles (fractionné)** | Non abordé dans le texte principal | Classe IIb (C) uniquement chez des patients à faible risque reprenant le sport | — | Endurance par intervalles en option, « particulièrement utile » chez les plus déconditionnés ; aucune différence pronostique démontrée face au continu à ce jour (GERS-P) |
+| **Précautions** | Débuter uniquement en phase stable sous traitement de fond ; contre-indications habituelles | Petits groupes musculaires dans l'IC avancée ; sports de force et d'endurance de haute intensité non recommandés (Classe III) | Bilan préalable identique à la réadaptation aérobie ; précautions liées aux dispositifs implantables et à la sternotomie | La HAS range l'activité intense, « la musculation » (terme non défini), la plongée et le sport de compétition parmi les contre-indications dans l'IC chronique |
+
+La mention par la HAS de « la musculation » à côté de sa propre recommandation de « renforcement musculaire » n'est pas explicitée dans le texte ; l'interpréter comme la musculation sportive ou en salle à charges lourdes relève d'une lecture contextuelle, et cette formulation entre en tension avec les charges des membres inférieurs allant jusqu'à 80 % de 1RM citées par le GERS-P.`,
+    },
+    {
       headingFr: 'Existe-t-il des textes plus récents ?',
       bodyMarkdownFr: `- **États-Unis :** aucune nouvelle recommandation ni mise à jour ciblée sur l'insuffisance cardiaque n'a été publiée depuis 2022 à la date de novembre 2026. Un communiqué de presse de l'AHA a évoqué une prochaine édition attendue fin 2027, mais cette date ne figure pas dans le texte consensuel publié et doit donc être considérée comme non confirmée.
 - **Seconde Définition Universelle de l'Insuffisance Cardiaque (AHA/ACC/ESC/World Heart Federation, juin 2026 ; texte intégral consulté) :** consensus international sur les définitions, qui précise explicitement ne **pas** être une recommandation thérapeutique. Il s'agit d'un document distinct des recommandations ESC 2026 qui ne modifie pas les seuils ESC, américains ou NICE figurant dans les tableaux ci-dessus :
@@ -179,15 +205,18 @@ Le principal désaccord porte sur l'ASV : la recommandation cardiologique europ�
     'occlusion-coronaire-chronique-cto',
     'telesurveillance-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
+    'musculation-vs-endurance-readaptation-cardiaque',
+    'readaptation-cardiaque-et-activite-physique',
+    'cellules-souches-et-therapies-regeneratives',
   ],
   sources: [
     {
-      label: 'Recommandations ESC 2026 (insuffisance cardiaque)',
-      detail: 'Définitions FEVG < 50 %, 4 piliers, NT-proBNP, DAI/CRT, traitements additionnels, stade B, tension artérielle, télésurveillance et sommeil',
+      label: 'Recommandations ESC 2026 (insuffisance cardiaque) et ESC 2020 (cardiologie du sport)',
+      detail: 'Définitions FEVG < 50 %, 4 piliers, NT-proBNP, DAI/CRT, traitements additionnels, stade B, tension artérielle, télésurveillance, sommeil et prescription d’exercice',
     },
     {
-      label: 'AHA/ACC/HFSA 2022 (insuffisance cardiaque), ACC 2024 (parcours ICFER) et AHA/ACC 2023 (maladie coronaire chronique)',
-      detail: 'Définition FEVG ≤ 40 %, ARNI en 1re ligne, critères DAI/CRT, NT-proBNP, revascularisation par pontage et recommandations nutritionnelles (textes intégraux)',
+      label: 'AHA/ACC/HFSA 2022 (IC), ACC 2024 (parcours ICFER), AHA/ACC 2023 (coronaropathie chronique) et prise de position AHA 2023 (renforcement musculaire)',
+      detail: 'Définition FEVG ≤ 40 %, ARNI en 1re ligne, critères DAI/CRT, NT-proBNP, pontage, nutrition et modalités de renforcement musculaire (textes intégraux)',
     },
     {
       label: 'NICE NG106 (MAJ 2025), TA314, TA267, TA731 et HTG769',
@@ -198,8 +227,8 @@ Le principal désaccord porte sur l'ASV : la recommandation cardiologique europ�
       detail: 'Groupes de FEVG sans seuils numériques fixes, peptides natriurétiques sans seuils, stades A–D, trajectoires et classification en 18 causes (cardiomyopathie ischémique en premier)',
     },
     {
-      label: 'HAS (CNEDiMTS LifeVest 2024, CardioMEMS 2021, référentiel télésurveillance), AASM 2025 et ERS/ESRS 2025',
-      detail: 'Spécificités de remboursement en France et divergences sur la servo-ventilation adaptative (ASV)',
+      label: 'GERS-P / SFC 2023, HAS (activité physique IC 2022, CNEDiMTS LifeVest 2024, CardioMEMS 2021, référentiel télésurveillance), EMA (liste MTI juin 2026), AASM 2025 et ERS/ESRS 2025',
+      detail: 'Recommandations françaises de réadaptation cardiaque, remboursements en France, statut réglementaire européen des thérapies cellulaires et divergences sur l’ASV',
     },
   ],
   disclaimerType: 'medical',

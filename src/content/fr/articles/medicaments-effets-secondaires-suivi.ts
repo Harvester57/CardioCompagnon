@@ -213,6 +213,7 @@ Le registre international **REPORT-HF** a suivi **18 030 patients** sortant d'un
     },
   ],
   relatedArticleSlugs: [
+    'magnesium-insuffisance-cardiaque',
     'medicaments-insuffisance-cardiaque',
     'interactions-complements-aliments-medicaments',
     'maladies-associees',

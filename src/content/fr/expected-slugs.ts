@@ -12,7 +12,7 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'tension-arterielle-insuffisance-cardiaque',
   'apnee-du-sommeil-insuffisance-cardiaque',
 
-  // Lot 2 -- Traitements de Fond, Add-ons, Lipides & Fer IV (7)
+  // Lot 2 -- Traitements de Fond, Add-ons, Lipides & Fer IV (10)
   'medicaments-insuffisance-cardiaque',
   'medicaments-effets-secondaires-suivi',
   'traitements-additionnels-nouveaux',
@@ -20,6 +20,9 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'finerenone-et-nouveaux-arm',
   'cholesterol-et-prevention-secondaire',
   'carence-martiale-et-fer-iv',
+  'fer-oral-haute-biodisponibilite',
+  'medicaments-glp1-et-incretines',
+  'cellules-souches-et-therapies-regeneratives',
 
   // Lot 3 -- Dispositifs, Revascularisation, CTO & Thrombus (6)
   'dispositifs-cardiaques-dai-crt',
@@ -29,7 +32,7 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'occlusion-coronaire-chronique-cto',
   'thrombus-vg-et-anticoagulants',
 
-  // Lot 4 -- Nutrition, Complements, Interactions & Playbook (10)
+  // Lot 4 -- Nutrition, Complements, Interactions & Playbook (12)
   'nutrition-et-complements-insuffisance-cardiaque',
   'guide-pratique-nutrition-complements',
   'tableau-preuves-nutrition-complements',
@@ -39,21 +42,25 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'omega-3-huile-de-poisson',
   'coenzyme-q10',
   'vitamine-d-insuffisance-cardiaque',
+  'vitamines-b-insuffisance-cardiaque',
+  'magnesium-insuffisance-cardiaque',
   'interactions-complements-aliments-medicaments',
 
-  // Lot 5 -- Vie Quotidienne, France, Readaptation & Conduite (6)
+  // Lot 5 -- Vie Quotidienne, France, Readaptation & Conduite (7)
   'vivre-avec-insuffisance-cardiaque',
   'vivre-avec-insuffisance-cardiaque-en-france',
   'readaptation-cardiaque-et-activite-physique',
+  'musculation-vs-endurance-readaptation-cardiaque',
   'depression-et-sante-emotionnelle',
   'soins-de-support-et-anticipation',
   'regles-conduite-automobile',
 
-  // Lot 6 -- Questions Equipe Medicale, Glossaire & References (4)
+  // Lot 6 -- Questions Equipe Medicale, Glossaire & References (5)
   'questions-equipe-cardiologie',
   'glossaire-cardiologie',
   'recommandations-comparees-esc-us-nice',
   'essais-cliniques-cles',
+  'essais-cliniques-en-cours-et-a-suivre',
 ] as const;
 
 export type ExpectedArticleSlug = (typeof EXPECTED_ARTICLE_SLUGS)[number];

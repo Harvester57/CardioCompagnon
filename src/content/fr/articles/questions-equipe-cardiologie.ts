@@ -174,9 +174,11 @@ export const article: WikiArticle = {
 - **Vers qui me tourner si je ressens une baisse de moral ou de l'anxiété ?**`,
     },
     {
-      headingFr: 'Alimentation, poids, vitamine D et compléments',
+      headingFr: 'Alimentation, poids, incrétines (GLP-1), vitamines et compléments',
       bodyMarkdownFr: `- **Ma ferritine et mon coefficient de saturation de la transferrine (CST) ont-ils été vérifiés ? En cas de carence, le fer intraveineux est-il une option ?**
   - *Pourquoi c'est important :* le fer intraveineux a réduit d'environ un cinquième les hospitalisations pour insuffisance cardiaque dans les essais regroupés, alors que le fer par voie orale n'a pas été efficace (méta-analyse fer IV 2025 ; IRONOUT-HF).
+- **On me propose un comprimé de fer « mieux absorbé » (bisglycinate ferreux / Ferrochel, fer sucrosomial, maltol ferrique, fer héminique ou lactoferrine) à la place du fer intraveineux. Est-ce une alternative démontrée dans mon insuffisance cardiaque ?**
+  - *Pourquoi c'est important :* aucun essai randomisé publié dans l'insuffisance cardiaque n'a testé le bisglycinate ferreux (Ferrochel) ; les rares études de formes récentes (ORION-HF pour le maltol ferrique, Karavidas 2021 pour le fer sucrosomial) étaient petites et sans placebo, et PREFER-HF (IC à FEVG préservée, non publié) aurait manqué son critère de marche. En présence d'hepcidine élevée, ces formes restent soumises au blocage de la ferroportine et reconstituent beaucoup moins les réserves que le fer intraveineux (preuves insuffisantes, plutôt en défaveur ; le fer intraveineux reste la seule voie étayée dans l'ICFER ; IRONOUT-HF ; ESC 2026).
 - **Quel apport en sel viser ? Une restriction hydrique stricte est-elle encore nécessaire quand je suis stable ?**
   - *Pourquoi c'est important :* la restriction sodée très stricte et la limitation systématique des liquides n'ont pas amélioré le pronostic dans les essais récents (SODIUM-HF ; FRESH-UP).
 - **Puis-je utiliser un sel de régime « pauvre en sodium », ou contient-il du potassium incompatible avec mes médicaments ?**
@@ -187,12 +189,22 @@ export const article: WikiArticle = {
   - *Pourquoi c'est important :* les anti-inflammatoires non stéroïdiens (AINS) disponibles sans ordonnance peuvent nuire aux reins et provoquer une décompensation en association avec les traitements de l'insuffisance cardiaque.
 - **Puis-je perdre du poids sans risque, et comment ? Y a-t-il des régimes à éviter avec mes médicaments ?**
   - *Pourquoi c'est important :* les régimes cétogènes et très hypocaloriques sont mentionnés comme facteurs déclenchants d'acidocétose sous inhibiteurs du SGLT2 (dapagliflozine / *Forxiga*, empagliflozine / *Jardiance*). La seule étude sur un régime cétogène dans l'insuffisance cardiaque avec obésité était une revue rétrospective de dossiers non contrôlée dans laquelle seuls 2 patients sur 125 prenaient un iSGLT2 et où les corps cétoniques n'ont jamais été mesurés, ce qui ne permet pas de démontrer la sécurité de l'association. La HFA 2025 recommande de perdre du poids en préservant la masse musculaire : suffisamment de protéines et d'exercice physique, et pas uniquement une restriction calorique (Moseley 2025 ; déclaration HFA 2025 sur l'obésité).
-- **Mon poids doit-il être évalué uniquement par l'IMC, ou aussi par mon tour de taille ? En cas d'obésité, un médicament pour la perte de poids comme le sémaglutide ou le tirzépatide aiderait-il ou nuirait-il à mon cœur ?**
-  - *Pourquoi c'est important :* la HFA suggère d'associer le rapport tour de taille / taille à l'IMC. Les bénéfices cardiaques de ces médicaments n'ont été démontrés que dans l'insuffisance cardiaque à FEVG préservée (SUMMIT : HR 0,62 pour décès cardiovasculaire ou aggravation d'IC). Dans l'ICFER, les données sont peu nombreuses et mitigées (dans l'essai LIVE, 12 événements cardiaques graves contre 3 sous liraglutide), et la HFA qualifie leur sécurité de « débattue » (déclaration HFA 2025).
+- **Mon poids doit-il être évalué uniquement par l'IMC, ou aussi par mon tour de taille ? En cas d'obésité, un médicament pour la perte de poids comme le sémaglutide (*Wegovy*, *Ozempic*, *Rybelsus*) ou le tirzépatide (*Mounjaro*) aiderait-il ou nuirait-il à mon cœur ?**
+  - *Pourquoi c'est important :* la HFA suggère d'associer le rapport tour de taille / taille à l'IMC. Les bénéfices cardiaques de ces médicaments n'ont été démontrés que dans l'insuffisance cardiaque à FEVG préservée (SUMMIT : HR 0,62 pour décès cardiovasculaire ou aggravation d'IC). Dans l'ICFER, les données sont peu nombreuses et mitigées (dans l'essai LIVE, 12 événements cardiaques graves contre 3 sous liraglutide), et la HFA qualifie leur sécurité de « débattue » (déclaration HFA 2025). Dans l'essai SOUL (592 personnes présentant un diabète et une ICFER), le sémaglutide oral n'a fait aucune différence sur les événements d'insuffisance cardiaque (HR 0,98 ; applicabilité partielle).
+- **Si l'un de ces médicaments (agoniste du GLP-1 ou incrétine) était instauré, comment ma fréquence cardiaque et mon rythme seraient-ils suivis, et les données de mon dispositif implanté seraient-elles contrôlées ?**
+  - *Pourquoi c'est important :* le RCP européen de *Wegovy* (sémaglutide) rapporte une hausse moyenne de 3 battements par minute (et une hausse d'au moins 10 bpm à un moment donné chez deux tiers des patients), et une petite étude observationnelle chez des patients avec ICFER porteurs d'un dispositif implanté (Marques 2025) a retrouvé +7 bpm et davantage d'événements ventriculaires non soutenus et de thérapies de la prothèse cumulés (33 contre 3). Ces données restent observationnelles et de faible effectif (applicabilité partielle).
+- **Que dois-je faire de mon diurétique et de mes autres médicaments cardiaques les jours de vomissements ou de diarrhée (notamment sous traitement par GLP-1) ?**
+  - *Pourquoi c'est important :* le RCP européen de *Wegovy* avertit que les effets digestifs peuvent entraîner une déshydratation et, plus rarement, une altération de la fonction rénale ; les diurétiques et les inhibiteurs du SGLT2 éliminent également des liquides (applicabilité indirecte, fondée sur le RCP et non sur un essai dédié dans l'insuffisance cardiaque).
+- **Existe-t-il une raison d'attendre des données dans l'insuffisance cardiaque avant d'envisager des molécules plus récentes comme le rétatrutide (retatrutide), et serais-je éligible à un essai clinique ?**
+  - *Pourquoi c'est important :* le rétatrutide a entraîné environ 25 % de perte de poids dans TRIUMPH-1, mais aucun résultat n'a été publié dans l'insuffisance cardiaque à FEVG réduite, les événements cardiaques dans TRIUMPH-3 étaient non concluants, et aucun essai d'événements cliniques dédié à l'ICFER n'a été trouvé sur ClinicalTrials.gov (applicabilité extrapolée ; TRIUMPH ; instantané des registres novembre 2026).
 - **Ai-je bénéficié d'un dépistage de la dénutrition ou de la perte musculaire ? Si un score a été utilisé, prenait-il en compte mon cholestérol ?**
   - *Pourquoi c'est important :* le score CONUT attribue des points à un cholestérol bas, si bien qu'une statine peut faire paraître dénutrie une personne bien alimentée, et chez les utilisateurs de statines il a manqué des patients mangeant moins. Un court questionnaire sur l'appétit et l'évolution du poids (MNA-SF) s'est révélé le plus performant dans une étude japonaise portant sur 150 patients ambulatoires ; aucun des scores ne prédisait le pronostic à 1 an (Kinugasa 2022).
 - **Mon taux de vitamine D doit-il être dosé, plutôt que de prendre un complément « par précaution » ?**
   - *Pourquoi c'est important :* un taux bas de vitamine D est fréquent dans l'ICFER (cité entre 56 % et 83 %), mais les essais n'ont pas montré moins d'hospitalisations ni de décès avec une supplémentation systématique, et une cartographie des preuves a retrouvé une distance de marche inférieure d'environ 39 m sous supplémentation. Une revue de 2025 conseille de traiter une carence avérée et non de supplémenter tout le monde (Kampka 2025 ; Chua 2025).
+- **Je prends un diurétique de l'anse (furosémide / *Lasilix* ou bumétanide / *Burinex*) depuis longtemps, et/ou de la metformine ou un traitement contre l'acidité gastrique (IPP). Mon taux de thiamine (vitamine B1) ou de vitamine B12 doit-il être vérifié ? Mon complexe de vitamines B ou ma vitamine « cœur » mérite-t-il d'être poursuivi ?**
+  - *Pourquoi c'est important :* les diurétiques de l'anse au long cours peuvent réduire les réserves de thiamine, et les recommandations nutritionnelles ESPEN 2022 indiquent que la thiamine sanguine *peut* être dosée en cas de cardiomyopathie sous diurétique prolongé ; la metformine et les inhibiteurs de la pompe à protons sont des facteurs de risque de déficit en vitamine B12. En revanche, la thiamine en comprimés n'a pas amélioré la contraction cardiaque dans 7 essais (He 2024), et l'association acide folique + B12 + B6 n'a pas prévenu les infarctus ni les décès, avec un possible signal défavorable après infarctus (Cochrane 2017 ; NORVIT 2006).
+- **Puisque je prends un diurétique ou un IPP au long cours, mon taux sanguin de magnésium doit-il être dosé avant d'envisager un complément, et une forme précise ou un produit magnésium + vitamine B6 (comme *Magné B6*) est-il sûr avec mes reins et mes médicaments ?**
+  - *Pourquoi c'est important :* aucun essai randomisé solide n'a prouvé qu'un complément de magnésium améliore la survie ou les hospitalisations dans l'ICFER. Dans GALACTIC-HF (FEVG ≤ 35 %), un magnésium bas (17,6 %) ne prédisait pas plus d'événements contrairement à un magnésium élevé ; dans une vaste cohorte observationnelle (Yin 2026), la supplémentation n'était associée à un moindre risque qu'en cas de taux bas (HR 0,91), et à davantage d'événements en cas de taux normal (HR 1,11). Le magnésium peut s'accumuler en cas d'insuffisance rénale (contre-indiqué si clairance < 30 mL/min sur les RCP français), diminuer l'absorption de certains médicaments (notamment la rosuvastatine avec les antiacides au magnésium), et certains produits combinés dépassent la limite supérieure européenne de vitamine B6 (12 mg/jour ; GALACTIC-HF ; Yin 2026 ; EFSA / NIH ODS).
 - **On m'a proposé un produit à base de plantes médicinales ou du Tai-Chi. L'un ou l'autre en vaut-il la peine, et les plantes risquent-elles d'interagir avec mes médicaments ?**
   - *Pourquoi c'est important :* une revue parapluie (Chua 2025) a retrouvé un niveau de certitude modéré indiquant que le Tai-Chi réduisait les hospitalisations (RR 0,47 sur 3 petits essais), en cohérence avec les conseils de réadaptation. Les produits à base de plantes reposent surtout sur de petits essais chinois évaluant des bilans biologiques ou la marche ; certaines formules contiennent du ginseng ou du danshen (susceptibles d'interagir avec les anticoagulants) ou des substances cardiotoxiques telles que la racine d'aconit, et des préparations à base de *Pueraria* ont fait monter le potassium.
 - **Serait-il utile de consulter un(e) diététicien(ne) et de bénéficier d'une réadaptation cardiaque ?**`,
@@ -226,6 +238,8 @@ export const article: WikiArticle = {
       headingFr: 'Activité physique, moral et anticipation',
       bodyMarkdownFr: `- **Un programme de réadaptation cardiaque à domicile ou en hôpital de jour est-il possible si un centre est difficile d'accès ?**
   - *Pourquoi c'est important :* les programmes à domicile et en centre obtiennent des résultats comparables dans la revue Cochrane 2024.
+- **En réadaptation cardiaque, quelle place accorder au renforcement musculaire (poids, élastiques, appareils) par rapport à l'endurance (marche, vélo), et quelles charges sont sûres pour mon cœur ?**
+  - *Pourquoi c'est important :* le renforcement musculaire seul est sûr dans l'insuffisance cardiaque stable et améliore la force et la capacité d'effort (VO2 pic environ +2,6 mL/kg/min), mais il ne surpasse pas l'endurance : seule l'endurance montre un gain constant sur la FEVG et dispose d'un grand essai d'événements cliniques (HF-ACTION). Les recommandations (ESC 2026, ESC 2020, AHA 2023, GERS-P/SFC 2023, HAS 2022) associent l'endurance en socle (3 à 6 séances par semaine) et le renforcement musculaire en complément (2 à 3 séances par semaine), ou en point de départ en cas de déconditionnement marqué. En France, la HAS recommande le « renforcement musculaire » tout en listant « la musculation » et les efforts intenses comme contre-indiqués sans définir les charges : faites valider les exercices et les charges par l'équipe de réadaptation (Terada 2026 ; SMARTEX-HF pour l'absence de supériorité démontrée du HIIT sur l'endurance modérée).
 - **Mon moral peut-il être évalué ? Vers quel professionnel puis-je être orienté(e) ?**
   - *Pourquoi c'est important :* la dépression touche environ un quart des personnes vivant avec une insuffisance cardiaque ; la thérapie cognitivo-comportementale (TCC) et l'exercice physique disposent des meilleures preuves (Basile 2023).
 - **Des soins de support ou soins palliatifs précoces peuvent-ils m'aider dès maintenant, en parallèle de mes traitements habituels ?**
@@ -284,6 +298,13 @@ export const article: WikiArticle = {
   - *Pourquoi c'est important :* la servo-ventilation adaptative (ASV) a augmenté la mortalité dans l'ICFER avec apnée principalement centrale (SERVE-HF) et est déconseillée dans cette indication (Classe III). La PPC (CPAP) améliore la somnolence et la qualité de vie sans preuve de réduction des événements cardiaques, et le plus grand essai sur la PPC (SAVE) a exclu les personnes ayant des symptômes d'insuffisance cardiaque modérés à sévères. Un faible score de somnolence ou un questionnaire normal n'élimine pas une apnée du sommeil, et seul un enregistrement du sommeil permet de distinguer une forme centrale d'une forme obstructive (SERVE-HF ; SAVE CPAP ; déclaration AHA 2021).`,
     },
     {
+      headingFr: 'Thérapies cellulaires (cellules souches) et essais cliniques en cours',
+      bodyMarkdownFr: `- **Des thérapies par cellules souches ou patchs de muscle cardiaque sont-elles autorisées en France ou en Europe pour une cardiomyopathie ischémique, et que penser des cliniques proposant des injections payantes ?**
+  - *Pourquoi c'est important :* aucun traitement par cellules souches ou médicament de thérapie innovante (MTI / ATMP) n'est autorisé pour le cœur en France ou dans l'Union européenne (liste EMA juin 2026) ni aux États-Unis (FDA), et les recommandations ESC 2026 n'en font aucune mention. Les essais contrôlés contre procédure factice (DREAM-HF, CONCERT-HF, CardiAMP-HF) ont été neutres ; les patchs issus de cellules iPS (BioVAT-HF ; autorisation conditionnelle de 7 ans au Japon pour RiHEART sur 8 patients) restent très précoces et imposent des immunosuppresseurs. Les cliniques payantes hors essai clinique enregistré n'offrent pas de traitement prouvé et ont été associées à des complications graves (infections, tumeurs, cécité ; EMA 2026 ; FDA ; DREAM-HF ; BioVAT-HF).
+- **Un essai clinique enregistré (par exemple PROFID-EHRA, STICH3, COLT-HF ou un protocole hospitalier dédié) correspond-il à ma situation, et comment vérifier son sérieux ?**
+  - *Pourquoi c'est important :* plusieurs grands essais évaluent encore des questions clés dans la cardiomyopathie ischémique (utilité du DAI sous traitements modernes dans PROFID-EHRA, pontage vs stents dans STICH3, thiamine et colchicine dans COLT-HF, cellules médullaires dans CardiAMP HF II). Un essai en cours ne constitue pas une preuve d'efficacité, mais un essai légitime est toujours gratuit pour le participant, inscrit sur un registre public (euclinicaltrials.eu ou ClinicalTrials.gov) et discuté avec votre équipe de cardiologie (instantané des registres novembre 2026 ; EMA 2026).`,
+    },
+    {
       headingFr: 'Démarches pratiques en France',
       bodyMarkdownFr: `- **Une demande d'ALD exonérante (ALD 5 insuffisance cardiaque grave ou ALD 13 maladie coronaire) a-t-elle été établie ?** (En France, le protocole de soins est généralement rédigé par votre médecin traitant.)
   - *Pourquoi c'est important :* l'ALD prend en charge à 100 % du tarif de l'Assurance Maladie les soins liés à l'affection inscrits au protocole de soins ; les dépassements d'honoraires et participations forfaitaires restent toutefois à charge ou couverts par la complémentaire santé (service-public.fr ; ameli.fr).
@@ -306,6 +327,9 @@ export const article: WikiArticle = {
     'finerenone-et-nouveaux-arm',
     'cholesterol-et-prevention-secondaire',
     'carence-martiale-et-fer-iv',
+    'fer-oral-haute-biodisponibilite',
+    'medicaments-glp1-et-incretines',
+    'cellules-souches-et-therapies-regeneratives',
     'dispositifs-cardiaques-dai-crt',
     'gilet-defibrillateur-portable',
     'telesurveillance-insuffisance-cardiaque',
@@ -323,13 +347,17 @@ export const article: WikiArticle = {
     'sel-et-liquides-insuffisance-cardiaque',
     'poids-obesite-et-denutrition',
     'vitamine-d-insuffisance-cardiaque',
+    'vitamines-b-insuffisance-cardiaque',
+    'magnesium-insuffisance-cardiaque',
     'interactions-complements-aliments-medicaments',
     'vivre-avec-insuffisance-cardiaque',
     'vivre-avec-insuffisance-cardiaque-en-france',
     'readaptation-cardiaque-et-activite-physique',
+    'musculation-vs-endurance-readaptation-cardiaque',
     'depression-et-sante-emotionnelle',
     'soins-de-support-et-anticipation',
     'regles-conduite-automobile',
+    'essais-cliniques-en-cours-et-a-suivre',
   ],
   sources: [
     {
@@ -349,8 +377,12 @@ export const article: WikiArticle = {
       detail: 'Cibles LDL < 0,55 g/L, intensité et interactions des statines, Lp(a), antiagrégants, colchicine, rétrécissement aortique, thrombus VG, fibrillation atriale et insuffisance mitrale secondaire',
     },
     {
-      label: 'Nutrition, poids, vitamine D, diabète, tension artérielle et sommeil (SODIUM-HF, FRESH-UP, HFA 2025 obésité, Moseley 2025, Kinugasa 2022, Kampka 2025, Chua 2025, ADA 2022, Li 2025, Seidu 2024, Skouri 2025, SAVE, AHA 2021)',
-      detail: 'Sel, liquides, fer IV, obésité et analogues GLP-1/GIP, dénutrition (CONUT vs MNA-SF), vitamine D, plantes médicinales et Tai-Chi, diabète/HbA1c, hypotension et apnée du sommeil',
+      label: 'Incrétines (GLP-1), nutrition, fer oral, vitamines B, magnésium et diabète (SOUL 2026, RCP Wegovy, Marques 2025, TRIUMPH, IRONOUT-HF, ORION-HF, ESPEN 2022, He 2024, Cochrane 2017, NORVIT, GALACTIC-HF, Yin 2026, SODIUM-HF, FRESH-UP, HFA 2025, Kampka 2025, Chua 2025, ADA 2022)',
+      detail: 'Sémaglutide/tirzépatide/rétatrutide dans l’ICFER, rythme cardiaque et déshydratation digestive, fer oral haute biodisponibilité vs fer IV, thiamine/B12/B6/B9, magnésium et sécurité rénale, sel, liquides, dénutrition, vitamine D et plantes médicinales',
+    },
+    {
+      label: 'Réadaptation cardiaque, thérapies cellulaires et essais cliniques (HF-ACTION, SMARTEX-HF, Terada 2026, GERS-P/SFC 2023, HAS 2022, EMA liste MTI juin 2026, FDA, DREAM-HF, BioVAT-HF, registres ClinicalTrials.gov / EU CTIS)',
+      detail: 'Renforcement musculaire vs endurance, absence de MTI cardiaque autorisé en UE, risques des cliniques de cellules souches et grands essais en cours (PROFID-EHRA, STICH3, COLT-HF, CardiAMP HF II)',
     },
     {
       label: 'Référentiels français (HAS CNEDiMTS, ameli.fr, service-public.fr, Arrêté du 28 mars 2022)',

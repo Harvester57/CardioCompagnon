@@ -174,8 +174,15 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
 - **Stents et risque rythmique :** dans l’essai **REVIVED-BCIS2**, la pose de stents n’a pas réduit le risque de troubles du rythme graves ni les thérapies par DAI ; les auteurs déconseillent de pratiquer une angioplastie dans le seul but de réduire le risque arythmique.
 - **Repères internationaux comparés :** les recommandations américaines **AHA/ACC/HFSA 2022** recommandent un DAI à FEVG ≤ 35 % en NYHA II–III au moins 40 jours après un infarctus, ou à FEVG ≤ 30 % en NYHA I (**Classe 1**). Au Royaume-Uni, le guide **NICE TA314** relie le choix entre DAI, CRT-P et CRT-D à la FEVG ≤ 35 %, la classe NYHA, la largeur du QRS et la présence d’un BBG (voir l’article « Recommandations européennes (ESC), américaines et britanniques comparées »).`,
     },
+    {
+      headingFr: 'Autres essais sur les dispositifs et l’ablation à suivre (au 25 novembre 2026)',
+      bodyMarkdownFr: `- **Left vs Left (NCT05650658)** : essai en cours de recrutement (**2 136** patients estimés, fin primaire estimée en **juin 2029**) comparant la stimulation directe du système de conduction du cœur (faisceau de His ou branche gauche) à la **CRT biventriculaire** classique chez des patients avec **FEVG ≤ 50 %** et QRS large ou fort besoin de stimulation, avec stratification au seuil de 35 %. Pertinent uniquement lorsqu’une resynchronisation est envisagée.
+- **PREVENT-VT (NCT06543173)** : petit essai de faisabilité en cours de recrutement (**62** patients estimés, fin prévue en **2030**) évaluant une ablation précoce par cathéter des circuits de tachycardie ventriculaire après implantation d’un DAI préventif dans la cardiomyopathie ischémique avec **FEVG ≤ 35 %** et marqueur de haut risque.
+- **PROFID-EHRA** : fiche registre inchangée au **25 novembre 2026** (recrutement en cours, **3 595** patients prévus, fin primaire estimée au **30 novembre 2027**). Voir l’article « Essais cliniques en cours et à suivre ».`,
+    },
   ],
   relatedArticleSlugs: [
+    'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'vivre-avec-insuffisance-cardiaque',
     'fraction-dejection',
@@ -195,6 +202,10 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
     'traitements-additionnels-nouveaux',
   ],
   sources: [
+    {
+      label: 'Registre d’essais cliniques (état au 25 novembre 2026)',
+      detail: 'Statut de recrutement et calendriers estimés de PROFID-EHRA, Left vs Left (NCT05650658) et PREVENT-VT (NCT06543173)',
+    },
     {
       label: 'Recommandations ESC 2026 sur l’insuffisance cardiaque',
       detail: 'Tableaux de recommandations DAI et CRT, délais, résultats des essais et risque résiduel de mort subite',

@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/revascularisation-cabg-and-pci.md',
   titleFr: 'Revascularisation coronaire : pontage et stents',
   category: 'dispositifs',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -166,8 +166,16 @@ Ce texte rappelle que le risque péri-opératoire est plus élevé à FEVG ≤ 3
 - **Périmètre ciblé de REVIVED-BCIS2 :** l’essai excluait les syndromes coronariens aigus récents et l’angor limitant, si bien que ses résultats ne s’appliquent pas à ces situations ; son design ouvert peut expliquer l’avantage transitoire de qualité de vie.
 - **Qualité de lecture des sources :** les articles complets de STICH, STICHES, REVIVED-BCIS2 (et son annexe), ainsi que les sous-analyses d’âge, de viabilité et d’angor de STICH ont été exploités intégralement.`,
     },
+    {
+      headingFr: 'Essais en cours et assistance circulatoire (au 25 novembre 2026)',
+      bodyMarkdownFr: `- **STICH3** compare directement le pontage (CABG) aux stents (PCI) dans la dysfonction ventriculaire gauche ischémique (**FEVG ≤ 40 %**, atteinte tritronculaire ou IVA/tronc commun gauche lorsque les deux options sont jugées réalisables). Le bras canadien (**STICH3C**, NCT05427370) recrute **754** patients, avec une fin primaire estimée en **avril 2029** ; le bras britannique (**STICH3-BCIS4**) a reçu son approbation éthique en avril 2024.
+- **PCI-GULF (NCT07349979)** (pas encore en recrutement, **1 154** patients estimés) et **IMPROVE-ICMP (NCT06930092)** (en cours de recrutement, **158** patients estimés, exigeant un muscle viable à l’IRM avec la FEVG IRM comme critère principal) réexaminent la question de REVIVED-BCIS2 (stents versus traitement médical seul).
+- **Assistance circulatoire par pompe pendant une angioplastie à haut risque :** l’essai **CHIP-BCIS3** (**300** patients, FEVG médiane **27 %**) a montré qu’une assistance systématique par pompe **Impella** n’améliorait pas le critère principal (**win ratio 0,85**, IC 95 % : **0,63–1,15**), avec davantage de décès dans le groupe pompe en critère secondaire (mortalité toutes causes : **47 contre 33** patients, **HR 1,54**, IC 95 % : **0,99–2,41** dans le résumé du NEJM ; mortalité cardiovasculaire **26,7 % contre 14,5 %** dans les comptes rendus). De nombreux patients présentaient un tableau aigu (**62,7 %** ou **76 %** selon la source). L’essai **PROTECT IV (NCT04763200)**, financé par l’industriel, a dépassé sa date estimée de fin primaire (octobre 2026) sans résultats publiés.
+- Pour la liste complète des études en cours, consultez l’article « Essais cliniques en cours et à suivre ».`,
+    },
   ],
   relatedArticleSlugs: [
+    'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'cardiomyopathie-ischemique',
     'medicaments-insuffisance-cardiaque',
@@ -180,8 +188,17 @@ Ce texte rappelle que le risque péri-opératoire est plus élevé à FEVG ≤ 3
     'cholesterol-et-prevention-secondaire',
     'stenose-aortique-fevg-reduite',
     'gilet-defibrillateur-portable',
+    'cellules-souches-et-therapies-regeneratives',
   ],
   sources: [
+    {
+      label: 'Registre d’essais cliniques (état au 25 novembre 2026)',
+      detail: 'Statut de STICH3C (NCT05427370), STICH3-BCIS4, PCI-GULF (NCT07349979), IMPROVE-ICMP (NCT06930092) et PROTECT IV (NCT04763200)',
+    },
+    {
+      label: 'Essai CHIP-BCIS3 (NEJM 2026, résumé et couverture TCTMD)',
+      detail: 'Angioplastie assistée par Impella dans la dysfonction VG sévère : critère principal neutre et mortalité en critère secondaire',
+    },
     {
       label: 'Essais STICH (2011), STICHES à 10 ans (2016) et sous-analyses (Petrie 2016, Panza 2019, Jolicoeur 2015)',
       detail: 'Survie à 10 ans après pontage, risque opératoire à 30 jours, impact de l’âge, de la viabilité et de l’angor',

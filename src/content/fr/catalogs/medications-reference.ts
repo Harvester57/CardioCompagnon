@@ -470,6 +470,34 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     articleSlug: 'carence-martiale-et-fer-iv',
   },
 
+  // === Comorbidités métaboliques (diabète / obésité) ===
+  {
+    id: 'semaglutide',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Sémaglutide (agoniste du récepteur GLP-1)',
+    frenchBrands: ['Ozempic', 'Wegovy', 'Rybelsus'],
+    startDoseFr: 'Initiation progressive à faible dose selon spécialité et indication (diabète ou obésité)',
+    targetDoseFr: 'Dose d’entretien fixée par le spécialiste (ex. Wegovy 2,4 mg/semaine ; Rybelsus 14 mg/j dans SOUL)',
+    titrationIntervalFr: 'Augmentation progressive par paliers sous suivi médical selon tolérance digestive',
+    monitoringFr:
+      'Réduit les événements artériels (MACE) en diabète ou obésité avec maladie coronaire (SELECT, SOUL), mais non démontré pour traiter l’ICFER (SOUL sous-groupe ICFER : HR 0,98 ; ESC 2026 IIa uniquement si FEVG ≥ 45 % et IMC ≥ 30 ; NYHA IV non recommandé). Surveiller la fréquence cardiaque (+3 bpm en moyenne), la déshydratation digestive (plan « jours de maladie » avec diurétiques/iSGLT2), la masse musculaire, et signaler la prise avant toute anesthésie générale. En France (depuis le 15 juin 2026), Wegovy est remboursé à 65 % uniquement à IMC ≥ 40 ou ≥ 35 avec l’une des 15 pathologies listées (hors IC et maladie coronaire).',
+    articleSlug: 'medicaments-glp1-et-incretines',
+  },
+  {
+    id: 'tirzepatide',
+    pillar: 'other',
+    subClass: 'other',
+    innNameFr: 'Tirzépatide (double agoniste GIP/GLP-1)',
+    frenchBrands: ['Mounjaro'],
+    startDoseFr: 'Initiation progressive en injection hebdomadaire selon indication',
+    targetDoseFr: 'Dose d’entretien fixée par le médecin (jusqu’à 15 mg/semaine)',
+    titrationIntervalFr: 'Paliers progressifs sous suivi médical selon tolérance digestive',
+    monitoringFr:
+      'Équivalent au dulaglutide sur les événements cardiovasculaires en diabète de type 2 (SURPASS-CVOT), et recommandé par l’ESC 2026 (IIa) uniquement dans l’IC avec obésité et FEVG ≥ 45 % : non démontré dans l’ICFER à FEVG ~35 %. Surveiller les troubles digestifs et le risque de déshydratation sous diurétiques/iSGLT2, la fréquence cardiaque, la perte de masse maigre, et prévenir l’anesthésiste avant toute intervention. En France (depuis le 15 juin 2026), remboursé à 65 % en diabète de type 2 (2e/3e ligne) et en obésité selon critères stricts d’IMC.',
+    articleSlug: 'medicaments-glp1-et-incretines',
+  },
+
   // === Classes à éviter en ICFER (avoidInHfref: true) ===
   {
     id: 'ains_classe',

@@ -86,7 +86,19 @@ export const article: WikiArticle = {
 - **Tolérance :** effets indésirables et arrêts comparables au placebo (**14 % contre 15 %** d'arrêts), sans saignement digestif observé.
 - **Limites :** essai court (16 semaines), petit effectif, centré sur la capacité d'effort plutôt que sur les hospitalisations ou la survie, et sans comparaison directe avec le fer intraveineux.
 
-Prendre des comprimés de fer sans carence documentée expose par ailleurs à des effets secondaires et à un risque de surcharge en fer.`,
+Prendre des comprimés de fer sans carence documentée expose par ailleurs à des effets secondaires et à un risque de surcharge en fer.
+
+### Comprimés de fer « mieux absorbés » (Ferrochel, fer sucrosomial, maltol ferrique)
+
+Des formulations orales plus récentes sont commercialisées comme capables de contourner ces limites. À la date de **novembre 2026**, cela **n'est pas démontré dans l'insuffisance cardiaque** ; l'analyse complète des preuves figure dans *Fer oral à haute biodisponibilité dans l'insuffisance cardiaque* (verdict : preuves insuffisantes, plutôt défavorables).
+
+- **Ferrochel (bisglycinate ferreux) :** aucun essai clinique dans l'insuffisance cardiaque et aucune preuve qu'il contourne l'hepcidine. Dans de petites études d'absorption chez des volontaires sains (Bovell-Benjamin 2000 ; méta-analyse Fischer 2023), son assimilation restait régulée par les réserves en fer de l'organisme comme le fer classique.
+- **Maltol ferrique (*Feraccru*) :** a augmenté le CST de **14 % à 29 %** dans une petite étude sans groupe placebo (**ORION-HF**, 41 patients, dont seulement 16 avec une FEVG < 50 %, tous anémiés).
+- **Fer sucrosomial :** a amélioré la distance de marche dans une étude non randomisée de **25 patients** en ICFER (Karavidas 2021). Un essai contrôlé contre placebo (**RISE-HF**, 60 patients) n'a pas encore publié ses résultats.
+- Dans les maladies inflammatoires chroniques de l'intestin et la maladie rénale chronique (**AEGIS-H2H** ; Bertani 2021), ces comprimés ont élevé l'hémoglobine mais rechargé les réserves en fer **environ dix fois moins** que le fer intraveineux sur 12 semaines.
+- Aucune forme n'a démontré chez l'humain qu'elle contourne l'hepcidine : testées chez des patients à hepcidine élevée, ces nouvelles formulations se sont comportées comme le fer ordinaire, et avec le fer sucrosomial l'hepcidine a augmenté chez la majorité des patients (Pantopoulos 2024 ; Abbati 2019 ; Tomosugi 2023).
+- Le seul essai contrôlé contre placebo mené dans l'insuffisance cardiaque avec ces nouveaux comprimés (**PREFER-HF**, dans l'insuffisance cardiaque à FEVG préservée) aurait manqué son critère de distance de marche (résultats non encore publiés).
+- Le profil du patient pourrait compter davantage que la formulation : certains patients insuffisants cardiaques carencés absorbent bien le fer ordinaire (Cabrera 2020), et les **iSGLT2** abaissent l'hepcidine d'environ **un cinquième à un tiers** (Docherty 2022 ; Ferreira 2025). Chez des patients tous traités par iSGLT2, des comprimés ordinaires ont élevé l'hémoglobine d'environ **1 g/dL**, mais sans groupe témoin (Marques 2026). La prise **un jour sur deux** stimule moins l'hepcidine qu'une prise biquotidienne (Stoffel 2017). Aucune de ces pistes n'a toutefois été testée rigoureusement dans un essai contrôlé d'insuffisance cardiaque.`,
     },
     {
       headingFr: 'Ce que disent les recommandations internationales',
@@ -94,13 +106,15 @@ Prendre des comprimés de fer sans carence documentée expose par ailleurs à de
 - **NICE NG106 (Royaume-Uni, mise à jour 2025) :**
   - vérifier le bilan martial et l'anémie par CST, ferritine et hémoglobine dans l'ICFER (recommandation 1.4.5) ;
   - envisager du fer intraveineux (fer saccharose *Venofer*, carboxymaltose ferrique *Ferinject* ou dérisomaltose ferrique *Monofer*) dans l'ICFER lorsque l'hémoglobine est **< 15 g/dL (150 g/L)** et le **CST < 20 %** ou la **ferritine < 100 µg/L** (1.4.6) ;
-  - si une anémie ferriprive est découverte, ne pas supposer automatiquement que l'insuffisance cardiaque en est la cause et rechercher d'autres origines, notamment digestives (1.4.7).
+  - si une anémie ferriprive est découverte, ne pas supposer automatiquement que l'insuffisance cardiaque en est la cause et rechercher d'autres origines, notamment digestives (1.4.7) ; en cas d'anémie, d'autres carences comme la vitamine B12 ou les folates peuvent également être recherchées (voir *Vitamines B et insuffisance cardiaque*).
   - L'argumentaire de NICE souligne un risque significatif d'**hypophosphatémie** (baisse du phosphore sanguin) avec le carboxymaltose ferrique, qui peut être surveillée et corrigée.
 - **Recommandations américaines (AHA/ACC/HFSA 2022) :** dans l'ICFER avec carence en fer, avec ou sans anémie, le fer IV est jugé raisonnable pour améliorer le statut fonctionnel et la qualité de vie (**Classe 2a, Niveau B-R**). En revanche, les agents stimulant l'érythropoïèse prescrits pour l'anémie sont classés **nocifs** (**Classe 3 : Danger**).
 - Une cartographie des preuves de 2021 (Khan et al.) évaluait l'effet du fer sur la FEVG avec une certitude modérée, mais la FEVG reste un critère intermédiaire ; les données sur les hospitalisations sont venues des essais ultérieurs. Voir aussi *Tableau des niveaux de preuve : nutrition et compléments*.`,
     },
   ],
   relatedArticleSlugs: [
+    'fer-oral-haute-biodisponibilite',
+    'vitamines-b-insuffisance-cardiaque',
     'nutrition-et-complements-insuffisance-cardiaque',
     'medicaments-insuffisance-cardiaque',
     'tableau-preuves-nutrition-complements',
@@ -120,6 +134,18 @@ Prendre des comprimés de fer sans carence documentée expose par ailleurs à de
     {
       label: 'IRONOUT-HF (JAMA, 2017, texte intégral)',
       detail: 'Population à 78 % ischémique (FEVG médiane 25 %), recharge martiale minimale, rôle de l’hepcidine et tolérance du fer oral',
+    },
+    {
+      label: 'ORION-HF (EJHF, 2025, texte intégral), Karavidas et al. (2021) et registres d’essais (RISE-HF, PREFER-HF)',
+      detail: 'Études sur le maltol ferrique et le fer sucrosomial dans l’insuffisance cardiaque et statut des essais contrôlés',
+    },
+    {
+      label: 'AEGIS-H2H, Bertani et al. (2021), Bovell-Benjamin et al. (2000), Fischer et al. (2023), Pantopoulos (2024), Abbati (2019) et Tomosugi (2023)',
+      detail: 'Comparaisons fer oral récent vs fer IV en MICI/MRC, absorption du bisglycinate ferreux (Ferrochel) et régulation par l’hepcidine',
+    },
+    {
+      label: 'Docherty et al. (2022), Ferreira et al. (2025), Cabrera et al. (2020), Marques et al. (2026) et Stoffel et al. (2017)',
+      detail: 'Modulation de l’hepcidine sous iSGLT2, tests d’absorption du fer dans l’IC et schéma un jour sur deux',
     },
     {
       label: 'Recommandations ESC 2026 sur l’insuffisance cardiaque',

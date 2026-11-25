@@ -174,6 +174,7 @@ Ce sont des traitements de **soulagement des symptômes** qui s'ajoutent aux qua
     },
   ],
   relatedArticleSlugs: [
+    'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'insuffisance-cardiaque-fevg-amelioree',
     'dispositifs-cardiaques-dai-crt',

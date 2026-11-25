@@ -777,4 +777,60 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       'Force d’une recommandation ESC : I = recommandé ; IIa = doit être envisagé ; IIb = peut être envisagé ; III = non recommandé ou délétère.',
     articleSlug: 'recommandations-comparees-esc-us-nice',
   },
+  {
+    id: 'cellules_ips',
+    termFr: 'Cellules iPS (cellules souches pluripotentes induites)',
+    aliases: ['cellules iPS', 'iPS', 'iPSC', 'patch cardiaque'],
+    shortDefinitionFr:
+      "Cellules adultes (peau ou sang) reprogrammées en laboratoire en cellules souches pouvant former des cellules de muscle cardiaque. Utilisées à partir de donneurs dans les patchs et feuillets expérimentaux (BioVAT-HF, RiHEART, LAPiS) ; un traitement immunosuppresseur est alors nécessaire.",
+    articleSlug: 'cellules-souches-et-therapies-regeneratives',
+  },
+  {
+    id: 'cellules_mesenchymateuses',
+    termFr: 'Cellules stromales / précurseurs mésenchymateuses (CSM / CPM / MSC / MPC)',
+    aliases: ['CSM', 'CPM', 'MSC', 'MPC', 'cellules mésenchymateuses'],
+    shortDefinitionFr:
+      "Cellules de soutien prélevées dans la moelle osseuse (du patient ou d'un donneur) testées comme traitement de l'insuffisance cardiaque ; le plus grand essai contrôlé contre procédure factice (DREAM-HF) a été négatif sur son critère principal.",
+    articleSlug: 'cellules-souches-et-therapies-regeneratives',
+  },
+  {
+    id: 'procedure_factice_sham',
+    termFr: 'Procédure factice (sham)',
+    aliases: ['sham', 'procédure factice', 'procédure simulée'],
+    shortDefinitionFr:
+      "Intervention simulée (par exemple introduction d'un cathéter sans injection active) dans le groupe témoin afin que ni les patients ni les évaluateurs ne sachent qui a été traité ; constitue le test le plus fiable des thérapies cellulaires injectées.",
+    articleSlug: 'cellules-souches-et-therapies-regeneratives',
+  },
+  {
+    id: 'therapie_cellulaire_mti_atmp',
+    termFr: 'Thérapie cellulaire (cellules souches) / MTI (ATMP)',
+    aliases: ['thérapie cellulaire', 'cellules souches', 'MTI', 'ATMP', 'médecine régénérative'],
+    shortDefinitionFr:
+      "Traitement utilisant des cellules vivantes pour tenter de réparer le cœur. Dans l'UE, les médicaments de thérapie innovante (MTI / ATMP) relèvent d'une autorisation centralisée ; en juin 2026, aucun n'est autorisé pour le cœur. Les injections payantes hors essai enregistré ne sont pas un traitement prouvé.",
+    articleSlug: 'cellules-souches-et-therapies-regeneratives',
+  },
+  {
+    id: 'agoniste_glp1_incretine',
+    termFr: 'Agoniste du GLP-1 / incrétine (sémaglutide, tirzépatide, rétatrutide)',
+    aliases: ['GLP-1', 'incrétine', 'sémaglutide', 'Wegovy', 'Ozempic', 'tirzépatide', 'Mounjaro', 'rétatrutide'],
+    shortDefinitionFr:
+      "Médicaments imitant des hormones digestives pour abaisser la glycémie et le poids. Bénéfice démontré sur les infarctus/AVC et l'HFpEF, mais non prouvé dans l'ICFER (SOUL HR 0,98 ; hausse modérée de fréquence cardiaque et déshydratation digestive à surveiller).",
+    articleSlug: 'medicaments-glp1-et-incretines',
+  },
+  {
+    id: 'hepcidine_ferroportine',
+    termFr: 'Hepcidine / ferroportine',
+    aliases: ['hepcidine', 'ferroportine', 'absorption du fer'],
+    shortDefinitionFr:
+      "L'hepcidine est une hormone souvent élevée dans l'insuffisance cardiaque qui ferme la ferroportine, porte de sortie du fer hors de l'intestin : elle explique pourquoi le fer oral recharge mal les réserves par rapport au fer intraveineux.",
+    articleSlug: 'fer-oral-haute-biodisponibilite',
+  },
+  {
+    id: 'hiit_readaptation',
+    termFr: 'HIIT (entraînement fractionné à haute intensité)',
+    aliases: ['HIIT', 'entraînement fractionné', 'interval training'],
+    shortDefinitionFr:
+      "Alternance d'intervalles d'effort soutenu et de récupération. Dans le plus grand essai dédié à l'ICFER (SMARTEX-HF), le HIIT n'a pas fait mieux que l'endurance continue modérée sur le remodelage du ventricule gauche ou la capacité d'effort.",
+    articleSlug: 'musculation-vs-endurance-readaptation-cardiaque',
+  },
 ];
