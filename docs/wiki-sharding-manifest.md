@@ -1,7 +1,7 @@
 # Manifeste de Decoupage du Wiki -- Port Francais Multi-Agents
 
 > **Document associe :** [Specification de Conception et d'Architecture](./design-spec.md)
-> **Source locale :** `C:\Users\Florian\Documents\wiki\topics\ischaemic-cardiomyopathy`
+> **Source locale :** Variable d'environnement `WIKI_ROOT` (par ex. `~/Documents/wiki/topics/ischaemic-cardiomyopathy`)
 > **Date de reference du wiki (`asOf`) :** `2026-11-24` / `2026-11-25` (synchronise par article avec le frontmatter YAML source)
 > **Couverture totale :** 51 fichiers sources (50 articles/theses compiles dans `wiki/` + 1 playbook dans `output/`) repartis en 6 lots disjoints (`W1-Content-1` a `W1-Content-6`)
 
@@ -9,7 +9,7 @@
 
 ## 1. Regles Absolues pour tous les Agents de Contenu (`W1-Content-1..6`)
 
-1. **Interdiction stricte de lire `raw/` :** Les agents ne doivent **jamais** ouvrir, citer ou copier le moindre fichier de `C:\Users\Florian\Documents\wiki\topics\ischaemic-cardiomyopathy\raw\` (qui contient des documents personnels prives). Travailler exclusivement a partir des chemins listes dans le tableau de son lot ci-dessous.
+1. **Interdiction stricte de lire `raw/` :** Les agents ne doivent **jamais** ouvrir, citer ou copier le moindre fichier de `<WIKI_ROOT>/raw/` (qui contient des documents personnels prives). Travailler exclusivement a partir des chemins listes dans le tableau de son lot ci-dessous.
 2. **Propriete exclusive des fichiers :** Chaque agent ecrit uniquement les fichiers `src/content/fr/articles/<slug>.ts` (et, le cas echeant, les catalogues explicitement assignes a son lot). Aucun agent ne modifie `src/content/fr/index.ts`, `src/types/*`, ni aucun fichier d'un autre lot.
 3. **Auto-decouverte :** Chaque fichier article exporte `export const article: WikiArticle = { ... }` (export nomme `article`, conforme au type `WikiArticle` de `src/types/content.ts`). L'index de la bibliotheque les charge automatiquement via `import.meta.glob('./articles/*.ts', { eager: true })`.
 4. **Zero emoji :** Aucun emoji dans le texte, les titres, les appels ou les commentaires de code.

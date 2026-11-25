@@ -1,11 +1,12 @@
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import process from 'node:process';
 import { pathToFileURL } from 'node:url';
 import { EXPECTED_ARTICLE_SLUGS } from '../src/content/fr/expected-slugs';
 import type { WikiArticle } from '../src/types';
 
-const DEFAULT_WIKI_ROOT = 'C:\\Users\\Florian\\Documents\\wiki\\topics\\ischaemic-cardiomyopathy';
+const DEFAULT_WIKI_ROOT = path.join(os.homedir(), 'Documents', 'wiki', 'topics', 'ischaemic-cardiomyopathy');
 const ALLOWED_SOURCE_PREFIXES = ['wiki/', 'output/'] as const;
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 

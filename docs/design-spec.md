@@ -3,7 +3,7 @@
 > **Statut :** Specification d'architecture optimisee pour execution parallele multi-agents
 > **Date :** 24 novembre 2026
 > **Langue cible :** Francais (public et systeme de sante francais + recommandations europeennes ESC)
-> **Source scientifique de reference :** Wiki local `C:\Users\Florian\Documents\wiki\topics\ischaemic-cardiomyopathy` (42 articles compiles dans `wiki/` + 1 playbook dans `output/`, bases sur ESC 2026, ESC 2024 CCS, ESC/EACTS 2025, HFA 2024, HAS, Assurance Maladie / Ameli, Service-Public, Arrete du 28 mars 2022)
+> **Source scientifique de reference :** Wiki local (`WIKI_ROOT`, par ex. `~/Documents/wiki/topics/ischaemic-cardiomyopathy` ; 42 articles compiles dans `wiki/` + 1 playbook dans `output/`, bases sur ESC 2026, ESC 2024 CCS, ESC/EACTS 2025, HFA 2024, HAS, Assurance Maladie / Ameli, Service-Public, Arrete du 28 mars 2022)
 > **Manifeste de contenu associe :** [Manifeste de decoupage du wiki (6 lots / 43 fichiers)](./wiki-sharding-manifest.md)
 
 ---
@@ -32,7 +32,7 @@ L'application poursuit quatre objectifs indivisibles :
 
 ### 1.3 Invariants Globaux & Contrat Editorial (Obligatoires pour tous les agents)
 Tout agent intervenant sur le code, les regles, l'UI ou le contenu doit respecter sans exception :
-1. **Exclusion absolue de `raw/` :** Ne jamais lire, indexer, citer ni copier aucun fichier de `C:\Users\Florian\Documents\wiki\topics\ischaemic-cardiomyopathy\raw\` (contient des documents personnels prives). Le depot ne contient que des connaissances scientifiques generales et un profil fictif anonymise pour le *Mode decouverte*.
+1. **Exclusion absolue de `raw/` :** Ne jamais lire, indexer, citer ni copier aucun fichier de `<WIKI_ROOT>/raw/` (contient des documents personnels prives). Le depot ne contient que des connaissances scientifiques generales et un profil fictif anonymise pour le *Mode decouverte*.
 2. **Langue et ton :** Francais idiomatique, **vouvoiement** systematique (`vous`, `votre cardiologue`), ton calme, factuel et non alarmiste.
 3. **Unites et formatage francais :** Virgule decimale a l'affichage (`0,55 g/L`, `2,0 kg`), LDL en **g/L** en priorite (equivalence `mmol/L` en secondaire), creatinine en `umol/L` (avec aide de conversion `mg/L`), poids en `kg`, TA en `mmHg`, FC en `bpm`.
 4. **Terminologie uniforme :** Respect strict du glossaire partage dans [wiki-sharding-manifest.md](./wiki-sharding-manifest.md) (`FEVG`, `ICFER`, `ARM`, `iSGLT2`, `CST`, `DFGe`, `DAI`, `ETT` vs `IRM`, DCI + nom commercial francais).
