@@ -175,15 +175,24 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
       'Magné B6',
       'Antiacide magnésium',
       'Maalox',
+      'Laxatif au magnésium',
     ],
     verdict: 'not_supported',
     summaryFr:
       'Aucun essai randomisé solide ne démontre de bénéfice cardiaque dans l’ICFER ; à ne pas débuter « au cas où » sans dosage sanguin ni vérification de la fonction rénale, avec espacement nécessaire vis-à-vis de certains médicaments.',
     mechanismOrCaveatFr:
-      'Dans GALACTIC-HF (FEVG ≤ 35 %), un magnésium bas (17,6 %) ne prédisait pas de surrisque contrairement à un magnésium élevé (> 0,95 mmol/L). Chez les vétérans américains IC (Yin 2026, observationnel), le magnésium oral s’associait à moins d’événements si le taux était bas (HR 0,91) mais à davantage si le taux était normal (HR 1,11). Le seul essai oral de survie (MACH, 79 NYHA IV, orotate) est trop fragile et non répliqué. Limites supérieures : 250 mg/j (UE) et 350 mg/j (É.-U.). Risque d’hypermagnésémie si le DFGe diminue (contre-indiqué < 30 mL/min sur les notices françaises) ; les IEC et AINS freinent son élimination et les iSGLT2 l’élèvent légèrement. Espacer des tétracyclines, fluoroquinolones et bisphosphonates (≥ 2 h), prendre la rosuvastatine (Crestor) ≥ 2 h avant tout antiacide aluminium/magnésium, surveiller le lien magnésium-digoxine, et attention aux produits magnésium-B6 (Magné B6 apporte 30 à 40 mg/j de B6 à la dose maximale, au-dessus de la limite UE de 12 mg/j).',
+      'Dans GALACTIC-HF (FEVG ≤ 35 %), un magnésium bas (17,6 %) ne prédisait pas de surrisque contrairement à un magnésium élevé (> 0,95 mmol/L). Chez les vétérans américains IC (Yin 2026, observationnel), le magnésium oral s’associait à moins d’événements si le taux était bas (HR 0,91) mais à davantage si le taux était normal (HR 1,11). Le seul essai oral de survie (MACH, 79 NYHA IV, orotate) est trop fragile et non répliqué. Limites supérieures : 250 mg/j (UE) et 350 mg/j (É.-U.). Risque d’hypermagnésémie si le DFGe diminue (contre-indiqué < 30 mL/min sur les notices françaises) — y compris lorsque l’oxyde de magnésium est pris comme laxatif contre la constipation (dans une petite cohorte de patients IC âgés au DFGe moyen d’environ 40 mL/min/1,73 m², 3 utilisateurs testés sur 15 avaient une hypermagnésémie asymptomatique ; Terashima 2025). Les IEC et AINS freinent son élimination et les iSGLT2 l’élèvent légèrement. Espacer des tétracyclines, fluoroquinolones et bisphosphonates (≥ 2 h), prendre la rosuvastatine (Crestor) ≥ 2 h avant tout antiacide aluminium/magnésium, surveiller le lien magnésium-digoxine, et attention aux produits magnésium-B6 (Magné B6 apporte 30 à 40 mg/j de B6 à la dose maximale, au-dessus de la limite UE de 12 mg/j).',
     affectedPillars: ['loop_diuretic', 'raas_arni', 'mra', 'sglt2i', 'lipid_lowering', 'addon_hf', 'other'],
     evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (hors carence) ; GALACTIC-HF 2026 ; Yin 2026 ; EFSA 250 mg/j',
-    sources: ['Chimura 2026 (GALACTIC-HF)', 'Yin 2026 (EHJ)', 'Argeros 2025', 'Aal-Hamad 2023', 'NIH ODS / EFSA', 'AHA/ACC/HFSA 2022'],
+    sources: [
+      'Chimura 2026 (GALACTIC-HF)',
+      'Yin 2026 (EHJ)',
+      'Terashima 2025',
+      'Argeros 2025',
+      'Aal-Hamad 2023',
+      'NIH ODS / EFSA',
+      'AHA/ACC/HFSA 2022',
+    ],
     articleSlug: 'magnesium-insuffisance-cardiaque',
   },
   {

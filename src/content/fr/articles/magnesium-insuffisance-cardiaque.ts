@@ -60,6 +60,7 @@ Le magnésium rejoint ainsi la thiamine et la vitamine D : on traite une carence
 
 - **Médicaments en cause :** les diurétiques de l'anse (furosémide — *Lasilix*, bumétanide — *Burinex*) et thiazidiques augmentent la perte urinaire de magnésium, et les **inhibiteurs de la pompe à protons (IPP)** pris plus d'un an peuvent aussi l'abaisser. À l'inverse, les diurétiques épargneurs de potassium tels que la spironolactone (*Aldactone*) réduisent cette perte (**NIH ODS**).
 - **Conséquences d'une carence sévère :** troubles du rythme cardiaque, spasme coronaire, crampes, hypokaliémie ou hypocalcémie. Une hypomagnésémie (comme une hypokaliémie) accroît le risque de **toxicité à la digoxine**.
+- **Fréquence d'un magnésium bas dans l'IC :** la prévalence varie selon les études ; une revue de 2025 (**Sato 2025**) rapporte 19 à 37 % dans son texte principal (et 7 à 52 % dans son résumé).
 - **Limite du dosage sanguin :** moins de 1 % du magnésium corporel se trouve dans le sang, de sorte qu'une magnésémie normale n'exclut pas des réserves basses ; il n'existe toutefois pas de meilleur examen de routine (**NIH ODS**).
 
 ### Magnésémie et pronostic dans l'ICFER : GALACTIC-HF (2026) et Khraisat (2026)
@@ -81,6 +82,15 @@ Dans **GALACTIC-HF** (**Chimura 2026**, 6 147 patients ambulatoires avec **FEVG 
 - **Yin (2026, *European Heart Journal*) :** cohorte appariée par score de propension chez des vétérans américains atteints d'IC (financement public NHLBI, NIH ODS, VA). Chez les patients ayant une magnésémie **basse** (< 1,7 mg/dL, soit ~0,70 mmol/L), débuter du magnésium oral (médiane 420 mg/j) était associé à moins d'hospitalisations IC ou décès à 1 an : 20,1 % contre 21,7 % (**HR 0,91** ; IC 95 % 0,86–0,97 ; signal le plus net en dessous de 1,3 mg/dL avec **HR 0,81** ; nul à 1,6 mg/dL avec HR 0,99). En revanche, lorsque le taux initial était **normal**, la supplémentation était associée à **davantage d'événements** : 19,5 % contre 17,8 % (**HR 1,11** ; IC 95 % 1,02–1,21).
 - **Cheng (2025, *Nutrients*) :** chez des vétérans nouvellement diagnostiqués IC, la prise de magnésium sans ordonnance était liée à un HR de 0,81 (0,77–0,86), ramené à HR 0,91 en excluant les décès précoces (signe probable de biais d'utilisateur en meilleure santé ; seuls 26 % avaient une FEVG connue ≤ 40 %, sans dose ni sel précisés).
 - **Lecture conjointe avec GALACTIC-HF :** toutes ces données sont observationnelles (pas d'essai randomisé), mais le message pratique converge : **vérifier le taux sanguin avant toute supplémentation**, et ne pas prendre de magnésium sans carence.
+
+### Oxyde de magnésium utilisé comme laxatif (Terashima 2025)
+
+Au Japon, l'oxyde de magnésium est le laxatif de première intention le plus courant, prescrit contre la constipation plutôt que comme complément cardiaque.
+
+- **Population :** 171 patients sortis d'un hôpital japonais après une hospitalisation pour IC (2020–2023) et maintenus sous laxatif régulier (âge moyen 81 ans, **FEVG moyenne 54 %**, seulement 38 % < 50 %, part exacte d'ICFER non précisée, 47 % de maladie coronaire, DFGe moyen d'environ 40 mL/min/1,73 m²).
+- **Résultats :** après appariement de 41 utilisateurs d'oxyde de magnésium et de 41 utilisateurs d'autres laxatifs, la réhospitalisation pour IC à 1 an était de 9,8 % contre 29,3 % (**HR 0,30** ; IC 95 % 0,10–0,92 ; le résumé indique 0,33) et le critère réhospitalisation ou décès de 12,2 % contre 36,6 % (HR 0,30). En revanche, la **mortalité isolée ne différait pas** (HR 0,31 ; IC 95 % 0,06–1,56 ; avant appariement, la tendance sur les décès allait même en sens inverse, HR 1,53 non significatif).
+- **Signal de sécurité :** la magnésémie n'a été dosée que chez 23 patients ; **3 des 15 utilisateurs testés présentaient une hypermagnésémie** (> 2,6 mg/dL), sans symptôme.
+- **Poids scientifique très faible :** étude rétrospective monocentrique reposant sur 4 contre 12 réhospitalisations après appariement, fort biais d'indication (les médecins évitent l'oxyde de magnésium lorsque la fonction rénale est plus altérée, et le groupe comparateur utilisait davantage de laxatifs de secours), aucune dose enregistrée et plusieurs incohérences de présentation. L'applicabilité à l'ICFER ischémique (FEVG ≤ 35 %) est indirecte : cette étude porte sur le choix d'un laxatif chez des patients majoritairement à FEVG préservée, et non sur un traitement de l'IC.
 
 ### Essais randomisés et études mécanistiques
 
@@ -146,7 +156,7 @@ Une fois dissous, le magnésium est absorbé sous forme d'ion minéral libre : a
 - Les reins éliminent l'excès de magnésium : **le risque d'accumulation (hypermagnésémie) augmente dès que la fonction rénale diminue**. En France, les notices de *Magné B6* et *Mag 2* contre-indiquent ces spécialités lorsque la clairance de la créatinine est **inférieure à 30 mL/min**.
 - **Seuils biologiques et signes (Aal-Hamad 2023) :** une magnésémie normale se situe autour de **0,7 à 1,0 mmol/L**. Des symptômes non spécifiques apparaissent au-dessus de **2,2 mmol/L** ; disparition des réflexes et baisse de tension au-dessus de **3,5 mmol/L** ; anomalies ECG et paralysie au-dessus de **6,5 mmol/L** ; coma et arrêt cardiaque au-dessus de **8,7 mmol/L**.
 - Dans une cohorte de 2 176 personnes prenant de l'oxyde de magnésium quotidiennement, l'hypermagnésémie était associée à l'insuffisance rénale chronique de stade 4, aux doses supérieures à **1 000 mg/j** et aux laxatifs stimulants (**Aal-Hamad 2023**).
-- Les **IEC** et les **AINS** diminuent l'élimination rénale du magnésium (**Aal-Hamad 2023**). Par ailleurs, les **iSGLT2** (comme la dapagliflozine — *Forxiga* ou l'empagliflozine — *Jardiance*) élèvent légèrement la magnésémie (environ +0,07 mmol/L dans 25 essais chez des patients diabétiques).
+- Les **IEC** et les **AINS** diminuent l'élimination rénale du magnésium (**Aal-Hamad 2023**). Chez des patients âgés atteints d'IC prenant de l'oxyde de magnésium comme laxatif (DFGe moyen ~40 mL/min/1,73 m²), 3 des 15 patients testés avaient une hypermagnésémie (**Terashima 2025**). Par ailleurs, les **iSGLT2** (comme la dapagliflozine — *Forxiga* ou l'empagliflozine — *Jardiance*) élèvent légèrement la magnésémie (environ +0,07 mmol/L dans 25 essais chez des patients diabétiques).
 
 ### Interactions avec vos médicaments
 
@@ -171,6 +181,7 @@ Aucune interaction avec les antiacides ou le magnésium ne figure dans les notic
 - **AHA/ACC/HFSA 2022 (IC) :** pas de compléments dans l'ICFER hors correction d'une carence spécifique (**Classe 3 : Absence de bénéfice**). Le bilan électrolytique de routine inclut le magnésium (Classe 1, C-EO), et le texte mentionne que le chélateur du potassium **patiromer** peut abaisser la magnésémie.
 - **ESC 2022 (arythmies ventriculaires) :** l'hypomagnésémie et l'hypokaliémie favorisent les **torsades de pointes** ; le **magnésium intraveineux associé au potassium** est recommandé dans les torsades de pointes (**Classe I, niveau C**), même si la magnésémie est normale. Une hypomagnésémie et l'IC figurent parmi les facteurs de risque à vérifier avant d'introduire un médicament allongeant l'intervalle QT. Aucun objectif chiffré de magnésémie n'est fixé.
 - **ESC IC 2021 / 2023 :** aucune mention du magnésium dans le texte (le texte ESC 2026 n'a pas pu être vérifié spécifiquement sur ce point). Les recommandations **ESC 2024 (fibrillation atriale)** précisent qu'il n'existe pas de preuve que le magnésium prévienne la FA après chirurgie.
+- **Magnésium intraveineux après un infarctus du myocarde (question hospitalière distincte) :** les grands essais randomisés (**ISIS-4**, environ 58 000 patients ; **MAGIC**) n'ont pas étayé son usage systématique ; seul l'essai plus petit **LIMIT-2** avait été positif (tel que résumé par **Jiang 2026**). Une analyse rétrospective de 2026 sur **5 650 patients en soins intensifs** après un infarctus (base hospitalière américaine MIMIC-IV) a associé le sulfate de magnésium IV à une moindre mortalité en réanimation (HR apparié **0,55** ; IC 95 % 0,42–0,71) et avancé une dose totale de 2 à 8 g. Toutefois, ce travail est très exposé aux biais de temps immortel et d'indication (le groupe comparateur « < 2 g » correspond essentiellement aux patients non traités, le pontage n'est pas ajusté), plusieurs valeurs *p* ne concordent pas avec les intervalles de confiance et la FEVG n'était pas renseignée : il ne remet pas en cause les résultats des grands essais randomisés (**Jiang 2026**).
 
 ### À retenir en pratique
 
@@ -211,6 +222,10 @@ Aucune interaction avec les antiacides ou le magnésium ne figure dans les notic
     {
       label: 'NIH ODS, EFSA (limites supérieures), Aal-Hamad (2023), AHA/ACC/HFSA 2022 et ESC 2022 (arythmies ventriculaires)',
       detail: 'Limites 250 mg/j (UE) et 350 mg/j (É.-U.), seuils d’hypermagnésémie et insuffisance rénale, notices françaises (Magné B6, Mag 2), interactions (rosuvastatine, antibiotiques, bisphosphonates, digoxine) et recommandations.',
+    },
+    {
+      label: 'Terashima et al. (2025), Jiang et al. (2026) et Sato et al. (2025)',
+      detail: 'Cohorte japonaise sur l’oxyde de magnésium laxatif dans l’IC (41 paires appariées, FEVG moyenne 54 %, hypermagnésémie 3/15), analyse MIMIC-IV du sulfate de magnésium IV en réanimation post-infarctus (limites méthodologiques) et revue des troubles électrolytiques dans l’IC.',
     },
   ],
   disclaimerType: 'medical',

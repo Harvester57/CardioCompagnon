@@ -140,7 +140,23 @@ En comparant une quadrithérapie complète (ARNI + bêtabloquant + ARM + iSGLT2)
       headingFr: 'Les diurétiques (« médicaments pour éliminer l’eau »)',
       bodyMarkdownFr: `Les **diurétiques de l'anse** — principalement le furosémide (*Lasilix*) et le bumétanide (*Burinex*) — sont recommandés pour soulager les signes de congestion (essoufflement, œdèmes des chevilles ou des jambes), à une posologie ajustée à l'état hydrique (**Classe I** dans les recommandations ESC 2026).
 
-Ce sont des traitements de **soulagement des symptômes** qui s'ajoutent aux quatre piliers sans les remplacer. La pesée quotidienne aide à repérer précocement une rétention d'eau (voir *Vivre au quotidien avec une insuffisance cardiaque*). Toute modification de dose doit suivre le plan convenu avec votre équipe médicale.`,
+Ce sont des traitements de **soulagement des symptômes** qui s'ajoutent aux quatre piliers sans les remplacer. La pesée quotidienne aide à repérer précocement une rétention d'eau (voir *Vivre au quotidien avec une insuffisance cardiaque*).
+
+### Pendant combien de temps, et à quelle dose ?
+
+Contrairement aux quatre piliers du traitement de fond, les diurétiques n'ont pas démontré d'allongement de la durée de vie : leur posologie a donc vocation à évoluer en fonction de votre état hydrique plutôt que de rester figée. Une revue narrative de 2026 (Athènes, **Paraskevaidis et al.**) résume cette approche :
+
+- **Augmenter franchement en cas de congestion ; réduire une fois l'excès d'eau éliminé :** une rétention hydrique persistante à la sortie d'hospitalisation est associée à un moins bon pronostic, mais maintenir une dose élevée une fois la congestion disparue expose à une hypotension artérielle, une atteinte rénale, une baisse du sodium ou du potassium, des vertiges et des chutes.
+- **Seule règle posologique proposée par la revue :** un schéma décisionnel indique que, chez un patient stable sans signe de surcharge hydrique, la dose de diurétique de l'anse ou thiazidique peut être **réduite jusqu'à 50 %**, sous réserve d'une surveillance quotidienne de la tension artérielle et de la volémie et d'un contrôle des symptômes, de la fonction rénale et des électrolytes toutes les **1 à 2 semaines**. Cette règle ne repose pas sur un essai clinique. Le même schéma qualifie par ailleurs l'ARM d'« alternative » au diurétique, une présentation peu adaptée à l'ICFER où l'ARM est un pilier de fond à part entière.
+- **Des données d'arrêt complet encore limitées** (telles que rapportées par la revue) :
+  - dans l'essai en double aveugle **ReBIC-1** (**188 patients** ambulatoires stables sous faible dose de furosémide ; FEVG médiane **32 %**, environ un tiers d'origine ischémique selon la revue de Luo 2025), l'arrêt n'a pas aggravé l'essoufflement et **75,3 %** des patients ayant arrêté sont restés sans furosémide contre **83,7 %** dans le groupe poursuivant le traitement ;
+  - dans une étude plus ancienne, **29 patients sur 41 (71 %)** ont dû reprendre un diurétique dans les **12 semaines**, un risque associé à une **FEVG ≤ 27 %** et à une dose de furosémide **> 40 mg/jour** ;
+  - ces études sont toutes antérieures à la généralisation des iSGLT2. Cela rejoint la revue systématique de 2025 présentée dans *Insuffisance cardiaque à FEVG améliorée (HFimpEF)* : les diurétiques de l'anse constituent la seule classe pour laquelle un arrêt encadré dispose d'un appui clinique.
+- **Les traitements récents peuvent diminuer les besoins en diurétiques :** dans **PARADIGM-HF**, les réductions de dose de diurétique ont été plus fréquentes sous sacubitril/valsartan (*Entresto*) que sous énalapril, et dans **EMPEROR-Reduced**, l'empagliflozine (*Jardiance*) a réduit la nécessité d'intensifier les diurétiques. La revue y voit une incitation à réévaluer la posologie en consultation, et non un motif de baisse automatique.
+- **Un plan écrit personnalisé** est recommandé lors de toute diminution de dose : fourchette de poids cible, signes de retour de la rétention hydrique (prise de poids accompagnée d'œdèmes ou d'essoufflement), signes de déshydratation excessive (vertiges, tension basse, hausse de la créatinine), dates des bilans sanguins et dose de reprise prévue.
+- **Limites de cette revue :** revue narrative sans recherche systématique, ne citant ni les recommandations ESC ni les recommandations américaines sur l'insuffisance cardiaque, comportant plusieurs imprécisions de citation et sans tableaux posologiques médicament par médicament. Toute modification de dose relève exclusivement de votre équipe médicale.
+
+Pour les bilans sanguins associés, voir *Médicaments : mode d'action, effets secondaires et bilans sanguins* ; pour la baisse du sodium sanguin (hyponatrémie), voir *Sel et liquides dans l'insuffisance cardiaque*.`,
     },
     {
       headingFr: 'Médicaments additionnels pour des situations particulières',
@@ -177,6 +193,7 @@ Ce sont des traitements de **soulagement des symptômes** qui s'ajoutent aux qua
     'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'insuffisance-cardiaque-fevg-amelioree',
+    'sel-et-liquides-insuffisance-cardiaque',
     'dispositifs-cardiaques-dai-crt',
     'revascularisation-pontage-stents',
     'vivre-avec-insuffisance-cardiaque',
@@ -220,6 +237,10 @@ Ce sont des traitements de **soulagement des symptômes** qui s'ajoutent aux qua
     {
       label: 'OPTIPHARM-HF, TITRATE-HF et REPORT-HF (EJHF, 2025, textes intégraux)',
       detail: 'Registres récents en pratique réelle sur la quadrithérapie, les doses cibles, les freins à la titration et l’impact de la polymédication hors IC',
+    },
+    {
+      label: 'Paraskevaidis et al. (revue narrative, 2026, texte intégral)',
+      detail: 'Durée, réduction progressive et arrêt encadré des diurétiques de l’anse (ReBIC-1, PARADIGM-HF, EMPEROR-Reduced, plan écrit et limites méthodologiques)',
     },
     {
       label: 'Recommandations ACC/AHA/HFSA 2022 et NICE NG106 (2025)',

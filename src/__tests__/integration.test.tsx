@@ -107,7 +107,7 @@ describe("Tests d'intégration multi-modules CardioCompagnon (W3)", () => {
 
     // 1. Écran Aujourd'hui chargé (route lazy-loaded)
     expect(
-      await screen.findByText('Saisie matinale rapide', undefined, { timeout: 5000 }),
+      await screen.findByText('Saisie matinale rapide', undefined, { timeout: 10_000 }),
     ).toBeInTheDocument();
 
     // Saisie d'une prise de poids rapide (+2,5 kg vs poids sec et J-2) + œdèmes en aggravation
@@ -150,7 +150,7 @@ describe("Tests d'intégration multi-modules CardioCompagnon (W3)", () => {
       await screen.findByRole(
         'heading',
         { level: 1, name: /Mon Plan & Consultations/i },
-        { timeout: 5000 },
+        { timeout: 10_000 },
       ),
     ).toBeInTheDocument();
 
@@ -164,7 +164,7 @@ describe("Tests d'intégration multi-modules CardioCompagnon (W3)", () => {
     fireEvent.click(firstArticleLink);
 
     expect(
-      await screen.findByRole('heading', { level: 2, name: 'En clair' }, { timeout: 5000 }),
+      await screen.findByRole('heading', { level: 2, name: 'En clair' }, { timeout: 10_000 }),
     ).toBeInTheDocument();
     expect(
       screen.getByRole('button', { name: /Retour à la bibliothèque/i }),

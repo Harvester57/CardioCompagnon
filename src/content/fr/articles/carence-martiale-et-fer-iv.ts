@@ -39,7 +39,9 @@ export const article: WikiArticle = {
       bodyMarkdownFr: `- **Définition historique (utilisée dans tous les grands essais cliniques) :** ferritine **< 100 µg/L (ng/mL)**, *ou* ferritine entre **100 et 299 µg/L** associée à un coefficient de saturation de la transferrine (**CST**) **< 20 %**.
 - **Orientation discutée par l'ESC 2026 :** les recommandations européennes évoquent une définition reposant uniquement sur le **CST < 20 %**, jugée plus sensible et plus spécifique, en suggérant que les patients ayant un CST < 20 % tireraient le plus grand bénéfice. La formulation exacte du texte intégral indique qu'une telle définition « a été proposée » : il s'agit donc d'une proposition en discussion plutôt que d'une redéfinition formelle définitive. Si elle était adoptée, certains patients diagnostiqués sur la seule ferritine basse ne rempliraient plus le critère, tandis que d'autres ayant une ferritine « normale » mais un CST bas y deviendraient éligibles.
 - **Dépistage systématique (ESC 2026) :** le dosage du CST et de la ferritine fait partie du bilan sanguin initial de toute insuffisance cardiaque (**Classe I, Niveau C**) ainsi que des bilans de suivi réguliers.
-- **Critères NICE NG106 (Royaume-Uni, mise à jour 2025) :** retient une définition « ou » — **CST < 20 % ou ferritine < 100 µg/L** — lorsque l'hémoglobine est **< 15 g/dL (150 g/L)**.`,
+- **Critères NICE NG106 (Royaume-Uni, mise à jour 2025) :** retient une définition « ou » — **CST < 20 % ou ferritine < 100 µg/L** — lorsque l'hémoglobine est **< 15 g/dL (150 g/L)**.
+- **Pourquoi la ferritine seule peut induire en erreur :** la ferritine augmente sous l'effet de l'inflammation, du surpoids, du diabète, d'une stéatose hépatique (« foie gras ») ou d'une maladie aiguë ; elle peut donc paraître normale ou élevée alors que le fer réellement utilisable manque. Une revue de 2025 (**Sato et al.**) plaide pour une définition fondée sur le CST ou le fer sérique : un **CST ≤ 19,8 %** ou un **fer sérique ≤ 13 µmol/L** correspondait le mieux aux réserves de fer de la moelle osseuse, et c'est un CST bas — et non une ferritine basse — qui prédisait la mortalité.
+- **Ferritine élevée et troubles métaboliques :** dans une cohorte de **7 498 patients** chinois atteints d'insuffisance cardiaque à **FEVG préservée** (**Ni et al., 2025**), environ **30 %** présentaient une « hyperferritinémie métabolique » (ferritine élevée associée à un diabète, une obésité, une stéatose hépatique ou une insulinorésistance). Les grades les plus élevés étaient associés à davantage de décès ou d'hospitalisations pour insuffisance cardiaque (**grade 2/3 : HR 1,43**, IC 95 % **1,26–1,62** après ajustement complet), de manière comparable avec ou sans maladie coronaire. Cette étude est observationnelle, la ferritine était mesurée à l'admission, le fer sérique et le CST manquaient chez plus de la moitié des patients, et aucun patient en ICFER n'a été inclus. Sa portée ici est le principe général qu'une ferritine élevée ne prouve pas que les réserves de fer sont satisfaisantes et peut signaler un risque métabolique.`,
     },
     {
       headingFr: 'Ce que démontre le fer intraveineux',
@@ -154,6 +156,10 @@ Des formulations orales plus récentes sont commercialisées comme capables de c
     {
       label: 'NICE NG106 (2025), AHA/ACC/HFSA 2022 et Khan et al. (2021)',
       detail: 'Critères britanniques (1.4.5–1.4.7), note sur l’hypophosphatémie, recommandation américaine 2a B-R et contre-indication des ASE (Classe 3 : Danger)',
+    },
+    {
+      label: 'Sato et al. (revue narrative, 2025, texte intégral) et Ni et al. (2025, texte intégral)',
+      detail: 'Limites de la ferritine seule (CST ≤ 19,8 %, fer sérique ≤ 13 µmol/L) et hyperferritinémie métabolique chez 7 498 patients en ICFEP (grade 2/3 HR 1,43)',
     },
   ],
   disclaimerType: 'medical',

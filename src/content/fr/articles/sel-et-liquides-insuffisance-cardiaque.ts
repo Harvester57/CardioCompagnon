@@ -5,7 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/salt-and-fluid-in-heart-failure.md',
   titleFr: "Sel et apports hydriques dans l'insuffisance cardiaque",
   category: 'nutrition',
-  asOf: '2026-11-24',
+  asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'warm',
   tags: [
@@ -17,6 +17,8 @@ export const article: WikiArticle = {
     'fresh-up',
     'substituts-de-sel',
     'hyperkaliémie',
+    'hyponatrémie',
+    'sensibilité-au-sel',
     'autogestion',
   ],
   aliases: [
@@ -25,12 +27,15 @@ export const article: WikiArticle = {
     'Restriction hydrique',
     'Limite de liquides',
     'Substituts de sel au potassium',
+    'Hyponatrémie',
+    'Sodium sanguin bas',
+    'Natrémie basse',
     'SODIUM-HF',
     'FRESH-UP',
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Les conseils sur le sel et les boissons dans l'insuffisance cardiaque se sont nettement assouplis. Deux grands essais récents ont évalué les anciennes restrictions strictes : réduire très fortement le sel (SODIUM-HF) n'a pas diminué les décès ni les hospitalisations, même si la qualité de vie s'est légèrement améliorée ; imposer une limite fixe de 1,5 L de liquides par jour (FRESH-UP) n'a apporté aucun bénéfice mesurable chez les patients stables tout en augmentant nettement la soif. L'approche européenne actuelle est d'éviter les excès de sel sans tomber dans les extrêmes (repère HFA 2024 jusqu'à environ 5 g de sel par jour), de boire selon votre soif sauf limite prescrite par votre équipe, de ne jamais remplacer le sel par un substitut au potassium sans accord médical, et de garder la pesée quotidienne comme filet de sécurité.",
+    "Les conseils sur le sel et les boissons dans l'insuffisance cardiaque se sont nettement assouplis. Deux grands essais récents ont évalué les anciennes restrictions strictes : réduire très fortement le sel (SODIUM-HF) n'a pas diminué les décès ni les hospitalisations, même si la qualité de vie s'est légèrement améliorée ; imposer une limite fixe de 1,5 L de liquides par jour (FRESH-UP) n'a apporté aucun bénéfice mesurable chez les patients stables tout en augmentant nettement la soif. L'approche européenne actuelle est d'éviter les excès de sel sans tomber dans les extrêmes (repère HFA 2024 jusqu'à environ 5 g de sel par jour), de boire selon votre soif sauf limite prescrite par votre équipe, de ne jamais remplacer le sel par un substitut au potassium sans accord médical, et de garder la pesée quotidienne comme filet de sécurité. Un sodium sanguin bas (hyponatrémie, < 135 mmol/L) reflète le plus souvent un excès d'eau plutôt qu'un manque de sel et constitue un repère pronostique à évaluer avec votre équipe.",
   sections: [
     {
       headingFr: 'Le sel (sodium) : ce que montrent les essais',
@@ -46,7 +51,9 @@ export const article: WikiArticle = {
 - **La tolérance a été peu détaillée** : aucun critère prédéfini d'effets indésirables n'était prévu, et la natrémie, la kaliémie, les hypotensions ou les chutes en cours de suivi ne figurent pas dans l'article principal. Davantage de participants ont retiré leur consentement dans le groupe restrictif (24 contre 12).
 - **Applicabilité :** la FEVG médiane de 36 % est proche de l'ICFER, mais l'article ne précise pas la proportion exacte de FEVG réduite ni de cause ischémique (45 à 47 % avaient une maladie coronaire).
 
-**Sel et tension artérielle : une question distincte.** En population générale, réduire le sel diminue la mortalité totale chez les personnes normotendues (RR 0,90) et la mortalité cardiovasculaire chez les personnes hypertendues (RR 0,67), avec une certitude modérée. Si vous avez aussi une maladie coronaire et une hypertension, éviter les apports excessifs en sel reste pleinement justifié.`,
+**Sel et tension artérielle : une question distincte.** En population générale, réduire le sel diminue la mortalité totale chez les personnes normotendues (RR 0,90) et la mortalité cardiovasculaire chez les personnes hypertendues (RR 0,67), avec une certitude modérée. Si vous avez aussi une maladie coronaire et une hypertension, éviter les apports excessifs en sel reste pleinement justifié.
+
+**Sensibilité au sel.** La hausse tensionnelle liée au sel varie d'une personne à l'autre. Une revue narrative de 2026 (**Bachlitzanaki 2026**) estime que près de la moitié des personnes hypertendues et environ un quart des personnes normotendues sont « sensibles au sel », un profil associé à l'absence de baisse nocturne de la tension, à une protéinurie, au déclin rénal et à l'insuffisance cardiaque à FEVG préservée (ICFEP). Il n'existe toutefois aucun test pratique en dehors de la recherche, et cette revue ne traite pas de l'ICFER. Elle affirme aussi qu'un apport inférieur à 1,5 g de sodium par jour serait associé à davantage d'hospitalisations et de décès en s'appuyant sur le consensus HFA 2024 et une revue sur l'hypertension plutôt que sur un essai clinique ; or l'essai randomisé **SODIUM-HF** ci-dessus n'a montré ni bénéfice net ni danger démontré pour cette cible.`,
     },
     {
       headingFr: 'Ce que disent aujourd’hui les recommandations sur le sel',
@@ -77,6 +84,25 @@ export const article: WikiArticle = {
   - Si votre cardiologue vous prescrit une limite de liquides, pensez que toutes les boissons, les soupes et les potages comptent dans le total quotidien.`,
     },
     {
+      headingFr: 'Sodium sanguin bas (hyponatrémie)',
+      bodyMarkdownFr: `En termes simples, un sodium bas sur une prise de sang signifie le plus souvent que l'organisme retient **trop d'eau**, et non qu'il manque de sel. Votre équipe médicale le considère comme un signal d'alerte à interpréter avec votre poids, vos œdèmes, votre bilan rénal et votre NT-proBNP, et non comme un chiffre à corriger en ajoutant du sel.
+
+- **Définition et fréquence :** on parle d'hyponatrémie en dessous d'environ **135 mmol/L** (les études retiennent 134 à 136 mmol/L). Elle touche environ **18 à 27 %** des patients atteints d'insuffisance cardiaque, et jusqu'à **30 %** lors d'une hospitalisation (**Sato 2025** ; **Gawron 2026**).
+- **Deux mécanismes distincts, pris en charge de façon opposée (Sato 2025 ; Gawron 2026) :**
+  - *Hyponatrémie de dilution* (la plus fréquente) : les hormones de stress, notamment la vasopressine, poussent les reins à retenir l'eau. Une perfusion de sérum salé risquerait de l'aggraver, raison pour laquelle l'équipe évalue toujours votre état hydrique avant d'agir.
+  - *Hyponatrémie de déplétion* (plus rare) : perte réelle de sel liée à des vomissements, une diarrhée, un régime sans sel très strict ou un diurétique thiazidique. Dans ce cas, l'arrêt du thiazidique et une rééquilibration encadrée par l'équipe peuvent aider.
+  - *(Point de méthode : le tableau récapitulatif de la revue Sato 2025 inverse les indices urinaires par rapport à son propre texte, qui suit la physiologie établie.)*
+- **Valeur pronostique (données observationnelles rapportées par ces deux revues) :** dans le registre **OPTIMIZE-HF** (**48 612 hospitalisations**), chaque baisse de 3 mmol/L sous 140 mmol/L était associée à environ **19,5 %** de risque supplémentaire de décès hospitalier. Dans **ESCAPE** (IC systolique sévère), la mortalité à 6 mois était de **31 %** lorsque la natrémie restait basse contre **16 %** lorsqu'elle était normale. Un sodium qui **reste bas ou continue de baisser** signale un risque plus élevé qu'une baisse transitoire en cours de décongestion ; cette association s'observe dans l'IC à FEVG réduite comme préservée (**Gawron 2026**).
+- **Remonter le chiffre par un médicament ne prolonge pas la vie :** le **tolvaptan** (antagoniste des récepteurs de la vasopressine) a corrigé la natrémie et soulagé l'essoufflement dans l'essai **EVEREST**, sans réduire la mortalité ni les hospitalisations pour IC. Une analyse *post hoc* ultérieure n'a suggéré un éventuel signal favorable qu'en cas d'hyponatrémie sévère (< 130 mmol/L) (**Gawron 2026** ; **Sato 2025**).
+- **Restriction hydrique :** une méta-analyse d'essais randomisés n'a pas montré de modification de la natrémie, des réhospitalisations ni de la mortalité (**Sato 2025**). Les recommandations ESC 2026 et NICE la conservent néanmoins au cas par cas pour l'hyponatrémie de dilution.
+- **Traitements de fond de l'IC :** les IEC et les bêtabloquants sont associés à une meilleure natrémie. Les ARM peuvent l'abaisser (décrit pour l'éplérénone après infarctus), mais leur bénéfice clinique s'est maintenu quel que soit le taux de sodium : la revue conseille donc de ne pas les arrêter sauf hyponatrémie sévère — toute adaptation relevant exclusivement de votre cardiologue (**Sato 2025**).
+- **Qualité des sources :** les deux revues sont narratives (Gawron 2026 provient d'une revue non cardiologique de faible visibilité, a utilisé un outil d'IA pour structurer le texte et ne fournit pas d'intervalles de confiance ; Sato 2025 est plus étoffée mais comporte plusieurs erreurs internes). Les chiffres cités sont de seconde main et concordent avec les études de référence telles que résumées.`,
+    },
+    {
+      headingFr: 'Pourquoi les symptômes peuvent varier vite : le rôle de réservoir des veines',
+      bodyMarkdownFr: `Les veines contiennent la majeure partie du sang de l'organisme, dont une fraction stockée en réserve principalement dans l'abdomen. Lorsque les veines se contractent — par exemple sous l'effet des hormones de stress lors d'un effort — cette réserve est déplacée vers le cœur et les poumons : les pressions de remplissage montent et un essoufflement peut survenir même sans prise de liquide supplémentaire. Une revue narrative de 2026 (**Lineham 2026**) avance que ce mécanisme joue un rôle important dans l'insuffisance cardiaque à FEVG préservée (ICFEP), où la plupart des traitements ciblant les veines ont échoué dans les essais cliniques. Il s'agit d'une piste de recherche et non d'une cible thérapeutique établie dans l'ICFER.`,
+    },
+    {
       headingFr: 'Substituts de sel au potassium : un danger spécifique',
       bodyMarkdownFr: `Les sels dits « pauvres en sodium » ou « de régime » remplacent une partie du chlorure de sodium par du **chlorure de potassium**.
 
@@ -100,6 +126,8 @@ export const article: WikiArticle = {
     'poids-obesite-et-denutrition',
     'vivre-avec-insuffisance-cardiaque',
     'tension-arterielle-insuffisance-cardiaque',
+    'medicaments-effets-secondaires-suivi',
+    'medicaments-insuffisance-cardiaque',
     'essais-cliniques-cles',
   ],
   sources: [
@@ -122,6 +150,10 @@ export const article: WikiArticle = {
     {
       label: 'AHA/ACC/HFSA 2022, NICE NG106 (2025) et notice sacubitril/valsartan (Entresto)',
       detail: 'Positions américaines et britanniques ; mise en garde contre les substituts de sel potassiques et données PARADIGM-HF.',
+    },
+    {
+      label: 'Gawron et al. (2026), Sato et al. (2025), Bachlitzanaki et al. (2026) et Lineham et al. (2026)',
+      detail: 'Revues narratives sur l’hyponatrémie dans l’IC (dilution vs déplétion, OPTIMIZE-HF, ESCAPE, tolvaptan/EVEREST), la sensibilité au sel (HTA, MRC, ICFEP) et le rôle de réservoir veineux dans l’ICFEP.',
     },
   ],
   disclaimerType: 'medical',

@@ -153,7 +153,19 @@ Les iSGLT2 sont mentionnés comme ne devant pas être initiés en dessous d'un D
 
 ### Facteurs fréquents d'élévation du potassium recherchés par le médecin
 
-Lorsqu'une hyperkaliémie apparaît, les médecins passent en revue les autres sources possibles : compléments en potassium, diurétiques épargneurs de potassium, anti-inflammatoires non stéroïdiens (**AINS** tels que l'ibuprofène ou le kétoprofène), antibiotique triméthoprime et **substituts de sel riches en potassium** (voir *Interactions entre compléments, aliments et médicaments cardiaques*).`,
+Lorsqu'une hyperkaliémie apparaît, les médecins passent en revue les autres sources possibles : compléments en potassium, diurétiques épargneurs de potassium, anti-inflammatoires non stéroïdiens (**AINS** tels que l'ibuprofène ou le kétoprofène), antibiotique triméthoprime et **substituts de sel riches en potassium** (voir *Interactions entre compléments, aliments et médicaments cardiaques*).
+
+### Pourquoi un potassium élevé n’impose pas automatiquement d’arrêter un traitement
+
+Une revue narrative de 2025 (Göttingen, **Sato et al.**) détaille les arguments en faveur du maintien des médicaments protecteurs du cœur lorsque le potassium sanguin (kaliémie) s'élève :
+
+- **Les deux extrêmes comptent :** le pronostic est moins favorable aussi bien avec un potassium trop bas qu'avec un potassium trop élevé (relation en U) ; les auteurs suggèrent une zone cible d'environ **4,0 à 5,0 mmol/L**. Dans le registre suédois de l'insuffisance cardiaque, environ **1 patient sur 4** a présenté un épisode d'hyperkaliémie et **1 sur 5** un épisode d'hypokaliémie sur un an.
+- **Perdre le médicament peut être le plus grand risque :** une kaliémie élevée conduit souvent à réduire ou suspendre les IEC, ARA2, ARNI ou ARM (**47 %** des nouveaux utilisateurs d'ARM dans une cohorte ont arrêté après un chiffre élevé). Dans un registre européen de **9 222 patients**, le lien entre hyperkaliémie et mortalité disparaissait une fois l'arrêt de ces traitements pris en compte, tandis que leur arrêt complet restait fortement associé au décès. Ces données restent observationnelles.
+- **Approche proposée par la revue :** maintenir ces médicaments tant que le potassium ne dépasse pas **5,5 mmol/L** ; s'ils sont diminués, les reprendre ou les réaugmenter dès le retour sous **5,0 mmol/L** ; réexaminer l'alimentation, les compléments et les autres médicaments élevant le potassium. Cette démarche concorde avec les seuils du consensus britannique, de NICE et de la revue européenne présentés ci-dessus.
+- **Options que votre équipe peut envisager :** dans **PARADIGM-HF**, le sacubitril/valsartan (*Entresto*) a provoqué légèrement moins d'hyperkaliémies sévères que l'énalapril (**4,3 % contre 5,6 %**). Des **chélateurs de potassium** — patiromer (*Veltassa*) ou cyclosilicate de zirconium sodique (*Lokelma*) — peuvent aider à maintenir un ARM. Dans l'essai **DIAMOND** (**878 patients** atteints d'ICFER randomisés après une phase ouverte sous patiromer ; environ **71 %** d'origine ischémique), la poursuite du patiromer a réduit les épisodes de potassium **> 5,5 mmol/L** (**HR 0,63**) et les réductions de dose d'ARM (**HR 0,62**), mais l'essai a modifié son critère principal en cours d'étude (passant des décès et hospitalisations à la seule kaliémie) et les décès étaient de **22 contre 16** (non significatif). **Aucun essai n'a donc démontré que les chélateurs de potassium améliorent la survie ou réduisent les hospitalisations** (voir *Finérénone, nouveaux ARM et chélateurs de potassium*).
+- **Un potassium trop bas (hypokaliémie)**, le plus souvent dû aux diurétiques de l'anse ou thiazidiques, est également associé à un moins bon pronostic ; aucun essai n'a évalué sa correction directe, mais les ARM en réduisent la survenue (**EMPHASIS-HF**).
+- **Sodium et magnésium** sont souvent contrôlés sur le même bilan sanguin : voir *Sel et liquides dans l'insuffisance cardiaque* (hyponatrémie) et *Magnésium et insuffisance cardiaque ischémique* (hypomagnésémie).
+- **Limites de cette revue :** revue narrative sans recherche systématique ; l'auteur principal déclare des liens avec plusieurs laboratoires fabriquant des traitements de l'insuffisance cardiaque et du fer intraveineux ; plusieurs erreurs internes ont été relevées à la lecture du texte intégral. Les chiffres d'essais cités sont ceux rapportés par la revue. Toute adaptation reste du ressort de votre cardiologue ou de votre médecin traitant.`,
     },
     {
       headingFr: 'En cas de maladie passagère : des avis divergents sur le plan « jours de maladie »',
@@ -214,6 +226,7 @@ Le registre international **REPORT-HF** a suivi **18 030 patients** sortant d'un
   ],
   relatedArticleSlugs: [
     'magnesium-insuffisance-cardiaque',
+    'sel-et-liquides-insuffisance-cardiaque',
     'medicaments-insuffisance-cardiaque',
     'interactions-complements-aliments-medicaments',
     'maladies-associees',
@@ -261,6 +274,14 @@ Le registre international **REPORT-HF** a suivi **18 030 patients** sortant d'un
     {
       label: 'REPORT-HF (EJHF, 2025, texte intégral)',
       detail: 'Polymédication hors insuffisance cardiaque après hospitalisation (18 030 patients), éviction des piliers et mortalité à 1 an',
+    },
+    {
+      label: 'Sato et al. (revue narrative sur les électrolytes, 2025, texte intégral)',
+      detail: 'Relation en U du potassium, maintien des bloqueurs du SRAA et des ARM, registre européen (9 222 patients), hypokaliémie et limites méthodologiques',
+    },
+    {
+      label: 'DIAMOND (European Heart Journal, 2022, texte intégral)',
+      detail: 'Essai randomisé de sevrage du patiromer dans l’ICFER (878 patients, 71 % ischémiques), réduction des baisses d’ARM, changement de critère principal et mortalité',
     },
   ],
   disclaimerType: 'medical',
