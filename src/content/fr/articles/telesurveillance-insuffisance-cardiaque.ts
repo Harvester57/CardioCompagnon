@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/remote-monitoring-in-heart-failure.md',
   titleFr: 'Télésurveillance à domicile et suivi à distance des prothèses',
   category: 'dispositifs',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

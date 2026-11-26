@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/smoking-and-alcohol-in-heart-failure.md',
   titleFr: "Tabac et alcool dans l'insuffisance cardiaque",
   category: 'quotidien',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

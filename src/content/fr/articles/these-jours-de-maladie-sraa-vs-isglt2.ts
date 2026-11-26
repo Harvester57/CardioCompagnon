@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/theses/sick-day-rules-raasi-vs-sglt2i-hfref.md',
   titleFr: 'Thèse : règles des « jours de maladie » — bloqueurs du SRAA/ARM contre iSGLT2 dans l’ICFER',
   category: 'traitements',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -30,7 +31,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core', 'ckd', 'diabetes'],
   plainSummaryFr:
-    "Les personnes vivant avec une insuffisance cardiaque reçoivent souvent des messages contradictoires sur les « jours de maladie » (faut-il suspendre certains comprimés lors d'une gastro-entérite ou d'une infection ?). Cette évaluation symétrique aboutit à un verdict nuancé : Partiellement étayée (confiance moyenne). Premièrement, ne suspendez pas vous-même vos traitements cardiaques à l'aide d'une fiche générique trouvée sur internet : le seul essai randomisé d'une carte « jours de maladie » (Fink 2022, patients rénaux) n'a montré aucun bénéfice rénal, une tendance à plus de recours aigus et plus de 50 % d'erreurs d'application — dont l'arrêt de mauvais médicaments. En vie réelle, environ la moitié des IEC/ARA2/ARM arrêtés ne sont jamais repris. Deuxièmement, la gravité compte énormément : un rhume bénin n'a rien à voir avec des vomissements ou diarrhées sévères (où l'insuffisance rénale aiguë hospitalisée bondit d'un facteur 23 à 43), qui justifient un appel précoce à votre médecin pour décider d'une pause brève encadrée avec date de reprise. Troisièmement, les iSGLT2 (dapagliflozine Forxiga, empagliflozine Jardiance) protègent les reins (-23 % d'IRA dans SMART-C), mais les RCP européens imposent leur interruption médicale lors d'une maladie aiguë grave, de pertes digestives, d'un jeûne prolongé ou d'une chirurgie majeure pour prévenir l'acidocétose euglycémique — un risque surtout présent en cas de diabète (en particulier sous insuline), beaucoup plus rare sans diabète mais souvent méconnu aux urgences. En pratique, convenez à froid d'un plan écrit personnalisé avec votre cardiologue.",
+    "Faut-il suspendre certains comprimés lors d'une gastro-entérite, d'une infection ou d'une opération ? Cette synthèse compare les preuves sur les « jours de maladie » pour vos traitements cardiaques et les inhibiteurs du SGLT2. Un arrêt improvisé expose à des risques, mais une déshydratation sévère demande un avis médical rapide. Utilisez cette fiche pour définir à l'avance un plan écrit avec votre cardiologue.",
   sections: [
     {
       headingFr: 'Thèse évaluée, variables clés et matrice décisionnelle clinique',

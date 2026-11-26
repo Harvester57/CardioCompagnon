@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/smartwatches-and-wearables-in-heart-failure.md',
   titleFr: "Montres connectées et capteurs dans l'insuffisance cardiaque",
   category: 'dispositifs',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'hot',

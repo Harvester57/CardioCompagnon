@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/heart-failure-with-improved-ef.md',
   titleFr: 'Insuffisance cardiaque à FEVG améliorée (HFimpEF)',
   category: 'diagnostic',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

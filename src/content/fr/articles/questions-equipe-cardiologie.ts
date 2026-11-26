@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/references/questions-for-the-cardiology-team.md',
   titleFr: "Questions à poser à l'équipe de cardiologie",
   category: 'references',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
@@ -26,7 +27,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Une liste structurée et dédoublonnée de questions ouvertes à emporter en consultation : chiffres clés, médicaments de fond et additionnels, diurétiques, IC avancée, angor, antiplaquettaires et IPP, dispositifs et arythmies ventriculaires, chirurgie/soins dentaires/jours de maladie, diabète et comorbidités, examens spécialisés, alimentation et interactions, automesure et montres connectées, vaccinations, vie quotidienne (sexualité, voyages, canicule, tabac, alcool), anticipation et réseau de soins en France.",
+    "Cette liste rassemble des questions concrètes, classées par thème, pour vous aider à préparer vos rendez-vous avec votre cardiologue, votre médecin traitant ou votre infirmière. Elle couvre vos chiffres clés, vos traitements, vos examens, votre vie quotidienne et vos démarches en France. Piochez-y les quelques questions qui comptent le plus pour vous afin de faciliter une décision partagée en consultation.",
   sections: [
     {
       headingFr: 'Comment utiliser cette liste',

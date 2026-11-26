@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/revascularisation-cabg-and-pci.md',
   titleFr: 'Revascularisation coronaire : pontage et stents',
   category: 'dispositifs',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

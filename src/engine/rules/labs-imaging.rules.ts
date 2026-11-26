@@ -115,7 +115,7 @@ export function evaluateLabsImagingRules(state: PatientState): RuleOutput[] {
         titleFr: isTsatLow
           ? "Carence martiale (CST < 20 %) : discuter le fer intraveineux"
           : "Bilan martial (ferritine + CST) à prévoir (> 12 mois)",
-        explanationFr: `${detailFr} Les recommandations ESC 2026 (Classe I/IIa) préconisent le dépistage périodique et, en cas de carence martiale en ICFER, une supplémentation par fer intraveineux ; le fer oral ne s'est pas montré efficace dans l'essai IRONOUT-HF.`,
+        explanationFr: `${detailFr} Les recommandations européennes préconisent le dépistage périodique et, en cas de carence en fer avérée dans l'ICFER, une perfusion de fer intraveineux ; le fer en comprimés ne s'est pas montré efficace dans cette situation.`,
         suggestedActionFr:
           "Lors de votre prochaine consultation, demandez à votre cardiologue ou à votre médecin traitant un bilan martial (ferritine + CST) et, si la carence est confirmée, si une perfusion de fer intraveineux est indiquée.",
         evidenceGrade: 'ESC 2026 Classe I/IIa',

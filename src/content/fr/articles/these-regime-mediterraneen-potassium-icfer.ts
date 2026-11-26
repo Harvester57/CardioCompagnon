@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/theses/mediterranean-diet-potassium-safety-hfref.md',
   titleFr: 'Thèse : régime méditerranéen et sécurité du potassium dans l’ICFER (DFG ≥ 30)',
   category: 'nutrition',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -30,7 +31,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core', 'ckd'],
   plainSummaryFr:
-    "Verdict de l'enquête : partiellement étayée (confiance moyenne). De nombreux patients atteints de cardiomyopathie ischémique se demandent s'ils doivent automatiquement restreindre les fruits, légumes et légumineuses du régime méditerranéen parce qu'ils prennent un ARNI (sacubitril/valsartan — Entresto) ou un IEC associés à un ARM (spironolactone — Aldactone, éplérénone — Inspra). La réponse comporte deux volets bien distincts. D'une part, lorsque la kaliémie est normale et le DFG préservé (≥ 45–60 mL/min/1,73 m²), les recommandations rénales modernes (KDIGO 2024, KDOQI 2020, ASN 2025) ne soutiennent pas une interdiction préventive systématique des aliments végétaux méditerranéens entiers, d'autant que les inhibiteurs du SGLT2 et le sacubitril/valsartan réduisent nettement les hyperkaliémies sévères (> 6,0 mmol/L) par rapport aux anciens schémas IEC + ARM. D'autre part, affirmer qu'un régime riche en potassium est largement sûr sans restriction jusqu'à un DFG de 30 mL/min/1,73 m² va trop loin : zéro essai randomisé ne l'a testé dans l'ICFER sous quadrithérapie, une hyperkaliémie > 5,5 mmol/L survient encore chez environ 8,6 % à 16 % des patients sous empagliflozine ou sacubitril/valsartan, un essai contrôlé d'alimentation riche en potassium dans la MRC de stade 3 (Turban 2021) a augmenté la kaliémie (+0,21 mmol/L) et doublé le risque de dépassement de 5,5 mmol/L (OR 2,50), et les études de bilan (Picard 2026) montrent une absorption réelle de 88 à 94 % quelle que soit la source. La source du potassium est décisive : évitez les substituts de sel au chlorure de potassium (KCl) et les additifs potassiques cachés des produits industriels « réduits en sel », modérez les formes concentrées (jus, smoothies, fruits secs, concentré de tomate), et personnalisez avec votre équipe en cas de DFG 30–44, de diabète ou de kaliémie ≥ 4,8–5,0 mmol/L. Ne levez jamais seul une restriction prescrite.",
+    "Devez-vous limiter les fruits et légumes du régime méditerranéen si vos traitements peuvent élever le potassium ? Cette synthèse fait le point selon vos reins et vos analyses. Elle distingue les végétaux entiers des formes concentrées et des sels de substitution au potassium, souvent déconseillés. Elle vous aide à personnaliser vos repas avec votre cardiologue, sans lever seul une restriction prescrite.",
   sections: [
     {
       headingFr: 'Question évaluée et distinction indispensable des trois sources de potassium',

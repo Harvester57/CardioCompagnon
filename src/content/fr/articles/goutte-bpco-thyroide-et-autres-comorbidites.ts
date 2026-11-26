@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/gout-copd-thyroid-and-other-comorbidities.md',
   titleFr: 'Goutte, BPCO, thyroïde, anémie non ferriprive, AOMI, fragilité et cognition',
   category: 'comorbidites',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

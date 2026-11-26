@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/sleep-apnoea-in-heart-failure.md',
   titleFr: 'Apnée du sommeil et insuffisance cardiaque',
   category: 'comorbidites',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/kidney-disease-in-heart-failure.md',
   titleFr: 'Maladie rénale chronique et insuffisance cardiaque',
   category: 'comorbidites',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

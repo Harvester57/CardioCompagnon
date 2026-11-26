@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/caffeine-energy-drinks-and-stimulants.md',
   titleFr: 'Caféine, boissons énergisantes, décongestionnants et stimulants',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

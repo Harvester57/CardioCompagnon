@@ -1,6 +1,7 @@
 import { normalizeFrenchText } from '../../content/fr';
 import type {
   ArticleCategory,
+  ArticleReadingTier,
   ClinicalModuleKey,
   GlossaryTerm,
   PatientProfile,
@@ -9,6 +10,43 @@ import type {
 
 export type LinkedModuleKey = ClinicalModuleKey | 'core' | 'stageB';
 export type SpecificProfileModuleKey = ClinicalModuleKey | 'stageB';
+
+export interface ReadingTierMeta {
+  id: ArticleReadingTier;
+  labelFr: string;
+  shortLabelFr: string;
+  descriptionFr: string;
+}
+
+export const READING_TIERS: readonly ReadingTierMeta[] = [
+  {
+    id: 'essential',
+    labelFr: "L'essentiel",
+    shortLabelFr: 'Essentiel',
+    descriptionFr:
+      'Les repères clés en langage clair pour comprendre le diagnostic, les traitements et le quotidien en France.',
+  },
+  {
+    id: 'deep_dive',
+    labelFr: 'Approfondir',
+    shortLabelFr: 'Approfondir',
+    descriptionFr:
+      'Fiches détaillées sur des situations spécifiques, dispositifs, comorbidités et compléments.',
+  },
+  {
+    id: 'reference',
+    labelFr: 'Études & références',
+    shortLabelFr: 'Étude & référence',
+    descriptionFr:
+      'Synthèses d’essais cliniques, thèses de recherche et comparaisons internationales de recommandations.',
+  },
+] as const;
+
+export const READING_TIER_LABELS: Record<ArticleReadingTier, string> = {
+  essential: 'Essentiel',
+  deep_dive: 'Approfondir',
+  reference: 'Étude & référence',
+};
 
 export interface CategoryMeta {
   id: ArticleCategory;

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/stem-cell-and-regenerative-therapies.md',
   titleFr: 'Cellules souches et thérapies régénératives dans la cardiomyopathie ischémique',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'hot',

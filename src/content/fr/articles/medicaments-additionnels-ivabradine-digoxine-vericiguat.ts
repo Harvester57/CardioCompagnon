@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/add-on-medicines-ivabradine-digoxin-vericiguat.md',
   titleFr: 'Médicaments additionnels : ivabradine, digoxine/digitoxine et vériciguat',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'hot',

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/glp1-and-incretin-medicines.md',
   titleFr: 'Médicaments GLP-1 et incrétines (sémaglutide, tirzépatide, rétatrutide)',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'hot',

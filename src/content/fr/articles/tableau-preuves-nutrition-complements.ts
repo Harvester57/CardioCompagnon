@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/references/nutrition-and-supplement-evidence-table.md',
   titleFr: 'Tableau des niveaux de preuve : nutrition et compléments',
   category: 'nutrition',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
@@ -36,7 +37,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Ce tableau de référence classe chaque intervention alimentaire, complément, plante, décongestionnant et stimulant selon la solidité des preuves dans l'insuffisance cardiaque à FEVG réduite (ICFER), en intégrant les cinq thèses nutritionnelles achevées (fer oral, fer IV sous iSGLT2, CoQ10 sous traitement moderne, oméga-3 à faible dose et FA, régime méditerranéen et sécurité du potassium) ainsi que l'audit de novembre 2026 sur les AOD, les plantes, les décongestionnants oraux et les stimulants du TDAH. Il compare ensuite côte à côte les positions des recommandations ESC 2026, HFA-ESC 2024, américaines (AHA/ACC/HFSA 2022) et britanniques (NICE NG106 et BHF), et recense de manière transparente les zones encore ouvertes.",
+    "Ce tableau de référence classe les aliments, compléments alimentaires, plantes et produits en vente libre selon la solidité des preuves dans l'insuffisance cardiaque. Il compare aussi les positions des grandes recommandations internationales et signale les interactions ou risques connus. Consultez-le pour vérifier le niveau de preuve d'un produit et en discuter avec votre cardiologue ou votre pharmacien avant toute prise.",
   sections: [
     {
       headingFr: "Comment lire la colonne « Applicabilité »",

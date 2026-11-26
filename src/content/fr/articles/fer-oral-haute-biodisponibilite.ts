@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/theses/high-bioavailability-oral-iron-in-heart-failure.md',
   titleFr: 'Fer oral à haute biodisponibilité (Ferrochel, sucrosomial) et insuffisance cardiaque',
   category: 'traitements',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -33,7 +34,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Verdict de l'enquête : preuves insuffisantes, plutôt en défaveur (confiance moyenne). Les comprimés de fer présentés comme « mieux absorbés » — comme le bisglycinate ferreux (Ferrochel), le fer sucrosomial ou le maltol ferrique — sont souvent présentés comme une réponse à l'échec du fer oral classique dans l'insuffisance cardiaque (essai IRONOUT-HF). À ce jour, cela n'a pas été démontré. Aucun essai clinique randomisé évalué par les pairs n'a testé Ferrochel ou une autre forme orale de nouvelle génération dans l'ICFER ; le seul essai contrôlé contre placebo rapporté jusqu'ici (PREFER-HF, dans l'insuffisance cardiaque à FEVG préservée, non encore publié) aurait manqué son critère principal de marche. L'obstacle principal dans l'insuffisance cardiaque est l'hepcidine, une hormone qui ferme la porte de sortie intestinale du fer (la ferroportine) : chez l'humain, les formes plus récentes semblent soumises au même contrôle et rechargent nettement moins les réserves que le fer intraveineux dans les maladies inflammatoires. Des patients ayant une hepcidine basse — ou traités par inhibiteur du SGLT2 — pourraient mieux absorber le fer oral ordinaire, mais cela n'a pas été comparé à un groupe témoin. Le fer intraveineux reste donc la seule voie appuyée par des essais dans l'ICFER ; toute décision sur le fer se prend avec votre cardiologue sur la base d'un bilan sanguin (ferritine et CST).",
+    "Certains comprimés de fer sont présentés comme mieux absorbés que le fer oral classique, mais leur efficacité dans l'insuffisance cardiaque n'est pas encore démontrée. Cette synthèse explique pourquoi l'organisme absorbe mal le fer par voie orale en cas d'insuffisance cardiaque et ce que montrent les études actuelles. Elle vous aide à préparer une discussion avec votre cardiologue avant d'acheter un complément en fer.",
   sections: [
     {
       headingFr: 'Question évaluée et rappel de l’échec du fer oral dans IRONOUT-HF',

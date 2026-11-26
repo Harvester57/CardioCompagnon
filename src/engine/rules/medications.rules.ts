@@ -91,7 +91,7 @@ export function evaluateMedicationRules(state: PatientState): RuleOutput[] {
           severity: 'action',
           category: 'medications',
           titleFr: "Pilier(s) du traitement de fond à vérifier en consultation",
-          explanationFr: `En insuffisance cardiaque symptomatique (stade C), les recommandations ESC 2026 reposent sur 4 piliers complémentaires (Classe I). Les classes suivantes ne figurent pas comme actives sans raison renseignée : ${names}.`,
+          explanationFr: `En insuffisance cardiaque symptomatique (stade C), les recommandations européennes reposent sur 4 piliers complémentaires. Les classes suivantes ne figurent pas comme actives sans raison renseignée : ${names}.`,
           suggestedActionFr:
             "Préparez la question pour votre cardiologue : « Suis-je sous les 4 piliers recommandés, ou existe-t-il une raison médicale (tension, rein, potassium, calendrier de titration) de ne pas introduire cette classe ? »",
           evidenceGrade: 'ESC 2026 Classe I',
@@ -132,7 +132,7 @@ export function evaluateMedicationRules(state: PatientState): RuleOutput[] {
         category: 'medications',
         titleFr: "FEVG améliorée (HFimpEF) : poursuite des traitements de fond",
         explanationFr:
-          "Même lorsque la fraction d'éjection s'améliore nettement, l'arrêt des traitements de fond s'accompagne d'un risque élevé de rechute (essai TRED-HF). Les recommandations ESC 2026 préconisent leur maintien au long cours (Classe I).",
+          "Même lorsque la fraction d'éjection s'améliore nettement, l'arrêt des traitements de fond s'accompagne d'un risque élevé de rechute. Les recommandations européennes préconisent fortement leur maintien au long cours.",
         suggestedActionFr:
           "N'interrompez aucun traitement même si vous vous sentez pleinement rétabli ; discutez de toute adaptation uniquement avec votre cardiologue.",
         evidenceGrade: 'ESC 2026 Classe I',

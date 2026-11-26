@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/cpet-strain-and-cardiac-diagnostics.md',
   titleFr: 'EFX (VO2 max), strain (GLS), troponine chronique, Holter et imagerie d’ischémie',
   category: 'diagnostic',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

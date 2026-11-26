@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/references/guidelines-compared.md',
   titleFr: 'Recommandations européennes (ESC), américaines et britanniques comparées',
   category: 'references',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'hot',
@@ -41,7 +42,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "En Europe (et en France), les cardiologues s'appuient principalement sur la Société Européenne de Cardiologie (ESC 2026 et recommandations spécialisées 2022–2025) et sur la HAS. Aux États-Unis, la référence reste le texte AHA/ACC/HFSA 2022 complété par les textes de spécialité 2023–2026 ; au Royaume-Uni, NICE NG106 (mis à jour en 2025) fixe le cadre du NHS. Les grandes lignes convergent sur les quatre piliers médicamenteux, mais des divergences importantes existent sur les seuils de FEVG (< 50 % en Europe contre ≤ 40 % aux États-Unis et au Royaume-Uni), le stade B, les valvulopathies, le diabète, la chirurgie non cardiaque, l'antibioprophylaxie dentaire, les règles « jours de maladie », l'ablation de TV et la vie quotidienne.",
+    "Pourquoi une information lue sur un site américain ou britannique diffère-t-elle parfois de ce que recommande votre cardiologue en France ? Cette fiche compare les recommandations européennes, américaines et britanniques sur l'insuffisance cardiaque. Si les grands traitements de fond convergent, certains seuils et pratiques varient selon les pays. Consultez-la pour comprendre ces écarts et clarifier ce qui s'applique à votre suivi.",
   sections: [
     {
       headingFr: 'Comparaison côte à côte (ESC 2026, AHA/ACC/HFSA 2022, NICE NG106)',

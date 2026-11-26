@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/finerenone-and-newer-mras.md',
   titleFr: 'Finérénone, nouveaux ARM et chélateurs de potassium',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'hot',

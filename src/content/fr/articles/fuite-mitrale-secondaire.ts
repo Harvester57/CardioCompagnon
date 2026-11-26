@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/secondary-mitral-regurgitation.md',
   titleFr: 'Fuite mitrale secondaire (insuffisance mitrale fonctionnelle)',
   category: 'comorbidites',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

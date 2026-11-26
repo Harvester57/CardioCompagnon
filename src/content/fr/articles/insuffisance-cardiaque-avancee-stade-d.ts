@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/advanced-heart-failure-and-referral.md',
   titleFr: 'Insuffisance cardiaque avancée (stade D) et quand orienter vers un centre expert',
   category: 'diagnostic',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

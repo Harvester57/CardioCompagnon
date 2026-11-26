@@ -282,7 +282,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Dose fixe ; contrôle LDL 4 à 12 semaines après ajout',
     monitoringFr:
-      'Ajouté en palier 2 (ESC Classe I B ; ACC/AHA 2026 COR 1 A en très haut risque) si le LDL reste ≥ 0,55 g/L (1,4 mmol/L) sous statine maximale tolérée, ou en cas d’intolérance aux statines.',
+      'Ajouté en deuxième étape si le cholestérol LDL reste ≥ 0,55 g/L (1,4 mmol/L) sous statine maximale tolérée, ou en cas d’intolérance aux statines.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -295,7 +295,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '140 mg toutes les 2 semaines (ou 420 mg/mois)',
     titrationIntervalFr: 'Dose fixe ; contrôle LDL 4 à 12 semaines après initiation',
     monitoringFr:
-      'Ajouté en palier 3 (ESC Classe I A) si le LDL reste hors cible sous statine + ézétimibe. Tolérance rassurante jusqu’aux LDL très bas (< 0,20 g/L soit 0,5 mmol/L dans FOURIER, sur ~2 ans ; FEVG < 30 % et NYHA III–IV exclues de FOURIER). Surveiller les réactions locales au point d’injection.',
+      'Ajouté en troisième étape si le LDL reste au-dessus de l’objectif sous statine + ézétimibe. Tolérance globalement rassurante même à des taux de LDL très bas ; surveiller les réactions locales au point d’injection.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -308,7 +308,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '75 à 150 mg toutes les 2 semaines selon objectif LDL',
     titrationIntervalFr: 'Contrôle LDL 4 à 8 semaines après initiation',
     monitoringFr:
-      'Ajouté en palier 3 (ESC Classe I A) si le LDL reste hors cible sous statine + ézétimibe ; réduit aussi la Lp(a) d’environ 15 à 30 %. Note : analyse post hoc d’ODYSSEY sans réduction d’événements chez les patients avec antécédent d’IC (FEVG non recueillie). Surveiller le site d’injection.',
+      'Ajouté en troisième étape si le LDL reste au-dessus de l’objectif sous statine + ézétimibe ; abaisse aussi la Lp(a) d’environ 15 à 30 %. Surveiller les réactions locales au point d’injection.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -321,7 +321,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '180 mg × 1/j',
     titrationIntervalFr: 'Dose fixe ; contrôle LDL 4 à 12 semaines après initiation',
     monitoringFr:
-      'ESC/EAS 2025 Classe I B en cas d’intolérance aux statines et Classe IIa C en ajout à une statine (± ézétimibe) ; ACC/AHA 2026 COR 2a B-R. Abaisse le LDL d’environ 18 à 23 % (~38 % avec ézétimibe). Aucune donnée spécifique d’insuffisance cardiaque disponible.',
+      'Option orale recommandée en cas d’intolérance aux statines, ou en complément d’une statine (± ézétimibe). Abaisse le LDL d’environ 18 à 23 % (~38 % avec ézétimibe) ; les données spécifiques à l’insuffisance cardiaque restent limitées.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -334,7 +334,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '75 à 100 mg × 1/j au long cours',
     titrationIntervalFr: 'Dose fixe',
     monitoringFr:
-      'ESC 2024 SCC Classe I A à vie après infarctus, stent ou pontage (sauf relais par anticoagulant seul au long cours en cas de FA). Ne pas confondre avec les AINS ; poursuivie pour les soins dentaires courants et la plupart des endoscopies. Surveiller les signes de saignement.',
+      'Traitement de fond au long cours après infarctus, stent ou pontage (sauf relais par anticoagulant seul en cas de fibrillation atriale). Ne pas confondre avec les AINS ; généralement poursuivie pour les soins dentaires courants. Surveiller les signes de saignement.',
     articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
   },
   {
@@ -347,7 +347,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '75 mg × 1/j',
     titrationIntervalFr: 'Dose fixe (bithérapie 1 à 6 mois après stent, ou monothérapie alternative I A)',
     monitoringFr:
-      'Alternative sûre et efficace à l’aspirine au long cours (ESC 2024 SCC Classe I A). Éviter l’oméprazole (Mopral) et l’ésoméprazole (Inexium), qui réduisent son activation par le CYP2C19 (privilégier le pantoprazole Inipomp) ; ne jamais arrêter seul après un stent.',
+      'Alternative sûre et efficace à l’aspirine au long cours. Éviter l’oméprazole (Mopral) et l’ésoméprazole (Inexium), qui réduisent son efficacité (privilégier le pantoprazole Inipomp) ; ne jamais arrêter seul après un stent.',
     articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
   },
   {
@@ -401,7 +401,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '0,05 à 0,1 mg/j selon dosage sanguin à 6 semaines (cible 8–18 ng/mL)',
     titrationIntervalFr: 'Dosage sanguin unique à 6 semaines dans DIGIT-HF',
     monitoringFr:
-      'Métabolisée par le foie (CYP3A) puis éliminée ~60 % par les reins (métabolites) et ~40 % par la bile (demi-vie longue de 3–10 j). A réduit les décès ou hospitalisations pour IC dans DIGIT-HF (HR 0,82) et figure en ESC 2026 Classe IIa, mais aucun produit commercialisé n’est disponible en France.',
+      'Éliminée en grande partie par le foie et la bile (demi-vie longue de 3 à 10 jours). A montré un bénéfice sur les hospitalisations dans un essai récent et figure dans les recommandations européennes, mais aucun produit n’est commercialisé en France.',
     articleSlug: 'medicaments-additionnels-ivabradine-digoxine-vericiguat',
   },
   {
@@ -453,7 +453,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: 'Réplétion martiale et réévaluation périodique selon bilan martial',
     titrationIntervalFr: 'Réévaluation ferritine et CST en suivi cardiaque',
     monitoringFr:
-      'ESC 2026 Classe I (symptômes) et IIa (hospitalisations) en ICFER symptomatique avec carence martiale (ferritine < 100 µg/L ou 100–299 avec CST < 20 % ; NICE NG106 si Hb < 15 g/dL). Surveiller le phosphore sanguin (risque d’hypophosphatémie) et la tolérance de perfusion.',
+      'Recommandé en insuffisance cardiaque symptomatique avec carence en fer prouvée (ferritine basse ou CST < 20 %) pour améliorer les symptômes et réduire les hospitalisations. Surveiller la tolérance de perfusion et le phosphore sanguin en cas de perfusions répétées.',
     articleSlug: 'carence-martiale-et-fer-iv',
   },
   {
@@ -466,7 +466,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: 'Réplétion martiale et réévaluation périodique selon bilan martial',
     titrationIntervalFr: 'Réévaluation ferritine et CST en suivi cardiaque',
     monitoringFr:
-      'Évalué notamment dans IRONMAN ; recommandé en ICFER symptomatique avec carence en fer (ESC 2026 Classe I/IIa). Surveillance pendant et après perfusion, puis contrôle biologique du bilan martial.',
+      'Recommandé en insuffisance cardiaque symptomatique avec carence en fer prouvée (moins sujet à la baisse du phosphore que le carboxymaltose ferrique). Surveillance pendant et après perfusion, puis contrôle du bilan martial.',
     articleSlug: 'carence-martiale-et-fer-iv',
   },
 
@@ -481,7 +481,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: 'Dose d’entretien fixée par le spécialiste (ex. Wegovy 2,4 mg/semaine ; Rybelsus 14 mg/j dans SOUL)',
     titrationIntervalFr: 'Augmentation progressive par paliers sous suivi médical selon tolérance digestive',
     monitoringFr:
-      'Réduit les événements artériels (MACE) en diabète ou obésité avec maladie coronaire (SELECT, SOUL), mais non démontré pour traiter l’ICFER (SOUL sous-groupe ICFER : HR 0,98 ; ESC 2026 IIa uniquement si FEVG ≥ 45 % et IMC ≥ 30 ; NYHA IV non recommandé). Surveiller la fréquence cardiaque (+3 bpm en moyenne), la déshydratation digestive (plan « jours de maladie » avec diurétiques/iSGLT2), la masse musculaire, et signaler la prise avant toute anesthésie générale. En France (depuis le 15 juin 2026), Wegovy est remboursé à 65 % uniquement à IMC ≥ 40 ou ≥ 35 avec l’une des 15 pathologies listées (hors IC et maladie coronaire).',
+      'Protège les artères en cas de diabète ou d’obésité avec maladie coronaire, mais n’est pas démontré pour traiter l’insuffisance cardiaque à FEVG réduite (non recommandé en stade sévère NYHA IV). Surveiller la fréquence cardiaque, la déshydratation digestive (plan « jours de maladie »), la masse musculaire, et signaler la prise avant toute anesthésie générale. En France, le remboursement de Wegovy reste strictement encadré selon l’IMC et les pathologies associées.',
     articleSlug: 'medicaments-glp1-et-incretines',
   },
   {

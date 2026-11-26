@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/nutrition-and-supplements-in-heart-failure.md',
   titleFr: "Nutrition et compléments alimentaires dans l'insuffisance cardiaque",
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

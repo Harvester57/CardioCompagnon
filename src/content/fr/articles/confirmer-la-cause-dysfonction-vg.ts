@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/confirming-the-cause-of-lv-dysfunction.md',
   titleFr: 'Confirmer la cause de la dysfonction du ventricule gauche',
   category: 'diagnostic',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

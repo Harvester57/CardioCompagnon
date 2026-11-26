@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/omega-3-fish-oil.md',
   titleFr: 'Acides gras oméga-3 (huiles de poisson)',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

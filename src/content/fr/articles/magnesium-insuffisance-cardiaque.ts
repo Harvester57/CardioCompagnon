@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/magnesium-in-heart-failure.md',
   titleFr: 'Magnésium et insuffisance cardiaque : formes et supplémentation',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

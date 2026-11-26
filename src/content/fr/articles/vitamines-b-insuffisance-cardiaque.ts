@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/b-vitamins-in-heart-failure.md',
   titleFr: 'Vitamines B et insuffisance cardiaque',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

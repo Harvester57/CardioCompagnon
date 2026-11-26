@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/sexual-health-and-ed-in-heart-failure.md',
   titleFr: "Vie sexuelle et dysfonction érectile dans l'insuffisance cardiaque",
   category: 'quotidien',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

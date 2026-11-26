@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/references/key-trials.md',
   titleFr: 'Les grands essais cliniques de référence',
   category: 'references',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'warm',
@@ -67,7 +68,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Répertoire synthétique de l'ensemble des grands essais cliniques et analyses cités dans les comptes rendus de cardiologie et dans cette application : qui a été étudié, ce qui a été comparé, le résultat principal, les réserves méthodologiques et le degré d'applicabilité directe à une cardiomyopathie ischémique avec FEVG autour de 35 %.",
+    "Les courriers de cardiologie citent souvent des noms d'études scientifiques sans toujours les expliquer. Ce répertoire résume les grands essais cliniques qui fondent la prise en charge actuelle de la cardiomyopathie ischémique, en précisant ce qui a été testé et si les résultats s'appliquent à votre situation. Consultez-le pour décrypter un compte rendu ou préparer vos questions avec votre cardiologue.",
   sections: [
     {
       headingFr: 'Comment lire ces tableaux',

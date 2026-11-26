@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/heart-devices-icd-and-crt.md',
   titleFr: 'Dispositifs cardiaques implantés : DAI et CRT',
   category: 'dispositifs',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'hot',

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/trials-to-watch-ongoing-and-planned-research.md',
   titleFr: 'Essais cliniques en cours et recherche à suivre',
   category: 'references',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'hot',
@@ -36,7 +37,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "De nombreux essais cliniques évaluent de nouvelles approches pour un cœur affaibli par une maladie coronaire. La plupart nécessiteront encore deux à cinq ans avant de livrer leurs résultats, et la majorité des pistes innovantes échouent lorsqu'elles sont testées rigoureusement. Au 25 novembre 2026, les études les plus directement pertinentes couvrent le pontage face aux stents (STICH3, ~2029), le défibrillateur préventif sous traitement moderne (PROFID-EHRA, ~2027–2028), la thiamine et la colchicine (COLT-HF, ~2027), la thérapie cellulaire autologue (CardiAMP HF II, ~2027), la CoQ10 (CORAL mai 2028, DANUTRIO-HF déc. 2028, SELEQT-HF 2030), le fer IV à l'ère des iSGLT2 (INFERRCT déc. 2026, COMBINED-HF), le rétrécissement aortique modéré (PROGRESS NEJM nov. 2026 et EXPAND TAVR II sept. 2027), la pause péri-opératoire des iSGLT2 en France (DISCO, CHU Toulouse, 2029) et les LVAD précoces (AMBU-VAD, TEAM-HF). Un essai en cours ne prouve pas qu'un traitement fonctionne.",
+    "De nombreuses études testent aujourd'hui de nouvelles approches pour un cœur affaibli après une maladie coronaire : chirurgie, stents, défibrillateurs, médicaments ou compléments. Cette fiche présente les essais les plus pertinents en cours et leurs horizons de résultats, tout en rappelant qu'une piste à l'étude n'est pas encore prouvée. Elle vous aide à faire le tri dans l'actualité médicale et à en parler avec votre cardiologue.",
   sections: [
     {
       headingFr: "Comment lire le niveau d'applicabilité et les dates des registres",

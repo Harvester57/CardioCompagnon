@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'output/playbook-nutritional-interventions-and-supplements-2026-11-24.md',
   titleFr: 'Guide pratique : interventions nutritionnelles et compléments',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/newer-and-add-on-treatments.md',
   titleFr: 'Au-delà des 4 piliers : traitements additionnels et récents',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'hot',

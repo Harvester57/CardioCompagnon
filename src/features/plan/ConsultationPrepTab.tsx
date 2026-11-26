@@ -6,12 +6,13 @@ import {
   CheckCircle2,
   ClipboardCheck,
   ExternalLink,
+  Layers,
   Printer,
   Search,
   Sparkles,
   Users,
 } from 'lucide-react';
-import { QUESTIONS_CATALOG, normalizeFrenchText } from '../../content/fr';
+import { QUESTIONS_CATALOG, getArticleBySlug, normalizeFrenchText } from '../../content/fr';
 import { getTodayIsoDate, upsertQuestionTracking, useActiveDb } from '../../db';
 import type {
   EngineEvaluation,
@@ -262,6 +263,7 @@ export function ConsultationPrepTab({
   onSelectTab,
 }: ConsultationPrepTabProps) {
   const db = useActiveDb();
+  const [scope, setScope] = useState<'recommended' | 'all'>('recommended');
   const [interlocutor, setInterlocutor] = useState<'all' | QuestionInterlocutor>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [onlySelected, setOnlySelected] = useState(false);
@@ -279,6 +281,31 @@ export function ConsultationPrepTab({
     [evaluation.outputs, evaluation.prioritizedQuestionIds, profile, trackingList],
   );
 
+  const isSearching = searchQuery.trim().length > 0;
+
+  const recommendedEntries = useMemo(
+    () =>
+      prioritizedEntries.filter((entry) => {
+        if (
+          entry.isRuleTriggered ||
+          entry.isModuleMatched ||
+          entry.tracking?.selectedForNextVisit
+        ) {
+          return true;
+        }
+        const linked = getArticleBySlug(entry.question.articleSlug);
+        return linked?.readingTier === 'essential';
+      }),
+    [prioritizedEntries],
+  );
+
+  const scopedEntries = useMemo(() => {
+    if (isSearching || scope === 'all') {
+      return prioritizedEntries;
+    }
+    return recommendedEntries;
+  }, [isSearching, prioritizedEntries, recommendedEntries, scope]);
+
   const countsByInterlocutor = useMemo(() => {
     const counts: Record<QuestionInterlocutor, number> = {
       cardiologist: 0,
@@ -286,11 +313,11 @@ export function ConsultationPrepTab({
       pharmacist: 0,
       occupational_doctor: 0,
     };
-    for (const entry of prioritizedEntries) {
+    for (const entry of scopedEntries) {
       counts[entry.question.interlocutor] += 1;
     }
     return counts;
-  }, [prioritizedEntries]);
+  }, [scopedEntries]);
 
   const selectedCount = useMemo(
     () => prioritizedEntries.filter((e) => e.tracking?.selectedForNextVisit).length,
@@ -306,7 +333,7 @@ export function ConsultationPrepTab({
     const normalizedQuery = normalizeFrenchText(searchQuery);
     const tokens = normalizedQuery ? normalizedQuery.split(/\s+/).filter(Boolean) : [];
 
-    return prioritizedEntries.filter((entry) => {
+    return scopedEntries.filter((entry) => {
       if (interlocutor !== 'all' && entry.question.interlocutor !== interlocutor) {
         return false;
       }
@@ -324,7 +351,7 @@ export function ConsultationPrepTab({
       }
       return true;
     });
-  }, [prioritizedEntries, interlocutor, onlySelected, onlyPrioritized, searchQuery]);
+  }, [scopedEntries, interlocutor, onlySelected, onlyPrioritized, searchQuery]);
 
   const handlePatchTracking = useCallback(
     async (questionId: string, patch: QuestionTrackingPatch) => {
@@ -407,6 +434,50 @@ export function ConsultationPrepTab({
             />
           </div>
 
+          <div className="space-y-1.5">
+            <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-[var(--text-secondary)]">
+              <Layers className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+              <span>Périmètre des questions</span>
+            </div>
+            <div
+              className="flex flex-wrap gap-2"
+              role="group"
+              aria-label="Périmètre des questions de consultation"
+            >
+              <button
+                type="button"
+                aria-pressed={!isSearching && scope === 'recommended'}
+                onClick={() => setScope('recommended')}
+                className={`touch-target inline-flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-xs font-semibold transition-colors tabular-nums ${
+                  !isSearching && scope === 'recommended'
+                    ? 'border-[var(--color-primary)] bg-[var(--color-primary)] text-white'
+                    : 'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--color-primary)]'
+                }`}
+              >
+                <span>Pour ma consultation ({recommendedEntries.length})</span>
+              </button>
+              <button
+                type="button"
+                aria-pressed={!isSearching && scope === 'all'}
+                onClick={() => setScope('all')}
+                className={`touch-target inline-flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-xs font-semibold transition-colors tabular-nums ${
+                  !isSearching && scope === 'all'
+                    ? 'border-[var(--color-primary)] bg-[var(--color-primary)] text-white'
+                    : 'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--color-primary)]'
+                }`}
+              >
+                <span>Toutes les questions ({QUESTIONS_CATALOG.length})</span>
+              </button>
+            </div>
+            <p className="m-0 text-xs text-[var(--text-secondary)]">
+              {isSearching
+                ? `Recherche étendue à l'ensemble des ${QUESTIONS_CATALOG.length} questions.`
+                : scope === 'recommended'
+                  ? 'Affiche les questions déclenchées par votre suivi, vos modules actifs et les thèmes essentiels.'
+                  : `Affiche le référentiel complet (${QUESTIONS_CATALOG.length} questions, y compris sujets approfondis et études).`}
+            </p>
+          </div>
+
           <div
             className="flex flex-wrap gap-2"
             role="group"
@@ -424,7 +495,7 @@ export function ConsultationPrepTab({
             >
               <span>Tous</span>
               <span className="rounded-full bg-black/10 px-1.5 py-0.5 text-xs tabular-nums">
-                {QUESTIONS_CATALOG.length}
+                {scopedEntries.length}
               </span>
             </button>
 

@@ -4,6 +4,9 @@ import {
   ArrowRight,
   BookMarked,
   BookOpen,
+  CheckCircle2,
+  ChevronDown,
+  FlaskConical,
   ListTree,
   UserCheck,
 } from 'lucide-react';
@@ -13,6 +16,7 @@ import { Card, DisclaimerBanner, EvidenceBadge } from '../../ui';
 import {
   CATEGORY_LABELS,
   MODULE_LABELS_FR,
+  READING_TIER_LABELS,
   type SpecificProfileModuleKey,
   formatFrenchIsoDate,
 } from './libraryMeta';
@@ -58,7 +62,13 @@ export function ArticleReader({
 
   const handleScrollToSection = (sectionId: string) => {
     const target = document.getElementById(sectionId);
-    if (target && typeof target.scrollIntoView === 'function') {
+    if (!target) {
+      return;
+    }
+    if (target.tagName.toLowerCase() === 'details') {
+      (target as HTMLDetailsElement).open = true;
+    }
+    if (typeof target.scrollIntoView === 'function') {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
@@ -85,6 +95,10 @@ export function ArticleReader({
           <div className="flex flex-wrap items-center gap-2">
             <span className="inline-flex items-center rounded-lg border border-[var(--status-action-border)] bg-[var(--status-action-bg)] px-2.5 py-1 text-xs font-semibold text-[var(--status-action-text)]">
               {CATEGORY_LABELS[article.category]}
+            </span>
+
+            <span className="inline-flex items-center rounded-lg border border-[var(--border-subtle)] bg-[var(--bg-subtle)] px-2.5 py-1 text-xs font-medium text-[var(--text-secondary)]">
+              {READING_TIER_LABELS[article.readingTier]}
             </span>
 
             {matchingProfileModules.map((mod) => (
@@ -131,6 +145,20 @@ export function ArticleReader({
           </p>
         </section>
 
+        {article.keyTakeawaysFr && article.keyTakeawaysFr.length > 0 && (
+          <Card
+            tone="subtle"
+            title="À retenir en priorité"
+            icon={<CheckCircle2 className="h-5 w-5" />}
+          >
+            <ul className="m-0 space-y-2 pl-5 text-sm leading-relaxed text-[var(--text-primary)]">
+              {article.keyTakeawaysFr.map((point, index) => (
+                <li key={`takeaway-${index}`}>{point}</li>
+              ))}
+            </ul>
+          </Card>
+        )}
+
         {article.sections.length >= 2 && (
           <Card
             tone="subtle"
@@ -140,6 +168,7 @@ export function ArticleReader({
             <ol className="m-0 grid list-none gap-1.5 p-0 sm:grid-cols-2">
               {article.sections.map((section, index) => {
                 const sectionId = `section-${article.slug}-${index}`;
+                const isEvidence = section.depth === 'evidence';
                 return (
                   <li key={sectionId}>
                     <button
@@ -151,6 +180,11 @@ export function ArticleReader({
                         {index + 1}.
                       </span>
                       <span className="font-medium leading-snug">{section.headingFr}</span>
+                      {isEvidence && (
+                        <span className="ml-auto shrink-0 rounded-md border border-[var(--border-subtle)] bg-[var(--bg-card)] px-1.5 py-0.5 text-[11px] font-medium text-[var(--text-secondary)]">
+                          Études
+                        </span>
+                      )}
                     </button>
                   </li>
                 );
@@ -162,6 +196,44 @@ export function ArticleReader({
         <div className="space-y-4">
           {article.sections.map((section, index) => {
             const sectionId = `section-${article.slug}-${index}`;
+            if (section.depth === 'evidence') {
+              return (
+                <details
+                  key={sectionId}
+                  id={sectionId}
+                  className="group scroll-mt-20 rounded-2xl border border-[var(--border-subtle)] bg-[var(--bg-subtle)]/50 p-5 shadow-xs sm:p-6"
+                >
+                  <summary className="touch-target flex cursor-pointer list-none items-center justify-between gap-3">
+                    <div className="flex min-w-0 items-center gap-2.5">
+                      <FlaskConical
+                        className="h-5 w-5 shrink-0 text-[var(--color-primary)]"
+                        aria-hidden="true"
+                      />
+                      <div className="min-w-0">
+                        <span className="block text-xs font-semibold uppercase tracking-wide text-[var(--text-secondary)]">
+                          Pour aller plus loin (données d’études)
+                        </span>
+                        <h2 className="m-0 text-base font-semibold leading-snug text-[var(--text-primary)] sm:text-lg">
+                          {section.headingFr}
+                        </h2>
+                      </div>
+                    </div>
+                    <ChevronDown
+                      className="h-5 w-5 shrink-0 text-[var(--text-secondary)] transition-transform group-open:rotate-180"
+                      aria-hidden="true"
+                    />
+                  </summary>
+                  <div className="mt-4 border-t border-[var(--border-subtle)] pt-4">
+                    <SafeMarkdown
+                      content={section.bodyMarkdownFr}
+                      baseHeadingLevel={3}
+                      resolveArticleHref={resolveArticleHref}
+                    />
+                  </div>
+                </details>
+              );
+            }
+
             return (
               <section
                 key={sectionId}

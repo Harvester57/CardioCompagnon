@@ -14,6 +14,8 @@ import {
   saveProfile,
 } from '../../../db';
 import * as services from '../../../services';
+import type { WikiArticle } from '../../../types';
+import { ArticleReader } from '../ArticleReader';
 import LibraryPage from '../index';
 
 vi.mock('../../../services', async (importOriginal) => {
@@ -53,22 +55,33 @@ afterEach(() => {
 });
 
 describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
-  it('affiche les 85 articles et permet le filtrage par categorie et par profil clinique', async () => {
+  it('affiche L essentiel par defaut, permet de basculer de niveau, et filtre par categorie et profil clinique', async () => {
     renderLibrary();
 
     const articlesList = screen.getByRole('list', { name: 'Liste des fiches scientifiques' });
+    // Vue par defaut : L'essentiel (18 fiches)
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(18);
+    expect(screen.getByText('18 fiches affichées sur 85')).toBeInTheDocument();
+
+    // Basculer sur Toutes (85)
+    fireEvent.click(screen.getByRole('button', { name: /Toutes \(85\)/i }));
     expect(within(articlesList).getAllByRole('listitem')).toHaveLength(85);
     expect(screen.getByText('85 fiches affichées sur 85')).toBeInTheDocument();
 
-    // Filtre categorie "france" (3 articles)
+    // Basculer sur Etudes & references (13)
+    fireEvent.click(screen.getByRole('button', { name: /Études & références \(13\)/i }));
+    expect(within(articlesList).getAllByRole('listitem')).toHaveLength(13);
+
+    // Revenir sur Toutes (85) et filtrer par categorie "france" (3 articles)
+    fireEvent.click(screen.getByRole('button', { name: /Toutes \(85\)/i }));
     fireEvent.click(screen.getByRole('button', { name: /France & Droits \(3\)/i }));
     expect(within(articlesList).getAllByRole('listitem')).toHaveLength(3);
     expect(
       screen.getByText(/Vivre avec une insuffisance cardiaque en France/i),
     ).toBeInTheDocument();
 
-    // Reinitialiser sur Toutes
-    fireEvent.click(screen.getByRole('button', { name: /Toutes \(85\)/i }));
+    // Reinitialiser la categorie sur Toutes les categories
+    fireEvent.click(screen.getByRole('button', { name: /Toutes les catégories \(85\)/i }));
     expect(within(articlesList).getAllByRole('listitem')).toHaveLength(85);
 
     // Filtre "Pertinent pour mon profil" : sans modules optionnels, masque les fiches strictement specifiques (ex. CTO)
@@ -307,5 +320,63 @@ describe('Module 6 -- Bibliotheque scientifique (LibraryPage)', () => {
     expect(
       screen.getByRole('heading', { level: 1, name: "La fraction d'éjection (FEVG)" }),
     ).toBeInTheDocument();
+  });
+
+  it('rend les points cles (keyTakeawaysFr) et les sections evidence depliables dans ArticleReader', () => {
+    const sampleArticle: WikiArticle = {
+      slug: 'exemple-test',
+      sourceWikiPath: 'wiki/topics/example.md',
+      titleFr: 'Fiche exemple pour test',
+      category: 'diagnostic',
+      readingTier: 'essential',
+      asOf: '2026-11-25',
+      confidence: 'high',
+      volatility: 'stable',
+      tags: ['test'],
+      aliases: [],
+      linkedModules: ['core'],
+      plainSummaryFr: 'Résumé simple en langage clair.',
+      keyTakeawaysFr: [
+        'Premier repère concret pour le quotidien.',
+        'Deuxième repère à aborder avec votre cardiologue.',
+      ],
+      sections: [
+        {
+          headingFr: 'Explication pratique',
+          bodyMarkdownFr: 'Texte principal accessible.',
+          depth: 'patient',
+        },
+        {
+          headingFr: 'Ce que disent les études cliniques',
+          bodyMarkdownFr: 'Détails statistiques réservés à la section dépliable.',
+          depth: 'evidence',
+        },
+      ],
+      relatedArticleSlugs: [],
+      sources: [{ label: 'ESC 2026', detail: 'Recommandations européennes' }],
+      disclaimerType: 'medical',
+    };
+
+    render(
+      <MemoryRouter>
+        <ArticleReader
+          article={sampleArticle}
+          onBack={vi.fn()}
+          onOpenArticle={vi.fn()}
+        />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByText('À retenir en priorité')).toBeInTheDocument();
+    expect(screen.getByText('Premier repère concret pour le quotidien.')).toBeInTheDocument();
+    expect(screen.getByText(/Pour aller plus loin \(données d’études\)/i)).toBeInTheDocument();
+
+    const evidenceDetails = document.getElementById('section-exemple-test-1') as HTMLDetailsElement;
+    expect(evidenceDetails).not.toBeNull();
+    expect(evidenceDetails.open).toBe(false);
+
+    // Cliquer sur l'entrée du sommaire déplie automatiquement la section d'études
+    fireEvent.click(screen.getByRole('button', { name: /Ce que disent les études cliniques/i }));
+    expect(evidenceDetails.open).toBe(true);
   });
 });

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/atrial-fibrillation-in-heart-failure.md',
   titleFr: 'Fibrillation atriale et insuffisance cardiaque',
   category: 'comorbidites',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

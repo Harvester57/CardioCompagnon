@@ -86,12 +86,21 @@ describe('Module Plan & Consultations (PlanPage)', () => {
     });
   });
 
-  it('permet de filtrer les 70 questions, met en avant les regles actives et persiste selection, statut et note dans Dexie', async () => {
+  it('affiche par defaut le perimetre Pour ma consultation, permet de basculer sur toutes les questions, filtre et persiste dans Dexie', async () => {
     renderPlanPage('/plan?tab=consult');
 
     const consultTab = screen.getByRole('tab', { name: /Préparer ma consultation/i });
     expect(consultTab).toHaveAttribute('aria-selected', 'true');
 
+    // Vue par defaut : Pour ma consultation (strictement moins que la totalite du referentiel)
+    const initialCountEl = await screen.findByText(/^\d+ questions? affichées?$/);
+    const initialCount = Number.parseInt(initialCountEl.textContent ?? '0', 10);
+    expect(initialCount).toBeGreaterThan(0);
+    expect(initialCount).toBeLessThan(QUESTIONS_CATALOG.length);
+
+    // Basculer sur Toutes les questions
+    const scopeGroup = screen.getByRole('group', { name: /Périmètre des questions de consultation/i });
+    fireEvent.click(within(scopeGroup).getByRole('button', { name: /Toutes les questions/i }));
     await screen.findByText(new RegExp(`^${QUESTIONS_CATALOG.length} questions affichées$`));
 
     // Au moins une question declenchee par les regles actives est mise en avant
@@ -107,7 +116,8 @@ describe('Module Plan & Consultations (PlanPage)', () => {
       expect(countText.textContent).not.toContain(`${QUESTIONS_CATALOG.length} questions`);
     });
 
-    // Retour sur Tous + recherche sur "ferritine"
+    // Retour sur Tous + recherche sur "ferritine" (couvre les 125 questions meme depuis le perimetre par defaut)
+    fireEvent.click(within(scopeGroup).getByRole('button', { name: /Pour ma consultation/i }));
     fireEvent.click(within(interlocutorGroup).getByRole('button', { name: /^Tous/i }));
     const searchInput = screen.getByRole('searchbox', { name: /Rechercher une question/i });
     fireEvent.change(searchInput, { target: { value: 'ferritine' } });

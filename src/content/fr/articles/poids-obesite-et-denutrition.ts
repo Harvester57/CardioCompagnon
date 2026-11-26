@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/weight-obesity-and-malnutrition.md',
   titleFr: 'Poids, obésité et dénutrition (cachexie cardiaque)',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

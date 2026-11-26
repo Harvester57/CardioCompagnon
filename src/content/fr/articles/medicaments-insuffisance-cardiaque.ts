@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/heart-failure-medicines.md',
   titleFr: "Les médicaments de l'insuffisance cardiaque (4 piliers)",
   category: 'traitements',
+  readingTier: 'essential',
   asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'warm',
@@ -32,166 +33,148 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Lorsque le cœur pompe moins efficacement (insuffisance cardiaque à FEVG réduite, ou ICFER), quatre grandes familles de médicaments ont chacune démontré qu'elles aident à vivre plus longtemps et à éviter les hospitalisations. Elles agissent de manière complémentaire : on les introduit généralement tôt, puis on augmente les doses palier par palier (titration) jusqu'à la dose cible ou la dose maximale tolérée. Dans les registres européens récents, la moitié à deux tiers des patients atteints d'ICFER reçoivent les quatre classes, mais seuls 1 à 3 % atteignent la dose cible complète des quatre. Des diurétiques sont ajoutés si nécessaire pour évacuer l'excès d'eau et soulager l'essoufflement ou les œdèmes. Ces traitements sont destinés à être poursuivis au long cours, même lorsque les symptômes disparaissent ou que la FEVG s'améliore.",
+    "Lorsque votre cœur pompe moins efficacement, quatre familles de médicaments agissent ensemble pour le protéger et limiter les hospitalisations. Elles sont introduites tôt, puis augmentées par paliers selon votre tolérance. Des diurétiques peuvent s'y ajouter pour évacuer l'excès d'eau et soulager l'essoufflement. Ces traitements se poursuivent au long cours, même lorsque vous vous sentez mieux.",
+  keyTakeawaysFr: [
+    "Quatre familles de fond protègent votre cœur de façon complémentaire ; les diurétiques soulagent surtout l'essoufflement et les œdèmes.",
+    "Les doses sont augmentées progressivement (titration) jusqu'à la dose cible ou la dose la mieux tolérée par votre organisme.",
+    "Ne modifiez et n'arrêtez jamais un médicament vous-même, même si vos symptômes disparaissent ou si votre échographie s'améliore.",
+    "En cas d'angine de poitrine associée, certains anti-angineux comme le vérapamil ou le diltiazem sont à éviter : faites vérifier toute nouvelle ordonnance.",
+  ],
   sections: [
     {
-      headingFr: 'Les quatre classes du traitement de fond',
-      bodyMarkdownFr: `Les recommandations européennes ESC 2026 qualifient ces quatre classes de traitement de fond (*foundational medical therapy*). Toutes bénéficient d'une recommandation de **Classe I** dans l'insuffisance cardiaque à FEVG réduite (ICFER, *HFrEF*).
+      headingFr: 'Les quatre piliers du traitement de fond',
+      depth: 'patient',
+      bodyMarkdownFr: `Dans l'insuffisance cardiaque à FEVG réduite (ICFER), quatre grandes familles de médicaments forment le **traitement de fond**. Chacune protège le muscle cardiaque par un mécanisme différent, et leurs effets s'additionnent pour vous aider à vivre plus longtemps et à éviter les hospitalisations.
 
-| Classe thérapeutique | Exemples cités (DCI et noms usuels en France) | Recommandation ESC 2026 |
+| Famille de médicaments | Exemples en France (DCI et noms usuels) | Rôle principal |
 |---|---|---|
-| **IEC ou ARNI** | IEC : ramipril (*Triatec*), périndopril (*Coversyl*), énalapril (*Renitec*), lisinopril (*Zestril*) ; ARNI : sacubitril/valsartan (*Entresto*) | **Classe I (A)**. Passage d'un IEC ou ARA2 à l'ARNI : **Classe I (B1)**. ARA2 (ex. candésartan *Atacand*, valsartan *Tareg*) uniquement en cas d'intolérance aux IEC et à l'ARNI |
-| **Bêtabloquant** | bisoprolol (*Cardensiel*), carvédilol (*Kredex*), nébivolol (*Temerit*), métoprolol succinate (*Selozok*) | **Classe I (A)** chez les patients symptomatiques stables. Également traitement de première intention de l'angor dans l'ICFER |
-| **ARM** (antagoniste des récepteurs minéralocorticoïdes) | spironolactone (*Aldactone*), éplérénone (*Inspra*) | **Classe I (A)**, quelle que soit la FEVG |
-| **iSGLT2** (inhibiteur du SGLT2 / gliflozine) | dapagliflozine (*Forxiga*), empagliflozine (*Jardiance*) | **Classe I (A)**, quelle que soit la FEVG |
+| **IEC ou ARNI** | IEC : ramipril (*Triatec*), périndopril (*Coversyl*), énalapril (*Renitec*), lisinopril (*Zestril*) ; ARNI : sacubitril/valsartan (*Entresto*). En cas d'intolérance aux deux : ARA2 comme le candésartan (*Atacand*) ou le valsartan (*Tareg*) | Relâche les vaisseaux sanguins et réduit le travail du cœur |
+| **Bêtabloquant** | bisoprolol (*Cardensiel*), carvédilol (*Kredex*), nébivolol (*Temerit*), métoprolol succinate (*Selozok*) | Ralentit le cœur et le protège contre l'excès d'adrénaline ; soulage aussi l'angine de poitrine |
+| **ARM** (antagoniste des récepteurs minéralocorticoïdes) | spironolactone (*Aldactone*), éplérénone (*Inspra*) | Freine une hormone qui favorise la fibrose cardiaque et la rétention d'eau et de sel |
+| **iSGLT2** (gliflozine) | dapagliflozine (*Forxiga*), empagliflozine (*Jardiance*) | Protège le cœur et les reins, que vous soyez diabétique ou non |
 
-Le mode d'action de chaque famille, ses effets secondaires et les bilans sanguins de suivi sont détaillés dans l'article *Médicaments : mode d'action, effets secondaires et bilans sanguins*.
+Le mode d'action détaillé, les effets secondaires et les bilans sanguins de suivi de chaque famille sont expliqués dans *Médicaments : mode d'action, effets secondaires et bilans sanguins*.
 
-**Comparaisons internationales :**
-- Les recommandations américaines (ACC/AHA/HFSA 2022) placent l'ARNI en première intention devant les IEC.
-- Les recommandations britanniques NICE NG106 (mises à jour en 2025) proposent d'introduire ensemble un IEC, un bêtabloquant, un ARM et un iSGLT2, puis d'envisager le remplacement de l'IEC par un ARNI si des symptômes persistent aux doses maximales tolérées des quatre classes. Elles ne fixent pas d'ordre imposé et précisent qu'il n'est pas nécessaire d'atteindre la dose cible d'un médicament avant d'introduire le suivant. Voir aussi *Recommandations européennes (ESC), américaines et britanniques comparées*.
+### Pourquoi les doses augmentent par paliers (titration)
 
-### Titration (augmentation progressive des doses)
+Votre cardiologue ou votre médecin traitant débute généralement ces médicaments à faible dose, puis les augmente par paliers (souvent toutes les 1 à 2 semaines selon votre tension, votre pouls et vos prises de sang) jusqu'à la dose cible ou la dose maximale que vous tolérez bien. Il n'est pas nécessaire d'attendre d'avoir atteint la dose maximale d'un médicament avant d'introduire les autres. Le plein bénéfice peut prendre plusieurs semaines.
 
-- Les recommandations ESC 2026 préconisent d'augmenter les doses **au moins toutes les 1 à 2 semaines** vers les doses cibles des essais cliniques (**Classe I**).
-- Les traitements doivent être maintenus à la dose maximale tolérée **même si les symptômes disparaissent ou si la FEVG s'améliore** (**Classe I**).
-- Le plein effet clinique peut nécessiter plusieurs semaines de mise en place.
+### Poursuivre le traitement et revoir régulièrement votre ordonnance
 
-### Après une hospitalisation : à quel rythme est-ce sûr ? (essai STRONG-HF)
+- **Ne stoppez jamais un médicament vous-même** en raison d'un effet secondaire : parlez-en d'abord à votre cardiologue, votre médecin traitant, votre infirmière insuffisance cardiaque (ou IPA) ou votre pharmacien.
+- **Maintenez vos traitements au long cours** même si vos symptômes disparaissent ou si votre FEVG remonte à l'échographie.
+- **Faites le point sur toute votre ordonnance :** prendre de nombreux autres médicaments (y compris sans ordonnance ou compléments) peut compliquer l'équilibre du traitement cardiaque. Une révision régulière avec votre équipe aide à préserver la place de vos quatre piliers.`,
+    },
+    {
+      headingFr: 'Les diurétiques : soulager la rétention d’eau',
+      depth: 'patient',
+      bodyMarkdownFr: `Les **diurétiques de l'anse** — principalement le furosémide (*Lasilix*) et le bumétanide (*Burinex*) — aident les reins à éliminer l'excès d'eau et de sel. Ils soulagent l'essoufflement et les gonflements (œdèmes) des chevilles ou des jambes.
 
-- **Population :** **1 078 patients** à l'issue d'une hospitalisation pour insuffisance cardiaque aiguë dans 87 hôpitaux de 14 pays (**65 %** inclus en Russie et seulement **9 %** dans des pays européens). Aucun seuil de FEVG n'était exigé à l'entrée : FEVG moyenne **36 %**, **68 %** avec FEVG ≤ 40 %, et **48 %** d'origine ischémique (aucun résultat n'a été publié séparément selon l'étiologie).
-- **Stratégie testée :** trois classes médicamenteuses (bêtabloquant ; IEC, ARA2 ou ARNI ; ARM) ; **les iSGLT2 ne faisaient pas partie du protocole**.
-  - Au moins la moitié de la dose cible était instaurée avant la sortie, avec pour objectif les **doses complètes en 2 semaines**.
-  - Des consultations de contrôle avec bilans sanguins (potassium, fonction rénale, NT-proBNP) étaient réalisées aux **semaines 1, 2, 3 et 6** (le groupe soins usuels n'était revu par l'équipe d'étude qu'au 90e jour).
-  - **Règles de pause du protocole :** les IEC/ARA2/ARNI et ARM n'étaient pas augmentés si la pression artérielle systolique était **< 95 mmHg**, le potassium **> 5,0 mmol/L** ou le DFGe **< 30 mL/min/1,73 m²** ; le bêtabloquant n'était pas augmenté si le pouls était **< 55 bpm** ou la pression systolique **< 95 mmHg** ; en cas de hausse du NT-proBNP **> 10 %**, les médecins devaient envisager de suspendre la montée du bêtabloquant et d'augmenter le diurétique. *Ces règles appartiennent au protocole clinique de l'essai et ne constituent pas des cibles d'auto-ajustement personnel.*
-  - Au 90e jour, les doses cibles complètes étaient atteintes bien plus souvent dans le bras intensif : bloqueur du SRAA **55 % contre 2 %**, bêtabloquant **49 % contre 4 %**, ARM **84 % contre 46 %**.
-- **Résultat :** les décès ou réhospitalisations pour insuffisance cardiaque à 6 mois ont reculé de **23,3 % à 15,2 %** (**RR 0,66**). Le bénéfice provenait de la baisse des **réhospitalisations pour insuffisance cardiaque** (**9,5 % contre 17,1 %**). **La mortalité globale n'a pas baissé significativement** (**8,5 % contre 10,0 %**, p = 0,42), pas plus que la mortalité cardiovasculaire. La qualité de vie s'est un peu plus améliorée.
-- **Sous-groupe FEVG ≤ 40 % :** le bénéfice absolu était numériquement moindre qu'au-delà de 40 % (**6,3 contre 12,5 points de pourcentage**), mais la différence entre les deux groupes n'était pas statistiquement significative.
-- **Effets indésirables :** plus fréquents avec la stratégie rapide (**41 % contre 29 %** au 90e jour) : hypotension **5 % contre < 1 %**, hyperkaliémie **3 % contre 0 %**, altération rénale **3 % contre < 1 %**. En revanche, les événements indésirables graves (**16 % contre 17 %**) et fatals (**5 % contre 6 %**) n'ont pas augmenté.
-- **Limites :** essai en ouvert, critère principal modifié en cours d'étude, arrêté précocement pour bénéfice (ce qui tend à surestimer l'effet) et financé par un fabricant de tests NT-proBNP. Il portait sur des patients juste sortis de l'hôpital et non sur des patients ambulatoires stables, mais démontre que les doses cibles peuvent être atteintes en quelques semaines moyennant une surveillance rapprochée.
+- **Un traitement de confort qui complète les quatre piliers :** contrairement aux quatre familles de fond, les diurétiques ne remplacent pas le traitement protecteur du cœur. Leur dose a vocation à évoluer selon votre état hydrique.
+- **Un équilibre à ajuster avec votre équipe :** une dose insuffisante laisse s'installer la congestion, tandis qu'une dose trop forte une fois l'excès d'eau évacué peut provoquer une baisse de tension, des vertiges, une fatigue rénale ou une baisse du sodium et du potassium. Les traitements récents comme le sacubitril/valsartan (*Entresto*) ou les iSGLT2 permettent parfois à votre médecin de réduire la dose de diurétique.
+- **La pesée quotidienne et le plan écrit :** vous peser chaque matin aide à repérer tôt une rétention d'eau (voir *Vivre au quotidien avec une insuffisance cardiaque*). Si votre cardiologue envisage de diminuer votre diurétique, demandez un **plan écrit personnalisé** précisant votre fourchette de poids cible, les signes de retour d'eau ou de déshydratation, les bilans sanguins prévus et la conduite à tenir. Toute modification de dose relève uniquement de votre équipe médicale.
 
-### Effets secondaires et adhésion
+Lorsque la rétention d'eau résiste ou revient malgré le traitement, d'autres ajustements médicaux existent (voir *Escalade et résistance aux diurétiques dans l’insuffisance cardiaque*).`,
+    },
+    {
+      headingFr: 'Traitements additionnels et maladie coronaire associée',
+      depth: 'patient',
+      bodyMarkdownFr: `### Options complémentaires selon votre situation
 
-Les sources dédiées aux patients soulignent qu'il ne faut **jamais interrompre un médicament soi-même** en raison d'un effet secondaire sans en parler d'abord à votre médecin traitant, votre cardiologue, votre infirmière insuffisance cardiaque (ou IPA) ou votre pharmacien. Les ajustements progressifs de dose font partie intégrante du parcours.
+Si vos symptômes persistent ou selon votre profil malgré un traitement de fond déjà optimisé, votre cardiologue peut discuter d'autres médicaments :
 
-### Qui reçoit ces traitements, et à quelle dose ? (SwedeHF)
+- **Ivabradine (*Procoralan*) :** peut ralentir un rythme cardiaque régulier qui reste trop rapide au repos malgré un bêtabloquant à la dose maximale tolérée.
+- **Digoxine (*Digoxine Nativelle*) ou digitoxine :** peut être envisagée en complément sous surveillance attentive de la tolérance et des taux sanguins.
+- **Vériciguat (*Verquvo*) :** peut être proposé après une aggravation récente de l'insuffisance cardiaque.
+- **Fer intraveineux (carboxymaltose ferrique *Ferinject* ou dérisomaltose ferrique *Monofer*) :** en cas de carence en fer associée à une ICFER symptomatique, le fer par perfusion améliore les symptômes et la qualité de vie et réduit les hospitalisations. Les comprimés de fer par la bouche ne sont pas efficaces dans ce contexte (voir *Carence en fer et fer intraveineux*).
+- **Finérénone (*Kerendia*) :** cet ARM plus récent ne remplace pas la spironolactone ou l'éplérénone lorsque la FEVG est réduite autour de 35 % (voir *Finérénone, nouveaux ARM et chélateurs de potassium*).
+- **Association hydralazine / dinitrate d'isosorbide :** option envisagée dans certaines situations particulières ou en cas d'intolérance aux IEC, ARNI et ARA2.
 
-- **Cohorte :** registre suédois de **27 430 patients** atteints d'ICFER (FEVG < 40 %, insuffisance cardiaque évoluant depuis au moins 3 mois) entre 2000 et 2018 ; âge moyen **74 ans** ; **67 %** présentaient une cardiopathie ischémique enregistrée comme maladie associée (pas nécessairement comme cause première). Étude observationnelle : elle décrit les prescriptions réelles, pas l'efficacité des médicaments.
-- **Une prescription qui diminue avec l'âge :**
+Pour approfondir ces traitements, voir *Médicaments additionnels : ivabradine, digoxine/digitoxine et vériciguat* et *Au-delà des 4 piliers : traitements additionnels et récents*.
+
+### Maladie des artères coronaires et angine de poitrine
+
+Dans la cardiomyopathie ischémique, la maladie coronaire est traitée en parallèle :
+
+- **Angine de poitrine (angor) :** le bêtabloquant reste le traitement de première intention. D'autres anti-angineux peuvent s'ajouter sur avis cardiologique (ivabradine, dérivé nitré longue durée souvent en patch en France, ranolazine, amlodipine ou félodipine, nicorandil ou trimétazidine), avec la trinitrine sublinguale (*Natispray*) pour les crises. **Attention :** les dérivés nitrés ne doivent jamais être associés aux médicaments contre les troubles de l'érection de type sildénafil (IPDE-5).
+- **Médicaments à éviter :** le **vérapamil (*Isoptine*)** et le **diltiazem (*Tildiem*)** (inhibiteurs calciques bradycardisants), ainsi que les dihydropyridines à action courte, sont à éviter dans l'ICFER car ils affaiblissent la contraction cardiaque.
+- **Prévention artérielle :** selon votre situation, une statine, un antiagrégant plaquettaire (aspirine ou clopidogrel) ou un anticoagulant peuvent être associés (voir *Cholestérol LDL, aspirine et prévention secondaire coronaire* et *Thrombus du ventricule gauche et anticoagulants*).
+
+### Deux situations particulières
+
+- **Cœur affaibli sans avoir jamais eu de symptômes (stade B) :** les preuves concernent surtout un IEC et un bêtabloquant, plus l'éplérénone après un infarctus (voir *Dysfonction ventriculaire asymptomatique (stade B)*).
+- **Tension artérielle :** les quatre piliers sont prescrits pour protéger votre cœur et non uniquement pour faire baisser la tension. Certains antihypertenseurs courants sont d'ailleurs à éviter dans l'ICFER (voir *Tension artérielle et insuffisance cardiaque*).`,
+    },
+    {
+      headingFr: 'Preuves cliniques : bénéfice modélisé, titration rapide et registres',
+      depth: 'evidence',
+      bodyMarkdownFr: `### Recommandations comparées (ESC 2026, ACC/AHA 2022, NICE NG106)
+
+- **ESC 2026 :** les quatre classes du traitement de fond bénéficient d'une recommandation **Classe I (A)** dans l'ICFER (passage d'un IEC ou ARA2 à l'ARNI : **Classe I (B1)** ; ARA2 uniquement en cas d'intolérance aux IEC et à l'ARNI ; ARM et iSGLT2 : **Classe I (A)** quelle que soit la FEVG). Titration préconisée **au moins toutes les 1 à 2 semaines** (**Classe I**) et maintien à la dose maximale tolérée même si les symptômes disparaissent ou si la FEVG s'améliore (**Classe I**).
+- **ACC/AHA/HFSA 2022 :** place l'ARNI en première intention devant les IEC.
+- **NICE NG106 (mise à jour 2025) :** propose d'introduire ensemble IEC, bêtabloquant, ARM et iSGLT2 sans ordre imposé ni obligation d'atteindre la dose cible d'une classe avant d'introduire la suivante, puis d'envisager le remplacement de l'IEC par un ARNI si des symptômes persistent aux doses maximales tolérées. Mentionne aussi l'ivabradine, hydralazine + dérivé nitré (intolérance IEC/ARNI/ARA2) et la digoxine sur avis spécialisé, et ajoute les inhibiteurs calciques dihydropyridiniques à action courte aux traitements à éviter.
+
+### Ampleur du bénéfice modélisée (Vaduganathan et al., *The Lancet* 2020)
+
+Aucun essai clinique n'a randomisé directement la quadrithérapie complète face à l'ancienne bithérapie. Cette modélisation croisée combine **EMPHASIS-HF**, **PARADIGM-HF** et **DAPA-HF** (ARNI + bêtabloquant + ARM + iSGLT2 vs IEC/ARA2 + bêtabloquant) :
+
+- **Décès cardiovasculaire ou première hospitalisation pour IC :** **HR 0,38** (réduction relative d'environ **62 %**). Séparément : décès CV **HR 0,50**, hospitalisation pour IC **HR 0,32**, mortalité toutes causes **HR 0,53**.
+- **Effet absolu sur 3 ans :** NNT de **4 à 6** pour éviter un décès CV ou une hospitalisation pour IC, et de **8 à 16** pour éviter un décès.
+- **Années de vie supplémentaires projetées :**
+
+| Âge | Années de vie supplémentaires projetées | Années supplémentaires sans décès CV ni hospitalisation IC |
+|---|---|---|
+| 55 ans | environ **6,3 ans** (17,7 contre 11,4 ans) | environ **8,3 ans** |
+| 65 ans | environ **4,4 ans** | environ **6,3 ans** |
+| 80 ans | environ **1,4 an** | environ **2,7 ans** |
+
+*Limites :* projections modélisées supposant un effet multiplicatif durable et une observance parfaite, issues d'essais d'ICFER toutes causes (non limités à l'étiologie ischémique) et représentant des moyennes de population.
+
+### Titration rapide après hospitalisation : essai STRONG-HF (*The Lancet*, 2022)
+
+- **Population :** **1 078 patients** après hospitalisation pour IC aiguë dans 87 hôpitaux de 14 pays (**65 %** en Russie, **9 %** en Europe) ; FEVG moyenne **36 %**, **68 %** avec FEVG ≤ 40 %, **48 %** d'origine ischémique (pas d'analyse publiée par étiologie).
+- **Stratégie :** trois classes (bêtabloquant, IEC/ARA2/ARNI, ARM ; **iSGLT2 hors protocole**), au moins demi-dose avant sortie, objectif doses complètes en **2 semaines**, bilans et visites aux semaines 1, 2, 3 et 6 (soins usuels revus à J90).
+- **Règles de pause du protocole clinicien :** pas de hausse d'IEC/ARA2/ARNI ou ARM si PAS **< 95 mmHg**, potassium **> 5,0 mmol/L** ou DFGe **< 30 mL/min/1,73 m²** ; pas de hausse de bêtabloquant si pouls **< 55 bpm** ou PAS **< 95 mmHg** ; si hausse du NT-proBNP **> 10 %**, envisager de suspendre la montée du bêtabloquant et d'augmenter le diurétique.
+- **Résultats :** à J90, doses cibles atteintes bien plus souvent dans le bras intensif (bloqueur SRAA **55 % vs 2 %**, bêtabloquant **49 % vs 4 %**, ARM **84 % vs 46 %**). À 6 mois, décès ou réhospitalisations IC réduits de **23,3 % à 15,2 %** (**RR 0,66**), portés par les réhospitalisations (**9,5 % vs 17,1 %**) ; mortalité globale non significative (**8,5 % vs 10,0 %**, p = 0,42). Sous-groupe FEVG ≤ 40 % : bénéfice absolu numériquement moindre (**6,3 vs 12,5 points**, interaction non significative). Effets indésirables plus fréquents à J90 (**41 % vs 29 %** : hypotension **5 % vs < 1 %**, hyperkaliémie **3 % vs 0 %**, altération rénale **3 % vs < 1 %**), sans hausse des événements graves (**16 % vs 17 %**) ni fatals (**5 % vs 6 %**).
+- **Limites :** essai en ouvert, critère principal modifié en cours d'étude, arrêté précocement pour bénéfice, financé par un fabricant de tests NT-proBNP, mené en post-hospitalisation et non en ambulatoire stable.
+
+### Pratique réelle : registres SwedeHF, OPTIPHARM-HF, TITRATE-HF et REPORT-HF
+
+- **SwedeHF (2000–2018, 27 430 patients ICFER, âge moyen 74 ans, 67 % avec cardiopathie ischémique associée) :**
 
 | Classe médicamenteuse | Moins de 70 ans | 70 à 79 ans | 80 ans et plus |
 |---|---|---|---|
 | IEC / ARA2 ou ARNI | 95 % | 90 % | 80 % |
 | Bêtabloquant | 95 % | 93 % | 88 % |
 | ARM | 54 % | 47 % | 35 % |
-| ARNI (comptabilisé à partir de 2016 seulement) | 25 % | 17 % | 7 % |
+| ARNI (à partir de 2016) | 25 % | 17 % | 7 % |
 
-- **Des doses cibles rarement atteintes, même chez les patients traités :** IEC/ARA2 **44 %**, ARNI **42 %**, bêtabloquant **36 %**, ARM **16 %** au global, tombant respectivement à **30 %, 34 %, 25 % et 9 %** à partir de 80 ans. Les trois grandes classes ensemble concernaient **50 %** des moins de 70 ans contre **26 %** à 80 ans et plus.
-- **Facteurs associés à une moindre utilisation :** âge avancé (même après ajustement sur la fonction rénale, la tension artérielle et d'autres facteurs), altération rénale, hypokaliémie et suivi en médecine de ville plutôt qu'en consultation hospitalière. L'orientation vers une clinique d'insuffisance cardiaque animée par des infirmières était associée à un recours plus élevé aux IEC/ARA2/ARNI. La cardiopathie ischémique était associée à un recours légèrement moindre aux IEC/ARA2/ARNI (**odds ratio 0,80**). Le registre ne consignait pas les raisons cliniques.
-- **Limites :** données arrêtées en 2018 (avant la généralisation des iSGLT2 en insuffisance cardiaque ; données ARNI sur 2016–2018 uniquement). Un erratum publié en 2022 (*corrigendum*) a corrigé le tableau de l'article qui qualifiait à tort ces odds ratios de hazard ratios.
-
-### Pratique réelle récente : un écart qui persiste (registres 2022–2024)
-
-Des registres européens plus récents, conduits après l'arrivée des iSGLT2 en routine, montrent une progression de la quadrithérapie par rapport à SwedeHF, mais les doses cibles complètes des quatre classes restent rares. Observationnels, ils décrivent les prescriptions sans prouver l'efficacité.
-
-- **Italie (OPTIPHARM-HF) :** **1 720 patients** atteints d'ICFER (FEVG moyenne **32 %**, **57 %** d'origine ischémique) suivis dans 32 centres experts d'insuffisance cardiaque.
-  - À la première visite du registre : bêtabloquant **90 %**, IEC/ARA2/ARNI **80 %** (ARNI **61 %**), ARM **72 %**, iSGLT2 **69 %**. **Les quatre classes ensemble : 46,6 % ; les quatre à dose cible complète : 2,7 %.**
-  - Une raison médicale documentée (contre-indication, effet indésirable ou intolérance) n'expliquait l'absence de traitement que chez **3 à 16 %** des patients selon la classe (hypotension, fonction rénale, hyperkaliémie, bradycardie et, pour les iSGLT2, infections urinaires ; pour beaucoup de patients non traités, la raison était « inconnue »).
-  - Au cours de cette seule visite structurée, la quadrithérapie est passée de **46,6 % à 63,8 %**, et la quadrithérapie à dose cible de **2,7 % à 6,6 %**.
-  - *Limites :* centres spécialisés uniquement (probablement au-dessus de la pratique courante), absence de données d'événements cliniques à ce stade, résultats non ventilés par étiologie.
-- **Pays-Bas (TITRATE-HF) :** **3 367 patients** atteints d'ICFER (FEVG ≤ 40 %) dans 48 hôpitaux, suivis 1 an (environ **44 %** d'origine ischémique).
-  - **Insuffisance cardiaque nouvellement diagnostiquée :** les quatre classes chez **47 %** à 6 semaines, **69,5 % à 6 mois** et **64,4 % à 12 mois** ; seuls **1,2 %** recevaient la dose cible complète des quatre classes à 12 mois, et **14 %** au moins la moitié de chaque dose cible.
-  - **Insuffisance cardiaque ancienne (chronique ou récemment aggravée) :** quadrithérapie passée seulement de **44,6 % à 54,6 %**, avec **1,8 %** aux doses cibles complètes des quatre classes.
-  - L'essentiel des instaurations avait lieu dans les 2 premiers mois, puis la titration stagnait largement.
-  - **Pourquoi les doses restaient basses :** pour les ARA2, l'ARNI, les bêtabloquants et les ARM, le motif le plus fréquemment consigné était l'acceptation de la dose inférieure par le clinicien (environ la moitié des cas), devant les effets indésirables (environ un tiers). Pour les IEC, les effets indésirables arrivaient en tête (**43 % contre 39 %**).
-  - **Réduire ou arrêter des traitements** durant les 6 premiers mois (IC chronique ou en aggravation) était associé à un risque accru de décès ou d'hospitalisation pour IC sur l'année (**HR ajusté 1,54**). Il s'agit d'une association : les traitements sont souvent réduits parce que l'état du patient se dégrade, ce qui ne prouve pas que la baisse en soit la cause.
-  - *Limites :* analyses de prescription limitées aux patients vivants à 12 mois, événements non adjudiqués indépendamment, effet stimulant possible du registre lui-même. L'évolution de la FEVG dans ce registre (et la différence entre causes ischémique et non ischémique) est présentée dans *Insuffisance cardiaque à FEVG améliorée (HFimpEF)*.
-- **L'effet d'éviction lié aux autres médicaments (REPORT-HF) :** **18 030 patients** sortant d'hospitalisation pour insuffisance cardiaque aiguë dans 44 pays entre 2014 et 2017 (environ la moitié avec FEVG < 40 %, avant l'usage courant des ARNI et iSGLT2).
-  - En ne comptant que les médicaments **hors insuffisance cardiaque**, **39 %** en prenaient **5 à 9** et **9 %** en prenaient **10 ou plus**.
-  - Plus ce nombre augmentait, moins les patients recevaient d'IEC/ARA2, bêtabloquants et ARM, et plus ils recevaient de médicaments pouvant aggraver l'insuffisance cardiaque (**57 %** chez ceux prenant 10 autres médicaments ou plus contre **6 %** chez ceux en prenant moins de 5).
-  - Prendre 10 autres médicaments ou plus était associé à une mortalité à 1 an plus élevée après ajustement (**HR 1,16**), mais l'association devenait **non significative** une fois l'utilisation des médicaments de l'insuffisance cardiaque prise en compte (**HR 1,09**). Les auteurs interprètent cette association comme un effet d'éviction des traitements cardiaques essentiels, sans lien causal prouvé.
-  - *Message pratique :* une révision régulière de l'ordonnance complète — automédication et compléments compris — avec l'équipe de cardiologie et le médecin traitant aide à protéger la place des piliers pronostiques.`,
+  Doses cibles globales : IEC/ARA2 **44 %**, ARNI **42 %**, bêtabloquant **36 %**, ARM **16 %** (tombant à **30 %, 34 %, 25 % et 9 %** dès 80 ans). Les trois classes ensemble : **50 %** (< 70 ans) vs **26 %** (≥ 80 ans). Moindre recours associé à l'âge, l'altération rénale, l'hypokaliémie, le suivi hors hôpital et la cardiopathie ischémique (**OR 0,80** pour IEC/ARA2/ARNI ; *corrigendum* 2022 corrigeant l'appellation erronée de HR). Données antérieures aux iSGLT2.
+- **OPTIPHARM-HF (Italie, 1 720 patients ICFER, FEVG moyenne 32 %, 57 % ischémiques, 32 centres experts) :** à l'entrée, bêtabloquant **90 %**, IEC/ARA2/ARNI **80 %** (ARNI **61 %**), ARM **72 %**, iSGLT2 **69 %** ; **4 classes : 46,6 %**, **4 classes à dose cible : 2,7 %**. Raison médicale documentée seulement chez **3 à 16 %** des non-traités. Après une seule visite structurée : quadrithérapie passée à **63,8 %** et doses cibles complètes à **6,6 %**.
+- **TITRATE-HF (Pays-Bas, 3 367 patients ICFER, 48 hôpitaux, ~44 % ischémiques) :** IC nouvellement diagnostiquée : 4 classes chez **47 %** à 6 semaines, **69,5 %** à 6 mois, **64,4 %** à 12 mois ; doses cibles complètes des 4 classes chez **1,2 %** (au moins demi-dose de chaque chez **14 %**). IC chronique/aggravée : 4 classes de **44,6 % à 54,6 %**, doses cibles **1,8 %**. Principal frein consigné : acceptation de la dose inférieure (~50 %) devant les effets indésirables (~33 % ; pour les IEC : **43 % vs 39 %**). Réduction/arrêt des traitements dans les 6 premiers mois associé à plus de décès/hospitalisations IC (**HR ajusté 1,54**, association observationnelle).
+- **REPORT-HF (18 030 patients post-hospitalisation, 44 pays, 2014–2017) :** hors médicaments IC, **39 %** prenaient 5–9 médicaments et **9 %** ≥ 10 ; prise de médicaments pouvant aggraver l'IC : **57 %** (≥ 10) vs **6 %** (< 5). Mortalité à 1 an avec ≥ 10 autres médicaments : **HR 1,16**, devenant non significatif (**HR 1,09**) après ajustement sur les médicaments de l'IC (effet d'éviction suggéré).`,
     },
     {
-      headingFr: 'Quelle est l’ampleur du bénéfice ?',
-      bodyMarkdownFr: `Aucun essai clinique n'a randomisé directement la quadrithérapie complète face à l'ancienne bithérapie. L'estimation la plus citée provient d'une modélisation croisée d'essais cliniques (**Vaduganathan et al., *The Lancet* 2020**), combinant les résultats de **EMPHASIS-HF**, **PARADIGM-HF** et **DAPA-HF**.
+      headingFr: 'Données détaillées sur les diurétiques, traitements additionnels et anti-angineux',
+      depth: 'evidence',
+      bodyMarkdownFr: `### Diurétiques : réduction, arrêt encadré et escalade
 
-En comparant une quadrithérapie complète (ARNI + bêtabloquant + ARM + iSGLT2) à l'ancien standard (IEC ou ARA2 + bêtabloquant) :
+- **ESC 2026 :** diurétiques de l'anse recommandés (**Classe I**) pour soulager les signes de congestion. En cas d'escalade à l'hôpital sous diurétique de l'anse, ajout d'acétazolamide IV (**ADVOR**) ou d'hydrochlorothiazide (**CLOROTIC**) classé **Classe IIa (B1)** (décongestion plus rapide sans baisse des décès ni réhospitalisations ; forte hausse d'hypokaliémie et variations de créatinine sous thiazidiques ; usage chronique de thiazidiques déconseillé chez les patients stables). Dans **TRANSFORM-HF**, torasémide et furosémide ont donné la même survie.
+- **Revue narrative Paraskevaidis et al. (2026) :** propose chez un patient stable sans surcharge hydrique une réduction jusqu'à **50 %** du diurétique de l'anse ou thiazidique avec surveillance quotidienne (tension, volémie) et bilan clinique/rénal/électrolytes toutes les **1 à 2 semaines** (règle non issue d'un essai ; le schéma qualifie à tort l'ARM d'alternative au diurétique). *Limites :* revue narrative sans recherche systématique, ne citant ni l'ESC ni les recommandations américaines, avec imprécisions de citation.
+- **Données d'arrêt complet :** dans **ReBIC-1** (**188 patients** stables sous faible dose de furosémide, FEVG médiane **32 %**, ~1/3 ischémique), l'arrêt n'a pas aggravé la dyspnée et **75,3 %** sont restés sans furosémide contre **83,7 %** sous traitement. Dans une étude plus ancienne, **29/41 (71 %)** ont repris un diurétique dans les **12 semaines** (risque lié à **FEVG ≤ 27 %** et furosémide **> 40 mg/j**). Études antérieures aux iSGLT2. Dans **PARADIGM-HF** (sacubitril/valsartan vs énalapril) et **EMPEROR-Reduced** (empagliflozine), les besoins en diurétiques étaient moindres.
 
-- **Décès cardiovasculaire ou première hospitalisation pour insuffisance cardiaque :** rapport de risque (HR) de **0,38**, soit une réduction relative d'environ **62 %**. Pris séparément : décès cardiovasculaire HR **0,50**, hospitalisation pour insuffisance cardiaque HR **0,32**, mortalité toutes causes HR **0,53**.
-- **Effet absolu sur 3 ans :**
-  - pour éviter un décès cardiovasculaire ou une hospitalisation pour insuffisance cardiaque, il faut traiter **4 à 6 patients** ;
-  - pour éviter un décès, il faut traiter **8 à 16 patients**.
-- **Années de vie supplémentaires projetées :**
+### Traitements additionnels (grades ESC 2026 et essais pivots)
 
-| Âge | Années de vie supplémentaires projetées | Années supplémentaires sans décès CV ni hospitalisation pour IC |
-|---|---|---|
-| 55 ans | environ **6,3 ans** (17,7 contre 11,4 ans) | environ **8,3 ans** |
-| 65 ans | environ **4,4 ans** | environ **6,3 ans** |
-| 80 ans | environ **1,4 an** | environ **2,7 ans** |
+- **Ivabradine (*Procoralan*) :** **Classe IIa** si FEVG ≤ 35 %, rythme sinusal et FC repos **> 70 bpm** malgré traitement maximal toléré (seuil AMM européenne : **≥ 75 bpm**). Essai **SHIFT** : bénéfice porté par la baisse des hospitalisations pour IC.
+- **Digoxine / digitoxine :** **Classe IIa** (rehaussée en 2026) si FEVG ≤ 40 % malgré traitement optimal. Essai **DIGIT-HF** (2025) : réduction des décès ou premières hospitalisations pour IC (**HR 0,82**).
+- **Vériciguat (*Verquvo*) :** **Classe IIb** si FEVG < 45 % malgré traitement optimal. Bénéfice après aggravation récente (**VICTORIA**, périmètre AMM) ; en ambulatoire stable (**VICTOR**, *The Lancet* 2025), critère principal non réduit (**HR 0,93** ; baisse des décès secondaire nominale).
+- **Finérénone (*Kerendia*) :** essai **FINEARTS-HF** limité aux FEVG ≥ 40 % ; l'ESC 2026 retient un ARM stéroïdien dans l'ICFER.
+- **Hydralazine / dinitrate d'isosorbide :** **Classe IIa** chez les patients se déclarant noirs avec FEVG ≤ 40 %.
+- **Fer intraveineux :** améliore symptômes et qualité de vie (**Classe I**) et réduit les hospitalisations IC (**Classe IIa**) en cas de carence martiale (ESC 2026 discute un seuil CST **< 20 %**). Fer oral inefficace dans **IRONOUT-HF**.
 
-**Limites importantes de cette estimation :**
-- Il s'agit de **projections modélisées**, et non de résultats observés sur toute une vie.
-- Le modèle suppose que les bénéfices se multiplient et perdurent à vie avec une observance parfaite.
-- Les essais inclus portaient sur l'ICFER toutes causes confondues, et pas exclusivement sur la cardiomyopathie ischémique.
-- Ces chiffres représentent des moyennes de population et non un pronostic individuel.`,
-    },
-    {
-      headingFr: 'Les diurétiques (« médicaments pour éliminer l’eau »)',
-      bodyMarkdownFr: `Les **diurétiques de l'anse** — principalement le furosémide (*Lasilix*) et le bumétanide (*Burinex*) — sont recommandés pour soulager les signes de congestion (essoufflement, œdèmes des chevilles ou des jambes), à une posologie ajustée à l'état hydrique (**Classe I** dans les recommandations ESC 2026).
+### Anti-angineux dans l'ICFER ischémique (ESC 2024 SCC)
 
-Ce sont des traitements de **soulagement des symptômes** qui s'ajoutent aux quatre piliers sans les remplacer. La pesée quotidienne aide à repérer précocement une rétention d'eau (voir *Vivre au quotidien avec une insuffisance cardiaque*).
-
-### Pendant combien de temps, et à quelle dose ?
-
-Contrairement aux quatre piliers du traitement de fond, les diurétiques n'ont pas démontré d'allongement de la durée de vie : leur posologie a donc vocation à évoluer en fonction de votre état hydrique plutôt que de rester figée. Une revue narrative de 2026 (Athènes, **Paraskevaidis et al.**) résume cette approche :
-
-- **Augmenter franchement en cas de congestion ; réduire une fois l'excès d'eau éliminé :** une rétention hydrique persistante à la sortie d'hospitalisation est associée à un moins bon pronostic, mais maintenir une dose élevée une fois la congestion disparue expose à une hypotension artérielle, une atteinte rénale, une baisse du sodium ou du potassium, des vertiges et des chutes.
-- **Seule règle posologique proposée par la revue :** un schéma décisionnel indique que, chez un patient stable sans signe de surcharge hydrique, la dose de diurétique de l'anse ou thiazidique peut être **réduite jusqu'à 50 %**, sous réserve d'une surveillance quotidienne de la tension artérielle et de la volémie et d'un contrôle des symptômes, de la fonction rénale et des électrolytes toutes les **1 à 2 semaines**. Cette règle ne repose pas sur un essai clinique. Le même schéma qualifie par ailleurs l'ARM d'« alternative » au diurétique, une présentation peu adaptée à l'ICFER où l'ARM est un pilier de fond à part entière.
-- **Des données d'arrêt complet encore limitées** (telles que rapportées par la revue) :
-  - dans l'essai en double aveugle **ReBIC-1** (**188 patients** ambulatoires stables sous faible dose de furosémide ; FEVG médiane **32 %**, environ un tiers d'origine ischémique selon la revue de Luo 2025), l'arrêt n'a pas aggravé l'essoufflement et **75,3 %** des patients ayant arrêté sont restés sans furosémide contre **83,7 %** dans le groupe poursuivant le traitement ;
-  - dans une étude plus ancienne, **29 patients sur 41 (71 %)** ont dû reprendre un diurétique dans les **12 semaines**, un risque associé à une **FEVG ≤ 27 %** et à une dose de furosémide **> 40 mg/jour** ;
-  - ces études sont toutes antérieures à la généralisation des iSGLT2. Cela rejoint la revue systématique de 2025 présentée dans *Insuffisance cardiaque à FEVG améliorée (HFimpEF)* : les diurétiques de l'anse constituent la seule classe pour laquelle un arrêt encadré dispose d'un appui clinique.
-- **Les traitements récents peuvent diminuer les besoins en diurétiques :** dans **PARADIGM-HF**, les réductions de dose de diurétique ont été plus fréquentes sous sacubitril/valsartan (*Entresto*) que sous énalapril, et dans **EMPEROR-Reduced**, l'empagliflozine (*Jardiance*) a réduit la nécessité d'intensifier les diurétiques. La revue y voit une incitation à réévaluer la posologie en consultation, et non un motif de baisse automatique.
-- **Un plan écrit personnalisé** est recommandé lors de toute diminution de dose : fourchette de poids cible, signes de retour de la rétention hydrique (prise de poids accompagnée d'œdèmes ou d'essoufflement), signes de déshydratation excessive (vertiges, tension basse, hausse de la créatinine), dates des bilans sanguins et dose de reprise prévue.
-- **Limites de cette revue :** revue narrative sans recherche systématique, ne citant ni les recommandations ESC ni les recommandations américaines sur l'insuffisance cardiaque, comportant plusieurs imprécisions de citation et sans tableaux posologiques médicament par médicament. Toute modification de dose relève exclusivement de votre équipe médicale.
-
-### Quand le liquide s'accumule malgré le traitement
-
-Le problème inverse — l'escalade des diurétiques lorsque la rétention d'eau revient — fait l'objet d'une fiche dédiée : *Escalade et résistance aux diurétiques dans l’insuffisance cardiaque*. En résumé : dans **TRANSFORM-HF**, le torasémide et le furosémide ont donné la même survie ; à l'hôpital, l'ajout d'acétazolamide intraveineux (**ADVOR**) ou d'hydrochlorothiazide (**CLOROTIC**) a accéléré la décongestion sans réduire les décès ni les réhospitalisations, et les thiazidiques ont fortement accru l'hypokaliémie et les variations de la créatinine. Les recommandations **ESC 2026** classent ces adjuvants en **Classe IIa (B1)** chez les patients hospitalisés déjà sous diurétique de l'anse et déconseillent l'usage chronique de thiazidiques chez les patients stables.
-
-Pour les bilans sanguins associés, voir *Médicaments : mode d'action, effets secondaires et bilans sanguins* ; pour la baisse du sodium sanguin (hyponatrémie), voir *Sel et liquides dans l'insuffisance cardiaque*.`,
-    },
-    {
-      headingFr: 'Médicaments additionnels pour des situations particulières',
-      bodyMarkdownFr: `Les recommandations ESC 2026 listent plusieurs options complémentaires, envisagées en plus d'un traitement de fond déjà optimisé :
-
-- **Ivabradine (*Procoralan*) :** FEVG ≤ 35 %, rythme sinusal et fréquence cardiaque de repos **> 70 battements/min** malgré le traitement maximal toléré (**Classe IIa**). L'autorisation européenne (AMM) retient le seuil de **≥ 75 battements/min**. Dans l'essai **SHIFT**, le bénéfice portait principalement sur la baisse des hospitalisations pour insuffisance cardiaque.
-- **Digoxine (*Digoxine Nativelle*) ou digitoxine :** FEVG ≤ 40 % malgré un traitement optimal (**Classe IIa**, rehaussée en 2026). Dans **DIGIT-HF** (2025), la digitoxine a réduit les décès ou premières hospitalisations pour insuffisance cardiaque (HR **0,82**) ; le maintien de taux sanguins bas est essentiel.
-- **Vériciguat (*Verquvo*) :** FEVG < 45 % malgré un traitement optimal (**Classe IIb**). Il a montré un bénéfice après une aggravation récente (**VICTORIA**). Chez les patients ambulatoires stables (**VICTOR**, *The Lancet* 2025), le critère principal n'a pas été réduit (HR **0,93**) ; la baisse des décès était un résultat secondaire nominal. L'AMM couvre les patients stabilisés après une décompensation récente.
-  - Les preuves, effets secondaires et interactions de ces trois médicaments sont détaillés dans *Médicaments additionnels : ivabradine, digoxine/digitoxine et vériciguat*, et une vue d'ensemble figure dans *Au-delà des 4 piliers : traitements additionnels et récents*.
-- **Finérénone (*Kerendia*) :** cet ARM non stéroïdien plus récent **ne remplace pas** la spironolactone ou l'éplérénone pour une FEVG autour de 35 %. Son essai dans l'insuffisance cardiaque (**FINEARTS-HF**) n'a inclus que des FEVG ≥ 40 %, et l'ESC 2026 désigne un ARM stéroïdien dans l'ICFER (voir *Finérénone, nouveaux ARM et chélateurs de potassium*).
-- **Association hydralazine / dinitrate d'isosorbide :** patients se déclarant noirs avec FEVG ≤ 40 % (**Classe IIa**).
-- **Position britannique (NICE NG106) :** mentionne l'ivabradine, l'association hydralazine + dérivé nitré (en cas d'intolérance aux IEC, ARNI et ARA2) et la digoxine (en cas d'ICFER sévère ou s'aggravant malgré un traitement optimisé), chacun sur avis spécialisé.
-- **Fer intraveineux (carboxymaltose ferrique *Ferinject* ou dérisomaltose ferrique *Monofer*) :** dans l'ICFER symptomatique avec carence martiale :
-  - améliore les symptômes et la qualité de vie (**Classe I**) et doit être envisagé pour réduire les hospitalisations pour insuffisance cardiaque (**Classe IIa**) ;
-  - les recommandations ESC 2026 discutent une définition reposant sur un coefficient de saturation de la transferrine (CST) **< 20 %** ;
-  - le fer doit être administré **par voie intraveineuse** : les comprimés de fer oral n'ont pas montré d'efficacité dans l'essai **IRONOUT-HF**. Voir *Carence en fer et fer intraveineux*.`,
-    },
-    {
-      headingFr: 'Médicaments et maladie coronaire associée',
-      bodyMarkdownFr: `Dans la cardiomyopathie ischémique, l'atteinte des artères coronaires et l'éventuel angor (angine de poitrine) sont traités en parallèle :
-
-- **Angor :** les bêtabloquants constituent le traitement anti-angineux de première intention dans l'ICFER.
-- **Médicaments à éviter :** les inhibiteurs calciques bradycardisants — **vérapamil (*Isoptine*)** et **diltiazem (*Tildiem*)** — doivent être évités dans l'ICFER. Les recommandations NICE ajoutent à la liste des médicaments à éviter les inhibiteurs calciques dihydropyridiniques à action courte.
-- **Priorité thérapeutique :** les anti-angineux ne doivent pas se substituer au traitement de fond de l'insuffisance cardiaque.
-- **Suite de l'escalade anti-angineuse :** après le bêtabloquant viennent l'ivabradine (rythme sinusal, fréquence > 70 bpm), un dérivé nitré longue durée (en France principalement en patch) ou la ranolazine (**ESC 2024 IIa B**), l'amlodipine ou la félodipine, puis le nicorandil ou la trimétazidine (**IIb B**), avec la trinitrine sublinguale (*Natispray*) pour les crises. Aucune de ces molécules n'améliore la survie, et les dérivés nitrés ne doivent jamais être associés aux médicaments de type sildénafil (IPDE-5). Les détails, la disponibilité en France et les règles d'urgence figurent dans *Angor et médicaments anti-angineux dans l’ICFER ischémique*.
-- **Autres classes associées :** selon le profil individuel, une statine (et d'autres hypolipémiants), un antiagrégant plaquettaire (aspirine ou clopidogrel), un anticoagulant ou un antiarythmique peuvent être prescrits (voir *Cholestérol LDL, aspirine et prévention secondaire coronaire* et *Thrombus du ventricule gauche et anticoagulants*).
-
-### Deux questions fréquentes liées au contexte
-
-- **Dysfonction ventriculaire sans symptôme (stade B) :** les preuves des quatre piliers proviennent de patients ayant présenté des symptômes d'insuffisance cardiaque. Lorsque le ventricule gauche est affaibli sans qu'il n'y ait *jamais* eu de symptômes (stade B), les preuves issues des essais sont plus circonscrites : un IEC et un bêtabloquant, plus l'éplérénone après un infarctus du myocarde (ESC 2026). Voir *Dysfonction ventriculaire asymptomatique (stade B)*.
-- **Tension artérielle :** aucune cible chiffrée de pression artérielle n'a été testée dans des essais dédiés à l'ICFER. Les quatre piliers sont prescrits pour leur effet protecteur direct sur le cœur et non pour traiter une hypertension, et certains antihypertenseurs sont à éviter dans l'ICFER. Voir *Tension artérielle et insuffisance cardiaque*.`,
+Après le bêtabloquant (première intention) : ivabradine (rythme sinusal, FC > 70 bpm), dérivé nitré longue durée ou ranolazine (**IIa B**), amlodipine ou félodipine, puis nicorandil ou trimétazidine (**IIb B**). Aucune de ces molécules n'améliore la survie.`,
     },
   ],
   relatedArticleSlugs: [

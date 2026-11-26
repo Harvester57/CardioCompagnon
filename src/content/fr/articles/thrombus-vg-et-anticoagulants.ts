@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/lv-thrombus-and-blood-thinners.md',
   titleFr: 'Thrombus du ventricule gauche et anticoagulants',
   category: 'comorbidites',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

@@ -5,6 +5,7 @@ import {
   BookA,
   BookOpen,
   Filter,
+  Layers,
   MessageSquareText,
   Search,
   UserCheck,
@@ -17,7 +18,7 @@ import {
   searchArticles,
 } from '../../content/fr';
 import { usePatientProfile } from '../../db';
-import type { ArticleCategory } from '../../types';
+import type { ArticleCategory, ArticleReadingTier } from '../../types';
 import { Card, DisclaimerBanner, EvidenceBadge } from '../../ui';
 import { ArticleReader } from './ArticleReader';
 import { GlossaryPanel } from './GlossaryPanel';
@@ -25,6 +26,8 @@ import {
   ARTICLE_CATEGORIES,
   CATEGORY_LABELS,
   MODULE_LABELS_FR,
+  READING_TIERS,
+  READING_TIER_LABELS,
   getActiveSpecificModuleKeys,
   getMatchingProfileModules,
   isArticleRelevantToProfile,
@@ -33,6 +36,7 @@ import {
 import { WikiQaPanel } from './WikiQaPanel';
 
 type LibraryTab = 'articles' | 'glossary' | 'qa';
+type TierFilter = ArticleReadingTier | 'all';
 
 function parseTabParam(rawTab: string | null): LibraryTab {
   if (rawTab === 'glossary' || rawTab === 'qa') {
@@ -46,6 +50,7 @@ export function LibraryPage() {
   const profile = usePatientProfile();
 
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedTier, setSelectedTier] = useState<TierFilter>('essential');
   const [selectedCategory, setSelectedCategory] = useState<ArticleCategory | 'all'>('all');
   const [profileOnly, setProfileOnly] = useState(false);
 
@@ -63,6 +68,27 @@ export function LibraryPage() {
     [profile],
   );
 
+  const tierCounts = useMemo(() => {
+    const counts: Record<ArticleReadingTier, number> = {
+      essential: 0,
+      deep_dive: 0,
+      reference: 0,
+    };
+    for (const article of allArticles) {
+      counts[article.readingTier] += 1;
+    }
+    return counts;
+  }, [allArticles]);
+
+  const isSearching = searchQuery.trim().length > 0;
+
+  const tierScopedArticles = useMemo(() => {
+    if (isSearching || selectedTier === 'all') {
+      return allArticles;
+    }
+    return allArticles.filter((article) => article.readingTier === selectedTier);
+  }, [allArticles, isSearching, selectedTier]);
+
   const categoryCounts = useMemo(() => {
     const counts: Record<ArticleCategory, number> = {
       diagnostic: 0,
@@ -74,19 +100,20 @@ export function LibraryPage() {
       france: 0,
       references: 0,
     };
-    for (const article of allArticles) {
+    for (const article of tierScopedArticles) {
       counts[article.category] += 1;
     }
     return counts;
-  }, [allArticles]);
+  }, [tierScopedArticles]);
 
   const profileRelevantCount = useMemo(
-    () => allArticles.filter((article) => isArticleRelevantToProfile(article, profile)).length,
-    [allArticles, profile],
+    () =>
+      tierScopedArticles.filter((article) => isArticleRelevantToProfile(article, profile)).length,
+    [tierScopedArticles, profile],
   );
 
   const filteredArticles = useMemo(() => {
-    const searched = searchQuery.trim() ? searchArticles(searchQuery) : allArticles;
+    const searched = isSearching ? searchArticles(searchQuery) : tierScopedArticles;
     return searched.filter((article) => {
       if (selectedCategory !== 'all' && article.category !== selectedCategory) {
         return false;
@@ -96,7 +123,7 @@ export function LibraryPage() {
       }
       return true;
     });
-  }, [allArticles, profile, profileOnly, searchQuery, selectedCategory]);
+  }, [isSearching, profile, profileOnly, searchQuery, selectedCategory, tierScopedArticles]);
 
   const glossaryMatches = useMemo(() => {
     if (!searchQuery.trim()) {
@@ -159,7 +186,14 @@ export function LibraryPage() {
   }
 
   const hasActiveFilters =
-    searchQuery.trim().length > 0 || selectedCategory !== 'all' || profileOnly;
+    isSearching || selectedTier !== 'essential' || selectedCategory !== 'all' || profileOnly;
+
+  const activeTierMeta = READING_TIERS.find((tier) => tier.id === selectedTier);
+
+  const handleSelectTier = (tier: TierFilter) => {
+    setSelectedTier(tier);
+    setSelectedCategory('all');
+  };
 
   return (
     <div className="space-y-5">
@@ -278,6 +312,53 @@ export function LibraryPage() {
                 </div>
               </div>
 
+              <div className="space-y-2">
+                <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-[var(--text-secondary)]">
+                  <Layers className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+                  <span>Niveau de lecture</span>
+                </div>
+                <div
+                  role="group"
+                  aria-label="Niveaux de lecture des fiches"
+                  className="flex flex-wrap gap-2"
+                >
+                  {READING_TIERS.map((tier) => (
+                    <button
+                      key={tier.id}
+                      type="button"
+                      aria-pressed={!isSearching && selectedTier === tier.id}
+                      onClick={() => handleSelectTier(tier.id)}
+                      className={`touch-target rounded-xl border px-3 py-1.5 text-xs font-semibold transition-colors tabular-nums ${
+                        !isSearching && selectedTier === tier.id
+                          ? 'border-[var(--color-primary)] bg-[var(--color-primary)] text-white'
+                          : 'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--color-primary)]'
+                      }`}
+                    >
+                      {tier.labelFr} ({tierCounts[tier.id]})
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    aria-pressed={!isSearching && selectedTier === 'all'}
+                    onClick={() => handleSelectTier('all')}
+                    className={`touch-target rounded-xl border px-3 py-1.5 text-xs font-semibold transition-colors tabular-nums ${
+                      !isSearching && selectedTier === 'all'
+                        ? 'border-[var(--color-primary)] bg-[var(--color-primary)] text-white'
+                        : 'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--color-primary)]'
+                    }`}
+                  >
+                    Toutes ({allArticles.length})
+                  </button>
+                </div>
+                <p className="m-0 text-xs text-[var(--text-secondary)]">
+                  {isSearching
+                    ? `Recherche étendue à l'ensemble des ${allArticles.length} fiches (tous niveaux confondus).`
+                    : activeTierMeta
+                      ? activeTierMeta.descriptionFr
+                      : `Affichage complet des ${allArticles.length} fiches, du socle essentiel aux études de référence.`}
+                </p>
+              </div>
+
               <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-subtle)]/70 p-3">
                 <div className="min-w-0 space-y-1">
                   <div className="flex flex-wrap items-center gap-2">
@@ -343,28 +424,30 @@ export function LibraryPage() {
                         : 'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--color-primary)]'
                     }`}
                   >
-                    Toutes ({allArticles.length})
+                    Toutes les catégories ({tierScopedArticles.length})
                   </button>
 
-                  {ARTICLE_CATEGORIES.map((category) => (
-                    <button
-                      key={category.id}
-                      type="button"
-                      aria-pressed={selectedCategory === category.id}
-                      onClick={() =>
-                        setSelectedCategory((current) =>
-                          current === category.id ? 'all' : category.id,
-                        )
-                      }
-                      className={`touch-target rounded-xl border px-3 py-1.5 text-xs font-semibold transition-colors tabular-nums ${
-                        selectedCategory === category.id
-                          ? 'border-[var(--color-primary)] bg-[var(--color-primary)] text-white'
-                          : 'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--color-primary)]'
-                      }`}
-                    >
-                      {category.shortLabelFr} ({categoryCounts[category.id]})
-                    </button>
-                  ))}
+                  {ARTICLE_CATEGORIES.filter((category) => categoryCounts[category.id] > 0).map(
+                    (category) => (
+                      <button
+                        key={category.id}
+                        type="button"
+                        aria-pressed={selectedCategory === category.id}
+                        onClick={() =>
+                          setSelectedCategory((current) =>
+                            current === category.id ? 'all' : category.id,
+                          )
+                        }
+                        className={`touch-target rounded-xl border px-3 py-1.5 text-xs font-semibold transition-colors tabular-nums ${
+                          selectedCategory === category.id
+                            ? 'border-[var(--color-primary)] bg-[var(--color-primary)] text-white'
+                            : 'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-primary)] hover:border-[var(--color-primary)]'
+                        }`}
+                      >
+                        {category.shortLabelFr} ({categoryCounts[category.id]})
+                      </button>
+                    ),
+                  )}
                 </div>
               </div>
 
@@ -378,12 +461,13 @@ export function LibraryPage() {
                     type="button"
                     onClick={() => {
                       setSearchQuery('');
+                      setSelectedTier('essential');
                       setSelectedCategory('all');
                       setProfileOnly(false);
                     }}
                     className="font-semibold text-[var(--color-primary)] underline underline-offset-2"
                   >
-                    Réinitialiser tous les filtres
+                    Revenir à l'essentiel
                   </button>
                 )}
               </div>
@@ -465,6 +549,9 @@ export function LibraryPage() {
                         <div className="flex flex-wrap items-center gap-1.5">
                           <span className="rounded-md border border-[var(--status-action-border)] bg-[var(--status-action-bg)] px-2 py-0.5 text-xs font-semibold text-[var(--status-action-text)]">
                             {CATEGORY_LABELS[article.category]}
+                          </span>
+                          <span className="rounded-md border border-[var(--border-subtle)] bg-[var(--bg-subtle)] px-2 py-0.5 text-xs font-medium text-[var(--text-secondary)]">
+                            {READING_TIER_LABELS[article.readingTier]}
                           </span>
                           {matchedModules.map((mod) => (
                             <span

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/angina-and-anti-anginal-medicines.md',
   titleFr: 'Angor et médicaments anti-angineux dans l’ICFER ischémique',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

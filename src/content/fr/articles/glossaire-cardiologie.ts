@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/references/glossary.md',
   titleFr: 'Glossaire médical de la cardiomyopathie ischémique',
   category: 'references',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'stable',
@@ -23,7 +24,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Définitions en langage clair de plus de 165 termes médicaux, acronymes et repères français rencontrés dans les comptes rendus de cardiologie, d'échocardiographie, d'IRM cardiaque, de rythmologie et de démarches administratives. Lorsque deux référentiels (ESC 2026, recommandations américaines ou Définition universelle 2026) emploient des seuils différents, les deux sont précisés.",
+    "Ce glossaire traduit en langage clair plus de 165 termes médicaux, abréviations et sigles administratifs français utilisés en cardiologie. Il couvre vos comptes rendus d'échographie, d'IRM cardiaque, de rythmologie ainsi que vos démarches de soins. Gardez cette référence sous la main pour décrypter un courrier médical ou préparer plus sereinement votre prochaine consultation avec votre cardiologue.",
   sections: [
     {
       headingFr: 'A – C',

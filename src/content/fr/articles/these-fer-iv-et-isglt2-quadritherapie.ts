@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/theses/iv-iron-on-modern-gdmt-with-sglt2i.md',
   titleFr: 'Thèse : fer intraveineux, iSGLT2 et quadrithérapie moderne dans l’ICFER',
   category: 'traitements',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -30,7 +31,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Verdict de l'enquête : partiellement étayée (confiance moyenne dans le verdict ; certitude modérée pour l'ICFER en général avec CST < 20 %, certitude directe faible en ajout à un iSGLT2). En regroupant les six grands essais de l'ICFER (7 175 patients, dont FAIR-HF2 avec 78 % de causes ischémiques), le fer intraveineux réduit d'environ 20 % les hospitalisations pour insuffisance cardiaque sur l'ensemble du suivi (et d'environ 30 % la première année), sans gain démontré sur la mortalité, avec un effet conservé dans les causes ischémiques. Toutefois, la preuve directe au-dessus de la quadrithérapie moderne reste absente : sur 7 175 participants, seuls 519 (environ 7,2 %) prenaient un inhibiteur du SGLT2 à l'inclusion (pic à 23,6 % dans FAIR-HF2), et aucun essai ni méta-analyse n'a publié les hospitalisations pour insuffisance cardiaque stratifiées selon la prise d'un iSGLT2. De plus, les iSGLT2 (dapagliflozine — Forxiga, empagliflozine — Jardiance) et le sacubitril/valsartan (Entresto) abaissent eux-mêmes la ferritine et l'hepcidine : les patients répondant au critère sur la seule ferritine < 100 µg/L avec un CST ≥ 20 % tirent peu ou pas de bénéfice, alors que le bénéfice se concentre dans l'hypoferrémie vraie (CST < 20 %). Enfin, les perfusions répétées de carboxymaltose ferrique (Ferinject) exposent à une hypophosphatémie transitoire fréquente (51,9 % modérée à sévère à J21 dans HEART-FID) contre environ 4 à 8 % avec le dérisomaltose ferrique (Monofer). Le choix du bilan et d'une éventuelle perfusion se décide avec votre cardiologue.",
+    "Cette synthèse examine si le fer intraveineux reste utile lorsque vous prenez déjà les quatre traitements modernes de l'insuffisance cardiaque, dont un inhibiteur du SGLT2. Les études montrent moins d'hospitalisations en cas de vraie carence en fer, mais peu de patients recevaient ces nouveaux traitements. Consultez cette fiche pour mieux comprendre votre bilan martial et les différences entre produits avec votre cardiologue.",
   sections: [
     {
       headingFr: 'Question évaluée et part réelle de la quadrithérapie dans les grands essais',

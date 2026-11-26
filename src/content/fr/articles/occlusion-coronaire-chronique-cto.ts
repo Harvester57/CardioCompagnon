@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/chronic-total-occlusion.md',
   titleFr: 'Occlusion coronaire chronique (CTO) et collatérales',
   category: 'dispositifs',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

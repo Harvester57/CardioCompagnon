@@ -16,9 +16,14 @@ export type ArticleCategory =
   | 'france'
   | 'references';
 
+export type ArticleReadingTier = 'essential' | 'deep_dive' | 'reference';
+
+export type ArticleSectionDepth = 'patient' | 'evidence';
+
 export interface ArticleSection {
   headingFr: string;
   bodyMarkdownFr: string;
+  depth?: ArticleSectionDepth;            // Par defaut 'patient'; 'evidence' = bloc depliable
 }
 
 export interface WikiArticle {
@@ -26,6 +31,7 @@ export interface WikiArticle {
   sourceWikiPath: string;                 // Ex: "wiki/topics/living-with-heart-failure-in-france.md"
   titleFr: string;
   category: ArticleCategory;
+  readingTier: ArticleReadingTier;        // 'essential' (par defaut) | 'deep_dive' | 'reference'
   asOf: string;                           // "2026-11-24"
   confidence: 'high' | 'medium-high' | 'medium';
   volatility: 'hot' | 'warm' | 'stable';
@@ -33,6 +39,7 @@ export interface WikiArticle {
   aliases: string[];
   linkedModules: (ClinicalModuleKey | 'core' | 'stageB')[];
   plainSummaryFr: string;                 // Encadre "En clair"
+  keyTakeawaysFr?: string[];              // 3 a 5 points cles en langage clair
   sections: ArticleSection[];
   relatedArticleSlugs: string[];
   sources: { label: string; detail: string }[];

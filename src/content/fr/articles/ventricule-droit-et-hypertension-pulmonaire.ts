@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/right-ventricle-and-pulmonary-hypertension.md',
   titleFr: 'Ventricule droit et hypertension pulmonaire dans l’insuffisance cardiaque (TAPSE, groupe 2)',
   category: 'comorbidites',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

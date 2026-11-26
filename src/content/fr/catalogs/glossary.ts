@@ -174,7 +174,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'Traitement de fond (les 4 piliers / GDMT / FMT)',
     aliases: ['4 piliers', 'GDMT', 'FMT', 'traitement de fond'],
     shortDefinitionFr:
-      'Socle des 4 classes médicamenteuses recommandées en Classe I dans l’ICFER : IEC ou ARNI, bêtabloquant, ARM et iSGLT2.',
+      'Socle des 4 familles de médicaments fortement recommandées dans l’insuffisance cardiaque à FEVG réduite : IEC ou ARNI, bêtabloquant, ARM et iSGLT2.',
     articleSlug: 'medicaments-insuffisance-cardiaque',
   },
   {
@@ -230,7 +230,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'iSGLT2 (inhibiteur du SGLT2 / gliflozine)',
     aliases: ['iSGLT2', 'SGLT2', 'gliflozine', 'dapagliflozine', 'Forxiga', 'empagliflozine', 'Jardiance'],
     shortDefinitionFr:
-      'Pilier du traitement de fond (dapagliflozine / Forxiga, empagliflozine / Jardiance), recommandé en Classe I quelle que soit la FEVG, même sans diabète.',
+      'Pilier du traitement de fond (dapagliflozine / Forxiga, empagliflozine / Jardiance), fortement recommandé quelle que soit la FEVG, même sans diabète.',
     articleSlug: 'medicaments-insuffisance-cardiaque',
   },
   {
@@ -326,7 +326,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'QRS / BBG (bloc de branche gauche)',
     aliases: ['QRS', 'BBG', 'LBBB', 'bloc de branche gauche'],
     shortDefinitionFr:
-      'Mesures de l’ECG reflétant la vitesse de conduction électrique dans les ventricules. Un BBG avec QRS ≥ 150 ms est l’indication principale (Classe I) de CRT.',
+      'Mesures de l’ECG reflétant la vitesse de conduction électrique dans les ventricules. Un bloc de branche gauche avec QRS ≥ 150 ms est l’indication principale de resynchronisation cardiaque (CRT).',
     articleSlug: 'dispositifs-cardiaques-dai-crt',
   },
   {
@@ -454,7 +454,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'Cholestérol LDL (LDL-C)',
     aliases: ['LDL', 'LDL-C', 'mauvais cholestérol'],
     shortDefinitionFr:
-      'Fraction athérogène du cholestérol. Objectif ESC après maladie coronaire : < 0,55 g/L (1,4 mmol/L) et réduction ≥ 50 % par rapport au taux initial (Classe I).',
+      'Fraction du cholestérol qui se dépose dans les artères. Objectif européen après maladie coronaire : inférieur à 0,55 g/L (1,4 mmol/L) et abaissé d’au moins 50 % par rapport au taux initial.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -478,7 +478,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'Inhibiteur de PCSK9 (anti-PCSK9)',
     aliases: ['anti-PCSK9', 'PCSK9', 'évolocumab', 'Repatha', 'alirocumab', 'Praluent'],
     shortDefinitionFr:
-      'Traitement injectable abaissant fortement le LDL (évolocumab, alirocumab), recommandé (ESC Classe I) si statine + ézétimibe ne suffisent pas.',
+      'Traitement injectable abaissant fortement le cholestérol LDL (évolocumab, alirocumab), proposé en complément si statine + ézétimibe ne suffisent pas.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -486,7 +486,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'Acide bempédoïque',
     aliases: ['acide bempédoïque', 'bempedoic acid', 'Nilemdo'],
     shortDefinitionFr:
-      'Comprimé hypolipémiant quotidien recommandé (ESC Classe I) en cas d’intolérance aux statines, ou en ajout à statine + ézétimibe.',
+      'Comprimé quotidien abaissant le cholestérol LDL, proposé en cas d’intolérance aux statines ou en complément de statine + ézétimibe.',
     articleSlug: 'cholesterol-et-prevention-secondaire',
   },
   {
@@ -814,7 +814,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'Agoniste du GLP-1 / incrétine (sémaglutide, tirzépatide, rétatrutide)',
     aliases: ['GLP-1', 'incrétine', 'sémaglutide', 'Wegovy', 'Ozempic', 'tirzépatide', 'Mounjaro', 'rétatrutide'],
     shortDefinitionFr:
-      "Médicaments imitant des hormones digestives pour abaisser la glycémie et le poids. Bénéfice démontré sur les infarctus/AVC et l'HFpEF, mais non prouvé dans l'ICFER (SOUL HR 0,98 ; hausse modérée de fréquence cardiaque et déshydratation digestive à surveiller).",
+      "Médicaments imitant des hormones digestives pour abaisser la glycémie et le poids. Bénéfice démontré sur les infarctus/AVC et l'insuffisance cardiaque à FEVG préservée, mais non prouvé lorsque la FEVG est réduite (fréquence cardiaque et hydratation à surveiller).",
     articleSlug: 'medicaments-glp1-et-incretines',
   },
   {
@@ -926,7 +926,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'ESV (extrasystoles ventriculaires) et cardiomyopathie induite (PVC-CM)',
     aliases: ['ESV', 'PVC', 'PVC-CM', 'extrasystoles ventriculaires', 'charge en ESV'],
     shortDefinitionFr:
-      "Battements prématurés ventriculaires ; habituellement bénins en petit nombre, mais une charge quotidienne ≥ 10 % (souvent manquée sur un Holter de 24 h) peut affaiblir le VG ou perturber une CRT (ablation ESC 2022 Classe I C).",
+      "Battements prématurés ventriculaires ; habituellement bénins en petit nombre, mais une charge quotidienne ≥ 10 % (parfois manquée sur un Holter de 24 h) peut affaiblir le ventricule gauche ou perturber une CRT et faire discuter une ablation.",
     articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
   },
   {
@@ -974,7 +974,7 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
     termFr: 'Bithérapie antiplaquettaire (DAPT) et protecteur gastrique (IPP)',
     aliases: ['DAPT', 'bithérapie antiplaquettaire', 'IPP', 'pantoprazole', 'oméprazole'],
     shortDefinitionFr:
-      "Association d'aspirine et d'un inhibiteur de P2Y12 après stent ou infarctus (souvent 6 à 12 mois, ou 1–3 mois si haut risque hémorragique). Un IPP protège l'estomac (Classe I A ESC si haut risque) ; éviter oméprazole/ésoméprazole avec le clopidogrel (préférer le pantoprazole).",
+      "Association d'aspirine et d'un autre antiplaquettaire après stent ou infarctus (souvent 6 à 12 mois, ou 1 à 3 mois si haut risque de saignement). Un protecteur gastrique (IPP) est recommandé en cas de risque digestif élevé ; éviter oméprazole/ésoméprazole avec le clopidogrel (préférer le pantoprazole).",
     articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
   },
   {

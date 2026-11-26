@@ -12,7 +12,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Seule supplémentation disposant de preuves solides dans l’ICFER : réduit les hospitalisations pour insuffisance cardiaque d’environ 20 à 30 % et améliore les symptômes lorsque la ferritine ou le CST sont bas.',
     mechanismOrCaveatFr:
-      'Indiqué uniquement après bilan sanguin (ferritine et CST) et prescription cardiologique. Dans 6 essais randomisés (7 175 patients, dont FAIR-HF2 avec 78 % de causes ischémiques), baisse du critère hospitalisations IC + décès CV (RR 0,81) sans effet démontré sur la mortalité globale. Reste pertinent avec les iSGLT2 modernes (qui mobilisent le fer et peuvent démasquer une carence) et ne doit pas être confondu avec le fer en comprimés.',
+      'Indiqué uniquement après bilan sanguin (ferritine et CST) et prescription cardiologique. Les grands essais montrent une réduction des hospitalisations pour insuffisance cardiaque sans gain démontré sur la survie globale. Reste pertinent avec les iSGLT2 modernes (qui mobilisent le fer et peuvent révéler une carence) et ne doit pas être confondu avec le fer en comprimés.',
     affectedPillars: ['sglt2i', 'other'],
     evidenceGrade: 'ESC 2026 Classe I (symptômes, B1) ; Classe IIa (hospitalisations, B1)',
     sources: ['Méta-analyse fer IV 2025', 'FAIR-HF2 (JAMA 2025)', 'ESC 2026', 'AHA/ACC/HFSA 2022 (2a)'],
@@ -40,7 +40,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Une alimentation riche en fibres (25 à 29 g/j via végétaux et céréales complètes) s’associe à moins de décès coronaires en population générale ; les sachets de psyllium sont un laxatif à espacer de la digoxine et de la warfarine.',
     mechanismOrCaveatFr:
-      'Dans la méta-analyse OMS/The Lancet (Reynolds 2019, population générale), des apports élevés s’associent à moins de mortalité globale (RR 0,85) et coronaire (RR 0,69) ; dans l’IC, seules des données observationnelles existent (Wang 2025, NHANES, HR 0,68). Les sachets d’ispaghul/psyllium peuvent retarder l’absorption de la digoxine et de la warfarine (espacer d’au moins 30 à 60 minutes) et imposent au moins 150 mL d’eau par sachet, à intégrer dans une éventuelle limite hydrique : vérifiez horaires et choix du laxatif avec votre pharmacien.',
+      'En population générale, une alimentation riche en fibres s’associe à un moindre risque cardiovasculaire ; dans l’insuffisance cardiaque, les données restent surtout observationnelles. Les sachets d’ispaghul/psyllium peuvent retarder l’absorption de la digoxine et de la warfarine (espacer d’au moins 30 à 60 minutes) et demandent au moins 150 mL d’eau par sachet : vérifiez horaires et choix du laxatif avec votre pharmacien.',
     affectedPillars: ['addon_hf', 'anticoagulant', 'other'],
     evidenceGrade: 'Reynolds 2019 (population générale) ; notice ispaghul (Fybogel SmPC)',
     sources: ['Reynolds 2019 (The Lancet)', 'Wang 2025 (NHANES)', 'Notice ispaghul (Fybogel SmPC)'],
@@ -114,7 +114,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Apparaît globalement neutre : dans le seul essai randomisé conduit dans l’ICFER (Zuchinali 2016, 51 patients dont 61 % avec un DAI), 500 mg de caféine sur une matinée n’ont pas augmenté les extrasystoles ventriculaires.',
     mechanismOrCaveatFr:
-      'Dans Zuchinali 2016 (FEVG moyenne 29 %), extrasystoles ventriculaires 185 sous caféine contre 239 sous placebo (ns), sans hausse à l’effort ; Graboys 1989 (arythmies ventriculaires) et la cohorte post-infarctus Alpha Omega (van Dongen 2017, HR 0,69) ne montrent pas de danger, et DECAF retrouve moins de récidives de FA avec ~1 tasse/j (alors que CRAVE notait plus d’ESV chez des adultes sains). Le repère EFSA de 400 mg/j ne vise que les adultes en bonne santé : convenez de votre limite personnelle avec votre cardiologue et ne confondez pas café ordinaire et boissons énergisantes.',
+      'Les études disponibles ne montrent pas d’augmentation des troubles du rythme graves avec un café modéré (1 à 2 tasses par jour), même avec une FEVG réduite. Le repère européen de 400 mg/j ne concerne toutefois que les adultes en bonne santé : convenez de votre limite personnelle avec votre cardiologue et ne confondez pas café ordinaire et boissons énergisantes.',
     affectedPillars: ['beta_blocker', 'other'],
     evidenceGrade: 'Un petit essai randomisé ICFER (Zuchinali 2016) ; cohortes et essais FA (DECAF)',
     sources: ['Zuchinali 2016', 'Graboys 1989', 'van Dongen 2017', 'DECAF', 'CRAVE', 'EFSA 2015'],
@@ -255,7 +255,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Aucun bénéfice cardiovasculaire démontré dans les grandes méta-analyses ; ces produits ne remplacent jamais une alimentation variée ni le traitement de fond.',
     mechanismOrCaveatFr:
-      'Les synthèses An 2022 (texte intégral), Khan 2019 et USPSTF 2022 concluent à l’absence de bénéfice cardiovasculaire (grade I USPSTF). Les recommandations AHA/ACC/HFSA 2022 déconseillent les vitamines et compléments en routine hors carence avérée (Classe 3 : Absence de bénéfice). L’enquête transversale Qiu 2025 (alimentation/alcool) ne valide pas les compléments antioxydants ; voir les fiches dédiées pour la thiamine, les complexes B9/B12/B6 et les précurseurs du NAD+.',
+      'Les grandes synthèses internationales concluent à l’absence de bénéfice cardiovasculaire des multivitamines en routine, et les recommandations déconseillent les compléments sans carence démontrée. Voir les fiches dédiées pour la thiamine, les vitamines B9/B12/B6 et les autres compléments.',
     affectedPillars: ['other'],
     evidenceGrade: 'AHA/ACC/HFSA 2022 Classe 3 (Absence de bénéfice, B-R) ; USPSTF Grade I',
     sources: ['An 2022 (texte intégral)', 'Khan 2019', 'USPSTF 2022', 'Qiu 2025', 'AHA/ACC/HFSA 2022'],
@@ -269,7 +269,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Aucun bénéfice démontré sur la fonction cardiaque ou les événements dans les essais regroupés récents ; un dosage de thiamine peut toutefois être discuté sous diurétiques de l’anse au long cours.',
     mechanismOrCaveatFr:
-      'La méta-analyse He 2024 (7 petits essais en double aveugle, 274 patients) ne retrouve aucun gain significatif de FEVG sous thiamine (+1,65 point [-1,10 à +4,41], et -0,06 point après correction du biais de publication ; essai IRM Keith 2019 négatif), infirmant le signal antérieur de Khan 2021 (+3,59 points sur 4 essais). L’essai canadien COLT-HF (NCT05873881, ~2 500 patients IC coronaire, fin primaire estimée juin 2027) est en cours. ESPEN 2022 indique que la thiamine sanguine (diphosphate de thiamine) peut être dosée en cas de suspicion de carence sous diurétiques prolongés. Pour la L-carnitine (Khan 2021), pas d’effet significatif sur la mortalité (RR 0,58 ; IC 95 % 0,16–2,12).',
+      'Les essais récents ne confirment pas de gain démontré sur la FEVG sous thiamine en routine (un grand essai est encore en cours), et la L-carnitine n’a pas démontré de bénéfice sur la survie. En cas de traitement diurétique prolongé ou de suspicion de carence, un dosage sanguin de thiamine peut être discuté avec votre médecin.',
     affectedPillars: ['loop_diuretic', 'other'],
     evidenceGrade: 'He 2024 (négatif sur la FEVG) ; ESPEN 2022 (Grade 0) ; AHA/ACC/HFSA 2022 Classe 3 hors carence',
     sources: ['He 2024 (7 RCTs)', 'ESPEN 2022', 'Khan 2021 (texte intégral)', 'AHA/ACC/HFSA 2022'],
@@ -325,7 +325,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Absentes des recommandations européennes, américaines et britanniques ; contrôle qualité variable et risques d’interactions (potassium, hypotension, ginseng, danshen, substances cardioactives).',
     mechanismOrCaveatFr:
-      'Malgré des signaux dans des essais conduits en Chine (QUEST pour Qiliqiangxin, HR 0,78 ; revue sur Qishen Yiqi dans Chua 2025, mortalité OR 0,43, produit sur prescription d’un seul fabricant), la revue parapluie Chua 2025 souligne la qualité souvent critiquement faible des études et la sous-déclaration des effets indésirables : hyperkaliémie rapportée avec Pueraria (risque cumulé sous ARNI/IEC/ARA2/ARM), hypotension avec Qishen Yiqi, présence de ginseng/danshen et d’ingrédients cardioactifs (aconit préparé, Periploca, venin de crapaud) dans certaines formules. Vérifiez systématiquement tout produit avec votre cardiologue et votre pharmacien.',
+      'Malgré quelques résultats publiés en Chine sur des produits sur ordonnance locaux, la qualité globale des études reste limitée et les effets indésirables sont souvent sous-déclarés : excès de potassium (Pueraria, risque cumulé avec vos traitements de fond), hypotension, interactions avec les anticoagulants (ginseng, danshen) ou ingrédients toxiques pour le cœur dans certaines formules. Vérifiez systématiquement tout produit avec votre cardiologue et votre pharmacien.',
     affectedPillars: ['raas_arni', 'mra', 'anticoagulant', 'addon_hf'],
     evidenceGrade: 'Chua 2025 (revues surtout de faible qualité) ; QUEST 2024 ; absent d’ESC/AHA/NICE',
     sources: ['Chua 2025 (revue parapluie)', 'QUEST (Nature Medicine 2024)'],
@@ -608,7 +608,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Signaux démontrés d’effets délétères cardiovasculaires : davantage d’hospitalisations pour insuffisance cardiaque sous vitamine E (RR 1,21) et hausse de la mortalité sous bêta-carotène (RR 1,10 à 1,12).',
     mechanismOrCaveatFr:
-      'Dans Khan 2021 (texte intégral, repris par Chua 2025), la vitamine E s’associe à un surrisque d’hospitalisation pour IC (RR 1,21 ; IC 95 % 1,04–1,40 sur 2 grands essais, 17 956 patients) et, au-dessus de 400 UI/j, à un risque accru d’AVC hémorragique sous aspirine ou anticoagulants. Dans An 2022, le bêta-carotène augmente mortalité totale (RR 1,10), décès CV (RR 1,12) et AVC (RR 1,09 ; GRADE faible). L’USPSTF 2022 recommande contre ces deux compléments (Grade D).',
+      'Les grands essais associent la vitamine E à haute dose à davantage d’hospitalisations pour insuffisance cardiaque et, au-dessus de 400 UI/j, à un surrisque de saignement sous aspirine ou anticoagulants. Le bêta-carotène en complément s’associe quant à lui à un surrisque cardiovasculaire et de mortalité : ces deux compléments sont déconseillés.',
     affectedPillars: ['antiplatelet', 'anticoagulant', 'other'],
     evidenceGrade: 'Certitude modérée pour la vitamine E (Khan 2021) ; USPSTF 2022 Grade D',
     sources: ['Khan 2021 (texte intégral)', 'Chua 2025', 'An 2022 (texte intégral)', 'USPSTF 2022', 'NIH ODS'],
@@ -630,7 +630,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Aucun bénéfice sur l’infarctus ou la mortalité dans 15 essais (Cochrane 2017, 71 422 personnes), tendance défavorable après infarctus pour la triple association B9 + B12 + B6 (NORVIT, RR 1,22), et risque de neuropathie sensitive avec la vitamine B6 à forte dose.',
     mechanismOrCaveatFr:
-      'Dans NORVIT (3 749 patients après infarctus, B6 à 40 mg/j), la triple association B9 + B12 + B6 a tendu vers davantage de récidives coronaires ou AVC (RR 1,22 ; IC 95 % 1,00–1,50 ; p = 0,05) ; dans la néphropathie diabétique, de fortes doses combinées ont accéléré le déclin rénal (ESPEN 2022). L’acide folique au-delà de 1 mg/j peut masquer une carence en vitamine B12, et la vitamine B6 au long cours expose à une neuropathie sensitive (signes dès 100 mg/j ; limite supérieure européenne EFSA 12 mg/j, dépassée par certains produits magnésium-B6). À ne pas confondre avec la correction médicale d’une carence documentée en B12 (sous metformine ou IPP ≥ 2 ans, OR 1,65 Lam 2013) ou en B1 (sous diurétiques de l’anse).',
+      'Après un infarctus, les complexes fortement dosés B9 + B12 + B6 n’ont pas protégé le cœur et ont même montré une tendance défavorable (ainsi qu’un déclin rénal plus rapide en cas de diabète avec atteinte rénale). L’acide folique au-delà de 1 mg/j peut masquer une carence en B12 et l’excès de B6 expose à des troubles nerveux (limite européenne : 12 mg/j, parfois dépassée par certains produits magnésium-B6). À ne pas confondre avec la correction médicale d’une carence documentée en B12 ou en B1.',
     affectedPillars: ['antiplatelet', 'loop_diuretic', 'other'],
     evidenceGrade: 'Cochrane 2017 (qualité élevée, aucun bénéfice IDM/décès) ; NORVIT 2006 ; ESPEN 2022',
     sources: ['Cochrane 2017', 'NORVIT 2006', 'ESPEN 2022', 'Lam 2013', 'AHA/ACC/HFSA 2022'],
@@ -672,7 +672,7 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     summaryFr:
       'Une consommation importante d’alcool est directement toxique pour le muscle cardiaque, favorise la fibrillation atriale, aggrave la tension et accroît les risques d’acidocétose sous iSGLT2 et d’hémorragie sous anticoagulants.',
     mechanismOrCaveatFr:
-      'Les recommandations ESC 2026 déconseillent formellement les consommations excessives (Classe I, niveau C dans les conseils d’hygiène de vie) et qualifient les données sur les consommations faibles à modérées de mitigées. Schwingshackl 2026 rappelle que les bénéfices prêtés au vin sont observationnels et que l’OMS considère l’abstinence comme le niveau le plus sûr ; Qiu 2025 confirme le poids défavorable de l’alcool. La notice de la dapagliflozine cite l’abus d’alcool parmi les déclencheurs d’acidocétose. Parlez ouvertement de votre consommation avec votre cardiologue.',
+      'Les recommandations européennes déconseillent formellement les consommations excessives d’alcool, et les prétendus bénéfices du vin ne sont pas prouvés ; l’OMS considère l’abstinence comme le niveau le plus sûr. L’abus d’alcool peut aussi favoriser une acidocétose sous iSGLT2 (dapagliflozine). Parlez ouvertement de votre consommation avec votre cardiologue.',
     affectedPillars: ['sglt2i', 'anticoagulant', 'antiplatelet', 'beta_blocker'],
     evidenceGrade: 'ESC 2026 (Classe I, niveau C) ; notice dapagliflozine',
     sources: ['ESC 2026', 'Schwingshackl 2026', 'Qiu 2025', 'Notice dapagliflozine (Forxiga)'],

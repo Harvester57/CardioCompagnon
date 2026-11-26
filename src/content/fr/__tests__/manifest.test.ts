@@ -29,6 +29,12 @@ const EXPECTED_ADMIN_ITEM_IDS: FrenchAdminItemId[] = [
 ];
 
 const EMOJI_PATTERN = /\p{Extended_Pictographic}/u;
+const VALID_READING_TIERS = new Set(['essential', 'deep_dive', 'reference']);
+const VALID_SECTION_DEPTHS = new Set(['patient', 'evidence']);
+const REFERENCE_PATH_PATIENT_ALLOWLIST = new Set(['wiki/references/driving-rules.md']);
+const SPECIALIST_STATS_PATTERN =
+  /\b(HR\s*0,|RR\s*0,|IC\s*95\s*%|p\s*[<=>]\s*0,|Knapp-Hartung|Hochberg|mITT|Verdict de l['’]enquête|Classe\s+[I1-3][ab]?\b)/i;
+const SUMMARY_MAX_CHARS = 500;
 
 function collectTypeScriptFiles(dir: string): string[] {
   const results: string[] = [];
@@ -84,15 +90,110 @@ describe('Manifeste de completude du contenu francais (Porte 1)', () => {
     }
   });
 
+  it('applique le contrat editorial de niveaux de lecture et de profondeur des sections', () => {
+    const articles = getAllArticles();
+    const tierCounts = { essential: 0, deep_dive: 0, reference: 0 };
+
+    for (const article of articles) {
+      expect(
+        VALID_READING_TIERS.has(article.readingTier),
+        `readingTier invalide sur ${article.slug}: ${String(article.readingTier)}`,
+      ).toBe(true);
+      tierCounts[article.readingTier] += 1;
+
+      const normalizedSource = article.sourceWikiPath.replace(/\\/g, '/').trim();
+      if (normalizedSource.startsWith('wiki/theses/')) {
+        expect(
+          article.readingTier,
+          `Une these wiki (${article.slug}) doit rester en readingTier='reference'`,
+        ).toBe('reference');
+      }
+      if (
+        normalizedSource.startsWith('wiki/references/') &&
+        !REFERENCE_PATH_PATIENT_ALLOWLIST.has(normalizedSource)
+      ) {
+        expect(
+          article.readingTier,
+          `Une fiche de reference (${article.slug}) doit rester en readingTier='reference'`,
+        ).toBe('reference');
+      }
+
+      if (article.readingTier === 'essential' || article.readingTier === 'reference') {
+        expect(
+          article.plainSummaryFr.length,
+          `plainSummaryFr trop long (> ${SUMMARY_MAX_CHARS} car.) sur ${article.slug} (${article.plainSummaryFr.length})`,
+        ).toBeLessThanOrEqual(SUMMARY_MAX_CHARS);
+        expect(
+          SPECIALIST_STATS_PATTERN.test(article.plainSummaryFr),
+          `Jargon statistique interdit dans plainSummaryFr sur ${article.slug}`,
+        ).toBe(false);
+      }
+
+      if (article.readingTier === 'essential') {
+        expect(
+          article.keyTakeawaysFr,
+          `keyTakeawaysFr obligatoire sur l'article essential ${article.slug}`,
+        ).toBeDefined();
+        const hasPatientSection = article.sections.some((s) => s.depth !== 'evidence');
+        const hasEvidenceSection = article.sections.some((s) => s.depth === 'evidence');
+        expect(hasPatientSection, `Section patient manquante sur ${article.slug}`).toBe(true);
+        expect(hasEvidenceSection, `Section evidence depliable manquante sur ${article.slug}`).toBe(true);
+      }
+
+      if (article.keyTakeawaysFr !== undefined) {
+        expect(
+          article.keyTakeawaysFr.length,
+          `keyTakeawaysFr doit contenir 2 a 6 points sur ${article.slug}`,
+        ).toBeGreaterThanOrEqual(2);
+        expect(article.keyTakeawaysFr.length).toBeLessThanOrEqual(6);
+        for (const point of article.keyTakeawaysFr) {
+          expect(point.trim().length, `Point cle vide sur ${article.slug}`).toBeGreaterThan(0);
+          expect(point.length, `Point cle trop long (> 240 car.) sur ${article.slug}`).toBeLessThanOrEqual(240);
+          expect(
+            SPECIALIST_STATS_PATTERN.test(point),
+            `Jargon statistique interdit dans keyTakeawaysFr sur ${article.slug}: ${point}`,
+          ).toBe(false);
+        }
+      }
+
+      for (const section of article.sections) {
+        if (section.depth !== undefined) {
+          expect(
+            VALID_SECTION_DEPTHS.has(section.depth),
+            `section.depth invalide sur ${article.slug}: ${String(section.depth)}`,
+          ).toBe(true);
+        }
+      }
+    }
+
+    // Garde-fou de volume pour la vue par defaut "L'essentiel"
+    expect(tierCounts.essential).toBeGreaterThanOrEqual(12);
+    expect(tierCounts.essential).toBeLessThanOrEqual(24);
+    expect(tierCounts.reference).toBeGreaterThanOrEqual(7);
+  });
+
   it('verifie que les 5 catalogues structures sont non vides et pointent vers des articleSlug valides', () => {
     expect(MEDICATION_REFERENCES.length).toBeGreaterThan(0);
     for (const med of MEDICATION_REFERENCES) {
       expect(expectedSlugSet.has(med.articleSlug), `articleSlug invalide dans MEDICATION_REFERENCES: ${med.id}`).toBe(true);
+      const monitoringWithoutDrugClass = med.monitoringFr.replace(/antiarythmiques\s+(?:de\s+)?classe\s+[I1-3][a-c]?/gi, '');
+      expect(
+        SPECIALIST_STATS_PATTERN.test(monitoringWithoutDrugClass),
+        `Jargon statistique interdit dans MEDICATION_REFERENCES (${med.id})`,
+      ).toBe(false);
     }
 
     expect(INTERACTIONS_CATALOG.length).toBeGreaterThan(0);
     for (const item of INTERACTIONS_CATALOG) {
       expect(expectedSlugSet.has(item.articleSlug), `articleSlug invalide dans INTERACTIONS_CATALOG: ${item.id}`).toBe(true);
+      expect(
+        SPECIALIST_STATS_PATTERN.test(item.summaryFr),
+        `Jargon statistique interdit dans INTERACTIONS_CATALOG.summaryFr (${item.id})`,
+      ).toBe(false);
+      expect(
+        SPECIALIST_STATS_PATTERN.test(item.mechanismOrCaveatFr),
+        `Jargon statistique interdit dans INTERACTIONS_CATALOG.mechanismOrCaveatFr (${item.id})`,
+      ).toBe(false);
     }
 
     expect(FRENCH_ADMIN_CATALOG.length).toBe(EXPECTED_ADMIN_ITEM_IDS.length);
@@ -102,17 +203,36 @@ describe('Manifeste de completude du contenu francais (Porte 1)', () => {
     }
     for (const item of FRENCH_ADMIN_CATALOG) {
       expect(expectedSlugSet.has(item.articleSlug), `articleSlug invalide dans FRENCH_ADMIN_CATALOG: ${item.id}`).toBe(true);
+      expect(
+        SPECIALIST_STATS_PATTERN.test(item.summaryFr),
+        `Jargon statistique interdit dans FRENCH_ADMIN_CATALOG.summaryFr (${item.id})`,
+      ).toBe(false);
     }
 
     expect(QUESTIONS_CATALOG.length).toBeGreaterThan(0);
     for (const q of QUESTIONS_CATALOG) {
       expect(expectedSlugSet.has(q.articleSlug), `articleSlug invalide dans QUESTIONS_CATALOG: ${q.id}`).toBe(true);
+      expect(
+        SPECIALIST_STATS_PATTERN.test(q.questionFr),
+        `Jargon statistique interdit dans questionFr sur ${q.id}`,
+      ).toBe(false);
+      expect(
+        SPECIALIST_STATS_PATTERN.test(q.whyItMattersFr),
+        `Jargon statistique interdit dans whyItMattersFr sur ${q.id}`,
+      ).toBe(false);
     }
 
     expect(GLOSSARY_TERMS.length).toBeGreaterThan(0);
+    const glossaryMetaAllowlist = new Set(['recommandation_classe', 'esc_niveaux_preuve', 'niveau_preuve_b1_b2_kccq']);
     for (const term of GLOSSARY_TERMS) {
       if (term.articleSlug) {
         expect(expectedSlugSet.has(term.articleSlug), `articleSlug invalide dans GLOSSARY_TERMS: ${term.id}`).toBe(true);
+      }
+      if (!glossaryMetaAllowlist.has(term.id)) {
+        expect(
+          SPECIALIST_STATS_PATTERN.test(term.shortDefinitionFr),
+          `Jargon statistique interdit dans GLOSSARY_TERMS (${term.id})`,
+        ).toBe(false);
       }
     }
   });

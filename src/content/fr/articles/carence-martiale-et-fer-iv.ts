@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/iron-deficiency-and-iv-iron.md',
   titleFr: 'Carence en fer et fer intraveineux',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'warm',

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/home-blood-pressure-monitoring.md',
   titleFr: 'Automesure tensionnelle à domicile (règle des 3 et tensiomètre validé)',
   category: 'quotidien',
+  readingTier: 'essential',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -30,87 +31,90 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core', 'atrialFibrillation'],
   plainSummaryFr:
-    "Une série de mesures de tension artérielle à domicile aide votre équipe de cardiologie à adapter le rythme d'augmentation de vos traitements et à savoir si des vertiges proviennent d'une tension basse. La fiabilité des chiffres repose sur trois éléments : un tensiomètre automatique à brassard huméral (au bras) dont la référence exacte est validée sur STRIDE BP, une routine standardisée (repos assis 5 minutes, bras nu à hauteur du cœur, 2 à 3 mesures matin avant les comprimés et soir sur 3 à 7 jours, puis calcul de la moyenne) et une lecture globale intégrant vos symptômes plutôt qu'un chiffre isolé. En cas de fibrillation atriale ou d'extrasystoles fréquentes, réalisez 3 mesures par session et faites la moyenne. Lorsque la tension est basse, les brassards oscillométriques peuvent surestimer les valeurs (constat issu de patients en état de choc) : vos symptômes pèsent davantage que le chiffre seul. Les montres, bagues et dispositifs sans brassard ne sont pas recommandés pour mesurer la tension artérielle.",
+    "Mesurer votre tension à domicile aide votre équipe à adapter vos traitements et à comprendre d'éventuels vertiges. Utilisez un tensiomètre automatique au bras validé sur STRIDE BP, au calme, matin avant vos comprimés et soir sur 3 à 7 jours. Vos symptômes pèsent toujours plus qu'un chiffre isolé, surtout si la tension est basse. Les montres et bracelets sans brassard ne sont pas recommandés.",
+  keyTakeawaysFr: [
+    'Choisissez un tensiomètre automatique au bras dont la référence exacte est validée sur stridebp.org, avec un brassard adapté à votre tour de bras.',
+    'Appliquez la règle des 3 : repos assis 5 minutes, 3 mesures matin avant les comprimés et 3 le soir pendant 3 jours, puis notez la moyenne.',
+    'En cas de fibrillation atriale ou de rythme irrégulier, faites toujours 3 mesures et calculez la moyenne, sans vous fier à un chiffre isolé.',
+    'Si vous avez des vertiges ou une tension basse, notez vos symptômes et parlez-en à votre médecin : ne modifiez jamais vos doses seul.',
+  ],
   sections: [
     {
-      headingFr: "Pourquoi mesurer sa tension à domicile dans l'insuffisance cardiaque ?",
-      bodyMarkdownFr: `- **Aucun protocole spécifique à l'ICFER n'existe.** La seule source dédiée à l'insuffisance cardiaque (le portail patient de la Heart Failure Association de l'ESC) indique que l'automesure est raisonnable si votre équipe vous la conseille ou si vous souhaitez suivre vos chiffres. C'est votre médecin ou votre infirmière insuffisance cardiaque / IPA qui définit votre plage de référence, et **chaque mesure n'a pas besoin de s'y situer**. Des mesures répétées hors plage doivent amener à planifier un avis médical ; si mesurer souvent vous rend anxieux, évitez de multiplier les prises.
-- **Évaluer une hypotension :** le consensus européen **HFA 2025** sur la pression artérielle basse dans l'ICFER (Skouri et al.) conseille de mesurer la tension allongé ou assis, puis **après 3 minutes debout** ; si cela n'explique pas les symptômes, une mesure ambulatoire sur 24 heures (MAPA) peut être envisagée. Les traitements de fond de l'insuffisance cardiaque ne sont réduits qu'en dessous de **80 mmHg de systolique** ou en cas de symptômes majeurs. Le guide britannique **NICE NG106** conseille de contrôler la tension avant et après chaque augmentation de dose. Pour les cibles et l'ordre d'ajustement, consultez l'article *Tension artérielle et insuffisance cardiaque*.
-- **Repérer ce qui échappe au cabinet :** dans une cohorte citée par l'ESH (2021), une chute tensionnelle au lever (**hypotension orthostatique**) a été détectée chez **37,5 %** des participants par l'automesure à domicile contre **15 %** au cabinet médical ; l'insuffisance cardiaque fait partie des situations associées à ce phénomène.
-- **Reproductibilité :** les séries à domicile sont plus reproductibles que les mesures isolées en consultation et reflètent mieux le retentissement cardiovasculaire (SFHTA 2011).`,
+      headingFr: 'Pourquoi mesurer votre tension à domicile ?',
+      bodyMarkdownFr: `- **Aider à régler vos traitements :** une série de mesures réalisées chez vous reflète mieux votre tension habituelle qu'un chiffre isolé pris au cabinet médical. Elle aide votre cardiologue, votre médecin traitant ou votre infirmière en pratique avancée (IPA) à adapter le rythme d'augmentation de vos traitements.
+- **Définir votre plage personnelle :** c'est votre équipe qui fixe vos repères habituels. **Chaque mesure n'a pas besoin de tomber dans la même zone** : ce qui compte, c'est la tendance globale sur plusieurs jours. Si mesurer trop souvent vous rend anxieux, espacez les séries entre deux consultations.
+- **Comprendre des vertiges au lever :** l'automesure permet souvent de repérer une chute de tension en passant debout (**hypotension orthostatique**), plus fréquente dans l'insuffisance cardiaque et parfois invisible au cabinet.
+- **Un repère pour discuter, pas pour changer vos doses seul :** dans l'insuffisance cardiaque, les traitements de fond ne sont généralement réévalués à la baisse qu'en cas de tension systolique inférieure à **80 mmHg** ou de symptômes gênants. Pour en savoir plus, consultez l'article *Tension artérielle et insuffisance cardiaque*.`,
     },
     {
       headingFr: 'Choisir un tensiomètre fiable et un brassard adapté',
-      bodyMarkdownFr: `| À privilégier | À éviter |
-|---|---|
-| Tensiomètre **automatique à brassard huméral** (au bras, oscillométrique) | Tensiomètres au poignet (uniquement si le brassard au bras est impossible) |
-| Référence exacte listée comme validée sur **STRIDE BP** (stridebp.org), idéalement catégorie « preferred » | Appareils au doigt, bracelets, bagues ou « tension » sur montre connectée (sans brassard) |
-| Taille de brassard correspondant à la circonférence mesurée à mi-bras | Brassard provenant d'un autre appareil, même de la même marque |
-| Mémoire intégrée avec calcul de moyennes ou transmission vers un téléphone | Choix fondé uniquement sur le prix, les avis clients ou les meilleures ventes en ligne |
+      bodyMarkdownFr: `La grande majorité des appareils vendus en ligne ne sont pas validés cliniquement. Avant d'acheter, vérifiez toujours la **référence exacte du modèle** (lettres et chiffres compris) sur le registre international **STRIDE BP** (stridebp.org), utilisé comme référence en France par la Société française d'hypertension artérielle (SFHTA).
 
-- **La grande majorité des appareils vendus en ligne ne sont pas validés.** Dans un audit de **972** appareils vendus sur internet (Picone 2020), seuls **5,5 %** étaient validés : **18,3 %** des brassards de bras, **8,0 %** des appareils au poignet et **0 %** des **532** bracelets connectés. Les appareils validés coûtaient plus cher (médiane de 101 dollars australiens contre 67). L'ESH estime que moins de **10 %** des plus de 4 000 modèles commercialisés dans le monde ont passé un protocole de validation clinique.
-- **Comment vérifier avant d'acheter :** **STRIDE BP** est un registre international soutenu par l'ESH, l'ISH et la World Hypertension League. Recherchez la **référence exacte du modèle, suffixes inclus** : une modification de capteur, d'algorithme, de brassard ou de tubulure n'est pas couverte automatiquement. Les modèles « preferred » sont des brassards de bras validés au cours des 10 dernières années, dotés d'une mémoire ou d'une connexion smartphone. Depuis janvier 2024, toute nouvelle validation suit la norme universelle **AAMI/ESH/ISO (ISO 81060-2)**. Les appareils au poignet ne sont jamais classés « preferred » et les dispositifs sans brassard ne sont pas pris en compte. D'autres registres existent (BIHS au Royaume-Uni/Irlande, validatebp.org aux États-Unis, Hypertension Canada).
-- **Situation en France :** il n'existe **pas de liste nationale française propre** (ANSM ou SFHTA). La traduction française par la **SFHTA** des recommandations ESH renvoie vers STRIDE BP et les registres internationaux reconnus.
-- **Taille du brassard :** un brassard trop petit surestime la tension ; un brassard trop grand la sous-estime. Mesurez le tour de votre bras à mi-hauteur et vérifiez sur STRIDE BP la rubrique « validated cuff sizes » du modèle. Au-delà de **42 cm** de tour de bras, un brassard conique est préférable.
-- **Limites du label « validé » :** la validation standard porte sur des adultes de la population générale ; elle ne garantit pas la précision en cas de **fibrillation atriale**, de très fort tour de bras, de grossesse ou chez l'enfant, sauf validation dédiée. Les fonctions additionnelles comme la **détection de fibrillation atriale** doivent être validées séparément.
-- **Exemples de références listées sur STRIDE BP au 25 novembre 2026** (les cinq premiers modèles de bras par ordre alphabétique, donnés à titre purement illustratif et **sans valeur de recommandation**) : A&D UA-1020, UA-1100NFC, UA-1100NFC-W, UA-1200BLE, UA-611Plus. La liste évolue : vérifiez toujours en ligne avant un achat.`,
+| À privilégier | À éviter |
+|---|---|
+| Tensiomètre **automatique à brassard au bras** (huméral) | Tensiomètres au poignet (uniquement si le brassard au bras est impossible) |
+| Référence exacte validée sur **STRIDE BP** (idéalement catégorie « preferred ») | Appareils au doigt, bagues, bracelets ou « tension » sur montre connectée (sans brassard) |
+| Taille de brassard adaptée à votre tour de bras mesuré à mi-hauteur | Brassard provenant d'un autre appareil, même de la même marque |
+| Mémoire intégrée calculant les moyennes ou transmission vers un téléphone | Choix fondé uniquement sur le prix, les avis clients ou les meilleures ventes en ligne |
+
+- **Mesurez votre tour de bras :** un brassard trop petit surestime la tension ; un brassard trop grand la sous-estime. Vérifiez sur STRIDE BP les tailles de brassard validées pour votre modèle. Au-delà de **42 cm** de tour de bras, privilégiez un brassard conique.
+- **Pourquoi éviter les montres et bracelets sans brassard :** les sociétés savantes déconseillent ces dispositifs pour mesurer ou suivre la tension artérielle. Même les notifications d'hypertension de certaines montres ne mesurent pas la tension et ne sont pas conçues pour le suivi d'une insuffisance cardiaque.`,
     },
     {
-      headingFr: 'Protocole de mesure : règle des 3 (SFHTA) et repères ESH 2021',
-      bodyMarkdownFr: `Les protocoles européen (ESH 2021) et français (SFHTA / relevé CNAM) convergent sur l'essentiel et ne diffèrent que par quelques détails :
+      headingFr: 'Comment mesurer : la règle des 3 étape par étape',
+      bodyMarkdownFr: `En France, la **règle des 3** (recommandée par la SFHTA et l'Assurance Maladie) est simple à suivre pendant les **3 jours** qui précèdent votre consultation (ou jusqu'à **7 jours** si votre équipe vous le demande) :
 
-| Étape | ESH 2021 (Europe) | SFHTA « règle des 3 » (France) |
+1. **Avant la mesure :** évitez café, tabac, repas et effort dans les **30 minutes** précédentes, et passez aux toilettes si besoin.
+2. **Installez-vous au calme :** asseyez-vous **5 minutes**, dos appuyé, pieds à plat au sol, sans croiser les jambes et sans parler.
+3. **Posez le brassard :** directement sur la **peau nue**, centre du brassard à hauteur du cœur, bord inférieur juste au-dessus du pli du coude, bras posé sur la table.
+4. **Effectuez 3 mesures** espacées de **1 à 2 minutes** :
+   - **le matin**, avant de prendre vos médicaments ;
+   - **le soir**, avant le coucher.
+5. **Relevez la moyenne :** privilégiez la mémoire de l'appareil ou l'application associée plutôt qu'un recopiage manuel. Le seuil d'hypertension à domicile est de **135/85 mmHg**, mais vos objectifs personnels dans l'insuffisance cardiaque peuvent être plus bas.
+
+- **Quel bras choisir ?** L'un ou l'autre bras convient habituellement ; demandez à votre médecin s'il existe un écart entre vos deux bras justifiant d'en utiliser un en particulier.
+- **À quelle fréquence ?** Entre deux consultations stables, une série espacée (par exemple une à deux fois par mois) suffit habituellement : inutile de mesurer tous les jours sans consigne médicale.
+- **Contrôle annuel :** apportez votre tensiomètre une fois par an en consultation pour vérifier son bon fonctionnement face à l'appareil du cabinet.
+- **En cas de vertiges après les médicaments :** mesurer votre tension au moment du symptôme (ou quelques heures après la prise) aide votre médecin à voir l'effet maximal du traitement. Demandez à votre équipe si elle souhaite également une mesure debout après **3 minutes**.
+- **Prendre votre pouls à la main :** après **10 minutes** assis au calme, comptez vos battements pendant **30 secondes** et multipliez par 2 (sous bêtabloquant, un pouls au repos plus bas que 60 bpm est fréquent).`,
+    },
+    {
+      headingFr: 'Rythme irrégulier et tension basse : les bons réflexes',
+      bodyMarkdownFr: `### Si vous avez une fibrillation atriale ou des extrasystoles fréquentes
+
+- **Ne vous fiez jamais à une mesure isolée :** faites **3 mesures** consécutives par session et calculez la moyenne. Lorsque le rythme est contrôlé, la tension systolique (le chiffre du haut) reste généralement fiable.
+- **Le pictogramme « rythme irrégulier » ou « FA » est un simple indice :** à domicile, une alerte isolée correspond souvent à une fausse alerte. En revanche, une alerte répétée sur plusieurs mesures mérite d'être signalée à votre médecin pour un contrôle par électrocardiogramme (ECG).
+- **Suivi du pouls :** si votre rythme est rapide ou très irrégulier, les valeurs affichées à domicile peuvent être moins précises. Demandez à votre équipe comment elle souhaite suivre votre fréquence cardiaque.
+
+### Si votre tension est habituellement basse
+
+- **Fiez-vous d'abord à ce que vous ressentez :** lorsque la tension est très basse, les brassards automatiques peuvent parfois afficher un chiffre légèrement surestimé. Ne partez jamais du principe qu'une tension affichée autour de **90 mmHg** est « en réalité plus élevée ».
+- **Notez vos symptômes :** vertiges au lever, sensation de malaise, fatigue inhabituelle ou vue brouillée pèsent plus lourd que le chiffre seul.
+- **Ne modifiez jamais vos comprimés seul :** répétez la mesure, notez le contexte et contactez votre médecin traitant, votre infirmière insuffisance cardiaque / IPA ou votre cardiologue. En cas de symptômes inexpliqués, une mesure ambulatoire sur 24 heures (MAPA) peut vous être proposée.
+- **En cas de malaise grave, perte de connaissance ou douleur thoracique :** appelez immédiatement le **15 (SAMU)**, le **112** ou le **114** (par SMS).`,
+    },
+    {
+      headingFr: 'Pour aller plus loin : études de validation, recommandations et limites',
+      depth: 'evidence',
+      bodyMarkdownFr: `### Protocoles et recommandations (ESH 2021, SFHTA, HFA 2025, NICE NG106)
+
+| Paramètre | ESH 2021 (Europe) | SFHTA « règle des 3 » (France / fiche CNAM) |
 |---|---|---|
 | **Avant la mesure** | Ni tabac, ni caféine, ni repas, ni effort dans les **30 minutes** ; vessie vide (AHA) | Quelques minutes de repos (fiche CNAM : **5 minutes** assis) |
-| **Position** | Assis **5 minutes**, dos appuyé, pieds à plat, bras nu posé à hauteur du cœur, sans parler | Assis au calme |
-| **Nombre de mesures par session** | **2 mesures** espacées de **1 minute** | **3 mesures** espacées de quelques minutes (fiche CNAM : **2 minutes**) |
-| **Moments de la journée** | Le matin **avant la prise des médicaments** et le soir | Le matin au petit-déjeuner **avant les médicaments** et le soir avant le coucher |
-| **Durée de la série** | **7 jours** (minimum **3 jours**) avant la consultation | **3 jours consécutifs** |
-| **Calcul** | Moyenne de l'ensemble des mesures (l'exclusion du 1er jour reste débattue) | Moyenne des **18 mesures** |
+| **Nombre de mesures** | **2 mesures** espacées de **1 minute** | **3 mesures** espacées de quelques minutes (fiche CNAM : **2 minutes**) |
+| **Durée de la série** | **7 jours** (minimum **3 jours**) avant consultation | **3 jours consécutifs** (moyenne des **18 mesures**) |
 | **Seuil d'HTA à domicile** | **135/85 mmHg** | Inférieure à **135/85 mmHg** considérée normale |
 
-- **Apprentissage et relevé :** un professionnel de santé (médecin, pharmacien, infirmière insuffisance cardiaque / IPA) devrait idéalement vous montrer la technique lors de la mise en place. Les relevés enregistrés en mémoire dans l'appareil ou transmis sur téléphone sont plus fiables que les carnets recopiés à la main.
-- **Pose du brassard :** directement sur la peau nue (pas sur une manche épaisse), centre du brassard à hauteur du cœur, bord inférieur juste au-dessus du pli du coude.
-- **Choix du bras :** le guide patient de l'AHA indique que l'un ou l'autre bras convient habituellement lorsque l'écart est faible ; demandez à votre médecin s'il existe une différence entre vos deux bras justifiant d'en privilégier un.
-- **Entre deux consultations :** l'ESH préconise des séries espacées (une à deux fois par semaine ou par mois selon la stabilité) et **déconseille de mesurer quotidiennement** ou de modifier vos doses de votre propre initiative.
-- **Vérification de l'appareil :** apportez votre tensiomètre en consultation pour le comparer à la mesure du cabinet, puis faites-le contrôler chaque année (AHA).
-- **Prendre son pouls manuellement :** restez assis au calme au moins **10 minutes**, comptez les battements pendant **30 secondes** et multipliez par 2 (au repos, la fréquence habituelle se situe souvent entre 60 et 100 bpm, mais peut être plus basse sous bêtabloquant).
+- **Aucun protocole spécifique à l'ICFER n'existe :** le portail patient de la Heart Failure Association (ESC) indique que l'automesure est raisonnable si l'équipe la conseille. Le consensus **HFA 2025** sur l'hypotension dans l'ICFER (Skouri et al.) conseille une mesure couché ou assis puis **après 3 minutes debout**, et ne discute une baisse des traitements qu'en dessous de **80 mmHg** de systolique ou devant des symptômes majeurs. Le guide britannique **NICE NG106** conseille de contrôler la tension avant et après chaque augmentation de dose.
+- **Hypotension orthostatique :** dans une cohorte citée par l'ESH (2021), une chute tensionnelle au lever a été détectée chez **37,5 %** des participants par l'automesure à domicile contre **15 %** au cabinet médical.
 
-### Horaire des mesures par rapport aux médicaments de l'insuffisance cardiaque
+### Validation des appareils, fibrillation atriale et dispositifs sans brassard
 
-- La mesure du matin **avant les comprimés** évalue l'effet minimal (en creux) du traitement et suit exactement les protocoles ESH et SFHTA.
-- Si vous ressentez des **vertiges**, une mesure au moment du symptôme ou quelques heures après la prise permet de documenter le pic d'action des médicaments (ESH 2021).
-- **Test debout :** le consensus HFA 2025 recommande une mesure couché ou assis puis **après 3 minutes debout**. Aucune version standardisée à domicile n'ayant été validée dans les sources consultées, demandez à votre équipe si elle souhaite que vous réalisiez ce test et selon quelles consignes.`,
-    },
-    {
-      headingFr: "En cas de fibrillation atriale ou d'extrasystoles fréquentes",
-      bodyMarkdownFr: `- **Systolique globalement fiable, diastolique moins précise :** l'ESH indique que les brassards automatiques mesurent raisonnablement bien la pression systolique en fibrillation atriale (écart moyen poolé d'environ **1 mmHg**), mais surestiment légèrement la diastolique (environ **2,1 mmHg**). Elle conseille d'envisager **3 mesures** par session et de les moyenner.
-- **Divergence entre sociétés savantes sur la mesure manuelle :**
-  - l'**ESH** préfère les appareils automatiques validés à la mesure manuelle (auscultatoire) lorsque la fréquence cardiaque est contrôlée ;
-  - la **BIHS** (Royaume-Uni et Irlande) préfère la **mesure manuelle lorsque c'est possible**, les protocoles de validation standard excluant habituellement les patients en fibrillation atriale ;
-  - l'**ESH** (3 mesures par session) et la **SFHTA** (répéter les mesures) s'accordent sur le fait de ne jamais se fier à une mesure automatique isolée en rythme irrégulier.
-- **Situations d'incertitude :** lorsque la fréquence est rapide et mal contrôlée, ou lorsque l'arythmie est fréquente ou persistante, les mesures automatisées à domicile peuvent manquer de fiabilité et ne doivent pas fonder seules un diagnostic.
-- **Le pictogramme « FA » ou « rythme irrégulier » est un indice de dépistage, pas un diagnostic :**
-  - dans une méta-analyse de **16 études** (**10 158** personnes, Tang 2022), les tensiomètres munis d'un algorithme FA atteignaient en cabinet **96,2 %** de sensibilité et **94,0 %** de spécificité ;
-  - dans la seule étude conduite **à domicile**, près de **la moitié des alertes étaient des faux positifs** (valeur prédictive positive de **51,9 %**). Une alerte répétée sur 2 mesures sur 2 ou 2 sur 3 était plus fiable ;
-  - disposer d'une détection de FA **n'améliore pas la précision** de la tension mesurée (BIHS 2019).
-- **Fréquence cardiaque affichée en FA :** les capteurs au poignet peuvent sous-estimer la fréquence cardiaque d'environ **10 bpm** en FA (déficit de pouls lorsque certains battements sont trop faibles pour atteindre le poignet, guide EHRA 2022). Aucune source consultée n'évaluait la précision exacte du pouls affiché par un brassard de bras en FA : demandez à votre équipe comment elle souhaite suivre votre fréquence cardiaque.`,
-    },
-    {
-      headingFr: 'Lorsque la tension est basse, et limite des montres sans brassard',
-      bodyMarkdownFr: `### Tension basse : prudence dans l'interprétation
-
-- **Tendance possible à la surestimation :** dans une étude portant sur **30 patients** hospitalisés en état de choc (Meidert 2020), un brassard oscillométrique au bras affichait en moyenne **12 mmHg de plus** sur la systolique qu'un cathéter artériel invasif et manquait une pression moyenne dangereusement basse dans **64 %** des cas, les algorithmes étant calibrés surtout sur des personnes normotendues. Il s'agit toutefois d'une situation extrême de soins intensifs : l'ampleur de l'erreur ne peut pas être transposée telle quelle à un patient stable à domicile autour de 85–105 mmHg, et aucune étude dédiée dans cette zone en ICFER n'a été retrouvée.
-- **Lecture pratique :**
-  - ne partez pas du principe qu'une systolique affichée autour de 90 mmHg est « en réalité plus élevée » ;
-  - vos **symptômes** (vertiges au lever, sensation de malaise, fatigue inhabituelle) pèsent plus lourd que le chiffre seul ;
-  - répétez et moyennez vos mesures, et discutez d'une MAPA de 24 heures avec votre cardiologue si les symptômes restent inexpliqués ;
-  - les seuils d'hypertension (**135/85 mmHg** à domicile ou **180/120 mmHg** des guides américains) concernent l'hypertension : dans l'ICFER, le consensus HFA 2025 ne discute une baisse des traitements qu'en dessous de **80 mmHg** de systolique ou devant des symptômes majeurs. Ne modifiez jamais vos doses seul.
-
-### Montres, bagues et dispositifs sans brassard (« cuffless »)
-
-- **Non recommandés pour la tension artérielle :** la prise de position **ESH 2022** déconseille les dispositifs sans brassard (montres, bracelets, capteurs digitaux, applications smartphone) pour diagnostiquer ou suivre la tension artérielle, les méthodes de validation classiques ne leur étant pas adaptées. **STRIDE BP** ne les référence pas.
-- **Notifications d'hypertension Apple Watch** (autorisation américaine FDA en septembre 2025) : cette fonction **ne mesure pas la tension artérielle**. Elle analyse 30 jours de données du capteur optique de pouls pour signaler une suspicion d'hypertension, uniquement chez des personnes **sans diagnostic préalable d'hypertension**. Dans l'étude du fabricant, elle a manqué **59 %** des personnes hypertendues (sensibilité **41,2 %**, spécificité **92,3 %**). Sa disponibilité dans l'Union européenne n'était pas confirmée. Pour aller plus loin, consultez l'article *Montres connectées et capteurs dans l'insuffisance cardiaque*.
+- **Audit du marché (Picone 2020) :** sur **972** appareils vendus en ligne, seuls **5,5 %** étaient validés (**18,3 %** des brassards de bras, **8,0 %** des appareils au poignet, **0 %** des **532** bracelets connectés ; prix médian 101 dollars australiens contre 67). L'ESH estime que moins de **10 %** des plus de 4 000 modèles commercialisés dans le monde ont passé une validation clinique. Depuis janvier 2024, toute nouvelle validation suit la norme universelle **AAMI/ESH/ISO (ISO 81060-2)**.
+- **Registres :** il n'existe pas de liste nationale française propre (ANSM ou SFHTA) ; la SFHTA renvoie vers **STRIDE BP** (autres registres : BIHS au Royaume-Uni/Irlande, validatebp.org aux États-Unis, Hypertension Canada). Exemples de modèles listés sur STRIDE BP au 25 novembre 2026 (ordre alphabétique, sans valeur de recommandation) : A&D UA-1020, UA-1100NFC, UA-1100NFC-W, UA-1200BLE, UA-611Plus. La validation standard porte sur la population générale et ne garantit pas automatiquement la précision en FA, très fort tour de bras, grossesse ou pédiatrie.
+- **Fibrillation atriale :** l'ESH rapporte un écart moyen poolé d'environ **1 mmHg** en systolique et **+2,1 mmHg** en diastolique, et préfère les appareils automatiques validés (3 mesures) lorsque la fréquence est contrôlée ; la **BIHS** (Royaume-Uni/Irlande) préfère la mesure manuelle quand c'est possible. Dans la méta-analyse **Tang 2022** (16 études, **10 158** personnes), les algorithmes FA atteignaient en cabinet **96,2 %** de sensibilité et **94,0 %** de spécificité, mais à domicile la valeur prédictive positive n'était que de **51,9 %** (une alerte répétée sur 2/2 ou 2/3 mesures était plus fiable). La détection de FA n'améliore pas la précision tensionnelle (BIHS 2019). Les capteurs au poignet peuvent sous-estimer la fréquence cardiaque d'environ **10 bpm** en FA (EHRA 2022).
+- **Tension basse (Meidert 2020) :** chez **30 patients** hospitalisés en état de choc, un brassard oscillométrique surestimait en moyenne la systolique de **12 mmHg** par rapport à un cathéter artériel et manquait une pression moyenne dangereusement basse dans **64 %** des cas. Cette situation extrême de soins intensifs ne peut pas être transposée telle quelle à un patient stable à domicile autour de 85–105 mmHg.
+- **Dispositifs sans brassard :** la prise de position **ESH 2022** les déconseille et STRIDE BP ne les référence pas. Les notifications d'hypertension Apple Watch (FDA septembre 2025, réservées aux personnes sans diagnostic préalable d'HTA) ont montré une sensibilité de **41,2 %** (59 % de cas manqués) et une spécificité de **92,3 %** dans l'étude du fabricant, avec une disponibilité UE non confirmée.
 
 ### Applicabilité des données à la cardiomyopathie ischémique à FEVG réduite
 

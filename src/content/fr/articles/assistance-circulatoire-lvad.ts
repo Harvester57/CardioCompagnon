@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/lvad-heart-pumps.md',
   titleFr: 'Assistance circulatoire mécanique (LVAD) et cœur artificiel',
   category: 'dispositifs',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

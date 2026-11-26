@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/living-with-heart-failure.md',
   titleFr: 'Vivre au quotidien avec une insuffisance cardiaque',
   category: 'quotidien',
+  readingTier: 'essential',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',
@@ -36,121 +37,82 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Les médicaments et les dispositifs font beaucoup, mais les habitudes du quotidien comptent tout autant pour repérer tôt une déstabilisation et préserver votre qualité de vie. Pesez-vous chaque matin, connaissez vos chiffres (automesure tensionnelle fiable, rôle réel des montres connectées) et les signes d'alerte, arrêtez le tabac, limitez l'alcool et les excès de sel (sans restriction hydrique systématique sauf consigne contraire), restez actif grâce à la réadaptation cardiaque, tenez à jour vos rendez-vous, vos vaccinations et un plan écrit pour les jours de maladie ou une chirurgie programmée, et prenez soin de votre moral, de votre vie intime et de votre sécurité en voyage ou par canicule. Ces repères sont généraux : votre équipe peut fixer des objectifs personnalisés.",
+    "Les médicaments font beaucoup, mais vos habitudes quotidiennes comptent tout autant pour repérer tôt un déséquilibre et préserver votre qualité de vie. Pesez-vous chaque matin, connaissez les signes d'alerte, restez actif à votre rythme, arrêtez le tabac et tenez à jour vos rendez-vous et vaccinations. Préparez avec votre équipe un plan clair pour les jours de maladie, les voyages ou la canicule.",
+  keyTakeawaysFr: [
+    "Pesez-vous chaque matin après avoir uriné : contactez votre équipe si vous prenez plus de 2,0 kg en 3 jours ou si un essoufflement ou des œdèmes apparaissent.",
+    "En cas d'essoufflement majeur au repos, de douleur thoracique ou de malaise, appelez immédiatement le 15 (SAMU), le 112 ou le 114 (par SMS).",
+    "Évitez les excès de sel (environ 5 g/j), buvez selon votre soif sauf limite prescrite, arrêtez le tabac et évitez les anti-inflammatoires (ibuprofène).",
+    "Tenez à jour votre suivi cardiologique, vos vaccinations (grippe, Covid-19, pneumocoque, VRS/zona dès 65 ans) et demandez une réadaptation cardiaque (SMR).",
+    "N'arrêtez jamais un traitement prescrit seul (maladie, chirurgie, canicule, vie intime) et parlez sans attendre d'une baisse de moral (Mon soutien psy, 3114).",
+  ],
   sections: [
     {
-      headingFr: "Connaître vos chiffres et les signes d'alerte",
-      bodyMarkdownFr: `L'auto-surveillance régulière aide à détecter une rétention d'eau avant qu'elle ne nécessite une hospitalisation.
+      headingFr: "Surveiller votre poids, vos chiffres et les signes d'alerte",
+      depth: 'patient',
+      bodyMarkdownFr: `L'auto-surveillance aide à repérer une rétention d'eau avant qu'elle ne nécessite une hospitalisation. Ces repères sont généraux : votre équipe peut vous fixer des seuils personnalisés.
 
-- **Pesée quotidienne :** pesez-vous chaque matin à heure fixe, idéalement au réveil, après avoir uriné et avant le petit-déjeuner. Les repères de la British Heart Foundation (BHF) recommandent de contacter rapidement votre médecin traitant, votre cardiologue ou votre infirmière insuffisance cardiaque / IPA en cas de :
-  - prise de poids supérieure à **2,0 kg en 3 jours**, ou
-  - apparition ou aggravation d'un gonflement des chevilles, des pieds ou des jambes, ou d'un essoufflement nouveau.
-- **« Connaître vos chiffres » :** le guide patient ESC 2026 regroupe sous cette formule le suivi régulier du poids, de la tension artérielle et de la fréquence cardiaque. Pour obtenir des mesures fiables à la maison (brassard au bras validé sur STRIDE BP, règle des 3 SFHTA, précautions en cas de FA ou de tension basse), consultez *Automesure tensionnelle à domicile (règle des 3 et tensiomètre validé)* ; pour savoir ce qu'une montre connectée peut ou ne peut pas apporter (et éviter les fausses alertes), consultez *Montres connectées et capteurs dans l'insuffisance cardiaque*.
-- **Symptômes à surveiller :**
-  - essoufflement, y compris au repos ou en position allongée ;
-  - fatigue inhabituelle ou croissante ;
-  - œdèmes des pieds, des chevilles ou des jambes ;
-  - vertiges ou sensations de tête légère ;
-  - palpitations, toux persistante, confusion, respiration sifflante ou perte d'appétit.
-- **Aggravation rapide :** l'ESC qualifie d'insuffisance cardiaque « décompensée » une dégradation sur quelques heures ou quelques jours. Elle nécessite souvent une prise en charge urgente.
+- **Pesée quotidienne :** pesez-vous chaque matin à heure fixe, au réveil, après avoir uriné et avant le petit-déjeuner. Notez votre poids, votre tension artérielle (avec un brassard au bras validé ; voir *Automesure tensionnelle à domicile*) et votre fréquence cardiaque (pour le rôle réel des montres connectées, voir *Montres connectées et capteurs dans l'insuffisance cardiaque*).
+- **Signes qui doivent vous faire contacter votre équipe rapidement :**
+  - prise de poids supérieure à **2,0 kg en 3 jours** ;
+  - apparition ou aggravation d'un gonflement des chevilles, des pieds ou des jambes ;
+  - essoufflement nouveau ou qui augmente (notamment au repos ou allongé), fatigue inhabituelle, toux persistante, vertiges, palpitations ou perte d'appétit.
 - **Qui appeler en France :**
-  - **Symptômes nouveaux ou qui s'aggravent** (prise de poids rapide, essoufflement accru, œdèmes) : contactez rapidement votre médecin traitant, votre cardiologue ou votre infirmière insuffisance cardiaque / IPA ; en dehors des heures ouvrables, appelez le **15** (régulation médicale / permanence des soins).
-  - **Symptômes graves ou détresse aiguë** (essoufflement majeur au repos, douleur thoracique, malaise, perte de connaissance) : appelez immédiatement le **15 (SAMU)**, le **112** (numéro d'urgence européen) ou le **114** (par SMS ou visiophonie pour les personnes sourdes ou malentendantes).`,
+  - **Symptômes nouveaux ou qui s'aggravent :** contactez rapidement votre médecin traitant, votre cardiologue ou votre infirmière insuffisance cardiaque / IPA ; en dehors des heures ouvrables, appelez le **15** (permanence des soins).
+  - **Détresse aiguë** (essoufflement majeur au repos, douleur thoracique, malaise, perte de connaissance, confusion) : appelez immédiatement le **15 (SAMU)**, le **112** ou le **114** (par SMS ou visiophonie pour les personnes sourdes ou malentendantes).`,
     },
     {
-      headingFr: 'Sel, liquides, tabac et alcool',
-      bodyMarkdownFr: `Les recommandations historiques très strictes sur le sel et les boissons ont été réévaluées par des essais cliniques récents.
-
+      headingFr: 'Alimentation, boissons, tabac, alcool et activité physique',
+      depth: 'patient',
+      bodyMarkdownFr: `- **Sel et liquides :** évitez les excès de sel (repère européen jusqu'à environ **5 g par jour**) sans régime extrême, et **bannissez les substituts de sel au potassium**. Si votre état est stable, buvez selon votre soif sauf limite prescrite par votre cardiologue (dans ce cas, toutes les boissons et soupes comptent). Détails dans *Sel et apports hydriques dans l'insuffisance cardiaque*.
+- **Arrêt du tabac :** c'est l'une des mesures au plus fort impact sur le cœur et les artères. En France, les **substituts nicotiniques** prescrits sont remboursés à **65 % sans plafond annuel** (et jusqu'à 100 % possible en ALD 5/13), la **varénicline (*Champix*)** est de nouveau disponible et remboursée à 65 % en deuxième intention, et **Tabac Info Service (39 89)** propose un accompagnement gratuit (voir *Tabac et alcool dans l'insuffisance cardiaque*).
+- **Alcool :** réduire ou arrêter l'alcool est toujours bénéfique pour le muscle cardiaque et le rythme (notamment en cas de fibrillation atriale, où le repère est au maximum **3 verres standard français par semaine**). Les repères de Santé publique France sont des plafonds de population générale et non des objectifs sûrs dans l'insuffisance cardiaque.
+- **Activité physique et gestion de la fatigue :** demandez à votre cardiologue ou médecin traitant une prescription de **réadaptation cardiaque (SMR cardiovasculaire)**, prise en charge à 100 %. Au quotidien, fractionnez vos efforts, prévoyez des temps de repos autour des journées chargées, privilégiez des repas légers et demandez à votre équipe de rechercher d'autres causes de fatigue (anémie, carence en fer, apnée du sommeil, thyroïde, dépression).`,
+    },
+    {
+      headingFr: 'Suivi médical, vaccinations, chirurgie et jours de maladie',
+      depth: 'patient',
+      bodyMarkdownFr: `- **Suivi régulier et télésurveillance :** prévoyez une consultation tous les **6 à 12 mois** en période stable (plus rapprochée en cas d'insuffisance cardiaque avancée ou de changement), et une visite **1 à 2 semaines après une hospitalisation**. Les visites vérifient vos symptômes, vos médicaments, l'ECG et le bilan sanguin (reins, sodium, potassium, fer, thyroïde) ; l'échocardiographie (ETT) est répétée si besoin. En France, la **télésurveillance à domicile** est remboursée après hospitalisation récente ou si votre état le justifie, mais elle n'est pas surveillée en temps réel et ne remplace jamais l'appel au **15** en cas d'urgence.
+- **Médicaments à éviter :** évitez les **anti-inflammatoires (AINS)** comme l'ibuprofène, le kétoprofène ou le diclofénac, qui peuvent déclencher une décompensation cardiaque et fragiliser les reins.
+- **Vaccinations en France (calendrier 2026) :** les infections respiratoires peuvent déstabiliser le cœur. Sont recommandés : la **grippe** chaque automne (haute dose *Efluelda* ou adjuvanté *Fluad* privilégié dès 65 ans), le **Covid-19** chaque automne, **1 dose contre le pneumocoque** à tout âge (*Capvaxive* privilégié, *Prevenar 20* acceptable), ainsi que **1 dose contre le VRS** et **2 doses de *Shingrix* contre le zona** dès 65 ans (voir *Vaccinations et insuffisance cardiaque*).
+- **Chirurgie programmée, soins dentaires et jours de maladie :**
+  - **N'arrêtez jamais vos traitements seul.** Bêtabloquants, statines et souvent IEC/ARA2 sont habituellement poursuivis avant une chirurgie, alors que les **iSGLT2** sont généralement suspendus **3 à 4 jours** avant une chirurgie majeure programmée avec l'accord du médecin. Signalez vos anticoagulants et un éventuel DAI/CRT à l'anesthésiste.
+  - **Soins dentaires :** une insuffisance cardiaque, des stents ou un DAI/CRT seuls ne nécessitent **pas** d'antibiotiques préventifs systématiques (réservés aux situations à très haut risque comme les valves prothétiques ou un antécédent d'endocardite).
+  - **Jours de maladie (gastro-entérite, vomissements, fièvre) :** ne suivez pas de fiches génériques sur internet pour arrêter vos médicaments seul. Demandez à votre équipe un **plan écrit personnalisé** pendant que vous allez bien, et contactez rapidement un médecin en cas de déshydratation sévère (précaution particulière sous iSGLT2).`,
+    },
+    {
+      headingFr: 'Conduite, voyages, climat, travail, vie intime et santé émotionnelle',
+      depth: 'patient',
+      bodyMarkdownFr: `- **Conduite automobile (France) :** l'aptitude relève de l'arrêté du 28 mars 2022 et d'un **médecin agréé** (distinct du médecin traitant). Une insuffisance cardiaque stabilisée (NYHA I–II) permet en général de conduire une voiture particulière, mais des délais ou restrictions s'appliquent après un **DAI** (par exemple **4 semaines** en prévention primaire), sous gilet défibrillateur (LifeVest), en cas de symptômes instables ou pour la conduite professionnelle (voir *Règles de conduite automobile*).
+- **Voyages, altitude et canicule :** la majorité des patients stables peuvent prendre l'avion (gardez médicaments, ordonnance en **DCI** et carte de DAI/CRT en **bagage cabine**, déclarez votre situation à l'assurance voyage). Demandez conseil avant un séjour en altitude (au-delà de 2 000 à 2 500 m). En cas de **canicule**, l'ANSM rappelle de ne jamais arrêter seul ses traitements, d'éviter les AINS et de préparer un plan estival à l'avance. Évitez les **bains glacés** (risque de troubles du rythme sur un cœur cicatriciel).
+- **Travail et démarches en France :** renseignez-vous sur la visite de pré-reprise avec le médecin du travail, le temps partiel thérapeutique, les indemnités journalières (maintenues jusqu'à **3 ans** en ALD exonérante 5 ou 13 malgré la réforme d'octobre 2026) et l'assurance emprunteur (Loi Lemoine, convention AERAS ; voir *Vivre avec une insuffisance cardiaque en France*).
+- **Vie sexuelle :** la plupart des personnes stabilisées peuvent avoir une vie sexuelle sûre ; un choc de DAI pendant un rapport est rare et **sans danger pour le partenaire**. Si une dysfonction érectile survient, parlez-en à votre médecin sans arrêter vos traitements cardiaques. Les médicaments de l'érection (IPDE5) nécessitent un avis médical et sont **strictement contre-indiqués** avec les dérivés nitrés, le nicorandil et le riociguat (voir *Vie sexuelle et dysfonction érectile*).
+- **Moral, soutien et anticipation :** anxiété et tristesse sont fréquentes et se soignent (notamment par psychothérapie et activité physique). En France, **Mon soutien psy** propose **12 séances par an** chez un psychologue partenaire sans ordonnance (50 € la séance, remboursée à 60 % par l'Assurance Maladie, complément habituel par la mutuelle). En cas de détresse psychologique, appelez le **3114** (gratuit, 24 h/24, 7 j/7). Enfin, vous pouvez désigner une **personne de confiance**, rédiger des **directives anticipées** et bénéficier à tout stade de **soins de support** en parallèle de vos traitements (voir *Soins de support, soins palliatifs et anticipation*).`,
+    },
+    {
+      headingFr: 'Repères scientifiques et recommandations internationales (ESC 2026, NICE, essais clés)',
+      depth: 'evidence',
+      bodyMarkdownFr: `### Hygiène de vie, sel, liquides, tabac et alcool
 | Thème | Repères publiés | Source |
 |---|---|---|
-| Sel | Moins de **6 g de sel par jour** (environ une cuillère à café rase). Éviter les sels de régime de substitution, souvent riches en potassium | BHF |
-| Sel (repère américain) | Limiter entre 2 000 et 3 000 mg par jour ; alimentation de type méditerranéen | Cleveland Clinic |
-| Liquides | Ne restreindre **que si votre équipe médicale vous le prescrit**. Le cas échéant, toutes les boissons et soupes comptent | BHF |
-| Alcool | Limiter strictement (repère BHF : < 14 unités britanniques/semaine ; repères européens IC et FA nettement plus restrictifs ci-dessous) | BHF |
-| Tabac | Arrêter complètement ou éviter tout tabagisme | Cleveland Clinic ; Guide patient ESC |
+| Sel | < **6 g/j** (éviter les sels au potassium) ; repère US 2 000–3 000 mg/j (sel vs sodium non précisé) | BHF ; Cleveland Clinic |
+| Liquides | Ne restreindre que si prescrit (toutes boissons et soupes incluses) | BHF |
+| Alcool | Limiter strictement (< 14 unités UK/sem. BHF ; ≤ **30 g/sem.** soit ≤ 3 verres FR en FA, ESC 2024 / **Alcohol-AF**) | BHF ; ESC 2024 ; ESC 2026 |
+| Tabac | Arrêt complet | ESC 2026 ; Cleveland Clinic |
 
-*Précision méthodologique :* les deux chiffres de sel proviennent de systèmes de santé différents et la page de la Cleveland Clinic ne précise pas s'il s'agit de sel (NaCl) ou de sodium ; ils ne doivent pas être pris comme des cibles individuelles.
+- **Essais sel et liquides :** **SODIUM-HF (2022)** (< 1 500 mg Na/j : pas de réduction de mortalité/hospitalisations, petit gain de qualité de vie) ; **FRESH-UP (2025)** (1,5 L/j fixe vs libre chez patients stables : aucun bénéfice, plus de soif) ; **consensus HFA-ESC 2024** (~5 g de sel/j, liquides selon la soif) ; **NICE NG106 (2025)** (pas de restriction systématique, éviter les substituts au potassium).
+- **Tabac :** dans **SOLVD** (FEVG < 35 %), les fumeurs avaient **+41 %** de mortalité totale et **+39 %** de décès/hospitalisations IC/infarctus par rapport aux ex-fumeurs (bénéfice dès 2 ans ; **−36 %** de mortalité dans les cohortes coronaires). En France (au 25/11/2026) : substituts 65 % sans plafond, *Champix* (varénicline) revenu le 16/06/2025 (65 % en 2e intention si Fagerström ≥ 7, sans interaction CYP450) ; *Zyban* (bupropion) non remboursé avec interactions métoprolol/digoxine/clopidogrel.
 
-Deux grands essais cliniques ont testé les anciennes restrictions systématiques :
+### Réadaptation, suivi, vaccinations et chirurgie
+- **ESC 2026 :** réadaptation cardiaque (**Classe I** ; **Cochrane 2024**, 60 essais, 8 728 patients : hospitalisations toutes causes **15,9 % vs 23,8 %** à 1 an, qualité de vie améliorée, mortalité neutre, domicile comparable au centre) ; programme multidisciplinaire (**Classe I, B1**), éducation/auto-surveillance (**Classe I, A**), observance (**Classe I, B2**) ; AINS (**Classe III**) ; télésurveillance non invasive (**Classe IIb**) et capteur de pression artérielle pulmonaire en NYHA III hospitalisé < 12 mois (**Classe IIa**) ; anticipation des soins en IC avancée (**Classe I**).
+- **Rythme de suivi :** guide patient ESC 2026 (au moins tous les 6 mois ; 1–2 sem. post-hospitalisation) ; **Figure 22 ESC 2026** (IC symptomatique stable : **6 à 12 mois** ; IC avancée : **3 à 6 mois**) ; **NICE NG106** (≥ tous les 6 mois en stable, quelques jours à 2 semaines après changement).
+- **Vaccinations :** **ESC 2026 Classe IIa** (grippe annuelle, pneumocoque). Essais : **IAMI** post-infarctus (**HR 0,72**, FEVG surtout normale), **IVVE** dans l'IC (moins de pneumonies et d'hospitalisations toutes causes), **INVESTED** et **DANFLU-2** (haute dose ≥ 65 ans : moins d'hospitalisations pour grippe sans bénéfice cardiaque supplémentaire démontré).
+- **Chirurgie, soins dentaires et jours de maladie :** **STOP-or-NOT** et **SPACE (2024)** (maintien IEC/ARA2 non inférieur, IC ≤ 6–10 %, aucun essai ARNI) ; pause iSGLT2 3–4 j ; antibioprophylaxie dentaire ciblée (**HAS oct. 2024**, ESC 2023, AHA 2021) ; **Fink 2022** sur les jours de maladie (seuls **42,4 %** ont bien appliqué les critères, **21,2 %** ont arrêté à tort des médicaments non concernés).
 
-- **SODIUM-HF (2022) :** une restriction très stricte en sodium (moins de 1 500 mg de sodium par jour) n'a pas réduit la mortalité ni les hospitalisations, tout en améliorant légèrement la qualité de vie.
-- **FRESH-UP (2025) :** chez des patients stables suivis en ambulatoire, une limite fixe à **1,5 L de liquides par jour** n'a apporté aucun bénéfice par rapport à une hydratation libre, tout en augmentant la sensation de soif.
-
-Le **consensus HFA-ESC 2024** recommande désormais :
-
-- **Sel :** éviter les excès (jusqu'à environ **5 g de sel par jour** est acceptable) et éviter les restrictions extrêmes.
-- **Liquides :** boire normalement, en vous fiant à votre soif. Les restrictions hydriques strictes sont réservées aux situations décidées par votre équipe médicale.
-
-La recommandation britannique **NICE NG106 (2025)** va dans le même sens : ne pas restreindre systématiquement le sel ni les liquides, évaluer les apports habituels, conseiller au cas par cas et éviter les substituts de sel contenant du potassium. Pour approfondir, consultez *Sel et liquides dans l'insuffisance cardiaque* et *Nutrition et compléments dans l'insuffisance cardiaque*.
-
-- **Arrêt du tabac :** c'est l'une des mesures au plus fort impact dans l'ICFER ischémique. Dans **SOLVD** (FEVG < 35 %), les fumeurs présentaient **41 %** de mortalité toutes causes en plus et **39 %** de décès, hospitalisations pour IC ou infarctus en plus que les ex-fumeurs, avec un bénéfice dès les **2 premières années** (et **−36 %** de mortalité dans les cohortes coronaires). En France (au 25 novembre 2026), les **substituts nicotiniques** prescrits sont **remboursés à 65 % sans plafond annuel** (100 % possible en ALD 5/13), la **varénicline (*Champix*) est revenue le 16 juin 2025** (remboursée à 65 % en 2e intention si Fagerström ≥ 7, sans interaction CYP450 avec les traitements cardiaques), et **Tabac Info Service (39 89)** est gratuit ; à l'inverse, le bupropion (*Zyban*) n'est pas remboursé et interagit avec le métoprolol, la digoxine et le clopidogrel.
-- **Alcool :** l'**ESC 2026** indique que réduire l'alcool est bénéfique dans tous les cas, et l'**ESC 2024 (FA)** conseille **≤ 30 g/semaine** (**≤ 3 verres standard français**) en cas de fibrillation atriale (essai Alcohol-AF). Les repères de **Santé publique France** (max 2 verres/jour, 10/semaine, jours sans alcool ; aucune dose sans risque) sont des **plafonds de population générale et non des objectifs sûrs dans l'ICFER**, compte tenu de la toxicité myocardique, du risque de FA, de la charge hydrique et des interactions avec les iSGLT2 (acidocétose) et les anticoagulants. Tous les détails figurent dans *Tabac et alcool dans l'insuffisance cardiaque*.`,
-    },
-    {
-      headingFr: 'Activité physique et réadaptation cardiaque',
-      bodyMarkdownFr: `- **ESC 2026 :** la réadaptation cardiaque basée sur l'exercice est recommandée pour **tous les patients stables (Classe I)**.
-- **Données des essais :** une revue Cochrane de 2024 regroupant 60 essais (8 728 participants) montre que la réadaptation réduit probablement les hospitalisations toutes causes confondues (**15,9 % contre 23,8 %** à un an) et améliore la qualité de vie, sans effet démontré sur la mortalité. Les programmes à domicile obtiennent des résultats comparables aux programmes en centre.
-- **Bénéfices au quotidien :** l'activité physique adaptée améliore les symptômes, le moral, le niveau d'énergie et le sommeil. Demandez à votre cardiologue, votre médecin traitant ou votre infirmière insuffisance cardiaque / IPA quel niveau d'exercice vous convient et comment accéder à un centre de réadaptation cardiaque (**SMR cardiovasculaire**, voir *Réadaptation cardiaque (SMR) et activité physique*).
-- **Gérer la fatigue (fractionnement des efforts) :**
-  - répartissez vos activités dans la journée sans chercher à tout faire d'un coup ;
-  - prévoyez des temps de repos autour des journées chargées ;
-  - privilégiez des repas plus légers et éventuellement plus fractionnés ;
-  - demandez à votre équipe de rechercher d'autres causes de fatigue (anémie, carence en fer, apnée du sommeil, trouble thyroïdien, dépression).`,
-    },
-    {
-      headingFr: 'Programmes de soins, suivi et télésurveillance',
-      bodyMarkdownFr: `- **Recommandations ESC 2026 (toutes en Classe I) :**
-  - prise en charge dans un programme multidisciplinaire d'insuffisance cardiaque (niveau de preuve B1) ;
-  - éducation thérapeutique avec soutien à l'auto-surveillance (niveau A) ;
-  - accompagnement de l'observance médicamenteuse (niveau B2).
-- **À éviter formellement :** les **AINS (anti-inflammatoires non stéroïdiens)** tels que l'ibuprofène, le kétoprofène ou le diclofénac sont déconseillés (**ESC 2026 Classe III**) car ils augmentent le risque de décompensation cardiaque et d'atteinte rénale.
-- **Rythme du suivi :**
-  - **Guide patient ESC 2026 :** consultation **au moins tous les 6 mois**, même lorsque votre état est stable, et visite **1 à 2 semaines après une sortie d'hospitalisation**.
-  - **Recommandation ESC 2026 (Figure 22, insuffisance cardiaque stable) :**
-    - insuffisance cardiaque symptomatique : tous les **6 à 12 mois** par l'équipe d'insuffisance cardiaque ou le médecin traitant (examen clinique, ECG, bilan sanguin, échocardiographie transthoracique si pertinent, contrôle du dispositif implanté si pertinent) ;
-    - insuffisance cardiaque avancée : tous les **3 à 6 mois**, avec orientation vers un centre d'insuffisance cardiaque avancée et discussion d'anticipation des soins ;
-    - une note précise que ces intervalles peuvent être raccourcis selon l'évolution.
-  - *Note de lecture :* le repère « au moins tous les 6 mois » du guide patient est plus strict que la fourchette de 6 à 12 mois de la figure principale ; c'est votre équipe qui fixe votre calendrier réel.
-  - **Repère NICE NG106 (Royaume-Uni) :** au moins tous les 6 mois en période stable, et de quelques jours à 2 semaines après tout changement clinique ou de traitement, avec un plan de soins écrit comportant un interlocuteur identifié (souvent une infirmière spécialisée).
-- **Contenu habituel d'une visite de suivi (ESC 2026) :**
-  - évaluation des symptômes et de la prise effective des médicaments ;
-  - électrocardiogramme (ECG), notamment pour repérer un élargissement du QRS pouvant faire discuter une resynchronisation (CRT) ;
-  - bilan sanguin : numération formule sanguine, ionogramme (sodium, potassium), bilan martial (ferritine, CST), fonction rénale (créatinine, DFGe), bilan hépatique et thyroïdien.
-  - L'échocardiographie transthoracique (ETT) est réalisée en cas d'aggravation ou de réévaluation ciblée.
-- **Télésurveillance à domicile :** la télésurveillance non invasive (transmission du poids et des symptômes à une équipe infirmière) « peut être envisagée » (**ESC 2026 Classe IIb**). Un capteur implanté de pression artérielle pulmonaire « doit être envisagé » (**Classe IIa**) chez les patients en classe NYHA III ayant été hospitalisés pour insuffisance cardiaque dans les 12 derniers mois. En **France**, la télésurveillance à domicile est remboursée depuis juillet 2023 après une hospitalisation récente pour insuffisance cardiaque, ou en cas de classe NYHA II ou plus avec NT-proBNP élevé. Attention : les données transmises ne sont pas surveillées en temps réel et ne remplacent jamais l'appel aux secours ou au médecin en cas d'urgence.`,
-    },
-    {
-      headingFr: 'Vaccinations recommandées',
-      bodyMarkdownFr: `Les infections respiratoires sont un facteur fréquent de décompensation cardiaque.
-
-- **Recommandations internationales :** l'**ESC 2026** indique que la vaccination annuelle contre la **grippe** et la vaccination contre le **pneumocoque** « doivent être envisagées » (**Classe IIa**), comme le conseillent également le guide patient ESC, la BHF et NICE NG106.
-- **Ce que montrent les essais :** après un infarctus, le vaccin antigrippal a réduit décès, infarctus ou thrombose de stent (**IAMI**, **HR 0,72**, population surtout à FEVG normale). Dans l'insuffisance cardiaque (**IVVE**), il a réduit les pneumonies et les hospitalisations toutes causes, sans diminuer nettement les événements cardiaques sur l'ensemble de l'année. Le vaccin antigrippal haute dose évite davantage d'hospitalisations pour grippe dès 65 ans sans bénéfice cardiaque supplémentaire démontré (**INVESTED**, **DANFLU-2**).
-- **En France (calendrier vaccinal 2026 et HAS ALD 5) :** grippe chaque automne (haute dose *Efluelda* ou adjuvanté *Fluad* privilégié dès 65 ans), **Covid-19** chaque automne, **1 dose unique contre le pneumocoque** à tout âge en cas d'insuffisance cardiaque (*Capvaxive* privilégié par la HAS depuis juillet 2026 ; *Prevenar 20* acceptable), **1 dose contre le VRS** dès 65 ans en cas d'insuffisance cardiaque, et **2 doses de *Shingrix* contre le zona** dès 65 ans. Retrouvez les essais et les modalités de remboursement dans *Vaccinations et insuffisance cardiaque (calendrier français 2026)*.`,
-    },
-    {
-      headingFr: 'Chirurgie programmée, soins dentaires et jours de maladie',
-      bodyMarkdownFr: `- **Chirurgie non cardiaque programmée et endoscopie :** n'interrompez jamais vos traitements cardiaques ou anticoagulants de votre propre initiative. Les bêtabloquants et statines pris au long cours sont habituellement poursuivis ; les IEC et ARA2 sont généralement maintenus dans l'ICFER (les essais **STOP-or-NOT** et **SPACE 2024** ont montré que leur arrêt systématique ne réduisait pas les complications, même si l'IC y restait minoritaire à ≤ 6–10 % et qu'aucun essai chirurgical n'a testé les ARNI) ; les **iSGLT2** sont habituellement suspendus **3 à 4 jours** avant une chirurgie majeure programmée (même sans diabète) afin de prévenir l'acidocétose euglycémique ; les anticoagulants oraux directs (AOD) suivent une fenêtre d'arrêt courte sans relais systématique par héparine ; enfin, les DAI et CRT nécessitent un plan spécifique vis-à-vis du bistouri électrique pour les interventions au-dessus de l'ombilic.
-- **Soins dentaires :** une cardiomyopathie ischémique à FEVG réduite, des stents coronaires ou un DAI/CRT seuls ne nécessitent **pas** d'antibioprophylaxie systématique avant des soins dentaires (**HAS octobre 2024**, ESC 2023, AHA 2021 — réservée à des situations précises à haut risque comme les valves prothétiques, clips valvulaires, antécédent d'endocardite ou LVAD), et un antiagrégant seul ou un AOD sont rarement arrêtés pour des soins dentaires courants.
-- **Jours de maladie (gastro-entérite, vomissements, déshydratation) :** les fiches génériques trouvées sur internet invitant à stopper soi-même les bloqueurs du SRAA ou les ARM au moindre rhume manquent de preuves cliniques et exposent à des erreurs fréquentes et à des non-reprises (dans l'essai **Fink 2022**, seuls **42,4 %** des patients ont appliqué correctement les critères et **21,2 %** ont interrompu à tort des médicaments non concernés). En revanche, en cas de vomissements/diarrhées déshydratants sévères ou de jeûne prolongé, un contact médical rapide et des précautions ciblées vis-à-vis des **iSGLT2** (acidocétose, RCP EMA rubrique 4.4) s'imposent. Établissez un **plan écrit personnalisé pour les jours de maladie** avec votre équipe pendant que vous allez bien. Pour approfondir : *Chirurgie, soins dentaires et jours de maladie* et *Thèse : jours de maladie (SRAA/ARM vs iSGLT2)*.`,
-    },
-    {
-      headingFr: 'Conduite automobile, voyages, climat, travail et vie intime',
-      bodyMarkdownFr: `- **Conduite automobile :** en France, l'aptitude médicale relève de l'arrêté du 28 mars 2022 et d'un **médecin agréé** (distinct de votre médecin traitant). Une insuffisance cardiaque stabilisée (NYHA I–II) n'interdit pas la conduite d'une voiture particulière, tandis qu'une classe NYHA III non stabilisée, une classe NYHA IV, le port d'un gilet défibrillateur (LifeVest) ou l'implantation récente d'un DAI entraînent des restrictions précises (par exemple **4 semaines** après un DAI en prévention primaire en France). La conduite professionnelle (groupe 2 : poids lourds, bus, taxis, VTC, ambulances) est beaucoup plus encadrée et définitivement incompatible avec un DAI. Pour comparaison, au Royaume-Uni (standard DVLA 2025), les conducteurs de voiture en NYHA I–III stables peuvent conduire sans déclarer à la DVLA, avec 1 mois d'arrêt après un DAI préventif et 6 mois après un choc approprié. Tous les détails figurent dans *Règles de conduite automobile (France et Europe)*.
-- **Voyages, altitude, canicule et bains thermaux :**
-  - **Avion :** les cabines sont pressurisées jusqu'à **2 438 m (8 000 pieds)** ; la majorité des patients stables en NYHA I–II peuvent voler en gardant leurs médicaments et une ordonnance en **DCI** dans leur **bagage cabine**, après déclaration à leur assurance voyage, et en emportant leur carte de DAI/CRT (les scanners millimétriques et raquettes modernes n'ont causé aucune interférence en études cliniques).
-  - **Altitude :** les repères divergent entre la **BHF** (éviter **> 2 000 m**) et le consensus européen **Parati 2018** (montée lente possible jusqu'à **3 500 m** en NYHA I–II stable, **3 000 m** en NYHA III, **≤ 2 500 m** en cas d'angor CCS II–III ; attendre **≥ 6 mois** après SCA ou pontage).
-  - **Canicule :** l'**ANSM (mai–juin 2026)** rappelle les risques de déshydratation, d'hypotension et d'atteinte rénale avec les diurétiques, iSGLT2, IEC/ARA2/ARNI, bêtabloquants et digoxine, tout en insistant pour **ne jamais arrêter seul ses traitements**, éviter les AINS et préparer un plan estival à l'avance.
-  - **Sauna vs bains glacés :** aucun essai randomisé n'a testé le sauna finlandais dans l'IC (seule la thérapie douce Waon à 60 °C a été étudiée, sans significativité sur son critère principal BNP), tandis que les **bains glacés** déclenchent un **« conflit autonome »** exposant un cœur ischémique cicatriciel à des arythmies graves. Tous les détails figurent dans *Voyages, altitude, canicule et extrêmes climatiques dans l'IC*.
-- **Travail en France :** le temps partiel thérapeutique, la visite de pré-reprise avec le médecin du travail, la réforme des indemnités journalières au 15 octobre 2026 (plafond ramené à 1 an hors ALD exonérante, mais maintenu à **3 ans** en ALD exonérante comme l'ALD 5 ou l'ALD 13) et l'assurance emprunteur (Loi Lemoine et convention AERAS) sont détaillés dans *Vivre avec une insuffisance cardiaque en France* et *Réseau de soins et aides sociales en France*.
-- **Vie sexuelle et dysfonction érectile :** la plupart des patients stabilisés en **NYHA I–II** peuvent avoir une vie sexuelle sûre (effort d'environ **3 à 5 METs**, comparable à 1,6 km de marche en 20 minutes ou deux étages d'escaliers), alors qu'une décompensation (NYHA IV) ou un angor instable impose d'attendre une stabilisation ; **un choc de DAI pendant un rapport est rare et sans danger pour le partenaire**. La dysfonction érectile concerne jusqu'à **75 %** des hommes avec IC chronique : n'arrêtez jamais un traitement de fond seul (la spironolactone peut parfois être remplacée par l'éplérénone, et la DE sous bêtabloquant comporte un fort effet nocebo). Parmi les **IPDE5**, les notices européennes divergent nettement (**Cialis / tadalafil** contre-indique **NYHA II+** dans les 6 derniers mois, alors que **Viagra / sildénafil** contre-indique uniquement l'IC **sévère** et dispose de petits essais dans l'ICFER) ; tous sont strictement contre-indiqués avec les **dérivés nitrés, le nicorandil et le riociguat**, déconseillés avec le **vériciguat** et nécessitent une prudence particulière avec le **sacubitril/valsartan (*Entresto*)**. Détails dans *Vie sexuelle et dysfonction érectile dans l'insuffisance cardiaque*.`,
-    },
-    {
-      headingFr: 'Santé émotionnelle et anticipation',
-      bodyMarkdownFr: `- **Émotions fréquentes :** l'anxiété, la tristesse et la peur sont très fréquentes après l'annonce du diagnostic ou une hospitalisation. Si ces ressentis persistent, parlez-en à votre médecin traitant ou à votre équipe de cardiologie.
-- **Dépression :** elle touche environ **20 à 30 %** des personnes atteintes d'insuffisance cardiaque et est associée à davantage d'hospitalisations et à une mortalité plus élevée. La thérapie cognitivo-comportementale (TCC) et l'activité physique sont les approches les mieux étayées par les essais cliniques (voir *Dépression et santé émotionnelle*).
-- **Où trouver de l'aide en France :** des séances chez un psychologue partenaire sont partiellement remboursées **sans ordonnance** via **Mon soutien psy** (**12 séances par an** à **50 €**, remboursées à **60 %** par l'Assurance Maladie, complément habituel par la mutuelle) pour une anxiété ou une dépression légère à modérée. En cas de détresse psychologique ou d'idées suicidaires, le **3114** est le numéro national gratuit, confidentiel et ouvert **24 h/24 et 7 j/7** ; en cas de danger imminent, appelez le **15** ou le **112**. Un soutien peut aussi être organisé via votre centre SMR ou l'hôpital.
-- **Anticiper sereinement :** le guide patient ESC encourage l'anticipation des soins, et la recommandation ESC 2026 la place en **Classe I** dans l'insuffisance cardiaque avancée. L'ESC résume trois grands objectifs de traitement — **vivre plus longtemps**, **éviter les hospitalisations** et **se sentir mieux** — et vous invite à discuter de vos priorités avec vos proches et votre équipe.
-- **Soins de support et soins palliatifs :** la Heart Failure Association (HFA) rappelle que ces soins ne se limitent pas à la fin de vie : ils apportent un soulagement des symptômes et un soutien global **en parallèle** des traitements habituels, à tout stade si nécessaire. En France, la désignation d'une **personne de confiance** et la rédaction de **directives anticipées** permettent de formaliser vos souhaits (voir *Soins de support, soins palliatifs et anticipation*).`,
+### Conduite, voyages, vie sexuelle et santé mentale
+- **Conduite (comparaison UK DVLA 2025) :** NYHA I–III stable autorisé sans déclaration ; 1 mois après DAI préventif, 6 mois après choc approprié.
+- **Voyages et climat :** cabine pressurisée jusqu'à **2 438 m (8 000 pieds)** ; scanners millimétriques/raquettes modernes sans interférence clinique sur DAI/CRT ; altitude **BHF** (> 2 000 m déconseillé) vs consensus **Parati 2018** (montée lente jusqu'à 3 500 m NYHA I–II, 3 000 m NYHA III, ≤ 2 500 m angor CCS II–III, ≥ 6 mois après SCA/pontage) ; sauna finlandais non testé en essai randomisé (thérapie douce Waon 60 °C non significative sur BNP) ; bains glacés (« conflit autonome » arythmogène).
+- **Vie sexuelle :** effort de **3 à 5 METs** (1,6 km en 20 min ou 2 étages) ; dysfonction érectile jusqu'à **75 %** des hommes avec IC chronique ; divergence des RCP européens IPDE5 (*Cialis*/tadalafil contre-indique NYHA II+ dans les 6 derniers mois ; *Viagra*/sildénafil contre-indique uniquement l'IC sévère et dispose de petits essais dans l'ICFER) ; prudence avec *Entresto* et déconseillés avec le vériciguat.
+- **Dépression :** touche **20 à 30 %** des patients IC (associée à plus d'hospitalisations et de mortalité) ; TCC et exercice physique les mieux étayés.`,
     },
   ],
   relatedArticleSlugs: [

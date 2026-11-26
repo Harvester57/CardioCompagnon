@@ -59,7 +59,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Est-ce que je prends bien les quatre classes du traitement de fond (IEC ou ARNI, bêtabloquant, ARM, iSGLT2) ? Si l'une manque, pour quelle raison ?",
     whyItMattersFr:
-      "Les quatre piliers constituent le socle de Classe I des recommandations ESC 2026 dans l'ICFER ; chaque classe agit par une voie complémentaire.",
+      "Les quatre piliers forment le traitement de base fortement recommandé en Europe pour protéger votre cœur ; chaque famille agit par un mécanisme complémentaire.",
     sources: ['Recommandations ESC 2026 (insuffisance cardiaque)'],
     articleSlug: 'medicaments-insuffisance-cardiaque',
     relevantModules: ['core'],
@@ -139,7 +139,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Mon QRS est-il élargi sur l'ECG ou ai-je un bloc de branche gauche (BBG) ? Une resynchronisation cardiaque (CRT) me concerne-t-elle ?",
     whyItMattersFr:
-      "Un BBG avec QRS ≥ 150 ms chez un patient à FEVG ≤ 35 % est une indication de Classe I de resynchronisation (CRT), qui améliore à la fois les symptômes et la survie.",
+      "Un bloc de branche gauche avec un QRS élargi (≥ 150 ms) et une FEVG ≤ 35 % est une indication reconnue de resynchronisation cardiaque (CRT), qui aide à soulager les symptômes et à protéger le cœur.",
     sources: ['Recommandations ESC 2026 (insuffisance cardiaque)'],
     articleSlug: 'dispositifs-cardiaques-dai-crt',
     relevantModules: ['core', 'device'],
@@ -407,7 +407,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Quel est mon objectif de cholestérol LDL, ai-je atteint les deux critères (< 0,55 g/L et baisse ≥ 50 %), et quelle serait l'étape suivante si besoin (dose, ézétimibe, anti-PCSK9) ?",
     whyItMattersFr:
-      "En prévention secondaire coronaire, l'ESC recommande un LDL < 0,55 g/L (1,4 mmol/L) et une réduction ≥ 50 % par rapport au taux initial (Classe I), avec une escalade par étapes.",
+      "Après une atteinte coronaire, les recommandations européennes visent un cholestérol LDL inférieur à 0,55 g/L (1,4 mmol/L) et abaissé d'au moins 50 % par rapport au taux initial, avec une adaptation par étapes.",
     sources: ['ESC/EAS 2019', 'ESC 2024 SCC', 'Mise à jour ESC/EAS 2025'],
     articleSlug: 'cholesterol-et-prevention-secondaire',
     relevantModules: ['core'],
@@ -525,7 +525,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Quelle amélioration de ma FEVG est réaliste, dans quel délai, parleriez-vous d'amélioration, de rémission ou de récupération, et quels traitements et examens de suivi doivent être poursuivis même si la FEVG remonte ?",
     whyItMattersFr:
-      "L'ESC 2026 recommande de poursuivre le traitement de fond après amélioration (Classe I ; risque de rechute dans TRED-HF) et appelle « rémission » toute FEVG améliorée, alors que la Définition universelle 2026 réserve ce mot à une FEVG revenue à la normale.",
+      "Les recommandations européennes conseillent fortement de poursuivre le traitement de fond même après amélioration de la FEVG, car l'arrêt expose à un risque élevé de rechute.",
     sources: ['ESC 2026', 'Définition universelle de l’IC (2026)', 'TRED-HF (2019)'],
     articleSlug: 'insuffisance-cardiaque-fevg-amelioree',
     relevantModules: ['core', 'hfImpEf'],
@@ -669,7 +669,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Mon poids doit-il être jugé sur l'IMC seul ou aussi sur le tour de taille ? En cas d'obésité, un traitement comme le sémaglutide (Wegovy, Ozempic, Rybelsus) ou le tirzépatide (Mounjaro) aiderait-il ou nuirait-il à mon cœur ?",
     whyItMattersFr:
-      "La HFA 2025 propose d'ajouter le rapport tour de taille / taille à l'IMC. Les bénéfices cardiaques de ces molécules ne sont prouvés que dans l'IC à FEVG préservée (SUMMIT : HR 0,62) ; dans l'ICFER, les données sont limitées et mitigées (LIVE : 12 événements cardiaques graves contre 3 sous liraglutide ; SOUL : chez 592 patients diabétiques avec ICFER, le sémaglutide oral n'a pas modifié les événements d'IC, HR 0,98) et leur sécurité reste débattue.",
+      "Le rapport tour de taille / taille complète utilement l'IMC. Le bénéfice cardiaque des traitements GLP-1 est surtout démontré dans l'insuffisance cardiaque à FEVG préservée ; lorsque la FEVG est réduite, les données restent limitées et leur balance bénéfice/risque se discute au cas par cas.",
     sources: ['Déclaration HFA obésité (2025)', 'SOUL (JAMA Intern Med 2026)'],
     articleSlug: 'medicaments-glp1-et-incretines',
     relevantModules: ['core', 'diabetes'],
@@ -755,7 +755,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "Avec mon diurétique ou mon IPP au long cours, mon taux de magnésium doit-il être dosé avant tout complément, et une forme précise (ou un produit magnésium + vitamine B6 comme Magné B6) est-elle sûre avec mes reins et mes médicaments ?",
     whyItMattersFr:
-      "Aucun essai solide ne montre de bénéfice cardiaque du magnésium en routine ; dans GALACTIC-HF, c'est un magnésium élevé qui prédisait plus d'événements, et dans Yin (2026) la supplémentation s'associait à un moindre risque seulement si le taux était bas (HR 0,91) et à plus d'événements s'il était normal (HR 1,11). Le magnésium s'accumule en cas d'insuffisance rénale (< 30 mL/min), interagit avec certains médicaments (rosuvastatine avec antiacides) et les associations avec B6 peuvent dépasser la limite UE de 12 mg/j de B6.",
+      "Aucun essai solide ne montre de bénéfice à prendre du magnésium en routine si votre taux sanguin est normal. Il peut s'accumuler en cas d'insuffisance rénale (< 30 mL/min), interagir avec certains médicaments (comme la rosuvastatine) et certaines formules avec vitamine B6 dépassent la limite européenne de 12 mg/j.",
     sources: ['GALACTIC-HF (2026)', 'Yin (2026)', 'EFSA / NIH ODS'],
     articleSlug: 'magnesium-insuffisance-cardiaque',
     relevantModules: ['core', 'ckd'],
@@ -768,7 +768,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "On m'a proposé un produit à base de plantes médicinales ou du Tai-Chi : l'un ou l'autre est-il utile, et les plantes risquent-elles d'interagir avec mon ordonnance ?",
     whyItMattersFr:
-      "Une revue parapluie (Chua 2025) retrouve un niveau de certitude modéré en faveur du Tai-Chi sur les hospitalisations (RR 0,47 sur 3 petits essais). Les produits à base de plantes reposent surtout sur de petits essais chinois et comportent des risques d'interactions ou de toxicité (ginseng, danshen avec anticoagulants, racine d'aconit cardiotoxique, Pueraria augmentant le potassium).",
+      "Des études préliminaires suggèrent un intérêt du Tai-Chi sur la qualité de vie et le suivi, mais les produits à base de plantes comportent des risques d'interactions ou de toxicité cardiaque (ginseng ou danshen avec anticoagulants, aconit toxique pour le cœur, plantes riches en potassium).",
     sources: ['Revue parapluie Chua (2025)', 'Déclaration scientifique AHA (2022)'],
     articleSlug: 'interactions-complements-aliments-medicaments',
     relevantModules: ['core'],
@@ -1074,7 +1074,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       "L'affaiblissement de mon cœur est-il entièrement expliqué par la maladie coronaire, ou l'IRM cardiaque (localisation de la cicatrice) suggère-t-elle une seconde cause associée ?",
     whyItMattersFr:
-      "L'ESC 2026 recommande l'IRM (Classe I) si la cause est incertaine ; une fibrose médio-pariétale oriente vers une cardiomyopathie non ischémique ou une double pathologie.",
+      "Les recommandations européennes conseillent une IRM cardiaque lorsque la cause reste incertaine : l'aspect de la cicatrice aide à distinguer une atteinte ischémique d'une autre maladie du muscle cardiaque.",
     sources: ['ESC 2026', 'McCrohon (2003)', 'Gulati (2013)', 'Jones (2024)'],
     articleSlug: 'confirmer-la-cause-dysfonction-vg',
     relevantModules: ['core'],
@@ -1208,7 +1208,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Quels signes d’alerte « I NEED HELP » (y compris la nécessité de réduire mes médicaments de fond pour tension basse ou reins) devraient conduire à impliquer un centre expert d’insuffisance cardiaque avancée, et quel centre serait référent ?',
     whyItMattersFr:
-      "L'ESC 2026 recommande en Classe I A une orientation précoce vers un centre expert dès que des signes d'IC avancée ou une intolérance aux traitements de fond apparaissent ; dans le registre HELP-HF, chaque critère supplémentaire augmentait le risque (HR 1,19).",
+      "Les recommandations européennes préconisent une orientation précoce vers un centre expert dès qu'apparaissent des signes d'insuffisance cardiaque avancée ou une difficulté à tolérer les traitements de fond, afin d'ouvrir toutes les options à temps.",
     sources: ['ESC 2026 (Section 8)', 'HELP-HF (2023)', 'ISHLT 2023'],
     articleSlug: 'insuffisance-cardiaque-avancee-stade-d',
     relevantModules: ['core'],
@@ -1221,7 +1221,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Que montrent le TAPSE et la pression artérielle pulmonaire estimée (PAPS / sPAP) sur mon échocardiographie, et si la pression pulmonaire est élevée, est-elle entièrement liée au cœur gauche ou un cathétérisme droit apporterait-il une information utile ?',
     whyItMattersFr:
-      "Dans l'hypertension pulmonaire du groupe 2 liée au cœur gauche, l'ESC/ERS 2022 recommande d'optimiser d'abord le cœur gauche (Classe I A) et contre-indique les médicaments spécifiques de l'HTAP (Classe III A) ; une dysfonction ventriculaire droite ou une composante précapillaire sévère justifie un centre expert.",
+      "Lorsque la pression pulmonaire monte à cause du cœur gauche, la priorité est d'optimiser le traitement de l'insuffisance cardiaque ; les médicaments spécifiques d'autres formes d'hypertension pulmonaire sont contre-indiqués et une atteinte du ventricule droit justifie un avis en centre expert.",
     sources: ['Recommandations ESC/ERS 2022 (HTP)', 'ESC 2026'],
     articleSlug: 'ventricule-droit-et-hypertension-pulmonaire',
     relevantModules: ['core'],
@@ -1233,7 +1233,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Si une assistance circulatoire (LVAD), une greffe cardiaque ou des inotropes étaient un jour discutés dans mon parcours, comment les soins de support et l’anticipation seraient-ils associés en parallèle ?',
     whyItMattersFr:
-      "L'ESC 2026 recommande d'intégrer l'anticipation (Classe I B1) et une équipe palliative (Classe I B2) en parallèle des options d'IC avancée ; l'ISHLT 2023 conseille une consultation de soins palliatifs lors de l'évaluation LVAD (Classe IIa C).",
+      "Les recommandations européennes encouragent à intégrer tôt les soins de support et la discussion sur vos souhaits en parallèle des traitements de l'insuffisance cardiaque avancée, notamment lors d'une évaluation pour assistance circulatoire.",
     sources: ['ESC 2026 (Section 8)', 'ISHLT 2023 MCS', 'MOMENTUM 3 (2022)'],
     articleSlug: 'assistance-circulatoire-lvad',
     relevantModules: ['core'],
@@ -1259,7 +1259,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Si un anti-angineux supplémentaire est nécessaire en plus de mon bêtabloquant, lequel est le mieux adapté à ma tension, à mes reins et aux disponibilités/remboursements en France (patch nitré avec fenêtre libre de 8–12 h, ivabradine, ranolazine), ou faut-il rediscuter une revascularisation ?',
     whyItMattersFr:
-      "En France, les dérivés nitrés oraux longue durée ne sont plus commercialisés (patchs uniquement avec 8–12 h sans patch pour éviter l'échappement), la trimétazidine et la ranolazine ne sont pas remboursées et la HAS a jugé le SMR du nicorandil insuffisant en 2026 ; l'ESC 2026 classe en Classe I la revascularisation pour angor persistant.",
+      "En France, les dérivés nitrés longue durée existent uniquement en patchs (avec 8 à 12 h sans patch par jour), certaines options ne sont pas remboursées, et une revascularisation peut être envisagée si l'angor persiste malgré le traitement.",
     sources: ['ESC 2026 (Section 9.2)', 'HAS (nicorandil 2026)', 'RCP Nitriderm TTS / Ranexa'],
     articleSlug: 'angor-et-medicaments-anti-angineux',
     relevantModules: ['core'],
@@ -1273,7 +1273,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'L’aspirine ou le clopidogrel (Plavix) est-il préférable au long cours dans mon cas, et en cas de stent, comment mon insuffisance cardiaque (qui augmente le risque thrombotique et hémorragique) oriente-t-elle la durée de bithérapie ?',
     whyItMattersFr:
-      "L'ESC 2024 classe aspirine et clopidogrel à égalité (Classe I A) ; HOST-EXAM (10 ans) et PANTHER montrent moins d'infarctus sous clopidogrel sans gain de survie, mais aucun essai n'a isolé les patients avec ICFER. La durée par défaut après stent en maladie stable est de 6 mois (1–3 mois si haut risque hémorragique).",
+      "Les recommandations européennes placent l'aspirine et le clopidogrel au même niveau en traitement au long cours ; après un stent en situation stable, la bithérapie dure généralement 6 mois (ou 1 à 3 mois si le risque de saignement est élevé).",
     sources: ['ESC 2024 SCC', 'HOST-EXAM 10 ans (2026)', 'PANTHER (2023)', 'Otsuka (2023)'],
     articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
     relevantModules: ['core'],
@@ -1285,7 +1285,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Ai-je besoin d’un protecteur gastrique (IPP) avec mes antiplaquettaires, lequel éviter avec le clopidogrel, et faut-il surveiller mon magnésium ou ma vitamine B12 en cas de traitement prolongé associé à des diurétiques ?',
     whyItMattersFr:
-      "L'ESC recommande un IPP (Classe I A) en cas d'association antithrombotique à risque digestif élevé ; l'oméprazole et l'ésoméprazole sont déconseillés avec le clopidogrel (le pantoprazole interagit moins), et un usage prolongé d'IPP avec diurétiques ou digoxine justifie d'envisager un dosage de magnésium et de B12.",
+      "Un protecteur gastrique (IPP) est recommandé en cas d'association de traitements fluidifiant le sang à risque digestif élevé ; le pantoprazole est généralement préféré avec le clopidogrel, et un suivi du magnésium et de la vitamine B12 peut être utile en cas de prise prolongée.",
     sources: ['ESC 2024 SCC', 'EMA (2010)', 'FDA/MHRA IPP', 'Lam (2013)'],
     articleSlug: 'antiplaquettaires-bitherapie-et-protection-gastrique',
     relevantModules: ['core'],
@@ -1367,7 +1367,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Quelle est ma charge quotidienne en extrasystoles ventriculaires (ESV), a-t-elle été enregistrée sur plus de 24 heures, et des ESV fréquentes (≥ 10 %) pourraient-elles aggraver ma FEVG ou perturber ma CRT ?',
     whyItMattersFr:
-      "Un seul Holter 24 h manque environ 47 % des charges ≥ 10 % ; l'ESC 2022 recommande l'ablation (Classe I C) en cas de cardiomyopathie induite par les ESV, alors que les antiarythmiques de classe IC (flécaïnide) sont contre-indiqués après infarctus (CAST).",
+      "Un seul Holter de 24 h peut sous-estimer la fréquence réelle des extrasystoles ; lorsqu'elles affaiblissent le muscle cardiaque, une ablation est souvent envisagée, tandis que certains antiarythmiques (comme la flécaïnide) sont contre-indiqués après un infarctus.",
     sources: ['ESC 2022 (Arythmies ventriculaires)', 'Huizar (2019)', 'CAST (1991)'],
     articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
     relevantModules: ['core', 'device'],
@@ -1379,7 +1379,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'Disposé-je d’un plan écrit en cas de choc de DAI (quand contacter le centre vs appeler le 15/112 dès 2 chocs ou symptômes), combien d’ATP mon boîtier a-t-il délivrés, et comment pesez-vous ablation par cathéter face à amiodarone ou sotalol en cas de TV ?',
     whyItMattersFr:
-      "L'ESC 2022 exige un plan écrit de choc ; ≥ 5 ATP en 6 mois prédisaient chocs et hospitalisations dans PARTITA. Dans VANISH2, l'ablation de 1re ligne a réduit le critère composite (HR 0,75) sans gain de survie, tandis que l'amiodarone s'accompagnait de trois fois plus de décès non cardiaques et de toxicité pulmonaire.",
+      "Disposer d'un plan écrit en cas de choc de défibrillateur est essentiel. En cas de récidives, l'ablation et l'amiodarone sont deux options aux profils d'effets secondaires différents (surveillance pulmonaire, thyroïdienne et hépatique sous amiodarone) à peser avec votre rythmologue.",
     sources: ['ESC 2022 AV/MSC', 'VANISH2 (NEJM 2025 / JACC 2026)', 'PARTITA (2022)', 'Falconer (2026)'],
     articleSlug: 'arythmies-ventriculaires-et-antiarythmiques',
     relevantModules: ['device'],
@@ -1601,7 +1601,7 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     questionFr:
       'La coenzyme Q10 mérite-t-elle son coût en plus de ma quadrithérapie ou vaut-il mieux attendre les résultats des essais en cours (CORAL, DANUTRIO-HF), et peut-elle interférer avec la warfarine ou abaisser ma tension ?',
     whyItMattersFr:
-      "Aucun essai achevé n'a évalué la CoQ10 sur la mortalité sous ARNI et iSGLT2 ; le signal pré-moderne repose sur Q-SYMBIO seul, l'analyse indépendante NIHR HTA 2022 est non significative (RR 0,68), et la CoQ10 peut réduire l'effet de la warfarine (exclue de CORAL et DANUTRIO-HF).",
+      "Aucune étude achevée n'a encore démontré de bénéfice de la CoQ10 en ajout aux traitements modernes de l'insuffisance cardiaque, et ce complément peut diminuer l'efficacité de certains anticoagulants (warfarine).",
     sources: ['NIHR HTA (2022)', 'Cochrane (2021)', 'Q-SYMBIO (2014)', 'CORONA CoQ10 (2010)'],
     articleSlug: 'these-coq10-mortalite-icfer-moderne',
     relevantModules: ['core'],

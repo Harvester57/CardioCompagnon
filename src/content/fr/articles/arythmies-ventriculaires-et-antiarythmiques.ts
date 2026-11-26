@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/ventricular-arrhythmias-and-antiarrhythmics.md',
   titleFr: 'Arythmies ventriculaires, chocs de DAI et médicaments antiarythmiques',
   category: 'dispositifs',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

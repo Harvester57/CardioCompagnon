@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/depression-and-emotional-health.md',
   titleFr: 'Santé émotionnelle, anxiété et dépression',
   category: 'quotidien',
+  readingTier: 'essential',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -38,110 +39,44 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Ressentir de l'anxiété, de la tristesse ou de la peur après un diagnostic d'insuffisance cardiaque est très fréquent. Chez environ une personne sur quatre ou cinq (20 à 30 %), cela évolue vers une dépression, associée à davantage d'hospitalisations et à un pronostic moins favorable. Les psychothérapies structurées (TCC, revue Cochrane 2024), l'exercice physique et les soins collaboratifs coordonnés par infirmier (Hopeful Heart dans l'ICFER) améliorent modestement l'humeur, mais n'ont pas démontré de réduction des réhospitalisations ni des décès. Deux grands essais d'antidépresseurs ISRS (sertraline, escitalopram) n'ont pas montré de supériorité sur le placebo accompagné d'un soutien infirmier ; lorsqu'un antidépresseur est nécessaire (surtout dans les dépressions sévères), le consensus ESC 2025 privilégie les ISRS, déconseille les tricycliques et les IMAO, appelle à la prudence avec les IRSN et rappelle l'incompatibilité du citalopram/escitalopram avec l'amiodarone ou le sotalol ainsi que le risque d'hyponatrémie. Chez les porteurs de DAI, environ 23 % présentent une anxiété et 12 % un stress post-traumatique, nettement accrus après des chocs. En France, Mon soutien psy rembourse 12 séances de psychologue par an à 60 % sans ordonnance (troubles légers à modérés), les CMP et psychiatres prennent en charge les formes sévères, et le 3114 répond gratuitement 24 h/24 en cas de crise suicidaire.",
+    "Ressentir de l'anxiété, de la tristesse ou de la peur après un diagnostic cardiaque est très fréquent. Un soutien psychologique, l'exercice adapté et, si besoin, un traitement choisi avec votre cardiologue peuvent vous aider. En France, Mon soutien psy rembourse 12 séances par an sans ordonnance et les CMP accueillent les formes sévères. En cas de crise ou d'idées suicidaires, appelez le 3114 (gratuit, 24 h/24).",
+  keyTakeawaysFr: [
+    "La tristesse ou l'anxiété touchent environ une personne sur quatre avec une insuffisance cardiaque : parlez-en tôt à votre médecin ou à votre cardiologue.",
+    'En France, Mon soutien psy rembourse jusqu’à 12 séances de psychologue par an sans ordonnance ; les CMP et psychiatres prennent en charge les formes sévères.',
+    'Les psychothérapies (comme la TCC) et la réadaptation cardiaque améliorent le moral sans risque cardiaque.',
+    "Ne modifiez jamais un antidépresseur seul : certains sont incompatibles avec l'amiodarone ou le sotalol et demandent un contrôle du sodium et un ECG.",
+    "En cas d'idées suicidaires, appelez le 3114 (gratuit, confidentiel, 24 h/24) ou, en cas de danger imminent, le 15 (SAMU), le 112 ou le 114 par SMS.",
+  ],
   sections: [
     {
-      headingFr: 'Quelle fréquence, pourquoi cela compte et comment repérer les symptômes',
-      bodyMarkdownFr: `- **Fréquence globale :** la dépression touche environ **20 à 30 %** des personnes vivant avec une insuffisance cardiaque, avec des taux comparables quelles que soient la FEVG et la cause. Le risque est plus élevé chez les femmes, les adultes plus âgés, les patients présentant des symptômes plus marqués, une origine ischémique ou un antécédent d'hospitalisation (revue de Basile et al., 2023).
-- **Formes avancées :** la Heart Failure Association (HFA 2020) rapporte une dépression ou une anxiété chez **plus de 50 %** des patients atteints d'insuffisance cardiaque avancée, et chez **40 à 70 %** des patients hospitalisés en classe NYHA III–IV.
-- **Impact pronostique :** dans les études synthétisées en 2023, la dépression est associée à une mortalité plus élevée à 3 mois et à 1 an (odds ratios d'environ **2,2 à 2,5**) et à davantage de réhospitalisations pour insuffisance cardiaque, indépendamment de la classe NYHA, de l'âge, de la FEVG et de la cause. Il s'agit d'associations statistiques (non d'une preuve causale directe), mais elles soulignent l'importance d'une prise en charge dédiée.
-- **Repérage en deux temps :** un questionnaire rapide à deux questions (**PHQ-2**, seuil ≥ 3) suivi si besoin du **PHQ-9** aide à signaler les symptômes, mais seul un entretien clinique permet de poser un diagnostic. Comme il est difficile de distinguer une tristesse d'adaptation après l'annonce ou une hospitalisation d'un véritable épisode dépressif, les auteurs suggèrent au moins un dépistage après les **6 premiers mois**.
-- **Le dépistage seul ne suffit pas :** dans l'essai **CODIACS-QoL** (1 500 patients après syndrome coronarien aigu, résumé au niveau de l'abstract), le simple dépistage avec notification au médecin n'a pas amélioré la qualité de vie ni les jours sans dépression, même dans le bras offrant un accès facilité au traitement.`,
+      headingFr: 'Une réaction fréquente : reconnaître les signes',
+      bodyMarkdownFr: `- **Vous n'êtes pas seul :** l'anxiété ou la dépression touchent environ **20 à 30 %** des personnes vivant avec une insuffisance cardiaque, et plus de la moitié après une hospitalisation ou lorsque les symptômes sont marqués.
+- **Pourquoi en parler tôt :** un moral en berne rend le quotidien, la prise des traitements et l'activité physique plus difficiles, et s'accompagne plus souvent de réhospitalisations. Prendre soin de votre santé émotionnelle fait pleinement partie de votre suivi cardiaque.
+- **Distinguer une réaction passagère d'une dépression :** il est normal de traverser des moments de découragement dans les mois qui suivent l'annonce ou une hospitalisation. Si la tristesse, la perte d'élan, les troubles du sommeil ou l'angoisse persistent plusieurs semaines (en particulier au-delà des **6 premiers mois**), parlez-en à votre médecin traitant ou à votre cardiologue.
+- **Un repérage simple :** un court questionnaire (comme le **PHQ-2** en deux questions, suivi si besoin du **PHQ-9**) aide à ouvrir le dialogue, mais seul un entretien avec un professionnel permet de poser un diagnostic et d'organiser un vrai suivi.`,
     },
     {
-      headingFr: 'Psychothérapies, exercice et soins collaboratifs : données des essais (2015–2026)',
-      bodyMarkdownFr: `### Essais historiques et comparatifs de référence
-
-| Approche | Essai clinique | Effet sur le moral | Effet sur le pronostic cardiaque |
-|---|---|---|---|
-| **TCC (thérapie cognitivo-comportementale)** | Freedland 2015 (158 patients, en plus de soins usuels renforcés avec éducation infirmière) | Scores dépressifs plus bas à 6 mois ; **rémission de 46 % contre 19 %** sur une échelle et **51 % contre 20 %** sur une autre | Moins d'hospitalisations en analyse exploratoire uniquement ; pas de changement de l'auto-soin ni de la capacité physique |
-| **Entraînement physique** | HF-ACTION (2 331 patients) | Réduction des symptômes dépressifs à 3 et 12 mois | Voir l'article sur la réadaptation cardiaque |
-| **Équipe de soins palliatifs / de support** | PAL-HF 2017 (150 patients en IC avancée ; 48 % ischémiques, 55 % FEVG ≤ 40 %, 29 % de mortalité à 6 mois) | Amélioration de la dépression (**HADS-D −1,94**, p = 0,02) ; l'anxiété (**−1,83** non ajustée) **devient non significative après ajustement âge/sexe** (p = 0,063). *Limites :* monocentrique, ouvert, effectif réduit de 200 à 150 en cours d'essai, HADS mesuré à partir de la semaine 2, ~46 % de données manquantes à 6 mois | Aucun effet sur les réhospitalisations ni la mortalité |
-| **Sertraline** (antidépresseur ISRS) | SADHART-CHF 2010 (469 patients avec dépression majeure) | Amélioration dans les deux groupes ; **pas de différence avec le placebo** (soutien infirmier dans les deux bras) | Pas de différence sur l'état cardiovasculaire |
-| **Escitalopram** (*Seroplex*, ISRS) | MOOD-HF 2016 (372 patients en ICFER, FEVG < 45 % à l'inclusion, moyenne **~35 %**, ~**deux tiers d'origine ischémique**, dépression majeure) | Amélioration d'environ **9 points** sur l'échelle MADRS dans les deux bras ; **pas de différence avec le placebo** (écart de **0,9 point**, non significatif) | Décès ou hospitalisations comparables : **63 % contre 64 %** sur ~18 mois (**HR 0,99**) ; essai **arrêté prématurément** faute de bénéfice émergent |
-
-### Synthèses récentes sur les psychothérapies et la TCC en ligne
-
-- **Revue Cochrane 2024 :** 21 essais randomisés, **2 591 participants** (16 essais coronariens, 5 dans l'insuffisance cardiaque). Les interventions psychologiques améliorent la dépression (effet faible à modéré, **SMD −0,36**) et l'anxiété (**SMD −0,57**), avec une **certitude modérée**, sans effet démontré sur la mortalité (**RR 0,81**, IC 95 % 0,39–1,69) ni sur les événements cardiaques majeurs. Les résultats varient sensiblement d'un essai à l'autre et aucune modalité unique ne domine clairement.
-- **Méta-analyse TCC dans l'IC (Jeyanantham 2017) :** 5 essais (FEVG moyenne ~31–40 %) retrouvant un léger bénéfice sur l'humeur maintenu au moins 3 mois, sans réduction des hospitalisations (**RR 0,99**) ni des décès (**RR 1,05**).
-- **TCC en ligne guidée par infirmier :** un pilote suédois de 50 patients insuffisants cardiaques (**Lundgren 2016**) n'a pas montré de différence nette face à un forum de discussion en ligne, et seuls **24 %** ont terminé les 7 modules. Un essai ultérieur plus large chez 144 patients atteints de pathologies cardiovasculaires mixtes (**Johansson 2019**) a en revanche observé un bénéfice sur l'humeur (**d = 0,62**). Dans l'insuffisance cardiaque, la TCC en ligne reste moins solidement étayée que la TCC en face à face ou par téléphone.
-
-### Soins collaboratifs coordonnés par infirmier et activation comportementale
-
-Dans les soins collaboratifs mixtes (*blended collaborative care*), un infirmier coordinateur suit par téléphone à la fois l'insuffisance cardiaque et l'humeur, avec revue hebdomadaire par un psychiatre et un cardiologue :
-
-- **Hopeful Heart (2021) :** **629 patients** déprimés hospitalisés pour ICFER (FEVG moyenne **~28 %**, environ la moitié ayant un antécédent d'infarctus). Par rapport aux soins usuels, les soins collaboratifs ont amélioré la qualité de vie mentale (taille d'effet **0,34**) et l'humeur (**0,47**). Par rapport à un suivi infirmier cardiologique seul, le gain sur l'humeur était plus modeste (**0,24**) et la qualité de vie mentale ne différait pas. Aucune différence à 12 mois sur les réhospitalisations, la fonction physique ou les décès.
-- **CASA (2018, texte intégral) :** **314 patients ambulatoires** (317 randomisés, 3 exclusions) avec IC chronique symptomatique et qualité de vie altérée (**45,2 % d'origine ischémique** ; parmi 299 avec FEVG connue, **44,1 % < 40 %** [26,8 % < 30 % et 17,4 % entre 30 et 39 %], 15,4 % entre 40 et 49 % et 40,5 % ≥ 50 % ; **61,8 % NYHA III–IV** ; **47,5 % avec PHQ-9 ≥ 10**, médiane 9 [IQR 5–14], 23 % de trouble dépressif et 29 % sous antidépresseur), suivis par un infirmier et un travailleur social avec revue hebdomadaire cardiologique et palliative :
-  - **Critère principal (score KCCQ global à 6 mois) : formellement neutre** (+5,5 vs +2,9 ; différence **+2,6 points**, IC 95 % −1,3 à 6,6 ; p = 0,19 ; signal exploratoire ICFER d = 0,28 vs ICFEP −0,03 sans test d'interaction publié).
-  - **Critères secondaires non corrigés :** légère amélioration des symptômes dépressifs à 6 mois (**PHQ-9 −1,4 point**, d = −0,29, p = 0,02) et 12 mois (d = −0,36, p = 0,006) ; amélioration de la fatigue à 6 mois (d = −0,30, p = 0,02) **non maintenue à 12 mois** (p = 0,16) ; anxiété neutre à 6 mois (p = 0,09) ; aucune différence sur la dyspnée, la douleur, les hospitalisations (p = 0,61) ni la mortalité à 12 mois (10 vs 13 décès, p = 0,52).
-- **TEACH (2025) :** **457 patients** coronariens en détresse psychologique (dont 39 % avec IC et 14 % avec FEVG < 40 %). Les soins d'équipe ont atteint leur critère principal binaire de réponse sur la qualité de vie HeartQoL (**19 % vs 10 %**, **OR 2,21**, p = 0,005 ; NNT = 11) et réduit les scores HADS dépression (**−1,31**) et anxiété (**−1,18**), mais les événements cardiaques et décès n'ont pas été rapportés.
-- **Activation comportementale (IsHak 2024) :** cette thérapie structurée encourage la reprise progressive d'activités porteuses de sens. Chez **416 patients** insuffisants cardiaques de toute FEVG (36 % avec antécédent d'infarctus, sans groupe soins usuels), comparée à un suivi infirmier d'antidépresseurs : les scores dépressifs ont chuté de près de moitié dans les deux groupes (sans différence à 6 mois) ; la qualité de vie physique SF-12 était légèrement supérieure (**+2,1 points**) ; aucune différence principale sur le KCCQ, les réhospitalisations ni la mortalité (le gain KCCQ cité par le consensus ESC 2025 provient d'une analyse ultérieure limitée aux patients ayant suivi l'essentiel du programme) ; moins de passages aux urgences et de jours d'hospitalisation en analyse secondaire.
-
-### Limites méthodologiques (audit des textes intégraux et registres)
-
-Tous les essais comportementaux sont menés en ouvert et reposent sur des questionnaires auto-rapportés. La confrontation des textes intégraux aux registres d'essais invite à la prudence :
-
-| Essai (registre) | Verdict sur le critère principal | Principales limites méthodologiques |
-|---|---|---|
-| **TEACH 2025** (DRKS00020824) | **Formellement positif** (réponse binaire HeartQoL 19 % vs 10 %, p = 0,005) | Taux de réponse bien inférieurs aux hypothèses de puissance (50 % vs 35 %) ; pas de bras contrôle d'attention (13 appels en moyenne vs lettre) ; déséquilibres initiaux (angor CCS III–IV 16 % vs 8 %, anxiété HADS 8,4 vs 9,3) ; le gain du « score de risque médical » provient **uniquement de l'inactivité physique auto-déclarée** (tension, LDL, HbA1c et cotinine inchangés, 58 % de LDL manquants à 12 mois) ; pas de sous-groupe IC/FEVG ; redevances HADS allemande perçues par l'investigateur principal |
-| **CASA 2018** (NCT01739686) | **Formellement neutre** (KCCQ +2,6, p = 0,19) | Gains dépression/fatigue issus de critères secondaires non corrigés ; critères d'inclusion assouplis en cours de recrutement ; 21 % de questionnaires manquants à 6 mois ; pas de contrôle d'attention (~23 contacts téléphoniques) ; déséquilibres initiaux favorables au bras CASA (CRT-D 15,3 % vs 7,0 %, bêtabloquants 90,4 % vs 79,0 %, moindre dyspnée) |
-| **ICD-FORUM 2019** (NCT01589913) | **Formellement neutre** (composite à 6 semaines p = 0,50 ; à 1 an p = 0,29) | Effectif cible ramené de 200 à 119 ; recrutement décalé (médiane 1,4 an après implantation au lieu d'avant implantation) ; **abandons presque doubles dans le bras intervention (30,5 % vs 16,9 %)** ; la baisse HADS dépression à 1 an (−2,98, p = 0,004) se situe à la limite de Bonferroni (14 tests) et **l'anxiété (p = 0,03) ne résiste pas à la correction** |
-| **Lundgren 2016** (NCT01681771) | **Formellement neutre** (PHQ-9 entre bras p = 0,21, d = 0,26) | **Arrêté prématurément** à 50 patients sur 104 prévus (120 au registre, puissance 16 %) ; forts déséquilibres de sévérité (NYHA III–IV 20 % vs 56 %, diurétiques 56 % vs 80 %) ; seuls 24 % ont fini les 7 modules ; les conclusions optimistes reposent sur une comparaison avant-après intra-groupe non randomisée |
-
-*Adéquation à l'ICFER ischémique :* **principalement directe** pour Hopeful Heart ; **partielle** pour Cochrane, la méta-analyse TCC, CASA (44,1 % FEVG < 40 %, 45,2 % ischémique, avant l'ère des iSGLT2) et TEACH (39 % IC, 14 % FEVG < 40 %) ; **indirecte** pour les essais de TCC en ligne.`,
+      headingFr: 'Ce qui aide vraiment : psychothérapie, réadaptation et suivi coordonné',
+      bodyMarkdownFr: `- **Psychothérapies structurées (dont la TCC) :** la thérapie cognitivo-comportementale (en face à face ou par téléphone) aide à apaiser les pensées anxieuses et améliore modestement mais réellement l'humeur. Les programmes uniquement en ligne sont moins bien étayés dans l'insuffisance cardiaque.
+- **Activité physique adaptée et réadaptation cardiaque :** le réentraînement physique supervisé en **SMR cardiovasculaire** réduit les symptômes dépressifs tout en améliorant votre forme physique et votre confiance au quotidien.
+- **Suivi coordonné :** un accompagnement régulier par une infirmière ou une équipe pluridisciplinaire (cardiologue, médecin traitant, psychologue ou psychiatre) améliore le moral et la qualité de vie.
+- **Des attentes réalistes :** ces approches aident à mieux vivre et à soulager la détresse, même si elles ne remplacent pas vos traitements cardiaques et n'ont pas démontré de baisse directe des réhospitalisations.`,
     },
     {
-      headingFr: 'Antidépresseurs et sécurité cardiaque : MOOD-HF et consensus ESC 2025',
-      bodyMarkdownFr: `### Ce qu'enseignent SADHART-CHF et le texte intégral de MOOD-HF
+      headingFr: 'Antidépresseurs et sécurité cardiaque : les précautions à connaître',
+      bodyMarkdownFr: `Les antidépresseurs sont surtout envisagés dans les dépressions **sévères** ou persistantes, dans le cadre d'une décision partagée entre votre médecin (ou psychiatre) et votre cardiologue.
 
-- Dans SADHART-CHF et MOOD-HF, le moral s'est amélioré dans **les deux bras** : un suivi infirmier structuré aide réellement, mais la sertraline et l'escitalopram n'ont pas ajouté de gain mesurable par rapport au placebo dans ces populations majoritairement atteintes de dépression légère à modérée.
-- **Compléments du texte intégral et du supplément de MOOD-HF :**
-  - **Sous-groupe ischémique :** environ deux tiers des participants avaient une origine ischémique, sans différence de réponse par rapport aux causes non ischémiques (**73 événements sur 116** contre **80 sur 123** sous placebo ; **p d'interaction = 0,97**).
-  - **Critères cardiaques secondaires :** sous escitalopram, le NT-proBNP a moins diminué et le ventricule gauche ne s'est pas remodelé favorablement (résultats secondaires non concluants).
-  - **Tolérance et QTc :** fréquence globale d'effets indésirables graves similaire, et **aggravation de la dépression moins fréquente** sous escitalopram (**5 % contre 11 %**). L'intervalle **QTc** tendait à s'allonger davantage (hausse maximale moyenne **25 ms contre 15 ms**, non significative ; hausse > **100 ms** chez **8 % contre 2 %**).
-  - **Patients exclus :** toute personne ayant un **QTc ≥ 500 ms** ou prenant un médicament prolongeant le QT — notamment un antiarythmique de classe IA ou III comme l'amiodarone (*Cordarone*) ou le sotalol (*Sotalex*) — était exclue.
-  - **Dépression sévère et sorties d'étude :** une analyse exploratoire suggérait un pronostic moins favorable sous escitalopram en cas de dépression sévère (**MADRS > 25 : HR 1,67**), signal non confirmé qui justifie un avis spécialisé. Les 11 % contre 5 % d'arrêts à 6 semaines correspondaient aux sorties d'étude plutôt qu'à l'arrêt du comprimé lui-même.
-
-### Choix des antidépresseurs selon le consensus ESC 2025
-
-Aucun essai dédié dans l'insuffisance cardiaque n'a été identifié pour la mirtazapine, les IRSN ou les tricycliques. Le **consensus ESC 2025 sur la santé mentale et les maladies cardiovasculaires** préconise une décision partagée entre cardiologue et spécialiste de santé mentale, en réservant les antidépresseurs surtout aux dépressions **sévères** :
-
-| Classe (exemples) | Repères du consensus ESC 2025 et des données de sécurité dans l'IC |
-|---|---|
-| **ISRS** (sertraline — *Zoloft*, citalopram — *Seropram*, escitalopram — *Seroplex*) | Groupe privilégié sur le plan hémodynamique (moins d'hypotension orthostatique, de tachycardie ou de troubles conductifs). Certains peuvent allonger le QTc et accroissent le risque hémorragique sous antithrombotiques. Sertraline, citalopram et escitalopram présentent moins d'interactions enzymatiques hépatiques que fluoxétine, fluvoxamine ou paroxétine |
-| **IRSN** (venlafaxine — *Effexor*, duloxétine — *Cymbalta*) | **Prudence :** données limitées et contradictoires dans l'IC ; peuvent élever ou abaisser la tension artérielle ; taux le plus élevé d'hyponatrémie parmi les classes d'antidépresseurs (**7,4 %**, contre **5,6 %** sous ISRS ; méta-analyse Gheysens 2024) |
-| **Mirtazapine** (*Norset*) | N'a pas allongé le QTc chez des volontaires sains ; risque le plus faible d'hyponatrémie (**1,0 %**, soit environ **40 %** de risque en moins par rapport aux ISRS) ; peut provoquer prise de poids et hypotension orthostatique |
-| **Tricycliques** (amitriptyline — *Laroxyl* et apparentés) et **IMAO** | **À éviter dans l'insuffisance cardiaque :** hypotension orthostatique, aggravation de l'IC, arythmies ventriculaires et allongement plus marqué du QTc |
-| **Trazodone** | Pas d'allongement du QTc chez des volontaires sains ; faible taux d'hyponatrémie (2 études seulement) |
-| **Bupropion** (*Zyban*) | Parfois utilisé dans le sevrage tabagique coronarien, mais données rythmiques incohérentes et interactions notables en ICFER |
-
-### Points de vigilance pratiques avec les traitements de l'insuffisance cardiaque
-
-- **Amiodarone, sotalol et allongement du QT (France — RCP et ANSM) :**
-  - Les résumés des caractéristiques du produit (RCP) français de **Seroplex** (escitalopram, révisé le 15 janvier 2026) et **Seropram** (citalopram, révisé le 22 mai 2025), comme l'alerte britannique MHRA (2011), **contre-indiquent** ces deux molécules en cas de QT long et en association avec d'autres médicaments prolongeant le QT (dont les antiarythmiques de classe IA et III). Une lettre de l'**ANSM (2022)** aux prescripteurs a rappelé cette interdiction en citant expressément l'**amiodarone** et le **sotalol**.
-  - **Plafonds de doses :** escitalopram limité à **20 mg/jour** (**10 mg/jour** au-delà de 65 ans, en cas d'insuffisance hépatique ou chez les métaboliseurs lents CYP2C19) ; citalopram limité à **40 mg/jour** (**20 mg/jour** au-delà de 65 ans).
-  - Un **ECG préalable** est à envisager en cas de cardiopathie, avec correction préalable d'une hypokaliémie ou d'une hypomagnésémie, prudence en cas de bradycardie, d'infarctus récent ou d'IC décompensée, et arrêt avec ECG si des symptômes rythmiques surviennent. *Différence UK/France :* la MHRA fixe des seuils chiffrés (réduire/arrêter à 480–500 ms, arrêter > 500 ms), tandis que les RCP français ne donnent pas de seuil en millisecondes.
-- **Métoprolol :** les RCP français indiquent que le citalopram et l'escitalopram doublent approximativement les concentrations sanguines de métoprolol, avec risque de bradycardie ou de baisse tensionnelle.
-- **Sodium sanguin (hyponatrémie) :** dans la méta-analyse **Gheysens 2024**, les antidépresseurs triplent environ le risque d'hyponatrémie (**OR 3,16**), en particulier après 60 ans. Les diurétiques abaissent aussi le sodium ; bien que l'association n'ait pas été testée directement dans cette méta-analyse, demander un **contrôle de la natrémie** après initiation d'un antidépresseur est une précaution pertinente.
-- **Risque hémorragique :** les ISRS et IRSN majorent le risque de saignement avec l'aspirine, les autres antiplaquettaires, les anticoagulants et les AINS (voir l'article sur les antiplaquettaires et la protection gastrique).
-- **Antidépresseurs et survie :** les études de registres observent une mortalité plus élevée chez les patients insuffisants cardiaques sous antidépresseur, mais dans une cohorte de **1 006 patients** avec FEVG ≤ 35 % (**O'Connor 2008**, abstract), le sur-risque suivait la **dépression** (**HR 1,34**) plutôt que la prise d'ISRS (**HR 1,10**, non significatif) une fois les deux analysés ensemble. Ce biais d'indication (les patients les plus fragiles sont plus souvent traités) empêche de conclure à un effet nocif du médicament.
-- **Règle de sécurité essentielle :** n'arrêtez et ne modifiez jamais vous-même un antidépresseur prescrit ; toute adaptation appartient au médecin prescripteur en lien avec votre cardiologue.`,
+- **Familles privilégiées et familles à éviter :** lorsqu'un traitement est indiqué, les **ISRS** (comme la sertraline — *Zoloft*) sont habituellement privilégiés car ils perturbent moins la tension artérielle et le rythme. Les **tricycliques** (amitriptyline — *Laroxyl*) et les **IMAO** sont **à éviter** dans l'insuffisance cardiaque. Les **IRSN** (venlafaxine — *Effexor*, duloxétine — *Cymbalta*) demandent une prudence particulière.
+- **Association interdite avec certains antiarythmiques :** en France, le **citalopram (*Seropram*)** et l'**escitalopram (*Seroplex*)** sont **contre-indiqués** avec l'**amiodarone (*Cordarone*)**, le **sotalol (*Sotalex*)** et tout médicament allongeant l'intervalle QT (risque de trouble du rythme). Un **ECG** préalable et une correction du potassium et du magnésium sont à discuter. Ces deux molécules augmentent aussi les effets du **métoprolol** (pouls lent, baisse de tension).
+- **Contrôle du sodium sanguin :** les antidépresseurs peuvent faire baisser le sodium dans le sang (**hyponatrémie**), surtout après 60 ans et en association avec des diurétiques. Demandez à votre médecin s'il faut contrôler votre ionogramme après le début du traitement.
+- **Risque de saignement :** les ISRS et IRSN majorent le risque de saignement si vous prenez de l'aspirine, un autre antiplaquettaire ou un anticoagulant.
+- **Règle essentielle :** n'arrêtez et ne modifiez jamais un antidépresseur de votre propre initiative ; toute adaptation se fait progressivement avec votre médecin.`,
     },
     {
-      headingFr: 'Vivre avec un défibrillateur (DAI) ou après un infarctus : chocs, anxiété et TSPT',
-      bodyMarkdownFr: `- **Qualité de vie globale avec un DAI :** une revue de 15 études (**Tomzik 2015**) montre une qualité de vie globale généralement **comparable** à celle des patients sans DAI. Dans SCD-HeFT, le DAI n'a pas altéré la qualité de vie sur 30 mois, **sauf en cas de choc au cours du mois précédent**, et une baisse du bien-être psychologique n'était observée dans deux essais qu'à partir de **5 chocs ou plus**. Chez les porteurs très âgés (enquête suédoise 80–94 ans, BMC Geriatrics 2018), l'anxiété était nettement plus fréquente après choc (**24 % contre 10 %**).
-- **Prévalence consolidée (Ghezzi 2023 — 109 études, 39 954 porteurs de DAI) :**
-  - **anxiété cliniquement significative chez environ 23 %** (pic autour de **30 %** la première année) ;
-  - **dépression chez 15 %** ;
-  - **trouble de stress post-traumatique (TSPT) chez environ 12 %** ;
-  - la survenue de chocs **quadruple environ le risque d'anxiété (OR 3,92)** et presque double celui de dépression (**OR 1,87**) ;
-  - aucune différence entre DAI en prévention primaire et secondaire ; anxiété plus souvent rapportée chez les femmes ; certitude jugée faible (études majoritairement observationnelles).
-- **Stress post-traumatique après un infarctus (Edmondson 2012 — 24 études) :** des symptômes de TSPT apparaissent chez environ **12 %** des patients après un syndrome coronarien aigu (**4 %** par entretien clinique contre **16 %** par questionnaire), avec une association à un risque environ **doublé** de nouveaux événements cardiaques ou de décès (résultat reposant sur 3 études seulement).
-- **Programmes en ligne testés chez les porteurs de DAI :**
-  - **ICD-FORUM (Allemagne, 118 patients) :** programme de TCC en ligne sur 6 semaines **formellement neutre** sur son critère principal composite à 6 semaines (p = 0,50) et 1 an (p = 0,29), avec abandon presque doublé dans le bras intervention (30,5 % vs 16,9 % ; voir tableau d'intégrité ci-dessus) ;
-  - **WEBCARE (Pays-Bas, 289 patients) :** programme de résolution de problèmes en ligne sans bénéfice démontré ;
-  - une revue 2025 des traitements du TSPT après événement médical juge les preuves encore préliminaires.
-- Si la peur des chocs ou des alertes (y compris sur montre connectée) vous pèse, parlez-en à votre centre de rythmologie et à votre médecin traitant.`,
+      headingFr: 'Vivre avec un défibrillateur (DAI) ou après un infarctus',
+      bodyMarkdownFr: `- **Un vécu spécifique :** la majorité des porteurs de défibrillateur conservent une bonne qualité de vie globale, mais environ **une personne sur quatre** ressent une anxiété marquée (surtout la première année) et environ **une sur huit** présente des symptômes de **stress post-traumatique**, en particulier après un ou plusieurs chocs.
+- **Après un infarctus :** des reviviscences, une hypervigilance ou la peur d'une récidive peuvent aussi survenir (environ une personne sur huit).
+- **En parler à votre équipe :** si la peur d'un choc, les bruits de votre cœur ou les alertes d'une montre connectée vous pèsent, parlez-en à votre centre de rythmologie et à votre médecin traitant. Des explications claires et un soutien psychologique adapté aident à reprendre confiance.`,
     },
     {
       headingFr: 'Où trouver du soutien en France (et numéros d’urgence)',
@@ -152,19 +87,73 @@ Aucun essai dédié dans l'insuffisance cardiaque n'a été identifié pour la m
 
 ### Parcours remboursés en France (vérifiés au 25 novembre 2026)
 
-Les tarifs et règles pouvant évoluer, vérifiez toujours votre situation auprès de l'Assurance Maladie (ameli.fr) ou de votre CPAM :
+Les tarifs et règles pouvant évoluer, vérifiez toujours votre situation sur **ameli.fr** ou auprès de votre CPAM :
 
 - **Mon soutien psy (séances de psychologue) :**
   - jusqu'à **12 séances par année civile** avec un psychologue conventionné (1 séance d'évaluation + jusqu'à 11 séances de suivi) ;
-  - tarif conventionné de **50 € par séance**, remboursé à **60 %** (**30 €**) par l'Assurance Maladie, le reste étant généralement pris en charge par votre mutuelle ;
-  - **aucune ordonnance médicale nécessaire :** vous pouvez prendre rendez-vous directement via l'annuaire officiel **monsoutienpsy.ameli.fr** ou passer par votre médecin ;
-  - **Indications et exclusions :** réservé à l'anxiété ou la dépression **légère à modérée** ; il **exclut** le risque suicidaire, les formes sévères, les personnes déjà suivies en psychiatrie et les titulaires d'une **ALD psychiatrique** (ameli.fr ne mentionnant qu'une ALD psychiatrique, une ALD cardiaque 5 ou 13 ne paraît pas constituer une exclusion — lecture de la page à faire confirmer si besoin) ;
-  - *Évolution prévue :* la loi du **30 décembre 2025** prévoit l'extension du **tiers payant** (sans avance de frais) à toutes les séances Mon soutien psy, dans l'attente de son décret d'application (non publié lors de la vérification du 3 juillet 2026).
-- **Psychiatre :** à partir de **26 ans**, passer par votre **médecin traitant** préserve le remboursement normal (consultation secteur 1 à **55 €**, dont **36,50 €** remboursés ; hors parcours coordonné, le tarif peut atteindre **61 €** avec seulement **13 €** remboursés). Les jeunes de **16 à 25 ans** disposent d'un accès direct.
-- **CMP (centre médico-psychologique) :** structures publiques réunissant psychiatres et psychologues, avec consultations prises en charge par l'Assurance Maladie — voie privilégiée (avec le médecin traitant et le psychiatre) en cas de **dépression sévère**.
-- **Réadaptation cardiaque (SMR cardiovasculaire) et associations :** l'accompagnement psychologique fait partie intégrante des programmes de SMR (pris en charge à 100 %), et les groupes de parole d'associations vérifiées (AVEC, APODEC, ASPIC — voir l'article « Réseau de soins en France ») aident à rompre l'isolement.
+  - tarif conventionné de **50 € par séance**, remboursé à **60 %** (**30 €**) par l'Assurance Maladie, le reste étant habituellement pris en charge par votre mutuelle ;
+  - **aucune ordonnance médicale nécessaire :** prenez rendez-vous directement sur **monsoutienpsy.ameli.fr** ou via votre médecin ;
+  - **Indications et exclusions :** réservé à l'anxiété ou la dépression **légère à modérée**. Il exclut le risque suicidaire, les formes sévères, le suivi psychiatrique en cours et une **ALD psychiatrique** (une ALD cardiaque 5 ou 13 ne paraît pas constituer une exclusion — à confirmer si besoin). La généralisation du tiers payant prévue par la loi du 30 décembre 2025 attend son décret d'application.
+- **Psychiatre :** à partir de **26 ans**, passer par votre **médecin traitant** préserve le remboursement normal (consultation secteur 1 à **55 €**, dont **36,50 €** remboursés ; hors parcours coordonné, le tarif peut atteindre **61 €** avec seulement **13 €** remboursés). Accès direct de **16 à 25 ans**.
+- **CMP (centre médico-psychologique) :** structures publiques réunissant psychiatres et psychologues, prises en charge par l'Assurance Maladie — voie privilégiée avec votre médecin traitant en cas de **dépression sévère**.
+- **Réadaptation cardiaque (SMR) et associations :** l'accompagnement psychologique est inclus dans les programmes de SMR (pris en charge à 100 %). Les groupes de parole d'associations (**AVEC**, **APODEC**, **ASPIC** — voir l'article *Réseau de soins en France*) aident aussi à rompre l'isolement.`,
+    },
+    {
+      headingFr: 'Pour aller plus loin : essais sur les psychothérapies, soins collaboratifs et DAI',
+      depth: 'evidence',
+      bodyMarkdownFr: `### Prévalence, pronostic et dépistage
 
-*Repère comparatif (Royaume-Uni) :* la British Heart Foundation (BHF) oriente vers *NHS Talking Therapies* (auto-inscription en Angleterre), la ligne infirmière *BHF Heart Helpline* et sa communauté en ligne.`,
+- **Prévalence :** 20 à 30 % dans l'IC globale (Basile 2023) ; > **50 %** en IC avancée et **40 à 70 %** chez les patients hospitalisés en NYHA III–IV (HFA 2020). La dépression est associée à une mortalité accrue à 3 mois et 1 an (**OR ~2,2 à 2,5**) et à davantage de réhospitalisations (associations statistiques, non preuve causale).
+- **Dépistage seul :** dans **CODIACS-QoL** (1 500 patients post-SCA, abstract), le dépistage avec notification au médecin n'a pas amélioré la qualité de vie ni les jours sans dépression.
+
+### Essais de psychothérapies, exercice et soins collaboratifs
+
+| Approche | Essai clinique | Effet sur le moral | Effet sur le pronostic cardiaque |
+|---|---|---|---|
+| **TCC** | Freedland 2015 (158 patients + éducation infirmière) | Scores plus bas à 6 mois ; **rémission 46 % vs 19 %** et **51 % vs 20 %** selon l'échelle | Moins d'hospitalisations en analyse exploratoire uniquement |
+| **Entraînement physique** | HF-ACTION (2 331 patients) | Réduction des symptômes dépressifs à 3 et 12 mois | Voir l'article sur la réadaptation cardiaque |
+| **Soins palliatifs / support** | PAL-HF 2017 (150 patients IC avancée ; 48 % ischémiques, 55 % FEVG ≤ 40 %, 29 % mortalité à 6 mois) | **HADS-D −1,94** (p = 0,02) ; anxiété **−1,83** NS après ajustement (p = 0,063) ; ~46 % de données manquantes à 6 mois | Aucun effet sur réhospitalisations ni mortalité |
+
+- **Revue Cochrane 2024 (21 essais, 2 591 participants ; 16 coronariens, 5 IC) :** amélioration faible à modérée de la dépression (**SMD −0,36**) et de l'anxiété (**SMD −0,57**, certitude modérée), sans effet démontré sur la mortalité (**RR 0,81**, IC 95 % 0,39–1,69). **Jeyanantham 2017** (5 essais TCC en IC, FEVG ~31–40 %) : léger gain d'humeur ≥ 3 mois, sans effet sur hospitalisations (**RR 0,99**) ni décès (**RR 1,05**). TCC en ligne : **Lundgren 2016** (50 patients IC, 24 % de complétion) neutre ; **Johansson 2019** (144 patients CV mixtes, d = 0,62) positif.
+- **Soins collaboratifs :** **Hopeful Heart (2021)** (629 patients ICFER, FEVG ~28 %) améliore qualité de vie mentale (d = 0,34) et humeur (d = 0,47 vs soins usuels ; 0,24 vs suivi infirmier seul), sans effet à 12 mois sur réhospitalisations ou décès. **CASA (2018)** (314 patients IC, 45,2 % ischémiques, 44,1 % FEVG < 40 %) est **neutre** sur le KCCQ à 6 mois (+2,6 points, p = 0,19), avec gains secondaires non corrigés sur PHQ-9 (p = 0,02 à 6 mois, p = 0,006 à 12 mois) et aucune différence sur hospitalisations ou décès. **TEACH (2025)** (457 patients coronariens, 39 % IC, 14 % FEVG < 40 %) est positif sur la réponse binaire HeartQoL (**19 % vs 10 %**, **OR 2,21**, p = 0,005 ; NNT = 11) et HADS (−1,31 / −1,18). **Activation comportementale (IsHak 2024, 416 patients IC)** : chute similaire des scores dépressifs vs suivi infirmier d'antidépresseurs, SF-12 physique +2,1 points, KCCQ/mortalité neutres.
+
+### Audit méthodologique des essais comportementaux (textes intégraux et registres)
+
+| Essai (registre) | Verdict sur le critère principal | Principales limites méthodologiques |
+|---|---|---|
+| **TEACH 2025** (DRKS00020824) | **Formellement positif** (HeartQoL 19 % vs 10 %, p = 0,005) | Taux de réponse sous les hypothèses (50 % vs 35 %) ; pas de contrôle d'attention (13 appels vs lettre) ; déséquilibres initiaux ; gain du score de risque lié uniquement à l'activité auto-déclarée (58 % LDL manquants) ; pas de sous-groupe IC/FEVG |
+| **CASA 2018** (NCT01739686) | **Formellement neutre** (KCCQ +2,6, p = 0,19) | Gains dépression/fatigue sur critères secondaires non corrigés ; 21 % de données manquantes ; ~23 contacts sans contrôle d'attention ; déséquilibres initiaux |
+| **ICD-FORUM 2019** (NCT01589913) | **Formellement neutre** (6 sem. p = 0,50 ; 1 an p = 0,29) | Effectif réduit de 200 à 119 ; abandons **30,5 % vs 16,9 %** ; anxiété (p = 0,03) non significative après Bonferroni |
+| **Lundgren 2016** (NCT01681771) | **Formellement neutre** (PHQ-9 p = 0,21, d = 0,26) | Arrêté à 50/104 patients (puissance 16 %) ; forts déséquilibres NYHA/diurétiques ; 24 % de complétion |
+
+### DAI, TSPT post-infarctus et comparaison Royaume-Uni
+
+- **DAI :** qualité de vie comparable sans choc (**Tomzik 2015**, 15 études ; **SCD-HeFT**, baisse seulement après choc récent ou ≥ 5 chocs ; enquête suédoise 80–94 ans : anxiété **24 % vs 10 %** après choc). **Ghezzi 2023** (109 études, **39 954** porteurs) : anxiété **23 %** (~30 % la 1re année), dépression **15 %**, TSPT **12 %** ; chocs associés à une anxiété quadruplée (**OR 3,92**) et une dépression quasi doublée (**OR 1,87**). Programmes en ligne **ICD-FORUM** et **WEBCARE** (289 patients) neutres.
+- **TSPT post-infarctus (Edmondson 2012, 24 études) :** ~**12 %** (**4 %** entretien clinique vs **16 %** questionnaire), associé à un risque doublé d'événements CV (3 études).
+- **Repère comparatif (Royaume-Uni) :** la British Heart Foundation (BHF) oriente vers *NHS Talking Therapies* (auto-inscription en Angleterre), la ligne *BHF Heart Helpline* et sa communauté en ligne.`,
+    },
+    {
+      headingFr: "Pour aller plus loin : essais d'antidépresseurs (SADHART-CHF, MOOD-HF) et consensus ESC 2025",
+      depth: 'evidence',
+      bodyMarkdownFr: `### Essais d'ISRS dans l'insuffisance cardiaque
+
+- **SADHART-CHF (2010, 469 patients, sertraline vs placebo + soutien infirmier) :** amélioration dans les deux groupes, sans supériorité de la sertraline sur l'humeur ni sur l'état cardiovasculaire.
+- **MOOD-HF (2016, 372 patients ICFER, FEVG ~35 %, ~2/3 ischémiques, escitalopram vs placebo + soutien infirmier) :** amélioration d'environ **9 points** sur MADRS dans les deux bras (écart 0,9 point, NS) ; décès ou hospitalisations **63 % vs 64 %** sur ~18 mois (**HR 0,99**), essai arrêté prématurément. Sous-groupe ischémique sans différence (**73/116 vs 80/123**, p d'interaction = 0,97). Aggravation de la dépression moindre sous escitalopram (**5 % vs 11 %**), mais tendance à l'allongement du **QTc** (hausse > **100 ms** chez **8 % vs 2 %**). Les patients avec **QTc ≥ 500 ms** ou sous antiarythmique classe IA/III (amiodarone, sotalol) étaient exclus. Signal exploratoire défavorable si MADRS > 25 (**HR 1,67**).
+- **Registres et biais d'indication (O'Connor 2008, 1 006 patients FEVG ≤ 35 %) :** le sur-risque de mortalité suivait la **dépression** (**HR 1,34**) plutôt que la prise d'ISRS (**HR 1,10**, NS).
+
+### Choix des antidépresseurs (Consensus ESC 2025, ANSM et MHRA)
+
+| Classe (exemples) | Repères du consensus ESC 2025 et des données de sécurité dans l'IC |
+|---|---|
+| **ISRS** (sertraline — *Zoloft*, citalopram — *Seropram*, escitalopram — *Seroplex*) | Privilégiés sur le plan hémodynamique ; certains allongent le QTc et augmentent le risque hémorragique. Sertraline, citalopram et escitalopram ont moins d'interactions enzymatiques hépatiques que fluoxétine, fluvoxamine ou paroxétine |
+| **IRSN** (venlafaxine — *Effexor*, duloxétine — *Cymbalta*) | **Prudence :** données limitées/contradictoires ; effets tensionnels variables ; taux le plus élevé d'hyponatrémie (**7,4 %**, vs **5,6 %** sous ISRS ; Gheysens 2024) |
+| **Mirtazapine** (*Norset*) | Pas d'allongement QTc chez volontaires sains ; risque le plus bas d'hyponatrémie (**1,0 %**, ~40 % de moins que les ISRS) ; prise de poids et hypotension orthostatique possibles |
+| **Tricycliques** (*Laroxyl*) et **IMAO** | **À éviter dans l'IC :** hypotension orthostatique, aggravation d'IC, arythmies ventriculaires, allongement du QTc |
+| **Trazodone** | Pas d'allongement QTc chez volontaires sains ; faible taux d'hyponatrémie (2 études) |
+| **Bupropion** (*Zyban*) | Données rythmiques incohérentes et interactions notables en ICFER |
+
+- **Plafonds et seuils QT (RCP ANSM 2025–2026, lettre ANSM 2022 vs MHRA UK 2011) :** escitalopram limité à **20 mg/j** (**10 mg/j** > 65 ans, insuffisance hépatique ou métaboliseur lent CYP2C19) ; citalopram limité à **40 mg/j** (**20 mg/j** > 65 ans). La MHRA fixe des seuils chiffrés (réduire/arrêter à 480–500 ms, arrêter > 500 ms), contrairement aux RCP français.
+- **Hyponatrémie (Gheysens 2024) :** les antidépresseurs triplent environ le risque (**OR 3,16**), surtout après 60 ans.`,
     },
   ],
   relatedArticleSlugs: [

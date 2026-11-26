@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/theses/low-dose-omega3-af-risk-cad-hfref.md',
   titleFr: 'Thèse : oméga-3 à faible dose (≤ 1 g/j) et risque de fibrillation atriale',
   category: 'nutrition',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -30,7 +31,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core', 'atrialFibrillation'],
   plainSummaryFr:
-    "Verdict de l'enquête : partiellement réfutée (confiance moyenne). Il est établi que les fortes doses d'oméga-3 sur prescription (1,8 à 4 g/j) augmentent nettement le risque de fibrillation atriale (FA) chez les patients cardiaques. En revanche, affirmer qu'une gélule standard de 1 g/j ou moins est totalement dépourvue de risque de FA dans la maladie coronaire ou l'ICFER ne tient pas devant l'ensemble des preuves. Certes, aucun essai à ≤ 1 g/j n'a atteint la significativité statistique isolément (VITAL Rhythm HR 1,09, ASCEND dossiers hospitaliers RR 1,02, GISSI-HF 15,2 % contre 14,0 %). Mais presque tous les essais contemporains et toutes les méta-analyses convergent vers un léger décalage à la hausse d'environ +7 % à +12 % situé juste à la frontière de la significativité (Gencer 2021 primaire HR 1,12 ; sensibilité ASCEND-EHR HR 1,08 en effets aléatoires et 1,075 en effets fixes, rejoignant l'estimation d'Abuknesha 2026 de 1,07 chez les patients à haut risque à ≤ 1,5 g/j). Dans l'ICFER (GISSI-HF), où le taux de base de FA est élevé (3,7 %/an), cet écart correspond à +1,2 à +1,4 point absolu. De plus, les agences européenne, française et britannique (EMA PRAC sept. 2023, ANSM nov. 2023, MHRA janv. 2024) ont ajouté la FA comme effet indésirable fréquent pour tous les esters éthyliques d'acides oméga-3 sur prescription (y compris les capsules de 1 g comme Omacor), avec arrêt définitif en cas de survenue d'une FA. À l'inverse, manger du poisson gras alimentaire ne montre aucun excès de FA, et les gélules en vente libre ne sont ni testées sur les événements cardiaques ni équivalentes aux médicaments.",
+    "Les fortes doses d'oméga-3 augmentent le risque de fibrillation atriale, mais qu'en est-il des gélules à 1 g par jour ou moins ? Cette synthèse analyse les études récentes et les alertes européennes et françaises sur ce risque. Elle rappelle aussi la différence entre les gélules et le poisson gras dans l'assiette. Consultez cette fiche pour en discuter avec votre cardiologue avant toute prise.",
   sections: [
     {
       headingFr: 'Question évaluée et cartographie dose-réponse des essais randomisés',

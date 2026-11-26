@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'output/playbook-home-bp-and-smartwatches-2026-11-25.md',
   titleFr: 'Guide pratique : automesure tensionnelle et montres connectées',
   category: 'quotidien',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/theses/resistance-vs-aerobic-training-in-cardiac-rehab.md',
   titleFr: 'Musculation versus entraînement aérobie en réadaptation cardiaque',
   category: 'quotidien',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -30,7 +31,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Thèse contredite (confiance moyenne) : la musculation (renforcement musculaire) est un complément sûr et utile en réadaptation cardiaque, pas un substitut supérieur à l'entraînement aérobie. Dans l'insuffisance cardiaque stable à FEVG réduite, le renforcement musculaire améliore la condition physique (environ +2,6 mL/kg/min de pic de VO2) et la force, à peu près autant que l'endurance sur la capacité d'effort, mais pas davantage. L'entraînement aérobie (marche, vélo) reste la modalité disposant des preuves les plus constantes d'amélioration de la FEVG et du remodelage ventriculaire, ainsi que la seule évaluée dans un grand essai clinique sur les hospitalisations et la survie (HF-ACTION). Les recommandations européennes, américaines et françaises font de l'aérobie le socle et y ajoutent le renforcement musculaire, ou commencent par la force chez les personnes très fragiles ou déconditionnées. En France, la HAS recommande le « renforcement musculaire » avec l'endurance tout en listant « la musculation » et les efforts intenses comme contre-indiqués sans définir le terme : validez toujours vos exercices et vos charges avec votre équipe de réadaptation.",
+    "La musculation seule peut-elle remplacer l'endurance en réadaptation cardiaque ? Cette synthèse compare leurs effets sur le cœur et la capacité d'effort dans l'insuffisance cardiaque stable. Les études placent l'endurance comme socle et le renforcement musculaire en complément sûr et utile. Consultez cette fiche pour valider vos exercices et vos charges avec votre équipe de réadaptation.",
   sections: [
     {
       headingFr: 'Question évaluée, règle de verdict et conclusion',

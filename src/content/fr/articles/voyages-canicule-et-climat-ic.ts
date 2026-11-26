@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/travel-heat-and-climate-in-hf.md',
   titleFr: "Voyages, altitude, canicule et extrêmes climatiques dans l'IC",
   category: 'quotidien',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

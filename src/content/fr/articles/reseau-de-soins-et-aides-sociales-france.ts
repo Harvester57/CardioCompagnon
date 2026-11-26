@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/topics/french-care-network-and-social-support.md',
   titleFr: 'Réseau de soins en France, aides sociales, mutuelle et associations',
   category: 'france',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'hot',

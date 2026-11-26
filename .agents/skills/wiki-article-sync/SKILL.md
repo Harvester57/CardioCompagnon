@@ -19,8 +19,20 @@ Each article lives in its own file `src/content/fr/articles/<slug>.ts` and is au
 - Export name must be `export const article: WikiArticle = { ... }` matching [src/types/content.ts](../../../src/types/content.ts).
 - `slug` must match the filename (without `.ts`) and exist in [expected-slugs.ts](../../../src/content/fr/expected-slugs.ts).
 - Every slug in `relatedArticleSlugs` must also exist in `EXPECTED_ARTICLE_SLUGS`.
-- Required non-empty fields: `titleFr`, `plainSummaryFr` (the "En clair" box), `sections` (`headingFr`, `bodyMarkdownFr`), `sources` (`label`, `detail`), `asOf` (`YYYY-MM-DD`), `confidence`, `volatility`, `disclaimerType` (`'medical'` or `'legal_france'`).
+- Required non-empty fields: `titleFr`, `readingTier` (`'essential' | 'deep_dive' | 'reference'`), `plainSummaryFr` (the "En clair" box), `sections` (`headingFr`, `bodyMarkdownFr`, optional `depth: 'patient' | 'evidence'`), `sources` (`label`, `detail`), `asOf` (`YYYY-MM-DD`), `confidence`, `volatility`, `disclaimerType` (`'medical'` or `'legal_france'`).
 - Keep `asOf` aligned with the YAML frontmatter date (`updated`, `generated`, or `created`) of the source file. If you update `asOf` globally, also check the expected date assertion in [manifest.test.ts](../../../src/content/fr/__tests__/manifest.test.ts).
+
+## 2.1 Editorial Import & Non-Specialist Readability Contract
+
+Never translate specialist `llm-wiki` files verbatim into patient-facing cards. Every imported or updated article must be triaged and shaped according to its `readingTier`:
+
+- **`essential` (budget: 12 to 24 articles, shown by default):** Core patient guides in plain French.
+  - Keep `plainSummaryFr` concise (3 to 4 plain sentences) with zero statistical notation (`HR`, `RR`, `IC 95 %`, `p = ...`) or dense trial-name lists.
+  - Include `keyTakeawaysFr` (3 to 5 short, actionable bullets, <= 240 chars each, no statistical jargon).
+  - Put practical explanations in standard sections (`depth: 'patient'`, default) and move trial data, ESC/AHA/NICE class tables, and study debates into collapsible `depth: 'evidence'` sections.
+- **`deep_dive` (topic/concept/playbook articles):** Surfaced via search, category, profile modules, or the *"Approfondir"* filter. Start with a plain-French summary and practical guidance; place detailed trial comparisons in `depth: 'evidence'` sections.
+- **`reference` (all `wiki/theses/*` and `wiki/references/*` except `wiki/references/driving-rules.md`):** Enforced automatically by [check-wiki-sync.ts](../../../scripts/check-wiki-sync.ts) and [manifest.test.ts](../../../src/content/fr/__tests__/manifest.test.ts). Full scientific fidelity is welcome in the body, but `plainSummaryFr` must still explain in plain French what the study/reference covers and why a patient might discuss it with their cardiologist.
+- **New upstream wiki files:** When `npm run check:wiki-sync` reports newly added files in `wiki/` or `output/`, decide whether to import them as `reference`/`deep_dive` or fold their findings into an existing article's `depth: 'evidence'` section rather than inflating the `essential` tier.
 
 ## 3. French Clinical Localization Rules
 
@@ -65,7 +77,7 @@ When updating content, check whether any of the 5 structured catalogs in [src/co
 - [medications-reference.ts](../../../src/content/fr/catalogs/medications-reference.ts) -- 4 pillars, starting/target doses, titration intervals, contraindicated classes.
 - [interactions-catalog.ts](../../../src/content/fr/catalogs/interactions-catalog.ts) -- Food, supplement, and drug interactions (`verdict`, affected classes).
 - [french-admin-catalog.ts](../../../src/content/fr/catalogs/french-admin-catalog.ts) -- 12 French administrative items (`FrenchAdminItemId`).
-- [questions-catalog.ts](../../../src/content/fr/catalogs/questions-catalog.ts) -- Consultation questions linked to `articleSlug`, `relevantModules`, and `triggeredByRules`.
+- [questions-catalog.ts](../../../src/content/fr/catalogs/questions-catalog.ts) -- Consultation questions linked to `articleSlug`, `relevantModules`, and `triggeredByRules`. Keep `questionFr` and `whyItMattersFr` in plain French with zero statistical/guideline jargon (`HR`, `RR`, `IC 95 %`, `p =`, `Classe I/IIa/IIb` — place study citations in `sources` instead; enforced by [manifest.test.ts](../../../src/content/fr/__tests__/manifest.test.ts)).
 - [glossary.ts](../../../src/content/fr/catalogs/glossary.ts) -- Cardiology terms used by `GlossaryTooltip`.
 
 ## 6. Verification Steps

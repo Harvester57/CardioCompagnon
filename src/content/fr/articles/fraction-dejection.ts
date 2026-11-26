@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/ejection-fraction.md',
   titleFr: "La fraction d'éjection (FEVG)",
   category: 'diagnostic',
+  readingTier: 'essential',
   asOf: '2026-11-25',
   confidence: 'high',
   volatility: 'warm',
@@ -28,21 +29,56 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "La fraction d'éjection du ventricule gauche (FEVG) est le pourcentage de sang contenu dans le ventricule gauche qui est expulsé à chaque battement. Elle n'est jamais de 100 %, même dans un cœur sain. Une FEVG à 35 % signifie qu'environ un tiers du sang est éjecté à chaque contraction : elle est clairement « réduite » selon toutes les recommandations actuelles. C'est un repère utile mais imparfait : les seuils ont évolué dans les recommandations ESC 2026, la Deuxième définition universelle de 2026 ne fixe aucune frontière chiffrée, et les mesures peuvent varier de plusieurs points entre une ETT et une IRM cardiaque.",
+    "La fraction d'éjection du ventricule gauche (FEVG) indique le pourcentage de sang que votre cœur éjecte à chaque battement : elle n'est jamais de 100 %, même dans un cœur sain. Une valeur à 35 % correspond à une FEVG réduite, mais ce chiffre est un repère à interpréter avec votre cardiologue, pas un verdict figé. Attention : les résultats d'une échographie (ETT) et d'une IRM cardiaque ne sont pas directement comparables.",
+  keyTakeawaysFr: [
+    "Une FEVG normale se situe généralement au-dessus de 50 %, mais une valeur plus basse ne signifie pas automatiquement des symptômes sévères.",
+    "Comparez toujours deux mesures réalisées avec la même technique (ETT avec ETT, IRM avec IRM), car l'IRM donne souvent un chiffre inférieur de plusieurs points.",
+    "Le seuil de 35 % après au moins 3 mois de traitement optimisé sert de repère pour discuter avec votre cardiologue d'un défibrillateur (DAI) ou d'une resynchronisation (CRT).",
+    "La FEVG est utile pour suivre votre cœur, mais elle ne résume pas à elle seule votre santé : vos symptômes, votre tolérance à l'effort et la taille du cœur comptent tout autant.",
+  ],
   sections: [
     {
       headingFr: 'Ce que mesure la FEVG',
-      bodyMarkdownFr: `Le guide patient ESC définit la FEVG comme le pourcentage de sang éjecté par le ventricule gauche à chaque battement cardiaque. Il insiste sur trois points essentiels :
+      bodyMarkdownFr: `La FEVG correspond au pourcentage de sang contenu dans votre ventricule gauche qui est expulsé à chaque battement cardiaque. Trois repères simples aident à la lire sans inquiétude excessive :
 
-- une large plage de valeurs peut être normale selon les personnes ;
-- une FEVG inférieure à 50 % ne signifie pas automatiquement une insuffisance cardiaque sévère ;
-- une FEVG supérieure à 50 % ne garantit pas un fonctionnement cardiaque parfaitement normal.
+- **Elle n'est jamais de 100 %.** Dans un cœur sain, la limite inférieure de la normale se situe autour de **52 % chez l'homme** et **53 % chez la femme** (en général entre 50 et 70 %).
+- **Une FEVG inférieure à 50 %** ne signifie pas automatiquement que vos symptômes sont sévères ; certaines personnes se sentent bien au quotidien malgré un chiffre bas.
+- **Une FEVG supérieure à 50 %** ne garantit pas non plus que le cœur fonctionne parfaitement (il existe des insuffisances cardiaques à FEVG préservée).
 
-Elle est le plus souvent mesurée par **échocardiographie transthoracique (ETT)**. L'**IRM cardiaque** fournit une image plus détaillée et peut aussi détecter des zones de cicatrice (guide patient ESC).`,
+En pratique, une valeur de **35 %** correspond à une insuffisance cardiaque à **FEVG réduite** (ICFER) dans tous les documents médicaux. Si votre FEVG remonte sous traitement d'au moins **10 points** pour dépasser **40 %**, votre cardiologue peut parler de **FEVG améliorée** (voir *Insuffisance cardiaque à FEVG améliorée (HFimpEF)*).
+
+La FEVG est mesurée le plus souvent par **échocardiographie transthoracique (ETT)**, et parfois par **IRM cardiaque**, qui fournit une image plus détaillée et montre également les zones cicatricielles.`,
     },
     {
-      headingFr: 'Les catégories de FEVG et pourquoi les sources divergent',
-      bodyMarkdownFr: `Les catégories d'insuffisance cardiaque fondées sur la FEVG ont changé en 2026 ; des documents publiés à des dates différentes affichent donc des seuils différents.
+      headingFr: 'Pourquoi 35 % est un repère important dans votre suivi',
+      bodyMarkdownFr: `Le seuil de **35 %** sert de point de repère pour discuter d'un défibrillateur automatique implantable (DAI) préventif et, si votre électrocardiogramme (ECG) montre un décalage électrique (complexe QRS élargi), d'une thérapie de resynchronisation cardiaque (CRT).
+
+Ce seuil s'apprécie **après au moins 3 mois de traitement médical optimisé**. C'est pourquoi votre cardiologue programme souvent un nouveau contrôle de la FEVG une fois vos médicaments de fond augmentés progressivement (voir *Dispositifs cardiaques implantés : DAI et CRT*).`,
+    },
+    {
+      headingFr: 'Ne comparez pas une échographie (ETT) et une IRM',
+      bodyMarkdownFr: `Deux comptes rendus indiquant par exemple **35 %** et **30 %** ne signifient pas forcément que votre cœur a faibli. L'échocardiographie (ETT) et l'IRM cardiaque ne mesurent pas la cavité exactement de la même manière :
+
+- chez une même personne, **l'IRM donne souvent une FEVG inférieure de plusieurs points** à celle de l'ETT (environ **5,5 points** de moins en moyenne) ;
+- autour de 35 %, il est fréquent qu'un examen se situe juste au-dessus et l'autre juste en dessous.
+
+**En pratique :** comparez toujours deux examens réalisés avec la **même technique** (ETT avec ETT, IRM avec IRM), et discutez de l'évolution globale avec votre cardiologue.`,
+    },
+    {
+      headingFr: 'Ce que la FEVG ne dit pas à elle seule',
+      bodyMarkdownFr: `La FEVG est un indicateur précieux pour orienter votre traitement, mais elle a des limites importantes :
+
+- **Elle décrit mieux un groupe qu'un individu.** Une FEVG basse augmente le risque moyen de trouble du rythme dans une grande population, mais elle prédit mal ce qui arrivera à une personne précise.
+- **D'autres paramètres comptent tout autant.** Votre cardiologue regarde aussi vos symptômes au quotidien, votre tolérance à l'effort, la taille de votre ventricule gauche (dilatation), l'étendue éventuelle d'une cicatrice à l'IRM et votre réponse aux traitements.
+
+Ces nuances expliquent pourquoi les décisions (notamment autour d'un dispositif implantable) se prennent toujours au cas par cas (voir *Dispositifs cardiaques implantés : DAI et CRT*).`,
+    },
+    {
+      headingFr: "Comparaison des seuils (ESC, AHA, BHF) et données d'études",
+      depth: 'evidence',
+      bodyMarkdownFr: `### Pourquoi les catégories de FEVG varient selon les brochures
+
+Les recommandations européennes ont évolué en 2026 ; des documents publiés à des dates ou dans des pays différents affichent donc des tranches distinctes :
 
 | Référentiel | Réduite (ICFER / *HFrEF*) | Catégorie intermédiaire | Préservée (*HFpEF*) |
 |---|---|---|---|
@@ -52,58 +88,14 @@ Elle est le plus souvent mesurée par **échocardiographie transthoracique (ETT)
 | Fiche patient AHA (États-Unis, 2025) | ≤ 40 % | 41–49 % | Normale : 50–70 % |
 | Page Cleveland Clinic (États-Unis, 2026) | ≤ 39 % | 40–49 % | Normale : 50–70 % |
 
-Sources : recommandations ESC 2026 ; guide patient ESC ; BHF ; page FEVG de l'AHA ; page FEVG de la Cleveland Clinic.
+- **Suppression de la tranche intermédiaire (ESC 2026).** Le groupe de travail a retiré la catégorie « modérément réduite » car sa biologie et sa réponse aux traitements rejoignent celles de l'ICFER. Le livret patient ESC formule « ≤ 50 % » tandis que le texte complet indique « < 50 % » (nuance uniquement à exactement 50 %).
+- **Divergences entre sites patients.** La page web de l'AHA cite une normale de 55–70 % contre 50–70 % sur sa fiche imprimable ; la Cleveland Clinic indique 52–72 % (homme) et 54–74 % (femme) et qualifie 30–40 % de « modérément anormale » ; *Heart Failure Matters* (ESC) affiche encore les trois anciennes tranches (< 40 % pour réduite).
+- **Deuxième définition universelle de l'insuffisance cardiaque (juin 2026, AHA/ACC/ESC/WHF).** Consensus de terminologie distinct des recommandations ESC : elle distingue FEVG réduite, préservée et améliorée **sans fixer de frontière chiffrée** (ni pour la FEVG ni pour les peptides natriurétiques), jugeant les seuils fixes arbitraires. Elle rappelle que la limite inférieure normale est d'environ 53 % chez la femme et 52 % chez l'homme, et qu'une FEVG < 50 % est peu susceptible d'être normale. Pour la **FEVG améliorée (HFimpEF)**, l'ESC 2026 et la définition universelle 2021/2026 retiennent un gain absolu d'au moins 10 points permettant de dépasser 40 %, en précisant en 2026 que la FEVG seule ne suffit pas (distinction entre amélioration, rémission et récupération).
 
-- **Les sites grand public ne concordent pas toujours entre eux** (AHA ; Cleveland Clinic ; Heart Failure Matters) :
-  - La page web de l'AHA indique une normale de 55 à 70 %, alors que sa fiche imprimable indique 50 à 70 %.
-  - Le tableau par sexe de la Cleveland Clinic situe la normale entre 52 et 72 % chez l'homme et entre 54 et 74 % chez la femme, et qualifie une valeur de 30 à 40 % de « modérément anormale ».
-  - Le site patient de l'ESC (*Heart Failure Matters*) utilise encore les trois anciennes tranches, avec « moins de 40 % » comme FEVG réduite.
-- **Pourquoi la catégorie intermédiaire a été supprimée.** Le groupe de travail ESC 2026 a retiré la catégorie « modérément réduite » parce qu'elle partage la même biologie et la même réponse aux traitements que l'ICFER (recommandations ESC 2026).
-- **Nuance de formulation.** Le livret patient ESC formule le seuil comme « inférieure ou égale à 50 % », tandis que le texte complet des recommandations indique « < 50 % ». Cette différence ne joue qu'à exactement 50 %.
-- **Une FEVG de 35 % relève de l'ICFER dans tous ces systèmes.** L'étiquette diagnostique reste identique ; seule change la façon dont les documents plus anciens découpent les tranches autour d'elle.
+### Écarts de mesure ETT vs IRM et pouvoir prédictif
 
-**Une définition internationale distincte, et non une recommandation thérapeutique.** En juin 2026, l'AHA, l'ACC, l'ESC et la Fédération mondiale du cœur (WHF) ont publié la *Deuxième définition universelle de l'insuffisance cardiaque*, un consensus sur la terminologie. Il s'agit d'un document différent des recommandations ESC 2026 du tableau ci-dessus, qui ne modifie ni les seuils de l'ESC ni aucun seuil thérapeutique (Définition universelle 2026) :
-
-- **Trois groupes, sans frontière chiffrée.** Elle distingue l'insuffisance cardiaque à FEVG réduite, préservée ou améliorée. Elle s'abstient délibérément de fixer **tout chiffre** séparant FEVG réduite et FEVG préservée, qualifiant les anciens seuils fixes d'arbitraires en raison de la variabilité des mesures, des écarts entre examens d'imagerie et des questions non résolues liées au sexe, à l'âge et à l'origine ethnique.
-- **Pas de groupe « modérément réduite ».** Elle ne conserve pas cette catégorie. Elle suggère avec prudence que les FEVG légèrement réduites pourraient être regroupées avec les FEVG réduites, et les valeurs plus élevées avec les FEVG préservées.
-- **Les seuls chiffres de plage normale.** La limite inférieure de la FEVG normale est d'environ **53 % chez la femme et 52 % chez l'homme** (légèrement plus élevée chez les personnes d'origine asiatique), de sorte qu'une FEVG **inférieure à 50 %** a peu de chances d'être normale quels que soient le sexe, l'âge ou l'origine ethnique.
-- **Aucun seuil de peptides natriurétiques** n'est fixé non plus. Des taux élevés confortent le diagnostic, mais le document n'établit pas de valeurs seuils.
-- Une FEVG de 35 % se situe largement en dessous du niveau de 50 % qu'elle juge peu susceptible d'être normal. Comme le texte ne fixe pas de frontière chiffrée, qualifier 35 % de « réduite » selon ce document relève de l'interprétation plutôt que d'une règle explicite.
-
-**FEVG améliorée (HFimpEF).** Une catégorie spécifique existe lorsque la FEVG remonte sous traitement :
-
-- **ESC 2026 :** hausse absolue d'au moins 10 points, aboutissant à une valeur supérieure à 40 % (recommandations ESC 2026).
-- **Définition universelle de 2021 :** valeur initiale inférieure ou égale à 40 %, puis gain d'au moins 10 points permettant de dépasser 40 % (revue HFimpEF).
-- **Deuxième définition universelle de 2026 :** reprend cette description (hausse d'au moins 10 points permettant de dépasser 40 % après une FEVG réduite), mais précise qu'une définition fondée uniquement sur la FEVG ne suffit pas, car les mesures varient et une cicatrice, des marqueurs sanguins élevés ou des symptômes persistent souvent. Elle distingue également amélioration, rémission et récupération (Définition universelle 2026).
-
-Pour en savoir plus, consultez *Insuffisance cardiaque à FEVG améliorée (HFimpEF)*.`,
-    },
-    {
-      headingFr: 'Pourquoi 35 % est un chiffre clé',
-      bodyMarkdownFr: `Le seuil de **35 %** sert de repère pour discuter un défibrillateur automatique implantable (DAI) préventif et, en présence d'un complexe QRS élargi à l'ECG, une thérapie de resynchronisation cardiaque (CRT). Les recommandations ESC 2026 appliquent ce seuil **après au moins 3 mois de traitement médical optimisé**. C'est l'une des raisons pour lesquelles votre cardiologue réévalue souvent la FEVG une fois les médicaments augmentés progressivement (recommandations ESC 2026 ; guide patient ESC ; voir *Dispositifs cardiaques implantés : DAI et CRT*).`,
-    },
-    {
-      headingFr: "L'écart entre deux méthodes de mesure (ETT et IRM)",
-      bodyMarkdownFr: `Les données les plus directes proviennent de l'essai **REVIVED-BCIS2**. Chez 373 patients présentant une dysfonction ventriculaire gauche ischémique, la FEVG a été mesurée à la fois par échocardiographie (ETT) et par IRM cardiaque, chacune étant interprétée en aveugle par un laboratoire central (analyse ETT vs IRM de REVIVED-BCIS2) :
-
-- **Valeurs moyennes.** La FEVG moyenne était de **31,4 % en ETT et de 25,8 % en IRM**. L'IRM donnait en moyenne une valeur inférieure d'environ **5,5 points**.
-- **Concordance.** Seules **7,5 %** des paires de mesures se situaient à moins de 5 points l'une de l'autre. Les limites d'agrément étaient très larges : de **−24,4 à +13,2 points**.
-- **Autour du seuil de 35 %.** Un tiers des patients dont la FEVG en IRM était inférieure à 35 % avaient une FEVG en ETT supérieure ou égale à 35 %.
-- **Conséquence sur les décisions.** Parmi ces patients aux résultats discordants, 45 % ont reçu un DAI, contre 61 % lorsque les deux examens s'accordaient sur une FEVG inférieure à 35 %.
-- **Limite à garder à l'esprit.** Les deux examens étaient espacés d'environ six semaines en moyenne : une partie de l'écart peut donc refléter une évolution réelle du cœur.
-
-**En pratique :** deux comptes rendus indiquant par exemple 35 % et 30 % ne signifient pas nécessairement que votre cœur a changé. Il faut toujours comparer deux examens réalisés avec la **même technique** (ETT avec ETT, IRM avec IRM).`,
-    },
-    {
-      headingFr: "La FEVG prédit mieux le risque d'un groupe que celui d'un individu",
-      bodyMarkdownFr: `L'analyse **PROFID** a regroupé les données de **140 204 personnes** après un infarctus du myocarde :
-
-- **Risque à l'échelle d'un groupe.** La FEVG sépare bien les niveaux de risque moyen. Sans DAI, le taux de mort subite cardiaque à 3 ans était de **3,41 %** lorsque la FEVG était inférieure ou égale à 35 %, contre **0,87 %** au-dessus de 35 %.
-- **Risque individuel.** La FEVG seule identifiait *quelle personne précise* ferait une mort subite à peine mieux que le hasard (statistique C de **0,50 à 0,56**). L'ajout de nombreuses autres variables ou de mesures de cicatrice en IRM n'a que légèrement amélioré cette prédiction.
-
-De même, dans la sous-étude de REVIVED-BCIS2, le volume télésystolique du ventricule gauche (la taille du cœur restant après la contraction) prédisait l'évolution clinique, contrairement à la FEVG après ajustement.
-
-Ces résultats alimentent le débat présenté dans *Dispositifs cardiaques implantés : DAI et CRT*.`,
+- **Sous-étude ETT vs IRM de REVIVED-BCIS2 (373 patients, lecture en aveugle par laboratoire central).** La FEVG moyenne était de **31,4 % en ETT** contre **25,8 % en IRM** (écart moyen d'environ **5,5 points**). Seules **7,5 %** des paires se situaient à moins de 5 points l'une de l'autre (limites d'agrément de **−24,4 à +13,2 points**). Un tiers des patients ayant une FEVG IRM < 35 % avaient une FEVG ETT ≥ 35 %, avec un taux d'implantation de DAI de 45 % contre 61 % en cas de concordance (les deux examens étant toutefois espacés d'environ 6 semaines en moyenne). Dans cette même sous-étude, le volume télésystolique du ventricule gauche prédisait l'évolution clinique, contrairement à la FEVG après ajustement.
+- **Analyse poolée PROFID (140 204 patients post-infarctus).** Sans DAI, le taux de mort subite cardiaque à 3 ans était de **3,41 %** si la FEVG était ≤ 35 % contre **0,87 %** au-dessus de 35 %. En revanche, la FEVG seule discriminait mal le risque individuel (statistique C de **0,50 à 0,56**), et l'ajout d'autres variables ou de la cicatrice IRM n'a que légèrement amélioré cette prédiction.`,
     },
   ],
   relatedArticleSlugs: [

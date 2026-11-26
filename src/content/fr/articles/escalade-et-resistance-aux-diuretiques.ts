@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/diuretic-escalation-and-resistance.md',
   titleFr: 'Escalade et résistance aux diurétiques dans l’insuffisance cardiaque',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium-high',
   volatility: 'warm',

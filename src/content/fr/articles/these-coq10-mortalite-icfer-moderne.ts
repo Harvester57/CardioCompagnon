@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/theses/coq10-mortality-contemporary-hfref.md',
   titleFr: 'Thèse : CoQ10 et mortalité dans l’ICFER sous traitement moderne',
   category: 'nutrition',
+  readingTier: 'reference',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',
@@ -30,7 +31,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Verdict de l'enquête : preuves insuffisantes (confiance moyenne). Bien que la coenzyme Q10 (CoQ10) soit le complément le plus fréquemment cité pour un effet sur la survie, aucun essai clinique achevé n'a testé la CoQ10 sur la mortalité ou les hospitalisations pour insuffisance cardiaque en complément de la quadrithérapie moderne (incluant sacubitril/valsartan — Entresto — et inhibiteurs du SGLT2). La quasi-totalité du signal historique repose sur un seul petit essai ancien (Q-SYMBIO, 2014 : 420 patients sur 550 prévus recrutés en 8 ans, 87 événements majeurs, cofinancement et suivi opérationnel partiels par l'industrie, aucun gain sur la FEVG ou le NT-proBNP, aucun sous-groupe ischémique dédié et quasiment aucun effet hors Europe) et sur un essai de 1993 antérieur aux bêtabloquants (Morisco). L'audit des textes intégraux révèle que les méta-analyses souvent citées (Lei et Liu 2017, reprises par Khan 2021 et An 2022) mélangeaient une étude suédoise de sujets âgés en bonne santé sous sélénium + CoQ10 (KISEL-10) et des enfants : lorsque l'évaluation publique britannique NIHR HTA (2022) ne conserve que les essais d'insuffisance cardiaque, la baisse de mortalité n'est plus statistiquement significative (RR 0,68 ; IC 95 % 0,45–1,03). Trois grands essais européens modernes sont en cours (CORAL, DANUTRIO-HF et SELEQT-HF ; résultats attendus entre 2028 et 2030). Point de sécurité majeur : ne débutez jamais la CoQ10 de votre propre initiative si vous prenez un antivitamine K (warfarine — Coumadine, fluindione — Previscan, acénocoumarol — Sintrom).",
+    "La coenzyme Q10 est souvent présentée comme bénéfique pour le cœur, mais son effet sur la survie reste non démontré avec les traitements modernes de l'insuffisance cardiaque. Cette synthèse examine les limites des études anciennes et présente les grands essais européens en cours. Elle signale aussi les précautions importantes, notamment si vous prenez un anticoagulant antivitamine K, pour en parler avec votre cardiologue.",
   sections: [
     {
       headingFr: 'Hypothèse évaluée et arguments en faveur (volet historique)',

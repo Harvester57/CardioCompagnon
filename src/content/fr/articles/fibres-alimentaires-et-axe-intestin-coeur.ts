@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/dietary-fibre-and-gut-heart-axis.md',
   titleFr: 'Fibres alimentaires, microbiote et axe intestin-cœur',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

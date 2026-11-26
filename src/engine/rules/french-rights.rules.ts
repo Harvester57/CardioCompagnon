@@ -51,7 +51,7 @@ export function evaluateFrenchRightsRules(state: PatientState): RuleOutput[] {
         category: 'france',
         titleFr: "Réadaptation cardiaque (SMR cardiovasculaire) recommandée",
         explanationFr:
-          "La réadaptation cardiaque encadrée est une recommandation de Classe I (ESC 2026) pour améliorer la capacité d'effort et la qualité de vie. En France, le SMR cardiovasculaire (en hôpital de jour ou en séjour) bénéficie d'une prise en charge sans demande d'accord préalable (HAS 2024).",
+          "La réadaptation cardiaque encadrée est fortement recommandée en Europe et en France pour améliorer la capacité d'effort et la qualité de vie. En France, le SMR cardiovasculaire (en hôpital de jour ou en séjour) bénéficie d'une prise en charge sans demande d'accord préalable (HAS 2024).",
         suggestedActionFr:
           "Demandez à votre cardiologue une prescription de réadaptation cardiaque (SMR cardiovasculaire) adaptée à votre rythme et à votre lieu de vie.",
         evidenceGrade: 'ESC 2026 Classe I / HAS 2024',

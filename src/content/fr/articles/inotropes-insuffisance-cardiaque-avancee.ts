@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/inotropes-in-advanced-heart-failure.md',
   titleFr: 'Inotropes dans l’insuffisance cardiaque avancée (dobutamine, milrinone, lévosimendan, omécamtiv)',
   category: 'traitements',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

@@ -5,6 +5,7 @@ export const article: WikiArticle = {
   sourceWikiPath: 'wiki/concepts/heart-energy-supplements.md',
   titleFr: 'Compléments énergétiques cardiaques : créatine, taurine, D-ribose et cétones',
   category: 'nutrition',
+  readingTier: 'deep_dive',
   asOf: '2026-11-25',
   confidence: 'medium',
   volatility: 'warm',

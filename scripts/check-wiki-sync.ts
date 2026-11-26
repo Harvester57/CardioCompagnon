@@ -9,6 +9,11 @@ import type { WikiArticle } from '../src/types';
 const DEFAULT_WIKI_ROOT = path.join(os.homedir(), 'Documents', 'wiki', 'topics', 'ischaemic-cardiomyopathy');
 const ALLOWED_SOURCE_PREFIXES = ['wiki/', 'output/'] as const;
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+const VALID_READING_TIERS = new Set(['essential', 'deep_dive', 'reference']);
+const REFERENCE_PATH_PATIENT_ALLOWLIST = new Set(['wiki/references/driving-rules.md']);
+const IGNORED_WIKI_FILES = new Set(['_index.md', '_log.md', 'uncompiled-source-coverage.md']);
+const ESSENTIAL_TIER_MIN = 12;
+const ESSENTIAL_TIER_MAX = 24;
 
 interface SyncCheckEntry {
   slug: string;
@@ -16,8 +21,66 @@ interface SyncCheckEntry {
   asOf: string;
   sourceDate?: string;
   sourceDateField?: string;
-  status: 'ok' | 'stale' | 'mismatch' | 'missing_source' | 'missing_frontmatter_date' | 'forbidden_path';
+  status:
+    | 'ok'
+    | 'stale'
+    | 'mismatch'
+    | 'missing_source'
+    | 'missing_frontmatter_date'
+    | 'forbidden_path'
+    | 'invalid_tier';
   detail: string;
+}
+
+function suggestReadingTierForSource(relPath: string): 'essential' | 'deep_dive' | 'reference' {
+  const normalized = relPath.replace(/\\/g, '/').trim();
+  if (normalized.startsWith('wiki/theses/')) {
+    return 'reference';
+  }
+  if (normalized.startsWith('wiki/references/') && !REFERENCE_PATH_PATIENT_ALLOWLIST.has(normalized)) {
+    return 'reference';
+  }
+  return 'deep_dive';
+}
+
+function validateArticleTierPolicy(article: WikiArticle): string | null {
+  if (!VALID_READING_TIERS.has(article.readingTier)) {
+    return `readingTier invalide (« ${String(article.readingTier)} »).`;
+  }
+  const normalizedPath = article.sourceWikiPath.replace(/\\/g, '/').trim();
+  if (normalizedPath.startsWith('wiki/theses/') && article.readingTier !== 'reference') {
+    return `Les synthèses wiki/theses/* doivent avoir readingTier='reference' (reçu '${article.readingTier}').`;
+  }
+  if (
+    normalizedPath.startsWith('wiki/references/') &&
+    !REFERENCE_PATH_PATIENT_ALLOWLIST.has(normalizedPath) &&
+    article.readingTier !== 'reference'
+  ) {
+    return `Les fiches wiki/references/* doivent avoir readingTier='reference' (reçu '${article.readingTier}').`;
+  }
+  return null;
+}
+
+function collectAllowedWikiMarkdownFiles(wikiRoot: string): string[] {
+  const results: string[] = [];
+
+  function walk(absDir: string, relPrefix: string) {
+    if (!fs.existsSync(absDir)) return;
+    for (const entry of fs.readdirSync(absDir, { withFileTypes: true })) {
+      const rel = `${relPrefix}${entry.name}`;
+      if (entry.isDirectory()) {
+        if (entry.name === 'sources' || entry.name.startsWith('.')) continue;
+        walk(path.join(absDir, entry.name), `${rel}/`);
+      } else if (entry.isFile() && entry.name.endsWith('.md')) {
+        if (IGNORED_WIKI_FILES.has(entry.name)) continue;
+        results.push(rel);
+      }
+    }
+  }
+
+  walk(path.join(wikiRoot, 'wiki'), 'wiki/');
+  walk(path.join(wikiRoot, 'output'), 'output/');
+  return results.sort();
 }
 
 function isAllowedWikiRelativePath(relPath: string): boolean {
@@ -76,6 +139,8 @@ async function runWikiSyncCheck(): Promise<void> {
 
   const expectedSet = new Set<string>(EXPECTED_ARTICLE_SLUGS);
   const foundSlugs = new Set<string>();
+  const importedSourcePaths = new Set<string>();
+  const tierCounts = { essential: 0, deep_dive: 0, reference: 0 };
   const extraFiles: string[] = [];
   const invalidModules: string[] = [];
   const entries: SyncCheckEntry[] = [];
@@ -94,6 +159,20 @@ async function runWikiSyncCheck(): Promise<void> {
     }
 
     foundSlugs.add(article.slug);
+    importedSourcePaths.add(article.sourceWikiPath.replace(/\\/g, '/').trim());
+
+    const tierError = validateArticleTierPolicy(article);
+    if (tierError) {
+      entries.push({
+        slug: article.slug,
+        sourceWikiPath: article.sourceWikiPath,
+        asOf: article.asOf,
+        status: 'invalid_tier',
+        detail: tierError,
+      });
+      continue;
+    }
+    tierCounts[article.readingTier] += 1;
 
     if (!isAllowedWikiRelativePath(article.sourceWikiPath)) {
       entries.push({
@@ -186,6 +265,27 @@ async function runWikiSyncCheck(): Promise<void> {
   console.log(
     `Articles attendus : ${EXPECTED_ARTICLE_SLUGS.length} | Fichiers trouvés : ${diskFiles.length} | À jour : ${okEntries.length}/${EXPECTED_ARTICLE_SLUGS.length}`,
   );
+  console.log(
+    `Répartition des niveaux : essential=${tierCounts.essential} (cible ${ESSENTIAL_TIER_MIN}–${ESSENTIAL_TIER_MAX}) | deep_dive=${tierCounts.deep_dive} | reference=${tierCounts.reference}`,
+  );
+
+  const essentialBudgetOk =
+    tierCounts.essential >= ESSENTIAL_TIER_MIN && tierCounts.essential <= ESSENTIAL_TIER_MAX;
+  if (!essentialBudgetOk) {
+    console.error(
+      `Budget du niveau 'essential' hors plage : ${tierCounts.essential} (attendu entre ${ESSENTIAL_TIER_MIN} et ${ESSENTIAL_TIER_MAX}).`,
+    );
+  }
+
+  const allWikiFiles = collectAllowedWikiMarkdownFiles(wikiRoot);
+  const unimportedWikiFiles = allWikiFiles.filter((rel) => !importedSourcePaths.has(rel));
+  if (unimportedWikiFiles.length > 0) {
+    console.log(`\nNouveaux fichiers wiki/output non encore importés (${unimportedWikiFiles.length}) :`);
+    for (const rel of unimportedWikiFiles) {
+      const suggestedTier = suggestReadingTierForSource(rel);
+      console.log(`  - ${rel}  -> niveau suggéré : ${suggestedTier}`);
+    }
+  }
 
   if (missingSlugs.length > 0) {
     console.error(`Articles manquants (${missingSlugs.length}) : ${missingSlugs.join(', ')}`);
@@ -211,6 +311,7 @@ async function runWikiSyncCheck(): Promise<void> {
     extraFiles.length === 0 &&
     invalidModules.length === 0 &&
     errorEntries.length === 0 &&
+    essentialBudgetOk &&
     okEntries.length === EXPECTED_ARTICLE_SLUGS.length;
 
   if (!isSuccess) {
