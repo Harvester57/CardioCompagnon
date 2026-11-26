@@ -273,6 +273,9 @@ describe('SettingsPage (Module 7 -- Parametres & Profil)', () => {
     const encDemoEnvelope = await createEncryptedBackupEnvelope(demoDb, 'MotDePasseImport!2026');
 
     const fileInput = screen.getByLabelText(/Fichier de sauvegarde à importer/i);
+    expect(screen.getByText('Choisir un fichier')).toBeInTheDocument();
+    expect(screen.getByText('Aucun fichier sélectionné')).toBeInTheDocument();
+
     const encFile = new File([JSON.stringify(encDemoEnvelope)], 'sauvegarde.cardio.enc.json', {
       type: 'application/json',
     });
@@ -280,6 +283,7 @@ describe('SettingsPage (Module 7 -- Parametres & Profil)', () => {
     fireEvent.change(fileInput, { target: { files: [encFile] } });
 
     await waitFor(() => {
+      expect(screen.getByText('sauvegarde.cardio.enc.json')).toBeInTheDocument();
       expect(screen.getByLabelText(/^Mot de passe de déchiffrement$/i)).toBeInTheDocument();
     });
 

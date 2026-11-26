@@ -449,13 +449,31 @@ export function AiImportModal({ open, onClose, onSaved }: AiImportModalProps) {
                     Ou joindre un fichier anonymisé (PDF ou image)
                   </label>
                   <div className="flex flex-wrap items-center gap-2">
-                    <input
-                      id="ai-report-file"
-                      type="file"
-                      accept=".pdf,image/png,image/jpeg,image/webp"
-                      onChange={(e) => void handleFileChange(e)}
-                      className="block w-full max-w-sm text-xs text-[var(--text-secondary)] file:mr-3 file:rounded-lg file:border file:border-[var(--border-strong)] file:bg-[var(--bg-subtle)] file:px-3 file:py-1.5 file:text-xs file:font-semibold file:text-[var(--text-primary)]"
-                    />
+                    <div className="relative w-full max-w-sm">
+                      <input
+                        id="ai-report-file"
+                        type="file"
+                        accept=".pdf,image/png,image/jpeg,image/webp"
+                        onChange={(e) => void handleFileChange(e)}
+                        className="peer sr-only"
+                      />
+                      <label
+                        htmlFor="ai-report-file"
+                        aria-hidden="true"
+                        className="flex min-h-12 w-full cursor-pointer items-center gap-3 rounded-xl border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-xs hover:border-[var(--color-primary)] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[var(--color-primary)]"
+                      >
+                        <span className="shrink-0 rounded-lg border border-[var(--border-strong)] bg-[var(--bg-subtle)] px-3 py-1.5 font-semibold text-[var(--text-primary)]">
+                          Choisir un fichier
+                        </span>
+                        <span
+                          className={`min-w-0 truncate ${
+                            fileName ? 'text-[var(--text-primary)]' : 'text-[var(--text-secondary)]'
+                          }`}
+                        >
+                          {fileName ?? 'Aucun fichier sélectionné'}
+                        </span>
+                      </label>
+                    </div>
                     {fileName && (
                       <span className="inline-flex items-center gap-1 rounded-full bg-[var(--color-primary-soft)] px-2.5 py-1 text-xs font-medium text-[var(--color-primary)]">
                         <FileUp className="h-3.5 w-3.5" aria-hidden="true" />

@@ -287,6 +287,7 @@ export function FourPillarsDashboard({
                         void handleSubmitReason(e, summary.pillar, summary.documentedReasonMed)
                       }
                       className="space-y-2 rounded-lg border border-[var(--border-strong)] bg-[var(--bg-card)] p-3"
+                      noValidate
                     >
                       <label
                         htmlFor={`reason-${summary.pillar}`}

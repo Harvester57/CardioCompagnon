@@ -84,6 +84,19 @@ function renderPermissionBadge(permission: NotificationPermissionStatus) {
   }
 }
 
+const REMINDER_TIME_SLOTS: readonly string[] = Array.from({ length: 24 * 4 }, (_, index) => {
+  const hours = String(Math.floor(index / 4)).padStart(2, '0');
+  const minutes = String((index % 4) * 15).padStart(2, '0');
+  return `${hours}:${minutes}`;
+});
+
+function buildReminderTimeOptions(currentTime: string): string[] {
+  if (!currentTime || REMINDER_TIME_SLOTS.includes(currentTime)) {
+    return [...REMINDER_TIME_SLOTS];
+  }
+  return [...REMINDER_TIME_SLOTS, currentTime].sort();
+}
+
 export function DisplayPreferencesSection() {
   const { settings, updateSettings } = useAppSettings();
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -508,17 +521,22 @@ export function DisplayPreferencesSection() {
                           <label htmlFor={timeId} className="sr-only">
                             {`Heure du rappel ${def.labelFr}`}
                           </label>
-                          <input
+                          <select
                             id={timeId}
                             name={`reminderTime_${def.type}`}
-                            type="time"
                             value={schedule.time}
                             disabled={!schedule.enabled}
                             onChange={(e) =>
                               void handleReminderTimeChange(def.type, e.target.value, def.labelFr)
                             }
                             className="touch-target rounded-xl border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-[max(1rem,1em)] text-[var(--text-primary)] tabular-nums disabled:cursor-not-allowed disabled:opacity-50"
-                          />
+                          >
+                            {buildReminderTimeOptions(schedule.time).map((slot) => (
+                              <option key={slot} value={slot}>
+                                {slot}
+                              </option>
+                            ))}
+                          </select>
                         </div>
                       </div>
                     );

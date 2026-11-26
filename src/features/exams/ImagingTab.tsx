@@ -645,7 +645,7 @@ export function ImagingTab({ imaging, profile }: ImagingTabProps) {
             </button>
           }
         >
-          <form onSubmit={(e) => void handleSubmit(e)} className="space-y-4">
+          <form onSubmit={(e) => void handleSubmit(e)} className="space-y-4" noValidate>
             {formError && (
               <div
                 role="alert"

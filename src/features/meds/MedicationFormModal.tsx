@@ -230,7 +230,7 @@ export function MedicationFormModal({
         </button>
       }
     >
-      <form onSubmit={(e) => void handleSubmit(e)} className="space-y-4">
+      <form onSubmit={(e) => void handleSubmit(e)} className="space-y-4" noValidate>
         {errorMessage && (
           <div
             role="alert"

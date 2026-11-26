@@ -289,6 +289,7 @@ export function EcgSleepTab({ events }: EcgSleepTabProps) {
           <form
             onSubmit={(e) => void handleSaveEcg(e)}
             className="mb-5 space-y-4 rounded-xl border border-[var(--border-strong)] bg-[var(--bg-subtle)]/50 p-4"
+            noValidate
           >
             <div className="flex items-center justify-between gap-2">
               <h3 className="text-sm font-semibold text-[var(--text-primary)]">
@@ -570,6 +571,7 @@ export function EcgSleepTab({ events }: EcgSleepTabProps) {
           <form
             onSubmit={(e) => void handleSaveSleep(e)}
             className="mb-5 space-y-4 rounded-xl border border-[var(--border-strong)] bg-[var(--bg-subtle)]/50 p-4"
+            noValidate
           >
             <div className="flex items-center justify-between gap-2">
               <h3 className="text-sm font-semibold text-[var(--text-primary)]">

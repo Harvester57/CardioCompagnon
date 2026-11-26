@@ -411,15 +411,37 @@ export function BackupRestoreSection() {
             <label htmlFor="backup-import-file" className={LABEL_CLASS}>
               Fichier de sauvegarde à importer
             </label>
-            <input
-              ref={fileInputRef}
-              id="backup-import-file"
-              type="file"
-              accept=".json,.cardio.json,.cardio.enc.json,application/json"
-              disabled={isImporting}
-              onChange={(e) => void handleFileSelected(e)}
-              className="block w-full cursor-pointer rounded-xl border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-sm text-[var(--text-primary)] file:mr-3 file:rounded-lg file:border-0 file:bg-[var(--color-primary-soft)] file:px-3 file:py-1.5 file:text-xs file:font-semibold file:text-[var(--color-primary)]"
-            />
+            <div className="relative">
+              <input
+                ref={fileInputRef}
+                id="backup-import-file"
+                type="file"
+                accept=".json,.cardio.json,.cardio.enc.json,application/json"
+                disabled={isImporting}
+                onChange={(e) => void handleFileSelected(e)}
+                className="peer sr-only"
+              />
+              <label
+                htmlFor="backup-import-file"
+                aria-hidden="true"
+                className={`flex min-h-12 w-full items-center gap-3 rounded-xl border border-[var(--border-strong)] bg-[var(--bg-card)] px-3 py-2 text-sm peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[var(--color-primary)] ${
+                  isImporting
+                    ? 'cursor-not-allowed opacity-60'
+                    : 'cursor-pointer hover:border-[var(--color-primary)]'
+                }`}
+              >
+                <span className="shrink-0 rounded-lg bg-[var(--color-primary-soft)] px-3 py-1.5 text-xs font-semibold text-[var(--color-primary)]">
+                  Choisir un fichier
+                </span>
+                <span
+                  className={`min-w-0 truncate ${
+                    selectedFileName ? 'text-[var(--text-primary)]' : 'text-[var(--text-secondary)]'
+                  }`}
+                >
+                  {selectedFileName ?? 'Aucun fichier sélectionné'}
+                </span>
+              </label>
+            </div>
           </div>
 
           {pendingEncryptedRaw && (
