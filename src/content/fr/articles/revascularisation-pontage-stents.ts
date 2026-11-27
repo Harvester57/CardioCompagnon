@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Revascularisation coronaire : pontage et stents',
   category: 'dispositifs',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -116,7 +116,7 @@ L’annexe ne précise pas si l’assistance circulatoire était programmée ou 
     },
     {
       headingFr: 'La question de la « viabilité myocardique »',
-      bodyMarkdownFr: `L’hypothèse classique voulait que si une imagerie montre qu’un segment de muscle affaibli reste vivant (« myocarde hibernant »), rouvrir l’artère correspondante suffirait à le réveiller et à redresser la pompe cardiaque. Or **REVIVED-BCIS2 exigeait la preuve d’une viabilité** pour inclure les patients, sans qu’une amélioration de la FEVG ou du pronostic n’apparaisse sous stents.
+      bodyMarkdownFr: `L’hypothèse classique voulait que si une imagerie montre qu’un segment de muscle affaibli reste vivant (« myocarde hibernant »), rouvrir l’artère correspondante suffirait à le réveiller et à redresser la pompe cardiaque. Or **REVIVED-BCIS2 exigeait la preuve d’une viabilité** pour inclure les patients, sans qu’une amélioration de la FEVG ou du pronostic n’apparaisse sous stents. Les examens, seuils de cicatrice et analyses de viabilité des deux essais sont détaillés dans *Viabilité myocardique : hibernation, cicatrice et examens de viabilité* et dans *Thèse : tests de viabilité et survie après revascularisation*.
 
 À partir de ces résultats, les auteurs de REVIVED-BCIS2 proposent une séquence de prise en charge claire :
 
@@ -172,11 +172,14 @@ Ce texte rappelle que le risque péri-opératoire est plus élevé à FEVG ≤ 3
       headingFr: 'Essais en cours et assistance circulatoire (au 25 novembre 2026)',
       bodyMarkdownFr: `- **STICH3** compare directement le pontage (CABG) aux stents (PCI) dans la dysfonction ventriculaire gauche ischémique (**FEVG ≤ 40 %**, atteinte tritronculaire ou IVA/tronc commun gauche lorsque les deux options sont jugées réalisables). Le bras canadien (**STICH3C**, NCT05427370) recrute **754** patients, avec une fin primaire estimée en **avril 2029** ; le bras britannique (**STICH3-BCIS4**) a reçu son approbation éthique en avril 2024.
 - **PCI-GULF (NCT07349979)** (pas encore en recrutement, **1 154** patients estimés) et **IMPROVE-ICMP (NCT06930092)** (en cours de recrutement, **158** patients estimés, exigeant un muscle viable à l’IRM avec la FEVG IRM comme critère principal) réexaminent la question de REVIVED-BCIS2 (stents versus traitement médical seul).
-- **Assistance circulatoire par pompe pendant une angioplastie à haut risque :** l’essai **CHIP-BCIS3** (**300** patients, FEVG médiane **27 %**) a montré qu’une assistance systématique par pompe **Impella** n’améliorait pas le critère principal (**win ratio 0,85**, IC 95 % : **0,63–1,15**), avec davantage de décès dans le groupe pompe en critère secondaire (mortalité toutes causes : **47 contre 33** patients, **HR 1,54**, IC 95 % : **0,99–2,41** dans le résumé du NEJM ; mortalité cardiovasculaire **26,7 % contre 14,5 %** dans les comptes rendus). De nombreux patients présentaient un tableau aigu (**62,7 %** ou **76 %** selon la source). L’essai **PROTECT IV (NCT04763200)**, financé par l’industriel, a dépassé sa date estimée de fin primaire (octobre 2026) sans résultats publiés.
+- **Assistance circulatoire par pompe pendant une angioplastie à haut risque :** l’essai **CHIP-BCIS3** (**300** patients, FEVG médiane **27 %**) a montré qu’une assistance systématique par pompe **Impella** n’améliorait pas le critère principal (**win ratio 0,85**, IC 95 % : **0,63–1,15**), avec davantage de décès dans le groupe pompe en critère secondaire (mortalité toutes causes : **47 contre 33** patients, **HR 1,54**, IC 95 % : **0,99–2,41** dans le résumé du NEJM ; mortalité cardiovasculaire **26,7 % contre 14,5 %** dans les comptes rendus). De nombreux patients présentaient un tableau aigu (**62,7 %** ou **76 %** selon la source). L’essai **PROTECT IV (NCT04763200)**, financé par l’industriel, a dépassé sa date estimée de fin primaire (octobre 2026) sans résultats publiés. Voir le dossier dédié *Angioplastie protégée et assistance circulatoire temporaire (Impella, ballon)*.
 - Pour la liste complète des études en cours, consultez l’article « Essais cliniques en cours et à suivre ».`,
     },
   ],
   relatedArticleSlugs: [
+    'viabilite-myocardique',
+    'these-viabilite-et-survie-revascularisation',
+    'angioplastie-protegee-et-assistance-circulatoire',
     'angor-et-medicaments-anti-angineux',
     'fuite-mitrale-secondaire',
     'antiplaquettaires-bitherapie-et-protection-gastrique',

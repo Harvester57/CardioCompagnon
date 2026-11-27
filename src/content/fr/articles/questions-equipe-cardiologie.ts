@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "Questions à poser à l'équipe de cardiologie",
   category: 'references',
   readingTier: 'reference',
-  asOf: '2026-11-25',
+  asOf: '2026-11-27',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -40,9 +40,10 @@ export const article: WikiArticle = {
 
 - **Quel examen a mesuré ma FEVG : une échocardiographie transthoracique (ETT) ou une IRM cardiaque ? A-t-elle été mesurée avec la même méthode à chaque fois ?**
   - *Pourquoi c'est important :* chez les patients présentant une dysfonction ischémique du ventricule gauche, l'IRM cardiaque mesure en moyenne une FEVG inférieure d'environ 5,5 points à celle de l'ETT, et les deux examens peuvent se situer de part et d'autre du seuil de 35 % (sous-étude ETT vs IRM de REVIVED-BCIS2).
-- **Quelle est la taille de mon ventricule gauche (volumes indexés VTDi / VTSi ou diamètre DTDVG) et évolue-t-elle ?**
-  - *Pourquoi c'est important :* le volume télésystolique du VG prédisait l'évolution clinique dans REVIVED-BCIS2 là où la FEVG seule ne le faisait pas.
+- **Quelle est la taille de mon ventricule gauche (volumes indexés VTDi / VTSi ou diamètre DTDVG), diminue-t-elle sous traitement (remodelage inverse), et chaque nouvelle mesure sera-t-elle comparée à un examen de même type ?**
+  - *Pourquoi c'est important :* le volume télésystolique indexé (VTSi) du VG prédisait l'évolution clinique dans REVIVED-BCIS2 là où la FEVG seule ne le faisait plus après ajustement, et un rétrécissement du ventricule sous traitement accompagne le bénéfice clinique au niveau des essais.
 - **Dans quelle classe NYHA suis-je situé(e), et quelle proportion de mon muscle cardiaque est cicatricielle (LGE) à l'IRM ?**
+  - *Pourquoi c'est important :* dans REVIVED-BCIS2, chaque tranche supplémentaire de 10 % de cicatrice à l'IRM s'associait à un risque accru de décès ou d'hospitalisation et à une moindre amélioration de la FEVG.
 - **Quel est mon taux de NT-proBNP (ou de BNP), comment a-t-il évolué, et lequel des deux mon laboratoire dose-t-il ?**
   - *Pourquoi c'est important :* le sacubitril/valsartan (*Entresto*) peut augmenter artificiellement le BNP, mais pas le NT-proBNP (ESC 2026).
 
@@ -51,23 +52,29 @@ export const article: WikiArticle = {
 - **Est-ce que je prends bien les quatre classes de médicaments de fond (IEC ou ARNI, bêtabloquant, ARM, iSGLT2) ? Si l'une manque, pour quelle raison ?**
 - **Mes doses sont-elles aux doses cibles, ou prévoit-on de les augmenter progressivement (titration) ? Selon quel calendrier, avec quels bilans et consultations à chaque palier, et quels résultats (tension, potassium, fonction rénale, pouls) conduiraient à différer une augmentation ?**
   - *Pourquoi c'est important :* l'ESC 2026 préconise d'augmenter les doses toutes les 1 à 2 semaines si toléré ; dans STRONG-HF, une titration rapide après sortie d'hospitalisation a réduit les réhospitalisations, tandis que dans SwedeHF seule une minorité atteignait les doses cibles.
-- **Quand sont prévus mes prochains bilans de créatinine (DFGe) et de potassium, quelle hausse modérée de créatinine est attendue, et qui contacter avant toute modification ?**
-  - *Pourquoi c'est important :* un contrôle est généralement proposé 1 à 2 semaines après chaque palier puis environ tous les 4 mois (Volterrani 2024) ; une légère hausse initiale de créatinine est souvent attendue (Clark 2019), et il ne faut jamais arrêter un traitement cardiaque seul.`,
+- **IEC, ARA2 ou ARNI (sacubitril/valsartan, *Entresto*) :** quelle molécule est-ce que je prends, à quelle distance de la dose cible suis-je, un passage au sacubitril/valsartan est-il envisagé (PARADIGM-HF ; ESC 2026 si symptômes persistants vs préférence initiale aux États-Unis), et en cas de relais depuis un IEC, comment respecter exactement le délai d'au moins **36 heures** (non requis après un ARA2) et que faire en cas de gonflement des lèvres, de la langue ou de la gorge (angio-œdème, urgence 15/112) ?
+- **Bêtabloquant :** lequel est-ce que je prends et pourquoi celui-là (seuls bisoprolol, carvédilol et métoprolol succinate ont réduit la mortalité dans les essais, contrairement au métoprolol tartrate à courte durée d'action), ajustez-vous vers une dose cible, une fréquence cardiaque de repos ou les deux (l'ESC 2026 ne fixe pas de cible chiffrée de pouls ; NICE vérifie le pouls après chaque palier), et une fibrillation atriale modifie-t-elle ce que l'on en attend (bénéfice de survie net en rythme sinusal, rôle de contrôle de fréquence en FA) ?
+- **ARM (spironolactone ou éplérénone) et bilans sanguins :** quand sont prévus mes bilans de créatinine (DFGe) et de potassium après initiation ou changement de dose (environ 1 semaine, 1 mois puis tous les 3 à 4 mois ; potassium > 5,5 mmol/L 1,4 à 3 fois plus fréquent sous ARM dans RALES/EPHESUS/EMPHASIS-HF), quelle hausse modérée de créatinine est attendue (Clark 2019), et qui contacter avant toute modification ?
+- **Inhibiteur du SGLT2 (dapagliflozine / *Forxiga* ou empagliflozine / *Jardiance*) :** si mon DFGe baisse de 3 à 4 points au début, s'agit-il de la baisse initiale attendue (non associée à un moins bon pronostic dans DAPA-HF ; seuils d'initiation 25 ou 20 mL/min sans seuil d'arrêt dans les RCP UE) ? Que faire en cas de mycose génitale bénigne, et quels signes génitaux rares (gangrène de Fournier) imposeraient un avis urgent ?`,
     },
     {
       headingFr: 'Dispositifs implantables (DAI / CRT), traitements additionnels et télésurveillance',
-      bodyMarkdownFr: `- **Quand ma FEVG sera-t-elle réévaluée après optimisation de mes médicaments (à 3 mois ou plus tard), et mon QRS / bloc de branche gauche (BBG) ouvre-t-il la discussion d'une CRT ?**
-  - *Pourquoi c'est important :* le seuil de DAI repose sur une FEVG ≤ 35 % après ≥ 3 mois de traitement optimal et ≥ 40 jours après infarctus (ESC 2026), mais le registre HF-OPT montre que la FEVG peut continuer à s'améliorer jusqu'à 6 mois.
-- **Si un DAI est proposé : quel est mon risque estimé sous médicaments modernes, un modèle sous-cutané (S-DAI) ou transveineux est-il préférable, l'essai en cours PROFID-EHRA change-t-il votre regard, et comment gérer la fonction de choc en fin de vie ?** (PROFID ; PRAETORIAN ; PROFID-EHRA ; guide patient ESC 2026)
+      bodyMarkdownFr: `- **Quand ma FEVG sera-t-elle réévaluée après optimisation de mes médicaments (à 3 mois ou plus tard), par quel examen (ETT ou IRM, identique aux précédents), et mon QRS / bloc de branche gauche (BBG) ouvre-t-il la discussion d'une CRT ?**
+  - *Pourquoi c'est important :* le seuil de DAI repose sur une FEVG ≤ 35 % après ≥ 3 mois de traitement optimal et ≥ 40 jours après infarctus (ESC 2026), mais sous sacubitril/valsartan la FEVG dépasse 35 % chez ~1/3 des patients à 6 mois et près des 2/3 à 12 mois (HF-OPT), tandis que l'attente comporte ~2 à 4 % de risque de mort subite à 6 mois et qu'ETT et IRM peuvent diverger autour de 35 %.
+- **Si un DAI est proposé : quel est mon risque estimé sous médicaments modernes (MADIT-II/SCD-HeFT datant d'avant ARNI et iSGLT2 ; bénéfice non réfuté, ESC Classe I), un modèle sous-cutané (S-DAI) ou transveineux est-il préférable (PRAETORIAN), et comment gérer la fonction de choc en fin de vie ?**
+- **Si mes examens suggèrent une double cause (cicatrice non ischémique associée à une coronaropathie), les résultats du DAI dans les causes non ischémiques (essai DANISH : baisse de mort subite sans gain de survie globale ; ESC Classe IIa) influencent-ils le conseil pour moi ?**
+- **Les essais en cours PROFID-EHRA (résultats attendus fin 2027) ou DILEMMA (AP-HP Paris, dès 70 ans sous quadrithérapie, fin estimée 2030) changent-ils votre regard sur mon DAI, et serais-je éligible à l'un d'eux ?**
 - **Une fois mes quatre piliers optimisés, un traitement additionnel s'applique-t-il : ivabradine (*Procoralan*, si rythme sinusal et FC ≥ 77 bpm dans SHIFT), digoxine ou digitoxine (DIGIT-HF), vériciguat (*Verquvo*, après aggravation et NT-proBNP ≤ 6 000 pg/mL), finérénone (*Kerendia*, si FEVG ≥ 40 % ou DT2+MRC) ou chélateur de potassium (patiromer / *Veltassa*) ?**
 - **Pendant la titration, le gilet défibrillateur portable (LifeVest) mérite-t-il d'être discuté (marqueurs de risque, port > 20 h/j, interdiction de conduite automobile en France pendant son indication) ?** (VEST ; HF-OPT ; HAS CNEDiMTS ; arrêté du 28 mars 2022)
 - **Serais-je éligible à la télésurveillance IC à domicile (remboursée en France) ou au télésuivi d'un DAI/CRT ? Qui lit les alertes et dans quel délai ? Un capteur de pression pulmonaire (CardioMEMS, non remboursé en France selon HAS 2021) pourrait-il un jour me concerner ?**`,
     },
     {
-      headingFr: 'Artères coronaires, angor, CTO, cholestérol, antiplaquettaires et IPP',
-      bodyMarkdownFr: `### Revascularisation coronaire (pontage / stents) et CTO
+      headingFr: 'Artères coronaires, viabilité, angor, CTO, cholestérol, antiplaquettaires et IPP',
+      bodyMarkdownFr: `### Revascularisation coronaire (pontage / stents), viabilité myocardique et CTO
 
 - **Une Heart Team incluant un spécialiste de l'insuffisance cardiaque a-t-elle examiné mon anatomie coronaire ? L'objectif d'une intervention serait-il de soulager un angor ou d'améliorer la survie ?** (ESC 2026 ; STICHES ; REVIVED-BCIS2)
+- **Si un examen de viabilité myocardique (IRM cardiaque, écho sous dobutamine, scintigraphie ou TEP) est proposé ou déjà fait, quelle décision vise-t-il : décider d'un pontage ou d'un stent, ou estimer le pronostic et les chances de remontée de la FEVG ? Si un pontage est discuté, comment un résultat plus élevé ou plus bas changerait-il l'avis de la Heart Team, et un test d'ischémie d'effort modifierait-il la décision ?**
+  - *Pourquoi c'est important :* dans STICH (pontage) et REVIVED-BCIS2 (stents), la quantité de muscle viable n'a pas sélectionné les patients vivant plus longtemps (l'ESC 2026 note l'absence de preuve pour guider la revascularisation par la viabilité), et dans STICH l'ischémie au test d'effort ne modifiait pas l'effet du pontage ; en revanche, l'étendue de la cicatrice à l'IRM aide à estimer le pronostic et la récupération de la FEVG.
 - **En cas d'artère bouchée de longue date (CTO) : le territoire est-il viable et ischémique, la réouverture aiderait-elle un essoufflement sans angor (ORBITA-CTO), quels sont les taux de complications de ce centre à FEVG basse (PROGRESS-CTO), et un pontage mini-invasif (MIDCAB) serait-il envisageable ?**
 
 ### Angor (douleur thoracique) et médicaments anti-angineux
@@ -185,7 +192,7 @@ export const article: WikiArticle = {
 ### Vaccinations, réadaptation, récupération, moral et soins de support
 
 - **Quelles vaccinations sont à jour ou dues cette année (grippe annuelle gratuite en France quel que soit l'âge au titre des maladies coronaires/IC, pneumocoque, COVID-19, et dès 65 ans VRS et zona), faut-il un vaccin antigrippal haute dose, et lesquelles peuvent être administrées le même jour ?** (IAMI ; IVVE ; Calendrier vaccinal 2026)
-- **Récupération (HFimpEF) et objectifs :** quelle amélioration de FEVG est réaliste, parlez-vous d'amélioration, rémission ou récupération, quels médicaments poursuivre à vie (ESC 2026 Classe I ; TRED-HF), et comment équilibrer mes objectifs de vie ?
+- **Récupération (HFimpEF), scores pronostiques et objectifs :** quelle amélioration de FEVG est réaliste (moins fréquente en cause ischémique, principalement la 1re année : 48 % vs 66,5 % dans un registre néerlandais récent), parlez-vous d'amélioration, rémission ou récupération, quels médicaments poursuivre à vie (ESC 2026 Classe I ; TRED-HF), si un score pronostique (MAGGIC, Seattle Heart Failure Model) est utilisé, quelles en sont les limites (moyennes de groupe construites avant ARNI/iSGLT2), et comment équilibrer mes objectifs de vie ?
 - **Réadaptation et moral :** un programme en SMR (hôpital de jour ou domicile) est-il prescrit, quelle part donner au renforcement musculaire par rapport à l'endurance (GERS-P 2023 ; HAS 2022), et quel accompagnement (psychologue, TCC, activité physique) si mon moral fléchit ?
 - **Soins de support et anticipation (France) :** une équipe mobile de soins palliatifs (*EMSP*) ou un plan personnalisé d'accompagnement (*PPA*, loi 2026-404) peut-il m'aider dès maintenant ? Comment rédiger mes **directives anticipées** (incluant une formulation explicite sur la désactivation des chocs d'un DAI tout en conservant la stimulation/CRT, à revoir avant tout changement de boîtier), désigner ma **personne de confiance** dans *Mon espace santé*, et connaître les ressources locales (*HAD* prise en charge à 100 % sous ALD sans forfait journalier, *LISP*, *USP*, *MASP*, *SPCMD*) ?
 
@@ -216,7 +223,13 @@ export const article: WikiArticle = {
     'fraction-dejection',
     'examens-et-chiffres',
     'efx-strain-troponine-et-imagerie-cardiaque',
+    'viabilite-myocardique',
+    'these-viabilite-et-survie-revascularisation',
     'medicaments-insuffisance-cardiaque',
+    'iec-ara2-et-arni-sacubitril-valsartan',
+    'betabloquants-insuffisance-cardiaque',
+    'arm-steroidiens-spironolactone-eplerenone',
+    'inhibiteurs-sglt2-insuffisance-cardiaque',
     'medicaments-effets-secondaires-suivi',
     'traitements-additionnels-nouveaux',
     'medicaments-additionnels-ivabradine-digoxine-vericiguat',
@@ -231,6 +244,7 @@ export const article: WikiArticle = {
     'medicaments-glp1-et-incretines',
     'cellules-souches-et-therapies-regeneratives',
     'dispositifs-cardiaques-dai-crt',
+    'these-benefice-dai-sous-quadritherapie',
     'arythmies-ventriculaires-et-antiarythmiques',
     'gilet-defibrillateur-portable',
     'telesurveillance-insuffisance-cardiaque',
@@ -286,8 +300,8 @@ export const article: WikiArticle = {
       detail: 'Titration, dispositifs, angor, antiplaquettaires, diurétiques, IC avancée, ablation de TV, péri-opératoire, diabète, stade B, étiologie et décision partagée',
     },
     {
-      label: 'Essais cliniques et thèses 2025–2026 (VANISH2, TRANSFORM-HF, ADVOR, CLOROTIC, HOST-EXAM 10 ans, STOP-or-NOT, SPACE, Fink 2022, SMART-C, FAIR-HF2, HEART-FID phosphate, CORAL/DANUTRIO-HF, GISSI-HF FA, Turban 2021, PROGRESS NEJM 2026, DAPA-MI, IAMI, IVVE, CARES/FAST, RED-HF, REHAB-HF)',
-      detail: 'Justification chiffrée des questions sur les arythmies, les diurétiques, les jours de maladie, le fer IV, le potassium alimentaire, la CoQ10, les oméga-3, les vaccins et les comorbidités',
+      label: 'Essais cliniques et thèses 2025–2026 (PARADIGM-HF, RALES/EPHESUS/EMPHASIS-HF, DAPA-HF, MADIT-II, SCD-HeFT, DANISH, DILEMMA, STICH viabilité, REVIVED-BCIS2, MAGGIC/SHFM, VANISH2, TRANSFORM-HF, ADVOR, CLOROTIC, HOST-EXAM 10 ans, STOP-or-NOT, SPACE, Fink 2022, SMART-C, FAIR-HF2, HEART-FID phosphate, CORAL/DANUTRIO-HF, GISSI-HF FA, Turban 2021, PROGRESS NEJM 2026, DAPA-MI, IAMI, IVVE, CARES/FAST, RED-HF, REHAB-HF)',
+      detail: 'Justification chiffrée des questions sur les 4 piliers, le DAI sous quadrithérapie, la viabilité, les scores pronostiques, les arythmies, les diurétiques, les jours de maladie, le fer IV, le potassium alimentaire, la CoQ10, les oméga-3, les vaccins et les comorbidités',
     },
     {
       label: 'Sources réglementaires et institutionnelles françaises (HAS oct. 2024 dentaire, SFCO 2015, ANSM 2024–2026, Calendrier vaccinal 2026, service-public.fr, ameli.fr, CNSPFV 2026, Loi 2026-404, Arrêté du 28 mars 2022)',

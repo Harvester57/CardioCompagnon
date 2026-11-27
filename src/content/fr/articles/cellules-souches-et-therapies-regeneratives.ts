@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Cellules souches et thérapies régénératives dans la cardiomyopathie ischémique',
   category: 'traitements',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium',
   volatility: 'hot',
   tags: [
@@ -45,7 +45,7 @@ export const article: WikiArticle = {
 | **Cellules de votre propre moelle osseuse** (autologues) | Prélevées dans l'os iliaque, traitées puis réinjectées | Dans une artère coronaire ou directement dans la paroi cardiaque par cathéter | Nombreux essais depuis les années 2000 ; bénéfice de faible certitude ; meilleur essai récent neutre (**CardiAMP-HF**) |
 | **Cellules « adultes » sélectionnées ou de donneur** | Cellules mésenchymateuses précurseurs/stromales (moelle osseuse, parfois d'un donneur), cellules cardiaques « c-kit » | Injection par cathéter dans la paroi cardiaque | Plus grand essai contrôlé contre procédure factice négatif (**DREAM-HF**) ; piste des cellules cardiaques c-kit discréditée |
 | **Muscle cardiaque cultivé à partir de cellules iPS** | Cellules musculaires cardiaques fabriquées en laboratoire à partir de cellules souches pluripotentes induites (iPS), en général d'un donneur | Chirurgie : patchs ou feuillets suturés à la surface du cœur, ou amas injectés lors d'un pontage | Premières études chez l'humain de 8 à 20 patients sans témoin ; autorisation conditionnelle au Japon uniquement |
-| **Approches géniques et produits acellulaires** | Gènes transportés par un virus ; vésicules extracellulaires ou reprogrammation directe de la cicatrice (pistes non encore détaillées ici) | Perfusion ou cathéter | Expérimental ; voir la fiche *Essais cliniques en cours et à suivre* pour les essais de thérapie génique |`,
+| **Approches géniques et produits acellulaires** | Gènes transportés par un virus ; vésicules extracellulaires ou reprogrammation directe de la cicatrice (pistes encore non détaillées ici) | Perfusion ou cathéter | Expérimental ; rien n'est autorisé. **CUPID 2 (SERCA2a)** a été neutre ; le seul essai génique conçu pour l'IC ischémique (**SALVADOR-HF, YAP101**) est une phase 1 de 24 patients. Voir *Thérapies géniques et moléculaires en développement dans l'ICFER* |`,
     },
     {
       headingFr: 'Ce que montrent les essais cliniques sur les cellules adultes',
@@ -123,6 +123,7 @@ export const article: WikiArticle = {
     },
   ],
   relatedArticleSlugs: [
+    'therapies-geniques-et-moleculaires',
     'essais-cliniques-en-cours-et-a-suivre',
     'traitements-additionnels-nouveaux',
     'essais-cliniques-cles',

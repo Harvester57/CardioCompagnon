@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Poids, obésité et dénutrition (cachexie cardiaque)',
   category: 'nutrition',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium',
   volatility: 'warm',
   tags: [
@@ -112,7 +112,9 @@ export const article: WikiArticle = {
 - **Attention au score CONUT sous statine :** comme ce score attribue des points pour un cholestérol bas, un traitement par statine fait monter artificiellement le score chez des personnes bien nourries. Chez un patient coronarien sous statine, un CONUT « anormal » peut refléter le traitement hypolipémiant plutôt qu'une dénutrition. Aucun des trois scores n'a prédit décès ou réadmission à 1 an dans ce petit groupe peu sévère.
 - Dans un registre japonais incluant exclusivement des patients âgés en **ICFEP** (FEVG médiane 64 % ; **Kitao 2025**), la dénutrition définie par CONUT diminuait de 76 % à la sortie d'hôpital à 57 % un an plus tard ; son amélioration était liée à un meilleur pronostic et son aggravation à un moins bon pronostic, mais le score variait avec l'anémie, l'inflammation, le NT-proBNP et les statines. Cette association en FEVG préservée ne se transpose pas directement à l'ICFER, mais souligne l'intérêt de réévaluer régulièrement l'état nutritionnel.
 
-**Position ESC 2026 :** la dénutrition étant associée à un moins bon pronostic, l'évaluation nutritionnelle et les interventions diététiques « peuvent être utiles » (texte narratif, sans classe). La fragilité, la dénutrition, la cachexie et la sarcopénie sont signalées comme fréquentes et liées à une mortalité plus élevée dans l'IC avancée.`,
+**Position ESC 2026 :** la dénutrition étant associée à un moins bon pronostic, l'évaluation nutritionnelle et les interventions diététiques « peuvent être utiles » (texte narratif, sans classe). La fragilité, la dénutrition, la cachexie et la sarcopénie sont signalées comme fréquentes et liées à une mortalité plus élevée dans l'IC avancée.
+
+**Fonte musculaire, fragilité et cachexie en détail :** les définitions (sarcopénie EWGSOP2, cachexie d'Evans, critères HAS 2021 de dénutrition incluant un IMC < 22 et une sarcopénie confirmée à partir de 70 ans), les tests en consultation comme la force de préhension et le test des levers de chaise, leur fréquence dans l'ICFER ainsi que les données sur les protéines, le HMB et les compléments nutritionnels oraux sont approfondis dans la fiche *Sarcopénie, perte musculaire et fragilité*.`,
     },
     {
       headingFr: 'En pratique : relier nutrition et pesée quotidienne',
@@ -125,7 +127,9 @@ Ces deux situations méritent d'être signalées à votre cardiologue, votre mé
     },
   ],
   relatedArticleSlugs: [
+    'diabete-insuffisance-cardiaque',
     'medicaments-glp1-et-incretines',
+    'sarcopenie-perte-musculaire-et-fragilite',
     'nutrition-et-complements-insuffisance-cardiaque',
     'alimentation-cardioprotectrice',
     'sel-et-liquides-insuffisance-cardiaque',
@@ -136,6 +140,9 @@ Ces deux situations méritent d'être signalées à votre cardiologue, votre mé
     'apnee-du-sommeil-insuffisance-cardiaque',
     'examens-et-chiffres',
     'maladies-associees',
+    'cafeine-boissons-energisantes-et-stimulants',
+    'complements-energetiques-cardiaques',
+    'tabac-et-alcool-insuffisance-cardiaque',
   ],
   sources: [
     {

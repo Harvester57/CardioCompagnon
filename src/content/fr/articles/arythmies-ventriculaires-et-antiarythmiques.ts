@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Arythmies ventriculaires, chocs de DAI et médicaments antiarythmiques',
   category: 'dispositifs',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-27',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -76,6 +76,15 @@ export const article: WikiArticle = {
 Un infarctus guéri laisse des couloirs de myocarde survivant au sein de la fibrose. L'onde électrique y circule lentement et peut tourner en boucle (**réentrée sur cicatrice**), générant une **tachycardie ventriculaire (TV) monomorphe soutenue** (> 30 secondes ou nécessitant un arrêt thérapeutique). Des déclencheurs aigus — ischémie récidivante, poussée d'insuffisance cardiaque, hypokaliémie ou hypomagnésémie, fièvre/infection, hyperthyroïdie ou médicament pro-arythmique — s'ajoutent à une décharge d'adrénaline (**triangle de Coumel**).
 
 - **Les stents ou pontages seuls ne guérissent pas une TV monomorphe sur cicatrice :** le consensus HRS/EHRA 2019 classe la revascularisation isolée en **Classe III : Absence de bénéfice (B-NR)** pour prévenir les récidives de TV monomorphe (en accord avec REVIVED-BCIS2) ; elle reste envisagée si une ischémie active est documentée (**IIa**).
+
+### Origine ischémique contre non ischémique : un substrat électrique différent
+
+La cause de l'affaiblissement cardiaque influence la naissance des troubles du rythme graves, ce qui explique en partie pourquoi les essais de DAI diffèrent selon l'étiologie :
+- **Origine ischémique (cicatrice fixe d'infarctus) :** dans une étude IRM de référence (**McCrohon 2003**), 100 % des patients coronariens présentaient une cicatrice sous-endocardique ou transmurale, support des circuits de réentrée.
+- **Origine non ischémique :** dans la même étude, **59 %** des cardiomyopathies dilatées (CMD) n'avaient aucune cicatrice et **28 %** présentaient des bandes de fibrose médio-pariétale. Dans la CMD non ischémique, cette fibrose médio-pariétale est associée à un fort surrisque de mort subite ou récupérée (**HR 4,61**, IC 95 % : 2,75–7,74 ; **Gulati 2013**, résumés lus), donnée à ne pas transposer à une origine ischémique.
+- **Mortalité subite et succès de l'ablation :** dans l'essai **VICTORIA**, chez les patients sans DAI, le taux de mort subite était plus élevé en cas d'origine ischémique (**4,8 contre 3,0** pour 100 patients-années). L'**ESC 2022** note également que l'ablation par cathéter est plus efficace sur une cicatrice d'infarctus qu'en maladie non ischémique (succès à long terme 30 à 70 % toutes causes ; dans un registre, **57 %** sans TV à 1 an en maladie coronaire contre **40,5 %** hors maladie coronaire).
+- **Conséquence pour le DAI :** les essais incluant des patients ischémiques (**MADIT-II**, moitié ischémique de **SCD-HeFT** à 11 ans **HR 0,81**, IC 0,69–0,95, vs placebo) montrent un gain de survie, contrairement à l'essai non ischémique **DANISH** même à 13 ans (voir *Dispositifs cardiaques implantés : DAI et CRT* et *Thèse : bénéfice du DAI en prévention primaire sous quadrithérapie moderne*).
+
 - **TV non soutenue (TVNS, ≥ 3 battements > 100–120 bpm, < 30 s) :** aucun antiarythmique préventif en dehors des bêtabloquants n'est recommandé (**ESC 2022 Classe III A**). En cas de maladie coronaire avec **FEVG ≤ 40 %** malgré ≥ 3 mois de traitement optimal et TVNS (hors indication déjà posée de DAI), une exploration électrophysiologique est proposée ; si une TV soutenue est déclenchée, un DAI doit être envisagé (**ESC 2022 IIa B**).
 
 ### Stimulation indolore (ATP), choc de DAI et conduite à tenir
@@ -120,7 +129,7 @@ Tout choc de DAI déclenche également des **délais réglementaires d'interdict
 | Médicament / Classe | Rôle dans l'ICFER ischémique | Preuves et justification de sécurité |
 |---|---|---|
 | **Bêtabloquants** (bisoprolol, carvédilol, métoprolol succinate, nébivolol ; Classe II) | **Socle de 1re intention** | **Seule** classe antiarythmique prouvée pour réduire la mortalité totale dans l'ICFER. En orage rythmique aigu, bêtabloquant non sélectif (ex. propranolol) privilégié |
-| **Amiodarone (*Cordarone*)** (Classe III, multicanal) | **Principal antiarythmique oral sûr et efficace** sur cœur malade | Autorisée en France dans la maladie coronaire avec altération de la fonction VG (RCP). Pas d'effet inotrope négatif ; faible risque de torsades (~1–1,5 %) ; dans **OPTIC**, a réduit les chocs vs bêtabloquant seul (**10,3 % vs 38,5 %**, **HR 0,27**) et vs sotalol (**HR 0,43**). Neutre sur la mortalité globale (SCD-HeFT **HR 1,06**, EMIAT). Limitée par sa **toxicité multi-organes cumulée** |
+| **Amiodarone (*Cordarone*)** (Classe III, multicanal) | **Principal antiarythmique oral sûr et efficace** sur cœur malade | Autorisée en France dans la maladie coronaire avec altération de la fonction VG (RCP). Pas d'effet inotrope négatif ; faible risque de torsades (~1–1,5 %) ; dans **OPTIC**, a réduit les chocs vs bêtabloquant seul (**10,3 % vs 38,5 %**, **HR 0,27**) et vs sotalol (**HR 0,43**). Neutre sur la mortalité globale dans **SCD-HeFT** (**HR 1,06** vs placebo ; toujours aucun bénéfice à 11 ans, **HR 0,96** ; surmortalité en NYHA III, **HR 1,44**, résumé secondaire) et **EMIAT**. Limitée par sa **toxicité multi-organes cumulée** |
 | **Sotalol (*Sotalex*)** (Classe III + bêtabloquant non sélectif) | **Option restreinte** (seulement si FEVG non sévèrement abaissée, rein correct et QT normal) | Inférieur à l'ablation dans VANISH2 (**HR 0,64**). **À éviter / grande prudence si FEVG sévère (< 20 % ou NYHA III–IV), DFGe < 30 mL/min (élimination rénale), hypokaliémie ou QT long** (risque de torsades ; surmortalité du d-sotalol dans SWORD) |
 | **Mexilétine** (Classe Ib) | **Recours en appoint** de l'amiodarone si ablation impossible ou en échec | Efficacité modeste, marge étroite, effets digestifs et neurologiques (tremblements, vertiges) |
 | **Flécaïnide (*Flécaïne*), propafénone (*Rythmol*)** (Classe IC) | **CONTRE-INDIQUÉS (Classe III : Danger)** | Ralentissent la conduction en bordure de cicatrice et favorisent la réentrée mortelle. Dans **CAST** (1 498 post-infarctus), les décès rythmiques ont environ **triplé** (**43 contre 16**, p = 0,0004) malgré la suppression des ESV au Holter |
@@ -161,6 +170,7 @@ Aucun essai ni méta-analyse n'a prouvé de gain de survie de l'ablation de TV (
     },
   ],
   relatedArticleSlugs: [
+    'these-benefice-dai-sous-quadritherapie',
     'dispositifs-cardiaques-dai-crt',
     'fibrillation-atriale-insuffisance-cardiaque',
     'regles-conduite-automobile',
@@ -192,6 +202,10 @@ Aucun essai ni méta-analyse n'a prouvé de gain de survie de l'ablation de TV (
     {
       label: 'Revues ESV et orage rythmique : Huizar (JACC, 2019), Recio-Ibarz (JCM, 2026) et Negru (2025, textes intégraux)',
       detail: 'Seuils 10 % et 20–24 % d’ESV, intérêt de l’IRM LGE, Holter prolongé et prise en charge de l’orage rythmique.',
+    },
+    {
+      label: 'Substrat ischémique vs non ischémique : McCrohon (2003), Gulati (2013), VICTORIA (2025), SCD-HeFT (2005 et 11 ans 2020) et DANISH (13 ans 2025)',
+      detail: 'Profils de cicatrice IRM, taux de mort subite selon l’étiologie, résultats à long terme de l’amiodarone et comparaison des essais de DAI.',
     },
     {
       label: 'RCP français ANSM / BDPM Cordarone 200 mg (05/06/2025), Șorodoc (2024), Lavon (2019), Goldschlager (2007) et guide BHF DAI (2025)',

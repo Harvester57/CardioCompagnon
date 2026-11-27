@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'EFX (VO2 max), strain (GLS), troponine chronique, Holter et imagerie d’ischémie',
   category: 'diagnostic',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -150,7 +150,7 @@ Dans l’étude comparative **EACVI/ASE sur 9 logiciels et 7 constructeurs** (Fa
     },
     {
       headingFr: '5. Imagerie coronaire, d’ischémie et de viabilité : tableau d’orientation',
-      bodyMarkdownFr: `Pour déterminer si des artères coronaires sont rétrécies, si un territoire manque d’apport sanguin à l’effort (**ischémie**) ou quelle part est cicatricielle versus vivante (**viabilité**), le cardiologue choisit parmi cinq examens non invasifs (en plus de la coronarographie invasive). Pour le lien entre épaisseur de cicatrice et récupération et les raisons pour lesquelles les tests de viabilité n’ont pas sélectionné les répondeurs dans \`STICH\` ni \`REVIVED-BCIS2\`, voir *Revascularisation coronaire : pontage et stents*, *Examens et chiffres* et *Confirmer la cause de la dysfonction du ventricule gauche*.
+      bodyMarkdownFr: `Pour déterminer si des artères coronaires sont rétrécies, si un territoire manque d’apport sanguin à l’effort (**ischémie**) ou quelle part est cicatricielle versus vivante (**viabilité**), le cardiologue choisit parmi cinq examens non invasifs (en plus de la coronarographie invasive). Pour le lien entre épaisseur de cicatrice et récupération et les raisons pour lesquelles les tests de viabilité n’ont pas sélectionné les répondeurs dans \`STICH\` ni \`REVIVED-BCIS2\`, voir *Viabilité myocardique : hibernation, cicatrice et tests de viabilité*, *Revascularisation coronaire : pontage et stents*, *Examens et chiffres* et *Confirmer la cause de la dysfonction du ventricule gauche*.
 
 | Examen | Type | Ce qu’il montre le mieux | Points forts | Limites / précautions | Place habituelle (ESC 2024 CCS et ESC 2026 IC) |
 |---|---|---|---|---|---|
@@ -165,6 +165,7 @@ Dans l’étude comparative **EACVI/ASE sur 9 logiciels et 7 constructeurs** (Fa
     },
     {
       headingFr: 'Synthèse des recommandations et limites des preuves',
+      depth: 'evidence',
       bodyMarkdownFr: `### Recommandations comparées (au 25 novembre 2026)
 
 Les mentions issues de synthèses secondaires dont le PDF original était protégé sont signalées par *(non vérifié en texte intégral)*.
@@ -203,6 +204,7 @@ Les mentions issues de synthèses secondaires dont le PDF original était proté
     'essais-cliniques-cles',
     'questions-equipe-cardiologie',
     'glossaire-cardiologie',
+    'viabilite-myocardique',
   ],
   sources: [
     {

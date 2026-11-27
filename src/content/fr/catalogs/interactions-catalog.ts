@@ -665,6 +665,20 @@ export const INTERACTIONS_CATALOG: InteractionItem[] = [
     articleSlug: 'interactions-complements-aliments-medicaments',
   },
   {
+    id: 'cbd-cannabidiol',
+    nameFr: 'CBD (cannabidiol : huiles, tisanes, bonbons, e-liquides)',
+    aliases: ['CBD', 'Cannabidiol', 'Huile de CBD', 'Gummies CBD', 'Tisane CBD', 'Epidyolex'],
+    verdict: 'avoid',
+    summaryFr:
+      'Les produits au CBD vendus en boutique ne sont pas des médicaments et sont souvent mal dosés ; l’ANSM alerte sur des interactions avec la digoxine, les anticoagulants et les statines, et le CBD peut en théorie affaiblir le clopidogrel.',
+    mechanismOrCaveatFr:
+      'D’après le RCP du médicament Epidyolex, le CBD inhibe le CYP2C19 et la glycoprotéine P intestinale (citant la digoxine parmi les médicaments pouvant augmenter) et peut élever les enzymes hépatiques. L’alerte ANSM du 11 mars 2025 recense 58 cas d’interactions en France (digoxine, warfarine, fluindione, dabigatran, statines). L’effet sur le clopidogrel reste théorique et aucune donnée clinique n’existe pour apixaban ou rivaroxaban. Évitez tout produit au CBD avant vérification par votre pharmacien ou cardiologue si vous prenez un anticoagulant, du clopidogrel, de la digoxine ou de l’amiodarone.',
+    affectedPillars: ['anticoagulant', 'antiplatelet', 'addon_hf', 'lipid_lowering'],
+    evidenceGrade: 'RCP EMA Epidyolex (2024) ; alerte ANSM 11 mars 2025 ; données cliniques AOD/clopidogrel absentes',
+    sources: ['RCP EMA Epidyolex (2024)', 'Alerte ANSM CBD (11 mars 2025)', 'AHA 2020 (cannabis)'],
+    articleSlug: 'cannabis-cbd-et-substances-recreatives',
+  },
+  {
     id: 'alcool-exces',
     nameFr: 'Consommation excessive d’alcool (et alcool fort sous iSGLT2 / anticoagulants)',
     aliases: ['Alcool', 'Vin', 'Spiritueux', 'Consommation excessive d’alcool', 'Binge drinking'],

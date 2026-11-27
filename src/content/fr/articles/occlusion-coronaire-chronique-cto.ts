@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Occlusion coronaire chronique (CTO) et collatérales',
   category: 'dispositifs',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium',
   volatility: 'warm',
   tags: [
@@ -128,7 +128,7 @@ Le consensus **EAPCI/EACVI 2024** (branches interventionnelle, imagerie et chiru
 - **IRM cardiaque** privilégiée pour la viabilité lorsqu’elle est disponible ; **TEP (PET)** préférée à la scintigraphie (SPECT) pour la perfusion.
 - Des seuils indicatifs d’ischémie significative (par exemple > 10 % du myocarde en SPECT) et de viabilité (cicatrice IRM occupant moins d’un quart à la moitié de l’épaisseur de la paroi) sont mentionnés dans un tableau du consensus (non revérifié intégralement).
 - Le **EuroCTO Club (2019)** rappelle une règle pratique : un territoire qui se contracte encore est présumé viable ; un territoire immobile nécessite une preuve d’imagerie de viabilité.
-- Les recommandations **ESC 2024** sur les syndromes coronariens chroniques ne donnent **pas de recommandation gradée** sur les tests de viabilité, jugeant leur rôle dans l’ICFER ischémique encore débattu (voir l’article « Examens et chiffres : NT-proBNP, taille du VG et cicatrice IRM »).
+- Les recommandations **ESC 2024** sur les syndromes coronariens chroniques ne donnent **pas de recommandation gradée** sur les tests de viabilité, jugeant leur rôle dans l’ICFER ischémique encore débattu (voir *Viabilité myocardique : hibernation, cicatrice et examens de viabilité* et *Examens et chiffres : NT-proBNP, taille du VG et cicatrice IRM*).
 
 ### Les trois options face à une occlusion isolée de l’IVA
 
@@ -187,6 +187,10 @@ Le choix appartient à la **Heart Team** selon les symptômes, l’anatomie, les
     },
   ],
   relatedArticleSlugs: [
+    'viabilite-myocardique',
+    'angor-et-medicaments-anti-angineux',
+    'antiplaquettaires-bitherapie-et-protection-gastrique',
+    'angioplastie-protegee-et-assistance-circulatoire',
     'essais-cliniques-en-cours-et-a-suivre',
     'revascularisation-pontage-stents',
     'cardiomyopathie-ischemique',

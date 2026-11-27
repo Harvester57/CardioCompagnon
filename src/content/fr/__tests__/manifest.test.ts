@@ -56,14 +56,14 @@ function collectTypeScriptFiles(dir: string): string[] {
 describe('Manifeste de completude du contenu francais (Porte 1)', () => {
   const expectedSlugSet = new Set<string>(EXPECTED_ARTICLE_SLUGS);
 
-  it('definit exactement 85 slugs canoniques uniques dans EXPECTED_ARTICLE_SLUGS', () => {
-    expect(EXPECTED_ARTICLE_SLUGS).toHaveLength(85);
-    expect(expectedSlugSet.size).toBe(85);
+  it('definit exactement 111 slugs canoniques uniques dans EXPECTED_ARTICLE_SLUGS', () => {
+    expect(EXPECTED_ARTICLE_SLUGS).toHaveLength(111);
+    expect(expectedSlugSet.size).toBe(111);
   });
 
-  it('charge exactement 85 articles conformes au contrat WikiArticle', () => {
+  it('charge exactement 111 articles conformes au contrat WikiArticle', () => {
     const articles = getAllArticles();
-    expect(articles).toHaveLength(85);
+    expect(articles).toHaveLength(111);
 
     const seenSlugs = new Set<string>();
     for (const article of articles) {
@@ -75,7 +75,7 @@ describe('Manifeste de completude du contenu francais (Porte 1)', () => {
       expect(article.plainSummaryFr.trim().length, `plainSummaryFr vide sur ${article.slug}`).toBeGreaterThan(0);
       expect(article.sections.length, `sections vide sur ${article.slug}`).toBeGreaterThan(0);
       expect(article.sources.length, `sources vide sur ${article.slug}`).toBeGreaterThan(0);
-      expect(article.asOf, `asOf invalide sur ${article.slug}`).toMatch(/^2026-11-(24|25)$/);
+      expect(article.asOf, `asOf invalide sur ${article.slug}`).toMatch(/^2026-11-(24|25|26|27)$/);
 
       for (const relatedSlug of article.relatedArticleSlugs) {
         expect(

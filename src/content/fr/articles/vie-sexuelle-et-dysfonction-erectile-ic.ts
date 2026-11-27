@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "Vie sexuelle et dysfonction érectile dans l'insuffisance cardiaque",
   category: 'quotidien',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -71,6 +71,8 @@ export const article: WikiArticle = {
 | **Diurétiques thiazidiques** | Associés à une DE dans des cohortes d'hypertension | Souvent non nécessaires si la congestion est gérée par diurétique de l'anse ; à réévaluer avec votre équipe si associés. |
 | **IEC, ARA2, ARNI (sacubitril/valsartan — *Entresto*), iSGLT2** | Profil généralement neutre, parfois favorable sur la fonction endothéliale | Rarement directement en cause (une hypotension marquée peut toutefois accroître fatigue ou étourdissements). |
 
+**Testostérone basse :** chez les hommes atteints d'insuffisance cardiaque, un taux bas de testostérone est fréquent, accompagne des symptômes plus marqués et peut réduire la libido et aggraver la DE. Le diagnostic exige des symptômes associés à **deux dosages matinaux à jeun abaissés**. Dans le grand essai **TRAVERSE** (*NEJM* 2023), le gel de testostérone n'a pas augmenté les infarctus ni les AVC chez des hommes à haut risque, mais a augmenté les **fibrillations atriales**, les **insuffisances rénales aiguës** et les **embolies pulmonaires**, et les patients en IC NYHA III–IV étaient exclus. La testostérone favorise aussi la rétention hydrosodée et peut renforcer l'effet des antivitamines K (voir *Hormones, testostérone et ménopause*).
+
 **Règle de sécurité essentielle :** n'arrêtez ni ne sautez jamais un bêtabloquant, un ARM ou un autre pilier de l'insuffisance cardiaque pour améliorer vos érections. Un arrêt non encadré expose à une décompensation, des arythmies rapides et une hospitalisation ; tout changement éventuel (comme passer de la spironolactone à l'éplérénone, ou discuter du nébivolol si approprié) relève de votre cardiologue.`,
     },
     {
@@ -107,7 +109,8 @@ Parce que le sildénafil dispose d'essais directs dans l'ICFER, d'une fenêtre s
 3. **Stimulateurs de la guanylate cyclase soluble (riociguat et vériciguat) :** le **riociguat** est strictement contre-indiqué avec tous les IPDE5. Avec le **vériciguat (*Verquvo*)**, le RCP européen indique que l'association aux IPDE5 est **déconseillée** en raison d'une hypotension symptomatique additive (voir *Médicaments additionnels : ivabradine, digoxine et vériciguat*).
 4. **Sacubitril/valsartan (*Entresto*), tension basse et rétrécissement aortique (PRUDENCE) :** les deux RCP contre-indiquent l'initiation en dessous de **90/50 mmHg**, le RCP du Viagra souligne l'effet hypotenseur renforcé avec *Entresto*, et une prudence particulière s'impose en cas de **rétrécissement aortique** ou d'alphabloquant prostatique.
 5. **Compléments sexuels « à base de plantes » ou achetés en ligne :** le consensus **Princeton IV** alerte sur la fréquente **adultération** de ces produits par des analogues non déclarés du sildénafil ou du tadalafil, faisant courir un risque d'hypotension sévère cachée si vous possédez un spray de trinitrine ou prenez un nitré ou du vériciguat.
-6. **Si les IPDE5 oraux sont contre-indiqués :** des alternatives urologiques ou andrologiques sans interaction systémique avec les nitrés (pompe à vide mécanique, alprostadil local) peuvent être discutées avec votre cardiologue et votre médecin traitant.`,
+6. **Si les IPDE5 oraux sont contre-indiqués :** des alternatives urologiques ou andrologiques sans interaction systémique avec les nitrés (pompe à vide mécanique, alprostadil local) peuvent être discutées avec votre cardiologue et votre médecin traitant.
+- **Poppers (nitrites d'amyle, de butyle ou d'isobutyle) :** ce sont des donneurs de monoxyde d'azote ; le RCP du sildénafil cite nommément le nitrite d'amyle parmi les associations **contre-indiquées**, avec le même risque de collapsus tensionnel qu'avec les sprays nitrés. Les poppers sont vendus légalement en France (voir *Cannabis, CBD et substances récréatives*).`,
     },
     {
       headingFr: 'Synthèse des référentiels, portée en ICFER ischémique et limites',
@@ -144,6 +147,8 @@ Parce que le sildénafil dispose d'essais directs dans l'ICFER, d'une fenêtre s
     'vivre-avec-insuffisance-cardiaque',
     'questions-equipe-cardiologie',
     'recommandations-comparees-esc-us-nice',
+    'hormones-testosterone-et-menopause',
+    'cannabis-cbd-et-substances-recreatives',
   ],
   sources: [
     {
@@ -160,7 +165,11 @@ Parce que le sildénafil dispose d'essais directs dans l'ICFER, d'une fenêtre s
     },
     {
       label: 'RCP européens EMA (Viagra, Cialis, Verquvo — textes intégraux), ANSM (nicorandil), ESC 2024 SCC, Kloner (2003), Oliver (2009) & Holt (2022)',
-      detail: 'Divergence UE Cialis (NYHA II+ contre-indiqué) vs Viagra (IC sévère), délais nitrés 24 h/48 h, contre-indication nicorandil/riociguat et prudence avec sacubitril/valsartan.',
+      detail: 'Divergence UE Cialis (NYHA II+ contre-indiqué) vs Viagra (IC sévère), délais nitrés 24 h/48 h, contre-indication nicorandil/riociguat/poppers (nitrite d’amyle) et prudence avec sacubitril/valsartan.',
+    },
+    {
+      label: 'Essai TRAVERSE (NEJM 2023)',
+      detail: 'Sécurité cardiovasculaire du gel de testostérone : neutralité sur IDM/AVC, hausse des FA, insuffisances rénales aiguës et embolies pulmonaires, exclusion des IC NYHA III–IV.',
     },
   ],
   disclaimerType: 'medical',

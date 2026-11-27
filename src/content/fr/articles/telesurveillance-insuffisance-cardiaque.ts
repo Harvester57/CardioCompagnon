@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Télésurveillance à domicile et suivi à distance des prothèses',
   category: 'dispositifs',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -97,7 +97,7 @@ export const article: WikiArticle = {
 
 - **Forfait opérateur (équipe soignante) :** **28 € par patient et par mois** en niveau 2 pour l’insuffisance cardiaque (contre 11 € en niveau 1). Un article de presse médicale de janvier 2024 mentionne une majoration possible jusqu’à **70 € par mois** en niveau 2 pour les situations les plus complexes (les conditions exactes et la date d’entrée en vigueur n’ont pas été vérifiées directement dans l’arrêté).
 - **Forfait technique (fournisseur du dispositif médical numérique) :** rémunération distincte, révisée tous les 6 mois et dégressive selon le volume national de patients (ordre de grandeur d’environ **39 à 40 € par mois** en 2025–2026, non vérifié directement sur les arrêtés consolidés ni sur une éventuelle révision de septembre 2026).
-- **Remboursement pour le patient :** l’Assurance Maladie prend en charge **60 %** du tarif, ou **100 %** en cas d’exonération du ticket modérateur (notamment en **ALD n° 5 ou n° 13**). **Aucun dépassement d’honoraires** n’est autorisé sur le forfait opérateur. La prise en charge cesse si le patient n’utilise pas le dispositif ou refuse la transmission des données.`,
+- **Remboursement pour le patient :** l’Assurance Maladie prend en charge **60 %** du tarif, ou **100 %** en cas d’exonération du ticket modérateur (notamment en **ALD n° 5 ou n° 13**). **Aucun dépassement d’honoraires** n’est autorisé sur le forfait opérateur. La prise en charge cesse si le patient n’utilise pas le dispositif ou refuse la transmission des données. En janvier 2025, la HAS avait annoncé une réévaluation de la ligne générique de télésurveillance de l'IC autour de fin juin 2026 ; aucun avis publié n'a été retrouvé au 26 novembre 2026.`,
     },
     {
       headingFr: '2. Capteur implanté de pression artérielle pulmonaire (CardioMEMS)',
@@ -115,7 +115,8 @@ Un capteur miniature est implanté dans une branche de l’artère pulmonaire lo
   - **Aucun effet sur la mortalité (HR 0,96).**
   - Signal possible d’un bénéfice moindre dans la cardiomyopathie ischémique que non ischémique, non retrouvé dans GUIDE-HF et possiblement dû au hasard.
 - **Analyse poolée des essais (CHAMPION, GUIDE-HF, MONITOR-HF ; 1 898 patients) :** environ **30 %** d’hospitalisations pour IC en moins, de manière homogène selon l’étiologie et la FEVG, sans baisse significative de la mortalité. Une analyse sur données individuelles de **1 350** patients ICFER incluant également un autre capteur placé dans l’oreillette gauche (**LAPTOP-HF**, essai interrompu précocement pour complications liées à la procédure) suggérait moins de décès (**HR 0,75**, IC 95 % : **0,57–0,99**).
-- **Cordella** (autre capteur pulmonaire) : données limitées à une étude simple bras sans comparateur ; NICE estime que des études supplémentaires sont nécessaires.
+- **Cordella** (autre capteur pulmonaire, Endotronix/Edwards) : autorisé aux États-Unis par la FDA le **20 juin 2024** (P230040) en NYHA III sur la base de l'étude **simple bras PROACTIVE-HF** (**456** patients dans l'analyse principale, **45,6 %** avec FEVG ≤ 40 %, **31,4 %** ischémiques ; hospitalisations IC ou décès à 6 mois de **0,16** par patient contre un seuil prédéfini de 0,43 ; hémoptysies dans **3,0 %**). La FDA a souligné l'absence de groupe témoin et exigé une étude post-autorisation randomisée d'au moins 300 patients. L'essai **PROACTIVE-HF-2** (NCT05934487, ~1 750 patients NYHA II–III après hospitalisation IC récente, résultats attendus vers 2028) est en cours de recrutement ; le NICE estime que des recherches supplémentaires restent nécessaires.
+- **Indication américaine CardioMEMS et remboursement Medicare (2022–2025) :** après **GUIDE-HF** (1 000 patients, 53 % ICFER ; HR global **0,88** NS ; analyse pré-COVID **HR 0,81**, hospitalisations IC **HR 0,72**), la FDA a élargi l'indication en février 2022 aux classes NYHA II–III avec hospitalisation récente **ou** peptides natriurétiques élevés. Toutefois, depuis le **13 janvier 2025**, la décision nationale de Medicare limite le remboursement aux études approuvées comportant un groupe comparateur et au moins 24 mois de suivi (comme **LOWER-PAP**, NCT06783335, ~2 150 patients, et une étude de couverture Abbott approuvée en février 2025), confirmant que les preuves restent jugées incomplètes même aux États-Unis.
 
 ### Indications, contre-indications, sécurité et statut en France
 
@@ -162,6 +163,7 @@ Un capteur miniature est implanté dans une branche de l’artère pulmonaire lo
 - Les auteurs de **MORE-CARE** relèvent que la mortalité à 1 an du groupe témoin d’IN-TIME était **1,8 fois** supérieure à celle de MORE-CARE (**8,7 % contre 4,8 %**), suggérant des populations différentes ; ni REM-HF ni MORE-CARE n’ont reproduit le signal de survie d’IN-TIME.
 - **Méta-analyse Veres (2025, 16 essais, 11 232 patients) :** baisse globale de la mortalité (**HR 0,83**, IC 95 % : **0,72–0,96**), mais **aucune baisse des hospitalisations pour IC (OR 0,95)**. Le chiffre de mortalité ne regroupe toutefois que 7 essais et inclut **TIM-HF2**, qui n’était pas basé sur une prothèse implantée.
 - La méta-analyse **Scholte (2023)** n’a trouvé **aucun effet global** du suivi par prothèse sur les décès ou les hospitalisations pour IC, et l’**ESC 2026** souligne le faible niveau de preuve sur les événements d’insuffisance cardiaque.
+- **Données plus récentes sur HeartLogic (sans groupe témoin) :** l'étude **PREEMPT-HF (2025, 2 155 patients)** a détecté **78,3 %** des événements d'IC, au prix de **1,18 fausse alerte par patient-année**. Une **cohorte française (novembre 2025, 309 patients**, FEVG moyenne **31 %**, **61 % d'origine ischémique**) a rapporté **6,1 %** d'hospitalisations non programmées pour IC sur 12 mois avec un suivi guidé par alertes — population très proche de la cardiomyopathie ischémique en France, mais sans groupe comparateur permettant de prouver un bénéfice. Un essai randomisé comparant HeartLogic au suivi en présentiel (**HERO**, NCT07544771) est enregistré.
 - En 2024, le **NICE** a estimé que **HeartLogic** et **TriageHF** réduisent les hospitalisations par rapport au suivi standard de prothèse seul et les accepte au sein d’équipes spécialisées ; il déconseille en revanche **CorVue**, fondé sur la seule impédance intrathoracique et générateur de nombreuses fausses alertes.`,
     },
     {
@@ -191,6 +193,9 @@ Un capteur miniature est implanté dans une branche de l’artère pulmonaire lo
     'questions-equipe-cardiologie',
     'vivre-avec-insuffisance-cardiaque-en-france',
     'reseau-de-soins-et-aides-sociales-france',
+    'ecg-ia-et-detection-numerique',
+    'dispositifs-insuffisance-cardiaque-en-developpement',
+    'isolement-social-et-lien-social',
   ],
   sources: [
     {
@@ -212,6 +217,10 @@ Un capteur miniature est implanté dans une branche de l’artère pulmonaire lo
     {
       label: 'Consensus HRS 2023, ESC 2022 (rythmologie), IN-TIME, MORE-CARE et MANAGE-HF phase 1 (textes intégraux), REM-HF et méta-analyse Veres (2025)',
       detail: 'Suivi à distance des DAI/CRT, réduction des chocs inappropriés (ECOST), mortalité vs hospitalisations, remplacement de visites programmées et ajustements diurétiques sous HeartLogic',
+    },
+    {
+      label: 'FDA Cordella / PROACTIVE-HF (juin 2024), décision Medicare CMS (janvier 2025), PREEMPT-HF (2025) & cohorte française HeartLogic (novembre 2025)',
+      detail: 'Approbation FDA simple bras de Cordella (PROACTIVE-HF-2 en cours), couverture Medicare conditionnée aux études, performances HeartLogic (78,3 %, 1,18 fausse alerte/an) et cohorte française (309 patients, 61 % ischémiques)',
     },
   ],
   disclaimerType: 'medical',

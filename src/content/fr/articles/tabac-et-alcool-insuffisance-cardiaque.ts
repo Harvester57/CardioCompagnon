@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "Tabac et alcool dans l'insuffisance cardiaque",
   category: 'quotidien',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -66,7 +66,11 @@ Associer un accompagnement comportemental à un traitement validé multiplie par
 - **Cigarette électronique / vapotage (divergence explicite) :**
   - **France (HCSP avis du 26/11/2021 ; Ameli 04/12/2025) :** les cigarettes électroniques ne sont **pas des produits de santé** (**0 % de remboursement**) et le **HCSP** conclut que les preuves sont **insuffisantes** pour que les professionnels de santé les recommandent comme outil de sevrage ; les traitements validés et le coaching priment.
   - **ESC 2024 (SCC) :** déconseille la cigarette électronique comme substitut (non dénuée de risques) et met en garde contre le **double usage** (vapotage + tabac fumé), qui maintient un risque cardiovasculaire élevé.
-  - **HeartFailureMatters (portail patient HFA-ESC) :** adopte un ton plus souple orienté réduction des risques. Si vous vapotez déjà pour ne pas refumer, discutez avec votre équipe d'un plan pour éviter tout double usage puis quitter progressivement la nicotine.`,
+  - **HeartFailureMatters (portail patient HFA-ESC) :** adopte un ton plus souple orienté réduction des risques. Si vous vapotez déjà pour ne pas refumer, discutez avec votre équipe d'un plan pour éviter tout double usage puis quitter progressivement la nicotine.
+
+### Fumer du cannabis ou le mélanger au tabac
+
+Le cannabis fumé entraîne les mêmes dangers de combustion que le tabac : un commentaire résumant la déclaration scientifique **AHA 2020** rapporte environ cinq fois plus de monoxyde de carbone et trois fois plus de goudrons qu'avec le tabac, et l'AHA déconseille de fumer ou de vapoter toute substance. Dans une grande enquête américaine portant sur **434 104** adultes (**Jeffers 2024**, données observationnelles), l'usage quotidien de cannabis était associé à davantage d'infarctus (**aOR 1,25**) et d'AVC (**aOR 1,42**), y compris chez les personnes n'ayant jamais fumé de tabac. Lorsque le cannabis est fumé mélangé au tabac, le plan de sevrage doit prendre en compte les deux substances (voir *Cannabis, CBD et substances récréatives*).`,
     },
     {
       headingFr: "Alcool dans l'insuffisance cardiaque ischémique",
@@ -127,6 +131,10 @@ En France, **Santé publique France** (dossier mis à jour janvier/août 2026) r
     'vivre-avec-insuffisance-cardiaque-en-france',
     'questions-equipe-cardiologie',
     'recommandations-comparees-esc-us-nice',
+    'cannabis-cbd-et-substances-recreatives',
+    'arteres-carotides-et-aomi',
+    'pollution-de-lair-et-bruit',
+    'sante-bucco-dentaire-et-gencives',
   ],
   sources: [
     {
@@ -144,6 +152,10 @@ En France, **Santé publique France** (dossier mis à jour janvier/août 2026) r
     {
       label: 'Alcohol-AF (Voskoboinik, NEJM 2020), Piano (2017), Santé publique France (2026), ESC 2026 (IC), ESC 2024 (FA) & notices iSGLT2 / EMA',
       detail: 'Réduction des récidives de FA (53 % vs 73 %, HR 0,55), repères généraux SPF (non cibles ICFER), limite ≤ 30 g/semaine en FA et risque d’acidocétose sous iSGLT2.',
+    },
+    {
+      label: 'Déclaration scientifique AHA (2020, cannabis) & Jeffers et al. (JAHA 2024)',
+      detail: 'Monoxyde de carbone et goudrons du cannabis fumé, et associations observationnelles avec infarctus (aOR 1,25) et AVC (aOR 1,42) sur 434 104 adultes.',
     },
   ],
   disclaimerType: 'medical',

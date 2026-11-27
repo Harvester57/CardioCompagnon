@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Examens et chiffres : NT-proBNP, taille du VG et cicatrice IRM',
   category: 'diagnostic',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -116,7 +116,7 @@ export const article: WikiArticle = {
 **Ce que regarde votre cardiologue sur ces images :**
 
 - **L'épaisseur de la cicatrice dans la paroi.** Chaque segment du cœur est évalué de 0 % à 100 % d'épaisseur cicatricielle. Plus la cicatrice est fine (notamment en dessous de 25 à 50 % de l'épaisseur), plus le segment a de chances de récupérer. En revanche, une cicatrice qui traverse presque toute la paroi récupère rarement.
-- **L'intérêt pratique pour les décisions.** Une cicatrice moins étendue est associée à de meilleures chances de voir la FEVG progresser sous traitement. En revanche, les recommandations actuelles rappellent qu'un test de viabilité ne suffit pas à lui seul à décider d'une pose de stents ou d'un pontage (voir *Revascularisation coronaire : pontage et stents*).
+- **L'intérêt pratique pour les décisions.** Une cicatrice moins étendue est associée à de meilleures chances de voir la FEVG progresser sous traitement. En revanche, les recommandations actuelles rappellent qu'un test de viabilité ne suffit pas à lui seul à décider d'une pose de stents ou d'un pontage (voir *Viabilité myocardique : hibernation, cicatrice et tests de viabilité*, *Thèse : tests de viabilité myocardique et survie après revascularisation* et *Revascularisation coronaire : pontage et stents*).
 - **La localisation de la cicatrice aide à confirmer la cause.** Une cicatrice d'infarctus débute sous la paroi interne du cœur (sous-endocardique) dans le territoire d'une artère coronaire. Une cicatrice située au milieu de la paroi ou sur sa face externe oriente plutôt vers une autre cause (cardiomyopathie non ischémique, ancienne myocardite — voir *Confirmer la cause de la dysfonction du ventricule gauche*).`,
     },
     {
@@ -189,6 +189,8 @@ Ces cinq examens sont détaillés dans *EFX (VO2 max), strain (GLS), troponine c
     'thrombus-vg-et-anticoagulants',
     'telesurveillance-insuffisance-cardiaque',
     'poids-obesite-et-denutrition',
+    'viabilite-myocardique',
+    'these-viabilite-et-survie-revascularisation',
   ],
   sources: [
     { label: 'Recommandations ESC 2026 (peptides natriurétiques, imagerie et section 11.6.1)', detail: "Seuils d'exclusion et seuils liés à l'âge, tableau 9, effet des ARNI, viabilité, IRM comme référence et dosage guidé" },

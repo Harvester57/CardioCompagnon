@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "La fraction d'éjection (FEVG)",
   category: 'diagnostic',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'high',
   volatility: 'warm',
   tags: [
@@ -70,8 +70,9 @@ Ce seuil s'apprécie **après au moins 3 mois de traitement médical optimisé**
 
 - **Elle décrit mieux un groupe qu'un individu.** Une FEVG basse augmente le risque moyen de trouble du rythme dans une grande population, mais elle prédit mal ce qui arrivera à une personne précise.
 - **D'autres paramètres comptent tout autant.** Votre cardiologue regarde aussi vos symptômes au quotidien, votre tolérance à l'effort, la taille de votre ventricule gauche (dilatation), l'étendue éventuelle d'une cicatrice à l'IRM et votre réponse aux traitements.
+- **Évolution dans le temps et volumes du ventricule gauche.** La FEVG étant un pourcentage, elle indique comment le ventricule se vide, mais pas sa taille. Les comptes rendus mentionnent souvent les volumes indexés à votre surface corporelle : le **volume télédiastolique indexé (VTDi / LVEDVi)** (ventricule rempli) et le **volume télésystolique indexé (VTSi / LVESVi)** (ventricule après contraction). Sous traitement, la FEVG et les volumes évoluent surtout au cours de la première année ; dans la maladie coronaire, un VTSi élevé apporte une information pronostique complémentaire au seul chiffre de FEVG.
 
-Ces nuances expliquent pourquoi les décisions (notamment autour d'un dispositif implantable) se prennent toujours au cas par cas (voir *Dispositifs cardiaques implantés : DAI et CRT*).`,
+Ces nuances expliquent pourquoi les décisions (notamment autour d'un dispositif implantable) se prennent toujours au cas par cas (voir *Dispositifs cardiaques implantés : DAI et CRT*, *Examens et chiffres* et *La cardiomyopathie ischémique*).`,
     },
     {
       headingFr: "Comparaison des seuils (ESC, AHA, BHF) et données d'études",
@@ -94,7 +95,8 @@ Les recommandations européennes ont évolué en 2026 ; des documents publiés �
 
 ### Écarts de mesure ETT vs IRM et pouvoir prédictif
 
-- **Sous-étude ETT vs IRM de REVIVED-BCIS2 (373 patients, lecture en aveugle par laboratoire central).** La FEVG moyenne était de **31,4 % en ETT** contre **25,8 % en IRM** (écart moyen d'environ **5,5 points**). Seules **7,5 %** des paires se situaient à moins de 5 points l'une de l'autre (limites d'agrément de **−24,4 à +13,2 points**). Un tiers des patients ayant une FEVG IRM < 35 % avaient une FEVG ETT ≥ 35 %, avec un taux d'implantation de DAI de 45 % contre 61 % en cas de concordance (les deux examens étant toutefois espacés d'environ 6 semaines en moyenne). Dans cette même sous-étude, le volume télésystolique du ventricule gauche prédisait l'évolution clinique, contrairement à la FEVG après ajustement.
+- **Sous-étude ETT vs IRM de REVIVED-BCIS2 (373 patients, lecture en aveugle par laboratoire central).** La FEVG moyenne était de **31,4 % en ETT** contre **25,8 % en IRM** (écart moyen d'environ **5,5 points**). Seules **7,5 %** des paires se situaient à moins de 5 points l'une de l'autre (limites d'agrément de **−24,4 à +13,2 points**). Un tiers des patients ayant une FEVG IRM < 35 % avaient une FEVG ETT ≥ 35 %, avec un taux d'implantation de DAI de 45 % contre 61 % en cas de concordance (les deux examens étant toutefois espacés d'environ 6 semaines en moyenne). Dans cette même sous-étude, le **volume télésystolique indexé (VTSi)** du ventricule gauche prédisait le décès ou la mort subite récupérée en ETT (**HR 1,06**, IC 95 % : 1,01–1,12) et en IRM (**HR 1,06**, IC 95 % : 1,01–1,11), alors que la FEVG ne le prédisait plus après ajustement (HR 0,94 en ETT et 0,935 en IRM, intervalles traversant 1 ; l'unité de ces HR n'est pas précisée dans la publication, seule la direction est établie).
+- **Trajectoires de FEVG et remodelage ventriculaire.** Dans une cohorte suivie jusqu'à 15 ans (**Lupón 2018**, résumé), la FEVG augmentait surtout durant la première année avant de se stabiliser sur plusieurs années, avec un gain moindre en cas de cause ischémique. Dans **PROVE-HF** (54 % de causes ischémiques), le VTSi moyen a diminué de **61,7 à 45,5 mL/m²** et la FEVG a augmenté de **28,2 % à 37,8 %** en 12 mois sous sacubitril/valsartan (*Entresto*). Dans l'étude historique **White 1987** (605 hommes de moins de 60 ans après infarctus, résumé), le volume télésystolique était un meilleur prédicteur de survie que la FEVG ou le volume télédiastolique. Enfin, une méta-analyse portant sur 25 traitements et dispositifs (**Kramer 2010**, résumé) montre que les thérapies qui réduisent les volumes ventriculaires à court terme sont aussi celles qui réduisent la mortalité dans les grands essais (corrélations d'environ 0,5 au niveau des essais).
 - **Analyse poolée PROFID (140 204 patients post-infarctus).** Sans DAI, le taux de mort subite cardiaque à 3 ans était de **3,41 %** si la FEVG était ≤ 35 % contre **0,87 %** au-dessus de 35 %. En revanche, la FEVG seule discriminait mal le risque individuel (statistique C de **0,50 à 0,56**), et l'ajout d'autres variables ou de la cicatrice IRM n'a que légèrement amélioré cette prédiction.`,
     },
   ],
@@ -108,18 +110,21 @@ Les recommandations européennes ont évolué en 2026 ; des documents publiés �
     'recommandations-comparees-esc-us-nice',
     'stenose-aortique-fevg-reduite',
     'dysfonction-vg-asymptomatique-stade-b',
+    'viabilite-myocardique',
+    'efx-strain-troponine-et-imagerie-cardiaque',
   ],
   sources: [
     { label: "Recommandations ESC 2026 sur l'insuffisance cardiaque", detail: "Nouvelle définition de l'ICFER (< 50 %), suppression de la tranche intermédiaire, définition HFimpEF et seuil de 35 % après au moins 3 mois de traitement" },
     { label: 'Guide patient ESC 2026', detail: 'Définition grand public, formulation « ≤ 50 % » et comparaison avec les anciennes catégories' },
     { label: 'British Heart Foundation (BHF, 2024)', detail: 'Tranches de FEVG utilisées dans les documents patients britanniques' },
-    { label: 'REVIVED-BCIS2 — analyse ETT vs IRM', detail: 'Discordance de mesure entre échocardiographie et IRM autour du seuil de 35 %' },
+    { label: 'REVIVED-BCIS2 — analyse ETT vs IRM et vérification texte intégral', detail: 'Discordance de mesure entre échocardiographie et IRM autour du seuil de 35 % et valeur pronostique du VTSi' },
     { label: 'Analyse poolée PROFID', detail: 'Pouvoir prédictif de la FEVG sur la mort subite après infarctus (140 204 patients)' },
     { label: 'Revue HFimpEF', detail: 'Définition universelle 2021 de la FEVG améliorée' },
     { label: "Deuxième définition universelle de l'insuffisance cardiaque (2026)", detail: "Consensus AHA/ACC/ESC/WHF (texte intégral) : groupes de FEVG sans frontière chiffrée, limites inférieures de la normale et nuances sur la FEVG améliorée" },
     { label: 'AHA — Ejection Fraction (2025)', detail: 'Fourchettes grand public américaines (site web et fiche)' },
     { label: 'Cleveland Clinic — Ejection Fraction (2026)', detail: 'Formule de la FEVG et plages de référence par sexe' },
     { label: 'Heart Failure Matters (ESC)', detail: "Site patient de l'ESC : examens, classes NYHA et anciennes tranches de FEVG" },
+    { label: 'Lupón (2018), PROVE-HF (2019), White (1987) et Kramer (2010)', detail: 'Trajectoires de FEVG sur 15 ans, remodelage inverse sous ARNI et lien entre volumes ventriculaires et mortalité' },
   ],
   disclaimerType: 'medical',
 };

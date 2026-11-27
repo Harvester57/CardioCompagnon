@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Interactions entre compléments, aliments et médicaments cardiaques',
   category: 'nutrition',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -45,6 +45,8 @@ export const article: WikiArticle = {
     'éplérénone',
     'décongestionnants',
     'pseudoéphédrine',
+    'cbd',
+    'cannabidiol',
   ],
   aliases: [
     'Produits à éviter',
@@ -78,6 +80,8 @@ export const article: WikiArticle = {
     'Vitamines B',
     'Vitamine B6',
     'Magnésium et interactions',
+    'CBD et médicaments',
+    'Huiles de CBD',
   ],
   linkedModules: ['core'],
   plainSummaryFr:
@@ -111,7 +115,8 @@ export const article: WikiArticle = {
 - **Ginseng, danshen (sauge rouge) et formules de phytothérapie chinoise :** qualité très variable, substances parfois directement actives sur le cœur et risque hémorragique sous anticoagulants (évitez le **danshen** avec tout anticoagulant). Évitez également l'**aubépine**, le **muguet** et l'**actée bleue**.
 - **Berbérine :** déconseillée avec les médicaments par l'ANSES en France (interactions enzymatiques plausibles avec anticoagulants, digoxine, bêtabloquants et statines).
 - **Boissons énergisantes et brûleurs de graisse :** peuvent élever tension et rythme cardiaque et contenir des substances cachées ; déconseillés en cas de cardiopathie.
-- **Psyllium (ispaghul) et créatine :** espacez le **psyllium** de **30 à 60 minutes** de vos autres médicaments (surtout digoxine et warfarine) et comptez les **150 mL d'eau** par sachet si vous avez une limite hydrique. Signalez toute prise de **créatine** avant une prise de sang : elle fait artificiellement baisser le DFGe calculé sans abîmer le rein, ce qui pourrait fausser l'ajustement de vos traitements.`,
+- **Psyllium (ispaghul) et créatine :** espacez le **psyllium** de **30 à 60 minutes** de vos autres médicaments (surtout digoxine et warfarine) et comptez les **150 mL d'eau** par sachet si vous avez une limite hydrique. Signalez toute prise de **créatine** avant une prise de sang : elle fait artificiellement baisser le DFGe calculé sans abîmer le rein, ce qui pourrait fausser l'ajustement de vos traitements.
+- **Huiles, tisanes et bonbons au CBD (cannabidiol) :** les produits vendus en boutique ne sont pas des médicaments et sont souvent mal dosés. En France, l'ANSM (alerte du 11 mars 2025) signale des interactions avec la **digoxine**, les **anticoagulants** (warfarine, fluindione, dabigatran) et les **statines**, et le CBD peut en théorie affaiblir le **clopidogrel (*Plavix*)**. Évitez tout produit au CBD tant qu'il n'a pas été vérifié avec votre pharmacien ou votre cardiologue si vous prenez un anticoagulant, du clopidogrel, de la digoxine ou de l'amiodarone (voir *Cannabis, CBD et substances récréatives*).`,
     },
     {
       headingFr: "Anticoagulants, antiagrégants et préparation d'une chirurgie",
@@ -167,7 +172,8 @@ export const article: WikiArticle = {
 - **Extrait concentré de thé vert (EGCG) :** petites études humaines — **digoxine** **-31 à -33 %** (n = 15, **Kim 2018**), **lisinopril** **-67 %** (n = 10), **nadolol** **-85 %** (n = 10), **céliprolol** **-98,6 %** (n = 3), **rosuvastatine** **-19 %** aigu (n = 13), **atorvastatine** **-22 à -24 %** (n = 12). Lacune humaine vérifiée (**Kyriacou 2025**) : aucune étude PK humaine pour bisoprolol, métoprolol, carvédilol, nébivolol, ARNI ou iSGLT2 (**Zeng 2022** bisoprolol = rat uniquement, 100 mg/kg, p = 0,17). Toxicité hépatique EFSA dès **800 mg/j** (règlement **UE 2022/2340** < 800 mg/j ; 75 cas US, 3 greffes / 40).
 - **Phytothérapie chinoise :** **QUEST (*Nature Medicine* 2024**, 3 110 patients chinois ICFER, ~74 % ischémiques, < 10 % sous iSGLT2, financé fabricant) : *Qiliqiangxin* sur prescription, décès CV ou hosp. IC 25,0 % vs 30,0 % (HR 0,78), mortalité globale ns ; ne valide pas les gélules du commerce. Revue parapluie **Chua 2025** : *Pueraria* (hyperkaliémie), *Qishen Yiqi* (hypotension, vertiges ; OR 0,43 sur 9 essais d'un seul fabricant), *Qili Qiangxin* et *Shexiangbaoxin* (substances cardioactives : aconit préparé, *Periploca*, venin de crapaud), injections *Shenfu/Shen Mai* (jusqu'à 21 % d'EI).
 - **Berbérine :** **Guo 2012** (n = 17, inhibition CYP3A4 +40 %, CYP2D6 ×9, CYP2C9 ×2), **Wu 2005** (ciclosporine), **ANSES 2019** déconseille avec médicaments, teneur 33–100 % (**Funk 2018**).
-- **Stimulants, psyllium, créatine :** boissons énergisantes (**Shah 2019** : QTc +6 à +8 ms, PAS +5 à +6 mmHg ; **ANSES 2013** : 25/212 signalements imputables) ; brûleurs de graisse (*p*-synéphrine, éphédra, DMAA, yohimbine, médicaments cachés **Tucker 2018**, **ANSES 2014/2016**, **AHA 2016**) ; psyllium (*Fybogel*/*Spagulax* : 30–60 min, 150 mL) ; créatine (**López-Clemente 2025** : hausse réversible de créatininémie / fausse baisse du DFGe).`,
+- **Stimulants, psyllium, créatine :** boissons énergisantes (**Shah 2019** : QTc +6 à +8 ms, PAS +5 à +6 mmHg ; **ANSES 2013** : 25/212 signalements imputables) ; brûleurs de graisse (*p*-synéphrine, éphédra, DMAA, yohimbine, médicaments cachés **Tucker 2018**, **ANSES 2014/2016**, **AHA 2016**) ; psyllium (*Fybogel*/*Spagulax* : 30–60 min, 150 mL) ; créatine (**López-Clemente 2025** : hausse réversible de créatininémie / fausse baisse du DFGe).
+- **CBD (cannabidiol) :** le RCP européen d'*Epidyolex* montre que le CBD inhibe le **CYP2C19** et la **glycoprotéine P intestinale** (en citant nommément la **digoxine** parmi les médicaments susceptibles d'augmenter) et élève les enzymes hépatiques (ALAT > 3× normale chez **12 %** contre < 1 % sous placebo), sans effet systémique démontré sur CYP3A4 ni CYP2C9 dans les études du RCP. L'**alerte ANSM du 11 mars 2025** recense **58 cas** d'interactions enregistrés par les centres antipoison français (2017–2023) et cite digoxine, warfarine, fluindione, dabigatran et statines. L'affaiblissement du clopidogrel (activé par CYP2C19) reste théorique et aucune donnée clinique n'existe pour apixaban ou rivaroxaban.`,
     },
     {
       headingFr: 'Données détaillées : risque hémorragique sous antithrombotiques et lacunes',
@@ -213,15 +219,17 @@ export const article: WikiArticle = {
     'thrombus-vg-et-anticoagulants',
     'maladie-renale-insuffisance-cardiaque',
     'diabete-insuffisance-cardiaque',
+    'cannabis-cbd-et-substances-recreatives',
+    'horaires-de-prise-et-routine-medicaments',
   ],
   sources: [
     {
-      label: 'RCP officiels EMA, FR BDPM, UK eMC et FDA (ARNI, ARM, iSGLT2, 4 AOD, antiagrégants, statines, ivabradine, vitamine D, ispaghul)',
-      detail: 'Vérification directe des mentions millepertuis (Pradaxa, Xarelto, Eliquis, Lixiana, Inspra, Tahor, Brilique, Plavix), pamplemousse, potassium/AINS, acidocétose, hypercalcémie/digoxine/thiazides et psyllium.',
+      label: 'RCP officiels EMA, FR BDPM, UK eMC et FDA (ARNI, ARM, iSGLT2, 4 AOD, antiagrégants, statines, ivabradine, vitamine D, ispaghul, Epidyolex)',
+      detail: 'Vérification directe des mentions millepertuis (Pradaxa, Xarelto, Eliquis, Lixiana, Inspra, Tahor, Brilique, Plavix), pamplemousse, potassium/AINS, acidocétose, hypercalcémie/digoxine/thiazides, psyllium et CBD (CYP2C19, P-gp, foie).',
     },
     {
-      label: 'Décisions ANSM (décembre 2024), EMA (2024, 2026), avis ANSES (2013–2019), EFSA et règlements UE (2022/860, 2022/2340)',
-      detail: 'Pseudoéphédrine Liste I et ibuprofène caché, réglisse EMA 2026, levure de riz rouge (< 3 mg/j), EGCG (< 800 mg/j), berbérine, boissons énergisantes et stimulants minceur.',
+      label: 'Décisions et alertes ANSM (décembre 2024, mars 2025), EMA (2024, 2026), avis ANSES (2013–2019), EFSA et règlements UE (2022/860, 2022/2340)',
+      detail: 'Pseudoéphédrine Liste I et ibuprofène caché, alerte CBD (58 cas d’interactions en France), réglisse EMA 2026, levure de riz rouge (< 3 mg/j), EGCG (< 800 mg/j), berbérine, boissons énergisantes et stimulants minceur.',
     },
     {
       label: 'Recommandations ESC 2026, consensus européen Abdin (2025, EJHF), AHA (2016, 2022) et ESPEN (2022)',

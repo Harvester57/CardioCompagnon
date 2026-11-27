@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Confirmer la cause de la dysfonction du ventricule gauche',
   category: 'diagnostic',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -183,6 +183,7 @@ Pour le rétrécissement aortique associé, voir *Rétrécissement aortique avec
     },
     {
       headingFr: 'Recommandations comparées, impact clinique et limites des preuves',
+      depth: 'evidence',
       bodyMarkdownFr: `### Recommandations internationales côte à côte (au 25 novembre 2026)
 
 Les cases issues de sections non vérifiées directement en texte intégral sont signalées par *(non vérifié)*. Le choix du bilan adapté à votre situation appartient toujours à votre cardiologue.
@@ -234,6 +235,7 @@ Les cases issues de sections non vérifiées directement en texte intégral sont
     'glossaire-cardiologie',
     'comprendre-le-diagnostic',
     'maladies-associees',
+    'viabilite-myocardique',
   ],
   sources: [
     {

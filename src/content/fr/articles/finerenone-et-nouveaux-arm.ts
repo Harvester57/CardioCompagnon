@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Finérénone, nouveaux ARM et chélateurs de potassium',
   category: 'traitements',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'hot',
   tags: [
@@ -85,7 +85,7 @@ Une autre analyse exploratoire post hoc de **FINEARTS-HF** (FEVG ≥ 40 %, moyen
     },
     {
       headingFr: 'Ce que cela signifie pour une cardiomyopathie ischémique autour de 35 % de FEVG',
-      bodyMarkdownFr: `- À **35 % de FEVG**, la finérénone serait **hors AMM et non prouvée** sur les événements d'insuffisance cardiaque. À ce niveau de FEVG, les preuves de survie appartiennent aux ARM stéroïdiens : la **spironolactone** (essai **RALES**) et l'**éplérénone** (essais **EMPHASIS-HF**, et **EPHESUS** après un infarctus du myocarde).
+      bodyMarkdownFr: `- À **35 % de FEVG**, la finérénone serait **hors AMM et non prouvée** sur les événements d'insuffisance cardiaque. À ce niveau de FEVG, les preuves de survie appartiennent aux ARM stéroïdiens : la **spironolactone** (essai **RALES**) et l'**éplérénone** (essais **EMPHASIS-HF**, et **EPHESUS** après un infarctus du myocarde) — voir *ARM stéroïdiens : spironolactone et éplérénone*.
 - La finérénone est appuyée par les recommandations dans deux contextes précis : le **diabète de type 2 associé à une maladie rénale chronique** (pour réduire le risque d'insuffisance cardiaque — sachant que les essais rénaux excluaient l'ICFER symptomatique) ou, selon son AMM, lorsque la **FEVG remonte à 40 % ou plus** (FINEARTS-HF a accepté les FEVG améliorées à ≥ 40 %, mais sans résultats publiés séparément pour ce sous-groupe dans les articles consultés).
 - Si une hyperkaliémie empêche d'atteindre ou de maintenir une pleine dose de spironolactone ou d'éplérénone, **DIAMOND** (majoritairement ischémique, FEVG moyenne ~33 %) montre qu'un chélateur peut aider à conserver l'ARM ; tout bénéfice de survie repose sur l'ARM lui-même, et non sur une preuve issue de DIAMOND.
 - Pour les personnes ne pouvant pas prendre la spironolactone ou l'éplérénone, la situation pourra évoluer lors de la publication de **FINALITY-HF** (attendue vers 2027–2028) ; le statut actualisé au 25 novembre 2026 de **FINALITY-HF** et de **BalanceD-HF** (balcinrénone + dapagliflozine) est détaillé dans *Essais cliniques en cours et à suivre*.
@@ -93,6 +93,9 @@ Une autre analyse exploratoire post hoc de **FINEARTS-HF** (FEVG ≥ 40 %, moyen
     },
   ],
   relatedArticleSlugs: [
+    'arm-steroidiens-spironolactone-eplerenone',
+    'maladie-renale-insuffisance-cardiaque',
+    'diabete-insuffisance-cardiaque',
     'essais-cliniques-en-cours-et-a-suivre',
     'medicaments-insuffisance-cardiaque',
     'traitements-additionnels-nouveaux',

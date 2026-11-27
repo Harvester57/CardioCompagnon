@@ -1161,4 +1161,68 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
       "Même en ALD 100 %, restent à charge (hors C2S) les dépassements d'honoraires (plafonnés en Secteur 2 OPTAM), le forfait journalier (23 €/j), le FPU ALD (9,96 €) et jusqu'à 140 €/an de franchises/participations non remboursées par les mutuelles depuis octobre 2026 ; la C2S supprime tous ces frais sous condition de revenus.",
     articleSlug: 'reseau-de-soins-et-aides-sociales-france',
   },
+  {
+    id: 'baisse_initiale_dfge',
+    termFr: 'Baisse initiale du DFGe (eGFR dip)',
+    aliases: ['eGFR dip', 'baisse initiale du DFGe', 'creux rénal iSGLT2'],
+    shortDefinitionFr:
+      "Petite baisse attendue de la fonction rénale (environ 3 à 4 points de DFGe) dans les premières semaines après le début d'un inhibiteur du SGLT2 ; elle ne reflète pas une aggravation rénale et ne justifie pas en soi l'arrêt du médicament.",
+    articleSlug: 'inhibiteurs-sglt2-insuffisance-cardiaque',
+  },
+  {
+    id: 'gynecomastie',
+    termFr: 'Gynécomastie',
+    aliases: ['gynécomastie', 'douleur mammaire', 'gynaecomastia'],
+    shortDefinitionFr:
+      "Gonflement ou sensibilité des seins chez l'homme, effet indésirable connu de la spironolactone (environ 1 homme sur 10 dans les essais) ; beaucoup plus rare avec l'éplérénone, qui agit de manière plus ciblée.",
+    articleSlug: 'arm-steroidiens-spironolactone-eplerenone',
+  },
+  {
+    id: 'remodelage_inverse',
+    termFr: 'Remodelage et remodelage inverse du ventricule gauche',
+    aliases: ['remodelage', 'remodelage inverse', 'reverse remodelling'],
+    shortDefinitionFr:
+      "Le remodelage est la dilatation et le changement de forme du ventricule gauche après une lésion comme un infarctus. Le remodelage inverse désigne la diminution de taille du ventricule et la hausse de la FEVG sous traitement, le plus souvent au cours de la première année.",
+    articleSlug: 'cardiomyopathie-ischemique',
+  },
+  {
+    id: 'transmuralite_cicatrice',
+    termFr: 'Transmuralité de la cicatrice (« règle des 50 % »)',
+    aliases: ['transmuralité', 'règle des 50 %', 'scar transmurality', 'cicatrice transmurale'],
+    shortDefinitionFr:
+      "Part de l'épaisseur de la paroi cardiaque occupée par une cicatrice à l'IRM avec contraste (de 0 % à 100 %). Un segment avec une cicatrice inférieure ou égale à 50 % de l'épaisseur a plus de chances de récupérer sa contraction, même si les essais n'ont pas prouvé que ce critère permette de choisir une revascularisation.",
+    articleSlug: 'viabilite-myocardique',
+  },
+  {
+    id: 'myocarde_sidere',
+    termFr: 'Myocarde sidéré (stunned myocardium)',
+    aliases: ['myocarde sidéré', 'sidération myocardique', 'stunned myocardium'],
+    shortDefinitionFr:
+      "Muscle cardiaque vivant dont la contraction reste temporairement affaiblie après un épisode bref et non mortel de manque de sang, même une fois la circulation rétablie. Avec le myocarde hibernant, il fait partie du muscle dit viable.",
+    articleSlug: 'viabilite-myocardique',
+  },
+  {
+    id: 'score_maggic_shfm',
+    termFr: 'Scores pronostiques (MAGGIC, Seattle Heart Failure Model)',
+    aliases: ['MAGGIC', 'score MAGGIC', 'SHFM', 'Seattle Heart Failure Model'],
+    shortDefinitionFr:
+      "Calculateurs statistiques estimant le risque moyen d'un groupe de patients à 1 ou 3 ans à partir de données cliniques et biologiques. Construits avant les traitements modernes (sacubitril/valsartan, inhibiteurs du SGLT2), ils donnent un ordre d'idée collectif et non une prédiction individuelle.",
+    articleSlug: 'cardiomyopathie-ischemique',
+  },
+  {
+    id: 'score2_hf',
+    termFr: 'SCORE2-HF',
+    aliases: ['SCORE2-HF', 'score de prévention IC'],
+    shortDefinitionFr:
+      "Modèle européen publié en 2026 estimant le risque à 10 ou 30 ans de développer une insuffisance cardiaque chez des adultes de plus de 40 ans sans maladie cardiovasculaire connue. C'est un outil de prévention qui ne s'applique pas aux personnes ayant déjà une insuffisance cardiaque.",
+    articleSlug: 'cardiomyopathie-ischemique',
+  },
+  {
+    id: 'essais_dai_historiques',
+    termFr: 'MADIT-II, SCD-HeFT et DANISH (essais clés du DAI)',
+    aliases: ['MADIT-II', 'SCD-HeFT', 'DANISH'],
+    shortDefinitionFr:
+      "Grands essais cliniques ayant fondé les indications du défibrillateur préventif : MADIT-II et SCD-HeFT ont montré un gain de survie dans la cardiomyopathie ischémique (avant l'ère des traitements modernes), alors que DANISH dans les causes non ischémiques a réduit la mort subite sans allonger la survie globale.",
+    articleSlug: 'dispositifs-cardiaques-dai-crt',
+  },
 ];

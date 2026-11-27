@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "Voyages, altitude, canicule et extrêmes climatiques dans l'IC",
   category: 'quotidien',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -20,6 +20,9 @@ export const article: WikiArticle = {
     'bains-froids',
     'dai',
     'chaleur',
+    'ozone',
+    'pollution-air',
+    'fumée-incendies',
   ],
   aliases: [
     'Prendre l’avion insuffisance cardiaque',
@@ -98,7 +101,14 @@ Par forte chaleur, la dilatation des vaisseaux cutanés et la transpiration inte
 - **Ne jamais interrompre ni modifier seul vos médicaments chroniques** lors d'une canicule (risque de décompensation rebond).
 - **Conservation des médicaments :** les médicaments à conserver en dessous de 25 °C ou 30 °C supportent quelques jours de canicule s'ils restent dans la **pièce la plus fraîche**, à l'abri du soleil. En voiture, utilisez une **pochette isotherme non réfrigérée** (ne laissez jamais vos boîtes dans le coffre ou la boîte à gants). Les produits conservés entre 2 et 8 °C (comme l'insuline) voyagent en pochette réfrigérée sans congélation.
 - **Urgence absolue — coup de chaleur :** fièvre supérieure à **40 °C** associée à une confusion, somnolence, délire, convulsions ou perte de connaissance : appelez immédiatement le **15 (SAMU)**, le **112** ou le **114** (SMS).
-- **Habitudes quotidiennes :** pesez-vous chaque matin (surveillez autant une prise rapide qu'une **perte rapide** de poids), rafraîchissez votre logement la nuit, évitez de sortir aux heures les plus chaudes et demandez avant juin à votre cardiologue comment adapter vos apports en boissons en cas de canicule.`,
+- **Habitudes quotidiennes :** pesez-vous chaque matin (surveillez autant une prise rapide qu'une **perte rapide** de poids), rafraîchissez votre logement la nuit, évitez de sortir aux heures les plus chaudes et demandez avant juin à votre cardiologue comment adapter vos apports en boissons en cas de canicule.
+
+### Jours combinant chaleur et pollution (ozone et fumées d'incendies)
+
+- **Canicule et pics d'ozone vont souvent ensemble :** l'ensoleillement et les fortes chaleurs favorisent la formation d'ozone, si bien que les jours de canicule coïncident fréquemment avec des épisodes de pollution (ministère de la Transition écologique, mis à jour le 31 juillet 2026). L'ozone culmine **en milieu et fin d'après-midi**, aux mêmes heures que la chaleur maximale.
+- **Conseils officiels français en cas de maladie cardiaque ou d'IC (santé.fr, 9 août 2024) :** évitez de sortir l'après-midi et évitez tout effort extérieur intense ; une activité douce en intérieur reste possible ; continuez d'aérer votre logement aux heures les moins polluées (et les plus fraîches) ; demandez à votre médecin si votre traitement nécessite un ajustement.
+- **Vérifier avant d'organiser votre journée :** consultez l'**indice ATMO** de votre commune et les prévisions **Prév'Air** (jusqu'à 5 jours d'avance), en complément de la vigilance canicule de Météo-France.
+- **Fumées d'incendies :** en Californie, une fumée dense a augmenté les passages aux urgences pour insuffisance cardiaque jusqu'à **+22 %** chez les 65 ans et plus, avec un pic **3 jours après** l'exposition : poursuivez donc la pesée quotidienne plusieurs jours après un épisode de fumée (voir *Pollution de l'air et bruit*).`,
     },
     {
       headingFr: 'Sauna, hammam et bains glacés (immersion en eau froide)',
@@ -132,6 +142,7 @@ Par forte chaleur, la dilatation des vaisseaux cutanés et la transpiration inte
     'vivre-avec-insuffisance-cardiaque-en-france',
     'questions-equipe-cardiologie',
     'recommandations-comparees-esc-us-nice',
+    'pollution-de-lair-et-bruit',
   ],
   sources: [
     {
@@ -149,6 +160,10 @@ Par forte chaleur, la dilatation des vaisseaux cutanés et la transpiration inte
     {
       label: 'Kallstrom (2018), WAON-CHF (Tei 2016 / Ichiki 2017), Shattock & Tipton (2012), Tipton (2017) & Winter (2018)',
       detail: 'Absence d’essai randomisé de sauna finlandais en IC, résultat neutre sur le BNP dans WAON-CHF et mécanisme arythmogène du « conflit autonome » en eau froide.',
+    },
+    {
+      label: 'Indice ATMO / Prév’Air, santé.fr (août 2024), ministère de la Transition écologique (2026) & Wettstein (2018)',
+      detail: 'Épisodes conjoints canicule-ozone, conseils officiels pour les personnes cardiaques vulnérables et hausse des passages aux urgences IC (+22 %) après fumées d’incendies.',
     },
   ],
   disclaimerType: 'medical',

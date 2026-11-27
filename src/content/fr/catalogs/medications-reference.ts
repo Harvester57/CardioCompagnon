@@ -8,12 +8,12 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     subClass: 'ace_i',
     innNameFr: 'Ramipril',
     frenchBrands: ['Triatec', 'Génériques'],
-    startDoseFr: '2,5 mg × 1/j (ou 1,25 mg si hypotension/fragilité)',
-    targetDoseFr: '10 mg/j (en 1 ou 2 prises)',
+    startDoseFr: '2,5 mg × 1/j (ou 1,25 mg × 2/j selon protocole ESC)',
+    targetDoseFr: '10 mg/j (ou 5 mg × 2/j)',
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
       'Créatinine, DFGe et potassium avant initiation, 1 à 2 semaines après chaque palier, puis tous les 3 à 6 mois ; tension artérielle ; surveiller toux sèche ou angiœdème (urgence 15/112).',
-    articleSlug: 'medicaments-insuffisance-cardiaque',
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
   },
   {
     id: 'perindopril',
@@ -26,7 +26,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
       'Créatinine, DFGe et potassium avant initiation, 1 à 2 semaines après chaque palier, puis tous les 3 à 6 mois ; tension artérielle ; alerte toux sèche ou angiœdème.',
-    articleSlug: 'medicaments-insuffisance-cardiaque',
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
   },
   {
     id: 'enalapril',
@@ -39,7 +39,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
       'Créatinine, DFGe et potassium avant initiation, 1 à 2 semaines après chaque palier, puis tous les 3 à 6 mois ; tension artérielle ; alerte angiœdème.',
-    articleSlug: 'medicaments-insuffisance-cardiaque',
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
   },
   {
     id: 'lisinopril',
@@ -52,7 +52,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
       'Créatinine, DFGe et potassium avant initiation, 1 à 2 semaines après chaque palier, puis tous les 3 à 6 mois ; tension artérielle ; alerte angiœdème.',
-    articleSlug: 'medicaments-insuffisance-cardiaque',
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
   },
   {
     id: 'candesartan',
@@ -65,7 +65,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
       'Utilisé si IEC et ARNI non tolérés (ESC 2026). Créatinine, DFGe et potassium 1 à 2 semaines après chaque palier puis tous les 3 à 6 mois ; tension artérielle.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
   },
   {
     id: 'valsartan',
@@ -78,7 +78,7 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
       'Utilisé si IEC et ARNI non tolérés (ESC 2026). Créatinine, DFGe et potassium 1 à 2 semaines après chaque palier puis tous les 3 à 6 mois ; pas de délai de sevrage requis avant passage en ARNI.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
   },
   {
     id: 'sacubitril_valsartan',
@@ -86,12 +86,12 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     subClass: 'arni',
     innNameFr: 'Sacubitril/valsartan',
     frenchBrands: ['Entresto'],
-    startDoseFr: '49/51 mg × 2/j (ou 24/26 mg × 2/j si PAS basse, rein fragile ou naïf d’IEC/ARA2)',
+    startDoseFr: '49/51 mg × 2/j (ou 24/26 mg × 2/j si PAS basse, DFGe 30–60 ou naïf d’IEC/ARA2)',
     targetDoseFr: '97/103 mg × 2/j',
     titrationIntervalFr: 'Doublement toutes les 2 à 4 semaines selon tolérance',
     monitoringFr:
-      'Délai obligatoire de 36 heures après l’arrêt d’un IEC avant la 1re dose (risque d’angiœdème). Créatinine, DFGe, potassium et tension artérielle 1 à 2 semaines après chaque palier puis tous les 4 mois.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Délai obligatoire de 36 heures après l’arrêt d’un IEC avant la 1re dose (risque d’angiœdème). Prise avec ou sans repas. Créatinine, DFGe, potassium et tension artérielle 1 à 2 semaines après chaque palier puis tous les 4 mois.',
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
   },
 
   // === Pilier 2 : Bêtabloquants ===
@@ -105,8 +105,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
-      'ECG avant initiation ; surveillance fréquence cardiaque (cible diurne ~60–69 bpm, prudence < 50 bpm), tension artérielle, essoufflement et fatigue. Ne jamais arrêter brutalement.',
-    articleSlug: 'medicaments-insuffisance-cardiaque',
+      'ECG avant initiation ; surveillance fréquence cardiaque (prudence < 50 bpm), tension artérielle, essoufflement et fatigue. Ne jamais arrêter brutalement (diminution progressive indispensable en maladie coronaire).',
+    articleSlug: 'betabloquants-insuffisance-cardiaque',
   },
   {
     id: 'carvedilol',
@@ -118,8 +118,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '25 mg × 2/j (jusqu’à 50 mg × 2/j si poids > 85 kg)',
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
-      'ECG avant initiation ; surveillance fréquence cardiaque, hypotension orthostatique et congestion. Prise conseillée avec un repas ; ne jamais arrêter brutalement.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'ECG avant initiation ; surveillance fréquence cardiaque, hypotension orthostatique et congestion. Prise conseillée avec un repas (limite les vertiges au lever) ; ne jamais arrêter brutalement.',
+    articleSlug: 'betabloquants-insuffisance-cardiaque',
   },
   {
     id: 'nebivolol',
@@ -131,8 +131,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
-      'ECG avant initiation ; surveillance fréquence cardiaque, tension artérielle et tolérance respiratoire. Ne jamais arrêter brutalement.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Listé par l’ESC (réduction d’un critère combiné dans SENIORS, non démontré sur la mortalité seule). ECG avant initiation ; surveillance fréquence cardiaque, tension artérielle et tolérance respiratoire. Ne jamais arrêter brutalement.',
+    articleSlug: 'betabloquants-insuffisance-cardiaque',
   },
   {
     id: 'metoprolol_succinate',
@@ -144,8 +144,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '200 mg × 1/j',
     titrationIntervalFr: 'Toutes les 1 à 2 semaines selon tolérance',
     monitoringFr:
-      'Forme succinate à libération prolongée validée en ICFER. ECG avant initiation ; suivi fréquence cardiaque et tension artérielle. Ne jamais arrêter brutalement.',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Seule la forme succinate à libération prolongée est validée en ICFER (ne pas confondre avec le tartrate à action courte). ECG avant initiation ; suivi fréquence cardiaque et tension artérielle. Ne jamais arrêter brutalement.',
+    articleSlug: 'betabloquants-insuffisance-cardiaque',
   },
 
   // === Pilier 3 : ARM (stéroïdiens et non stéroïdien) ===
@@ -155,12 +155,12 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     subClass: 'steroidal_mra',
     innNameFr: 'Spironolactone',
     frenchBrands: ['Aldactone', 'Génériques'],
-    startDoseFr: '25 mg × 1/j (ou 12,5 mg si DFGe réduit)',
+    startDoseFr: '25 mg × 1/j (ou 12,5 mg si rein ou potassium fragile)',
     targetDoseFr: '50 mg × 1/j',
     titrationIntervalFr: 'Réévaluation après 4 à 8 semaines selon kaliémie et DFGe',
     monitoringFr:
-      'Potassium et créatinine/DFGe avant début, à 1–2 semaines, après chaque changement puis tous les 3 à 6 mois. Prudence si K⁺ ≥ 5,0 mmol/L ou DFGe < 25 mL/min/1,73 m². Surveiller gynécomastie (relais possible par éplérénone).',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Prise conseillée avec un repas. Potassium et créatinine/DFGe avant début, à 1–2 semaines, après chaque changement puis tous les 3 à 6 mois. Prudence si K⁺ ≥ 5,0 mmol/L ou DFGe < 25 mL/min/1,73 m². Surveiller gynécomastie (~1 homme sur 10 ; relais possible par éplérénone).',
+    articleSlug: 'arm-steroidiens-spironolactone-eplerenone',
   },
   {
     id: 'eplerenone',
@@ -172,8 +172,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '50 mg × 1/j',
     titrationIntervalFr: 'Réévaluation après 4 semaines selon kaliémie et DFGe',
     monitoringFr:
-      'Potassium et créatinine/DFGe avant début, à 1–2 semaines, après chaque palier puis tous les 3 à 6 mois. Alternative établie à la spironolactone sans effets hormonaux/mammaires ; éviter les inhibiteurs puissants du CYP3A4 (ex. itraconazole).',
-    articleSlug: 'finerenone-et-nouveaux-arm',
+      'Début parfois à 25 mg 1 jour sur 2 si DFGe 30–60. Potassium et créatinine/DFGe avant début, à 1 semaine, à 1 mois, après chaque palier puis tous les 3 à 6 mois. Alternative établie à la spironolactone sans effets hormonaux/mammaires ; éviter les inhibiteurs puissants du CYP3A4 (ex. itraconazole).',
+    articleSlug: 'arm-steroidiens-spironolactone-eplerenone',
   },
   {
     id: 'finerenone',
@@ -200,8 +200,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Aucune titration nécessaire (dose de départ = dose cible)',
     monitoringFr:
-      'Ne pas initier si DFGe < 25 mL/min/1,73 m² ; baisse initiale transitoire du DFGe (~4 mL/min/1,73 m²) attendue ; pas d’hyperkaliémie ; hygiène génitale ; suspension médicale habituellement 3 jours avant une chirurgie majeure programmée et plan écrit « jours de maladie » (risque rare d’acidocétose euglycémique, surtout en cas de diabète ou de jeûne prolongé).',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Prise à tout moment de la journée (souvent le matin), avec ou sans repas. Ne pas initier si DFGe < 25 mL/min/1,73 m² ; baisse initiale transitoire du DFGe (~4 mL/min/1,73 m²) attendue ; pas d’hyperkaliémie ; hygiène génitale ; suspension médicale habituellement 3 à 4 jours avant une chirurgie majeure programmée et plan écrit « jours de maladie » (risque rare d’acidocétose euglycémique).',
+    articleSlug: 'inhibiteurs-sglt2-insuffisance-cardiaque',
   },
   {
     id: 'empagliflozine',
@@ -213,8 +213,8 @@ export const MEDICATION_REFERENCES: MedicationReference[] = [
     targetDoseFr: '10 mg × 1/j',
     titrationIntervalFr: 'Aucune titration nécessaire (dose de départ = dose cible)',
     monitoringFr:
-      'Ne pas initier si DFGe < 20 mL/min/1,73 m² ; baisse initiale transitoire du DFGe attendue ; pas d’hyperkaliémie ; hygiène génitale ; suspension médicale habituellement 3 jours avant une chirurgie majeure programmée et plan écrit « jours de maladie » (risque rare d’acidocétose euglycémique, y compris exceptionnellement sans diabète lors de jeûne ou pertes digestives sévères).',
-    articleSlug: 'medicaments-effets-secondaires-suivi',
+      'Prise à tout moment de la journée (souvent le matin), avec ou sans repas. Ne pas initier si DFGe < 20 mL/min/1,73 m² ; baisse initiale transitoire du DFGe attendue ; pas d’hyperkaliémie ; hygiène génitale ; suspension médicale habituellement 3 à 4 jours avant une chirurgie majeure programmée et plan écrit « jours de maladie » (risque rare d’acidocétose euglycémique).',
+    articleSlug: 'inhibiteurs-sglt2-insuffisance-cardiaque',
   },
 
   // === Diurétiques de l'anse ===

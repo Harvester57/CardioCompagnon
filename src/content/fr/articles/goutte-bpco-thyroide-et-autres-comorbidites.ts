@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Goutte, BPCO, thyroïde, anémie non ferriprive, AOMI, fragilité et cognition',
   category: 'comorbidites',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -181,13 +181,16 @@ Une hémoglobine basse dans une ICFER ischémique conduit à rechercher systéma
 Parce que la cardiomyopathie ischémique procède d'une athérosclérose généralisée, le rétrécissement des artères des jambes (**AOMI**) ou du cou (**sténose carotidienne**) est fréquemment associé. Dans Dewan (2023, 15 066 patients ICFER), l'AOMI était présente chez **5,5 %** des patients (10 à 17 % dans RED-HF, plus âgé et anémique) et portait le **rapport de risque ajusté de mortalité le plus élevé des dix comorbidités étudiées (HR 1,39)**. La mesure de l'index de pression systolique (IPS) et l'écho-Doppler des carotides sont réalisés selon les symptômes ou lors d'un bilan d'IC avancée / greffe après 50 ans ou en cas de maladie coronaire.
 
 - **Prévention partagée :** arrêt du tabac, **LDL-c inférieur à 0,55 g/L** (1,4 mmol/L ou 55 mg/dL), contrôle tensionnel et marche supervisée protègent à la fois les artères coronaires et périphériques.
-- **La nuance COMPASS sur le rivaroxaban à dose vasculaire :** les recommandations **ESC 2024 PAAD** (résumé secondaire) proposent d'envisager l'association **rivaroxaban (*Xarelto*) 2,5 mg deux fois par jour + aspirine 100 mg/j** (**Classe IIa, A** [non vérifié sur le tableau intégral]) dans l'AOMI symptomatique à haut risque ischémique et faible risque hémorragique (et IIa B après revascularisation des membres inférieurs). **Cependant**, la lecture intégrale de la sous-analyse IC de **COMPASS** révèle une limite décisive pour l'ICFER :
+- **La nuance COMPASS sur le rivaroxaban à dose vasculaire :** les recommandations **ESC 2024 PAAD** (tableaux primaires lus) proposent d'envisager l'association **rivaroxaban (*Xarelto*) 2,5 mg deux fois par jour + aspirine 100 mg/j** (**Classe IIa, A** ; l'insuffisance cardiaque figure explicitement parmi les critères de haut risque ischémique) dans l'AOMI symptomatique à haut risque ischémique et faible risque hémorragique (et IIa, B après revascularisation des membres inférieurs). **Cependant**, la lecture intégrale de la sous-analyse IC de **COMPASS** révèle une limite décisive pour l'ICFER :
   - COMPASS a **exclu l'insuffisance cardiaque sévère (FEVG < 30 % et classe NYHA III–IV)** ;
   - seuls **12 % (721)** des patients IC de COMPASS avaient une FEVG < 40 %, et dans ce sous-groupe le rapport de risque des MACE croisait 1 (**HR 0,88**, IC 95 % 0,55–1,42, contre 0,68 au global ; saignements majeurs HR 1,36, 0,88–2,09) ;
   - dans **COMMANDER-HF** (ICFER ischémique récemment décompensée, FEVG ≤ 40 %), le rivaroxaban 2,5 mg deux fois par jour n'a **pas** réduit les décès, infarctus ou AVC.
   - *En pratique :* cette double voie antithrombotique peut se discuter avec le cardiologue et le médecin vasculaire dans une ICFER ischémique **stable** NYHA I–II (FEVG ≥ 30 %) avec AOMI symptomatique et faible risque hémorragique (en l'absence d'indication d'anticoagulation à pleine dose pour FA ou thrombus VG), mais elle n'est **pas** démontrée dans les formes sévères (FEVG < 30 %, NYHA III–IV) ou récemment décompensées.
+- *Pour approfondir* (prévalence de 7 à 16 % d'AOMI et 5 à 9 % de sténose carotidienne serrée en maladie coronaire, seuils d'IPS, dépistage, marche supervisée Classe I A, seuils de chirurgie carotidienne et FEVG < 30 % comme critère de haut risque opératoire), voir *Artères carotides et artériopathie des membres inférieurs (AOMI)*.
 
 ### Fragilité : quatre domaines et réversibilité partielle
+
+La fragilité touche environ **45 %** des personnes atteintes d'insuffisance cardiaque. Les définitions, les tests en consultation (vitesse de marche, SPPB, *Clinical Frailty Scale*), le chevauchement avec la fonte musculaire et la cachexie ainsi que les prises en charge sont détaillés dans *Sarcopénie, perte musculaire et fragilité*.
 
 La fragilité ne se réduit pas à l'âge chronologique : c'est un état de vulnérabilité multidimensionnel qui augmente les hospitalisations et réduit la tolérance aux traitements et aux interventions. L'**Association européenne de l'insuffisance cardiaque (HFA / ESC, Vitale 2019)** définit la fragilité dans l'IC selon **quatre domaines** :
 
@@ -208,10 +211,11 @@ Dans la méta-analyse de référence de **Cannon et coll. (2017 ; 37 études, n 
 - la prévalence groupée des troubles cognitifs dans 26 cohortes d'IC (n = 4 176) atteignait **43 % (IC 95 % 30 %–55 %)** ;
 - comparativement aux personnes sans IC, l'insuffisance cardiaque s'accompagnait d'un risque augmenté de **67 %** (**OR 1,67**, IC 95 % 1,15–2,42), avec un déclin plus rapide dans les études prospectives.
 
-Même des difficultés discrètes de mémoire, d'attention ou d'organisation — souvent inapparentes lors d'une consultation rapide — compliquent concrètement le quotidien : titration des quatre piliers, repérage d'une prise de poids de 2 kg, calendrier des prises de sang, évitement des AINS ou d'antibiotiques interagissants. Des aides simples sont très efficaces : **schémas simplifiés en une prise lorsque c'est possible, pilulier hebdomadaire, plan d'action écrit, présence d'un proche en consultation, et suivi par infirmière IC ou parcours PRADO**.`,
+Même des difficultés discrètes de mémoire, d'attention ou d'organisation — souvent inapparentes lors d'une consultation rapide — compliquent concrètement le quotidien : titration des quatre piliers, repérage d'une prise de poids de 2,0 kg, calendrier des prises de sang, évitement des AINS ou d'antibiotiques interagissants. Des aides simples sont très efficaces : **schémas simplifiés en une prise lorsque c'est possible, pilulier hebdomadaire, plan d'action écrit, présence d'un proche en consultation, et suivi par infirmière IC ou parcours PRADO**. Les causes, les tests de repérage (Mini-Cog, MoCA, MMSE), l'effet des traitements cardiaques sur la cognition, le syndrome confusionnel après chirurgie cardiaque et les aides pratiques sont approfondis dans *Santé cérébrale et cognition dans l'insuffisance cardiaque*.`,
     },
     {
-      headingFr: '6. Comparatif des recommandations (au 2026-11-25) et limites des preuves',
+      headingFr: '6. Comparatif des recommandations (au 2026-11-26) et limites des preuves',
+      depth: 'evidence',
       bodyMarkdownFr: `Les lignes fondées uniquement sur des résumés secondaires (lorsque les tableaux officiels n'étaient pas accessibles en texte intégral) sont signalées par la mention **[non vérifié]**.
 
 | Question clinique | ESC 2026 IC (en vigueur) | ESC 2021 IC (remplacé) | AHA/ACC/HFSA 2022 (États-Unis) | Recommandations de spécialité | Divergences et repères |
@@ -221,12 +225,12 @@ Même des difficultés discrètes de mémoire, d'attention ou d'organisation —
 | **Bêtabloquants cardiosélectifs dans BPCO + ICFER** | Section BPCO tronquée dans la capture | BPCO **non** contre-indiquée ; bêta-1 sélectifs recommandés (§13.8) **[non vérifié]** | Bêtabloquants validés COR 1, A dans l'ICFER **[texte intégral]** | **GOLD 2024/2025 :** bêta-1 sélectifs recommandés pour l'IC ; **non** pour la BPCO seule (BLOCK COPD) **[non vérifié]** | Accord sur ICFER + BPCO ; prudence spécialisée dans l'asthme |
 | **Dépistage thyroïdien (TSH) et amiodarone** | TSH initiale **[non vérifié]** ; bilan thyroïdien dans le suivi stable **[texte intégral]** | TSH initiale **[non vérifié]** | TSH initiale systématique **[non vérifié]** | **ETA 2018 :** maintenir l'amiodarone dans l'HIA + LT4 si avérée ; AIT 1 antithyroïdiens, AIT 2 corticoïdes **[résumé]** | Accord sur le dépistage ; prise en charge conjointe cardio-endocrino des AIT |
 | **ASE dans l'anémie non ferriprive de l'IC** | NFS + ferritine/CST **I, C** **[texte intégral]** ; grade exact 2026 des ASE non lu **[non vérifié]** | **Classe III, B** (non recommandés sans autre indication) **[non vérifié]** | **COR 3 : Harm, B-R** (§10.1) **[texte intégral]** | — | Accord complet contre les ASE (RED-HF) |
-| **AOMI : rivaroxaban 2,5 mg x 2 + aspirine** | Pas d'anticoagulation systématique en rythme sinusal pour l'IC seule **[texte intégral]** | — | Anticoagulation sans indication dédiée **3 : No Benefit, B-R** **[texte intégral]** | **ESC 2024 PAAD :** rivaroxaban 2,5 mg x 2 + aspirine **IIa, A** en AOMI symptomatique à haut risque **[non vérifié]** | Limite : COMPASS excluait FEVG < 30 % et NYHA III–IV ; sous-groupe FEVG < 40 % HR 0,88 (0,55–1,42) |
+| **AOMI : rivaroxaban 2,5 mg x 2 + aspirine** | Pas d'anticoagulation systématique en rythme sinusal pour l'IC seule **[texte intégral]** | — | Anticoagulation sans indication dédiée **3 : No Benefit, B-R** **[texte intégral]** | **ESC 2024 PAAD :** rivaroxaban 2,5 mg x 2 + aspirine **IIa, A** en AOMI symptomatique à haut risque (IC citée comme facteur de haut risque) **[tableaux primaires]** | Limite : COMPASS excluait FEVG < 30 % et NYHA III–IV ; sous-groupe FEVG < 40 % HR 0,88 (0,55–1,42) |
 | **Évaluation de la fragilité** | Distinguer fragilité cardiaque vs non cardiaque (§8 **[texte intégral]**) ; dépistage global **[non vérifié]** | Dépistage et réadaptation (§13.4 ; réadaptation IIa **[non vérifié]**) | Évaluation globale des comorbidités **[non vérifié]** | **HFA 2019 :** cadre en 4 domaines **[résumé/synthèse]** | Accord sur le dépistage ; REHAB-HF étaye la réadaptation multidomaine |
 
 ### Limites des preuves
 
-- **Accès partiel au texte intégral de certains articles et recommandations :** les PDF complets de CARES, FAST, ALL-HEART, de l'article principal RED-HF, de SUMMIT, TIOSPIR, ESC 2024 PAAD, GOLD 2024/2025 et des tableaux de comorbidités non cardiovasculaires ESC 2026 n'étaient pas accessibles en intégralité et sont signalés ci-dessus. Les seuils exacts de la colchicine en France doivent toujours être confirmés sur la base officielle BDPM ou avec votre pharmacien.
+- **Accès partiel au texte intégral de certains articles et recommandations :** les PDF complets de CARES, FAST, ALL-HEART, de l'article principal RED-HF, de SUMMIT, TIOSPIR, GOLD 2024/2025 et des tableaux de comorbidités non cardiovasculaires ESC 2026 n'étaient pas accessibles en intégralité et sont signalés ci-dessus (les tableaux primaires ESC 2024 PAAD ont en revanche été vérifiés). Les seuils exacts de la colchicine en France doivent toujours être confirmés sur la base officielle BDPM ou avec votre pharmacien.
 - **Écarts de populations :** CARES présentait 45 % de perdus de vue sans mention de la FEVG ; FAST, ALL-HEART et COMPASS excluaient l'IC sévère ; BLOCK COPD excluait l'ICFER (FEVG < 40 %) ; SUMMIT et TIOSPIR étaient des essais de BPCO et non d'ICFER.
 - **Caractère observationnel :** Kannan (2018 ; 29 % d'ischémiques, TSH unique) et Cannon (2017 ; tests cognitifs hétérogènes, FEVG mixtes) montrent des associations fortes, sans prouver que traiter une hypothyroïdie infraclinique (TSH 7–10), une T3 basse ou un trouble cognitif réduit la mortalité. Il manque des essais randomisés de lévothyroxine dans l'hypothyroïdie infraclinique (TSH ≥ 7) et du fébuxostat spécifiquement dans l'ICFER.
 - **Effet d'époque :** RED-HF (2006–2012) et EXACT-HF (2010–2013) précèdent l'arrivée des ARNI et des iSGLT2, même si le danger des ASE et l'absence de bénéfice du traitement de l'hyperuricémie asymptomatique restent solidement établis.`,
@@ -234,6 +238,11 @@ Même des difficultés discrètes de mémoire, d'attention ou d'organisation —
   ],
   relatedArticleSlugs: [
     'maladies-associees',
+    'arteres-carotides-et-aomi',
+    'sante-cerebrale-et-cognition',
+    'sarcopenie-perte-musculaire-et-fragilite',
+    'hormones-testosterone-et-menopause',
+    'cancer-et-coeur-cardio-oncologie',
     'arythmies-ventriculaires-et-antiarythmiques',
     'carence-martiale-et-fer-iv',
     'maladie-renale-insuffisance-cardiaque',
@@ -258,7 +267,7 @@ Même des difficultés discrètes de mémoire, d'attention ou d'organisation —
     { label: 'Canepa (2018), méta-analyse Cochrane Salpeter, BLOCK COPD (NEJM 2019, texte intégral), SUMMIT, TIOSPIR, IMPACT et GOLD 2024/2025', detail: 'Sécurité des bêtabloquants cardiosélectifs et des bronchodilatateurs inhalés dans la BPCO avec ICFER' },
     { label: 'Penn Heart Failure Study (Kannan 2018, texte intégral) et recommandations ETA 2018 (Bartalena, résumé)', detail: 'TSH, T4 libre, hypothyroïdie infraclinique (TSH ≥ 7), syndrome de T3 basse et gestion des dysthyroïdies sous amiodarone' },
     { label: 'RED-HF (NEJM 2013, résumé) et Bello et al. (2015, texte intégral)', detail: 'Absence de bénéfice (HR 1,01) et surrisque thromboembolique et d’AVC (HR 1,94 poolé) sous darbépoétine alfa' },
-    { label: 'ESC 2024 PAAD, sous-groupe IC COMPASS (2019, texte intégral), HFA 2019 fragilité (Vitale), REHAB-HF (NEJM 2021, texte intégral) et Cannon (2017)', detail: 'AOMI (HR 1,39), limites COMPASS en FEVG < 30–40 %, fragilité en 4 domaines, réadaptation multidomaine et troubles cognitifs (43 %)' },
+    { label: 'ESC 2024 PAAD (tableaux primaires), sous-groupe IC COMPASS (2019, texte intégral), HFA 2019 fragilité (Vitale), REHAB-HF (NEJM 2021, texte intégral) et Cannon (2017)', detail: 'AOMI (HR 1,39), rivaroxaban + aspirine IIa A avec IC comme haut risque ischémique, limites COMPASS en FEVG < 30–40 %, fragilité en 4 domaines, réadaptation multidomaine et troubles cognitifs (43 %)' },
     { label: 'Dewan (2023), ESC 2026 IC (texte intégral bilan/IC avancée) et AHA/ACC/HFSA 2022 (texte intégral)', detail: 'Prévalence des comorbidités, contre-indication AINS/ASE et évaluation de la fragilité cardiaque' },
   ],
   disclaimerType: 'medical',

@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "Médicaments : mode d'action, effets secondaires et bilans sanguins",
   category: 'traitements',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -77,6 +77,8 @@ export const article: WikiArticle = {
 - Si votre tension baisse sous ARNI, demandez à votre médecin ou à votre pharmacien s'il est utile d'espacer les médicaments qui agissent sur la tension dans la journée.
 - Prendre les diurétiques et les iSGLT2 le matin limite les réveils nocturnes pour uriner.
 - Les effets secondaires des premières semaines s'estompent souvent : **ne modifiez pas et n'arrêtez pas vos doses vous-même** avant d'en parler à votre équipe.
+- **Ne stoppez jamais brutalement un bêtabloquant :** les notices du bisoprolol et du carvédilol imposent une diminution progressive, en particulier en cas de maladie coronaire. Les règles en cas d'oubli de dose pour chaque médicament sont détaillées dans *Observance et oubli de dose*.
+- **Matin ou soir :** de grands essais sur les médicaments de la tension n'ont montré aucune différence sur les infarctus, les AVC ou les décès entre prise matinale et vespérale. Si votre tension est basse, les recommandations européennes suggèrent de répartir les prises dans la journée avec votre médecin (voir *Horaires de prise et routine quotidienne des médicaments*).
 
 ### Médicaments additionnels
 
@@ -122,7 +124,7 @@ Les consignes d'arrêt temporaire pendant une maladie aiguë (vomissements, diar
 | **Anxiété, dépression, nerfs, Parkinson** | Antidépresseurs tricycliques et IMAO à éviter ; prudence avec venlafaxine, duloxétine, prégabaline, pramipexole, cabergoline ; lithium contre-indiqué ; **citalopram (*Seropram*) et escitalopram (*Seroplex*) contre-indiqués avec l'amiodarone ou le sotalol** (risque QT) | Choix personnalisé avec votre médecin et votre cardiologue (surveillance du sodium sanguin si diurétique associé) |
 | **Traitements anticancéreux** | Anthracyclines, trastuzumab, inhibiteurs du VEGF et autres molécules potentiellement cardiotoxiques | Utilisés si indispensables avec suivi cardiologique dédié (cardio-oncologie) |
 
-**Réflexe utile :** avant toute opération ou anesthésie, et au moins une fois par an, passez en revue **toute votre ordonnance** — médicaments sans ordonnance et compléments alimentaires compris — avec votre médecin ou votre pharmacien. Pour les plantes et aliments, voir *Interactions entre compléments, aliments et médicaments cardiaques*.`,
+**Réflexe utile :** avant toute opération ou anesthésie, et au moins une fois par an, passez en revue **toute votre ordonnance** — médicaments sans ordonnance, compléments alimentaires, et produits à base de **cannabis ou de CBD** compris (le CBD peut élever les taux de digoxine et interférer avec certains anticoagulants) — avec votre médecin ou votre pharmacien. En France, les pharmaciens d'officine proposent un **bilan partagé de médication** (personnes de plus de 65 ans atteintes d'une maladie chronique prenant au moins 5 médicaments depuis 6 mois ou plus, pris en charge à 70 % par l'Assurance Maladie, avec synthèse transmise au médecin traitant). Pour les plantes et aliments, voir *Interactions entre compléments, aliments et médicaments cardiaques* et *Cannabis, CBD et substances récréatives*.`,
     },
     {
       headingFr: 'Repères cliniciens : seuils biologiques, maladie rénale et jours de maladie',
@@ -190,10 +192,19 @@ Les auteurs britanniques (Clark et al. 2019) qualifient leurs seuils de « néce
 - **Prévalence :** **48 %** prenaient **≥ 5** médicaments hors IC (**39 %** entre 5 et 9 ; **9 %** ≥ 10). Plus ce nombre augmentait, moins les piliers de l'IC étaient prescrits et plus les patients recevaient des médicaments pouvant aggraver l'IC (**57 %** si ≥ 10 vs **6 %** si < 5).
 - **Mortalité à 1 an :** **17,9 %**, **20,5 %** et **24,8 %** selon les trois groupes. Après ajustement âge/comorbidités, prendre ≥ 10 autres médicaments était associé à un surrisque (**HR 1,16**), qui devenait **non significatif** (**HR 1,09**) après ajustement sur l'utilisation des piliers de l'IC (effet d'éviction suggéré).
 - **Analyses par groupe :** médicaments neurologiques/psychiatriques associés à un risque plus élevé (**HR 1,23**) ; recevoir un médicament de la liste « aggravant l'IC » n'était pas associé à une surmortalité globale (**HR 0,97**) et les antihypertenseurs listés étaient associés à moins de décès (**HR 0,75**).
-- **Limites :** étude observationnelle (confusion par indication), antérieure aux ARNI/iSGLT2, sans recueil de l'automédication ni des compléments, et sans analyse séparée de l'étiologie ischémique.`,
+- **Limites :** étude observationnelle (confusion par indication), antérieure aux ARNI/iSGLT2, sans recueil de l'automédication ni des compléments, et sans analyse séparée de l'étiologie ischémique.
+
+### Données complémentaires sur l'arrêt des bêtabloquants et les horaires de prise
+
+- **Arrêt brutal des bêtabloquants (Prins et al., 2015) :** dans une méta-analyse majoritairement observationnelle, l'arrêt d'un bêtabloquant lors d'une hospitalisation pour insuffisance cardiaque était associé à une mortalité à court terme plus élevée (**RR 1,61**).
+- **Horaires de prise (TIME, BedMed, Skouri 2025) :** les essais randomisés **TIME** et **BedMed** n'ont montré aucune différence d'événements cardiovasculaires entre prise le matin et le soir ; en cas de pression artérielle basse dans l'ICFER, le consensus HFA (Skouri 2025) propose d'espacer les prises dans la journée.`,
     },
   ],
   relatedArticleSlugs: [
+    'observance-et-oubli-de-dose',
+    'horaires-de-prise-et-routine-medicaments',
+    'cannabis-cbd-et-substances-recreatives',
+    'sante-bucco-dentaire-et-gencives',
     'angor-et-medicaments-anti-angineux',
     'maladie-renale-insuffisance-cardiaque',
     'diabete-insuffisance-cardiaque',
@@ -267,6 +278,10 @@ Les auteurs britanniques (Clark et al. 2019) qualifient leurs seuils de « néce
     {
       label: 'Consensus ESC 2025 (santé mentale et MCV), MHRA (2011), Gheysens (2024), RCP ANSM Seroplex (2026) / Seropram (2025) et lettre ANSM (2022)',
       detail: 'Choix des antidépresseurs en ICFER, contre-indication QT avec l’amiodarone et le sotalol, et risque d’hyponatrémie selon la classe',
+    },
+    {
+      label: 'Prins et al. (2015), essais TIME / BedMed, consensus HFA Skouri (2025), Ameli BPM et RCP Epidyolex / alerte ANSM (2025)',
+      detail: 'Arrêt des bêtabloquants, horaires de prise, espacement en cas de tension basse, bilan partagé de médication en pharmacie et interactions du CBD',
     },
   ],
   disclaimerType: 'medical',

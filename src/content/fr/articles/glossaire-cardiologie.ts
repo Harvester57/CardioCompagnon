@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Glossaire médical de la cardiomyopathie ischémique',
   category: 'references',
   readingTier: 'reference',
-  asOf: '2026-11-25',
+  asOf: '2026-11-27',
   confidence: 'high',
   volatility: 'stable',
   tags: [
@@ -24,7 +24,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['core'],
   plainSummaryFr:
-    "Ce glossaire traduit en langage clair plus de 165 termes médicaux, abréviations et sigles administratifs français utilisés en cardiologie. Il couvre vos comptes rendus d'échographie, d'IRM cardiaque, de rythmologie ainsi que vos démarches de soins. Gardez cette référence sous la main pour décrypter un courrier médical ou préparer plus sereinement votre prochaine consultation avec votre cardiologue.",
+    "Ce glossaire traduit en langage clair plus de 175 termes médicaux, abréviations et sigles administratifs français utilisés en cardiologie. Il couvre vos comptes rendus d'échographie, d'IRM cardiaque, de rythmologie ainsi que vos démarches de soins. Gardez cette référence sous la main pour décrypter un courrier médical ou préparer plus sereinement votre prochaine consultation avec votre cardiologue.",
   sections: [
     {
       headingFr: 'A – C',
@@ -44,7 +44,7 @@ export const article: WikiArticle = {
 | **Amiodarone (*Cordarone*)** | Principal antiarythmique oral sûr sur le plan myocardique dans l'ICFER ischémique (contrairement aux classes IC et à la dronédarone, contre-indiqués) ; sa demi-vie de 20 à 100 jours impose un suivi structuré tous les 6 mois (thyroïde, foie), un ECG, une vigilance pulmonaire, une protection solaire et un contrôle strict des interactions médicamenteuses. |
 | **Amylose cardiaque (ATTR / AL)** | Cardiomyopathie infiltrative par dépôts de protéines amyloïdes : chaînes légères monoclonales (**AL**, urgence hématologique) ou transthyrétine (**ATTR**, liée à l'âge ou héréditaire). Coexiste avec une coronaropathie obstructive chez environ 1 patient ATTR âgé sur 4 et modifie la tolérance aux traitements et les choix de DAI. |
 | **Anévrisme du ventricule gauche (anévrisme VG)** | Zone amincie et cicatricielle du ventricule gauche qui se dilate vers l'extérieur, souvent sur la paroi antérieure et l'apex après un infarctus de l'IVA ; accroît le risque de thrombus VG. |
-| **Angio-œdème** | Gonflement brutal et rare des lèvres, de la bouche, de la langue ou de la gorge sous IEC ou sacubitril/valsartan (*Entresto*) ; urgence médicale immédiate (appeler le 15 / SAMU ou le 112). |
+| **Angio-œdème** | Gonflement brutal et rare des lèvres, de la bouche, de la langue ou de la gorge sous IEC ou sacubitril/valsartan (*Entresto*) ; urgence médicale immédiate (appeler le 15 / SAMU ou le 112). Délai obligatoire d'au moins **36 heures** entre le dernier IEC et la première prise d'ARNI (pas de délai après un ARA2) ; risque environ 4 fois plus élevé chez les personnes noires. |
 | **Angioplastie coronaire (PCI)** | Ouverture d'une artère coronaire rétrécie ou bouchée par cathéter, le plus souvent avec pose d'un stent. |
 | **Angor (angine de poitrine)** | Douleur, oppression ou serrement thoracique, souvent à l'effort, lorsque le muscle cardiaque manque de sang oxygéné. Dans l'ICFER, le bêtabloquant est le premier anti-angineux ; les autres soulagent les symptômes sans prolonger la survie. |
 | **Antiagrégant plaquettaire** | Médicament empêchant les plaquettes de s'agréger (aspirine à faible dose, clopidogrel, ticagrélor) ; prescrit au long cours dans la maladie coronaire et après pose de stent. |
@@ -53,13 +53,14 @@ export const article: WikiArticle = {
 | **Anticipation des soins (advance care planning)** | Démarche consistant à discuter et consigner ses préférences de soins tant que l'état est stable (incluant en France *directives anticipées*, *personne de confiance* et désactivation des chocs de DAI) ; recommandée dans l'IC avancée (ESC 2026, Classe I). |
 | **AOD (anticoagulant oral direct / DOAC)** | Anticoagulant oral à dose fixe (apixaban, rivaroxaban, édoxaban, dabigatran) ne nécessitant pas de contrôle régulier de l'INR. |
 | **APA (activité physique adaptée) et Maisons Sport-Santé** | Exercice encadré prescrit sur ordonnance (*sport sur ordonnance*, prescriptible par tout médecin ou IPA, renouvelable une fois par un kinésithérapeute) avec l'appui de 581 *Maisons Sport-Santé* ; **non** remboursée par l'Assurance Maladie pour l'IC même en ALD (à ne pas confondre avec l'allocation personnalisée d'autonomie départementale après 60 ans). |
-| **ARM (antagoniste des récepteurs minéralocorticoïdes / MRA)** | Pilier du traitement de fond (spironolactone / *Aldactone*, éplérénone / *Inspra*). |
-| **ARNI (sacubitril/valsartan — *Entresto*)** | Association faisant partie du pilier bloqueur du système rénine-angiotensine ; délai obligatoire d'au moins 36 heures après l'arrêt d'un IEC. |
+| **ARM (antagoniste des récepteurs minéralocorticoïdes / MRA)** | Pilier du traitement de fond. Les **ARM stéroïdiens** (spironolactone / *Aldactone*, éplérénone / *Inspra*) disposent des preuves cliniques dans l'ICFER (ESC 2026 Classe I A ; US 2022 Classe 1 A) ; la finérénone est un ARM non stéroïdien plus récent. |
+| **ARNI (sacubitril/valsartan — *Entresto*)** | Association faisant partie du pilier bloqueur du système rénine-angiotensine ; délai obligatoire d'au moins 36 heures après l'arrêt d'un IEC (pas de délai après un ARA2). |
 | **ASE (agent stimulant l'érythropoïèse / ESA)** | Injection stimulant la production de globules rouges (ex. darbépoétine alfa) ; inefficace dans l'ICFER et associée à plus de thromboses et d'AVC dans RED-HF, donc contre-indiquée pour l'anémie de l'IC (AHA/ACC Classe 3 : Harm). |
 | **ASV (servo-ventilation adaptative)** | Appareil ventilatoire nocturne adaptant sa pression cycle par cycle. Dans SERVE-HF, il a augmenté la mortalité dans l'ICFER avec apnée principalement centrale ; déconseillé dans ce cas (ESC 2026, Classe III). |
 | **ATP (stimulation antitachycardique / anti-tachycardia pacing)** | Salve rapide et indolore d'impulsions délivrée par un DAI transveineux pour interrompre une tachycardie ventriculaire régulière avant de délivrer un choc (absente des DAI sous-cutanés) ; ≥ 5 épisodes d'ATP en 6 mois signalent une instabilité rythmique à réévaluer. |
+| **Baisse initiale du DFGe (eGFR dip)** | Petite diminution attendue du DFGe (environ 3 à 4 points) dans les premières semaines après l'initiation d'un inhibiteur du SGLT2 ; dans DAPA-HF, elle n'était pas associée à un moins bon pronostic. Les RCP européens déconseillent d'initier sous DFGe 25 (dapagliflozine) ou 20 (empagliflozine) sans fixer de seuil d'arrêt. |
 | **BBG (bloc de branche gauche) / durée du QRS** | Paramètres de l'ECG utilisés pour décider d'une CRT : un BBG avec durée du QRS ≥ 150 ms constitue la principale indication de Classe I dans l'ESC 2026. |
-| **Bêtabloquant** | Pilier du traitement de fond (bisoprolol / *Cardensiel*, carvédilol, nébivolol, métoprolol succinate) ; également traitement de première ligne de l'angor dans l'ICFER. |
+| **Bêtabloquant** | Pilier du traitement de fond et traitement de première ligne de l'angor dans l'ICFER. Seuls bisoprolol (*Cardensiel*), carvédilol et métoprolol succinate ont démontré une réduction de la mortalité dans l'ICFER ; le nébivolol figure dans le tableau de doses ESC mais pas dans les recommandations américaines. |
 | **Blocage séquentiel du néphron** | Ajout temporaire d'un second diurétique agissant sur un autre segment du rein (thiazidique/métolazone oral ou acétazolamide IV à l'hôpital) au diurétique de l'anse ; accélère la décongestion hospitalière sans preuve de gain de survie et double hypokaliémie et dégradation rénale avec les thiazidiques. |
 | **Brassard oscillométrique (automesure)** | Fonctionnement des tensiomètres automatiques, qui déduisent la pression artérielle des oscillations de la paroi artérielle dans le brassard plutôt que par auscultation ; moins fiable en fibrillation atriale et peut surestimer les tensions très basses. |
 | **C2S (Complémentaire santé solidaire)** | Complémentaire santé publique française sous condition de ressources (gratuite ou 8 à 30 €/mois) ; contrairement à l'ALD seule, la C2S interdit les dépassements d'honoraires et supprime forfait journalier (23 €/j), FPU, participations (2 €) et franchises (1 €/4 €). |
@@ -89,6 +90,7 @@ export const article: WikiArticle = {
 |---|---|
 | **DAI (défibrillateur automatique implantable / ICD)** | Dispositif implanté protégeant contre la mort subite liée aux troubles du rythme ventriculaires graves ; n'améliore pas les symptômes quotidiens. |
 | **DAI sous-cutané (S-DAI / S-ICD)** | Défibrillateur placé sous la peau sans sonde intraveineuse. Dans PRAETORIAN, moins de complications de sonde, mais pas de stimulation (pacemaker), pas d'ATP ni de CRT. |
+| **DANISH** | Essai de 2016 sur le DAI préventif chez 1 116 patients en ICFER **non ischémique** (FEVG ≤ 35 %) : mort subite divisée par deux (HR 0,50) sans baisse significative de la mortalité globale (HR 0,87 ; HR 0,96 à 13 ans). Principale raison pour laquelle l'ESC classe le DAI non ischémique un cran plus bas (IIa) que l'ischémique (I). |
 | **Décompensation cardiaque** | Aggravation nécessitant une intensification ou un traitement de secours (par exemple hausse ou ajout de diurétique), souvent à l'hôpital ; peut s'installer sur des jours/semaines ou brutalement (Définition universelle 2026). À comparer à *l'aggravation de l'insuffisance cardiaque*. |
 | **Décongestionnants oraux (pseudoéphédrine, phényléphrine)** | Vasoconstricteurs oraux contre le rhume à éviter dans l'ICFER ischémique ; la France a placé toute la pseudoéphédrine orale sur ordonnance (` + '`Liste I`' + `) le 11 décembre 2024 pour risques d'infarctus, d'AVC et de complications vasculaires cérébrales (PRES/RCVS), et plusieurs spécialités contiennent aussi de l'ibuprofène. |
 | **Définition universelle de l'insuffisance cardiaque (2026)** | Consensus conjoint AHA/ACC/ESC/WHF sur la terminologie (2021 ; 2e édition juin 2026). Ce n'est pas une recommandation thérapeutique : elle ne fixe pas de seuils numériques de FEVG ni de peptides natriurétiques et recense 18 groupes étiologiques, avec la cardiomyopathie ischémique en premier. |
@@ -114,15 +116,16 @@ export const article: WikiArticle = {
 | **Gilet défibrillateur portable (LifeVest)** | Gilet porté sous les vêtements jour et nuit, détectant et choquant un trouble du rythme grave pendant les premiers mois avant décision de DAI (ESC 2026, Classe IIb). Conduite automobile interdite en France pendant son indication. |
 | **GLS (strain longitudinal global)** | Mesure échocardiographique (*speckle tracking*) du raccourcissement longitudinal des fibres internes (normal autour de -18 % à -22 % ; plus proche de 0 = plus faible). Détecte une dysfonction subtile et le risque de rechute en HFimpEF plus tôt que la FEVG, mais varie jusqu'à 3,7 points entre constructeurs : le suivi doit rester sur le même appareil. |
 | **Groupe 1 / Groupe 2 (permis de conduire)** | Catégories européennes : groupe 1 (léger) = voitures et motos ; groupe 2 (lourd) = poids lourds et transport en commun. |
+| **Gynécomastie** | Gonflement ou sensibilité mammaire chez l'homme. Effet indésirable connu de la spironolactone (environ 1 homme sur 10 dans RALES) ; beaucoup plus rare avec l'éplérénone, plus sélective sur le récepteur minéralocorticoïde. |
 | **HAD (hospitalisation à domicile)** | Soins de statut hospitalier délivrés au domicile en France (astreinte infirmière 24 h/24, matériel, pharmacie), pris en charge à **100 % sous ALD** et exonérés du forfait journalier hospitalier. |
 | **Heart Team (équipe médico-chirurgicale)** | Réunion multidisciplinaire statuant sur revascularisation ou valves ; l'ESC 2026 demande qu'elle comprenne un spécialiste de l'insuffisance cardiaque. |
 | **Hepcidine / ferroportine** | L'hepcidine est une hormone souvent élevée dans l'IC qui ferme la ferroportine (porte de sortie intestinale du fer), expliquant la faible efficacité du fer oral par rapport au fer intraveineux. |
-| **HFimpEF (insuffisance cardiaque à FEVG améliorée)** | Hausse de la FEVG d'au moins 10 points aboutissant au-dessus de 40 % (ESC 2026). La Définition universelle 2026 reprend cette description en précisant que la FEVG seule ne suffit pas à la définir. |
+| **HFimpEF (insuffisance cardiaque à FEVG améliorée)** | Hausse de la FEVG d'au moins 10 points aboutissant au-dessus de 40 % (ESC 2026). La Définition universelle 2026 reprend cette description en précisant que la FEVG seule ne suffit pas à la définir. Moins fréquente en cause ischémique : dans deux cohortes récentes, 26–48 % des patients ischémiques nouvellement diagnostiqués contre 51–70 % des non ischémiques ont atteint les seuils usuels. |
 | **HFmrEF** | Ancienne catégorie « FEVG modérément réduite » (41–49 %), **supprimée par l'ESC 2026** et non utilisée dans la Définition universelle 2026 ; encore présente dans les recommandations US/NICE et d'anciens documents. |
 | **HFpEF (insuffisance cardiaque à FEVG préservée)** | Insuffisance cardiaque avec FEVG ≥ 50 % associée à des anomalies structurelles ou de remplissage. |
 | **HIIT (entraînement fractionné à haute intensité)** | Alternance d'intervalles d'effort soutenu et de récupération. Dans SMARTEX-HF, le HIIT n'a pas surpassé l'endurance continue modérée sur le remodelage VG ni sur la capacité d'effort. |
 | **Holter / patch ECG / moniteur cardiaque implantable (ILR)** | Enregistreurs rythmiques ambulatoires adaptés à la fréquence des symptômes : Holter filaire 24–48 h (symptômes quotidiens, 1er décompte d'ESV), patch sans fil 7–14 jours (FA ou ESV intermittentes) et moniteur sous-cutané ILR ~3 ans (syncope inexpliquée ; inutile en présence d'un DAI/CRT). |
-| **Hyperkaliémie** | Taux élevé de potassium dans le sang, favorisé par IEC, ARA2, ARNI et ARM, justifiant des contrôles biologiques réguliers. |
+| **Hyperkaliémie** | Taux élevé de potassium dans le sang, favorisé par IEC, ARA2, ARNI et ARM, justifiant des contrôles biologiques réguliers. Sous ARM, un potassium > 5,5 mmol/L était 1,4 à 3 fois plus fréquent que sous placebo ; les recommandations US 2022 demandent d'arrêter l'ARM si le potassium ne peut rester < 5,5. |
 | **Hypophosphatémie (fer intraveineux)** | Baisse du phosphate sanguin fréquente et transitoire sous **carboxymaltose ferrique (FCM)** (51,9 % modérée à sévère à J21 dans HEART-FID, contre ~4–8 % sous **dérisomaltose ferrique, FDI**), avec de rares ostéomalacies/fractures après cures répétées de FCM. |`,
     },
     {
@@ -131,7 +134,7 @@ export const article: WikiArticle = {
 |---|---|
 | **IAH (index d'apnées-hypopnées / AHI)** | Nombre de pauses ou diminutions respiratoires par heure de sommeil : modéré à partir de 15/h, sévère au-dessus de 30/h. |
 | **ICFER (insuffisance cardiaque à FEVG réduite / HFrEF)** | Définition ESC 2026 : FEVG **< 50 %** avec symptômes ou signes. Recommandations américaines (2022), NICE et anciennes ESC : FEVG **≤ 40 %**. La Définition universelle 2026 ne fixe délibérément aucun seuil chiffré. |
-| **IEC / ARA2 / ARNI** | Pilier bloqueur du système rénine-angiotensine : IEC ou ARNI (sacubitril/valsartan — *Entresto*) ; ARA2 en alternative si intolérance (ESC 2026). |
+| **IEC / ARA2 / ARNI** | Pilier bloqueur du système rénine-angiotensine : IEC ou ARNI (sacubitril/valsartan — *Entresto*, ESC 2026 Classe I A ; relais vers ARNI si symptômes persistants Classe I B1 ; les recommandations US 2022 placent l'ARNI en 1re intention) ; ARA2 en alternative si intolérance. |
 | **Inclisiran (*Leqvio*)** | Injection semestrielle abaissant le LDL d'environ 50 % ; les essais d'événements cliniques n'étaient pas encore publiés fin 2026. |
 | **Infarctus du myocarde (IDM / MI)** | Nécrose d'une zone du muscle cardiaque due à l'occlusion brutale d'une artère coronaire. |
 | **Inhibiteur de PCSK9 (anti-PCSK9)** | Traitement injectable (évolocumab / *Repatha*, alirocumab / *Praluent*) abaissant fortement le LDL (ESC Classe I si statine + ézétimibe insuffisants). |
@@ -141,18 +144,21 @@ export const article: WikiArticle = {
 | **IPA (infirmier en pratique avancée)** | Infirmier diplômé d'État de niveau master en France assurant le suivi des cardiopathies et coronaropathies stabilisées : peut prescrire des bilans, renouveler/adapter les ordonnances et prescrire une première APA, avec accès direct en structures coordonnées depuis janvier 2025. |
 | **IRM cardiaque (CMR)** | Imagerie précise des volumes, de la FEVG et des cicatrices (LGE). Mesure en moyenne une FEVG inférieure d'environ 5,5 points à l'ETT dans la dysfonction ischémique. |
 | **Ischémique** | Causé par un manque d'apport sanguin (maladie coronaire, infarctus du myocarde). |
-| **iSGLT2 (inhibiteur du SGLT2 / gliflozine)** | Dapagliflozine (*Forxiga*), empagliflozine (*Jardiance*) : pilier du traitement de fond, Classe I quelle que soit la FEVG dans l'ESC 2026. |
+| **iSGLT2 (inhibiteur du SGLT2 / gliflozine)** | Dapagliflozine (*Forxiga*), empagliflozine (*Jardiance*) : pilier du traitement de fond (ESC 2026 Classe I A quelle que soit la FEVG ; US 2022 COR 1 A dans l'ICFER), même bénéfice avec ou sans diabète ; dose fixe de 10 mg une fois par jour. |
 | **Ivabradine (*Procoralan*)** | Comprimé ralentissant le nœud sinusal. Option additionnelle pour FEVG ≤ 35 % en rythme sinusal avec FC > 70 bpm (≥ 75 bpm dans l'AMM UE) malgré bêtabloquant maximal (ESC 2026, Classe IIa). Peut provoquer des éclairs lumineux brefs (phosphènes). |
 | **KCCQ (Kansas City Cardiomyopathy Questionnaire)** | Questionnaire standardisé coté de 0 à 100 mesurant les symptômes et la qualité de vie dans l'IC (plus élevé = meilleur) ; détecte les changements d'état plus de deux fois plus sensiblement que la classe NYHA. |
 | **Lésion myocardique chronique (troponine ultrasensible)** | Élévation légère et persistante de la troponine cardiaque ultrasensible (> 99e percentile, stable sur dosages répétés sans cinétique aiguë ni signe d'ischémie), présente chez plus de la moitié des patients ICFER stables (médiane hs-cTnT ~18 ng/L) et distincte d'un infarctus aigu. |
-| **LGE (rehaussement tardif au gadolinium)** | Sur l'IRM cardiaque après contraste, la cicatrice fibreuse apparaît brillante ; le muscle sans LGE est considéré comme viable. |
+| **LGE (rehaussement tardif au gadolinium)** | Sur l'IRM cardiaque après contraste, la cicatrice fibreuse apparaît brillante ; le muscle sans LGE est considéré comme viable. La part de l'épaisseur de la paroi qui apparaît brillante définit la *transmuralité de la cicatrice*. |
 | **Lp(a) — Lipoprotéine(a)** | Particule lipidique héréditaire liée au risque d'infarctus ; l'ESC recommande un dosage unique dans la vie. Aucun médicament l'abaissant n'a encore prouvé de réduction d'événements cliniques. |
+| **MADIT-II** | Essai de 2002 sur le DAI préventif chez 1 232 patients après infarctus (> 1 mois) avec FEVG ≤ 30 % (100 % ischémiques) : mortalité 14,2 % vs 19,8 % (HR 0,69), maintenue à 8 ans (HR 0,66). Arrêté précocement ; antérieur aux ARNI et iSGLT2 ; socle de la règle US Classe 1 en NYHA I avec FEVG ≤ 30 %. |
+| **MAGGIC (score MAGGIC)** | Score de risque dans l'IC (2013) construit sur 39 372 patients (30 études) à partir de 13 paramètres courants (âge, FEVG, NYHA, créatinine, diabète, tension, IMC...) pour estimer le risque de décès à 1 et 3 ans ; n'intègre ni l'étiologie, ni le NT-proBNP, ni les traitements modernes (estimation de groupe, non prédiction individuelle). |
 | **MET (équivalent métabolique)** | Unité d'intensité d'effort physique (1 MET = dépense d'oxygène au repos) ; monter deux étages d'escaliers ou avoir un rapport sexuel avec un partenaire habituel représente environ 3 à 5 METs. |
 | **MIDCAB** | Pontage mini-invasif : greffe de l'artère mammaire interne gauche sur l'IVA par une petite incision thoracique latérale, sans ouvrir le sternum. |
 | **MINS (lésion myocardique après chirurgie non cardiaque)** | Élévation post-opératoire de troponine traduisant une souffrance myocardique péri-opératoire, souvent silencieuse sans douleur thoracique ; ESC 2022 et AHA/ACC 2024 recourent aux biomarqueurs péri-opératoires chez les patients à haut risque. |
 | **Mon espace santé (DMP)** | Carnet de santé numérique public français (*Dossier Médical Partagé*, profil médical, *directives anticipées*), consultable en urgence par les hôpitaux et le SAMU 15 sauf opposition ; le patient ne peut initier une nouvelle conversation de messagerie sécurisée avec un médecin avant que celui-ci ne l'ouvre. |
 | **Mort subite cardiaque (MSC / SCD)** | Décès inattendu d'origine cardiaque, le plus souvent par trouble du rythme ventriculaire grave. |
-| **Myocarde hibernant / viabilité** | Muscle cardiaque affaibli mais vivant. Dans REVIVED-BCIS2, la quantité de myocarde viable n'a pas prédit le bénéfice d'un stent. |
+| **Myocarde hibernant / viabilité** | Hibernation : muscle recevant chroniquement trop peu de sang qui reste vivant en réduisant sa contraction. Viabilité : muscle affaibli mais vivant (hibernant ou sidéré, par opposition à la cicatrice) pouvant récupérer sa fonction si le flux sanguin revient. Dans STICH (pontage) et REVIVED-BCIS2 (stents), la viabilité n'a pas modifié le bénéfice de la revascularisation, et l'ESC 2026 note l'absence de preuve pour sélectionner les patients par la viabilité. |
+| **Myocarde sidéré (stunned myocardium)** | Muscle cardiaque dont la contraction reste temporairement affaiblie après un épisode bref et non mortel d'ischémie, même après le retour du flux sanguin ; forme un continuum avec l'hibernation et compte comme muscle viable. |
 | **NDLVC (cardiomyopathie ventriculaire gauche non dilatée)** | Catégorie ESC 2023 définie par une cicatrice non ischémique ou un remplacement graisseux du VG sans dilatation, ou par une hypokinésie globale isolée (FEVG < 50 %) sans cicatrice, non expliqués uniquement par les coronaires ou la surcharge. |
 | **Nicorandil** | Comprimé anti-angineux de 2e ligne (génériques d'*Adancor*/*Ikorel*). Peut provoquer des ulcérations buccales, digestives, cutanées ou oculaires même tardives ; service médical rendu jugé insuffisant par la HAS en 2026. |
 | **Niveau de preuve ESC 2026 (A, B1, B2, C)** | Nouvelle grille thérapeutique ESC 2026 : **A** = concluant (≥ 2 ECR puissants) ; **B1** = randomisé suggestif (≥ 1 ECR puissant ou méta-analyse) ; **B2** = études non randomisées contrôlées ou méta-analyse de petits ECR ; **C** = préliminaire/consensus. Les tableaux diagnostiques gardent A/B/C sans B1/B2. |
@@ -172,13 +178,14 @@ export const article: WikiArticle = {
 | **PPA (plan personnalisé d'accompagnement)** | Dispositif français précoce de coordination des soins d'accompagnement créé par la loi 2026-404 (mai 2026) pour anticiper besoins médicaux, psychologiques, sociaux, HAD et directives anticipées (modèle national HAS attendu fin 2026). |
 | **PPC (pression positive continue / CPAP)** | Appareil à masque maintenant les voies aériennes ouvertes la nuit ; traitement de référence du SAOS, pris en charge en France sous condition d'observance. |
 | **PRADO insuffisance cardiaque** | Programme d'accompagnement de retour à domicile de l'Assurance Maladie après une hospitalisation pour insuffisance cardiaque. |
-| **Prévention primaire vs secondaire (DAI)** | Primaire : DAI posé avant tout trouble du rythme grave ; secondaire : DAI posé après arrêt cardiaque ou arythmie ventriculaire grave. |
+| **Prévention primaire vs secondaire (DAI)** | Primaire : DAI posé avant tout trouble du rythme grave (recommandé dans l'ICFER ischémique avec FEVG ≤ 35 %, NYHA II–III, ≥ 3 mois de traitement optimal et > 40 jours post-infarctus : ESC 2026 I B1, US 2022 1 A ; cause non ischémique : ESC 2026 IIa B1). Secondaire : DAI posé après arrêt cardiaque ou arythmie ventriculaire grave. |
 | **Prévention secondaire coronaire** | Mesures évitant un nouvel infarctus ou AVC en cas de coronaropathie : baisse du LDL, antiagrégant plaquettaire, contrôle tensionnel, parfois colchicine. |
 | **Procédure factice (sham)** | Intervention simulée dans le groupe témoin (ex. cathéter sans injection active) permettant un véritable double aveugle ; évaluation la plus rigoureuse des thérapies cellulaires injectées. |
 | **Pseudo-anévrisme (faux anévrisme VG)** | Rupture contenue de la paroi cardiaque retenue uniquement par le péricarde ; contrairement au vrai anévrisme, expose à une rupture brutale et relève généralement de la chirurgie. |
 | **Ranolazine (*Ranexa*)** | Comprimé anti-angineux additionnel sans effet sur la tension ni sur la fréquence cardiaque. Contre-indiqué en insuffisance rénale ou hépatique sévère et avec le sotalol ; augmente le taux de digoxine. |
 | **Récupération (insuffisance cardiaque)** | Définition universelle 2026 : maintien durable d'une structure, d'une fonction, de biomarqueurs et de symptômes normaux sur un suivi prolongé ; critère plus strict que la rémission. |
 | **Rémission** | ESC 2026 : terme employé pour une FEVG améliorée (traitement à poursuivre). Définition universelle 2026 : sens plus strict (FEVG revenue à la normale, NYHA I et biomarqueurs stables, risque résiduel de rechute ; une hausse moindre est appelée « amélioration »). |
+| **Remodelage / remodelage inverse** | Remodelage : dilatation et modification de forme du ventricule gauche après une lésion telle qu'un infarctus. Remodelage inverse : rétrécissement du ventricule et remontée de la FEVG sous traitement (moins fréquent en cause ischémique que non ischémique, le plus souvent au cours de la 1re année). |
 | **Résistance aux diurétiques** | Échec de décongestion (avec faible natriurèse) malgré des doses élevées ou maximales de diurétique de l'anse (œdème digestif, rebond sodé, adaptation tubulaire) ; l'ESC 2026 en fait un signe d'alerte pour avis en centre expert IC avancée. |
 | **Rétrécissement aortique (sténose aortique) : léger / modéré / sévère** | Rétrécissement de la valve aortique (ASE/EACVI) : léger = surface > 1,5 cm², gradient < 20 mmHg ; modéré = 1,0–1,5 cm², 20–40 mmHg ; sévère = < 1,0 cm², ≥ 40 mmHg. |
 | **Rétrécissement aortique bas débit, bas gradient** | Sténose sévère à gradient < 40 mmHg car le VG affaibli éjecte peu de sang (forme classique : surface ≤ 1,0 cm², gradient < 40 mmHg, FEVG < 50 %, SVi ≤ 35 mL/m²). |
@@ -186,7 +193,10 @@ export const article: WikiArticle = {
 | **RQTH** | Reconnaissance de la qualité de travailleur handicapé (MDPH), ouvrant droit aux aménagements de poste ; depuis janvier 2024 (*Loi plein emploi*), les titulaires d'une pension d'invalidité CPAM ou d'une CMI *Invalidité* bénéficient automatiquement des droits emploi de la RQTH. |
 | **SAOS / SACS (apnée obstructive / centrale du sommeil)** | SAOS : fermeture des voies aériennes malgré l'effort respiratoire. SACS : pause temporaire de la commande cérébrale (souvent respiration de Cheyne-Stokes). |
 | **Sarcoïdose cardiaque et TEP-18F-FDG** | Maladie inflammatoire granulomateuse (jusqu'à 25 % isolée au cœur) causant blocs de conduction, arythmies ventriculaires ou anomalies mimant un infarctus ; la **TEP-18F-FDG** (ESC 2023 IIa C, après régime strict pauvre en glucides/riche en lipides + jeûne) détecte l'inflammation active en complément de l'IRM. |
+| **SCD-HeFT** | Essai de 2005 chez 2 521 patients (NYHA II–III, FEVG ≤ 35 %, 52 % ischémiques) : un DAI en mode choc seul a réduit la mortalité face au placebo (22 % vs 29 %, HR 0,77), contrairement à l'amiodarone (HR 1,06) ; à 11 ans, bénéfice maintenu dans le sous-groupe ischémique (HR 0,81) mais non net dans le non ischémique (HR 0,97). |
 | **Scintigraphie osseuse (99mTc-DPD / PYP / HMDP ; grade de Perugini)** | Examen nucléaire diagnostiquant l'amylose cardiaque ATTR sans biopsie (ESC 2023 Classe I B). Une fixation myocardique de grade 2–3 ne confirme l'ATTR **que si** les trois tests de protéine monoclonale (SPIE, UPIE, chaînes légères libres) sont négatifs ; un infarctus récent (< 4 sem.) peut donner un faux positif. |
+| **SCORE2-HF** | Modèle européen 2026 estimant le risque à 10 ou 30 ans de *développer* une insuffisance cardiaque chez l'adulte de plus de 40 ans sans maladie cardiovasculaire. Score de prévention qui ne s'applique pas aux personnes ayant déjà une insuffisance cardiaque. |
+| **Seattle Heart Failure Model (SHFM)** | Calculateur de risque (2006) estimant la survie à 1–3 ans dans l'IC à partir de données cliniques, biologiques, médicamenteuses et de dispositifs (incluant l'étiologie ischémique) ; construit avant la généralisation des bêtabloquants et avant les ARNI/iSGLT2, avec tendance à sous-estimer le risque dans certaines cohortes récentes. |
 | **SMR cardiovasculaire (réadaptation cardiaque)** | Service de soins médicaux et de réadaptation cardiovasculaire (hospitalisation ou hôpital de jour) délivrant réentraînement à l'effort encadré et éducation thérapeutique. |
 | **Soins palliatifs / soins de support** | Accompagnement global des symptômes, du vécu émotionnel et des choix de soins en parallèle du traitement cardiologique complet, à tout stade (HFA ; élargi aux *soins d'accompagnement* précoces par la loi française 2026-404). |
 | **SPCMD (sédation profonde et continue maintenue jusqu'au décès)** | Sédation profonde jusqu'au décès encadrée en France par la *Loi Claeys-Leonetti* (procédure collégiale obligatoire, antalgie et arrêt des hydratations/nutritions artificielles dans trois situations strictes de fin de vie ou d'arrêt de traitements ; distincte de l'euthanasie). |
@@ -208,6 +218,7 @@ export const article: WikiArticle = {
 | **Thrombus mural (plat / laminé)** | Caillot étalé à plat contre la paroi. Non démontré inoffensif : sa forme peut évoluer et la déclaration AHA 2022 suggère de traiter un caillot mural récent comme un caillot mobile. |
 | **Tolérance (échappement) aux dérivés nitrés** | Perte d'efficacité d'un dérivé nitré longue durée en administration continue ; prévenue par une fenêtre libre quotidienne de 8 à 12 heures (ex. retrait du patch la nuit). |
 | **Traitement de fond (les 4 piliers / FMT / GDMT)** | Socle thérapeutique associant quatre classes médicamenteuses (IEC ou ARNI, bêtabloquant, ARM, iSGLT2) dans l'ICFER. |
+| **Transmuralité de la cicatrice / « règle des 50 % »** | Part de l'épaisseur de la paroi cardiaque occupée par la cicatrice à l'IRM LGE (0 %, 1–25 %, 26–50 %, 51–75 %, 76–100 %). Dans Kim 2000, 78 % des segments sans cicatrice récupéraient contre 2 % si > 75 % d'épaisseur (« règle des 50 % ») ; les essais n'ont toutefois pas prouvé que choisir une revascularisation sur la viabilité améliore le pronostic. |
 | **Trimétazidine (*Vastarel*)** | Comprimé anti-angineux à visée métabolique. Contre-indiqué en cas de maladie de Parkinson, troubles moteurs ou insuffisance rénale sévère ; non remboursé en France. |
 | **Trinitrine (GTN / *Natispray*)** | Dérivé nitré d'action rapide en spray ou comprimé sublingual pour les crises d'angor. Abaisse la tension artérielle ; strictement contre-indiqué avec les inhibiteurs de la PDE-5. |
 | **TV (tachycardie ventriculaire / VT)** | Rythme rapide et organisé naissant dans les ventricules (souvent en réentrée autour d'une cicatrice d'infarctus) ; une **TV soutenue** dure > 30 secondes ou nécessite une interruption (ATP, choc, médicament ou ablation). |
@@ -216,7 +227,7 @@ export const article: WikiArticle = {
 | **Vériciguat (*Verquvo*)** | Stimulateur de la guanylate cyclase soluble (ESC 2026 Classe IIb) bénéfique après aggravation récente (VICTORIA) mais neutre sur le critère principal chez les patients stables (VICTOR). Contre-indiqué avec les inhibiteurs de la PDE-5. |
 | **Volume d'éjection indexé (SVi)** | Volume sanguin éjecté par battement rapporté à la surface corporelle ; un SVi ≤ 35 mL/m² définit le « bas débit » dans le rétrécissement aortique. |
 | **Volume télésystolique du VG (VTS / VTSi / LVESVi)** | Volume de sang restant dans le ventricule gauche après sa contraction (plus il est grand, plus le VG est dilaté). Prédisait le pronostic dans REVIVED-BCIS2 là où la FEVG ne le faisait pas. |
-| **VTDi / VTSi (volumes VG indexés / LVEDVi / LVESVi)** | Volumes télédiastolique et télésystolique du VG indexés à la surface corporelle (mL/m²). Limite supérieure normale du VTDi à l'ETT : 74 mL/m² (hommes), 61 mL/m² (femmes) ; normes IRM plus élevées. |`,
+| **VTDi / VTSi (volumes VG indexés / LVEDVi / LVESVi)** | Volumes télédiastolique et télésystolique du VG indexés à la surface corporelle (mL/m²). Limite supérieure normale du VTDi à l'ETT : 74 mL/m² (hommes), 61 mL/m² (femmes) ; normes IRM plus élevées. Des volumes plus grands prédisent moins de récupération de la FEVG, et dans REVIVED-BCIS2 le VTSi prédisait le pronostic là où la FEVG seule ne le faisait pas. |`,
     },
   ],
   relatedArticleSlugs: [
@@ -232,9 +243,17 @@ export const article: WikiArticle = {
     'questions-equipe-cardiologie',
     'examens-et-chiffres',
     'efx-strain-troponine-et-imagerie-cardiaque',
+    'viabilite-myocardique',
+    'these-viabilite-et-survie-revascularisation',
     'confirmer-la-cause-dysfonction-vg',
     'dysfonction-vg-asymptomatique-stade-b',
+    'iec-ara2-et-arni-sacubitril-valsartan',
+    'betabloquants-insuffisance-cardiaque',
+    'arm-steroidiens-spironolactone-eplerenone',
+    'inhibiteurs-sglt2-insuffisance-cardiaque',
     'medicaments-effets-secondaires-suivi',
+    'dispositifs-cardiaques-dai-crt',
+    'these-benefice-dai-sous-quadritherapie',
     'escalade-et-resistance-aux-diuretiques',
     'angor-et-medicaments-anti-angineux',
     'arythmies-ventriculaires-et-antiarythmiques',
@@ -262,8 +281,8 @@ export const article: WikiArticle = {
       detail: 'Catégories de FEVG, NDLVC, amylose/sarcoïdose, arythmies ventriculaires, résistance aux diurétiques, MINS, EFX/GLS/troponine chronique et antibioprophylaxie',
     },
     {
-      label: 'Essais cliniques, pharmacovigilance et thèses (REVIVED-BCIS2, HEART-FID phosphate, IRONMAN, RED-HF, CARES/FAST, RED VELVT, SMARTEX-HF, DREAM-HF, BioVAT-HF, EMA/ANSM/FDA)',
-      detail: 'Hypophosphatémie sous fer IV, CST < 20 %, acidocétose euglycémique, pseudoéphédrine Liste I, IPDE-5 Viagra vs Cialis, décongestionnants et thérapies cellulaires',
+      label: 'Essais cliniques, pharmacovigilance et thèses (MADIT-II, SCD-HeFT, DANISH, RALES, EPHESUS, DAPA-HF, Kim 2000, STICH, REVIVED-BCIS2, MAGGIC, SHFM, SCORE2-HF, HEART-FID phosphate, IRONMAN, RED-HF, CARES/FAST, RED VELVT, SMARTEX-HF, DREAM-HF, BioVAT-HF, EMA/ANSM/FDA)',
+      detail: 'DAI préventif ischémique vs non ischémique, 4 piliers (délai 36 h, baisse initiale du DFGe, gynécomastie), viabilité/transmuralité, scores pronostiques, hypophosphatémie sous fer IV, CST < 20 %, acidocétose euglycémique et thérapies cellulaires',
     },
     {
       label: 'Sources officielles françaises (service-public.fr, ameli.fr, HAS oct. 2024, CNSPFV 2026, Loi 2026-404, ANSM RCP Cordarone 2025)',

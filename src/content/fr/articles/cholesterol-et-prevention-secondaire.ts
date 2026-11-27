@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Cholestérol LDL, aspirine et prévention secondaire coronaire',
   category: 'traitements',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -86,8 +86,17 @@ La **lipoprotéine(a)** est une particule héréditaire porteuse de cholestérol
 | **1. Statine** (ex. rosuvastatine *Crestor*, atorvastatine *Tahor*) | Comprimé quotidien ; diminue la fabrication de cholestérol par le foie | Traitement de première intention en maladie coronaire, prescrit jusqu'à la dose maximale tolérée |
 | **2. Ézétimibe (*Ezetrol*)** | Comprimé quotidien ; limite l'absorption intestinale du cholestérol | Ajouté si la statine seule ne suffit pas ou en association avec une statine plus modérée en cas de douleurs musculaires |
 | **3. Anticorps anti-PCSK9** (évolocumab *Repatha*, alirocumab *Praluent*) | Injection sous-cutanée toutes les 2 semaines ou chaque mois | Abaisse le LDL d'environ moitié supplémentaire ; réactions locales légères parfois au point d'injection |
-| **Acide bempédoïque** (*Nilemdo*, ou *Nustendi* avec ézétimibe) | Comprimé quotidien | Option en cas d'intolérance avérée aux statines ou en complément ultérieur |
-| **Inclisiran (*Leqvio*)** | Injection 2 fois par an | Abaisse fortement le LDL ; les résultats scientifiques complets sur la prévention des infarctus sont encore attendus |
+| **Acide bempédoïque** (*Nilemdo*, ou *Nustendi* avec ézétimibe) | Comprimé quotidien | Option en cas d'intolérance avérée aux statines (réduction des événements démontrée) ou en complément ultérieur |
+| **Inclisiran (*Leqvio*)** | Injection 2 fois par an | Abaisse fortement le LDL ; un grand essai clinique (ORION-4) a annoncé un résultat positif fin 2026, mais les chiffres détaillés sont attendus en 2027 |
+
+### Accès et remboursement en France (avis de la HAS)
+
+En France, les critères de remboursement peuvent être plus stricts que les cibles européennes :
+- **Évolocumab (*Repatha*) :** remboursé en troisième ligne (médicament d'exception) après un infarctus, un AVC non hémorragique ou une artérite symptomatique des jambes lorsque le LDL reste **supérieur ou égal à 0,70 g/L** malgré un traitement optimisé par statine et ézétimibe. Ce seuil (0,70 g/L) étant plus élevé que la cible européenne (0,55 g/L), une personne située entre les deux peut ne pas entrer dans les critères de remboursement.
+- **Acide bempédoïque (*Nilemdo*) :** remboursé uniquement chez les adultes à haut ou très haut risque présentant une **intolérance avérée ou une contre-indication aux statines**, sous traitement optimisé incluant au moins l'ézétimibe.
+- **Inclisiran (*Leqvio*) :** non remboursé à ce jour en prévention secondaire (remboursé uniquement dans certaines hypercholestérolémies familiales) ; la publication complète d'ORION-4 pourrait conduire à une réévaluation.
+
+D'autres médicaments du cholestérol sont en développement ou récemment autorisés aux États-Unis (comme l'**enlicitide**, un inhibiteur oral de PCSK9, ou l'**obicetrapib**), sans données d'événements cardiaques publiées à ce jour ni autorisation européenne.
 
 ### Statines et insuffisance cardiaque : pourquoi ne pas les arrêter seul
 
@@ -145,7 +154,16 @@ Seul votre cardiologue peut déterminer si ce traitement est adapté à votre si
 - **RACING (3 780 patients coréens, 3 ans, en ouvert) :** rosuvastatine 10 mg + ézétimibe non inférieure à rosuvastatine 20 mg (**9,1 % vs 9,9 %**), plus souvent LDL < 0,70 g/L (**72 % vs 58 %**), moins d'arrêts/baisses de dose (**4,8 % vs 8,2 %**). **Méta-analyse Kelly et al. (2024, 13 essais, 8 592 patients) :** LDL < 0,70 g/L plus fréquent (**OR 1,76**, IC 1,26–2,45), aucune différence nette sur les événements (**OR 0,54**, IC 0,14–2,11) ni sur les arrêts.
 - **FOURIER (27 564 patients, suivi médian 2,2 ans ; excluait NYHA III-IV et FEVG < 30 %) :** évolocumab **-59 %** de LDL (médiane **0,92 à 0,30 g/L**), critère principal **9,8 % vs 11,3 %** (**HR 0,85**), infarctus/AVC/décès CV **5,9 % vs 7,4 %**. Analyse par LDL atteint (*The Lancet* 2017, **25 982 patients**) : bénéfice continu jusqu'à **< 0,08 g/L (0,2 mmol/L)** ; sous **0,20 g/L** vs ≥ 1,00 g/L : **HR ajusté 0,76** (IC 0,64–0,90) et **HR 0,69** (IC 0,56–0,85), sans excès d'effets indésirables graves, de diabète ni de troubles cognitifs (analyse non randomisée, 2 ans).
 - **ODYSSEY OUTCOMES — analyse post hoc selon antécédent d'IC (*EHJ* 2022, 18 924 patients, 2 815 [15 %] avec antécédent d'IC, FEVG non recueillie, NYHA III-IV et FEVG < 25 % exclus) :** réduction des événements sans antécédent d'IC (**HR 0,78**), mais **aucune réduction** avec antécédent d'IC (**HR 1,17**, IC 0,97–1,40 ; infarctus non fatals **HR 1,30**, IC 1,02–1,64 ; mortalité **HR 0,99** ; hospitalisations IC **HR 1,22**, IC 0,90–1,66). Sous-groupe IC probablement coronaire : **HR 1,13** (IC 0,90–1,41) et hospitalisations IC **HR 1,38** (IC 0,96–1,99). Analyse post hoc sans FEVG, non assimilable à l'ICFER.
-- **Acide bempédoïque :** baisse du LDL ~**-23 %** seul, **-18 %** sur statine, **-38 %** avec ézétimibe (**CLEAR Outcomes**). **Inclisiran :** ~**-50 %** (**ORION-10/11** : -52 % et -50 %) ; **ORION-4** repose en novembre 2026 sur un seul communiqué de presse sans publication. Réactions au point d'injection : évolocumab **2,1 % vs 1,6 %**, alirocumab **3,8 % vs 2,1 %**.
+- **Acide bempédoïque :** baisse du LDL ~**-23 %** seul, **-18 %** sur statine, **-38 %** avec ézétimibe. **CLEAR Outcomes** (*NEJM* 2023, 13 970 patients intolérants aux statines, suivi 3,4 ans ; résumé lu) : baisse du LDL d'environ 21 points de pourcentage de plus que le placebo ; événements majeurs **11,7 % vs 13,3 %** (**HR 0,87**), moins d'infarctus (**HR 0,77**), sans effet sur la mortalité CV ou totale ; plus de goutte (**3,1 % vs 2,1 %**) et de calculs biliaires (**2,2 % vs 1,2 %**). L'« insuffisance cardiaque sévère » était exclue (non définie).
+- **Inclisiran :** baisse du LDL ~**-50 %** (**ORION-10/11** : -52 % et -50 %). **ORION-4** (> 16 000 patients avec maladie artérielle) : Novartis a annoncé le **23 novembre 2026** que l'essai atteignait son critère principal (décès coronaire, infarctus, AVC ischémique, revascularisation urgente), **sans communiquer aucun chiffre** (résultats complets attendus au premier semestre 2027 ; **VICTORION-2 PREVENT** attendu en 2027). Réactions au point d'injection : évolocumab **2,1 % vs 1,6 %**, alirocumab **3,8 % vs 2,1 %**, plus fréquentes aussi sous inclisiran.
+- **Molécules plus récentes (état au 26 novembre 2026) :**
+  - **Obicetrapib** (inhibiteur de CETP, comprimé quotidien) : essais lipidiques BROADWAY, BROOKLYN et TANDEM présentés comme positifs par le laboratoire (mai 2026, articles non lus) ; essai d'événements **PREVAIL** (> 9 500 patients, analyse intermédiaire prévue T4 2026, résultats attendus T1 2027) ; aucune donnée IC rapportée.
+  - **Enlicitide** (*Lipfendra*, inhibiteur oral de PCSK9, comprimé quotidien) : **approuvé par la FDA le 16 juillet 2026** (États-Unis) sur la baisse du LDL (**CORALreef Lipids** : -57,1 % contre +3,0 % sous placebo à 24 semaines ; plus de diarrhées 7 % vs 2 % et de vertiges 9 % vs 4 % dans l'essai HFh) ; essai d'événements **CORALreef Outcomes** (> 14 500 patients) non encore publié ; aucune décision EMA trouvée ; aucune donnée IC rapportée.
+- **Avis HAS en France (pages de synthèse consultées ; arrêtés du *Journal officiel* et éventuel *accord préalable* en ville non vérifiés) :**
+  - **Évolocumab (*Repatha*) :** réévaluation du 27 mars 2024 (SMR important, ASMR V, médicament d'exception) en 3e ligne après infarctus, AVC non hémorragique ou AOMI symptomatique si **LDL ≥ 0,70 g/L** malgré statine + ézétimibe ; place > 75 ans non établie.
+  - **Inclisiran (*Leqvio*) :** avis du 28 août 2024 (ASMR V) — **non remboursé en prévention secondaire** (uniquement hypercholestérolémie familiale hétérozygote en prévention primaire), dans l'attente d'ORION-4 / VICTORION-2P.
+  - **Acide bempédoïque (*Nilemdo*) :** avis du 12 février 2025 (SMR important, ASMR V) — uniquement chez les adultes à haut/très haut risque avec **intolérance avérée ou contre-indication aux statines**, sous traitement optimisé incluant au moins l'ézétimibe.
+  - **Alirocumab (*Praluent*) :** avis HAS non retrouvé / non vérifié.
 
 ### Statines dans l'insuffisance cardiaque (CORONA, GISSI-HF, PEARL)
 
@@ -182,10 +200,14 @@ Seul votre cardiologue peut déterminer si ce traitement est adapté à votre si
 - **Méta-analyse de 6 essais (21 800 patients ; *EHJ* 2025) :** **HR 0,75** sur les événements majeurs, aucun effet sur la mortalité CV ou totale ; forte hétérogénéité (**I² = 77 %**).
 - **Essais pivots :** **LoDoCo2** (SCC stable : **6,8 % vs 9,6 %**, **HR 0,69**, douleurs musculaires **21,2 % vs 18,5 %**) ; **COLCOT** (4 745 patients post-infarctus : **5,5 % vs 7,1 %**, **HR 0,77**, pneumonies **0,9 % vs 0,4 %**) ; **CLEAR SYNERGY** (*NEJM* 2025, 7 062 patients post-infarctus : **9,1 % vs 9,3 %**, **HR 0,99**, neutre).
 - **Revue Cochrane 2025 (12 essais) :** moins d'infarctus (**RR 0,74**) et d'AVC (**RR 0,67**), mortalité inchangée, plus de troubles digestifs (**RR 1,68**).
-- **Particularités ICFER et sécurité :** l'IC sévère était exclue de COLCOT et LoDoCo2 ; CLEAR SYNERGY incluait FEVG ≤ 45 % mais était neutre ; aucun essai n'a analysé de critères d'IC. Contre-indications (notice US) : inhibiteurs puissants CYP3A4/P-gp (clarithromycine, kétoconazole, itraconazole, ritonavir, ciclosporine), clairance **< 15 mL/min**, insuffisance hépatique sévère, troubles hématologiques préexistants.`,
+- **Particularités ICFER et sécurité :** l'IC sévère était exclue de COLCOT et LoDoCo2 ; CLEAR SYNERGY incluait FEVG ≤ 45 % mais était neutre ; aucun essai n'a analysé de critères d'IC. Contre-indications (notice US) : inhibiteurs puissants CYP3A4/P-gp (clarithromycine, kétoconazole, itraconazole, ritonavir, ciclosporine), clairance **< 15 mL/min**, insuffisance hépatique sévère, troubles hématologiques préexistants. Pour l'inflammation comme cible thérapeutique distincte (hsCRP, CANTOS, CIRT, ziltivekimab / ZEUS), voir *Risque inflammatoire résiduel : hsCRP, IL-6 et essais anti-inflammatoires*.`,
     },
   ],
   relatedArticleSlugs: [
+    'risque-inflammatoire-residuel',
+    'progression-coronaire-et-imagerie-de-suivi',
+    'arteres-carotides-et-aomi',
+    'angor-microvasculaire-et-inoca',
     'diabete-insuffisance-cardiaque',
     'vaccinations-insuffisance-cardiaque',
     'antiplaquettaires-bitherapie-et-protection-gastrique',
@@ -231,6 +253,10 @@ Seul votre cardiologue peut déterminer si ce traitement est adapté à votre si
     {
       label: 'Lp(a)HORIZON (NEJM, 2026, texte intégral) et pipeline ORION-4 / OCEAN(a)-Outcomes',
       detail: 'Résultats du pélacarsen et état des essais en cours sur la Lp(a) et l’inclisiran',
+    },
+    {
+      label: 'CLEAR Outcomes (NEJM, 2023), communiqués ORION-4 (nov. 2026) / obicetrapib / enlicitide (FDA juil. 2026) et avis HAS France (2024–2025)',
+      detail: 'Efficacité de l’acide bempédoïque chez les patients intolérants aux statines, statut des molécules récentes et conditions de remboursement en France (Repatha, Leqvio, Nilemdo)',
     },
     {
       label: 'Méta-analyse colchicine (EHJ, 2025), LoDoCo2, COLCOT, CLEAR SYNERGY (2025) et Cochrane 2025',

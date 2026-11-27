@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Angor et médicaments anti-angineux dans l’ICFER ischémique',
   category: 'traitements',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium',
   volatility: 'warm',
   tags: [
@@ -163,10 +163,19 @@ L'ivabradine ralentit le cœur en rythme sinusal sans abaisser la tension (son r
 
 Les dérivés nitrés, le nicorandil et l'amlodipine abaissent la pression artérielle et entrent en concurrence avec les quatre piliers du traitement de fond (ARNI/IEC, bêtabloquant, ARM, iSGLT2), seuls prouvés pour prolonger la vie. Les recommandations **ESC 2026** affirment explicitement que l'introduction ou l'augmentation des anti-angineux **ne doit entraîner aucune réduction du traitement de fond** de l'insuffisance cardiaque. L'ivabradine, la ranolazine et la trimétazidine modifient peu la pression artérielle (voir *Tension artérielle et insuffisance cardiaque*).
 
+### Angor malgré des artères ouvertes
+
+Un angor peut persister après la pose de stents ou un pontage même lorsque les artères traitées sont bien ouvertes. En dehors d'un nouveau rétrécissement, deux mécanismes fréquents sont la **dysfonction microvasculaire** (petits vaisseaux) et le **spasme coronaire** :
+
+- Environ **4 artères stentées sur 10** présentent une dysfonction microvasculaire après angioplastie, associée à davantage d'événements cardiovasculaires (méta-analyse Li 2025 ; l'angor lui-même n'y était pas poolé).
+- Les recommandations **ESC 2024** préconisent des **tests invasifs de fonction coronaire** lorsque l'angor persiste sans sténose obstructive ou reste réfractaire (**Classe I B**), puis d'adapter le traitement aux résultats (**Classe IIa A**). Dans l'essai **CorMicA**, cette stratégie a amélioré le score d'angor de **13,6 points** à 1 an, sans modifier les événements cliniques (les patients atteints d'insuffisance cardiaque n'étaient pas inclus).
+- Le spasme coronaire est habituellement traité par inhibiteurs calciques, mais le **vérapamil et le diltiazem restent à éviter dans l'ICFER** ; l'amlodipine, la félodipine ou les dérivés nitrés constituent alors les options utilisables.
+- Une resténose de stent, une occlusion de pontage ou une nouvelle sténose doit toujours être écartée en priorité (voir *Angor microvasculaire et INOCA* et *Progression coronaire et imagerie de suivi*).
+
 ### Quand les médicaments ne suffisent plus (angor réfractaire)
 
 - **Revascularisation (stent ou pontage) :** recommandée lorsque l'angor persiste malgré un traitement médical optimisé de l'insuffisance cardiaque et anti-angineux (**ESC 2026 IC : Classe I C**, relevée depuis IIa C, quelle que soit la FEVG ; **ESC 2024 SCC : Classe I A**).
-- **Réducteur du sinus coronaire :** petit implant en treillis rétrécissant la veine principale du cœur. Cité en **Classe IIb** par la revue De Silva 2025 (niveau B ou A selon les sources). Dans l'essai contrôlé par procédure factice **ORBITA-COSMIC** (51 patients, FEVG médiane **62 %**), le **critère principal** (flux sanguin à l'IRM de stress, modifié avant levée d'aveugle) **n'a pas été amélioré** ; les épisodes quotidiens d'angor (critère secondaire) étaient moins fréquents (**OR 1,40**) et 2 dispositifs sur 25 ont migré. Une FEVG **< 25 %**, des sondes droites/DAI ou une indication de CRT étaient des critères d'exclusion : pour une ICFER ischémique avec dispositif, les données sont **extrapolées**. L'essai pivot **COSIRA-II** exige une FEVG ≥ 30 %, exclut NYHA III–IV, et son recrutement était suspendu en novembre 2026.
+- **Réducteur du sinus coronaire :** petit implant en treillis rétrécissant la veine principale du cœur. Classé en **ESC 2024 Classe IIb B** (seule option non médicamenteuse recommandée pour l'angor invalidant sur maladie obstructive réfractaire, en centre expérimenté — levant l'incertitude antérieure entre niveau B et A). Dans l'essai contrôlé par procédure factice **ORBITA-COSMIC** (51 patients, FEVG médiane **62 %**), le **critère principal** (flux sanguin à l'IRM de stress, modifié avant levée d'aveugle) **n'a pas été amélioré** ; les épisodes quotidiens d'angor (critère secondaire) étaient moins fréquents (**OR 1,40**) et 2 dispositifs sur 25 ont migré. Une FEVG **< 25 %**, des sondes droites/DAI ou une indication de CRT étaient des critères d'exclusion : pour une ICFER ischémique avec dispositif, les données sont **extrapolées**. L'essai pivot **COSIRA-II** exige une FEVG ≥ 30 %, exclut NYHA III–IV, et son recrutement était suspendu en novembre 2026.
 - **Autres approches :** la contrepulsion externe n'a qu'un grade IIb américain ; les essais de stimulation médullaire restent petits et hétérogènes.
 
 ### Ce qu'il faut retenir et limites des preuves
@@ -177,6 +186,8 @@ Les dérivés nitrés, le nicorandil et l'amlodipine abaissent la pression arté
     },
   ],
   relatedArticleSlugs: [
+    'angor-microvasculaire-et-inoca',
+    'progression-coronaire-et-imagerie-de-suivi',
     'medicaments-insuffisance-cardiaque',
     'medicaments-additionnels-ivabradine-digoxine-vericiguat',
     'revascularisation-pontage-stents',
@@ -208,6 +219,10 @@ Les dérivés nitrés, le nicorandil et l'amlodipine abaissent la pression arté
     {
       label: 'Essais et méta-analyses de 2e/3e intention : RAID (2018), RIVER-PCI (2016), Nassiri (2024), ATPCI (2020), BEAUTIFUL (2009), ORBITA-COSMIC (2024)',
       detail: 'Données cliniques et limites de la ranolazine, de la trimétazidine, de l’ivabradine, du nicorandil (MHRA 2016) et du réducteur du sinus coronaire.',
+    },
+    {
+      label: 'ESC 2024 SCC (sections suivi et ANOCA/INOCA), CorMicA (1 an) et Li et al. (2025)',
+      detail: 'Tests de fonction coronaire (I B), traitement adapté (IIa A), réducteur du sinus coronaire (IIb B) et dysfonction microvasculaire après stent.',
     },
   ],
   disclaimerType: 'medical',

@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Les grands essais cliniques de référence',
   category: 'references',
   readingTier: 'reference',
-  asOf: '2026-11-25',
+  asOf: '2026-11-27',
   confidence: 'high',
   volatility: 'warm',
   tags: [
@@ -59,6 +59,22 @@ export const article: WikiArticle = {
     'diuretiques',
     'antiplaquettaires',
     'lvad',
+    'iec',
+    'arni',
+    'betabloquants',
+    'arm',
+    'isglt2',
+    'merit-hf',
+    'cibis-ii',
+    'copernicus',
+    'rales',
+    'ephesus',
+    'emphasis-hf',
+    'emperor-reduced',
+    'danish',
+    'parr-2',
+    'maggic',
+    'remodelage-inverse',
   ],
   aliases: [
     'Noms des essais cliniques',
@@ -90,15 +106,39 @@ export const article: WikiArticle = {
 | Données poolées REVIVED + STICHES (2025) | 1 912 patients des deux essais | Sous traitement médical seul, décès ou hospitalisation IC bien plus bas dans l'essai récent (HR ajusté 0,60). Comparaisons pontage vs stent uniquement exploratoires | Direct (observationnel entre époques) |
 | STICH premier rapport (NEJM 2011) | Mêmes 1 212 patients, médiane 56 mois | Mortalité : 36 % vs 41 % (pas encore significatif). Mortalité à 30 jours : 4 % après chirurgie vs 1 % (HR 3,12) ; 17 % de passage du bras médical vers la chirurgie | Direct (époque antérieure) |
 | STICH par âge (Petrie 2016) | Analyse par tranche d'âge dans STICH | Bénéfice sur la mortalité cardiovasculaire similaire à tous les âges ; FA post-opératoire, aggravation rénale et recours aux inotropes augmentaient avec l'âge | Direct (époque antérieure) |
-| STICH viabilité et angor (Jolicoeur 2015 ; Panza 2019) | 601 patients avec test de viabilité ; ensemble des patients selon l'angor | Ni la viabilité ni la présence d'angor n'ont prédit le bénéfice du pontage | Direct (époque antérieure) |`,
+
+### Tests de viabilité myocardique : l'imagerie désigne-t-elle qui bénéficie d'une revascularisation ?
+
+| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
+|---|---|---|---|
+| STICH viabilité (2011, 2019) et angor (2015) | 601 patients avec test de viabilité (TEMP/écho dobutamine, moitié non randomisée de STICH) ; ensemble des patients selon l'angor | La viabilité n'a pas modifié l'effet du pontage (interaction p = 0,53 à 5 ans, 0,34 à 10 ans) ; myocarde viable lié à une mortalité moindre avant ajustement uniquement (HR non ajusté 0,64 ; 0,48–0,86 ; p ajusté = 0,21). L'angor n'a pas prédit le bénéfice non plus | Partiel (époque antérieure) |
+| STICH viabilité selon la taille du VG (Bonow 2015, JACC CV Imaging) | 601 patients de STICH avec viabilité, FEVG ≤ 35 %, VTSi médian 84 mL/m² ; pontage vs médicaments | Aucune interaction VTSi × viabilité × traitement sur la mortalité (p = 0,491) ; pontage HR 0,85 (petit VG) vs 0,87 (grand VG) chez les patients viables | Population directe, époque antérieure (2002–2007, peu de DAI, sans ARNI/iSGLT2) ; sous-groupe non randomisé |
+| STICH ischémie inductible (JACC 2013) | 399 patients de STICH avec test d'effort/stress (64 % ischémiques) | Ischémie non liée à la mortalité (HR 1,08 ; 0,77–1,50) et sans influence sur l'effet du pontage (interaction p = 0,73–0,89) | Partiel (époque antérieure) |
+| **PARR-2** (JACC 2007 ; 5 ans Circ CV Imaging 2016) | 430 patients avec FEVG < 35 % et coronaropathie envisagés pour revascularisation ou greffe ; prise en charge guidée par TEP-FDG vs soins usuels ; mené 2000–2006 (enregistrement rétrospectif oct. 2006) | Formellement neutre : décès cardiaque, IDM ou hospitalisation cardiaque à 1 an 30 % vs 36 % (HR 0,78 ; 0,58–1,1 ; RR résumé 0,82) ; à 5 ans HR 0,82 (0,62–1,07). Bénéfice uniquement en analyses post hoc non randomisées selon le suivi de la recommandation TEP (HR 0,62 à 1 an ; 0,73 à 5 ans) ; ~25 % n'ont pas suivi l'avis TEP | Partiel (époque antérieure ; résumé consulté) |
+| Ottawa-FIVE (sous-étude PARR-2, J Nucl Med 2010) | 111 patients de PARR-2 dans un centre expert disposant d'une TEP-FDG sur place | Événements 19 % vs 41 % (HR ajusté 0,34 ; 0,16–0,72) contre HR 0,97 dans les autres centres ; post hoc, générateur d'hypothèses | Partiel (monocentrique, post hoc) |
+| HEART (Cleland 2011, EJHF) | 138 patients inclus sur 800 prévus ; IC, FEVG < 35 %, myocarde viable requis ; coronarographie en vue de revascularisation vs stratégie conservatrice | Décès 38 % vs 37 % à 59 mois (médiane) ; arrêté précocement | Population directe, sous-dimensionné (résumé seul) |
+| Analyse complétude REVIVED-BCIS2 (JACC 2024) | 670 / 619 patients de REVIVED ; complétude anatomique et guidée par la viabilité de l'angioplastie | Angioplastie complète non supérieure aux médicaments seuls (HR ajusté 0,90 anatomique ; 0,95 guidé par viabilité) ; aucun lien avec la récupération de FEVG ; complétude non randomisée | Direct à partiel (stents uniquement) |
+| Liga 2023 (JAHA), revue d'ECR uniquement | HEART, PARR-2, STICH, REVIVED-BCIS2 (2 480 patients) | Aucune interaction viabilité/ischémie × traitement ; soins conformes au test de viabilité vs non conformes : décès OR 0,92 (0,75–1,14) | Direct ; comparaison d'observance non randomisée |
+| Méta-analyse Allman (JACC 2002) | 24 études observationnelles de viabilité, 3 088 patients, FEVG moyenne 32 % | Avec viabilité : mortalité annuelle 3,2 % si revascularisé vs 16 % sous médicaments ; sans viabilité, pas de différence significative (7,7 % vs 6,2 %). Non randomisé (choix du médecin) ; non confirmé par les ECR ultérieurs | Partiel à indirect (observationnel, années 1990 ; résumé seul) |
+| Ling 2013 (Circ CV Imaging), cohorte TEP | 648 patients consécutifs, FEVG moyenne 31 %, TEP Rb-82/FDG ; revascularisation précoce chez 199 | Interaction hibernation × revascularisation sur la mortalité, bénéfice surtout si hibernation > 10 % | Indirect (observationnel ; suivi débutant à J92, excluant les décès précoces ; résumé seul) |
+| Gerber 2012 (JACC), cohorte IRM | 144 patients, FEVG 24 %, IRM avec rehaussement tardif ; 86 revascularisés vs 58 sous médicaments | Survie à 3 ans moins bonne si viable + médical seul (48 % vs 77 %) ; interaction p = 0,004 ; HR apparié 2,5 | Indirect (observationnel, petit effectif ; résumé seul) |
+| Arjomandi Rad 2024 (Clin Cardiol), méta-analyse | 17 études surtout observationnelles, 2 317 patients pontés | Mortalité post-pontage plus basse en présence de viabilité (OR 0,42 ; 0,29–0,61) | Indirect (pronostique uniquement ; sans bras médical témoin) |
+
+*Note :* l'analyse de viabilité de REVIVED-BCIS2 (JAMA Cardiol 2023) figure dans la section « Valves, fibrillation atriale et cicatrice IRM » ci-dessous.`,
     },
     {
       headingFr: 'Défibrillateurs (DAI), gilet portable et mort subite',
       bodyMarkdownFr: `| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
 |---|---|---|---|
-| **MADIT-II** | 1 232 patients, tous ischémiques, FEVG ≤ 30 % | Le DAI a réduit la mortalité toutes causes de 31 % | Direct (avant les traitements modernes) |
-| **SCD-HeFT** | FEVG ≤ 35 %, causes ischémiques et non ischémiques (884 ischémiques) | Le DAI a réduit la mortalité toutes causes de 23 % vs amiodarone | Partiellement direct |
-| DINAMIT, IRIS | DAI précoce après infarctus aigu (1 572 patients) | Aucun bénéfice de survie (HR 1,05). Explique le délai minimal ≥ 40 jours après infarctus | Direct (pour le délai) |
+| **MADIT-I** (NEJM 1996) | 196 patients post-IDM, FEVG ≤ 35 %, TVNS + TV inductible à l'EEP ; 100 % ischémiques ; bêtabloquant 23 % ; DAI vs traitement conventionnel, 27 mois | Décès 15 vs 39 ; HR 0,46 (0,26–0,82). Résumé seul | Partiel (sous-groupe très sélectionné inductible ; traitements anciens) |
+| **MADIT-II** (NEJM 2002) | 1 232 patients, IDM > 1 mois, FEVG ≤ 30 % (moyenne 23 %), 100 % ischémiques, NYHA I 37 % / II 35 % / III 24 % ; bêtabloquant 70 %, IEC 70 % ; DAI vs conventionnel (3:2), 20 mois | Décès 14,2 % vs 19,8 % ; HR 0,69 (0,51–0,93). Arrêté tôt par le comité de surveillance ; financé par l'industrie. Résumé seul | Partiel (cause concordante ; aucun patient à FEVG 31–35 % ; pré-ARNI/iSGLT2) |
+| MADIT-II suivi 8 ans (Circulation 2010) | Mêmes 1 232 patients ; suivi médian 7,6 ans | Mortalité à 8 ans 49 % vs 62 % ; HR 0,66 (0,56–0,78) ; années 5–8 HR 0,74. Résumé seul | Partiel |
+| **SCD-HeFT** (NEJM 2005) | 2 521 patients, NYHA II–III, FEVG ≤ 35 % (médiane 25 %), 52 % ischémiques ; bêtabloquant 69 % ; placebo vs amiodarone vs DAI choc seul, 45,5 mois | DAI vs **placebo** : 22 % vs 29 %, HR 0,77 (IC 97,5 % 0,62–0,96) ; amiodarone HR 1,06 (sans bénéfice). Pas de différence selon la cause à ce stade. Résumé seul | Partiel (moitié ischémique ; traitements anciens) |
+| SCD-HeFT suivi 11 ans (JACC 2020) | Mêmes patients ; médiane 11 ans ; ~57 % de croisement vers DAI | Global HR 0,87 (0,76–0,98), atténué après 6 ans ; **ischémique HR 0,81 (0,69–0,95) vs non ischémique 0,97 (0,79–1,20)** ; NYHA II 0,76 vs III 1,06. Pas de test d'interaction étiologique dans le résumé (générateur d'hypothèses) | Partiel (sous-groupe ischémique) |
+| DINAMIT (NEJM 2004), IRIS (NEJM 2009) | 674 (6–40 j post-IDM, FEVG ≤ 35 % + marqueurs autonomes) et 898 (5–31 j, FEVG ≤ 40 % + FC ≥ 90 ou TVNS) ; DAI vs aucun | Mortalité HR 1,08 et 1,04 (poolé 1,05). Mort arythmique/subite réduite (HR 0,42 ; 0,55) mais décès cardiaque non arythmique augmenté (HR 1,75 ; 1,92). Explique le délai minimal ≥ 40 jours après infarctus. Résumés seuls | Direct (pour le délai ≥ 40 jours) ; indirect en cardiomyopathie chronique |
+| **DANISH** (NEJM 2016) | 1 116 ICFER non ischémiques, FEVG ≤ 35 %, NT-proBNP élevé ; 0 % ischémiques ; CRT 58 % ; bêtabloquant 92 % ; DAI vs soins usuels, 67,6 mois | Décès 21,6 % vs 23,4 %, HR 0,87 (0,68–1,12, ns) ; mort subite 4,3 % vs 8,2 %, HR 0,50 (0,31–0,82). Résumé seul | Extrapolé (aucun ischémique inclus ; point de contraste uniquement) |
+| DANISH 9,5 ans (Circulation 2022) et 13,2 ans (JACC 2025) | Mêmes patients | 9,5 ans : HR 0,89 (0,74–1,08), ≤ 70 ans HR 0,78 (0,61–0,99). 13,2 ans : HR 0,96 (0,82–1,13) ; mort subite CV HR 0,54 (0,36–0,80), uniquement ≤ 70 ans (0,38) et non > 70 ans (1,27) ; interaction âge p = 0,89 mortalité totale, p = 0,01 mort subite | Extrapolé |
+| Cohorte DAI SwedeHF (Schrage, Circulation 2019) | 1 305 paires appariées par propension sur 16 702 ICFER (observationnel) | Mortalité à 1 an HR 0,73 (0,60–0,90), à 5 ans HR 0,88 ; ischémique HR 0,78 (0,63–0,98), non ischémique 0,50 ; interaction p = 0,17 | Partiel (observationnel ; pré-iSGLT2) |
 | Méta-analyse Shun-Shin (EHJ 2017) | 11 essais de DAI, 8 567 patients | Cause ischémique, DAI en procédure dédiée : mortalité HR 0,76 | Direct |
 | **PROFID** analyse poolée (EHJ 2024) | 140 204 patients post-infarctus (observationnel) | Mort subite à 3 ans : 3,41 % (FEVG ≤ 35 %) vs 0,87 % (> 35 %) ; la FEVG prédit mal le risque individuel | Direct, mais non randomisé sur le DAI |
 | MADIT-CRT | 1 820 patients, NYHA I–II | Le CRT-D a réduit décès ou événements IC de 34 % | Indirect |
@@ -106,6 +146,14 @@ export const article: WikiArticle = {
 | EU-CERT-ICD (EHJ 2020) | 2 247 patients européens, 65 % ischémiques, FEVG ≤ 35 % ; DAI vs sans DAI (observationnel) | Mortalité toutes causes -27 % avec DAI (HR 0,73) ; sous-groupe ischémique HR 0,79 (ns) | Partiellement direct (sans iSGLT2) |
 | CMR GUIDE (JAMA 2026) | 353 patients, FEVG **36–50 %** avec cicatrice IRM ; DAI vs moniteur implantable | Critère principal : 7,8 % vs 9,2 % (ns) ; mort subite 1,7 % vs 5,8 % | Indirect (FEVG plus élevée) |
 | **PROFID-EHRA** (en cours) | Post-infarctus, FEVG ≤ 35 %, traitement optimal ; DAI vs absence de DAI ; cible 3 595 patients | **Pas encore de résultats.** Fin estimée : novembre 2027 | Direct à sa publication |
+| DAPA-HF analyse arythmies (Curtain, EHJ 2021) | 4 744 ICFER, ~56 % ischémiques, ~26 % DAI ; dapagliflozine vs placebo (post hoc) | Arythmie ventriculaire grave, arrêt cardiaque ou mort subite 5,9 % vs 7,4 %, HR 0,79 (0,63–0,99) ; ischémique HR 0,76 (0,57–1,00) ; interaction p = 0,60. Non adjudiqué | Partiel (effet médicamenteux, pas un essai de DAI) |
+| PARADIGM-HF analyse DAI (Rohde, JACC HF 2020) et mode de décès (Desai, EHJ 2015) | 8 399 patients de PARADIGM-HF (85 % éligibles au DAI, 15 % implantés) ; ARNI vs énalapril (résumés seuls) | DAI associé à ~56 % de mort subite en moins chez les éligibles ischémiques (p < 0,001) et non ischémiques ; ARNI réduisait la mort subite chez les porteurs de DAI (HR 0,49) et les non-porteurs éligibles (HR 0,81). Mode de décès : mort subite HR 0,80 (0,68–0,94), défaillance de pompe HR 0,79 (0,64–0,98) | Partiel (~60 % ischémiques, pré-iSGLT2 ; DAI non randomisé) |
+| EMPEROR-Reduced analyse DAI (Aktas, JACC HF 2026 ; résumé + congrès HRS 2022) | 837 porteurs de DAI vs 837 non-porteurs appariés dans EMPEROR-Reduced | Mort subite HR 0,59 (0,26–1,3) sous empagliflozine, 0,31 (0,13–0,74) sous placebo ; congrès 2022 (bras empagliflozine) : mortalité totale 8,5 vs 12,7/100 patients-années, HR 0,74 (0,51–1,07, ns) | Partiel (iSGLT2 ; ARNI minoritaire ; DAI non randomisé ; provisoire) |
+| PROVE-HF éligibilité DAI (Felker, Circulation 2021 ; texte intégral) | 661 ICFER avec FEVG ≤ 35 % débutant sacubitril/valsartan, bras unique | FEVG > 35 % chez 32 % à 6 mois et 62 % à 12 mois ; 5 morts subites en un an | Partiel (cause non rapportée ; pas de témoin) |
+| DISCOVER-ARNI (Pastore, EHJ Open 2022 ; résumé) | 113 patients éligibles au DAI non implantés débutant ARNI, 13 centres italiens | 60 % ne remplissaient plus les critères de DAI à 6 mois ; un GLS altéré prédisait la persistance | Indirect (petit registre, critère intermédiaire) |
+| Bilchick SHFM/SPRM (JACC 2017 ; texte intégral) | 87 914 porteurs de DAI (NCDR) vs 10 932 témoins historiques sans DAI, FEVG ≤ 35 % | DAI HR 0,75 au total ; quart à plus faible bénéfice attendu HR 0,92 (ns), mortalité à 5 ans 16,7 % vs 18,0 % | Partiel (72 % ischémiques ; pré-ARNI/iSGLT2 ; biais de confusion) |
+| Registre US egnite (Mignone, Heart Rhythm O2 2024 ; texte intégral) | 43 591 ICFER FEVG ≤ 35 % sans dispositif préalable, 2016–2023 | 4 piliers chez 8,8 % (17,2 % à 24 mois) ; 45,1 % des non-implantés avaient FEVG > 35 % à 24 mois ; survie brute à 2 ans sous 4 piliers 82,3 % (sans DAI) vs 83,7 % (avec DAI) | Indirect (non causal) |
+| Méta-analyse en réseau iSGLT2 et arythmies (Suresh, J Clin Med 2025 ; texte intégral) | 11 ECR d'IC, 23 701 patients | Mort subite RR 0,68 (0,49–0,93) ; arythmies ventriculaires RR 1,02 | Partiel (critère secondaire non adjudiqué) |
 | VEST (NEJM 2018) | 2 348 patients randomisés (2 302 analysés) quelques jours après infarctus, FEVG ≤ 35 % (moyenne 28 %) ; gilet portable (LifeVest) 90 jours vs absence | Mortalité arythmique : 1,6 % vs 2,4 % (RR 0,67, p = 0,18, ns ; certitude GRADE faible) ; mortalité toutes causes : 3,1 % vs 4,9 % (critère secondaire non corrigé, probablement dû au hasard). Port moyen 14 h/jour | Direct, post-IDM précoce uniquement |
 | VEST per-protocol (JCE 2020) | Même essai, limité au temps de port effectif du gilet | Mortalité HR 0,25 (0,13–0,48), mortalité arythmique HR 0,38 (0,17–0,86) ; mais décès non subits HR 0,09 évoquant un biais d'observance. Part de porteurs quotidiens passée de 81 % à 41 % au 90e jour | Générateur d'hypothèses (post hoc, risque élevé de biais) |
 | Revue WCD Goetz (IJC Heart Vasc 2023) | Évaluation autrichienne (HTA) : VEST plus 11 registres ou séries de gilet (5 345 patients, 20–82 % ischémiques) | Registres : port de 20–23,5 h/jour, 1–4,8 % de chocs appropriés et 0–2 % d'inappropriés ; aucun groupe témoin ; certitude GRADE très faible à faible ; bénéfice non démontré | Indirect (absence de groupe témoin) |
@@ -119,11 +167,7 @@ export const article: WikiArticle = {
 |---|---|---|---|
 | **H-HeFT** (DANHEART, Eur Heart J 2026 ; texte intégral consulté) | 592 patients danois avec ICFER (FEVG médiane 35 %, 52–56 % ischémiques, ~41 % sous iSGLT2) ; hydralazine + dinitrate d'isosorbide vs placebo, 3,7 ans | Neutre : HR 0,90 (0,67–1,21) sur le critère composite ; décès 19,4 % vs 24,2 % (HR 0,72 ; 0,51–1,02, ns) ; plus de la moitié ont arrêté le traitement, seulement 24 % ont atteint la dose cible (hypotension, étourdissements, céphalées) | Direct (population concordante ; âge médian 72 ans, 18 % de femmes) |
 | **Met-HeFT** (DANHEART, ESC 2026 ; communiqué de presse consulté) | 940 patients avec ICFER et diabète, prédiabète ou risque diabétique ; metformine vs placebo | Neutre : HR 1,10 (0,84–1,42), p = 0,48 | Partiel |
-| PARADIGM-HF | 8 399 patients ICFER ; sacubitril/valsartan (*Entresto*) vs énalapril | Base de la modélisation combinée ci-dessous. Risque résiduel de mort subite : 3,3 pour 100 patients-années sous traitement moderne | Indirect (causes mixtes) |
-| DAPA-HF | 4 744 patients ICFER ; dapagliflozine (*Forxiga*) vs placebo | Base de la modélisation combinée | Indirect |
-| EMPHASIS-HF | 2 737 patients ≥ 55 ans, symptômes légers, FEVG basse ; éplérénone (*Inspra*) | Base de la modélisation (bras placebo comme population de référence) | Indirect |
-| Modélisation Vaduganathan (Lancet 2020) | Combinaison des trois essais ci-dessus | Quadrithérapie vs bithérapie : HR 0,38 pour décès CV ou hospitalisation IC ; 1,4 à 6,3 années de vie gagnées selon l'âge | Indirect, modélisé |
-| PARADIGM-HF selon la cause (post hoc) | 8 399 patients, 60 % ischémiques | Taux bruts d'événements plus élevés dans la cause ischémique, similaires après ajustement. Bénéfice de l'ARNI identique quelle que soit la cause | Direct (sous-groupe ischémique) |
+| Modélisation Vaduganathan (Lancet 2020) | Combinaison entre essais de PARADIGM-HF, DAPA-HF et EMPHASIS-HF (bras placebo d'EMPHASIS-HF en référence ; chaque essai figure dans son tableau par pilier ci-dessous) | Quadrithérapie vs bithérapie : HR 0,38 pour décès CV ou hospitalisation IC ; 1,4 à 6,3 années de vie gagnées selon l'âge | Indirect, modélisé |
 | STRONG-HF (Lancet 2022) | 1 078 patients à la sortie d'une IC aiguë ; FEVG moyenne 36 % (68 % ≤ 40 %), 48 % ischémiques ; 65 % inclus en Russie | Bêtabloquant, bloqueur du SRAA et ARM à pleine dose en 2 semaines (sans iSGLT2), visites à S1/S2/S3/S6 : décès ou réhospitalisation IC à 6 mois 15,2 % vs 23,3 %, porté par les réhospitalisations IC (9,5 % vs 17,1 %) ; mortalité non significativement réduite (8,5 % vs 10,0 %, p = 0,42) | Partiellement direct (après hospitalisation ; en ouvert, arrêté précocement) |
 | VICTORIA (NEJM 2020) | 5 050 patients après aggravation récente, FEVG < 45 % ; vériciguat (*Verquvo*) vs placebo | Décès CV ou hospitalisation IC : 35,5 % vs 38,5 % (HR 0,90) ; décès CV non réduit ; pas de bénéfice à NT-proBNP très élevé | Partiellement direct (post-aggravation) |
 | VICTOR (Lancet 2025) | 6 105 patients ambulatoires stables, FEVG ≤ 40 %, traitement moderne ; vériciguat vs placebo | Critère principal non réduit (HR 0,93, ns) ; décès CV HR 0,83 et mortalité totale HR 0,84 en critères secondaires nominaux. Décès CV si coronaropathie HR 0,85 (0,70–1,03), sans coronaropathie 0,79 | Partiellement direct |
@@ -141,7 +185,78 @@ export const article: WikiArticle = {
 | DIAMOND (EHJ 2022) | ICFER (FEVG moyenne 33,5 %, ~71 % ischémiques) avec hyperkaliémie sous bloqueurs du SRAA ; phase ouverte sous patiromer (*Veltassa*), puis 878 patients ayant atteint 50 mg d'ARM (84,6 % des 1 038 ayant terminé le run-in) randomisés pour poursuivre le patiromer ou passer au placebo | Kaliémie -0,10 mmol/L vs placebo ; moins de kaliémies > 5,5 mmol/L (HR 0,63) et de baisses d'ARM (HR 0,62). Critère principal modifié en cours d'essai (de décès CV/hospitalisation vers la kaliémie) ; décès 22 vs 16 (ns) | Direct pour maintenir un ARM ; pas de preuve sur événements cliniques |
 | Registre TITRATE-HF (EJHF 2025) | 3 367 patients néerlandais avec ICFER (FEVG ≤ 40 %), 2022–2024, 44 % ischémiques | Nouveaux patients sous les 4 piliers : 69,5 % à 6 mois, mais seulement 1–2 % aux doses cibles des quatre. FEVG passée de 30 % à 45 % chez les nouveaux patients : +10 points si ischémique vs +15 si non ischémique ; > 40 % chez 48 % vs 66,5 %. Baisse ou arrêt de traitement associé à plus d'événements (HR ajusté 1,54) | Direct pour la mise en œuvre et la récupération de FEVG (observationnel) |
 | Registre OPTIPHARM-HF (EJHF 2025) | 1 720 patients suivis en clinique d'ICFER en Italie, 57 % ischémiques | Passage de 46,6 % à 63,8 % sous les 4 piliers après une visite structurée ; doses cibles des quatre chez 2,7 % ; pas de données d'événements | Indirect (observationnel) |
-| Registre SwedeHF (EJHF 2022) | 27 430 patients suédois ICFER (FEVG < 40 %), 2000–2018 ; 67 % avec coronaropathie | Prescription en baisse avec l'âge (ARM 54 % avant 70 ans vs 35 % à 80 ans et plus ; ARNI, compté depuis 2016, 25 % vs 7 %) ; doses cibles atteintes chez seulement 44 % (bloqueur SRAA), 36 % (bêtabloquant), 16 % (ARM) des patients traités | Indirect (observationnel) |`,
+| Registre SwedeHF (EJHF 2022) | 27 430 patients suédois ICFER (FEVG < 40 %), 2000–2018 ; 67 % avec coronaropathie | Prescription en baisse avec l'âge (ARM 54 % avant 70 ans vs 35 % à 80 ans et plus ; ARNI, compté depuis 2016, 25 % vs 7 %) ; doses cibles atteintes chez seulement 44 % (bloqueur SRAA), 36 % (bêtabloquant), 16 % (ARM) des patients traités | Indirect (observationnel) |
+
+### IEC, ARA2 et ARNI (sacubitril/valsartan)
+
+| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
+|---|---|---|---|
+| CONSENSUS (NEJM 1987) | 253 patients NYHA IV (FEVG non mesurée ; ~72 % coronariens) ; énalapril vs placebo ; 4 % sous bêtabloquant | Mortalité à 6 mois 26 % vs 44 % (-40 %, p = 0,002), limitée aux décès par IC progressive ; arrêté tôt sans règle formelle. Résumé seul | Indirect (NYHA IV, pas de FEVG, pré-bêtabloquants) |
+| SOLVD-Treatment (NEJM 1991) | 2 569 symptomatiques, FEVG ≤ 35 % (moyenne 25 %, ~71 % ischémiques) ; énalapril vs placebo, 41 mois ; bêtabloquant ~7,5 % | Mortalité 35,2 % vs 39,7 % (-16 %, p = 0,0036) ; décès ou hosp IC -26 %. Résumé seul | Partiel (pré-bêtabloquants ; sans détail étiologique) |
+| CHARM-Alternative (Lancet 2003) | 2 028 intolérants aux IEC, FEVG ≤ 40 % (moyenne 30 %, ~68 % ischémiques) ; candésartan vs placebo ; 55 % sous bêtabloquant | Décès CV ou hosp IC 33 % vs 40 % (HR 0,77 ; 0,67–0,89) ; HR ajusté 0,70. CHARM-Added (en plus d'un IEC) : HR 0,85. Résumé seul | Partiel (ARA2 en recours ; pré-ARNI/iSGLT2) |
+| Val-HeFT (NEJM 2001) | 5 010 patients, FEVG < 40 % avec VG dilaté (~57 % ischémiques) ; valsartan ajouté au traitement usuel (93 % sous IEC) | Mortalité inchangée (RR 1,02) ; décès ou morbidité -13 %, porté par les hosp IC ; signal post hoc défavorable avec IEC + bêtabloquant non répliqué | Partiel (association ARA2 + IEC non pratiquée) |
+| AIRE (Lancet 1993) | ~2 006 patients 2–10 j post-IDM avec IC clinique (FEVG non mesurée) ; ramipril vs placebo, 15 mois | Mortalité 17 % vs 23 % (-27 %, IC 95 % 11–40 %) ; maintien à 5 ans (cohorte RU). Résumé seul | Partiel (post-IDM aigu, ère thrombolyse) |
+| TRACE (NEJM 1995) | 1 749 patients 3–7 j post-IDM avec indice cinétique ≤ 1,2 (~FEVG ≤ 35 %) ; trandolapril vs placebo, 2–4 ans | Mortalité 34,7 % vs 42,3 % (RR 0,78 ; 0,67–0,91) ; moins d'IC sévères et de morts subites. Résumé seul | Partiel (post-IDM aigu) |
+| VALIANT (NEJM 2003) | 14 703 patients post-IDM avec IC et/ou FEVG ≤ 35–40 % ; valsartan vs captopril vs les deux | Valsartan équivalent au captopril sur la mortalité (HR 1,00) ; association sans gain et plus d'effets indésirables. Résumé seul | Partiel (post-IDM aigu) |
+| **PARADIGM-HF** (NEJM 2014) | 8 399 NYHA II–IV, FEVG ≤ 35 %, BNP élevé (60 % ischémiques) ; sacubitril/valsartan (*Entresto*) vs énalapril 10 mg × 2/j après phase de sélection ; bêtabloquant 93 %, ARM 52 % | Décès CV ou hosp IC 21,8 % vs 26,5 % (HR 0,80 ; 0,73–0,87) ; mortalité 17,0 % vs 19,8 % (HR 0,84) ; arrêté tôt ; 20 % d'échecs en phase de sélection (plus fréquents si ischémique). Risque résiduel de mort subite 3,3/100 patients-années | Partiel (population la plus proche ; 60 % ischémique, pré-iSGLT2) |
+| PARADIGM-HF selon la cause (JACC HF 2019, post hoc) | 8 399 patients, 60 % ischémiques vs 40 % non ischémiques | Bénéfice de l'ARNI identique quelle que soit la cause (interaction p = 0,11 critère principal, 0,55 décès CV) ; taux bruts plus élevés si ischémique, similaires après ajustement | Direct (sous-groupe ischémique, post hoc) |
+| PIONEER-HF (NEJM 2019) | 881 patients stabilisés à l'hôpital, FEVG ≤ 40 % (34 % IC inaugurale) ; ARNI vs énalapril, 8 semaines | NT-proBNP davantage abaissé (ratio 0,71 ; 0,63–0,81) ; événements cliniques moindres (exploratoire) ; tolérance rénale, kaliémique et tensionnelle comparable | Partiel (initiation hospitalière ; marqueur biologique) |
+| Méta-analyses ARNI (Evbayekha 2025 ; Rindone 2024) | 14 ECR (n = 25 167) ARNI vs IEC/ARA2 ; réanalyse par équivalence de dose sur 12 ECR | FEVG ≤ 40 % : mortalité RR 0,88 (0,81–0,94) ; pas de différence lorsque le comparateur était à dose équivalente (réanalyse contradictoire). Résumés seuls | Indirect (populations mixtes ; sans sous-groupe ischémique) |
+
+### Bêtabloquants
+
+| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
+|---|---|---|---|
+| **MERIT-HF** (Lancet 1999) | 3 991 NYHA II–IV, FEVG ≤ 40 % (moyenne 28 %), ~65–66 % ischémiques ; métoprolol succinate (cible 200 mg) vs placebo sous IEC + diurétique | Mortalité totale RR 0,66 (0,53–0,81) ; mort subite RR 0,59 ; décès par IC RR 0,51. Arrêté tôt pour bénéfice (1 an). Résumé seul | Direct (ère pré-ARM/ARNI/iSGLT2) |
+| **CIBIS-II** (Lancet 1999) | 2 647 NYHA III–IV, FEVG ≤ 35 %, 50 % ischémiques ; bisoprolol (cible 10 mg) vs placebo | Mortalité 11,8 % vs 17,3 %, HR 0,66 (0,54–0,81) ; mort subite HR 0,56 ; hosp IC HR 0,64. Arrêté tôt (1,3 an). Résumé seul | Direct (FEVG concordante ; NYHA III–IV) |
+| **COPERNICUS** (NEJM 2001) | 2 289 patients euvolémiques sévères, FEVG < 25 % (moyenne ~20 %), ~67 % ischémiques ; carvédilol (cible 25 mg × 2/j) vs placebo | Mortalité réduite de 35 % (IC 95 % 19–48 %) ; décès ou hosp -24 %. Arrêté tôt (10,4 mois). Résumé seul | Partiel (plus sévères, FEVG plus basse) |
+| SENIORS (EHJ 2005) | 2 128 patients ≥ 70 ans, hosp IC ou FEVG ≤ 35 % (moyenne 36 %), 68 % coronariens ; nébivolol (cible 10 mg) vs placebo | Décès ou hosp CV HR 0,86 (0,74–0,99) ; mortalité seule HR 0,88 (0,71–1,08, ns) ; interaction FEVG ≤ 35 % vs > 35 % p = 0,72. Résumé seul | Partiel (âgés, FEVG mixtes ; composite uniquement) |
+| BEST (NEJM 2001) | 2 708 NYHA III–IV, FEVG ≤ 35 % (moyenne 23 %), 59 % ischémiques ; bucindolol vs placebo | Formellement neutre : décès 30 % vs 33 %, p ajusté = 0,13 ; décès CV HR 0,86. Résumé seul | Direct sur population ; bucindolol non utilisé |
+| COMET (Lancet 2003) | 3 029 NYHA II–IV, FEVG < 35 %, 53 % ischémiques ; carvédilol 25 mg × 2/j vs métoprolol tartrate 50 mg × 2/j | Décès 34 % vs 40 %, HR 0,83 (0,74–0,93) ; décès ou hosp HR 0,94 (ns). Le tartrate était probablement sous-dosé. Résumé seul | Direct (montre que le tartrate n'est pas la forme de référence) |
+| Cleland 2018 IPD bêtabloquants (EHJ ; texte intégral) | 18 637 patients de 11 ECR en double aveugle, 66 % ischémiques ; par tranche de FEVG et rythme | Rythme sinusal, mortalité : FEVG 26–34 % HR 0,75 (0,64–0,88), 35–39 % HR 0,67 (0,50–0,90), 40–49 % HR 0,59 (0,34–1,03), ≥ 50 % aucun effet. En FA : aucune tranche significative (strates post hoc) | Direct (rythme sinusal, FEVG 26–39 %) |
+| Kotecha 2014 FA IPD (Lancet) et 2017 FC IPD (JACC) | 18 254 (10 ECR) selon rythme ; 14 313 sinusal / 3 065 FA (11 ECR) selon FC | Mortalité : sinusal HR 0,73 (0,67–0,80) ; FA HR 0,97 (0,83–1,14) ; interaction p = 0,002. Bénéfice en rythme sinusal indépendant de la FC initiale (interaction p = 0,35) ; FC atteinte pronostique même sous placebo | Partiel (si FA) / Indirect (observationnel intra-essai) |
+| McAlister 2009 méta-régression (Ann Intern Med) | 23 ECR, 19 209 patients | Mortalité RR 0,76 ; chaque baisse de 5 bpm associée à ~18 % de mortalité en moins ; forte vs faible dose sans différence (p = 0,69). Résumé seul | Indirect (écologique entre essais) |
+| REDUCE-AMI (2024), REBOOT (2025), BETAMI-DANBLOCK (2025), ABYSS (2024) et Kristensen 2026 IPD (NEJM) | Essais ouverts post-IDM à FEVG préservée (≥ 40 % ou ≥ 50 %) ; 17 801 patients poolés à FEVG ≥ 50 % dans Kristensen 2026 | Kristensen 2026 (FEVG ≥ 50 %) : décès, IDM ou IC 8,1 % vs 8,3 % (HR 0,97 ; 0,87–1,07). Dans ABYSS (arrêt vs poursuite à FEVG ≥ 40 %), l'arrêt n'était pas non inférieur (HR 1,16, porté par les hosp CV) | Extrapolé (aucun patient à FEVG < 40 %) |
+
+### ARM stéroïdiens (spironolactone, éplérénone)
+
+| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
+|---|---|---|---|
+| **RALES** (NEJM 1999) | 1 663 ICFER sévères (NYHA III–IV, FEVG ≤ 35 %, médiane 26 %, ~55 % ischémiques) ; spironolactone 25 mg vs placebo sous IEC + diurétique ; bêtabloquant ~10–15 % | Mortalité totale 35 % vs 46 %, RR 0,70 (0,60–0,82) ; hosp IC RR 0,65. **Arrêté tôt** pour bénéfice (24 mois). Gynécomastie/douleurs mammaires 10 % vs 1 % chez l'homme. Résumé seul | Partiel (symptômes sévères ; pré-bêtabloquants, pré-ARNI/iSGLT2) |
+| **EPHESUS** (NEJM 2003) | 6 632 patients 3–14 j post-IDM, FEVG ≤ 40 % (moyenne 33 %) + signes d'IC ou diabète ; 100 % ischémiques ; éplérénone 25–50 mg vs placebo | Provisoire (résumé et RCP) : mortalité 14,4 % vs 16,7 %, RR 0,85 (0,75–0,96) ; décès CV ou hosp CV RR 0,87 ; mort subite RR 0,79. Sous-groupe post hoc : bénéfice concentré si initiation < 7 j (interaction p = 0,02) | Partiel (post-IDM aigu, non chronique) |
+| **EMPHASIS-HF** (NEJM 2011 ; texte intégral) | 2 737 patients ≥ 55 ans, NYHA II, FEVG ≤ 30 % (ou 30–35 % si QRS > 130 ms ; moyenne 26 %), 69 % ischémiques ; éplérénone 25–50 mg vs placebo sous IEC/ARA2 (93–94 %) + bêtabloquant (87 %) | Décès CV ou hosp IC 18,3 % vs 25,9 %, HR 0,63 (0,54–0,74) ; mortalité totale HR 0,76 (0,62–0,93). **Arrêté tôt** (21 mois). Effet identique selon la cause (interaction p = 0,73). K+ > 5,5 mmol/L : 11,8 % vs 7,2 % ; troubles mammaires 0,7 % vs 1,0 % | Partiel (FEVG ~35 % à la limite d'inclusion ; pré-ARNI/iSGLT2) |
+| TOPCAT (NEJM 2014) | 3 445 patients IC à FEVG ≥ 45 % ; spironolactone vs placebo | Formellement neutre : HR 0,89 (0,77–1,04) ; hosp IC HR 0,83. Écart régional post hoc (Amériques HR 0,82 vs Russie/Géorgie 1,10, interaction p = 0,12 ; canrénone indétectable chez 30 % des patients russes déclarés traités) | Extrapolé (ICFEP ; point de contraste uniquement) |
+| Méta-analyse IPD Jhund (Lancet 2024 ; texte intégral) | Données individuelles RALES + EMPHASIS-HF (4 400 ICFER) et TOPCAT + FINEARTS-HF | ICFER : décès CV ou hosp IC HR 0,66 (0,59–0,73) ; mortalité totale HR 0,73 (0,65–0,83). Antécédent d'IDM vs non : 0,65 vs 0,66 (interaction p = 0,96). Hyperkaliémie OR 2,27 | Partiel (meilleure estimation poolée ICFER ; traitements de fond plus anciens) |
+
+### Inhibiteurs SGLT2
+
+| Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
+|---|---|---|---|
+| **DAPA-HF** (NEJM 2019 ; texte intégral) | 4 744 ICFER, FEVG ≤ 40 % (moyenne 31 %), **56 % ischémiques**, 42 % diabétiques, ARNI 11 %, ARM 71 %, DFGe ≥ 30 ; dapagliflozine (*Forxiga*) 10 mg vs placebo, 18,2 mois | Aggravation IC ou décès CV 16,3 % vs 21,2 %, **HR 0,74 (0,65–0,85)**, NNT 21 ; décès CV HR 0,82 et mortalité totale HR 0,83 (nominaux hors hiérarchie). Sous-groupe ischémique HR 0,77 (0,65–0,92) vs non ischémique 0,71 (interaction p = 0,55 ; Butt 2021) | Direct (partiel sur l'ARNI en traitement de fond) |
+| **EMPEROR-Reduced** (NEJM 2020 ; texte intégral) | 3 730 ICFER, FEVG ≤ 40 % (moyenne 27 %), **52 % ischémiques**, 50 % diabétiques, ARNI 19,5 %, DFGe ≥ 20 ; empagliflozine (*Jardiance*) 10 mg vs placebo, 16 mois | Décès CV ou hosp IC 19,4 % vs 24,7 %, **HR 0,75 (0,65–0,86)**, NNT 19, porté par les hosp IC (0,69) ; décès CV HR 0,92 (ns) ; pente DFGe +1,73/an. Ischémique HR 0,82 (0,68–0,99) vs non ischémique 0,67 (interaction p = 0,149 ; Khan 2023) | Direct (population concordante) |
+| **Zannad 2020** méta-analyse (Lancet ; résumé) | DAPA-HF + EMPEROR-Reduced, n = 8 474 ; financé par Boehringer | Provisoire (résumé) : mortalité totale **HR 0,87 (0,77–0,98)** ; décès CV 0,86 (0,76–0,98) ; décès CV/1re hosp IC 0,74 ; composite rénal 0,62 | Direct (pool ICFER ; sans détail étiologique dans le résumé) |
+| **EMPULSE** (Nat Med 2022 ; texte intégral) | 530 patients hospitalisés stabilisés en IC aiguë, toute FEVG (~67 % ≤ 40 %) ; empagliflozine 10 mg, 90 jours | Win ratio **1,36 (1,09–1,68)** (~2/3 des gains portés par le KCCQ) ; décès 4,2 % vs 8,3 % ; décès CV/événement IC HR 0,69 (ns) ; zéro acidocétose | Partiel (initiation hospitalière ; part ischémique inconnue) |
+| **SOLOIST-WHF** (NEJM 2021 ; résumé + RCP FDA) | 1 222 diabétiques de type 2 après hospitalisation pour aggravation IC, toute FEVG (médiane 35 %) ; sotagliflozine, 9 mois | Décès CV + hosp IC + visites urgentes totaux **HR 0,67 (0,52–0,85)** ; décès CV HR 0,84 et mortalité totale 0,82 (ns). **Arrêté tôt** (perte de financement), critère élargi aux événements totaux | Partiel (diabète uniquement, toute FEVG) |
+| **DELIVER / EMPEROR-Preserved** (NEJM 2022 / 2021) | 6 263 et 5 988 patients, FEVG > 40 % (18 % de FEVG améliorée dans DELIVER) | HR 0,82 (0,73–0,92) et 0,79 (0,69–0,90), portés par les événements IC ; décès CV ns. Sous-groupe FEVG améliorée de DELIVER HR 0,74 (interaction p = 0,43) | Indirect (FEVG > 40 %) |
+| **Vaduganathan 2022** méta-analyse 5 essais (Lancet) | 21 947 patients, toutes FEVG | Décès CV/hosp IC HR 0,77 ; décès CV 0,87 ; mortalité totale 0,92 ; FEVG ≤ 40 % HR 0,75 ; diabète vs non 0,77 vs 0,77 | Partiel (toutes FEVG poolées ; cause non analysée) |`,
+    },
+    {
+      headingFr: 'Pronostic, remodelage inverse et récupération de la FEVG',
+      bodyMarkdownFr: `Il s'agit principalement de cohortes observationnelles, d'un essai à bras unique et d'une comparaison de scores de risque : aucune ne compare un traitement à un témoin, et tous les chiffres sont des moyennes de population.
+
+| Étude / Cohorte | Population et suivi | Résultat principal | Applicabilité |
+|---|---|---|---|
+| SwedeHF ischémique vs non ischémique (Silverdal, ESC HF 2020) | 30 946 IC non valvulaires, registre suédois 2000–2012, 57 % ischémiques ; toutes tranches de FEVG | Mortalité ajustée ischémique vs non ischémique HR 1,16 (1,11–1,22) ; FEVG 30–39 % HR 1,20 (1,10–1,31) ; FEVG < 30 % HR 1,39 ; aucun écart à FEVG ≥ 50 % | Partiel (pré-ARNI/iSGLT2 ; sans ajustement NT-proBNP ; observationnel) |
+| ICFER récente selon la cause (Silverdal, ESC HF 2023) | 364 nouveaux hospitalisés FEVG < 40 %, Göteborg 2016–2019 (114 ischémiques vs 203 non ischémiques), 28 semaines | Hausse FEVG ≥ 10 points : 35,6 % vs 70,0 % ; atteinte ≥ 40 % : 26,0 % vs 50,7 % ; OR ajusté d'amélioration si ischémique 0,35 (0,18–0,65) ; hosp IC 36,8 % vs 16,3 % | Partiel à direct (monocentrique rétrospectif, peu d'iSGLT2) |
+| BIOSTAT-CHF / ASIAN-HF HFimpEF (Cao, EJHF 2024) | FEVG ≤ 40 %, Europe 2010–2015 (écho à 9 mois) et Asie 2012–2015 (1 an) ; pré-iSGLT2 | HFimpEF 18,4 % / 28,5 % ; coronaropathie OR 0,46 (0,31–0,70) pour l'amélioration ; VG moins dilaté, sexe féminin, absence de BBG prédictifs ; mortalité HFimpEF HR 0,52 et 0,40 | Partiel (post hoc, biais de survivant) |
+| Registre Alberta récupération FEVG (Ghimire, EHJ 2019) | 3 124 patients FEVG ≤ 40 % avec 2 ETT espacées de ≥ 6 mois, 2008–2016 | 37,6 % améliorés de ≥ 10 points ; mortalité améliorée vs persistante HR ajusté 0,70 (0,62–0,79) | Indirect sur la cause (non rapportée ; résumé seul) |
+| Trajectoires de FEVG (Lupon, JACC 2018) | 1 160 patients ambulatoires IC, Badalona, jusqu'à 15 ans | La FEVG progresse surtout la 1re année, se stabilise jusqu'à ~10 ans puis décline lentement ; gain à 1 an moindre en cause ischémique, plus grand en IC récente | Partiel (résumé seul) |
+| **PROVE-HF** (JAMA 2019) | 794 ICFER débutant sacubitril/valsartan, 53,7 % ischémiques, bras unique, 12 mois | FEVG de 28,2 % à 37,8 % ; VTSi de 61,7 à 45,5 mL/m² ; NT-proBNP -30 % dès J14 | Partiel (causes mixtes non séparées ; pas de groupe témoin) |
+| Kwon 2009 étendue de cicatrice (JACC Imaging) | 349 cardiomyopathies ischémiques, FEVG moyenne 24 %, IRM 2003–2006, 2,4 ans | Cicatrice > 30 % du myocarde : décès ou greffe RR 1,75 (1,02–3,03) | Partiel (100 % ischémique, plus sévère ; résumé seul) |
+| Bello 2003 (Circulation) | 45 IC chroniques (28 ischémiques) sous bêtabloquants, IRM initiale et à 6 mois | Zones sans cicatrice améliorées à 56 % contre 3 % si cicatrice > 75 % ; myocarde viable dysfonctionnel prédictif de la baisse du VTSi | Partiel/indirect (très petit effectif ; résumé seul) |
+| White 1987 (Circulation) | 605 hommes < 60 ans, 1–2 mois post-IDM, 78 mois | Le volume télésystolique était le meilleur prédicteur de survie (chi² 82,9 vs FEVG 46,6) ; la FEVG n'ajoutait rien une fois le VTS connu | Indirect (post-IDM années 1980, hommes seuls ; résumé seul) |
+| Kramer 2010 (JACC) | 30 essais de mortalité (69 766) et 88 de remodelage (19 921) sur 25 traitements/dispositifs | Corrélation au niveau des essais entre OR de mortalité et gain de FEVG r = -0,51, variation de VTS r = 0,48 | Indirect (niveau essai ; résumé seul) |
+| Codina 2021 comparaison des scores de risque (EJHF) | 1 166 patients ambulatoires IC, Badalona 2010–2018, 40,7 % ischémiques, FEVG moyenne 37,7 % | Indice C à 1 an de 0,80–0,83 pour SHFM, MAGGIC, PREDICT-HF et BCN-Bio-HF ; MAGGIC mieux calibré, SHFM/PREDICT-HF sous-estiment et BCN-Bio-HF surestime le risque | Partiel (pré-iSGLT2 ; biais de centre développeur) |`,
     },
     {
       headingFr: "Médicaments anti-angineux",
@@ -352,15 +467,15 @@ export const article: WikiArticle = {
 
 | Essai / Analyse | Population et comparaison | Résultat principal | Applicabilité |
 |---|---|---|---|
-| SOLVD-Prevention (NEJM 1992) | 4 228 patients avec FEVG ≤ 35 % sans besoin de traitement d'IC ; énalapril vs placebo, 37 mois | Mortalité non significativement réduite ; décès ou apparition d'une IC réduits de 29 % | Stade B uniquement (tout antécédent de symptôme = stade C) |
+| SOLVD-Prevention (NEJM 1992) | 4 228 patients avec FEVG ≤ 35 % (moyenne 28 %) sans besoin de traitement d'IC, ~83 % ischémiques ; énalapril vs placebo, 37 mois | Formellement neutre sur la mortalité (-8 %, p = 0,30) ; décès ou apparition d'une IC réduits de 29 % | Partiel (stade B uniquement ; tout antécédent de symptôme = stade C ; traitements anciens) |
 | STOP-HF (JAMA 2013) | 1 374 adultes à risque sans IC ; dépistage par BNP ≥ 50 pg/mL avec ETT et soins partagés vs suivi usuel | Nouvelle dysfonction VG (avec ou sans IC) : 5,3 % vs 8,7 % ; IC seule non nettement réduite | Dépistage du stade B, non traitement d'une dysfonction connue |
 | PONTIAC (JACC 2013) | 300 patients diabétiques de type 2 avec NT-proBNP > 125 sans cardiopathie connue ; titration cardiologique vs suivi usuel | Hospitalisation cardiaque ou décès réduits (HR 0,351) ; petit essai financé par l'industrie | Dépistage et traitement du stade B dans le diabète |
 | SOLVD suivi 12 ans (Lancet 2003) | Les deux essais SOLVD, 99,8 % suivis | Essai Prevention : 50,9 % vs 56,4 % de décès ; gain médian de survie de 9,4 mois (poolé) | Idem SOLVD-Prevention |
-| SAVE captopril (NEJM 1992) | 2 231 patients 3 à 16 jours après IDM, FEVG ≤ 40 %, sans IC patente | Mortalité : 20 % vs 25 % ; IC sévère réduite de 37 % | Stade B post-IDM (distinct de l'essai SAVE CPAP) |
-| CAPRICORN (Lancet 2001) | 1 959 patients post-IDM, FEVG ≤ 40 % ; carvédilol vs placebo | Critère principal ns (HR 0,92) ; mortalité 12 % vs 15 % (HR 0,77) | Post-infarctus |
+| SAVE captopril (NEJM 1992) | 2 231 patients 3 à 16 jours après IDM, FEVG ≤ 40 % (moyenne 31 %), sans IC patente ; captopril cible 50 mg × 3/j vs placebo | Mortalité : 20 % vs 25 % (-19 %, p = 0,019) ; IC sévère -37 % ; récidive d'IDM -25 % | Partiel (stade B post-IDM aigu ; distinct de SAVE PPC/CPAP) |
+| CAPRICORN (Lancet 2001) | 1 959 patients post-IDM, FEVG ≤ 40 % (moyenne ~33 %), 100 % ischémiques ; carvédilol vs placebo | Formellement neutre : critère principal modifié en cours d'essai (HR 0,92, ns) ; mortalité 12 % vs 15 % (HR 0,77, p = 0,031, sous le seuil ajusté) | Partiel (post-IDM précoce) |
 | REVERT (Circulation 2007) | 149 patients, NYHA I, FEVG < 40 % ; métoprolol succinate vs placebo, 12 mois | Dose 200 mg : VG plus petit, FEVG +6 points (critères d'imagerie uniquement) | Petit, pas de critères cliniques |
-| PARADISE-MI (NEJM 2021) | 5 661 patients post-IDM ; sacubitril/valsartan vs ramipril | Non supérieur (HR 0,90, ns) | Post-IDM à risque, pas stade B chronique établi |
-| EMPACT-MI (NEJM 2024) | 6 522 patients post-IDM ; empagliflozine vs placebo | Critère combiné non réduit (HR 0,90, ns) ; premières hospitalisations IC plus basses (HR 0,77) | Post-IDM aigu |
+| PARADISE-MI (NEJM 2021) | 5 661 patients 0,5–7 j post-IDM, FEVG ≤ 40 % et/ou congestion (moyenne 37 %) ; sacubitril/valsartan vs ramipril | Formellement neutre (HR 0,90 ; 0,78–1,04) ; analyses d'événements totaux exploratoires ; hypotension 28,4 % vs 22,0 % | Partiel (post-IDM aigu, pas stade B chronique établi) |
+| **EMPACT-MI** (NEJM 2024 ; texte intégral) | 6 522 patients post-IDM sans IC préalable, congestion et/ou FEVG < 45 % (moyenne 40 %, 25,6 % < 35 %), 32 % diabète ; empagliflozine vs placebo | Formellement neutre : 1re hosp IC ou décès **HR 0,90 (0,76–1,06)** ; décès non réduits (HR 0,96) ; 1re hosp IC HR 0,77 et hosp IC totales RR 0,67 (exploratoires) | Indirect (IDM aigu avant IC chronique) |
 | **DAPA-MI** (NEJM Evid 2024 ; sous-étude FEVG 2025) | 4 017 patients post-IDM en Suède/RU **sans diabète ni IC chronique** (77,7 % FEVG < 50 % dans la sous-étude) ; dapagliflozine vs placebo (AstraZeneca) | Passage en cours d'essai à un win ratio cardiométabolique à 7 critères favorable (**1,34 ; 1,20–1,50** ; FEVG < 50 % **1,38**), porté par nouveau DT2, NYHA et poids ; **critère dur décès CV/hosp IC neutre (2,5 % vs 2,6 % ; HR 0,95 ; FEVG < 50 % HR 1,12, décès HR 1,14)**. Pool de 5 ECR post-IDM non diabétiques (n = 9 135, 2026) : 1re hosp IC RR 0,74, mais décès/hosp IC neutre (RR 0,90) et mortalité RR 1,06 | Post-IDM aigu sans diabète, pas stade B chronique stable |
 | **Méta-analyse IPD Rossello 2025** (Lancet 2025 ; via ESC 2026) | 1 885 patients post-IDM avec **FEVG 40–49 %** sans IC (REBOOT, BETAMI, DANBLOCK, CAPITAL-RCT) ; bêtabloquant oral vs aucun | Décès, nouvel IDM ou IC réduits : **HR 0,75 (0,58–0,97 ; p = 0,031 ; 32,6 vs 43,0/1 000 patients-années)**. Fonde la Classe I B1 ESC 2026 au stade B jusqu'à FEVG < 50 % | Post-IDM FEVG 40–49 % (FEVG supérieure à ~35 %) |
 
@@ -454,15 +569,23 @@ Aucun de ces traitements n'est autorisé dans l'Union européenne (liste EMA des
     },
   ],
   relatedArticleSlugs: [
+    'lire-les-preuves-medicales',
     'essais-cliniques-en-cours-et-a-suivre',
     'comprendre-le-diagnostic',
     'revascularisation-pontage-stents',
+    'viabilite-myocardique',
+    'these-viabilite-et-survie-revascularisation',
     'angor-et-medicaments-anti-angineux',
     'antiplaquettaires-bitherapie-et-protection-gastrique',
     'escalade-et-resistance-aux-diuretiques',
     'dispositifs-cardiaques-dai-crt',
+    'these-benefice-dai-sous-quadritherapie',
     'arythmies-ventriculaires-et-antiarythmiques',
     'medicaments-insuffisance-cardiaque',
+    'iec-ara2-et-arni-sacubitril-valsartan',
+    'betabloquants-insuffisance-cardiaque',
+    'arm-steroidiens-spironolactone-eplerenone',
+    'inhibiteurs-sglt2-insuffisance-cardiaque',
     'insuffisance-cardiaque-fevg-amelioree',
     'glossaire-cardiologie',
     'nutrition-et-complements-insuffisance-cardiaque',
@@ -514,23 +637,23 @@ Aucun de ces traitements n'est autorisé dans l'Union européenne (liste EMA des
   ],
   sources: [
     {
-      label: 'Revascularisation, CTO, angor et antiplaquettaires (STICH/STICHES, STICH hypothèse 2, REVIVED-BCIS2, CHIP-BCIS3, STICH3, ISCHEMIA-CTO, ORBITA-CTO, RAID, RIVER-PCI, ATPCI, PRAISE, ORBITA-COSMIC, HOST-EXAM 10 ans, SMART-CHOICE 3, PANTHER, Giacoppo 2025, COGENT, COMPASS pantoprazole)',
-      detail: 'Comparaison pontage, stents, assistance Impella, anti-angineux et stratégies antiplaquettaires/IPP',
+      label: 'Revascularisation, viabilité myocardique, CTO, angor et antiplaquettaires (STICH/STICHES, Bonow 2015, PARR-2, HEART, REVIVED-BCIS2 + complétude 2024, Liga 2023, Allman 2002, CHIP-BCIS3, STICH3, ISCHEMIA-CTO, ORBITA-CTO, RAID, HOST-EXAM 10 ans, SMART-CHOICE 3)',
+      detail: 'Comparaison pontage, stents, tests de viabilité, assistance Impella, anti-angineux et stratégies antiplaquettaires/IPP',
     },
     {
-      label: 'Médicaments de fond, diurétiques et IC avancée (H-HeFT, Met-HeFT, PARADIGM-HF, DAPA-HF, EMPHASIS-HF, STRONG-HF, VICTORIA/VICTOR, SHIFT, DIGIT-HF, FINEARTS-HF, DIAMOND, TRANSFORM-HF, ADVOR, ORION-A, CLOROTIC, 3T, MOMENTUM 3, ARIES-HM3, ROADMAP, AMBU-VAD, LION-HEART, GALACTIC-HF, DCD, HELP-HF)',
-      detail: 'Quadrithérapie, titration, traitements additionnels, escalade diurétique, LVAD, greffe cardiaque et inotropes',
+      label: 'Quatre piliers, traitements additionnels, diurétiques et remodelage (CONSENSUS, SOLVD, CHARM, PARADIGM-HF, MERIT-HF, CIBIS-II, COPERNICUS, Cleland 2018, RALES, EPHESUS, EMPHASIS-HF, Jhund 2024, DAPA-HF, EMPEROR-Reduced, Zannad 2020, H-HeFT, STRONG-HF, VICTOR/DIGIT-HF, TRANSFORM-HF, Silverdal 2020/2023, PROVE-HF, Codina 2021)',
+      detail: 'Essais pivots des 4 classes de fond, traitements additionnels, escalade diurétique, trajectoires de FEVG et scores de risque',
     },
     {
-      label: 'Rythme, DAI, ablation de TV et valves (MADIT-II, SCD-HeFT, PROFID, PRAETORIAN, VEST, HF-OPT, VANISH, VANISH2 + JACC 2026, PARTITA, BERLIN VT, PAUSE-SCD, Falconer/Façanha 2026, OPTIC, CAST, ANDROMEDA, COAPT, RESHAPE-HF2, CTSN, CASTLE-AF, RAFT-AF, APAF-CRT, TAVR UNLOAD, PROGRESS NEJM 2026, EXPAND TAVR II)',
-      detail: 'Mort subite, gilet défibrillateur, ablation de TV vs antiarythmiques, danger des classes IC/dronédarone, IM secondaire, FA et rétrécissement aortique modéré',
+      label: 'Rythme, DAI sous quadrithérapie, ablation de TV et valves (MADIT-I/II 8 ans, SCD-HeFT 11 ans, DINAMIT/IRIS, DANISH 13 ans, SwedeHF, PROFID, Rohde 2020, Aktas 2026, PROVE-HF/egnite, VEST, PRAETORIAN, VANISH/VANISH2, COAPT, RESHAPE-HF2, CASTLE-AF, TAVR UNLOAD, PROGRESS NEJM 2026)',
+      detail: 'Mort subite et bénéfice du DAI à l’ère moderne, gilet défibrillateur, ablation de TV vs antiarythmiques, IM secondaire, FA et rétrécissement aortique',
     },
     {
-      label: 'Fer IV, compléments, nutrition, GLP-1 et stade B (Anker 2025, Mandal 2026, FAIR-HF2, HEART-FID + phosphate 2025, IRONMAN, Ponikowski 2023, GISSI-HF FA, VITAL Rhythm, OMEMI, RESPECT-EPA, STRENGTH, REDUCE-IT, Q-SYMBIO Europe, Cochrane 2021, NIHR HTA 2022, CORAL/DANUTRIO-HF/SELEQT-HF, SOUL, SURPASS-CVOT, TRIUMPH-3, DAPA-MI, Rossello 2025)',
+      label: 'Fer IV, compléments, nutrition, GLP-1 et stade B (Anker 2025, Mandal 2026, FAIR-HF2, HEART-FID + phosphate 2025, IRONMAN, Ponikowski 2023, GISSI-HF FA, VITAL Rhythm, OMEMI, Q-SYMBIO Europe, Cochrane 2021, NIHR HTA 2022, CORAL/DANUTRIO-HF, SOUL, SURPASS-CVOT, DAPA-MI, Rossello 2025)',
       detail: 'Fer IV à l’ère des iSGLT2, risque de FA des oméga-3, évaluation CoQ10, incrétines et essais post-IDM au stade B',
     },
     {
-      label: 'Vaccinations, santé mentale, soins palliatifs, péri-opératoire et comorbidités (IAMI, IVVE, INVESTED, DANFLU-2, FLUNITY-HD, AUSPICE, DAN-RSV, Hopeful Heart, PAL-HF, CASA, ENABLE CHF-PC, Kim 2026, TEACH, ICD-FORUM, IsHak 2024, STOP-or-NOT, SPACE, POISE-3, Fink 2022, SMART-C, DARE-19/RECOVERY/ACTIV-4a, CARES, FAST, EXACT-HF, ALL-HEART, RED-HF, BLOCK COPD)',
+      label: 'Vaccinations, santé mentale, soins palliatifs, péri-opératoire et comorbidités (IAMI, IVVE, INVESTED, DANFLU-2, DAN-RSV, Hopeful Heart, PAL-HF, CASA, ENABLE CHF-PC, Kim 2026, TEACH, STOP-or-NOT, SPACE, Fink 2022, SMART-C, CARES, FAST, EXACT-HF, ALL-HEART, RED-HF, BLOCK COPD)',
       detail: 'Vaccins grippe/VRS/pneumocoque, soins collaboratifs et palliatifs, gestion péri-opératoire et jours de maladie, goutte, anémie et BPCO',
     },
   ],

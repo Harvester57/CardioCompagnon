@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "Montres connectées et capteurs dans l'insuffisance cardiaque",
   category: 'dispositifs',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium',
   volatility: 'hot',
   tags: [
@@ -95,6 +95,7 @@ export const article: WikiArticle = {
 - **Tachycardie ventriculaire (TV) :** c'est le trouble du rythme responsable de mort subite dans la cardiomyopathie ischémique. Un capteur optique ne distingue pas une arythmie ventriculaire d'une autre, et l'ECG de montre n'est évalué que pour la FA. Un rythme rapide à complexes larges vu sur n'importe quel tracé impose un avis cardiologique immédiat et une confirmation par ECG 12 dérivations. La protection contre la TV repose sur le traitement de fond et, si indiqué, un DAI ou un gilet défibrillateur (voir *Dispositifs cardiaques implantables : DAI et CRT*).
 - **Décompensation / rétention d'eau :** aucune fonction grand public validée ne repère l'accumulation de liquide ; la pesée matinale et les signes d'alerte restent la référence.
 - **Tension artérielle :** l'ESH déconseille les dispositifs sans brassard, et les notifications d'hypertension Apple (autorisées aux États-Unis en septembre 2025, sans mesure tensionnelle directe) ont manqué **59 %** des hypertendus dans l'étude du fabricant et ne visent pas les personnes déjà diagnostiquées (voir *Automesure tensionnelle à domicile*).
+- **Estimer la FEVG à partir d'un ECG de montre (recherche uniquement) :** un programme d'intelligence artificielle peut estimer si la FEVG est basse à partir d'un ECG monopiste de montre. Dans l'étude de la **Mayo Clinic sur Apple Watch (2022)**, 2 454 personnes ont transmis des ECG, mais seules 421 avaient une échocardiographie dans les 30 jours et seulement **16** présentaient une FEVG ≤ 40 % (**AUC 0,885**), un effectif bien trop faible pour juger de la précision réelle. Cette fonction n'est pas autorisée par la FDA sur montre (l'ECG Apple Watch n'est homologué que pour la FA) et une montre ne permet pas de suivre l'évolution de votre FEVG au fil du temps : l'**ETT** ou l'**IRM cardiaque** restent indispensables (voir *ECG-IA et détection numérique*).
 - **Saturation en oxygène (SpO2) :** dans l'étude de laboratoire publiée par des salariés de Withings sur la **ScanWatch** (Kirszenblat 2021), l'erreur moyenne au poignet était d'environ **3 %** par rapport au sang artériel (dans les limites FDA de 3,5 % et ISO de 4 %), mais l'étude ne portait que sur **14 jeunes adultes sains de 23 à 39 ans** et **15 à 24 %** des mesures étaient écartées comme illisibles. Le projet de recommandation **FDA 2025** rappelle en outre des écarts de précision selon la pigmentation cutanée et précise que les fonctions « bien-être » grand public ne sont pas évaluées avant mise sur le marché. Dans l'insuffisance cardiaque, les mains froides, la faible perfusion et l'arythmie affaiblissent encore le signal : interprétez toujours un chiffre d'oxygène avec votre niveau d'essoufflement.`,
     },
     {
@@ -163,6 +164,7 @@ Ces étapes regroupent les conseils de l'EHRA, de la HFA, de Rosman (2024) et de
     'tension-arterielle-insuffisance-cardiaque',
     'efx-strain-troponine-et-imagerie-cardiaque',
     'questions-equipe-cardiologie',
+    'ecg-ia-et-detection-numerique',
   ],
   sources: [
     {
@@ -184,6 +186,10 @@ Ces étapes regroupent les conseils de l'EHRA, de la HFA, de Rosman (2024) et de
     {
       label: 'ESC 2026 (section télésurveillance), prise de position ESH (2022) & HeartFailureMatters',
       detail: 'Absence de recommandation ESC sur les montres grand public, rejet des dispositifs tensionnels sans brassard et prévention de la surmédicalisation anxieuse.',
+    },
+    {
+      label: 'Étude Mayo Clinic AI-ECG sur Apple Watch (2022)',
+      detail: 'Détection expérimentale d’une FEVG ≤ 40 % sur ECG monopiste de montre (n = 16 cas confirmés par ETT ; AUC 0,885 ; usage recherche uniquement).',
     },
   ],
   disclaimerType: 'medical',

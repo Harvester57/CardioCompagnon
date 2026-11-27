@@ -1,5 +1,5 @@
 export const EXPECTED_ARTICLE_SLUGS = [
-  // Lot 1 -- Diagnostic, Chiffres, Stade B, Anevrisme & Examens specialises (10)
+  // Lot 1 -- Diagnostic, Chiffres, Stade B, Anevrisme & Examens specialises (15)
   'comprendre-le-diagnostic',
   'cardiomyopathie-ischemique',
   'fraction-dejection',
@@ -10,6 +10,11 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'thrombus-vg-et-anticoagulants',
   'anevrisme-ventricule-gauche',
   'efx-strain-troponine-et-imagerie-cardiaque',
+  'angor-microvasculaire-et-inoca',
+  'viabilite-myocardique',
+  'these-viabilite-et-survie-revascularisation',
+  'progression-coronaire-et-imagerie-de-suivi',
+  'ecg-ia-et-detection-numerique',
 
   // Lot 2 -- Insuffisance Cardiaque Avancee (Stade D), LVAD, Greffe & Coeur Droit (5)
   'insuffisance-cardiaque-avancee-stade-d',
@@ -18,7 +23,7 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'inotropes-insuffisance-cardiaque-avancee',
   'ventricule-droit-et-hypertension-pulmonaire',
 
-  // Lot 3 -- Comorbidites & Valvulopathies (9)
+  // Lot 3 -- Comorbidites & Valvulopathies (15)
   'maladies-associees',
   'stenose-aortique-fevg-reduite',
   'tension-arterielle-insuffisance-cardiaque',
@@ -28,28 +33,45 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'fuite-mitrale-secondaire',
   'diabete-insuffisance-cardiaque',
   'goutte-bpco-thyroide-et-autres-comorbidites',
+  'sante-cerebrale-et-cognition',
+  'cancer-et-coeur-cardio-oncologie',
+  'arteres-carotides-et-aomi',
+  'hormones-testosterone-et-menopause',
+  'sarcopenie-perte-musculaire-et-fragilite',
+  'sante-bucco-dentaire-et-gencives',
 
-  // Lot 4 -- Traitements de Fond, Add-ons, Anti-angineux, Antiplaquettaires, Diuretiques, Peri-operatoire & Rythme (21)
+  // Lot 4 -- Traitements de Fond, Add-ons, Anti-angineux, Antiplaquettaires, Diuretiques, Peri-operatoire & Rythme (32)
   'medicaments-insuffisance-cardiaque',
+  'iec-ara2-et-arni-sacubitril-valsartan',
+  'betabloquants-insuffisance-cardiaque',
+  'arm-steroidiens-spironolactone-eplerenone',
+  'inhibiteurs-sglt2-insuffisance-cardiaque',
+  'observance-et-oubli-de-dose',
+  'horaires-de-prise-et-routine-medicaments',
   'medicaments-effets-secondaires-suivi',
   'traitements-additionnels-nouveaux',
   'medicaments-additionnels-ivabradine-digoxine-vericiguat',
   'finerenone-et-nouveaux-arm',
   'cholesterol-et-prevention-secondaire',
+  'risque-inflammatoire-residuel',
   'carence-martiale-et-fer-iv',
   'fer-oral-haute-biodisponibilite',
   'these-fer-iv-et-isglt2-quadritherapie',
   'medicaments-glp1-et-incretines',
   'cellules-souches-et-therapies-regeneratives',
+  'therapies-geniques-et-moleculaires',
   'angor-et-medicaments-anti-angineux',
   'antiplaquettaires-bitherapie-et-protection-gastrique',
   'escalade-et-resistance-aux-diuretiques',
   'chirurgie-soins-dentaires-et-jours-de-maladie',
   'these-jours-de-maladie-sraa-vs-isglt2',
   'dispositifs-cardiaques-dai-crt',
+  'these-benefice-dai-sous-quadritherapie',
+  'dispositifs-insuffisance-cardiaque-en-developpement',
   'gilet-defibrillateur-portable',
   'arythmies-ventriculaires-et-antiarythmiques',
   'revascularisation-pontage-stents',
+  'angioplastie-protegee-et-assistance-circulatoire',
   'occlusion-coronaire-chronique-cto',
 
   // Lot 5 -- Nutrition, Complements, Interactions, Playbook & Theses Nutrition (19)
@@ -73,7 +95,7 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'fibres-alimentaires-et-axe-intestin-coeur',
   'interactions-complements-aliments-medicaments',
 
-  // Lot 6 -- Automesure, Objets connectes, Telesurveillance, Vaccinations & Vie Quotidienne (13)
+  // Lot 6 -- Automesure, Objets connectes, Telesurveillance, Vaccinations & Vie Quotidienne (16)
   'telesurveillance-insuffisance-cardiaque',
   'automesure-tensionnelle-domicile',
   'montres-connectees-et-capteurs-ic',
@@ -84,8 +106,11 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'musculation-vs-endurance-readaptation-cardiaque',
   'vie-sexuelle-et-dysfonction-erectile-ic',
   'voyages-canicule-et-climat-ic',
+  'pollution-de-lair-et-bruit',
   'tabac-et-alcool-insuffisance-cardiaque',
+  'cannabis-cbd-et-substances-recreatives',
   'depression-et-sante-emotionnelle',
+  'isolement-social-et-lien-social',
   'soins-de-support-et-anticipation',
 
   // Lot 7 -- France, Reseau de Soins & Conduite (3)
@@ -93,9 +118,10 @@ export const EXPECTED_ARTICLE_SLUGS = [
   'reseau-de-soins-et-aides-sociales-france',
   'regles-conduite-automobile',
 
-  // Lot 8 -- Questions Equipe Medicale, Glossaire & References (5)
+  // Lot 8 -- Questions Equipe Medicale, Glossaire & References (6)
   'questions-equipe-cardiologie',
   'glossaire-cardiologie',
+  'lire-les-preuves-medicales',
   'recommandations-comparees-esc-us-nice',
   'essais-cliniques-cles',
   'essais-cliniques-en-cours-et-a-suivre',

@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Réadaptation cardiaque (SMR) et activité physique',
   category: 'quotidien',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'high',
   volatility: 'warm',
   tags: [
@@ -66,8 +66,8 @@ export const article: WikiArticle = {
       depth: 'patient',
       bodyMarkdownFr: `- **Comment y accéder :** en France, la réadaptation cardiaque s'effectue en service de **SMR (soins médicaux et de réadaptation, ex-SSR) mention cardiovasculaire**, en hospitalisation complète ou en **hôpital de jour** (vous rentrez chez vous le soir). Elle peut être prescrite par votre **cardiologue**, votre **médecin traitant** ou à la sortie d'une hospitalisation, **sans demande d'accord préalable**, avec une **prise en charge à 100 % par l'Assurance Maladie**.
 - **Bilan initial :** avant de démarrer, un test d'effort — idéalement une **épreuve d'effort cardiorespiratoire (EFX)** lorsque disponible — permet de définir vos zones de fréquence cardiaque et d'intensité sûres (voir *EFX, strain, troponine et imagerie cardiaque*).
-- **Maintenir les bénéfices après le SMR :** les gains diminuent si l'on arrête totalement de bouger. Pour garder le rythme au long cours, demandez à votre médecin une prescription d'**Activité Physique Adaptée (APA)** ou renseignez-vous auprès d'une **Maison Sport-Santé** proche de chez vous (voir *Réseau de soins et aides sociales en France*).
-- **Précautions au quotidien :** fractionnez vos efforts pour gérer la fatigue, prévoyez des temps de repos autour des journées chargées, et signalez à votre équipe toute **perte de poids involontaire** (hors fonte d'œdèmes) dépassant **5 % en 3 à 12 mois**, qui peut signaler une fonte musculaire.`,
+- **Maintenir les bénéfices après le SMR :** les gains diminuent si l'on arrête totalement de bouger. Pour garder le rythme au long cours et entretenir du lien social, demandez à votre médecin une prescription d'**Activité Physique Adaptée (APA)** ou rejoignez un **Club Cœur et Santé** ou une **Maison Sport-Santé** proche de chez vous (voir *Réseau de soins et aides sociales en France* et *Isolement social et lien social*).
+- **Précautions au quotidien, muscles et pollution :** fractionnez vos efforts pour gérer la fatigue, prévoyez des temps de repos autour des journées chargées, et adaptez vos sorties lors des **épisodes de pollution de l'air ou d'ozone** (voir *Pollution de l'air et bruit*). Signalez à votre équipe toute **perte de poids involontaire** (hors fonte d'œdèmes) dépassant **5 % en 3 à 12 mois**, ainsi qu'une baisse de force de préhension ou une difficulté à vous lever d'une chaise (signes possibles de **sarcopénie** : le travail de force et d'équilibre associé à l'endurance et à un apport suffisant en protéines reste la réponse la mieux étayée, alors que le HMB et la créatine n'ont pas de preuve dans l'IC ; voir *Sarcopénie, perte musculaire et fragilité*).`,
     },
     {
       headingFr: "Quel type d'exercice choisir ? Endurance, renforcement musculaire et pratiques douces",
@@ -107,7 +107,7 @@ export const article: WikiArticle = {
       bodyMarkdownFr: `### Endurance, renforcement musculaire, HIIT et fragilité
 - **Repères de prescription :** **ESC 2020** (renforcement en complément, 10–15 répétitions) ; **AHA 2023** (en première étape chez les déconditionnés ou combiné à l'aérobie) ; **ESC 2026** (aérobie, renforcement et muscles inspiratoires côte à côte) ; **GERS-P / SFC 2023** (endurance 3–6×/sem. + renforcement 2–3×/sem. à 30–70 % bras et 40–80 % jambes) ; **HAS 2022** (recommande endurance + « renforcement musculaire », tout en citant « la musculation » intense comme contre-indiquée sans la définir).
 - **Comparaisons directes :** pic de VO2 sous renforcement seul **+2,6 mL/kg/min** (**Fisher 2022**, **Santos 2018**), sans supériorité face à l'aérobie (**Feiereisen 2007**, **Hollings 2017**). Gains de FEVG constants avec l'aérobie (**+3,8 points**, **+6,3 points** sur ≥ 6 mois ; **Tucker 2019**) et réduction des volumes VG (**Haykowsky 2007**, **Santos 2018**) ; non démontrés avec le renforcement seul ou combiné (une NMA de faible certitude, **Shi 2026**, classe toutefois le renforcement premier). L'entraînement combiné améliore le test de marche de 6 minutes (**+48 m**) et la force du haut du corps (**+8,3 kg**, **Terada 2026**). Voir l'article dédié *Musculation versus entraînement aérobie en réadaptation cardiaque* (thèse contredite, confiance moyenne).
-- **Fragilité (~45 % des patients IC, HFA) :** dans HF-ACTION post-hoc (**Pandey 2022**, 59 % fragiles), l'aérobie s'associait à **HR 0,83**. Dans **REHAB-HF** (*NEJM* 2021 ; **Mentz 2021**), la réadaptation multidomaine post-hospitalisation (force, équilibre, mobilité puis endurance) a amélioré la fonction physique, avec un gain plus petit et moins certain en cas de FEVG réduite.
+- **Fragilité (~45 % des patients IC, HFA) :** dans HF-ACTION post-hoc (**Pandey 2022**, 59 % fragiles), l'aérobie s'associait à **HR 0,83**. Dans **REHAB-HF** (*NEJM* 2021 ; **Mentz 2021**), la réadaptation multidomaine post-hospitalisation (force, équilibre, mobilité puis endurance) a amélioré la fonction physique, avec un gain plus petit et moins certain en cas de FEVG réduite. Une méta-analyse de six petites études dans l'IC (**Peng 2023**, résumé uniquement, forte hétérogénéité) suggère également un gain faible à modéré sur les scores cognitifs globaux (voir *Santé cérébrale et cognition*).
 - **HIIT :** dans **SMARTEX-HF** (59 % ischémiques), le HIIT n'a pas surpassé l'endurance modérée continue sur la FEVG, les volumes VG ou le pic de VO2, et les gains ont disparu à 1 an sans supervision. Des méta-analyses d'essais plus petits (**Yang 2024**, **Chen 2025**) suggèrent un modeste avantage de VO2, surtout en **4 × 4 minutes**.
 
 ### Tai Chi et yoga (Chua 2025 et Yoga-CaRe HF 2026)
@@ -132,6 +132,11 @@ export const article: WikiArticle = {
     'vivre-avec-insuffisance-cardiaque-en-france',
     'tableau-preuves-nutrition-complements',
     'recommandations-comparees-esc-us-nice',
+    'sarcopenie-perte-musculaire-et-fragilite',
+    'sante-cerebrale-et-cognition',
+    'arteres-carotides-et-aomi',
+    'pollution-de-lair-et-bruit',
+    'isolement-social-et-lien-social',
   ],
   sources: [
     {

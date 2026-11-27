@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: "Les médicaments de l'insuffisance cardiaque (4 piliers)",
   category: 'traitements',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'high',
   volatility: 'warm',
   tags: [
@@ -53,7 +53,7 @@ export const article: WikiArticle = {
 | **ARM** (antagoniste des récepteurs minéralocorticoïdes) | spironolactone (*Aldactone*), éplérénone (*Inspra*) | Freine une hormone qui favorise la fibrose cardiaque et la rétention d'eau et de sel |
 | **iSGLT2** (gliflozine) | dapagliflozine (*Forxiga*), empagliflozine (*Jardiance*) | Protège le cœur et les reins, que vous soyez diabétique ou non |
 
-Le mode d'action détaillé, les effets secondaires et les bilans sanguins de suivi de chaque famille sont expliqués dans *Médicaments : mode d'action, effets secondaires et bilans sanguins*.
+Le mode d'action détaillé, les effets secondaires et les bilans sanguins de suivi de chaque famille sont expliqués dans *Médicaments : mode d'action, effets secondaires et bilans sanguins*. Chaque pilier dispose désormais aussi de sa propre fiche approfondie (essais pivots, doses cibles et suivi) : *IEC, ARA2 et ARNI (sacubitril/valsartan)*, *Bêtabloquants dans l'ICFER ischémique*, *ARM stéroïdiens : spironolactone et éplérénone* et *Inhibiteurs du SGLT2 dans l'ICFER ischémique*.
 
 ### Pourquoi les doses augmentent par paliers (titration)
 
@@ -113,6 +113,14 @@ Dans la cardiomyopathie ischémique, la maladie coronaire est traitée en parall
 - **ESC 2026 :** les quatre classes du traitement de fond bénéficient d'une recommandation **Classe I (A)** dans l'ICFER (passage d'un IEC ou ARA2 à l'ARNI : **Classe I (B1)** ; ARA2 uniquement en cas d'intolérance aux IEC et à l'ARNI ; ARM et iSGLT2 : **Classe I (A)** quelle que soit la FEVG). Titration préconisée **au moins toutes les 1 à 2 semaines** (**Classe I**) et maintien à la dose maximale tolérée même si les symptômes disparaissent ou si la FEVG s'améliore (**Classe I**).
 - **ACC/AHA/HFSA 2022 :** place l'ARNI en première intention devant les IEC.
 - **NICE NG106 (mise à jour 2025) :** propose d'introduire ensemble IEC, bêtabloquant, ARM et iSGLT2 sans ordre imposé ni obligation d'atteindre la dose cible d'une classe avant d'introduire la suivante, puis d'envisager le remplacement de l'IEC par un ARNI si des symptômes persistent aux doses maximales tolérées. Mentionne aussi l'ivabradine, hydralazine + dérivé nitré (intolérance IEC/ARNI/ARA2) et la digoxine sur avis spécialisé, et ajoute les inhibiteurs calciques dihydropyridiniques à action courte aux traitements à éviter.
+
+### Synthèse des essais pivots par pilier et limite commune
+
+- **IEC, ARA2 et ARNI :** les IEC ont réduit la mortalité dans **SOLVD-Treatment** et, après infarctus avec dysfonction VG, dans **SAVE**, **AIRE** et **TRACE**. Dans **PARADIGM-HF** (60 % d'origine ischémique), le sacubitril/valsartan a fait mieux que l'énalapril (décès CV ou hospitalisation IC **HR 0,80**), sans différence nette selon la cause ; après un infarctus sans IC préalable (**PARADISE-MI**), il n'a pas surpassé le ramipril. Un délai minimal de **36 heures** après la dernière prise d'IEC est indispensable avant de débuter un ARNI (risque d'angiœdème).
+- **Bêtabloquants :** **MERIT-HF**, **CIBIS-II** et **COPERNICUS** (majoritairement ischémiques) ont réduit les décès d'environ un tiers ; seuls le bisoprolol, le carvédilol et le métoprolol succinate disposent de cette preuve de mortalité, le nébivolol (**SENIORS**) ayant réduit un critère combiné. En fibrillation atriale, les données poolées ne montrent pas de bénéfice net sur la survie. Les essais récents post-infarctus à FEVG préservée (**REDUCE-AMI**, **REBOOT**) ne s'appliquent pas autour de 35 % de FEVG.
+- **ARM stéroïdiens :** **RALES**, **EMPHASIS-HF** et, après infarctus, **EPHESUS** (100 % ischémique) ont réduit les décès ou hospitalisations IC ; le suivi du potassium et des reins est central, et la spironolactone peut provoquer une gynécomastie.
+- **iSGLT2 :** **DAPA-HF** et **EMPEROR-Reduced** (environ moitié d'ischémiques) ont réduit d'environ un quart les décès CV ou événements IC, avec ou sans diabète, à dose fixe sans titration. Les essais post-infarctus sans IC établie (**EMPACT-MI**, **DAPA-MI**) ont été neutres sur les critères cliniques durs.
+- **Limite commune aux quatre piliers :** chaque essai pivot a été mené sur le traitement de fond de son époque ; aucun essai n'a testé les bêtabloquants, les ARM ou les IEC en plus d'un ARNI et d'un iSGLT2. Les essais d'IC chronique mêlaient les causes (environ la moitié aux deux tiers d'ischémiques), tandis que les essais post-infarctus (**SAVE**, **AIRE**, **TRACE**, **CAPRICORN**, **EPHESUS**) incluaient des patients peu après un infarctus et non une cardiomyopathie ischémique ancienne. Lorsque le sous-groupe ischémique était publié (**PARADIGM-HF**, **EMPHASIS-HF**, **DAPA-HF**, **EMPEROR-Reduced**), le critère principal allait dans le même sens, mais pour les iSGLT2 les estimations sur les décès seuls dans le sous-groupe ischémique restaient proches de 1, et aucun chiffre de sous-groupe ischémique n'a été retrouvé pour les essais bêtabloquants ni pour **RALES**.
 
 ### Ampleur du bénéfice modélisée (Vaduganathan et al., *The Lancet* 2020)
 
@@ -178,6 +186,10 @@ Après le bêtabloquant (première intention) : ivabradine (rythme sinusal, FC >
     },
   ],
   relatedArticleSlugs: [
+    'iec-ara2-et-arni-sacubitril-valsartan',
+    'betabloquants-insuffisance-cardiaque',
+    'arm-steroidiens-spironolactone-eplerenone',
+    'inhibiteurs-sglt2-insuffisance-cardiaque',
     'maladie-renale-insuffisance-cardiaque',
     'diabete-insuffisance-cardiaque',
     'fibrillation-atriale-insuffisance-cardiaque',

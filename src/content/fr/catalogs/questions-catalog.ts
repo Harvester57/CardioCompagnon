@@ -1631,4 +1631,107 @@ export const QUESTIONS_CATALOG: QuestionCatalogItem[] = [
     relevantModules: ['core'],
     triggeredByRules: ['CONTRAINDICATED_DRUG'],
   },
+
+  // --- Détail par pilier thérapeutique, viabilité, DAI moderne et scores pronostiques ---
+  {
+    id: 'q_pillar_raas_arni_switch',
+    interlocutor: 'cardiologist',
+    topicFr: 'IEC, ARA2 et sacubitril/valsartan (ARNI)',
+    questionFr:
+      'Suis-je sous IEC, ARA2 ou sacubitril/valsartan (Entresto), à quelle distance de la dose cible suis-je, et un passage au sacubitril/valsartan est-il envisagé dans mon cas ?',
+    whyItMattersFr:
+      "Dans l'essai PARADIGM-HF, le sacubitril/valsartan a davantage réduit les décès cardiovasculaires et les hospitalisations que l'énalapril ; les recommandations européennes le proposent si des symptômes persistent, avec un délai impératif d'au moins 36 heures après l'arrêt d'un IEC (sans délai après un ARA2) pour éviter le risque d'angio-œdème.",
+    sources: ['PARADIGM-HF (2014)', 'Recommandations ESC 2026', 'AHA/ACC/HFSA 2022'],
+    articleSlug: 'iec-ara2-et-arni-sacubitril-valsartan',
+    relevantModules: ['core'],
+    triggeredByRules: ['GDMT_MISSING_PILLAR', 'ARNI_WASHOUT_INFO'],
+  },
+  {
+    id: 'q_pillar_bb_molecule_and_hr',
+    interlocutor: 'cardiologist',
+    topicFr: 'Bêtabloquant : molécule, dose et rythme',
+    questionFr:
+      'Quel bêtabloquant est-ce que je prends, pourquoi celui-là, visez-vous une dose cible, une fréquence cardiaque de repos ou les deux, et une fibrillation atriale modifie-t-elle ce que l’on en attend ?',
+    whyItMattersFr:
+      "Seuls le bisoprolol, le carvédilol et le métoprolol succinate ont démontré une réduction de la mortalité dans l'insuffisance cardiaque à FEVG réduite ; en fibrillation atriale, le bénéfice porte surtout sur le contrôle de la fréquence cardiaque, et le pouls est contrôlé après chaque palier.",
+    sources: ['Recommandations ESC 2026', 'NICE NG106', 'Kotecha (2014)'],
+    articleSlug: 'betabloquants-insuffisance-cardiaque',
+    relevantModules: ['core', 'atrialFibrillation'],
+    triggeredByRules: ['GDMT_MISSING_PILLAR'],
+  },
+  {
+    id: 'q_pillar_mra_labs_and_switch',
+    interlocutor: 'cardiologist',
+    topicFr: 'ARM (spironolactone ou éplérénone) et bilans',
+    questionFr:
+      'Quand mes bilans de potassium et de fonction rénale sont-ils prévus après le début ou l’ajustement de ma spironolactone ou de mon éplérénone, qui agit sur les résultats, et quel taux modifierait la dose ?',
+    whyItMattersFr:
+      "Une hausse du potassium au-dessus de 5,5 mmol/L est plus fréquente sous spironolactone ou éplérénone ; des prises de sang régulières (environ 1 semaine, 1 mois, puis tous les quelques mois) permettent d'ajuster la dose en sécurité et d'éviter les hospitalisations pour hyperkaliémie.",
+    sources: ['RALES (1999)', 'EPHESUS (2003)', 'EMPHASIS-HF (2011)', 'ESC 2026'],
+    articleSlug: 'arm-steroidiens-spironolactone-eplerenone',
+    relevantModules: ['core', 'ckd'],
+    triggeredByRules: ['POST_TITRATION_LABS', 'POTASSIUM_ALERT'],
+  },
+  {
+    id: 'q_pillar_sglt2_egfr_dip_and_thrush',
+    interlocutor: 'gp',
+    topicFr: 'Inhibiteur du SGLT2 : reins et effets indésirables',
+    questionFr:
+      'Si mon débit de filtration rénale (DFGe) baisse légèrement après le début de mon inhibiteur du SGLT2 (dapagliflozine ou empagliflozine), s’agit-il de la baisse initiale attendue ? Que faire en cas de mycose génitale et quels signes imposeraient un avis urgent ?',
+    whyItMattersFr:
+      "Une petite baisse initiale de 3 à 4 points du DFGe est attendue avec les inhibiteurs du SGLT2 et ne signifie pas une aggravation rénale. Les mycoses génitales bénignes sont l'effet indésirable le plus courant et se traitent facilement, tandis qu'une douleur, une rougeur intense ou une fièvre dans la zone génitale nécessitent un avis médical urgent.",
+    sources: ['DAPA-HF (Adamson 2022)', 'EMPEROR-Reduced', 'RCP européens Forxiga / Jardiance'],
+    articleSlug: 'inhibiteurs-sglt2-insuffisance-cardiaque',
+    relevantModules: ['core', 'ckd', 'diabetes'],
+    triggeredByRules: ['CREATININE_JUMP'],
+  },
+  {
+    id: 'q_viability_purpose_and_scar',
+    interlocutor: 'cardiologist',
+    topicFr: 'Viabilité myocardique et cicatrice',
+    questionFr:
+      'Si un examen de viabilité myocardique (IRM cardiaque, échographie sous dobutamine, scintigraphie ou TEP) est proposé ou déjà réalisé, quelle décision doit-il éclairer : une revascularisation (pontage ou stent) ou l’évaluation du pronostic et des chances de remontée de ma FEVG ?',
+    whyItMattersFr:
+      "Dans les grands essais cliniques (STICH pour le pontage, REVIVED-BCIS2 pour les stents), la quantité de muscle viable n'a pas permis de prédire qui vivrait plus longtemps après une intervention, alors que l'étendue de la cicatrice à l'IRM aide à estimer le pronostic et la probabilité de récupération de la FEVG.",
+    sources: ['STICH viabilité (Panza 2019)', 'REVIVED-BCIS2 viabilité (2023)', 'ESC 2026'],
+    articleSlug: 'viabilite-myocardique',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_thesis_viability_cabg_decision',
+    interlocutor: 'cardiologist',
+    topicFr: 'Thèse : viabilité et survie après pontage',
+    questionFr:
+      'Si un pontage aorto-coronarien est discuté, comment un résultat de viabilité plus élevé ou plus faible modifierait-il l’avis de la Heart Team, et un test d’ischémie d’effort changerait-il la décision ?',
+    whyItMattersFr:
+      "Dans l'essai STICH, le pontage a amélioré la survie à long terme quel que soit le degré de viabilité ou d'ischémie au test d'effort, même si les groupes ayant peu de muscle viable étaient de petite taille ; la décision repose donc sur l'ensemble du dossier en Heart Team.",
+    sources: ['STICH viabilité (Panza 2019)', 'STICH ischémie', 'ESC 2026'],
+    articleSlug: 'these-viabilite-et-survie-revascularisation',
+    relevantModules: ['core'],
+  },
+  {
+    id: 'q_thesis_icd_modern_gdmt_dilemma',
+    interlocutor: 'cardiologist',
+    topicFr: 'Thèse : DAI sous quadrithérapie moderne',
+    questionFr:
+      'Sous quadrithérapie moderne, comment évaluez-vous le bénéfice d’un DAI préventif dans mon cas (et en cas de cause mixte ischémique et non ischémique), et les essais en cours PROFID-EHRA ou DILEMMA (AP-HP, dès 70 ans) pourraient-ils me concerner ?',
+    whyItMattersFr:
+      "Les essais historiques du DAI (MADIT-II, SCD-HeFT) datent d'avant le sacubitril/valsartan et les inhibiteurs du SGLT2 ; le risque de mort subite a baissé sous traitements modernes sans disparaître, et le DAI reste recommandé en attendant les résultats de PROFID-EHRA (fin 2027) et DILEMMA (2030).",
+    sources: ['MADIT-II (8 ans)', 'DANISH (13 ans)', 'Protocole PROFID-EHRA (2026)', 'DILEMMA (AP-HP)'],
+    articleSlug: 'these-benefice-dai-sous-quadritherapie',
+    relevantModules: ['core', 'device'],
+    triggeredByRules: ['ICD_REASSESSMENT_3M'],
+  },
+  {
+    id: 'q_prognosis_risk_scores_maggic',
+    interlocutor: 'cardiologist',
+    topicFr: 'Scores pronostiques (MAGGIC, Seattle)',
+    questionFr:
+      'Si un score pronostique (comme le score MAGGIC ou le Seattle Heart Failure Model) est utilisé dans mon dossier, que peut-il nous apprendre et quelles sont ses limites ?',
+    whyItMattersFr:
+      "Ces scores classent assez bien les groupes de patients entre risque plus faible et plus élevé, mais ils ont été construits avant l'arrivée du sacubitril/valsartan et des inhibiteurs du SGLT2 ; leurs pourcentages restent des moyennes statistiques et non une prédiction individuelle.",
+    sources: ['MAGGIC (Pocock 2013)', 'Seattle Heart Failure Model (Levy 2006)', 'Codina (2021)'],
+    articleSlug: 'cardiomyopathie-ischemique',
+    relevantModules: ['core'],
+  },
 ];

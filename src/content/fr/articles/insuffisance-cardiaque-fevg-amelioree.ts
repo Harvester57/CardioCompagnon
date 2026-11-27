@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Insuffisance cardiaque à FEVG améliorée (HFimpEF)',
   category: 'diagnostic',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium-high',
   volatility: 'warm',
   tags: [
@@ -57,6 +57,10 @@ export const article: WikiArticle = {
 | **ICFER nouvellement diagnostiquée, registre néerlandais 2022–2024 (TITRATE-HF), cause ischémique** | FEVG médiane sur environ 1 an | 30 % → 40 % (gain médian 10 points) ; > 40 % chez 48 % ; passage de ≤ 35 % à > 35 % chez 61 % ; baisse de FEVG chez 12 % | TITRATE-HF |
 | Même registre, cause non ischémique | FEVG médiane sur environ 1 an | 29 % → 45 % (gain médian 15 points) ; > 40 % chez 66,5 % ; passage de ≤ 35 % à > 35 % chez 72 % ; baisse de FEVG chez 6 % | TITRATE-HF |
 | Même registre, ICFER ancienne (chronique ou récemment aggravée), toutes causes | FEVG médiane sur environ 1 an | 32 % → 35 % seulement | TITRATE-HF |
+| **ICFER récente (FEVG < 40 %), Göteborg 2016–2019, cause ischémique (114)** | Évolution à 28 semaines | Gain ≥ 10 points : 35,6 % ; atteinte ≥ 40 % : 26,0 % | Silverdal 2023 |
+| Même cohorte, cause non ischémique (203) | Évolution à 28 semaines | Gain ≥ 10 points : 70,0 % ; atteinte ≥ 40 % : 50,7 % | Silverdal 2023 |
+| FEVG ≤ 40 %, BIOSTAT-CHF (Europe, 2010–2015) et ASIAN-HF (2012–2015), toutes causes | FEVG améliorée (≥ 10 points vers > 40 %) | 18,4 % à 9 mois ; 28,5 % à 1 an. Cause ischémique chez 25,0 % des répondeurs contre 46,3 % des non-répondeurs (BIOSTAT-CHF) | Cao 2024 |
+| FEVG ≤ 40 % avec deux ETT à ≥ 6 mois, Alberta 2008–2016 (cause non rapportée) | Gain ≥ 10 points | 37,6 % (moyenne 26,1 % → 46,4 %) | Ghimire 2019 (résumé) |
 
 L'essai STICH a inclus des patients entre 2002 et 2007, avant l'arrivée du sacubitril/valsartan (*Entresto*) et des iSGLT2 : les taux de récupération sous quadrithérapie actuelle pourraient différer, possiblement à la hausse (analyse de normalisation STICH). Les registres de gilet défibrillateur portable (HF-OPT, WEARIT-II Europe, PROLONG) sont non contrôlés, en partie financés par le fabricant et antérieurs à l'usage généralisé des iSGLT2 ; ils divergent sur la fréquence d'une amélioration tardive au-delà de 3 mois dans les formes ischémiques (voir *Le gilet défibrillateur portable (LifeVest)*).
 
@@ -67,7 +71,7 @@ L'essai STICH a inclus des patients entre 2002 et 2007, avant l'arrivée du sacu
 - **L'ICFER ancienne** s'est nettement moins améliorée : médiane passant seulement de 32 % à 35 %.
 - **Un traitement plus précoce et plus complet allait de pair avec davantage de récupération.** Être sous les quatre piliers dès 6 semaines, un âge plus jeune, le sexe féminin, une cause non ischémique, un QRS plus fin et une FEVG initiale plus basse prédisaient un gain plus marqué. À 6 mois, recevoir au moins la moitié de la dose cible d'un inhibiteur du système rénine-angiotensine (IEC, ARA2 ou ARNI) ou d'un bêtabloquant, ou recevoir la quadrithérapie, s'associait à davantage de passages au-dessus de 40 %. Il s'agit toutefois d'associations : les patients tolérant mieux les traitements peuvent aussi être en meilleure santé globale.
 - **Limites :** étude observationnelle ; seuls les patients en vie à 12 mois ayant eu une échographie de contrôle de routine (environ 56 % des nouveaux cas) étaient analysés ; une partie des gains peut refléter une CRT, une chirurgie ou un geste valvulaire.
-- **Une divergence à retenir :** HF-OPT (ci-dessus) retrouvait un franchissement des 35 % similaire entre formes ischémiques et non ischémiques, alors que TITRATE-HF le retrouvait moins souvent en cas d'origine ischémique (61 % contre 72 %). Leurs protocoles diffèrent (porteurs de gilet versus registre général), si bien qu'aucune ne clôt le sujet.
+- **Une divergence à retenir :** HF-OPT (ci-dessus) retrouvait un franchissement des 35 % similaire entre formes ischémiques et non ischémiques, alors que TITRATE-HF le retrouvait moins souvent en cas d'origine ischémique (61 % contre 72 %). Leurs protocoles diffèrent (porteurs de gilet versus registre général), si bien qu'aucune ne clôt le sujet. Deux autres cohortes vont dans le sens de TITRATE-HF sur les critères plus larges : à Göteborg, un gain d'au moins 10 points était environ deux fois moins fréquent en cause ischémique (35,6 % contre 70,0 % ; odds ajusté d'amélioration globale 0,35 [0,18–0,65]), et dans BIOSTAT-CHF la maladie ischémique réduisait environ de moitié les chances d'atteindre une FEVG améliorée (OR 0,46 [0,31–0,70]) (Silverdal 2023 ; Cao 2024).
 
 Pour une personne atteinte de cardiomyopathie ischémique avec une FEVG autour de 35 %, ces données suggèrent qu'un gain de plusieurs points est fréquent sous traitement moderne, tandis que dépasser 40 % se produit chez environ la moitié des patients nouvellement diagnostiqués et moins souvent lorsque la maladie est ancienne. Ce sont des chiffres de groupe, et non un pronostic individuel.`,
     },
@@ -80,10 +84,20 @@ Pour une personne atteinte de cardiomyopathie ischémique avec une FEVG autour d
 - une insuffisance cardiaque plus récente et un traitement de fond intensif ;
 - peu ou pas de cicatrice à l'IRM cardiaque, des marqueurs sanguins moins élevés et de meilleurs indices de déformation myocardique (*strain*).
 
-Si vous avez une cardiomyopathie ischémique avec un antécédent d'infarctus, plusieurs de ces facteurs orientent vers une hausse moyenne plus modeste. Il s'agit toutefois de tendances statistiques sur des groupes, jamais d'une prédiction individuelle. Les grands volumes ventriculaires gauches figurent dans la revue parmi les facteurs associés à la *rechute* après amélioration (ci-dessous) ; les notes de la revue ne les classaient pas parmi les prédicteurs initiaux d'amélioration.`,
+Les cohortes publiées depuis cette revue précisent ces facteurs :
+
+- **Cause ischémique :** dans BIOSTAT-CHF, OR 0,46 (0,31–0,70) pour l'amélioration (sexe féminin, absence de coronaropathie, FEVG initiale plus haute et VG moins dilaté étaient les prédicteurs communs à BIOSTAT-CHF et ASIAN-HF ; Cao 2024) ; en ICFER récente (Silverdal 2023), odds ajusté d'amélioration 0,35 (0,18–0,65).
+- **Taille du ventricule gauche :** des diamètres VG plus petits prédisaient indépendamment l'amélioration dans BIOSTAT-CHF (Cao 2024). Un ventricule dilaté s'associe ainsi à la fois à une moindre récupération et à plus de rechutes.
+- **Cicatrice IRM (cause ischémique) :** dans **REVIVED-BCIS2**, chaque tranche supplémentaire de 10 % de cicatrice réduisait les chances d'amélioration de FEVG à 6 mois (**OR 0,69**), alors que la quantité de muscle viable ne la prédisait pas (voir *Viabilité myocardique : hibernation, cicatrice et tests de viabilité*).
+- **Bloc de branche gauche (BBG) :** OR 0,43 (0,25–0,74) pour l'amélioration sous médicaments dans BIOSTAT-CHF (Cao 2024) ; TITRATE-HF associait aussi un QRS plus fin à un gain plus marqué.
+- **Durée d'évolution et calendrier :** dans une cohorte suivie jusqu'à 15 ans (Lupón 2018, résumé), la majorité du gain survenait au cours de la **première année** (surtout si l'IC datait de ≤ 12 mois, et moins en cas de cause ischémique), suivi d'un plateau sur plusieurs années puis d'un déclin progressif. En pratique, l'amélioration s'évalue surtout entre 6 et 24 mois (revue HFimpEF ; HF-OPT montrant déjà 46 % > 35 % à 90 jours et 68 % à 180 jours).
+- **Registre toutes causes (Alberta, Ghimire 2019, résumé) :** le sexe féminin (OR 1,66), une FEVG initiale plus basse, l'hypertension et la fibrillation atriale (OR 2,00, reflétant probablement des formes rythmiques réversibles) prédisaient un gain ≥ 10 points.
+
+Si vous avez une cardiomyopathie ischémique avec un antécédent d'infarctus et un VG dilaté, plusieurs de ces facteurs orientent vers une hausse moyenne plus modeste. Il s'agit toutefois de tendances statistiques sur des groupes, jamais d'une prédiction individuelle : un modèle prédictif à 5 facteurs dans BIOSTAT-CHF et ASIAN-HF n'atteignait qu'une AUC de 0,69 à 0,77 (Cao 2024).`,
     },
     {
       headingFr: "L'amélioration change-t-elle le pronostic ?",
+      depth: 'evidence',
       bodyMarkdownFr: `Plusieurs études associent une hausse de la FEVG à une meilleure survie :
 
 - **STICH (patients ischémiques) :**
@@ -132,16 +146,22 @@ N'interrompez jamais ni ne réduisez vous-même vos médicaments parce que votre
     'occlusion-coronaire-chronique-cto',
     'dysfonction-vg-asymptomatique-stade-b',
     'cellules-souches-et-therapies-regeneratives',
+    'viabilite-myocardique',
+    'confirmer-la-cause-dysfonction-vg',
+    'efx-strain-troponine-et-imagerie-cardiaque',
+    'inhibiteurs-sglt2-insuffisance-cardiaque',
+    'these-jours-de-maladie-sraa-vs-isglt2',
   ],
   sources: [
     { label: 'Revue HFimpEF (récupération et rechute)', detail: 'Définitions universelles, fréquences, facteurs prédictifs, survie et rechutes' },
     { label: 'Analyse de normalisation de la FEVG dans STICH', detail: 'Taux de normalisation propres aux causes ischémiques et lien avec la mortalité' },
     { label: "Recommandations ESC 2026 sur l'insuffisance cardiaque", detail: 'Définition HFimpEF, concept de rémission, poursuite du traitement (Classe I) et citation de TRED-HF' },
-    { label: 'REVIVED-BCIS2', detail: 'Gain moyen de FEVG dans les deux bras sous traitement médical' },
+    { label: 'REVIVED-BCIS2 et analyse de viabilité (2023)', detail: 'Gain moyen de FEVG dans les deux bras sous traitement médical et lien entre cicatrice IRM et récupération' },
     { label: 'Essai TRED-HF', detail: 'Rechutes après retrait thérapeutique dans la CMD non ischémique récupérée' },
     { label: 'Cleveland Clinic — Ischemic Cardiomyopathy', detail: "Irréversibilité des lésions cicatricielles liées au manque prolongé d'oxygène" },
     { label: 'HF-OPT (EHJ 2024), WEARIT-II Europe (2020) et PROLONG (JAHA 2017)', detail: 'Évolution de la FEVG sur un an chez les porteurs de gilet défibrillateur portable' },
     { label: 'Registre TITRATE-HF (Malgie et al., EJHF 2025)', detail: 'Texte intégral : registre néerlandais (3 367 patients) détaillant la récupération de FEVG à 1 an selon la cause ischémique vs non ischémique et IC récente vs chronique' },
+    { label: 'Silverdal (2023), Cao (2024, BIOSTAT-CHF / ASIAN-HF), Ghimire (2019, Alberta) et Lupón (2018)', detail: 'Cohortes récentes de récupération de FEVG selon la cause, taille du VG, BBG et trajectoires sur 15 ans' },
     { label: 'Revue systématique sur le retrait thérapeutique (Luo et al., EJHF 2025)', detail: 'Texte intégral : 7 petites études (552 patients) sur la réduction ou l\'arrêt des médicaments après amélioration (ReBIC-1, CATHEDRAL-HF, suivi long terme de TRED-HF)' },
     { label: "Deuxième définition universelle de l'insuffisance cardiaque (2026)", detail: "Consensus AHA/ACC/ESC/WHF (texte intégral) : distinction amélioration / rémission / récupération et permanence du diagnostic" },
   ],

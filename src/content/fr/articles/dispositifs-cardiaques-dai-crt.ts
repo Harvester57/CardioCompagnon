@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Dispositifs cardiaques implantés : DAI et CRT',
   category: 'dispositifs',
   readingTier: 'deep_dive',
-  asOf: '2026-11-25',
+  asOf: '2026-11-27',
   confidence: 'medium-high',
   volatility: 'hot',
   tags: [
@@ -38,7 +38,7 @@ export const article: WikiArticle = {
   ],
   linkedModules: ['device'],
   plainSummaryFr:
-    'Deux types de dispositifs implantés sont couramment discutés lorsque votre FEVG reste inférieure ou égale à 35 % malgré le traitement de fond : le DAI (défibrillateur automatique implantable), qui surveille le rythme cardiaque et délivre un choc en cas de trouble du rythme dangereux afin de prévenir la mort subite sans toutefois améliorer les symptômes du quotidien ; et la CRT (thérapie de resynchronisation cardiaque, un stimulateur spécial), qui aide les deux côtés du cœur à battre de façon coordonnée lorsque la conduction électrique est ralentie, ce qui peut améliorer les symptômes, réduire les hospitalisations et prolonger la vie. Un boîtier combinant les deux fonctions s’appelle un CRT-D. Les médicaments de l’insuffisance cardiaque sont poursuivis après toute implantation.',
+    'Deux types de dispositifs implantés sont couramment discutés lorsque votre FEVG reste inférieure ou égale à 35 % malgré le traitement de fond : le DAI (défibrillateur automatique implantable), qui surveille le rythme cardiaque et délivre un choc en cas de trouble du rythme dangereux afin de prévenir la mort subite sans toutefois améliorer les symptômes du quotidien ; et la CRT (thérapie de resynchronisation cardiaque, un stimulateur spécial), qui aide les deux côtés du cœur à battre de façon coordonnée lorsque la conduction électrique est ralentie, ce qui peut améliorer les symptômes, réduire les hospitalisations et prolonger la vie. Un boîtier combinant les deux fonctions s’appelle un CRT-D. Les preuves randomisées en faveur d’un DAI préventif sont les plus solides lorsque l’insuffisance cardiaque est d’origine ischémique (après infarctus ou maladie coronaire). Les médicaments de l’insuffisance cardiaque sont poursuivis après toute implantation.',
   sections: [
     {
       headingFr: 'Quand un DAI est-il envisagé ? (Recommandations ESC 2026)',
@@ -63,7 +63,7 @@ Autres positions des recommandations ESC 2026 :
 
 **Pourquoi attendre avant d’implanter ?**
 
-- **Après un infarctus du myocarde :** dans les essais cliniques ayant implanté un DAI dès les premières semaines après un infarctus aigu (**DINAMIT**, **IRIS** ; 1 572 patients), aucun bénéfice sur la survie n’a été observé (HR 1,05).
+- **Après un infarctus du myocarde :** dans les essais cliniques ayant implanté un DAI dès les premières semaines après un infarctus aigu (**DINAMIT** : 674 patients, 6 à 40 jours après l’infarctus, FEVG ≤ 35 % ; **IRIS** : 898 patients, 5 à 31 jours, FEVG ≤ 40 % avec fréquence cardiaque rapide ou salves courtes de TV ; 1 572 patients au total), aucun bénéfice sur la survie globale n’a été observé (**HR poolé 1,05** ; **HR 1,08** dans DINAMIT et **1,04** dans IRIS). Le DAI a bien réduit les morts subites ou rythmiques (**HR 0,42** et **0,55**), mais les autres décès cardiaques (notamment par défaillance de pompe) ont augmenté (**HR 1,75** et **1,92**).
 - **Après l’instauration des médicaments :** les recommandations jugent raisonnable d’attendre environ **3 mois** pendant la titration du traitement de fond, car la FEVG peut s’améliorer. Elles reconnaissent néanmoins un risque résiduel de mort subite d’environ **2 à 4 % à 6 mois** durant cette phase d’attente.
 - **Récupération fréquente de la FEVG après infarctus :** dans une étude portant sur 303 patients ayant une FEVG ≤ 40 % après angioplastie (stent) pour infarctus, la FEVG moyenne est passée de **32,4 %** immédiatement après le geste à **36,4 %** à 1 mois, puis **37,7 %** à 3 mois.
 - **Origine du délai de « 3 mois après un geste coronaire » :** dans les recommandations rythmologiques ESC 2022, les 3 mois concernent bien le **traitement médicamenteux optimisé**. Le délai de 3 mois après stents ou pontage aorto-coronarien correspondait à un critère d’inclusion d’anciens essais comme **MADIT-II**, et non à une recommandation indépendante.`,
@@ -108,8 +108,39 @@ C’est la raison pour laquelle les ECG de suivi recherchent systématiquement u
   - Si l’on inclut l’essai **CABG-Patch** (où le DAI était posé au moment même d’un pontage aorto-coronarien), le résultat devient **HR 0,81**, non statistiquement significatif.
   - Les auteurs comparent l’ampleur de ce bénéfice relatif à celui de certains médicaments majeurs de l’insuffisance cardiaque.
 - **Essais pivots cités par l’ESC 2026 :**
-  - **SCD-HeFT :** le DAI a réduit la mortalité toutes causes de **23 %** par rapport à l’amiodarone ;
+  - **SCD-HeFT :** le DAI a réduit la mortalité toutes causes de **23 %** par rapport au **placebo** (**HR 0,77**) ; l’amiodarone (troisième bras) n’a pas amélioré la survie (**HR 1,06**).
   - **MADIT-II :** le DAI a réduit la mortalité toutes causes de **31 %** (1 232 patients, tous atteints de maladie coronaire avec FEVG ≤ 30 %).`,
+    },
+    {
+      headingFr: 'Origine ischémique contre non ischémique : pourquoi les preuves diffèrent',
+      depth: 'evidence',
+      bodyMarkdownFr: `Lorsque l’insuffisance cardiaque est due à des infarctus ou à une maladie coronaire (**ischémique**), les essais randomisés ont montré qu’un DAI préventif prolonge la vie : dans **MADIT-II**, le bénéfice se maintenait à **8 ans**, et le sous-groupe ischémique de **SCD-HeFT** va dans le même sens à **11 ans**. Lorsque l’origine est **non ischémique**, le DAI réduit nettement les morts subites, mais le plus grand essai dédié (**DANISH**) n’a pas montré de gain de survie globale. C’est pourquoi l’ESC classe le DAI en **Classe I** dans l’IC ischémique et en **Classe IIa** dans l’IC non ischémique. Tous les essais ci-dessous sont toutefois antérieurs au sacubitril/valsartan et aux iSGLT2.
+
+### Comparatif des grands essais randomisés
+
+| Essai | Population (effectif, seuil FEVG, part ischémique) | Époque et traitement de fond | Résultat | Applicabilité à l’ICFER ischémique |
+|---|---|---|---|---|
+| **MADIT-I** (1996) | 196 ; ancien infarctus, FEVG ≤ 35 %, TVNS et TV inductible à l’exploration ; **100 % ischémique** | Années 1990 ; bêtabloquant 23 %, IEC 62 % | Décès **15 contre 39** sur 27 mois ; **HR 0,46** (0,26–0,82) | **Partielle** : bonne cause/FEVG, mais groupe très sélectionné et traitements anciens (résumé) |
+| **MADIT-II** (2002 et suivi 8 ans, 2010) | 1 232 ; infarctus > 1 mois, **FEVG ≤ 30 %** (moyenne 23 %) ; **100 % ischémique** ; NYHA I 37 %, II 35 %, III 24 % | 1997–2001 ; bêtabloquant 70 %, IEC 70 % | Mortalité **14,2 % vs 19,8 %** à 20 mois (**HR 0,69**, 0,51–0,93 ; arrêté tôt). **À 8 ans :** **49 % vs 62 %** (**HR 0,66**, 0,56–0,78) | **Partielle** : aucun patient entre 31 et 35 %, médicaments anciens (résumé) |
+| **SCD-HeFT** (2005 et suivi 11 ans, 2020) | 2 521 ; NYHA II–III, **FEVG ≤ 35 %** (médiane 25 %) ; **52 % ischémique** ; ~57 % des témoins ont ensuite reçu un DAI | Publié 2005 ; bêtabloquant 69 %, IEC/ARA2 96 % ; DAI vs placebo vs amiodarone | Mortalité à 45,5 mois **22 % vs 29 %** placebo (**HR 0,77**, IC 97,5 % 0,62–0,96) ; amiodarone **HR 1,06**. **À 11 ans :** global **HR 0,87** (0,76–0,98) ; **ischémique HR 0,81** (0,69–0,95) vs **non ischémique HR 0,97** (0,79–1,20) ; NYHA II HR 0,76, NYHA III HR 1,06 | **Partielle** : sous-groupe ischémique sans test d’interaction rapporté (signal, non preuve) |
+| **DINAMIT** (2004), **IRIS** (2009) | 674 et 898 ; **5 à 40 jours** après infarctus aigu ; **100 % ischémique** | Bêtabloquant 87–98 % | Mortalité globale inchangée (**HR 1,08** et **1,04**) ; moins de morts subites, plus d’autres décès cardiaques | **Directe pour le délai** (pas de DAI dans les 40 jours post-infarctus) |
+| **DANISH** (2016 ; suivis 9,5 ans et 13,2 ans) | 1 116 ; symptomatique, FEVG ≤ 35 % ; **0 % ischémique** ; **58 % avec CRT** | 2008–2014 ; bêtabloquant 92 %, IEC/ARA2 97 % | Mortalité à 5,6 ans **21,6 % vs 23,4 %** (**HR 0,87**, 0,68–1,12, NS) ; mort subite **4,3 % vs 8,2 %** (**HR 0,50**, 0,31–0,82). **À 13,2 ans :** mortalité **HR 0,96** (0,82–1,13) ; mort subite **HR 0,54** (uniquement ≤ 70 ans : HR 0,38 vs > 70 ans : HR 1,27) | **Extrapolée** (cas contraste non ischémique uniquement) |
+
+### Lecture critique et explications proposées
+
+- **Pourquoi les résultats divergent (hypothèses) :** la cicatrice d’infarctus crée des circuits fixes de tachycardie ventriculaire (dans **VICTORIA**, sans DAI, les morts subites atteignaient **4,8 contre 3,0** pour 100 patients-années en cas d’origine ischémique vs non ischémique) ; dans DANISH, le traitement de fond était meilleur avec **58 %** de CRT ; avec l’âge, les causes concurrentes de décès non rythmiques doublent et limitent le gain de survie globale. En revanche, dans les registres en vie réelle (Suède, Europe, États-Unis, Japon), la survie associée au DAI ne différait pas significativement selon la cause (p d’interaction **0,17 à 0,83**, données observationnelles).
+- **Intégrité méthodologique :** **MADIT-II** a été interrompu précocement en novembre 2001 (risque de surestimation atténué par le maintien du bénéfice à 8 ans ; financé par l’industriel) ; la séparation ischémique/non ischémique de **SCD-HeFT à 11 ans** est génératrice d’hypothèses (fort croisement de > 50 % et pas de test d’interaction) ; le bénéfice apparent sous 70 ans sur la survie globale dans **DANISH à 9,5 ans** n’a **pas persisté à 13 ans** (interaction âge p = 0,89 pour la mortalité totale ; p = 0,01 uniquement pour la mort subite).
+
+### Ce que disent les recommandations selon la cause (au 26 novembre 2026)
+
+| Recommandation | IC ischémique (FEVG ≤ 35 %, NYHA II–III, ≥ 3 mois traitement) | IC non ischémique (mêmes critères) | Précisions |
+|---|---|---|---|
+| **ESC 2026 (IC)** | **Classe I, B1** (> 40 j post-IDM ; survie > 1 an) | **Classe IIa, B1** | Niveau B1 = au moins un ECR de puissance adéquate dans la nouvelle échelle ESC 2026 |
+| **ESC 2022 (rythmologie)** | **Classe I, A** (NYHA I, FEVG ≤ 30 % : **IIa B**) | Ligne CMD non vérifiée dans l’extrait lu | — |
+| **ESC 2023 (cardiomyopathies)** | — | CMD / cardiomyopathie VG non dilatée, FEVG ≤ 35 % > 3 mois : **IIa, A** | — |
+| **AHA/ACC/HFSA 2022 (États-Unis)** | **Classe 1, A** (≥ 40 j post-IDM ; NYHA I ≤ 30 % : **1, B-R**) | **Classe 1, A** (identique) | Les recommandations américaines ne séparent pas selon la cause |
+
+Pour une analyse dédiée à la question du bénéfice du DAI sous quadrithérapie complète (ARNI + iSGLT2 + bêtabloquant + ARM), consultez *Thèse : bénéfice du DAI en prévention primaire sous quadrithérapie moderne*.`,
     },
     {
       headingFr: 'Le débat actuel : quel bénéfice supplémentaire avec les médicaments modernes ?',
@@ -129,6 +160,9 @@ C’est la raison pour laquelle les ECG de suivi recherchent systématiquement u
 - **Une cohorte européenne observe encore un bénéfice (EU-CERT-ICD, 2020) :** chez 2 247 patients (65 % ischémiques, forte utilisation de bêtabloquants et d’ARM, mais avant les iSGLT2), le DAI en prévention primaire était associé à une baisse de **27 %** de la mortalité toutes causes (**HR ajusté 0,73**).
   - Dans le sous-groupe ischémique seul, l’estimation était de **HR 0,79** (IC 95 % : 0,58–1,06) : plus incertaine, sans preuve de différence par rapport aux causes non ischémiques.
   - Le bénéfice paraissait moindre chez les 75 ans et plus, en cas de diabète et chez les femmes, mais ces sous-analyses manquaient de puissance statistique. Il s’agissait d’une étude observationnelle, non randomisée.
+- **Autres registres (observationnels) :** en Suède (**SwedeHF**, 1 305 paires appariées), le DAI était associé à une baisse de la mortalité à 1 an (**HR 0,73**), y compris chez les patients ischémiques (**HR 0,78**, IC 95 % : 0,63–0,98). Une revue de 2026 (**Yokoshiki 2026**) recense des cohortes américaines et japonaises aux associations voisines (**HR ~0,62–0,76**), sans différence significative selon la cause. Les patients les plus en forme et les mieux suivis recevant plus souvent un DAI, ces registres peuvent surestimer le bénéfice.
+- **Les iSGLT2 réduisent aussi le risque de mort subite (post hoc) :** dans **DAPA-HF** (4 744 patients, ~56 % ischémiques), la dapagliflozine a réduit les arythmies ventriculaires graves, arrêts cardiaques ou morts subites (**5,9 % contre 7,4 %**, **HR 0,79**, IC 95 % : 0,63–0,99 ; sous-groupe ischémique **HR 0,76**, 0,57–1,00 ; événements déclarés par les investigateurs sans adjudication centrale). Cela réduit le risque résiduel mais ne mesure pas le gain propre du DAI.
+- **Données d’essai récent (VICTORIA, analyse 2025) :** la présence d’un DAI était associée à moins de morts subites chez les patients ischémiques (**HR ajusté 0,61**, IC 95 % : 0,38–0,98), mais sans baisse de la mortalité globale. Par ailleurs, un éditorial sur **DANISH à 13 ans** pose la question de réévaluer le DAI systématique dans les formes non ischémiques sous traitement moderne.
 - **DAI guidé par la cicatrice IRM au-dessus de 35 % (CMR GUIDE, 2026) :** chez 353 patients ayant une **FEVG entre 36 et 50 %** et une cicatrice à l’IRM, le DAI n’a pas réduit significativement le critère principal (**7,8 % contre 9,2 %**), même si les morts subites étaient moins nombreuses (**1,7 % contre 5,8 %**). Cet essai ne concerne pas les FEVG ≤ 35 %, mais éclaire le cas d’une FEVG qui remonte au-dessus de 35 % sous traitement.
 - **L’essai qui teste directement la question (PROFID-EHRA) :** il tire au sort des patients au moins 3 mois après un infarctus, avec FEVG ≤ 35 %, classe NYHA II–III et au moins 3 mois de traitement optimisé, entre traitement médical seul et traitement médical plus DAI, afin de vérifier si l’absence de DAI n’est pas inférieure pour la survie.
   - Statut : **recrutement en cours, sans résultat publié**. En octobre 2025, 256 patients avaient été inclus sur les 3 595 prévus, avec une fin estimée au **30 novembre 2027** (calendrier susceptible de glisser).`,
@@ -186,6 +220,9 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
     },
   ],
   relatedArticleSlugs: [
+    'these-benefice-dai-sous-quadritherapie',
+    'these-viabilite-et-survie-revascularisation',
+    'dispositifs-insuffisance-cardiaque-en-developpement',
     'insuffisance-cardiaque-avancee-stade-d',
     'assistance-circulatoire-lvad',
     'fibrillation-atriale-insuffisance-cardiaque',
@@ -260,6 +297,14 @@ L’étude a inclus 849 patients (environ 70 % d’origine ischémique, 80 % en 
     {
       label: 'Revue Tomzik (2015), méta-analyse Ghezzi (2023), ICD-FORUM (2019), prise de position HFA (2020), NICE NG106 (2025) et consensus HRS (2023)',
       detail: 'Qualité de vie, prévalence anxiété/dépression/TSPT après chocs, programmes en ligne, désactivation en fin de vie et télésurveillance des prothèses',
+    },
+    {
+      label: 'Essais historiques et suivis à long terme : MADIT-I (1996), MADIT-II (2002 et 8 ans 2010), SCD-HeFT (2005 et 11 ans 2020), DINAMIT (2004), IRIS (2009), DANISH (2016, 9,5 ans et 13 ans)',
+      detail: 'Comparaison ischémique vs non ischémique, survie à long terme, délai des 40 jours post-infarctus et limites d’interprétation',
+    },
+    {
+      label: 'Registres modernes, iSGLT2 et recommandations : SwedeHF (2019), Yokoshiki (2026), DAPA-HF arythmies (2021), VICTORIA (2025), ESC 2023 cardiomyopathies et grille ESC 2026 (niveau B1)',
+      detail: 'Mortalité associée au DAI en vie réelle selon l’étiologie, effet antiarythmique de la dapagliflozine et cotations européennes/américaines comparées',
     },
     {
       label: 'REVIVED-BCIS2 (analyse rythmique 2023 et discordance ETT/IRM), AHA/ACC/HFSA (2022) et NICE TA314',

@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Santé émotionnelle, anxiété et dépression',
   category: 'quotidien',
   readingTier: 'essential',
-  asOf: '2026-11-25',
+  asOf: '2026-11-26',
   confidence: 'medium',
   volatility: 'warm',
   tags: [
@@ -21,6 +21,8 @@ export const article: WikiArticle = {
     'dépistage',
     'chocs-dai',
     'tspt',
+    'isolement-social',
+    'solitude',
     'mon-soutien-psy',
     'france',
   ],
@@ -96,7 +98,7 @@ Les tarifs et règles pouvant évoluer, vérifiez toujours votre situation sur *
   - **Indications et exclusions :** réservé à l'anxiété ou la dépression **légère à modérée**. Il exclut le risque suicidaire, les formes sévères, le suivi psychiatrique en cours et une **ALD psychiatrique** (une ALD cardiaque 5 ou 13 ne paraît pas constituer une exclusion — à confirmer si besoin). La généralisation du tiers payant prévue par la loi du 30 décembre 2025 attend son décret d'application.
 - **Psychiatre :** à partir de **26 ans**, passer par votre **médecin traitant** préserve le remboursement normal (consultation secteur 1 à **55 €**, dont **36,50 €** remboursés ; hors parcours coordonné, le tarif peut atteindre **61 €** avec seulement **13 €** remboursés). Accès direct de **16 à 25 ans**.
 - **CMP (centre médico-psychologique) :** structures publiques réunissant psychiatres et psychologues, prises en charge par l'Assurance Maladie — voie privilégiée avec votre médecin traitant en cas de **dépression sévère**.
-- **Réadaptation cardiaque (SMR) et associations :** l'accompagnement psychologique est inclus dans les programmes de SMR (pris en charge à 100 %). Les groupes de parole d'associations (**AVEC**, **APODEC**, **ASPIC** — voir l'article *Réseau de soins en France*) aident aussi à rompre l'isolement.`,
+- **Réadaptation cardiaque (SMR) et associations :** l'accompagnement psychologique est inclus dans les programmes de SMR (pris en charge à 100 %). L'isolement social et la solitude vont souvent de pair avec la baisse de moral : participer à un groupe de réadaptation cardiaque, rejoindre un **Club Cœur et Santé** ou les groupes de parole d'associations (**AVEC**, **APODEC**, **ASPIC** — voir *Réseau de soins et aides sociales en France* et *Isolement social et lien social*) offre des moyens simples et sûrs de maintenir le contact.`,
     },
     {
       headingFr: 'Pour aller plus loin : essais sur les psychothérapies, soins collaboratifs et DAI',
@@ -130,6 +132,7 @@ Les tarifs et règles pouvant évoluer, vérifiez toujours votre situation sur *
 
 - **DAI :** qualité de vie comparable sans choc (**Tomzik 2015**, 15 études ; **SCD-HeFT**, baisse seulement après choc récent ou ≥ 5 chocs ; enquête suédoise 80–94 ans : anxiété **24 % vs 10 %** après choc). **Ghezzi 2023** (109 études, **39 954** porteurs) : anxiété **23 %** (~30 % la 1re année), dépression **15 %**, TSPT **12 %** ; chocs associés à une anxiété quadruplée (**OR 3,92**) et une dépression quasi doublée (**OR 1,87**). Programmes en ligne **ICD-FORUM** et **WEBCARE** (289 patients) neutres.
 - **TSPT post-infarctus (Edmondson 2012, 24 études) :** ~**12 %** (**4 %** entretien clinique vs **16 %** questionnaire), associé à un risque doublé d'événements CV (3 études).
+- **Isolement social, solitude et dépression :** dans une cohorte communautaire d'insuffisance cardiaque du Minnesota (**Manemann 2018**), la dépression passait de **14 %** chez les moins isolés à **52 %** chez les plus isolés, et un fort isolement perçu restait associé à davantage de décès et d'hospitalisations même après ajustement sur la dépression. En population générale (**Valtorta / UK Biobank**), une grande part du lien passe par la dépression, la sédentarité et d'autres facteurs de risque modifiables. Aucun essai n'a démontré que réduire la solitude seule améliore le pronostic cardiaque et les dispositifs d'entraide entre pairs n'ont pas réduit les réadmissions (voir *Isolement social et lien social*).
 - **Repère comparatif (Royaume-Uni) :** la British Heart Foundation (BHF) oriente vers *NHS Talking Therapies* (auto-inscription en Angleterre), la ligne *BHF Heart Helpline* et sa communauté en ligne.`,
     },
     {
@@ -169,6 +172,9 @@ Les tarifs et règles pouvant évoluer, vérifiez toujours votre situation sur *
     'medicaments-effets-secondaires-suivi',
     'vivre-avec-insuffisance-cardiaque-en-france',
     'reseau-de-soins-et-aides-sociales-france',
+    'isolement-social-et-lien-social',
+    'vie-sexuelle-et-dysfonction-erectile-ic',
+    'goutte-bpco-thyroide-et-autres-comorbidites',
   ],
   sources: [
     {
@@ -205,6 +211,11 @@ Les tarifs et règles pouvant évoluer, vérifiez toujours votre situation sur *
       label: 'service-public.gouv.fr (F34917), ameli.fr (Mon soutien psy, sept. 2026) & sante.fr (3114)',
       detail:
         'Conditions 2026 de Mon soutien psy (12 séances, 50 €, 60 %, sans ordonnance), parcours psychiatre, CMP et numéro national 3114.',
+    },
+    {
+      label: 'Manemann (2018), Valtorta / UK Biobank & essais de soutien par les pairs',
+      detail:
+        'Co-occurrence isolement-dépression dans l’IC (14 % à 52 %), liens avec hospitalisations et mortalité, et absence de preuve d’essai sur les événements cardiaques.',
     },
   ],
   disclaimerType: 'medical',

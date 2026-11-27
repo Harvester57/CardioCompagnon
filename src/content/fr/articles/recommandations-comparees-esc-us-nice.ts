@@ -6,7 +6,7 @@ export const article: WikiArticle = {
   titleFr: 'Recommandations européennes (ESC), américaines et britanniques comparées',
   category: 'references',
   readingTier: 'reference',
-  asOf: '2026-11-25',
+  asOf: '2026-11-27',
   confidence: 'medium',
   volatility: 'hot',
   tags: [
@@ -54,11 +54,31 @@ export const article: WikiArticle = {
 | **Médicaments de fond (4 piliers)** | IEC ou ARNI, bêtabloquant, ARM, iSGLT2 ; tous Classe I | ARNI, IEC ou ARA2 ; bêtabloquant ; ARM ; iSGLT2 ; tous Classe 1 | **Proposer** IEC, bêtabloquant, ARM et iSGLT2 |
 | **ARNI (sacubitril/valsartan — *Entresto*)** | IEC ou ARNI (Classe I, A) ; passage à l'ARNI en Classe I (B1) | **ARNI en première ligne** (Classe 1, A). IEC si ARNI non réalisable | **Envisager le passage** de l'IEC à l'ARNI si symptômes persistants aux doses maximales tolérées des 4 piliers ; non recommandé en remplacement si l'IEC fonctionne (coût-efficacité) |
 | **Ordre d'initiation** | Débuter les quatre précocement | Débuter les quatre tôt, titration en environ 3 mois si possible (parcours ACC 2024) | Aucun ordre fixe ; inutile d'atteindre la dose maximale d'un médicament avant d'ajouter le suivant |
-| **Poursuite après amélioration de la FEVG** | Oui (Classe I) | Oui, même sans symptôme | Non abordé |
+| **Poursuite après amélioration de la FEVG** | Oui (Classe I, C) | Oui, même sans symptôme (1, B-R) | Non abordé |
 | **Stades A–D** | Adopte les stades A à D de l'AHA/ACC | Stades A (« à risque ») à D | Non utilisés |
 | **Réadaptation cardiaque** | Classe I (B1) pour l'entraînement personnalisé en réadaptation ; Classe I (B2) au long cours hors réadaptation ; Classe IIa (B1) après une décompensation | Non détaillé dans les extraits examinés | **Proposer** un programme personnalisé basé sur l'exercice |
 
 Une FEVG à 35 % est classée « réduite » dans les trois référentiels ; une FEVG à 45 % est « réduite » selon l'ESC 2026 mais « modérément réduite » aux États-Unis et au Royaume-Uni.`,
+    },
+    {
+      headingFr: 'Les quatre médicaments de fond, classe par classe',
+      bodyMarkdownFr: `Comparaison établie au 27 novembre 2026 pour l'insuffisance cardiaque à FEVG réduite symptomatique (sauf mention contraire).
+
+| Question thérapeutique | ESC 2026 (Europe) | AHA/ACC/HFSA 2022 (États-Unis) | NICE NG106 (Royaume-Uni, 2025) |
+|---|---|---|---|
+| **Premier bloqueur du SRAA** | IEC **ou** ARNI : **I, A** (Tableau 5) | ARNI (NYHA II–III) : **1, A** ; IEC si ARNI non réalisable : **1, A** (Sec 7.3.1) | **Proposer** un IEC avec les trois autres classes (1.4.1) |
+| **Passage IEC/ARA2 vers ARNI** | Si toujours symptomatique : **I, B1** | NYHA II–III tolérant IEC/ARA2 : **1, B-R** | **Envisager** si symptômes persistants aux doses maximales tolérées des 4 piliers (1.4.2) ; non conseillé si l'état s'améliore (coût-efficacité) |
+| **ARA2 en recours** | Uniquement en cas d'intolérance à l'IEC et à l'ARNI : **I, A** | Intolérance IEC et ARNI non réalisable : **1, A** | Après angio-œdème sous IEC : envisager un ARA2 (1.4.4) ; autre intolérance IEC : proposer un ARNI (1.4.3) |
+| **Délai de 36 h IEC → ARNI et angio-œdème** | Délai de 36 h exigé dans le texte (non gradé) | ARNI avec ou dans les 36 h d'un IEC : **3 : Harm, B-R** ; antécédent d'angio-œdème : **3 : Harm, C-LD** | Au moins 36 h (texte explicatif) |
+| **Bêtabloquant (molécules et titration)** | **I, A** ; bisoprolol, carvédilol, métoprolol succinate et nébivolol dans le tableau des doses (note : nébivolol sans preuve sur la mortalité). Titration toutes les 1–2 sem. : **I, C** | **1, A** ; bisoprolol, carvédilol et métoprolol succinate uniquement (nébivolol absent). Doses cibles des essais : **1, A** ; toutes les 1–2 sem. : **2a, C-EO** | **Proposer** (1.4.1) ; réévaluer fréquence cardiaque et état clinique après chaque palier |
+| **Bêtabloquant pour contrôle de fréquence en FA** | 1re ligne : **I, C** (texte : effet pronostique en FA « incertain »). ESC 2024 FA : bêtabloquant et/ou digoxine si FEVG ≤ 40 % : **I, B** | Texte : bénéfice de mortalité non observé en FA | Non précisé dans les extraits consultés |
+| **ARM stéroïdien** | ARM dans l'IC symptomatique quelle que soit la FEVG, **ARM stéroïdien** nommé pour l'ICFER : **I, A** (seuil DFGe 25, K+ < 5,0) | Spironolactone ou éplérénone, NYHA II–IV, DFGe > 30 et K+ < 5,0 : **1, A** ; arrêter si K+ ne peut rester < 5,5 : **3 : Harm, B-NR** | **Proposer** (1.4.1) ; bilans sanguins avant puis 1–2 sem. après initiation ou hausse |
+| **Éplérénone post-IDM (FEVG ≤ 40 %)** | Tableau stade B : avec **signes d'IC ou diabète** : **I, B1** *(le texte narratif écrit « et diabète »)* | Muet dans le tableau stade B (Sec 6.1) | Non couvert dans les extraits consultés |
+| **Inhibiteur SGLT2 et seuils rénaux** | Dapagliflozine ou empagliflozine, IC symptomatique **quelle que soit la FEVG** : **I, A** | ICFER chronique symptomatique avec ou sans DT2 : **1, A** (Sec 7.3.4) | **Proposer** avec les trois autres sans ordre fixe (1.4.1). *RCP UE :* ne pas initier sous DFGe 25 (*Forxiga*) ou 20 (*Jardiance*) ; pas de seuil d'arrêt |
+| **Poursuite si la FEVG s'améliore** | **I, C** | **1, B-R** (Sec 7.6.2, HFimpEF) | Non abordé |
+
+- **Accord et divergences :** les trois référentiels nomment les mêmes quatre classes au plus haut niveau (I/1, A). Les écarts portent sur le premier bloqueur du SRAA (ARNI en 1re ligne aux États-Unis, IEC ou ARNI en Europe, IEC d'abord au Royaume-Uni), la place du nébivolol (listé en Europe, absent aux États-Unis), le seuil rénal des ARM (DFGe 25 vs 30) et la gradation explicite du délai de 36 h et de l'angio-œdème aux États-Unis.
+- **Nuances à connaître :** l'ESC 2026 appelle « ICFER » toute FEVG < 50 %, mais les essais pivots de bêtabloquants, ARM et iSGLT2 dans l'ICFER ont inclus des FEVG ≤ 40 % (voire ≤ 35 %) ; autour de 35 %, cela ne change rien, contrairement à la zone 41–49 %. Des incohérences internes existent aussi dans l'ESC 2026 (ARA2 en recours gradé I A malgré l'absence d'effet démontré sur la mortalité totale ; bêtabloquant Classe I en FA alors que son effet pronostique y est dit incertain ; formulation « et/ou diabète » pour l'éplérénone au stade B).`,
     },
     {
       headingFr: 'NT-proBNP, suivi, pontage (CABG) et stents (PCI)',
@@ -83,13 +103,17 @@ Une FEVG à 35 % est classée « réduite » dans les trois référentiels ; une
       headingFr: 'Critères du défibrillateur (DAI) et de la resynchronisation (CRT)',
       bodyMarkdownFr: `### Comparaison ESC 2026 vs États-Unis 2022 (section 7.4.1)
 
-| Situation | ESC 2026 | États-Unis 2022 (AHA/ACC/HFSA) |
+| Situation | ESC 2026 (et ESC 2022 rythmologie) | États-Unis 2022 (AHA/ACC/HFSA) |
 |---|---|---|
-| **Avec symptômes (NYHA II–III)** | Cause ischémique, NYHA II–III, FEVG ≤ 35 % **malgré au moins 3 mois** de traitement optimal, sans infarctus dans les 40 derniers jours, espérance de vie > 1 an en bon état fonctionnel : **Classe I (B1)** | Au moins **40 jours** après infarctus (ou cause non ischémique), **FEVG ≤ 35 %**, **NYHA II ou III** sous traitement de fond, survie attendue > 1 an : **Classe 1 (A)** |
-| **Sans symptôme (NYHA I) après infarctus** | Pas de recommandation séparée dans les extraits ESC consultés | Au moins 40 jours après infarctus, **FEVG ≤ 30 %**, **NYHA I**, survie > 1 an : **Classe 1 (B-R)**, d'après MADIT-II |
-| **Cause non ischémique** | Classe IIa (plus faible) | Incluse dans la même recommandation Classe 1 |
+| **Avec symptômes (NYHA II–III)** | Cause ischémique, NYHA II–III, FEVG ≤ 35 % **malgré au moins 3 mois** de traitement optimal, sans infarctus dans les 40 derniers jours, espérance de vie > 1 an en bon état fonctionnel : **Classe I (B1)**. ESC 2022 rythmologie (coronaropathie, NYHA II–III, FEVG ≤ 35 % après ≥ 3 mois) : **I, A** | Au moins **40 jours** après infarctus (ou cause non ischémique), **FEVG ≤ 35 %**, **NYHA II ou III** sous traitement de fond, survie attendue > 1 an : **Classe 1 (A)** |
+| **Sans symptôme (NYHA I) après infarctus** | ESC 2026 IC : non détaillé dans les extraits consultés. **ESC 2022 rythmologie** (coronaropathie, NYHA I, FEVG ≤ 30 %) : **IIa, B** | Au moins 40 jours après infarctus, **FEVG ≤ 30 %**, **NYHA I**, survie > 1 an : **Classe 1 (B-R)**, d'après MADIT-II |
+| **Cause non ischémique** | **IIa, B1** (plus faible ; ESC 2023 cardiomyopathies : CMD/NDLVC FEVG ≤ 35 % après > 3 mois : **IIa, A**) | Incluse dans la même recommandation **Classe 1 (A)** |
+| **FEVG ≤ 40 % avec TVNS (coronaropathie)** | ESC 2022 rythmologie : TVNS + TV monomorphe soutenue inductible à l'EEP : **IIa, B** | Non couvert dans les extraits US IC 2022 consultés |
 | **Non recommandé** | Dans les 40 jours suivant un infarctus ; NYHA IV non éligible à une CRT, une assistance ou une greffe | Espérance de vie fonctionnelle < 1 an : **Classe 3 (sans bénéfice)** |
 | **Durée préalable sous traitement médical** | Au moins 3 mois | Pas de chiffre dans la recommandation elle-même ; la section imagerie demande de recontrôler la FEVG > 40 jours après infarctus et > 90 jours après revascularisation ou initiation du traitement |
+
+- **Pourquoi l'Europe distingue selon la cause :** dans la cardiomyopathie ischémique, MADIT-II a prolongé la survie (HR 0,69 ; à 8 ans HR 0,66) et le sous-groupe ischémique de SCD-HeFT allait dans le même sens à 11 ans (HR 0,81). À l'inverse, dans l'essai non ischémique DANISH, le DAI a divisé par deux la mort subite (HR 0,50) sans réduire significativement la mortalité totale (HR 0,87 ; à 13 ans HR 0,96). Les États-Unis maintiennent la Classe 1 pour les deux causes. Tous ces essais précèdent l'ARNI et les iSGLT2.
+- **Nuance interne ESC :** la même population ischémique (NYHA II–III, FEVG ≤ 35 %, ≥ 3 mois de traitement) est classée **I, A** dans l'ESC 2022 rythmologie et **I, B1** dans l'ESC 2026 IC en raison de la nouvelle échelle A/B1/B2/C ; le sens de la recommandation reste identique. Le texte intégral US 2022 tranche également les anciens écarts de résumés : NYHA II–III à ≤ 35 %, et NYHA I uniquement à ≤ 30 % après infarctus.
 
 ### Critères NICE (TA314, 2014, révisée 2017) et CRT
 
@@ -259,7 +283,8 @@ Aucune de ces recommandations ne fixe de règle de durée de DAPT spécifique à
 | **AINS / COX-2 et ASE (anémie hors fer)** | ESC : AINS **Classe III** ; bilan NFS + ferritine/CST **I, C** ; ASE **III, B** | AHA 2022 : AINS **3 : Harm, B-NR** ; ASE **3 : Harm, B-R** (RED-HF) | Accord complet : éviter AINS et ASE |
 | **Goutte (allopurinol, fébuxostat, colchicine)** | Allopurinol en 1re intention ; colchicine pour les crises ; ne pas traiter l'hyperuricémie asymptomatique | **RCP FDA *Uloric* (déc. 2025) :** maintient le *Boxed Warning* décès CV (2e ligne) malgré l'essai européen FAST. **Colchicine :** **ANSM France** contre-indique strictement sous DFGe 30 et avec les macrolides (plus strict que la FDA) | Divergence US/UE sur fébuxostat et seuils rénaux plus stricts en France pour la colchicine |
 | **BPCO / asthme, thyroïde et AOMI** | BPCO non contre-indication aux bêtabloquants β1-sélectifs ; TSH initiale et de suivi (ESC 2026) ; ESC 2024 PAAD : rivaroxaban 2,5 mg × 2/j + aspirine **IIa, A** dans l'AOMI à haut risque | GOLD 2024/2025 : β1-sélectif pour l'IC, pas pour la BPCO isolée (BLOCK COPD) ; ETA 2018 : prise en charge conjointe cardio-endocrino pour l'AIT sous amiodarone ; COMPASS a exclu FEVG < 30 % et NYHA III–IV | Prudence pour le schéma COMPASS dans l'ICFER sévère |
-| **Fragilité, EFX (CPET), GLS, troponine et imagerie** | ESC 2026 : distingue fragilité cardiaque réversible et non cardiaque ; **EFX / CPET I, C** en bilan d'IC avancée (` + '`VO2 pic ≤ 12 mL/kg/min`' + ` sous bêtabloquant ou < 50 % théorique) ; seuils thérapeutiques et DAI restent basés sur la **FEVG** ; coronarographie **I, C / IIa, C**, coroscanner **IIa, C**, IRM+LGE **I, C** | ISHLT 2016/2024 : mêmes seuils EFX (` + '`≤ 12`' + ` sous BB, ` + '`≤ 14`' + ` hors BB, ` + '`VE/VCO2 > 35`' + `). ASE/EACVI 2015 : GLS normal ~-20 % (même constructeur exigé en suivi). 4UDMI 2018 : delta sérié + ischémie pour IDM aigu vs lésion chronique stable | Aucun ECR ne prouve un guidage thérapeutique par GLS ou troponine ; pas de preuve que la viabilité seule guide la revascularisation |`,
+| **Fragilité, EFX (CPET), GLS, troponine et imagerie** | ESC 2026 : distingue fragilité cardiaque réversible et non cardiaque ; **EFX / CPET I, C** en bilan d'IC avancée (` + '`VO2 pic ≤ 12 mL/kg/min`' + ` sous bêtabloquant ou < 50 % théorique) ; seuils thérapeutiques et DAI restent basés sur la **FEVG** ; coronarographie **I, C / IIa, C**, coroscanner **IIa, C**, IRM+LGE **I, C** | ISHLT 2016/2024 : mêmes seuils EFX (` + '`≤ 12`' + ` sous BB, ` + '`≤ 14`' + ` hors BB, ` + '`VE/VCO2 > 35`' + `). ASE/EACVI 2015 : GLS normal ~-20 % (même constructeur exigé en suivi). 4UDMI 2018 : delta sérié + ischémie pour IDM aigu vs lésion chronique stable | Aucun ECR ne prouve un guidage thérapeutique par GLS ou troponine |
+| **Tests de viabilité myocardique pour la revascularisation** | ESC 2026 IC : le texte narratif indique que les preuves pour sélectionner les patients à revasculariser par test de viabilité sont « manquantes » (**non gradé**) | AHA 2022 : recherche de coronaropathie **2a, B-NR** ; imagerie de stress pour guider la revascularisation **2b, B-NR** (ischémie, non viabilité) ; texte : STICH viabilité n'a pas prédit le bénéfice du pontage. ACC/AHA/SCAI 2021 : pontage **1, B-R**, aucune recommandation gradée sur la viabilité. Déclaration AHA 2020 (pré-REVIVED) : l'imagerie de viabilité n'a pas amélioré le pronostic pour guider un pontage | **Accord transatlantique :** aucune recommandation ne grade le test de viabilité comme critère de sélection pour revasculariser (d'après STICH, REVIVED-BCIS2 et PARR-2) |`,
     },
     {
       headingFr: 'Seconde Définition Universelle de l’Insuffisance Cardiaque (juin 2026) et actualité',
@@ -272,14 +297,20 @@ Aucune de ces recommandations ne fixe de règle de durée de DAPT spécifique à
     },
   ],
   relatedArticleSlugs: [
+    'lire-les-preuves-medicales',
     'comprendre-le-diagnostic',
     'cardiomyopathie-ischemique',
     'fraction-dejection',
     'insuffisance-cardiaque-fevg-amelioree',
     'dispositifs-cardiaques-dai-crt',
+    'these-benefice-dai-sous-quadritherapie',
     'arythmies-ventriculaires-et-antiarythmiques',
     'gilet-defibrillateur-portable',
     'medicaments-insuffisance-cardiaque',
+    'iec-ara2-et-arni-sacubitril-valsartan',
+    'betabloquants-insuffisance-cardiaque',
+    'arm-steroidiens-spironolactone-eplerenone',
+    'inhibiteurs-sglt2-insuffisance-cardiaque',
     'angor-et-medicaments-anti-angineux',
     'antiplaquettaires-bitherapie-et-protection-gastrique',
     'escalade-et-resistance-aux-diuretiques',
@@ -288,6 +319,8 @@ Aucune de ces recommandations ne fixe de règle de durée de DAPT spécifique à
     'examens-et-chiffres',
     'efx-strain-troponine-et-imagerie-cardiaque',
     'revascularisation-pontage-stents',
+    'viabilite-myocardique',
+    'these-viabilite-et-survie-revascularisation',
     'vivre-avec-insuffisance-cardiaque',
     'traitements-additionnels-nouveaux',
     'apnee-du-sommeil-insuffisance-cardiaque',
@@ -322,16 +355,16 @@ Aucune de ces recommandations ne fixe de règle de durée de DAPT spécifique à
   ],
   sources: [
     {
-      label: 'Recommandations européennes ESC (IC 2026 avec grille A/B1/B2/C, Valvulopathies ESC/EACTS 2025, FA et SCC 2024, Cardiomyopathies 2023, Diabète 2023, Endocardite 2023, AV/MSC 2022, NCS 2022, HTP ESC/ERS 2022, Sport 2020)',
-      detail: 'Définitions FEVG < 50 %, 4 piliers, stade B, diurétiques, anti-angineux, antiplaquettaires, IRM/génétique/amylose/sarcoïdose, RAo/TAVI, diabète Tableau 22, péri-opératoire, ablation de TV et IC avancée',
+      label: 'Recommandations européennes ESC (IC 2026 avec grille A/B1/B2/C et tableaux 4 piliers, Valvulopathies ESC/EACTS 2025, FA et SCC 2024, Cardiomyopathies 2023, Diabète 2023, Endocardite 2023, AV/MSC 2022, NCS 2022, HTP ESC/ERS 2022, Sport 2020)',
+      detail: 'Définitions FEVG < 50 %, comparatif détaillé des 4 piliers, stade B, DAI par étiologie, viabilité, diurétiques, anti-angineux, IRM/génétique, RAo/TAVI, diabète Tableau 22, péri-opératoire et IC avancée',
     },
     {
-      label: 'Recommandations américaines (AHA/ACC/HFSA 2022 IC, ACC/AHA 2023 CCD, 2024 NCS, 2025 SCA, US CKM 2026, ADA 2022 & 2026, ISHLT 2023 MCS, Kindel 2024 GLP-1, Princeton IV 2024, AHA 2026 climat)',
-      detail: 'Comparaisons transatlantiques des classes, seuils FEVG, ARNI, DAI/CRT, stade B, RAo, diabète, chirurgie non cardiaque, santé sexuelle et comorbidités',
+      label: 'Recommandations américaines (AHA/ACC/HFSA 2022 IC, ACC/AHA/SCAI 2021 revascularisation, AHA 2020 viabilité, ACC/AHA 2023 CCD, 2024 NCS, 2025 SCA, US CKM 2026, ADA 2022 & 2026, ISHLT 2023 MCS, Kindel 2024 GLP-1, Princeton IV 2024, AHA 2026 climat)',
+      detail: 'Comparaisons transatlantiques des classes, seuils FEVG, ARNI, DAI/CRT, viabilité myocardique, stade B, RAo, diabète, chirurgie non cardiaque, santé sexuelle et comorbidités',
     },
     {
-      label: 'Référentiels français et britanniques (HAS oct. 2024 dentaire/EI, HAS 2021–2024, SFCO 2015, GIHP/SFAR 2018, GERS-P/SFC 2023, ANSM 2025–2026, HCSP/SPF, NICE NG106 2025, TA314, NG148 oct. 2024 Rec 1.2.14, BSG/ESGE 2021, KDIGO 2024)',
-      detail: 'Antibioprophylaxie dentaire HAS oct. 2024, règles jours de maladie NICE NG148 verbatim, RCP EMA Forxiga/Jardiance/Viagra/Cialis, canicule ANSM, tabac/alcool et réadaptation',
+      label: 'Référentiels français, européens et britanniques (HAS oct. 2024 dentaire/EI, HAS 2021–2024, SFCO 2015, GIHP/SFAR 2018, GERS-P/SFC 2023, ANSM 2025–2026, RCP EMA Forxiga/Jardiance/Viagra/Cialis, HCSP/SPF, NICE NG106 2025, TA314, NG148 oct. 2024 Rec 1.2.14, BSG/ESGE 2021, KDIGO 2024)',
+      detail: 'Seuils DFGe des iSGLT2 dans les RCP UE, antibioprophylaxie dentaire HAS oct. 2024, règles jours de maladie NICE NG148 verbatim, canicule ANSM, tabac/alcool et réadaptation',
     },
     {
       label: 'Seconde Définition Universelle de l’Insuffisance Cardiaque (AHA/ACC/ESC/WHF, juin 2026) et liste MTI EMA (juin 2026)',
